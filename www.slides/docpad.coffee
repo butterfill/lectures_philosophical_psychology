@@ -19,8 +19,8 @@ docpadConfig = {
         command: ['rsync', '-rul', 'src/raw/', 'out/' ]
 
   # absolutepath:
-  #   # put the url of the site you are uploading to berlin_2015_core_knowledgehere, including any subdirectories.
-  #   url: "http://joint-action.butterfill.com"
+  #   # put the url of the site you are uploading to here, including any subdirectories.
+  #   url: "http://philosophical-psychology.butterfill.com"
    cleanurls:
       getRedirectTemplate: (document) ->
         absolutepath = docpadConfig.plugins.absolutepath.url.slice(0, - 1) 
@@ -38,7 +38,7 @@ docpadConfig = {
         </html>
         """
         
-  #renderPasses : 1
+  renderPasses : 2
 
   # =================================
   # Template Data
@@ -50,10 +50,10 @@ docpadConfig = {
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://joint-action.butterfill.com"
+      url: "http://philosophical-psychology.butterfill.com"
 
       # The default title of our website
-      title: "Joint Action"
+      title: "Philosophical Psychology"
 
       # The website description (for SEO)
       description: """
@@ -62,7 +62,7 @@ docpadConfig = {
 
       # The website keywords (for SEO) separated by commas
       keywords: """
-        philosophy, joint action, shared agency, collective intentionality, collective goals, motor representation
+        philosophy, psychology, action, joint action, metarepresentation, perception
         """
 
 
