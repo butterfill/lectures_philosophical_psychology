@@ -3,19 +3,6 @@ layout: 'frontpage'
 title: 'Philosophical Psychology'
 ---
 
-- get_unit = function(unit_num) {
-  - var extract = (unit_num+'').match(/^unit_([0-9]*)/);
-  - if(extract){
-    - unit_num = extract[1];
-  - };
-  - var d = getCollection("documents").findAll({url:'/units/unit_'+unit_num+'.html'},[{year:-1,sort_order:1}]).toJSON();
-  - if (document.units && document.units.indexOf(unit_num)==-1) {
-    - document.units.push(unit_num);
-  - }
-  - var unit = d[0]
-  - return unit;
-- };
-
 
 html
   body
@@ -79,7 +66,7 @@ html
                       - unit = get_unit(unit_num)
                       h3
                         a(href="#{unit.url}") #{unit.title}
-                        span(style="font-size:50%;color:grey;")  (#{unit_num})
+                        //- span(style="font-size:50%;color:grey;")  (#{unit_num})
                       if unit.tags && unit.tags.length && unit.tags.length > 0
                         p(style="text-align:right;margin:0;padding:0;margin-top:-2.5em;") 
                           each t in unit.tags
