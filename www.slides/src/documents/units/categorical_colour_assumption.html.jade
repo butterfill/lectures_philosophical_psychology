@@ -24,146 +24,53 @@ include ../../../fragments/unit_mixins
     %
     Claims such as this are sometimes treated as common ground in controversies about colour.
   .handout ‘If someone with normal color vision looks at a tomato in good light, the tomato will appear to have a distinctive property—a property that strawberries and cherries also appear to have, and which we call ‘red’ in English’ \citep[p.\ 4]{byrne:2003_color}
-  p: :t
+  p: span: :t
     ‘If someone with normal color vision looks at a tomato in good light, 
     the tomato will appear to have a distinctive property—a property that 
     strawberries and cherries also appear to have, and which we call ‘red’ in 
     English’ 
-  p.right.grey-text (Byrne & Hilbert 2003, p. 4)
+  p.right.grey-text: span (Byrne & Hilbert 2003, p. 4)
   .slide
-    p.em-above: :t
-      It is a ‘subject-determining platitude’
-      that ‘“red” denotes the property of an object putatively presented in visual experience 
-      when that object looks red’, and likewise for other colour terms.
-    p.right.grey-text  (Jackson 1996, pp. 199–200)
+    p.em-above
+      span It is a ‘subject-determining platitude’
+      span that 
+      span.noblur ‘“red” denotes the property of an object putatively presented in visual experience 
+      span.noblur when that object looks red’
+      span , and likewise for other colour terms.
+    p.right.grey-text: span (Jackson 1996, pp. 199–200)
     .handout: :t
       It is a ‘subject-determining platitude’
       that ‘“red” denotes the property of an object putatively presented in visual experience 
       when that object looks red’, and likewise for other colour terms 
       \citep[pp.\ 199--200]{Jackson:1996zz}.
-
+  .slide
+    +blur('span:not(.noblur)')
+    .notes: :t
+      Is this true?
+      Does ‘“red” denote the property of an object putatively presented in visual experience 
+      when that object looks red’?
 
   
     
 +slide_middle
   .handout.show
-    p Simplifying assumption:
-    p There is a property denoted by ‘red’ which some objects have;  call this property   
-      span.italic red
-      span .
+    p Question:
+    p Does ‘“red” denote the property of an object putatively presented in visual experience when that object looks red’?
   .slide
     .handout.show
-      p.em-above Premise 1:
-      p If the property 
+      p.em-above Simplifying assumptions:
+      p 1. There is a property denoted by ‘red’ which some objects have;  call this property   
+        span.italic red
+        span .
+  .slide
+    .handout.show
+      p 2. If the property 
         span.italic red
         span  (say) is presented in visual experience, then things which have this property  thereby differ in  visual appearance from things which do not have it.
   .slide
     .handout.show
-      p.em-above Question:
+      p.em-above Question (reformulated):
       p Do red things differ in visual appearance from non-red things?
 
 
 //- INSERT SOME BACKGROUND HERE ON CATEGORICAL PERCEPTION.  USE CHAPTER FROM DEVELOPING MIND.
-
-      
-+slide({bkg:'colour_space1.jpg'})
-  .notes: :t
-    Do things which have the property denoted by ‘red’ thereby appear to be different from things which lack it?
-
-
-+slide({bkg:'colour_space2.jpg'})
-  .notes: :t
-    Do things which have the property denoted by ‘red’ thereby appear to be different from things which lack it?
-    An immediate problem arises from the fact that pairs of things  just one of which is \emph{red} (i.e. has the property denoted by ‘red’) differ not only in this way but also in which particular shade of colour they have.
-    How can we tell whether differences in visual appearance are due in part to differences in being \emph{red} rather than entirely due to differences in shade?
-
-+slide({bkg:'categorical_colour_difference1.jpg'})
-  .notes: :t
-    The problem can be overcome by introducing a third thing.  Consider constructing a sequence of three things which are indiscriminable except by colour.  Let the middle thing be \emph{red}, and let the first thing not be \emph{red}.  Now consider the difference between the particular hues of these two things.  Ensure the difference is small, but large enough that any two things which differ in hue by this amount are readily discriminable.  
-    Finally, let the third thing be \emph{red}, and let the difference with respect to hue between the third and second thing be the same as the difference between the first and second thing.  (Research on colour perception shows that such differences can be equated, and that sequences of this type exist; see 
-    \citealp{kuehni:2001_color} on perceptual uniformity and \citealp{witzel:2013_categorical} on categories.)  
-    Consider the visual appearances of these three things.
-+slide({bkg:'categorical_colour_difference2.jpg'})
-+slide({bkg:'categorical_colour_difference3.jpg'})
-  .notes: :t
-    If, as the subject-determining platitude implies, humans visually experience properties like \emph{red}, then (given the premise) the first and second thing should differ in visual appearance more than the second and third thing.
-  .slide
-    p(style="margin-top:350px;") Methods
-    .notes: :t
-      How can we test whether such differences in visual appearance  exist?  
-      Several methods have recently been used \citep{witzel2014category,webster:2012_color,davidoff:2012_perceptual}. %(*cite thesis?).  
-  .slide
-    p.indent.hem-around 1. Which outer thing is most similar to the middle one?
-    .notes: :t
-      In one people are asked to judge, for each sequence, which of the two outer things (i.e. the first and third thing) is more similar to the middle thing (i.e. the second thing).  
-      Given that visual appearances typically influence judgements of similarity,
-      if things which differ in whether they are \emph{red} thereby differ in visual appearance, we would expect people to judge that the outer thing which is 
-      \emph{red} is more similar to the middle thing than the other outer thing.  
-    .notes: :t
-      \citep{kay_what_1984}: they did find an effect.
-      ‘the English speaker judges chip B to be more similar to A than to C because the blue-green boundary passes between B and C, even though B is perceptually closer to C than to A.’ (p. 77)
-      However they attribute this to the ‘naming strategy’ (given a difficult decision, fall back
-      on differences in what is named).  
-      ‘According to the name strategy hypothesis, the speaker who is confronted with a difficult task of classificatory judgment may use the lexical classification of the judged objects as if it were correlated with the required dimension of judgment even when it is not, so long as the structure of the task does not block this possibility’ (p. 75).
-      They consider a modification to block use of the naming strategy,
-      namely by showing subjects only two of the three stimuli at any one time (Experiment 2).
-      (‘The three chips were arranged in a container with a sliding top that permitted the subject to see alternately either of two pairs of the three chips, but never all three at once. For example, in triad (A, B, C) the pairs alternately made visible were (A, B) and (B, C).’)
-      When they do this, categorical colour properties have no effects on perceptual judgements of 
-      similarlity.
-      ‘Subjective similarity judgments follow discrimination distance and reflect no influence from lexical category boundaries’ (p. 73).
-    .notes: :t
-      According to more recent research discussed in \citep{witzel2014category}
-      (a published report is not yet available)
-      In fact they do not.
-      That is, whether things are \emph{red} appears to make no difference to judgements of similarity (\citealp{witzel2014category}; actually these researchers did not test ‘red’, but they did test the German terms ‘Rosa’, ‘Braun’, ‘Orange’, ‘Gelb’, ‘Gruen’, ‘Blau’, and ‘Lila’.)
-      This indicates that things which are \emph{red} do not thereby differ in visual appearance from things that are not \emph{red}.
-    .notes: :t
-      From correspondence:
-      ‘that experiment was originally reported in the same paper as the "Categorical facilitation" one, but it was too long. Up to now it is only in my thesis and there is the abstract, which I paste you below. Note, however, that we found slight traces of perceptual magnet effects around prototypes when reanalysing the data later on, which is reflected in the book chapter, but not the older abstract. The found effects are quite systematic (happening at almost all prototypes), but also extremely weak, and there were literally no effects at boundaries.’
-    .notes: :t
-      How can we defend the view that red things differ in visual appearance from non-red things?
-      Maybe there are differences in visual appearance that we are not aware of?
-      Maybe the judgements of similarlity are not sensitive enough?
-      (But note that \citet{witzel2014category} did find evidence for the effect of prototypes on
-      judgements of similarity, so the method seems good: to test this, the three colour samples
-      were arranged so that the prototype was positioned between a middle and an outer sample.
-      ‘Colours close to the prototypes were judged to be more similar than they actually were in terms of pure discrimination’.)
-  .slide
-    p.indent.hem-around 2. Adjust the middle object so that it appears midway between the two outer objects.
-    .notes: :t
-      Another method involves asking people to adjust the colour of the middle object so that it appears to be mid-way between the two outer objects.
-      What people  are in fact adjusting here is the hue of the object, but no mention is made of hue: their instructions are to match differences in appearance.
-      If things which differ in whether they are \emph{red} thereby differ in visual appearance, we would expect people to compensate for this in adjusting hue.
-      In fact they do not \citep{witzel2014category}.
-      %
-      %*NB: second approach (and third approach = perceptual grouping) matters because you might say that the things do appear differently, just in a way that we are unaware of.  Unawareness of the difference less plausibly affects grouping and hue matching; after all, if it doesn't affect these what does the difference in appearance affect?
-    .notes: :t
-      How can we defend the view that red things differ in visual appearance from non-red things?
-      You could insist that the difference in appearance is not manifest in this particular case.
-      Perhaps, for example, because the slider people used to ajust the middle sample changed 
-      its hue, subjects attended to hue and ignored other features of the colour.
-      (There’s no evidence for this speculation and subjects were not asked about the hue.)
-    .notes: :t
-      Are there other objections?
-    .notes: :t
-      Could you object that the difference in appearance between red and non-red things
-      is already built into the metric used for the colour space?  In that case you would not
-      expect additional effects of categorical colour property on appearance. These effects would be
-      already taken into account in the measurements of similarity.
-    .notes: :t
-      To answer this objection we need to note that there are multiple ways of 
-      measuring perceptual similarity.
-      In this case, the researchers used JNDs.
-      They have previously shown that category boundaries (as specified by an individual 
-      subject’s colour words) do not affect JNDs.  That is, JNDs are not generally smaller at the
-      category boundaries \citep{witzel:2013_categorical}.
-      But when you take pairs of colours that are, say, 3 JNDs apart, then whether or not 
-      the pair straddles a category boundary will affect speed and accuracy of discimination
-      \citep{witzel:2014_categorical}.
-      So we can be confident that using JNDs to measure perceptual similarity does not
-      take into account differences in the ways categorical colour propreties appear.
-  .slide
-    p.indent.hem-around 3. Perceptual grouping ...
-      
-
-
