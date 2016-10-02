@@ -54,6 +54,37 @@ mixin theMethodsSlide()
 
 
 +theMethodsSlide
+  .handout: :t
+    \begin{center}
+    \includegraphics[scale=0.25]{img/categorical_colour_difference3.jpg}
+    \end{center}
+  
+  .handout: :t
+    Methods:
+    \begin{enumerate}
+    
+    \item People are asked to judge, for each sequence, which of the two outer
+    things is more similar to the middle thing. Given that visual appearances typically influence
+    judgements of similarity, if things which differ in whether they are
+    \emph{red} thereby differ in visual appearance, we would expect people to
+    judge that the outer thing which is \emph{red} is more similar to the
+    middle thing than the other outer thing
+    \citep{kay_what_1984,witzel2014category}.
+    
+    \item People are asked to the middle object so that it appears to be mid-way
+    between the two outer objects. (What people are in fact adjusting here is
+    the hue of the object, but no mention is made of hue: their instructions
+    are to match differences in appearance.) If things which differ in whether
+    they are \emph{red} thereby differ in visual appearance, we would expect
+    people to compensate for this in adjusting hue. In fact they do not
+    \citep{witzel2014category}.
+    
+    \item Perceptual grouping: people make visual judgements about orientation which
+    reveal how things differing in colour are perceptually grouped.  If things which differ in whether
+    they are \emph{red} thereby differ in visual appearance, we would expect
+    this to affect how things are perceptually grouped \citet{webster:2012_color}.
+    
+    \end{enumerate}
   +hide('.methods .title, .methods .first, .methods .second, .methods .third', 0)
   .notes: :t
     If, as the subject-determining platitude implies, humans visually experience properties like \emph{red}, then (given the premise) the first and second thing should differ in visual appearance more than the second and third thing.
@@ -172,13 +203,13 @@ mixin theMethodsSlide()
           p.center or merely to 
           p.center the ‘Name Strategy’?
         .notes.handout: :t
-          \citep[p.~72]{kay_what_1984}: ‘We propose that faced with this situation the 
+          The ‘name strategy’: ‘We propose that faced with this situation the 
           English-speaking subject reasons
           unconsciously as follows: “It's hard to decide here which one looks the most
           different. Are there any other kinds of clues I might use? Aha! A and B are
           both CALLED green while C is CALLED blue. That solves my problem; I'll pick C
           as most different.” ... this cognitive strategy ... we will call the
-          “name strategy”’
+          “name strategy”’ \citep[p.~72]{kay_what_1984}.
         .notes: :t
           ‘According to the name strategy hypothesis, the speaker who is
           confronted with a difficult task of classificatory judgment may use the lexical
@@ -218,9 +249,9 @@ mixin theMethodsSlide()
     Bottom left: when discriminability (JND distance) is equated, 
     subjects show no significant effect of colour category (although there is a trend).
   .notes.handout: :t
-    Conclusion: \citep[p.~73]{kay_what_1984}: ‘Subjective similarity judgments follow
+    ‘Subjective similarity judgments follow
     discrimination distance and reflect no influence from lexical category
-    boundaries. ’
+    boundaries.’ \citep[p.~73]{kay_what_1984}
   .slide
     +blur('img.bkg, .source','7px',400)
     +reset-escape-inner
