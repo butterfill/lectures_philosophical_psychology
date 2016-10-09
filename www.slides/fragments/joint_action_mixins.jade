@@ -87,6 +87,8 @@ mixin slide_interconnected_parallel(p)
 
 
 
+
+
 mixin diagram_action_goal(p)
   if typeof(p) === 'undefined'
     - p = {}
@@ -161,7 +163,7 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') drop
+                    font(color='#ffffff') open
               text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
         g.action.throw
           use( xlink:href='#action-ellipse', x='82', y='242')
@@ -172,7 +174,7 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') throw
+                    font(color='#ffffff') pour
               text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
         g.action.discard
           use( xlink:href='#action-ellipse', x='112', y='312')
@@ -183,7 +185,7 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') discard
+                    font(color='#ffffff') tilt
               text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
       g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
         ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
@@ -192,7 +194,7 @@ mixin diagram_action_goal(p)
             foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
               div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                  font(color='#ffffff') amuse
+                  font(color='#ffffff') soak
             text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
       g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
         ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
@@ -223,7 +225,7 @@ mixin diagram_action_goal(p)
             foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
               div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                  font(color='#ffffff') block
+                  font(color='#ffffff') fill
             text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
       g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
         g.the-box
@@ -231,11 +233,12 @@ mixin diagram_action_goal(p)
           g(transform='translate(252,262)rotate(-15,94.5,30)')
             switch
               foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
-                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 189px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
-                    | shared intention
+                    | intention
+                    span.mr.remove-me(class='#{p.show.indexOf("mr")>-1 ? "" : "hide"}').noinvert  or motor representation
                     br
-                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or i.a.s.m.r.
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or ???
         g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
           path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
           path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
@@ -254,9 +257,9 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') represents
+                    font(color='#ffffff') specifies
               text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
-
+  
 
 //- To do: nearly duplicates diagram_action_goal!
 

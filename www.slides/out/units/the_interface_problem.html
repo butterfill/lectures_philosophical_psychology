@@ -1,0 +1,401 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>The Interface Problem | Philosophical Psychology</title>
+    <meta name="description" content="For a single action, which outcomes it is directed to may be multiply
+determined by an intention and, seemingly independently, by a motor
+representation. Unless such intentions and motor representations are to pull
+an agent in incompatible directions, which would typically impair action
+execution, there are requirements concerning how the outcomes they represent
+must be related to each other. This is the interface problem: explain how any
+such requirements could be non-accidentally met."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="the_interface_problem" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">The Interface Problem</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="clear"></div>
+    <div class="words"> 
+      <p class="center">The Interface Problem<span class="step2 hide">:</span></p>
+      <p class="center step2 hide"> <span class="qq">How are non-accidental matches possible?</span></p>
+    </div>
+    <div class="container_12"></div>
+    <div class="slide">
+      <div class="grid_6 words left-half">
+        <div style="padding-right:1em;">
+          <p class="step3 hide">Two  outcomes, A and B, match in a particular context just if, in that context, 
+either the occurrence of A would normally constitute or cause, at least 
+partially, the occurrence of B or vice versa.
+          </p>
+          <p class="em-above">Some actions involve both intention and motor representation</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half hide">
+      <div style="padding-left:1em;">
+        <div class="slide">
+          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <p>Motor representations:</p>
+          <p class="em-above">i. represent outcomes;</p>
+          <p class="em-above">ii. ground the purposiveness of some actions<span class="step4 hide">; and</span></p>
+          <p class="em-above step4 hide">iii. <span class="format">differ in format</span><span> from intentions.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+    </div>
+    <div class="slide">
+      <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div data-what=".qq" data-cls="transition-04" class="dv dv-addclass"></div>
+      <div data-what=".qq" data-cls="bkg-pink" class="dv dv-addclass"></div>
+    </div>
+    <div class="slide">
+      <div data-what=".step4" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div data-what=".format" data-cls="transition-04" class="dv dv-addclass"></div>
+      <div data-what=".format" data-cls="bkg-pink" class="dv dv-addclass"></div>
+      <div class="notes">I want to offer a conjecture about how the interface problem is solved ...
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p><span>‘both mundane cases of  </span><span class="action-slips">action slips</span><span> and pathological conditions, such as </span><span class="apraxia">apraxia</span><span> or </span><span class="ahs">anarchic hand syndrome (AHS)</span><span>, illustrate the exis- tence of</span><span>an interface problem.’</span></p>
+          <p class="grey-text right">Mylopoulos and Pacherie (2016, p. 7)</p>
+          <div class="slide">
+            <div data-what=".action-slips" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".action-slips" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Having an intention is neither necessary nor sufficient.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".action-slips" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".apraxia" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".apraxia" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Jeannerod 2006, p. 12:
+‘the term apraxia was coined by Liepmann to account for higher order motor
+disorders observed in patients who, in spite of having no problem in executing
+simple actions (e.g. grasping an object), fail in actions involving more
+complex, and perhaps more conceptual, representations.’
+            </div>
+            <div class="notes">Can people with ideomotor apraxia form intentions?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".apraxia" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".ahs" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".ahs" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">\citep[p.~7]{mylopoulos:2016_intentions}: ‘Typically the result of lesion
+to SMA or anterior corpus callosum, AHS is a condition in which patients
+perform complex, goal-oriented movements with their cross-lesional limb
+that they feel unable to directly inhibit or control. The limb is often
+disproportionately reactive to environ- mental stimuli, carrying out
+habitual behaviors that are inappropriate to the context, e.g., grabbing
+food from a dinner companion’s plate (Della Sala 2005, 606). It is clear
+from many of the behaviors observed in these cases that the anarchic limb
+fails to Bhook up^ with the agent’s intentions. ’
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/intention_and_motor_representation/Slide49.jpg" class="bkg"/>
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">There is a way to make the problem of comparison between representational formats trivial
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/intention_and_motor_representation/Slide50.jpg" class="bkg"/>
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Suppose one representation involves a demonstrative that refers by
+deferring to another representation
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/intention_and_motor_representation/Slide51.jpg" class="bkg"/>
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Then the comparison doesn’t require translation between formats after all.
+Maybe the same can be true for intentions and motor representations.
+Maybe intentions can involve demonstrative concepts which refer to actions by deferring to motor representations?
+          </div>
+          <div class="notes">[*cut:
+Set that aside, suppose it can be solved --- essentially because MR must give rise to experience of action.
+On this view, it is demonstrative deference to motor representation that connects intentions to bodily movements.
+Only by recognising how intentions interlock with motor representations can we hope to understand how our intentions ever make a difference to the world around us. 
+On this view experience of action plays a novel role. 
+Action experiences in which motor representations feature, such as those associated with motor imagery and those associated with really acting, are arguably necessary for there to be concepts which are constituents of intentions and refer to actions by deferring to motor representations. 
+But if, as we conjecture, such deference is necessary for intentions to properly and reliably result in bodily movements, it may turn out that intentionally acting in the world de- pends on action experiences featuring motor representation. 
+Much as on some views thought about objects depends on perceptual experience (e.g. Campbell 2002), so also intending actions may depend on motor experience.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/intention_and_motor_representation/Slide52.jpg" class="bkg"/>
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">But we can’t point to motor representations like we can point to maps!
+          </div>
+          <div class="notes">What we need for reference by deference to a motor representation is
+experience of motor action.
+          </div>
+          <div class="notes">And if you think about motor imagination it seems quite plausible that we
+do have such experiences.
+          </div>
+          <div class="notes">So here’s the thought:
+There are no direct inferential connections between intentions and motor
+representations. Harmony is ensured by the fact that where an intention
+involves a bodily movement, either executing that intention involves
+forming a further intention or else the intention involves a demonstrative
+that refers to an action by deferring to a motor representation.
+          </div>
+          <div class="notes">So what connects intentions to motor representations---what connects the reflective to the pre-reflective---is the use of demonstratives, and this depends on experience of motor action.
+          </div>
+          <div class="notes">Much as on some views all thought about objects ultimately depends on
+perceptual experience (e.g. Campbell 2002), so also intending bodily
+actions may ultimately depend on motor experience. Experience anchors the
+reflective in the pre-reflective.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">demonstrative reference and experience</p>
+          <div class="notes">Our view requires that motor representations enable consciousness of the
+action referred to.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">But do any intentions ever defer to motor representations?</p>
+          <div class="notes">Our example: ‘consider purely mental pantomime—that is, phenomenologically
+action-like imagination. One might use this kind of imagination to explore
+different ways of completing a task and then, having hit on a good
+solution, think to oneself ‘Do that!’. It seems possible that in some such
+cases the demonstrative refers by deferring to a motor representation of
+action involved in imagining acting (135)’
+          </div>
+          <div class="notes">Mylopoulos and Pacherie reply (p. 11): ‘
+The obvious problem here is that we need not suppose that the intention
+refers to the relevant action by way of deferring to a motor
+representation. What seems more likely is that it does so by deferring to
+the mental image of the relevant action. ’
+          </div>
+          <div class="notes">But what is a mental image of an action? Maybe it’s nothing other than the
+experience that the motor representation gives rise to.  If so, there is no 
+real disagreement here.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="clear"></div>
+    <div class="words"> 
+      <p class="center">The Interface Problem<span>:</span></p>
+      <p class="center"> <span class="qq">How are non-accidental matches possible?</span></p>
+    </div>
+    <div class="container_12"></div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p>Two  outcomes, A and B, match in a particular context just if, in that context, 
+either the occurrence of A would normally constitute or cause, at least 
+partially, the occurrence of B or vice versa.
+        </p>
+        <p class="em-above">Some actions involve both intention and motor representation</p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p>Motor representations:</p>
+        <p class="em-above">i. represent outcomes;</p>
+        <p class="em-above">ii. ground the purposiveness of some actions<span>; and</span></p>
+        <p class="em-above">iii. <span class="format">differ in format</span><span> from intentions.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

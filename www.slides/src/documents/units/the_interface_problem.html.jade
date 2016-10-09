@@ -1,0 +1,189 @@
+---cson
+layout: 'deck_unit'
+title: "The Interface Problem"
+tags: []
+description: """
+  For a single action, which outcomes it is directed to may be multiply
+  determined by an intention and, seemingly independently, by a motor
+  representation. Unless such intentions and motor representations are to pull
+  an agent in incompatible directions, which would typically impair action
+  execution, there are requirements concerning how the outcomes they represent
+  must be related to each other. This is the interface problem: explain how any
+  such requirements could be non-accidentally met.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide_rh_white({step:true})
+  +run_across 
+    p.center The Interface Problem
+      span.step2.hide :
+    p.center.step2.hide 
+      span.qq How are non-accidental matches possible?
+  .slide
+    +left_half
+      p.step3.hide: :t
+        Two  outcomes, A and B, match in a particular context just if, in that context, 
+        either the occurrence of A would normally constitute or cause, at least 
+        partially, the occurrence of B or vice versa. 
+      p.em-above Some actions involve both intention and motor representation
+  +right_half({step:true})
+    p Motor representations:
+    p.em-above i. represent outcomes;
+    p.em-above ii. ground the purposiveness of some actions
+      span.step4.hide ; and
+    p.em-above.step4.hide iii. 
+      span.format differ in format
+      span  from intentions.
+  .slide
+    +show('.step3')
+  .slide
+    +show('.step2')
+    +highlight('.qq')
+  .slide
+    +show('.step4')
+    +highlight('.format')
+    .notes: :t
+      I want to offer a conjecture about how the interface problem is solved ...
+    
+
++slide_middle
+  p
+    span ‘both mundane cases of  
+    span.action-slips action slips
+    span  and pathological conditions, such as 
+    span.apraxia apraxia
+    span  or 
+    span.ahs anarchic hand syndrome (AHS)
+    span , illustrate the exis- tence of
+    span an interface problem.’
+  p.grey-text.right Mylopoulos and Pacherie (2016, p. 7)
+  .slide
+    +invert('.action-slips')
+    .notes: :t
+      Having an intention is neither necessary nor sufficient.
+  .slide
+    +uninvert('.action-slips')
+    +invert('.apraxia')
+    .notes: :t
+      Jeannerod 2006, p. 12:
+      ‘the term apraxia was coined by Liepmann to account for higher order motor
+      disorders observed in patients who, in spite of having no problem in executing
+      simple actions (e.g. grasping an object), fail in actions involving more
+      complex, and perhaps more conceptual, representations.’
+    .notes: :t
+      Can people with ideomotor apraxia form intentions?
+  .slide
+    +uninvert('.apraxia')
+    +invert('.ahs')
+    .notes: :t
+      \citep[p.~7]{mylopoulos:2016_intentions}: ‘Typically the result of lesion
+      to SMA or anterior corpus callosum, AHS is a condition in which patients
+      perform complex, goal-oriented movements with their cross-lesional limb
+      that they feel unable to directly inhibit or control. The limb is often
+      disproportionately reactive to environ- mental stimuli, carrying out
+      habitual behaviors that are inappropriate to the context, e.g., grabbing
+      food from a dinner companion’s plate (Della Sala 2005, 606). It is clear
+      from many of the behaviors observed in these cases that the anarchic limb
+      fails to Bhook up^ with the agent’s intentions. ’
+    
++slide_middle({bkg:'intention_and_motor_representation/Slide49.jpg'})
+  .notes: :t
+    There is a way to make the problem of comparison between representational formats trivial
+    
+
++slide_middle({bkg:'intention_and_motor_representation/Slide50.jpg'})
+  .notes: :t
+    Suppose one representation involves a demonstrative that refers by
+    deferring to another representation
+    
+    
++slide_middle({bkg:'intention_and_motor_representation/Slide51.jpg'})
+  .notes: :t
+    Then the comparison doesn’t require translation between formats after all.
+    Maybe the same can be true for intentions and motor representations.
+    Maybe intentions can involve demonstrative concepts which refer to actions by deferring to motor representations?
+  .notes: :t
+    [*cut:
+    Set that aside, suppose it can be solved --- essentially because MR must give rise to experience of action.
+    On this view, it is demonstrative deference to motor representation that connects intentions to bodily movements.
+    Only by recognising how intentions interlock with motor representations can we hope to understand how our intentions ever make a difference to the world around us. 
+    On this view experience of action plays a novel role. 
+    Action experiences in which motor representations feature, such as those associated with motor imagery and those associated with really acting, are arguably necessary for there to be concepts which are constituents of intentions and refer to actions by deferring to motor representations. 
+    But if, as we conjecture, such deference is necessary for intentions to properly and reliably result in bodily movements, it may turn out that intentionally acting in the world de- pends on action experiences featuring motor representation. 
+    Much as on some views thought about objects depends on perceptual experience (e.g. Campbell 2002), so also intending actions may depend on motor experience.
+
+    
++slide_middle({bkg:'intention_and_motor_representation/Slide52.jpg'})
+  .notes: :t
+    But we can’t point to motor representations like we can point to maps!
+  .notes: :t
+    What we need for reference by deference to a motor representation is
+    experience of motor action.
+  .notes: :t
+    And if you think about motor imagination it seems quite plausible that we
+    do have such experiences.
+  .notes: :t
+    So here’s the thought:
+    There are no direct inferential connections between intentions and motor
+    representations. Harmony is ensured by the fact that where an intention
+    involves a bodily movement, either executing that intention involves
+    forming a further intention or else the intention involves a demonstrative
+    that refers to an action by deferring to a motor representation.
+  .notes: :t
+    So what connects intentions to motor representations---what connects the reflective to the pre-reflective---is the use of demonstratives, and this depends on experience of motor action.
+  .notes: :t
+    Much as on some views all thought about objects ultimately depends on
+    perceptual experience (e.g. Campbell 2002), so also intending bodily
+    actions may ultimately depend on motor experience. Experience anchors the
+    reflective in the pre-reflective.
+
++slide_middle
+  p.center demonstrative reference and experience
+  .notes: :t
+    Our view requires that motor representations enable consciousness of the
+    action referred to.
+
++slide_middle
+  p.center But do any intentions ever defer to motor representations?
+  .notes: :t
+    Our example: ‘consider purely mental pantomime—that is, phenomenologically
+    action-like imagination. One might use this kind of imagination to explore
+    different ways of completing a task and then, having hit on a good
+    solution, think to oneself ‘Do that!’. It seems possible that in some such
+    cases the demonstrative refers by deferring to a motor representation of
+    action involved in imagining acting (135)’
+  .notes: :t
+    Mylopoulos and Pacherie reply (p. 11): ‘
+    The obvious problem here is that we need not suppose that the intention
+    refers to the relevant action by way of deferring to a motor
+    representation. What seems more likely is that it does so by deferring to
+    the mental image of the relevant action. ’
+  .notes: :t
+    But what is a mental image of an action? Maybe it’s nothing other than the
+    experience that the motor representation gives rise to.  If so, there is no 
+    real disagreement here.
+
++slide_rh_white({step:false})
+  +run_across 
+    p.center The Interface Problem
+      span :
+    p.center 
+      span.qq How are non-accidental matches possible?
+  +left_half
+    p: :t
+      Two  outcomes, A and B, match in a particular context just if, in that context, 
+      either the occurrence of A would normally constitute or cause, at least 
+      partially, the occurrence of B or vice versa. 
+    p.em-above Some actions involve both intention and motor representation
+  +right_half({step:false})
+    p Motor representations:
+    p.em-above i. represent outcomes;
+    p.em-above ii. ground the purposiveness of some actions
+      span ; and
+    p.em-above iii. 
+      span.format differ in format
+      span  from intentions.
+  
