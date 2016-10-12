@@ -17,8 +17,87 @@ include ../../../fragments/joint_action_mixins
 +slide_middle
   p.center intention != goal
   
++slide({photo:'davidson.gif'})
+  p: :t
+    The expression ‘the intention with which James went to church’ ... cannot be taken to refer to a ...
+    state ....
+  p: :t
+    Its function ... is to generate new descriptions of actions in terms of their reasons;
+  p: :t
+    thus ‘James went to church with the intention of pleasing his mother’ yields a new, and fuller,
+    description of the action described in ‘James went to church’.’
+  p.grey-text.right (Davidson 1963: 690)
+  .slide.em-above
+    p Desire: to please my mother
+    p Belief: I can  please my mother by going to church.
+    p Action: Go to church.
+
++slide_middle
+  p.center intention = action-casuing belief-desire pair?
+  .slide
+    p.center No because squirrel house!
   
-  
++slide_middle
+  p.center What are intentions for?
+
++slide({bkg:'zhang_rosenbaum_2007.png'})  
+  p.source Zhang & Rosenbaum, 2008
+
++slide_rh_white({step:true})
+  +left_half
+    p.em-around desire: to earn more money
+    p.em-around belief: I can earn more money by getting a new job sometime.
+    p.em-around judgement: My getting a new job sometime would be desirable.
+    .step2.em-above.hide
+      p.em-around.intention intention: that I get a new job sometime
+  +right_half({step:true})
+    p.em-around desire: to take it easy today
+    p.em-around belief:  I can take it easy today by not getting a new job today.
+    p.em-around judgement: My not getting a new job today would be desirable.
+    .step2.em-above.hide
+      p.em-around.intention intention: that I do not get a new job today
+  .slide
+    +show('.step2')
+  .slide
+    +blur('p:not(.agglomeration)')
+    +reset-escape-inner
+      +_slide_middle_inner
+        p.center.agglomeration.huge-glow agglomeration
+  .slide
+    +unblur('.intention')
+    .notes: :t
+      nothing wrong with desiring these things ... is something wrong with intending them
+      Agglomeration is important because it distinguishes intention from desire, and from strongest desire.
+
++slide_middle
+  p.center What are intentions for?
+  .notes: :t
+    So what are intentions for?
+  .notes: :t
+    I’m going to assume that intention is something over and above basic beliefs and desires; that an
+    intention is not, for instance, merely a strongest desire.
+  .notes: :t
+    There is a temptation to assume that intention is involved in every case of purposive action.
+    But it’s hard to see what the argument for this could be.
+    In many cases it seems that beliefs, desires and motor representations are all that is needed to explain purposive action. 
+    You offer me a biscuit.  I want one, and I believe I can get one by reaching out for it.  So I do reach for it.  As far as I can see, there’s no need to suppose that, in addition to the belief and desire, it must be the case that I also intend to take a biscuit.  
+    (At least not unless we take ‘intention’ to mean ‘strongest desire’, which it does not.)  
+    Maybe I do intend this.  
+    But it’s possible for an agent to take and eat a biscuit, and to do so purposively, without having any intentions at all.  
+    Beliefs desires and motor representations are sufficient.
+  .notes: :t
+    So (again), what are intentions for?
+    The answer has something to do with planning.  
+    But here we must be careful because not all planning involves intending.
+    
++slide({photo:'bratman.png'})
+  p ‘why should rational agents like us have the capacity to have both 
+  p ordinary intentions (subject to demands for consistency and agglomeration) 
+  p and 
+  p guiding desires (which are not subject to these demands)?’
+  p.right.grey-text Bratman 1987, pp. 137–8
+    
+            
 //- THIS IS WHAT THE SECTION ON INTENTION BUILDS UP TO:
 +slide
   p.question.hide  What is the relation between a purposive action and the outcome or outcomes to which it is directed?
