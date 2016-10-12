@@ -24,16 +24,26 @@ include ../../../fragments/joint_action_mixins
   .slide
     +show('img.bkg')
     .notes: :t
-      Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the shell) into a bowl ready for beating into a carbonara sauce.  
-      Even for such mundane, routine actions, the constraints on adequate performance can vary significantly depending on subtle variations in context. For example, the position of a hot pan may require altering the trajectory along which the egg is transported, or time pressures may mean that the action must be performed unusually swiftly on this occasion.
-      Further, many of the constraints on performance involve relations between actions occurring at different times.
-      To illustrate, how tightly you need to grip the egg now depends, among other things, on the forces to which you will subject the egg in lifting it later.
-      It turns out that people reliably grip objects such as eggs just tightly enough across a range of conditions in which the optimal tightness of grip varies.
-      This indicates (along with much other evidence) that information about the cook’s anticipated future hand and arm movements appropriately influences how tightly she initially grips the egg (compare \citealp{kawato:1999_internal}).
+      Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the
+      shell) into a bowl ready for beating into a carbonara sauce.
+      Even for such mundane, routine actions, the constraints on adequate performance can vary
+      significantly depending on subtle variations in context. For example, the position of a hot pan
+      may require altering the trajectory along which the egg is transported, or time pressures may mean
+      that the action must be performed unusually swiftly on this occasion.
+      Further, many of the constraints on performance involve relations between actions occurring at
+      different times.
+      To illustrate, how tightly you need to grip the egg now depends, among other things, on the forces
+      to which you will subject the egg in lifting it later.
+      It turns out that people reliably grip objects such as eggs just tightly enough across a range of
+      conditions in which the optimal tightness of grip varies.
+      This indicates (along with much other evidence) that information about the cook’s anticipated
+      future hand and arm movements appropriately influences how tightly she initially grips the egg
+      (compare \citealp{kawato:1999_internal}).
       This anticipatory control of grasp, 
       like several other features of action performance (\citealp[see][chapter 1]{rosenbaum:2010_human} for more examples),
       is not plausibly a consequence of mindless physiology, nor of intention and practical reasoning.
-      This is one reason for postulating motor representations, which characteristically play a role in coordinating sequences of very small scale actions such as grasping an egg in order to lift it.
+      This is one reason for postulating motor representations, which characteristically play a role in
+      coordinating sequences of very small scale actions such as grasping an egg in order to lift it.
 
     .notes: :t
       The scale of an actual action can be defined in terms of means-end relations.  
@@ -75,7 +85,113 @@ include ../../../fragments/joint_action_mixins
     .notes: :t
       But how do we know that motor representations carry information about such outcomes?
       I’m glad you asked, let me explain ...
-      
+
+
++slide_middle
+  p.center Aside: The Double Life of Motor Representations
+  .notes: :t
+    If you were to observe someone phi-ing,
+    then motor representations would occur in you
+    much like those that would occur in you if it were you, not her, who was phi-ing.
+  .notes: :t
+    This will be a focus of interest in a later session.
+    For now it’s just a handy fact that simplifies testing.
+
+
++slide_middle
+  p.center first illustration: same kinematics, different goal
+
++slide_middle
+  p.center glossary
+  p.em-around TMS
+  p.em-around MEP 
+
+section.slide
+  +_slide_middle_inner
+    +img('rizzolatti_2006_figure1_1.png')
+  +reset
+    +_slide_inner
+      p.source Rizzolatti and Sinigaglia, 2006 figure 1.1
+    .notes: :t
+      ‘The posterior section of the frontal lobe contains the motor areas,’ (p.~4)
+      Now you know as much about the brain as I do.
+    .notes: :t
+      Mention primary and supplementary motor areas : we use the term ‘motor’ loosely
+      (compare ‘visual’, which also has narrower and broader uses in 
+      neuroscience).
+
+section.slide
+  +_slide_middle_inner
+    +img('villiger_2010_fig1ab.png')
+    .step2.hide
+      +img('villiger_2010_fig1cd.png')
+  +reset
+    +_slide_inner
+      p.source Villiger et al, 2010 figure 1AB
+  .notes: :t
+    TMS to measure MEP
+  .slide
+    +show('.step2')
+    .notes: :t
+      They also had an occluded end version ...
+
++slide({bkg:'villiger_2010_fig2.png'})
+  +clip('img.bkg','rect(0px, 400px, 999px,0px)')
+  p.source Villiger et al, 2010 figure 2
+  .notes: :t
+    Incidentally, ‘the observed direction of the modulation was not consistent with previous TMS
+    literature. Specifically, MEP amplitudes were significantly lower in the Object-Present than in the
+    Object-Absent conditions (Fig. 2), suggesting that there was an inhibitory effect of object
+    manipulation on the activity of M1 during action observation.’
+  .slide
+    +clip('img.bkg','auto')
+    
+
++slide_middle
+  p.center.step1 first illustration: same kinematics, different goal
+  .slide
+    +blur('.step1')
+    p.center.em-above second illustration: different kinematics, same goal
+
++slide({bkg:'umilta_2008_figure1.png'})
+  p.source Umiltà et al, 2008 figure 1
+  .notes: :t
+    Umiltà et al, 2008 : single cell recordings in monkeys
+  .notes: :t
+    MEPs (TMS amplified) in humans
+
++slide({bkg:'cattaneo_2010_fig1.png'})
+  p.source Cattaneo et al, 2010 figure 1
+  .notes: :t
+    TMS MEP, humans.
+  .notes: :t
+    Shown video, then a static picture.
+    Is this the same goal as you saw in the video?
+    Press one of two keys.
+    ‘They were explicitly told to ignore the effector and make a judgment on the type of act only.’
+
+
++slide
+  +img('cattaneo_2010_fig3.png')
+  p.source Cattaneo et al, 2010 figure 3
+  .notes: :t
+    Key finding: TMS to both ventral premotor cortex (PMv) and left supramarginal gyrus (SMG)
+    increases RTs regardless of whether it’s the same effector or a different effector.
+    (You can’t see same/different effector in this figure.)
+  .notes: :t
+    KEY: superior temporal sulcus (STS), and a parietofrontal system consisting of the intraparietal
+    sulcus (IPS) and inferior parietal lobule (IPL) plus the ventral premotor cortex (PMv) and caudal
+    part of inferior frontal gyrus (IFG). In some instances also, the superior parietal lobule (SPL)
+
+
++slide
+  +img('cattaneo_2010_fig4.png')
+  p.source Cattaneo et al, 2010 figure 4
+  .notes: :t
+    By contrast, TMS to superior temporal sulcus (STS) increased RT only for judgements
+    where the video effector was the same as the photo effector.
+     
+    
 +slide_middle({bkg:'carry_information/Slide1.jpg'})
   +hide('img.bkg', 0)
   +left_half
@@ -137,3 +253,19 @@ include ../../../fragments/joint_action_mixins
     So motor representations of outcomes guide planning-like processes.
     This is why I think it’s not just that they carry information about outcomes
     like grasping an apply, but that they also represent such outcomes.
+
+
+
+    
++slide_middle
+  +left_half
+    p Markers of motor representation 
+      span.step2.hide  ...
+    p 1. are unaffected by variations in kinematic features but not goals
+    p 2. are affected by variations in goals but not kinematic features
+    p So: 
+    p 3. 
+      span.carry-information carry information
+      span   about goals  (from 1,2)
+    p.em-above Also
+    p 4. Information about outcomes guides planning-like processes.
