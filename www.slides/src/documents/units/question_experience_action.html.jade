@@ -1,0 +1,32 @@
+---cson
+layout: 'deck_unit'
+title: "A Question about Experiences of (Speech) Actions"
+tags: []
+description: """
+  What do we experience when we encounter others’ actions?
+  One hypothesis (the Indirect Hypothesis) says that such experiences are all experiences of bodily
+  configurations, of joint displacements and of effects characteristic of particular actions.
+  Another hypothesis (the Direct Hypothesis) says that 
+  in observing an action we sometimes experience not only bodily configurations and joint displacements
+  and their sensory effects but also the action as directed to a particular outcome.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+
++slide_middle
+  p.center What do we experience when we encounter others’ 
+    span.speech.hide speech 
+    span  actions?
+  .slide
+    p.em-above.center Indirect Hypothesis 
+      span.direct-h.hide vs Direct Hypothesis
+    .slide
+      +show('.direct-h')
+  .slide
+    +show('.speech')
+    +invert('.speech')
+    .notes: :t
+      I suppose that speech actions are actions, so I will start with those.
+  

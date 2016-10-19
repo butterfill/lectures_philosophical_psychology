@@ -14,178 +14,125 @@ include ../../fragments/unit_mixins
 
 +title_slide({document:document, images:images})
 
++insert_unit({unit:'question_experience_action', title_slide:false, images:images, handout:true})
++insert_unit({unit:'categorical_perception_speech', title_slide:true, images:images, handout:true})
+
+
+
 //- TODO: relation to experience (mention the Paulesu design)
 //- TODO: relation to motor representation (metion TMS studies, etc)
 //- Could also link this to the ‘two hypotheses’ rather than going
 //- via the goal ascription story.
 
-
-//- distinct processes
-
-+slide_middle
-  p.center Speech and auditory perception involve distinct processes
-
-+slide({bkg:'duplex_01.jpg'})
-  .notes: :t
-    A schematic spectrogram for a synthetic sound which is normally perceived as [ra]. The horizontal
-    axis represents time, the vertical frequency.
-  .notes: :t
-    A schematic spectrogram for [la].  
-
-+slide({bkg:'duplex_02.jpg'})
-  .notes: :t
-    In the middle you see the \emph{base}, i.e. the part of the spectrogram common to [ra] and [la]. This
-    is played to one ear
-  .notes: :t
-    Below you see the transitions, , i.e. the parts of the spectrogram that differ between [ra] and [la].
-    When played in isolation these sound like a chirp. When played at the same time as the base but in
-    the other ear, subjects hear a chirp and a [ra] or a [la] depending on which transition is played.
-  .notes: :t
-    How do we know that the same stimuli may be processed by different perceptual systems
-    concurrently—for instance, how do we know that speech and auditory processing are distinct? A
-    phenomenon called “duplex” perception demonstrates their distinctness occurs in. Artificial
-    speech-like stimuli for two syllables, [ra] and [la], are generated. The acoustic signals for each
-    syllable is artificially broken up into two parts, the “base” and “transition” (see Fig. *** below).
-    The syllables have the same “base” but differ in the “transition”. When the “transition” is played
-    alone it sounds like a chirp and quite unlike anything we normally hear in speech. Duplex perception
-    occurs when the base and transition are played together but in separate ears. In this case, subjects
-    hear both the chirp that they hear when the transition is played in isolated, and the syllable [la]
-    or [ra]. Which syllable they hear depends on which transition is played, so speech processing must
-    have combined the base and transition. By contrast, auditory processing must have failed to combine
-    them because otherwise the chirp would not have been heard. In this case, then, the perception
-    resulting from the duplex presentation involves simultaneous auditory and speech recognition
-    processes. This shows that auditory and speech processing are distinct perceptual processes.
-  .notes: :t
-    The duplex case is unusual. We can’t normally hear the chirps we make in speaking because speech
-    processing inhibits this level of auditory processing. But plainly speech is subject to some auditory
-    processing for we can hear extra-linguistic qualities of speech; some of these provide cues to
-    emotional state, gender and class. Perception of these extra-linguistic qualities enables us to
-    distinguish stimuli within a category. As already mentioned, this is a problem for Repp’s operational
-    definition. Our ability to discriminate stimuli is the product of both categorical speech processing
-    and non-categorical auditory processing. If we want to get at the essence of categorical perception
-    it seems there is no alternative but to appeal to particular perceptual processes rather than
-    behaviours.
-    
-  .notes Source: \citep{Liberman:1981xk}
-
-
-
-
-//- categorical perception of speech exists
-+slide({bkg:'categorical_perception_of_speech/Slide01.jpg'})
-  .notes: :t
-    Here are 12 speech-like sounds.
-    Acoustically each differs from its neighbours no more than any other does.
-    
-
-+slide({bkg:'categorical_perception_of_speech/Slide02.jpg'})
-  .notes: :t
-    They would be labelled differently
-
-+slide({bkg:'categorical_perception_of_speech/Slide03.jpg'})
-  .notes: :t
-    And within a label they are relatively hard to disciminate whereas ...
-
-+slide({bkg:'categorical_perception_of_speech/Slide04.jpg'})
-  .notes: :t
-    Discriminating acoustically no less similar stimuli that are given
-    different labels is easier (faster and more accurate).
-  .notes: :t
-    This is categorical perception: speed and accuracy maps onto labelling ...
-    
+//-
+  A.
+  [1] The double life of motor representation
+  [2] creates a puzzle : what are those motor representations doing there
+  [3] or two: how is it that they have a content-respecting influence on judgement?
   
-+slide({bkg:'categorical_perception_of_speech/Slide06.jpg'})
-  .notes: :t
-    Categorical perception of mating calls and perhaps other acoustic signals is widespread in non-human
-    animals including monkeys, mice and chinchillas (Ehret 1987; Kuhl 1987), and is even found in
-    cognitively unsophisticated animals such as frogs (Baugh, Akre and Ryan 2008) and crickets
-    (Wyttenbach, May and Hoy 1996).
-
-
-
-
-//- WHAT ARE THE OBJECTS OF CATEGORICAL PERCEPTION
-
-+slide_middle
-  p.center What are the objects of categorical perception?
-
-+slide({bkg:'categorical_perception_of_speech/Slide26.jpg'})
-  .notes: :t
-    the location of the category boundaries changes depending on contextual factors such as the
-    speaker’s dialect,22 or the rate at which the speaker talks;23 both factors dramatically affect
-    which sounds are produced.
-+slide({bkg:'categorical_perception_of_speech/Slide27.jpg'})
-  .notes: :t
-    This means that in two different contexts, different stimuli may result in the same perceptions, and
-    the same stimulus may result in different perceptions.
-+slide({bkg:'categorical_perception_of_speech/Slide23.jpg'})
-+slide({bkg:'categorical_perception_of_speech/Slide24.jpg'})
-+slide({bkg:'categorical_perception_of_speech/Slide25.jpg'})
-  .notes: :t
-    co-articulation, the fact that phonic gestures overlap (this is what makes talking fast).
-
-+slide_middle
-  p.center What are the objects of categorical perception?
-  .notes.show.em-above
-    p.em-around 1. Speech perception is categorical
-    p.em-around   2. The category boundaries correspond (imperfectly but robustly) to differences in articulatory gestures
-    p.em-around   3.  The best explanation of (2) involves the hypothesis that the objects of speech perception are articulatory gestures
-  .notes: :t
-    \emph{Articulatory Gesture:}
-    In speaking we produce an overlapping sequence of articulatory gestures, which are motor actions
-    involving coordinated movements of the lips, tongue, velum and larynx. These gestures are the units
-    in terms of which we plan utterances (Browman and Goldstein 1992; Goldstein, Fowler, et al. 2003).
+  Actually: after [2], answer with: they facilitate judgements about goals.
+  Question: How is it that motor representations concerning the goals of observed actions sometimes influence thoughts about them?
+  Answer: Teleological stance ...
+  Then Puzzle 2: how is it that they have a content-respecting influence on judgement?
+  I.e. teleological stance realised motorically and influencing judgements
+  raises question about the connections!
+  
+  B.
+  On the first puzzle: think about pure goal ascription
+  [1] Marr’s distinction between levels
+  [2] The teleological stance as a computational description of pure goal ascription
+  [3] The R() problem
+  [4] Implementation with motor representations and processes?  This would solve puzzle A.2
+  [5] But the directedness can’t be represented
+  [6] Solution: functional goal ascription; capturing the directedness without representing it.
+  
+  C. 
+  Approach the second puzzle (in A.3) by considering speech perception (speech is action).
+  Speech perception is
+    [1] categorical,
+    [2] where the objects of categorical perception are articulatory gestures,
+      --- emphasise this (it's analogous to the point about bodily configurations and joint
+      displacements vs outcomes: see Galantucci p. 364: ‘In the 1967 version of the theory,
+      the motoric objects were understood by Liberman and colleagues as invariant motor
+      commands to muscles that moved anatomical structures—that is, the individual vocal tract
+      articulators. However, this idea faced two challenges. First, there was evidence for
+      considerable context sensitivity in the muscle activity driving the articulators’
+      movements and, by implication, in the motor commands that underlay that activity (e.g.,
+      MacNeilage, 1970). Second, three related theoretical developments made the idea that the
+      phonetic invariances were to be found in motor commands to ana- tomical structures ever
+      more implausible. Turvey (1977) developed a theory of action in which the motor system
+      was to be understood in terms of functional units—called coordinative structures (cf.
+      easton, 1972)—rather than anatomical structures. Next, Fowler, Rubin, Remez, and Turvey
+      (1980) extended Turvey’s theory to the domain of speech production. Finally, Browman and
+      Goldstein’s articulatory phonology (Browman & Goldstein, 1986) identified coordinative
+      structures as fundamental linguistic units that they called phonetic gestures (see
+      note 2).’)
+    [3] and the objects are represented motorically.
+    [4] What is experienced? (a) Different outcome -> different experience; (b) this does not 
+    straightforwardly imply that the outcome is experienced, still less that the event 
+    is experienced as directed to the outcome.
+    [5] Two Hypotheses
+    [6] Does motor representation affect experience generally, or only in the case of speech?
+    Consider the Repp and Knoblich studies from paper2
+    [7] How to distinguish the Two Hypotheses experimentally.
     
+  D. 
+  Conclusion: The double life of motor representation creates two puzzles.
+  A.2: Motor representation appears to underpin functional pure goal ascription,
+  and so may be foundational for social cognition [see conclusions of Jan Coello chapter].
+  A.3: If the Direct Hypothesis is right, motor representation may play a key role
+  in our ability think about actions, much as experience of physical objects matters for 
+  being able think about them.
+  But we don’t know whether the Direct Hypothesis is true. [see conclusions of paper2]
+  
+
++insert_unit({unit:'double_life_motor_representation', title_slide:true, images:images, handout:true})
+
 +slide_middle
-  p The objects of speech perception are articulatory gestures.
-  p.em-above ... Does this entail that we perceptually experience articulatory gestures?
+  p.center Speech Perception Reprise
+  .notes: :t
+    Recall two facts mentioned in discucssing speech perception ...
   .slide
-    p.em-above ‘Describing [Mary’s experience] as being as of a dodecahedron … is … normally intended to describe its introspectable character’
-    p.grey-text.right (Martin 1992: 762).
+    p.em-above Speech and auditory perception involve distinct processes.
+    .notes: :t
+      This makes sense given that, as \citet{dausilio:2009_motor} argue,
+      motor processes facilitate the identification of articulatory gestures.
+      After all, motor processes and auditory processes are likely distinct.
   .slide
-    p.em-above Perceptual experiences are reasons for beliefs ...
-
-
-
-//- PERCEPTUAL EXPERIENCE
+    p.em-above The objects of speech perception are articulatory gestures.
+    .notes: :t
+      This also makese sense: given that there’s a link between observing an
+      articulatory gesture and representing it motorically, it seems that the 
+      motor representation of the articulatory gesture could be what speech
+      perception aims at.
+    .notes: :t
+      (I’m ignoring a lot of complexity about how, given enough context,
+      motor impairments can have very little impact on speech perception.
+      Maybe not all speech perception depends on recovering articulatory gestures,
+      and maybe there are multiple kinds of process that enable us to comprehend
+      what someone is saying.)
 
 +slide_middle
-  p.center An argument for perceptual experience of articulatory gestures.
+  .notes: :t
+    Also recall the question
+  p.notes.show How could the objects of categorical perception of speech be articulatory gestures?
+  .notes: :t
+    The puzzle here is simple.
+    Categorical perception of speech happens raidly, and goal-directed actions
+    are complex.  How can something so complex be computed so quickly?
+  .notes: :t
+    Put it another way: how is it that the articulatory gesture is identified?
+  p.em-above.notes.handout.show: :t
+    ‘Humans [can] understand speech delivered at a rate of 20 to 30 ... phonemes per second’
+  .notes.handout.ctd  \citep{Devlin:2006qg}
+  p.right.grey-text Devlin (2006)
+  .notes: :t
+    Nothing we’ve yet covered enables us to answer this question.
 
-+slide({bkg:'categorical_perception_of_speech/Slide06.jpg'})
-+slide({bkg:'categorical_perception_of_speech/Slide07.jpg'})
-+slide({bkg:'categorical_perception_of_speech/Slide08.jpg'})
-+slide({bkg:'categorical_perception_of_speech/Slide09.jpg'})
-+slide({bkg:'categorical_perception_of_speech/Slide10.jpg'})
-  .notes: :t
-    The difference in differences ...
-  .notes: :t
-    Here is the argument. Consider two sequences of sensory encounters: (a) a sequence of sensory
-    encounters with two phonetic events that do not differ with respect to category (both are
-    realisations of /d/, say), and (b) a sequence of sensory encounters with two phonetic events that do
-    so differ (one is a realisation of /d/ the other of /g/, say).11 Let the events encountered in the
-    first sequence differ from each other acoustically in the same way and by the same amount as the
-    events encountered in the second sequence differ from each other. (That it is possible to find two
-    such pairs of events follows from the fact that we enjoy categorical perception of speech.) The two
-    sequences are depicted in Fig. 3. Now:
-+slide_middle
-  p (1) The second sequence of sensory encounters, (b), differ from each other more in phenomenal character than the first sequence of sensory encounters, (a), differ from each other.
-  p.slide (2) This difference in differences in phenomenal character is a fact in need of explanation.
-  p.slide (3) The difference cannot be fully explained by appeal only to perceptual experiences as of acoustic features of the stimuli; after all, the stimuli encountered in each sequence, (a) and (b), differ equally in this respect.
-  p.slide (4) The difference can be explained in terms of perceptual experiences as of phonetic properties if the above thesis is true for categorical perception of speech (how the explanation works is specified below).
-  p.slide (5) There is no better explanation of the difference.
-  .notes: :t
-    The fourth step in this argument, (4), needs some filling in. How would the thesis that categorical
-    perception of speech is a form of perceptual experience explain the difference in differences in
-    phenomenal character? If the thesis is true, the first sequence of sensory encounters, (a), involves
-    two perceptual experiences as of a single phoneme whereas the second sequence of encounters, (b),
-    involves perceptual experiences as of different phonemes.12 Let us assume (not very controversially)
-    that perceptual experiences have phenomenal characters and that which phenomenal character a
-    perceptual experience has depends in part on what it is as of.13 It follows that differences in what
-    perceptual experiences are as of can explain differences in the phenomenal characters of those
-    perceptual experiences. In particular, if it is a fact that (b) involves perceptual experiences as
-    of different things whereas (a) does not, this could explain why the sensory encounters in (b)
-    differ in phenomenal character in a way that the sensory encounters in (a) do not.
+  
++insert_unit({unit:'teleological_stance', title_slide:true, images:images, handout:true})
+
+
 
 
 
@@ -256,6 +203,14 @@ include ../../fragments/unit_mixins
     orthography. While both claims may be true (first claim: Treiman 1985: 199–200; second claim:
     Scarborough, Ehri, et al. 1998: 138), they do not fully explain the discrepancies.
 
+  
+  
++slide_middle
+  p.center.huge-glow(style='margin-top:-3em;') Puzzle 2
+  p.center.below-huge-glow How could motor representations have content-respecting effects on judgements?
+  .notes: :t
+    I want to answer this question in an indirect way,
+    via the Teleological Stance ...
 
 
 
