@@ -43,6 +43,12 @@ section.slide
     facts about joint displacements, bodily configurations and their effects 
     (e.g. sounds).
     Such an account is a computational theory of pure goal ascription.
+  .notes: :t
+    Empahsize: in the case of speech, the problem is to get from acoustic and visual
+    information to articulatory gestures.
+  .notes: :t
+    Empahsize: in the case of actions, the problem is to get from bodily configurations
+    and joint displacements to goals to which actions are directed.
   p.huge-glow-60 pure goal ascription
   p(style='margin-top:-2em;')
     span.infer Infer
@@ -290,7 +296,100 @@ mixin diagram_action_goal_individual(p)
       links the action taken as a whole to the outcomes to which they are directed.
 
 
++slide({bkg:'goal_ascription_requirements/Slide1.jpg'})
+  .notes: :t
+    It is important to see that the third item---representing the directedness---is necessary.
+  .notes: :t
+    This is quite simple but very important, so let me slowly explain why goal ascription requires representing the directedness of an action to an outcome.
++slide({bkg:'goal_ascription_requirements/Slide2.jpg'})
+  .notes: :t
+    Imagine two people, Ayesha and Beatrice, who each intend to break an egg.
+    Acting on her intention, Ayesha breaks her egg.
+    But Beatrice accidentally drops her egg while carrying it to the kitchen.
+    So Ayesha and Beatrice perform visually similar actions which result in the same type of outcome,
+    the breaking of an egg; but Beatrice's action is not directed to the outcome of her action whereas
+    Ayesha's is.
++slide({bkg:'goal_ascription_requirements/Slide3.jpg'})
+  .notes: :t
+    Goal ascription requires the ability to distinguish between Ayesha's action and Beatrice's action. 
+    This requires representing not only actions and outcomes but also the directedness of actions to outcomes.
+  .notes: :t
+    This is why I say that goal ascription requires representing the directedness of an action to an outcome, and not just representing the action and the outcome.
+  
 
+
+
+
++slide_middle
+  p Requirements:
+  p.hem-around (1) reliably: R(a,G)  
+    span.when when
+    span  and 
+    span.only-when only when
+    span  a is directed to G
+  p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
+  p.hem-around.detectable-without (3) R(a,G) is readily detectable without any knowledge of mental states
+  p.hem-around &nbsp;
+  p.hem-around.candidate-teleological.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-causes.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-ts.hide R(a,G) =df a ‘is seen as the most justifiable action towards [G] that is available within the constraints of reality’?
+  .slide
+    +show('.candidate-teleological')
+    .notes: :t
+      Why not define $R$ in terms of teleological function?
+      This would enable us to meet the first condition but not the second.
+      How could we tell whether an action happens because it brought about a particular outcome in the past? 
+      This might be done with insects.
+      But it can's so easily be done with primates, who have a much broader repertoire of actions.
+    .slide
+      +highlight-row('.detectable-without')
+    .slide
+      +unhighlight-row('.detectable-without')
+      +highlight-row('.readily-detectable','red')
+    .slide
+      +unhighlight-row('.readily-detectable','red')
+      +blur('.candidate-teleological')
+  .slide
+    +show('.candidate-causes')
+    .notes: :t
+      How about taking $R$ to be causation?
+      That is, how about defining $R(a,G)$ as $a$ causes $G$?
+      This proposal does not meet the first criterion, (1), above.
+      We can see this by mentioning two problems.
+
+      [*Might skip over-generate and discuss that as a problem for Rationality/Efficiency]
+      First problem: actions typically have side-effects which are not goals.
+      For example,
+      %---not a good example because can't be avoided by any account
+      %--- (would require attribution of desire)
+      %For example, walking to the corner results in me warming up, in me expending energy, and in me being at the corner.
+      %Sometimes I walk to the corner for exercise,
+      %so that being at the corner is an unwanted side-effect (I then have to walk back).
+      %And sometimes I walk to the corner to be at the corner (so that expending energy is an unwanted side-effect, I'd rather have been chauffeured there).  
+      suppose that I walk over here with the goal of being next to you.
+      This action has lots of side-effects: 
+      \begin{itemize}
+      \item 	I will be at this location.
+      \item	I will expend some energy.
+      \item	I will be further away from the front
+      \end{itemize}
+      These are all causal consequence of my action.
+      But they are not goals to which my action is directed.
+      So this version of $R$ will massively over-generate goals.
+
+      Second problem: actions can fail.  [...]
+      So this version of $R$ will under-generate goals.
+    .slide
+      +highlight('.only-when', 'red')
+    .slide
+      +unhighlight('.only-when', 'red')
+      +highlight('.when', 'red')
+    .slide
+      +unhighlight('.when', 'red')
+      +blur('.candidate-causes')
+  .slide
+    +show('.candidate-ts')
+    
   
     
         
@@ -431,109 +530,73 @@ section.slide
           OK, I think this is reasonably true to the quote.
           So we’ve understood the claim.
           But is it true?
-      //- .slide
-      //-   +blur('.quote')
-      //-   +invert('.better')
-      //-   .notes: :t
-      //-     How good is the agent at optimising the selection of means to her goals?
-      //-     And how good is the observer at identifying the optimality of means in relation to outcomes?
-      //-     \textbf{
-      //-     For optimally correct goal ascription, we want there to be a match between
-      //-     (i) how well the agent can optimise her choice of means
-      //-     and
-      //-     (i) how well the observer can detect such optimality.}
-      //-     Failing such a match, the inference will not result in correct goal ascription.
-      //-   .notes: :t
-      //-     But I don’t think this is an objection to the Teleological Stance as a
-      //-     computational theory of pure goal ascription.  It is rather a detail
-      //-     which concerns the next level, the level of representations and algorithms.
-      //-     The computational theory imposes demands at the next level.
-      //-   .handout: :t
-      //-     ‘Such calculations require detailed knowledge of biomechanical factors that
-      //-     determine the motion capabilities and energy expenditure of agents. However,
-      //-     in the absence of such knowledge, one can appeal to heuristics that approximate
-      //-     the results of these calculations on the basis of knowledge in other domains
-      //-     that is certainly available to young infants. For example, the length of
-      //-     pathways can be assessed by geometrical calculations, taking also into
-      //-     account some physical factors (like the impenetrability of solid objects).
-      //-     Similarly, the fewer steps an action sequence takes, the less effort it might
-      //-     require, and so infants’ numerical competence can also contribute to efficiency
-      //-     evaluation.’ \citep{csibra:2013_teleological}
-        
-+slide_middle
-  p.center pure goal ascription = no mental state ascrptions needed
-  
+      .slide
+        +blur('.quote')
+        +invert('.better')
+        .notes: :t
+          How good is the agent at optimising the selection of means to her goals?
+          And how good is the observer at identifying the optimality of means in relation to outcomes?
+          \textbf{
+          For optimally correct goal ascription, we want there to be a match between
+          (i) how well the agent can optimise her choice of means
+          and
+          (i) how well the observer can detect such optimality.}
+          Failing such a match, the inference will not result in correct goal ascription.
+        .notes: :t
+          But I don’t think this is an objection to the Teleological Stance as a
+          computational theory of pure goal ascription.  It is rather a detail
+          which concerns the next level, the level of representations and algorithms.
+          The computational theory imposes demands at the next level.
+        .handout: :t
+          ‘Such calculations require detailed knowledge of biomechanical factors that
+          determine the motion capabilities and energy expenditure of agents. However,
+          in the absence of such knowledge, one can appeal to heuristics that approximate
+          the results of these calculations on the basis of knowledge in other domains
+          that is certainly available to young infants. For example, the length of
+          pathways can be assessed by geometrical calculations, taking also into
+          account some physical factors (like the impenetrability of solid objects).
+          Similarly, the fewer steps an action sequence takes, the less effort it might
+          require, and so infants’ numerical competence can also contribute to efficiency
+          evaluation.’ \citep{csibra:2013_teleological}
 
-+slide_rh_white
-  .notes: :t
-    Why else is this significant?
-    Partly because pure goal ascription is an important part of social cognition,
-    so it is good to taste some success in giving a computational theory after our
-    recent less than successful attempts.
-  .notes: :t
-    Also important is the additional structure we have.
-  
-  +left_half
-    .center
-      p Davidson & Dennett
-      p.em-above from:
-      p joint displacements, bodily configurations and their effects
-      p.em-above to:
-      p.em-above propositional attitudes (belief, desire, ...)
-  +right_half
-    .center
-      p Csibra & Gergely
-      p.em-above from:
-      p joint displacements, bodily configurations and their effects
-      p.em-above to:
-      p.em-above goal-directed actions
-      p.em-above to:
-      p.em-above propositional attitudes (belief, desire, ...)
-  .notes: :t
-    Why is adding an extra step significant?
-    Not only because it provides the beginnings of a missing component 
-    that Dennett’s and Davidson’s theories each require.
-    But, more importantly, because it suggests that we can 
-    broaden the evidential basis for radical interpretation.
-  .notes: :t
-    If I am performing an action directed to stripping a nettle, then 
-    it is likely that I have beliefs, desires and intentions about 
-    the nettle and this outcome.
-    So plausibly facts about which goals someone’s actions are directed to
-    can constrain facts about which objects her beliefs, desires and intentions
-    are about.
-    This may help Davidson with the probelm of indeterminacy.
-  .notes: :t
-    Recall that, on Davidson’s account, the evidence for radical interpretation
-    was changes in attitudes towards the truth of particular sentences.
-    Maybe the evidence should include goal-directed actions, including those
-    which occur in nonlinguistic and noncommunicative contexts.
-    
-    
+
 
 +slide_middle
-  .notes: :t
-    The thought is that the objects specified by the goals of your actions
-    are the primary things to which you refer.
-  p.center Indeterminacy of reference
-  p.em-above 
-  table.data
-    thead
-      tr
-        td
-        td ordinary
-        td contrived
-    tbody
-      tr.odd
-        td names
-        td ‘Beatrice’ refers to Beatrice
-        td ‘Beatrice’ refers to shadow-Beatrice
-      tr.even
-        td 
-          span.step2 predicates
-        td 
-          span.step2 ‘... is happy’ - is true of happy things
-        td 
-          span.step2 ‘... is happy’ - is true of things that are the shadows of happy things
+  p Requirements:
+  p.hem-around (1) reliably: R(a,G)  
+    span.when when
+    span  and 
+    span.only-when only when
+    span  a is directed to G
+  p.hem-around.readily-detectable (2) R(a,G) is  readily detectable
+  p.hem-around.detectable-without (3) R(a,G) is readily detectable without any knowledge of mental states
+  p.hem-around &nbsp;
+  p.hem-around.candidate-teleological.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-causes.hide R(a,G) =df a causes G?
+  p.hem-around.candidate-ts.hide R(a,G) =df a ‘is seen as the 
+    span.most-justifiable most justifiable
+    span  action towards [G] that is available within the constraints of reality’?
+  +show('.candidate-teleological', 0)
+  +blur('.candidate-teleological', '2px', 0)
+  +show('.candidate-causes', 0)
+  +blur('.candidate-causes', '2px', 0)
+  +show('.candidate-ts', 0)
+  .slide
+    +invert('.most-justifiable')
+    .notes: :t
+      It will work if we can match observer and agent: both must be ‘equally optimal’.
+      But how can we ensure this?
+  .slide
+    +highlight('.only-when', 'orange')
+    +highlight('.when', 'orange')
+    .notes: :t
+      How good is the agent at optimising the rationality, or the efficiency, of her actions?
+      And how good is the observer at identifying the optimality of actions in relation to outcomes?
+      \textbf{
+      If there are too many discrepancies between
+      		how well the agent can optimise her actions
+      	and
+      		how well the observer can detect optimality,
+      then these principles will fail to be sufficiently reliable}.
+    
 
-//- +slide({bkg:'/budapest/lecture_06/slide011.jpg'})
