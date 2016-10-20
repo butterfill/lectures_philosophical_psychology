@@ -248,6 +248,10 @@ html body {
 .deck-container .hem-above {
   padding-top: 0.5em;
 }
+.deck-container .hem-around {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
 .deck-container .em-above {
   padding-top: 1em;
 }
@@ -1891,8 +1895,7 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
-.deck-container .under-huge-glow,
-.deck-container p.under-huge-glow {
+.deck-container .under-huge-glow {
   padding-top: 0;
   margin-top: -3.4em;
 }
