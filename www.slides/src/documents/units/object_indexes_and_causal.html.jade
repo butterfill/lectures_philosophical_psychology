@@ -122,48 +122,35 @@ include ../../../fragments/unit_mixins
 
 
 +slide_middle
-  .notes caution is required ...
-  p: :t
-    ‘Unfortunately, this preliminary study has not received any published follow-up work, to our
-    knowledge, so it is not clear if it would also generalize beyond highly specific contrasts.’
-  .notes: :t
-    \citep{choi:2006_measuring} on Kruschke and Fragassi:
-    ‘one previous study suggested that causal events gave rise to diVerent
-    patterns of object-specific priming than non-causal events (Kruschke &
-    Fragassi, 1996). Unfortunately, this preliminary study has not received any
-    published follow-up work, to our knowledge, so it is not clear if it would
-    also generalize beyond highly specific contrasts’  \citep[p.~108]{choi:2006_measuring}.
-  p.grey-text.right Choi & Scholl, 2006 p. 108
-
-
-+slide_middle
-  p.center adaptation
-  .notes: :t
-    This seems hard to reconcile with object indexes.
-    But (A) note the questions in the commentary; and (B) Hubbard on Kiritani (1999)
-    for launching when the contact is occluded; and context effects (Scholl on postdiction)
-    and (D) evidence for effects of 
-    acoustic stimuli on launching, suggesting that the effect may not be modality-specific
-    (The evidence on this point is controversial. Sekuler and colleagues show that when subjects observe
-    an ambiguous visual display consistent with either a collision or a passing event, the timing of a
-    tone can control whether subjects report seeing a collision or pass- ing, and argue that this is a
-    multisensory phenomenon: R. Sekuler et al., ‘Sound Alters Visual Motion Perception’, Nature, 
-    (), p. . Watanabe and Shimojo extend this finding by showing that not any event (or
-    non-event) which draws attention at the moment of a collision will disambiguate the display; they
-    argue that the tone’s effect on the perception of a col- lision is a ‘genuine audiovisual effect,
-    not an audiovisual effect that results from auditory effects’: K. Watanabe and S. Shimojo, ‘When
-    Sound Affects Vision: Effects of Auditory Grouping on Visual Motion Perception’, Psychological
-    Science,  (), pp. –. Guski and Troje, on the other hand, show that features which carry
-    no information about causation, such as a blink, can also influence whether subjects report seeing a
-    collision or a passing. These authors conclude that auditory influences on the perceptual of
-    collisions are ‘no true cross-modal phenomenon’: R. Guski and N.F. Troje, ‘Audiovisual Phenomenal
-    Causality’, Perception and Psychophysics,  (), pp. –, at p. .)
-
-
-//- 
-    *** HERE ***
-    TODO: add studies on adaptation and other effects (see separate notes doc)
-
+  .handout.notes: :t
+    \emph{Causal Object Index Conjecture}: 
+  p Causal Object Index Conjecture: 
+  .handout.notes.show.ctd: :t
+    Effects associated with the ‘perception of causation’
+    are consequences of errors (or error-like patterns) in the assignments of object indexes and
+    their phenomenal effects.
+  .slide.em-above.caution
+    .notes caution is required ...
+    p: :t
+      ‘Unfortunately, this preliminary study has not received any published follow-up work, to our
+      knowledge, so it is not clear if it would also generalize beyond highly specific contrasts.’
+    .notes: :t
+      \citep{choi:2006_measuring} on Kruschke and Fragassi:
+      ‘one previous study suggested that causal events gave rise to diVerent
+      patterns of object-specific priming than non-causal events (Kruschke &
+      Fragassi, 1996). Unfortunately, this preliminary study has not received any
+      published follow-up work, to our knowledge, so it is not clear if it would
+      also generalize beyond highly specific contrasts’  \citep[p.~108]{choi:2006_measuring}.
+    p.grey-text.right Choi & Scholl, 2006 p. 108
+      
+  .slide.em-above
+    +blur('.caution')
+    p.notes.handout.show: :t
+      Predictions: 
+      (i) Where there is perception of causation, there will be errors (or error-like patterns)
+      in the assignments of object indexes.
+      (ii) Factors that can influence how object indexes are assigned or maintained can influence 
+      perception of causation.
 
 +slide_middle
   .notes: :t
@@ -411,6 +398,19 @@ section.slide
 
 
 
+section.slide
+  +_slide_inner
+    video(width="640", height="480", controls)
+      source(src="/mov/Video_S6--Vertical-launch display--Exp 2.mov",type="video/mp4")
+    p.source Kim et al 2013, S6
+
++slide
+  +img_clip('kim_2016_fig2.png')
+  p.source Kim et al 2013, figure 2
++slide
+  +img_clip('kim_2016_fig3.png')
+  p.source Kim et al 2013, figure 3
+
 //-
   Could talk about RM representational momentum from Perceiving expressions of emotion paper
   but it’s just speculation ...
@@ -504,10 +504,9 @@ section.slide
   .notes: :t
     Now I think we have achieved an answer:
   p.indent.em-above.notes.show
-    span Working hypothesis: Causal interactions are detected, or otherwise treated specially, by the  
+    span Working hypothesis: Causal interactions are detected, or otherwise treated specially, by   
     span.processes perceptual processes
-    span  involved in segmenting 
-    span and tracking objects.
+    span  involved in segmenting and tracking objects.
   .notes: :t
     The perceptual system responsible for identifying objects must also concern itself with certain 
     kinds of causal interaction in order to reconcile conflicting cues to object identity. 

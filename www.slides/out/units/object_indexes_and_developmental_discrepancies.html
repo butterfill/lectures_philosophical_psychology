@@ -1,228 +1,24 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>A Partial Solution to the Puzzle about the Development of Causal Understanding? | Philosophical Psychology</title>
-    <meta name="description" content="Can a conjecture about the role of object indexes in explaining the launching effect
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>A Partial Solution to the Puzzle about the Development of Causal Understanding? | Philosophical Psychology</title><meta name="description" content="Can a conjecture about the role of object indexes in explaining the launching effect
 provide 
-a partial solution to the puzzle about the development of causal understanding?"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="object_indexes_and_developmental_discrepancies" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">A Partial Solution to the Puzzle about the Development of Causal Understanding?</h2>
-          </div>
-        </div>
-      </section>
-
+a partial solution to the puzzle about the development of causal understanding?"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="object_indexes_and_developmental_discrepancies" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">A Partial Solution to the Puzzle about the Development of Causal Understanding?</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Recall the puzzle ....
-        </div>
-        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Spelke et al 1992, figure 2</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_lecture04_012.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="list-layer hide">
-          <div class="notes">[Key idea: object indexes cannot explain too much otherwise 
+<section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Recall the puzzle ....</div><div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Spelke et al 1992, figure 2</p></div></div></div></section><section class="slide"><img src="/img/slide_lecture04_012.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Can six-month-olds know simple facts about particular causal interactions?</p><p class="indent em-around">No  (Berthier et al, 2000; Hood et al, 2003)</p><p class="em-above">What explains their sensitivity to causal interactions  (e.g. Spelke, 1992; Baillargeon, 1987) if not knowledge?</p><div class="slide em-above"><p><span>Working hypothesis: Causal interactions are detected, or otherwise treated specially, by   </span><span class="processes">perceptual processes</span><span> involved in segmenting and tracking objects.</span></p></div></div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="list-layer hide"><div class="notes">[Key idea: object indexes cannot explain too much otherwise 
 it would be a mystery why 2 years olds fail to search.
-But then how do you get looking times out of them?]
-          </div>
-          <div class="notes">In adult humans,
+But then how do you get looking times out of them?]</div><div class="notes">In adult humans,
 there is a system of object indexes which enables them to track 
 potentially moving objects in ongoing actions such as visually tracking or 
 reaching for objects, and which influences how their attention is allocated 
-\citep{flombaum:2008_attentional}.
-          </div>
-          <p>object indexes <span> ...</span></p>
-          <ul>
-            <li>guide ongoing action (e.g. visual tracking, reaching)</li>
-            <li>influence how attention is allocated</li>
-            <li class="judgement-independent">can conflict with beliefs and knowledge states</li>
-            <div class="notes">This system of object indexes
+\citep{flombaum:2008_attentional}.</div><p>object indexes <span> ...</span></p><ul><li>guide ongoing action (e.g. visual tracking, reaching)</li><li>influence how attention is allocated</li><li class="judgement-independent">can conflict with beliefs and knowledge states</li><div class="notes">This system of object indexes
 does not involve belief or knowledge
 and may assign indexes to objects in ways that are inconsistent with
 a subject’s beliefs about the identities of objects 
-\citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}
-            </div>
-          </ul>
-        </div>
-        <div class="layer what-can-oi-explain">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
-            <div class="container_12">
-              <div class="grid_12 ">
-                <div class="words">
-                  <div class="middle">
-                    <p style="line-height:40px;" class="center huge-glow-50">What can object indexes explain?</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slide">
-          <div data-what=".list-layer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Spelke et al 1992, figure 2</p>
-        <div class="notes">The primary functions of object indexes include influencing the allocation
+\citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}</div></ul></div><div class="layer what-can-oi-explain"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="line-height:40px;" class="center huge-glow-50">What can object indexes explain?</p></div></div></div></div></div></div><div class="slide"><div data-what=".list-layer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/spelke_1992_fig2a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Spelke et al 1992, figure 2</p><div class="notes">The primary functions of object indexes include influencing the allocation
 of attention and perhaps guiding ongoing action.
 If this is right, it may be possible to explain anticipatory looking 
 directly by appeal to the operations of  object indexes.
@@ -230,11 +26,7 @@ But the operations of object indexes cannot directly explain differences
 in how novel things are to an infant.
 And nor can the operations of object indexes directly explain why infants
 look longer at stimuli involving discrepancies in the physical behaviour
-of objects.
-        </div>
-        <div class="notes">To illustrate this point, recall this famous habituation experiment ....
-        </div>
-        <div class="notes">We know that infants are likely to maintain object indexes for the object
+of objects.</div><div class="notes">To illustrate this point, recall this famous habituation experiment ....</div><div class="notes">We know that infants are likely to maintain object indexes for the object
 while it is occluded.
 Accordingly, when the screen drops in the condition labelled 
 ‘impossible outcome’, there is an interruption to the normal 
@@ -243,44 +35,7 @@ but there is only one object.
 But why does this cause infants to look longer at in the
 ‘impossible outcome’ condition than in the ‘possible outcome’ condition?
 How does a difference in operations involving object indexes result
-in a difference in looking times?
-        </div>
-        <div class="notes">Claim (supported by the developmental discrepancy): the phenomenology
+in a difference in looking times?</div><div class="notes">Claim (supported by the developmental discrepancy): the phenomenology
 associated with the launching effect is rich enough to support habituation
 effects but not manual search.
-Consequence: the experience is probably not an experience of causal interaction.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">I think we have to reject the phenomenal parts of Michotte’s view:
-          </div>
-          <div class="notes show">
-            <p>Sometimes ‘a causal impression arises, clear,
-genuine, and unmistakable, and the idea of cause can be derived from it
-… in just the same way as the idea of shape or movement can be derived
-from the perception of shape or movement.’
-            </p>
-          </div>
-          <div class="notes ctd">\citep[p.~270--1]{Michotte:1946nz}</div>
-          <p class="right grey-text">Michotte 1946 [1963]: 270–1</p>
-          <p class="notes show em-above">‘the causal perception is the perception of the work of a mechanical force,
-just as the impression of the movement of a car is the perception of its
-displacement in physical space’
-          </p>
-          <div class="notes ctd">\citep[p.~228]{Michotte:1946nz}</div>
-          <p class="right grey-text">Michotte 1946 [1963], p. 228</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+Consequence: the experience is probably not an experience of causal interaction.</div></div></div></div></section></div></body></html>

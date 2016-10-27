@@ -27,6 +27,19 @@ include ../../fragments/unit_mixins
   p.center three videos
 
 section.slide
+  +_slide_inner
+    video(width="640", height="480", controls)
+      source(src="/mov/01_launching.mp4",type="video/mp4")
+      source(src="/mov/01_launching.webm",type="video/webm")
+    p.source Brian Scholl
+  .slide
+    +blur('video', '5px')
+    +reset
+      +middle
+        p.center what did you see?
+
+
+section.slide
   .notes: :t
     [I'm about to talk about illusory causal crescents.  I first show them two videos.
     This is a full overlap video.
@@ -41,19 +54,6 @@ section.slide
       +middle
         p.center what did you see?
 
-
-
-section.slide
-  +_slide_inner
-    video(width="640", height="480", controls)
-      source(src="/mov/01_launching.mp4",type="video/mp4")
-      source(src="/mov/01_launching.webm",type="video/webm")
-    p.source Brian Scholl
-  .slide
-    +blur('video', '5px')
-    +reset
-      +middle
-        p.center what did you see?
 
 
 
@@ -99,18 +99,33 @@ section.slide
       that of the other, but without any sensible interval.’
   .notes.handout.ctd \citep[p.~77]{Hume:1739lj}
   p.right.grey-text Hume 1739-40 [1978]: 77
-  .slide.em-above
+  .slide.hem-around
     +blur('img.bkg', '2px', 0)
-    .notes.handout.show
-      p: :t
-        Sometimes ‘a causal impression arises, clear,
-        genuine, and unmistakable, and the idea of cause can be derived from it
-        … in just the same way as the idea of shape or movement can be derived
-        from the perception of shape or movement.’
-    .notes.handout.ctd \citep[p.~270--1]{Michotte:1946nz}
-    p.right.grey-text Michotte 1946 [1963]: 270–1
-  .slide.em-above
+    p.hem-around.notes.handout.show: :t
+      ‘the account flies in the face of our common-sense conviction that we do
+      perceive causal relations all the time. The experience of perceiving one
+      event following another is really quite different from the experience of
+      perceiving the second event as caused by the first’
+  .slide
     +fade('img.bkg', 0)
+    p.hem-around.notes.handout.show: :t
+      ‘the researches of Michotte and Piaget would seem to support our
+      common-sense view’
+    .handout.notes.ctd \citep[pp.~114-5]{Searle:1983tx}
+  p.right.grey-text Searle, 1983: pp. 114-5
+    
+  
+  
++slide
+  .notes.handout.show
+    p: :t
+      Sometimes ‘a causal impression arises, clear,
+      genuine, and unmistakable, and the idea of cause can be derived from it
+      … in just the same way as the idea of shape or movement can be derived
+      from the perception of shape or movement.’
+  .notes.handout.ctd \citep[p.~270--1]{Michotte:1946nz}
+  p.right.grey-text Michotte 1946 [1963]: 270–1
+  .slide.em-above
     p.notes.handout.show: :t
       ‘the causal perception is the perception of the work of a mechanical force,
       just as the impression of the movement of a car is the perception of its
@@ -119,20 +134,6 @@ section.slide
     p.right.grey-text Michotte 1946 [1963], p. 228
     .notes: :t
       This looks like a straightforward contradiction, but we have to be careful ...
-    
-
-+slide_middle
-  p.hem-around.notes.handout.show: :t
-    ‘the account flies in the face of our common-sense conviction that we do
-    perceive causal relations all the time. The experience of perceiving one
-    event following another is really quite different from the experience of
-    perceiving the second event as caused by the first’
-  .slide
-    p.hem-around.notes.handout.show: :t
-      ‘the researches of Michotte and Piaget would seem to support our
-      common-sense view’
-    .handout.notes.ctd \citep[pp.~114-5]{Searle:1983tx}
-  p.right.grey-text Searle, 1983: pp. 114-5
   .slide
     p.hem-around.notes.handout.show: :t
       ‘This causal impression, however, would have been for him [Hume] ...
@@ -203,6 +204,8 @@ section.slide
 +insert_unit({unit:'object_indexes', title_slide:true, images:images, handout:true})
 +insert_unit({unit:'object_indexes_and_causal', title_slide:true, images:images, handout:true})
 
++insert_unit({unit:'adaptation_causal', title_slide:true, images:images, handout:true})
+
 
 +insert_unit({unit:'pulfrich_double_pendulum_illusion', title_slide:true, images:images, handout:true})
   
@@ -215,9 +218,40 @@ section.slide
 
 //- What is the nature of phenomenology associated with launching and other causal interactions
 +insert_unit({unit:'phenomenal_expectations', title_slide:true, images:images, handout:true})
+
+
+
++slide({bkg:'michotte_slides/Slide03.jpg'})
+  .notes: :t
+    So, in conclusion,  
+    Where do  causal interactions fit in?
+    Are they perceptually 
+    experienced in whatever sense the shape and motions of things are?
+
+
 +slide_middle
-  p.center object index operations
+  .notes: :t
+    I think we have to reject the phenomenal parts of Michotte’s view:
+  .notes.show
+    p: :t
+      Sometimes ‘a causal impression arises, clear,
+      genuine, and unmistakable, and the idea of cause can be derived from it
+      … in just the same way as the idea of shape or movement can be derived
+      from the perception of shape or movement.’
+  .notes.ctd \citep[p.~270--1]{Michotte:1946nz}
+  p.right.grey-text Michotte 1946 [1963]: 270–1
+  p.notes.show.em-above: :t
+    ‘the causal perception is the perception of the work of a mechanical force,
+    just as the impression of the movement of a car is the perception of its
+    displacement in physical space’
+  .notes.ctd \citep[p.~228]{Michotte:1946nz}
+  p.right.grey-text Michotte 1946 [1963], p. 228
+
+
+
++slide_middle
+  p.center object index operations detect causal interactions
   p.center ↓
   p.center phenomenal expectations
   p.center ↓
-  p.center patterns in looking durations
+  p.center patterns in looking durations / causal interpretation
