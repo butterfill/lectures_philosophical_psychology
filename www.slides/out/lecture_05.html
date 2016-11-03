@@ -1,568 +1,95 @@
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg"><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Lecture 05: Do Humans Perceive Others’ Feelings | Philosophical Psychology</title><meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - fonts--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
 
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Lecture 05: Do Humans Perceive Others’ Feelings | Philosophical Psychology</title>
-    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
 
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section>
 
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<div class="notes notes-header-tex">\title {Philosophical Psychology \\ Lecture 05: Do Humans Perceive Others’ Feelings}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\maketitle</div>
-<div id="title-slide" class="slide"><img src="/img/bkg/bees/AAaaDSC_7588.low.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div class="fade-in">
-    <div style="position:relative; top:375px" class="title-block">
-      <div class="title-container">
-        <h1 style="line-height:45pt;" class="title1 fade-in">Lecture 05: Do Humans Perceive Others’ Feelings</h1>
-        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
-      </div>
-    </div>
-  </div>
-  <div class="handout">\def \ititle {Lecture 05: Do Humans Perceive Others’ Feelings}</div>
-  <div class="handout">\begin{center}</div>
-  <div class="handout">{\Large</div>
-  <div class="handout">\textbf{\ititle}</div>
-  <div class="handout">}</div>
-  <div class="handout">&nbsp;</div>
-  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
-  <div class="handout">\end{center}</div>
-  <div class="notes">subtitle is:
+<div class="notes notes-header-tex">\title {Philosophical Psychology \\ Lecture 05: Do Humans Perceive Others’ Feelings}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\maketitle</div><div id="title-slide" class="slide"><img src="/img/bkg/bees/AAaaDSC_7588.low.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div class="fade-in"><div style="position:relative; top:375px" class="title-block"><div class="title-container"><h1 style="line-height:45pt;" class="title1 fade-in">Lecture 05: Do Humans Perceive Others’ Feelings</h1><h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3></div></div></div><div class="handout">\def \ititle {Lecture 05: Do Humans Perceive Others’ Feelings}</div><div class="handout">\begin{center}</div><div class="handout">{\Large</div><div class="handout">\textbf{\ititle}</div><div class="handout">}</div><div class="handout">&nbsp;</div><div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div><div class="handout">\end{center}</div><div class="notes">subtitle is:
 Prospects for the Hypothesis That We Perceive Mental States, 
-and How Some Limits on What Can Be Perceived Are Overcome through Simple Forms of Social Interaction.
-  </div>
-  <div class="notes">This talk is about a simple question.
+and How Some Limits on What Can Be Perceived Are Overcome through Simple Forms of Social Interaction.</div><div class="notes">This talk is about a simple question.
 Do humans every perceptually expeirence any of another’s mental states?
 What evidence would help us to answer this question?
 At the very end, I will switch from perception to interaction,
 and consider what we might gain by
 shifting from merely observing expressions of emotion to 
-jointly expressing an emotion as in sharing a smile.
-  </div>
-</div>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>How do you know about it?<span class="object hide">  ・   </span><span class="object hide">it = this pen</span><span class="emotion hide">  ・   </span><span class="emotion hide">it = this joy</span></p>
-          <p class="em-above"> </p>
-          <p class="indent">percieve indicator, infer its presence</p>
-          <p class="indent">- vs -</p>
-          <p class="indent perceive">percieve it </p>
-          <p class="em-above p-is-e hide">[ but perceiving is inferring <span class="tick hide">✓ </span><span>]</span></p>
-          <div class="notes">Here are three ways of knowing: inference, testimony and perception.
-          </div>
-          <div class="slide">
-            <div data-what=".object" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Where ‘it’ is an ordinary physical object like my favourite pen,
-each of these three identifies a process by which knowledge could be acquired.
-            </div>
-            <div class="notes">(This is not to say that talk about reasoning invariably picks out a process (cf Alvarez),
-just that there is a process.)
-            </div>
-            <div class="notes">There seems to be a clear contrast the first and last ways of coming to know about it.
+jointly expressing an emotion as in sharing a smile.</div></div><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>How do you know about it?<span class="object hide">  ・   </span><span class="object hide">it = this pen</span><span class="emotion hide">  ・   </span><span class="emotion hide">it = this joy</span></p><p class="em-above"> </p><p class="indent">percieve indicator, infer its presence</p><p class="indent">- vs -</p><p class="indent perceive">percieve it </p><p class="em-above p-is-e hide">[ but perceiving is inferring <span class="tick hide">✓ </span><span>]</span></p><div class="notes">Here are three ways of knowing: inference, testimony and perception.</div><div class="slide"><div data-what=".object" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Where ‘it’ is an ordinary physical object like my favourite pen,
+each of these three identifies a process by which knowledge could be acquired.</div><div class="notes">(This is not to say that talk about reasoning invariably picks out a process (cf Alvarez),
+just that there is a process.)</div><div class="notes">There seems to be a clear contrast the first and last ways of coming to know about it.
 (Philosophers debate about whether the first and second are genuinely different routes 
-to knowledge.)
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".p-is-e" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Even if, as do I, you think perception involves inference-like processes, there is still
-a contrast between inferring and perceiving.
-            </div>
-            <div class="notes">For instance, suppose you know that I am all but inseparable from my favourite pen.
+to knowledge.)</div></div><div class="slide"><div data-what=".p-is-e" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Even if, as do I, you think perception involves inference-like processes, there is still
+a contrast between inferring and perceiving.</div><div class="notes">For instance, suppose you know that I am all but inseparable from my favourite pen.
 Then when you see me arrive you can infer that my pen is here too.
 Contrast this with simply seeing my pen on the table.
 In one case we see something other than the pen, namely me, and inferring that the
-pen is here; in the other case you are seeing the pen itself.
-            </div>
-            <div class="notes">This is the contrast I need in what follows.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".tick" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what=".object" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div data-what=".emotion" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what=".perceive" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-            <div class="notes">Are mental states the kinds of thing we can come to know about through
+pen is here; in the other case you are seeing the pen itself.</div><div class="notes">This is the contrast I need in what follows.</div></div><div class="slide"><div data-what=".tick" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".object" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".emotion" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".perceive" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">Are mental states the kinds of thing we can come to know about through
 perceiving them?
-I will focus on emotions like joy.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <p class="center"><img src="/img/aviezer_2012_fig2A3.jpg" style=""/>
-  </p>
-  <p class="source">Aviezer et al (2012, figure 2A3)</p>
-  <div class="notes">[not relevant yet:] ‘(3) a losing face on a winning body’
-  </div>
-  <div class="notes">Emotions are sometimes expressed bodily and vocally.
+I will focus on emotions like joy.</div></div></div></div></div></div></section><section class="slide"><p class="center"><img src="/img/aviezer_2012_fig2A3.jpg" style=""/></p><p class="source">Aviezer et al (2012, figure 2A3)</p><div class="notes">[not relevant yet:] ‘(3) a losing face on a winning body’</div><div class="notes">Emotions are sometimes expressed bodily and vocally.
 Here is someone who has just won or lost a tennis match, so is feeling
-joy or anger.  Maybe you can tell which?
-  </div>
-  <div class="notes">Here is a natural thought:
+joy or anger.  Maybe you can tell which?</div><div class="notes">Here is a natural thought:
 Bodily and vocal expressions of emotion
-enable us to perceptually experience the expressed emotions.
-  </div>
-  <div class="notes">This natural thought fits with ordinary talk about mental states.
+enable us to perceptually experience the expressed emotions.</div><div class="notes">This natural thought fits with ordinary talk about mental states.
 Imagine yourself at a tennis match.
 Reporting the event afterwards, you might say that you saw his ecstacy
 at winning.
-It might seem that his ecstacy is as plainly visible as the hair on his head.
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center verbal-reports">verbal reports and ratings? <span class="no bkg-red hide">No!</span></p>
-          <p class="right grey-text">(Scholl & Tremoulet 2000; Schlottman 2006)</p>
-          <div class="notes">There are scientists and philosophers who have placed a lot of weight 
+It might seem that his ecstacy is as plainly visible as the hair on his head.</div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center verbal-reports">verbal reports and ratings? <span class="no bkg-red hide">No!</span></p><p class="right grey-text">(Scholl & Tremoulet 2000; Schlottman 2006)</p><div class="notes">There are scientists and philosophers who have placed a lot of weight 
 on verbal reports.
 They are satisfied that if people use mental state terms to describe what they
 perceive, then they perceive those mental states.
-But I think this can’t be right.
-          </div>
-          <div class="notes">Go back to the tennis match.
+But I think this can’t be right.</div><div class="notes">Go back to the tennis match.
 Reporting the event afterwards you might say not only that you saw his ecstacy 
 but also that you saw him win.
 I take it you can't literally perceptually experience winning or losing 
 in the sense that, arguably, you can perceptually experience movement or changes in colour.
-After all, winning or loosing is a matter of rules and conventions.
-          </div>
-          <div class="slide">
-            <div data-what=".no" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">So we can’t straightforwardly take what people say as a guide to what they perceive.
-            </div>
-            <div class="notes">Here you might object that we can perceptually experience things like winning or losing,
-so there is no reason to question verbal reports.
-            </div>
-            <div class="notes">But note that taking this line amounts to rejecting the claim I started with.
-            </div>
-          </div>
-          <div class="slide"> 
-            <p class="em-above">contrast:</p>
-            <p class="indent">percieve indicator, infer its presence</p>
-            <p class="indent">- vs -</p>
-            <p class="indent">percieve it </p>
-            <div class="notes">I claimed that there is a contrast between seeing an indicator and inferrring the
-presence of an object
-            </div>
-            <div class="notes">If there is a contrast here, what we colloquially call seeing someone win must be 
+After all, winning or loosing is a matter of rules and conventions.</div><div class="slide"><div data-what=".no" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">So we can’t straightforwardly take what people say as a guide to what they perceive.</div><div class="notes">Here you might object that we can perceptually experience things like winning or losing,
+so there is no reason to question verbal reports.</div><div class="notes">But note that taking this line amounts to rejecting the claim I started with.</div></div><div class="slide"> <p class="em-above">contrast:</p><p class="indent">percieve indicator, infer its presence</p><p class="indent">- vs -</p><p class="indent">percieve it </p><div class="notes">I claimed that there is a contrast between seeing an indicator and inferrring the
+presence of an object</div><div class="notes">If there is a contrast here, what we colloquially call seeing someone win must be 
 a case of perceiving indicators and inferring winning.
 So to say that we can straightforwardly infer that people perceive emotions from
 their verbal reports is to reject the existence of the very contrast that allows
-us to make sense of the question.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="notes show">‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </p>
-          <p class="right grey-text">McNeill (2012, p. 573)</p>
-          <div class="handout"> \citet[p.\ 573]{mcneill:2012_embodiment}: ‘We sometimes {see} aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </div>
-          <div class="slide">
-            <p class="huge-glow">challenge </p>
-            <p style="margin-top:-2.85em;margin-left:3.4em">Evidence?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="categorical_perception_emotion" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Categorical Perception &amp; Emotion</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Categorical Perception &amp; Emotion}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Categorical Perception &amp; Emotion}</div>
-
+us to make sense of the question.</div></div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="notes show">‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </p><p class="right grey-text">McNeill (2012, p. 573)</p><div class="handout"> \citet[p.\ 573]{mcneill:2012_embodiment}: ‘We sometimes {see} aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </div><div class="slide"><p class="huge-glow">challenge </p><p style="margin-top:-2.85em;margin-left:3.4em">Evidence?</p></div></div></div></div></div></section><section id="categorical_perception_emotion" class="slide"><img src="/img/bkg/bees/ADSC_0172_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Categorical Perception &amp; Emotion</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Categorical Perception &amp; Emotion}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Categorical Perception &amp; Emotion}</div>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section class="slide">
-  <div class="words">
-    <div class="middle">
-      <div class="container_12">
-        <div class="grid_4">
-          <div style="background-color:rgb(51,153,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-          </div>
-          <p class="center">2.5B</p>
-        </div>
-        <div class="grid_4">
-          <div style="background-color:rgb(85,100,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-          </div>
-          <p class="center">7.5BG</p>
-        </div>
-        <div class="grid_4">
-          <div style="background-color:rgb(42,162,42);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-          </div>
-          <p class="center">2.5BG</p>
-        </div>
-      </div>
-      <div class="notes">Categorical perception is perhaps most easily understood from the case of colour.
-      </div>
-      <div class="notes">[For later: colour is doubly relevant because there's been serious debate about 
+<section class="slide"><div class="words"><div class="middle"><div class="container_12"><div class="grid_4"><div style="background-color:rgb(51,153,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box"></div><p class="center">2.5B</p></div><div class="grid_4"><div style="background-color:rgb(85,100,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box"></div><p class="center">7.5BG</p></div><div class="grid_4"><div style="background-color:rgb(42,162,42);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box"></div><p class="center">2.5BG</p></div></div><div class="notes">Categorical perception is perhaps most easily understood from the case of colour.</div><div class="notes">[For later: colour is doubly relevant because there's been serious debate about 
 whether it's possible to perceive categorical 
 colour properties despite copious verbal reports.
 This case shows how evidence can bear on questions about phenomenology,
-although I won’t be talking about that here (probably).]
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes show">
-            <p>fix initial system of categories</p>
-            <p>measure disciminatory responses</p>
-            <p>observe between- vs within-category differences </p>
-            <p>exclude non-cognitive explanations for the differences</p>
-          </div>
-          <div class="notes">greater discrimination between than within catgeories indicated that the inital
+although I won’t be talking about that here (probably).]</div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes show"><p>fix initial system of categories</p><p>measure disciminatory responses</p><p>observe between- vs within-category differences </p><p>exclude non-cognitive explanations for the differences</p></div><div class="notes">greater discrimination between than within catgeories indicated that the inital
 system of categories may be having some influence on whatever underpins
-the responses.
-          </div>
-          <div class="notes">Do any perceptual processes in humans discriminate stimuli according to the expressions 
+the responses.</div><div class="notes">Do any perceptual processes in humans discriminate stimuli according to the expressions 
 of emotion they involve?
-That is, do humans have \emph{categorical perception} of expressions of emotion?
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide01.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Assume that we as theorists have a system which allows us to categorise 
+That is, do humans have \emph{categorical perception} of expressions of emotion?</div></div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide01.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Assume that we as theorists have a system which allows us to categorise 
 static pictures of faces and other stimuli according to which emotion we 
-think they are expressing: some faces are happy, others fearful, and so on.
-        </div>
-        <div class="notes handout">There is a way of categorising static pictures of faces and other stimuli according to which emotion
+think they are expressing: some faces are happy, others fearful, and so on.</div><div class="notes handout">There is a way of categorising static pictures of faces and other stimuli according to which emotion
 someone might think they are expressing: some faces are happy, others fearful, and so on
 From five months of age, 
 or possibly much earlier \citep{field:1982_discrimination}, 
 through to adulthood, humans are better at distinguishing faces when they 
 differ with respect to these categories than when they do not 
-\citep{Etcoff:1992zd,Gelder:1997bf,Bornstein:2003vq,Kotsoni:2001ph,cheal:2011_categorical,hoonhorst:2011_categoricala}.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide02.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">To illustrate, consider these pictures of faces.
-The idea is this.
-        </div>
-        <div class="notes">With respect to all features apart from the expression of emotion, each face picture differs from its neighbours no more than any other picture differs from its neighbours.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide03.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Most neighbouring pairs of face pictures would be relatively hard to distinguish,
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide04.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">especially if they were not presented side-by-side.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide05.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">But most people find one pair of neighbouring face pictures  relatively easy to distinguish---you may notice this yourself.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide06.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide07.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide08.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide09.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide10.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">What underlies these patterns of discrimination?
-Several possibilities that would render them uninteresting for our purposes can be ruled out.
-        </div>
-        <div class="notes handout">The patterns of discrimination do not appear to be an artefact of linguistic labels
-(\citealp{sauter:2011_categorical}; see also \citealp{laukka:2005_categorical}, p.\ 291),%
-        </div>
-        <div class="notes">%
+\citep{Etcoff:1992zd,Gelder:1997bf,Bornstein:2003vq,Kotsoni:2001ph,cheal:2011_categorical,hoonhorst:2011_categoricala}.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide02.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">To illustrate, consider these pictures of faces.
+The idea is this.</div><div class="notes">With respect to all features apart from the expression of emotion, each face picture differs from its neighbours no more than any other picture differs from its neighbours.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide03.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Most neighbouring pairs of face pictures would be relatively hard to distinguish,</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide04.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">especially if they were not presented side-by-side.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide05.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">But most people find one pair of neighbouring face pictures  relatively easy to distinguish---you may notice this yourself.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide06.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide07.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide08.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide09.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide10.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">What underlies these patterns of discrimination?
+Several possibilities that would render them uninteresting for our purposes can be ruled out.</div><div class="notes handout">The patterns of discrimination do not appear to be an artefact of linguistic labels
+(\citealp{sauter:2011_categorical}; see also \citealp{laukka:2005_categorical}, p.\ 291),%</div><div class="notes">%
 \footnote{
 Puzzlingly, experiments by \citet{fugate:2010_reading} using photos of chimpanzee faces with human subjects are sometimes cited as evidence that categorical perception of expressions of emotion depends on, or can be modulated by, the use of verbal labels for stimuli (e.g.\ \citealp[p.\ 288]{barrett:2011_context}; \citealp[p.\ 315]{gendron:2012_emotion}).
 Caution is needed in interpreting these findings
 given that there may be differences in the ways  humans process human and chimpanzee faces.
 In fact, what \citeauthor{fugate:2010_reading}'s findings show may be simply that `human viewers do not show [categorical perception] for the chimpanzee facial configurations used in their study' \citep[p.\ 1482]{sauter:2011_categorical}.
 }
-%
-        </div>
-        <div class="notes handout ctd">nor of the particular choices subjects in these experiments are presented with \citep{bimler:2001_categorical,fujimura:2011_categorical}.
-Nor are the patterns of discrimination due to narrowly visual features of the stimuli used \citep{sato:2009_detection}.
-        </div>
-        <div class="notes">We can be confident, then, that the patterns of discrimination probably reflect one or more processes which categorises stimuli by expression of emotion.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Examples of stimuli used (they had 200 ish faces) by Batty and Taylor in their ERP study.
-        </div>
-        <div style="position:relative;"><img src="/img/batty_2003_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Batty & Taylor, 2003 figure 1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Don't have details, this is just to stress it's early (around 200ms) and plausibly automatic.</div>
-        <div class="notes handout">‘at a mean latency of 140 ms) the N170 showed both amplitude and latency
+%</div><div class="notes handout ctd">nor of the particular choices subjects in these experiments are presented with \citep{bimler:2001_categorical,fujimura:2011_categorical}.
+Nor are the patterns of discrimination due to narrowly visual features of the stimuli used \citep{sato:2009_detection}.</div><div class="notes">We can be confident, then, that the patterns of discrimination probably reflect one or more processes which categorises stimuli by expression of emotion.</div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Examples of stimuli used (they had 200 ish faces) by Batty and Taylor in their ERP study.</div><div style="position:relative;"><img src="/img/batty_2003_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Batty & Taylor, 2003 figure 1</p></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Don't have details, this is just to stress it's early (around 200ms) and plausibly automatic.</div><div class="notes handout">‘at a mean latency of 140 ms) the N170 showed both amplitude and latency
 modulation differentially with emotional expressions. ...
 [BUT] Whether this is due presently to low-level stimulus factors or to the use of emotional faces
-is still to be determined’ \citep[p.~616]{batty:2003_early}.
-        </div>
-        <div class="notes">‘As the task did not require the subjects to focus on particular emotional expressions ...
-these data suggest an early automatic encoding of emotional facial expression’ \citep[p.~616]{batty:2003_early}.
-        </div>
-        <div style="position:relative;"><img src="/img/batty_2003_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Batty & Taylor, 2003 figure 2</p>
-        <div class="notes">At least some of the processes underpinning categorical perception of facial expressions
+is still to be determined’ \citep[p.~616]{batty:2003_early}.</div><div class="notes">‘As the task did not require the subjects to focus on particular emotional expressions ...
+these data suggest an early automatic encoding of emotional facial expression’ \citep[p.~616]{batty:2003_early}.</div><div style="position:relative;"><img src="/img/batty_2003_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Batty & Taylor, 2003 figure 2</p><div class="notes">At least some of the processes underpinning categorical perception of facial expressions
 of emotion are rapid (occurring within roughly 200 milliseconds of a stimulus' appearance),
 pre-attentive \citep{vuilleumier:2001_emotional} and automatic in the sense that whether they occur
-is to a significant degree independent of subjects' tasks and motivations \citep{batty:2003_early}.%
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>Perceptual?</p>
-          <p>At least for fear & happiness </p>
-          <p class="indent">- ERP (Campanella et al 2002)</p>
-          <p class="indent">- visual search : behavioural (Williams et al 2005)</p>
-          <div class="notes">But are any of the processes that categorise stimuli by expression of emotion perceptual?
+is to a significant degree independent of subjects' tasks and motivations \citep{batty:2003_early}.%</div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Perceptual?</p><p>At least for fear & happiness </p><p class="indent">- ERP (Campanella et al 2002)</p><p class="indent">- visual search : behavioural (Williams et al 2005)</p><div class="notes">But are any of the processes that categorise stimuli by expression of emotion perceptual?
 %That is, are the observed abilities to discriminate  expressions of emotion ever based on perceptual processes?
 Answering this question is complicated by the fact that many parts of the brain are involved \citep{adolphs:2002_recognizing,vuilleumier:2007_distributed}.  
 There is evidence that both the amygdala \citep{harris:2012_morphing,harris:2014_dynamic} and also some cortical structures \citep{batty:2003_early}
@@ -573,121 +100,27 @@ from both neurophysiological \citep{Campanella:2002aa} and behavioural measures 
 of categorisation occurring in perceptual processing.
 So while the evidence is not conclusive,
 there is converging evidence that some perceptual processes categorise stimuli including faces by  expression of emotion.
-Humans may have categorical perception not only for speech, colour, orientation and other properties but also for expressions of emotion.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Earlier I asked, what evidence could bear on the perceptual hypothesis?
-Now we have a partial answer.
-          </div>
-          <p>‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </p>
-          <p class="right grey-text">McNeill (2012, p. 573)</p>
-          <p class="huge-glow">challenge </p>
-          <p style="margin-top:-2.85em;margin-left:3.4em">Evidence? <span class="cp hide">Categorical Perception!</span></p>
-          <div class="slide">
-            <div data-what=".cp" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Part of the evidence relevant to the perceptual hypothesis is evidence that 
-humans can categorically perceive expressions of emotion.
-            </div>
-            <div class="notes">But what does the evidence from studies of categorical perception
-tell us about the truth or falsity of the perceptual hypothesis ?
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Just here it is natural to take a sceptical line and claim ...
-          </div>
-          <div style="width:66%">
-            <p style="margin-top:-.5em;margin-bottom:-.5em;padding-top:.5em;padding-bottom:.5em;" class="one">1. The objects of categorical perception, ‘expressions of emotion’, are facial expressions.
-            </p>
-            <p class="em-above">so ...</p>
-            <p class="em-above">2. The things we perceive in virtue of categorical perception are not emotions.</p>
-            <div class="slide">
-              <div data-what=".one" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-              <div class="notes">Just here we have to be extremely careful.
+Humans may have categorical perception not only for speech, colour, orientation and other properties but also for expressions of emotion.</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Earlier I asked, what evidence could bear on the perceptual hypothesis?
+Now we have a partial answer.</div><p>‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </p><p class="right grey-text">McNeill (2012, p. 573)</p><p class="huge-glow">challenge </p><p style="margin-top:-2.85em;margin-left:3.4em">Evidence? <span class="cp hide">Categorical Perception!</span></p><div class="slide"><div data-what=".cp" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Part of the evidence relevant to the perceptual hypothesis is evidence that 
+humans can categorically perceive expressions of emotion.</div><div class="notes">But what does the evidence from studies of categorical perception
+tell us about the truth or falsity of the perceptual hypothesis ?</div></div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Just here it is natural to take a sceptical line and claim ...</div><div style="width:66%"><p style="margin-top:-.5em;margin-bottom:-.5em;padding-top:.5em;padding-bottom:.5em;" class="one">1. The objects of categorical perception, ‘expressions of emotion’, are facial expressions.</p><p class="em-above">so ...</p><p class="em-above">2. The things we perceive in virtue of categorical perception are not emotions.</p><div class="slide"><div data-what=".one" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">Just here we have to be extremely careful.
 We have to ask, What are the objects of categorical perception?
-That is, What Are the Perceptual Processes Supposed to Categorise?
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="objects_of_categorical_perception" class="slide"><img src="/img/bkg/bees/DSC_0157_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">The Objects of Categorical Perception</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{The Objects of Categorical Perception}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{The Objects of Categorical Perception}</div>
-
+That is, What Are the Perceptual Processes Supposed to Categorise?</div></div></div></div></div></div></div></section><section id="objects_of_categorical_perception" class="slide"><img src="/img/bkg/bees/DSC_0157_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">The Objects of Categorical Perception</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{The Objects of Categorical Perception}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{The Objects of Categorical Perception}</div>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">What are the perceptual processes supposed to categorise?</p>
-          <div class="notes">standard view: fixed expressions linked to emotional categories</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <p class="center"><img src="/img/aviezer_2012_fig2A3.jpg" style=""/>
-  </p>
-  <p class="source">Aviezer et al (2012, figure 2A3)</p>
-  <div class="notes">But are the things categorised by perceptual processes facial configurations?
+<section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">What are the perceptual processes supposed to categorise?</p><div class="notes">standard view: fixed expressions linked to emotional categories</div></div></div></div></div></section><section class="slide"><p class="center"><img src="/img/aviezer_2012_fig2A3.jpg" style=""/></p><p class="source">Aviezer et al (2012, figure 2A3)</p><div class="notes">But are the things categorised by perceptual processes facial configurations?
 This view faces a problem.
 There is evidence that
 the same facial configuration can express intense joy or intense  anguish depending on the posture of the body it is attached to,
 and, relatedly, that humans cannot accurately determine emotions from spontaneously occurring
 (spontaneously occurring---i.e.\ as opposed to acted out)
 facial configurations \citep{motley:1988_facial,aviezer:2008_angry,aviezer:2012_body}.
-These and other findings, while not decisive, cast doubt on the view that categories of emotion are associated with categories of facial configurations \citep{hassin:2013_inherently}.
-  </div>
-  <div class="handout">The same facial configuration can express intense joy or intense anguish depending on the posture of
+These and other findings, while not decisive, cast doubt on the view that categories of emotion are associated with categories of facial configurations \citep{hassin:2013_inherently}.</div><div class="handout">The same facial configuration can express intense joy or intense anguish depending on the posture of
 the body it is attached to; and humans cannot accurately determine emotions from
 spontaneously occurring (as opposed to acted out) facial
-configurations \citep{motley:1988_facial,aviezer:2008_angry,aviezer:2012_body}.
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="notes handout show">Aviezer et al's puzzle:</p>
-          <p class="notes handout ctd show"> <span>Given that  </span><span class="noblur">facial configurations</span><span> are not diagnostic of emotion, why  </span><span class="noblur">are they categorised by perceptual processes?</span></p>
-          <div class="notes">This evidence makes the findings we have reviewed on categorical perception puzzling.
+configurations \citep{motley:1988_facial,aviezer:2008_angry,aviezer:2012_body}.</div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="notes handout show">Aviezer et al's puzzle:</p><p class="notes handout ctd show"> <span>Given that  </span><span class="noblur">facial configurations</span><span> are not diagnostic of emotion, why  </span><span class="noblur">are they categorised by perceptual processes?</span></p><div class="notes">This evidence makes the findings we have reviewed on categorical perception puzzling.
 Given that the facial configurations are not diagnostic of emotion,
 why are they categorised by perceptual processes?%
 \footnote{
@@ -697,129 +130,27 @@ report perceiving diagnostic affective valence in the face.'
 }
 This question appears unanswerable as long as we retain the assumption---for which, after all, no
 argument was given---that the things categorical perception is supposed to categorise are facial
-configurations.
-          </div>
-          <div class="slide">
-            <p class="em-above">... maybe the aren’t.</p>
-            <div class="notes">But if we reject this assumption, what is the alternative?
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="span:not(.noblur)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">speech perception</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white"></div>
-  <div class="container_12">
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p class="center">articulation of phoneme</p>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half">
-      <div style="padding-left:1em;">
-        <p class="center">expression of emotion</p>
-      </div>
-    </div>
-    <div class="notes">Compare expressing an emotion by, say, smiling or frowning,  with articulating a phoneme.
-    </div>
-    <div class="clear"></div>
-    <div class="slide">
-      <div class="notes">Both have a communicative function (on expressions of emotion, see for example \citealp{blair:2003_facial,sato:2007_spontaneous})
+configurations.</div><div class="slide"><p class="em-above">... maybe the aren’t.</p><div class="notes">But if we reject this assumption, what is the alternative?</div></div><div class="slide"><div data-what="span:not(.noblur)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div></div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">speech perception</p></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white"></div><div class="container_12"><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="center">articulation of phoneme</p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p class="center">expression of emotion</p></div></div><div class="notes">Compare expressing an emotion by, say, smiling or frowning,  with articulating a phoneme.</div><div class="clear"></div><div class="slide"><div class="notes">Both have a communicative function (on expressions of emotion, see for example \citealp{blair:2003_facial,sato:2007_spontaneous})
 and both are categorically perceived, 
-but the phonetic case has been more extensively investigated.
-      </div>
-      <div class="grid_6 words left-half">
-        <div style="padding-right:1em;">
-          <p>- communicative function</p>
-        </div>
-      </div>
-      <div class="grid_6 words invert right-half">
-        <div style="padding-left:1em;">
-          <p>- communicative function</p>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div class="slide">
-      <div class="notes">Variations due to coarticulation, rate of speech, dialect and many other factors mean that isolated acoustic signals are not generally diagnostic of phonemes:
-in different contexts, the same acoustic signal might be a consequence of the articulation of any of several phonemes.
-      </div>
-      <div class="grid_6 words left-half">
-        <div style="padding-right:1em;">
-          <p>- isolated acoustic signals not diagnostic</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="notes">So here there is a parallel between speech and emotion.
-Much as isolated facial expressions are not diagnostic of emotions (as we saw a moment ago), isolated acoustic signals are plausibly not diagnostic of phonetic articulations.
-      </div>
-      <div class="grid_6 words invert right-half">
-        <div style="padding-left:1em;">
-          <p>- isolated facial expressions not diagnostic</p>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div class="slide">
-      <div class="notes">Why then are isolated acoustic signals---which rarely even occur outside the lab---categorised by perceptual or motor processes at all?
+but the phonetic case has been more extensively investigated.</div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p>- communicative function</p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p>- communicative function</p></div></div></div><div class="clear"></div><div class="slide"><div class="notes">Variations due to coarticulation, rate of speech, dialect and many other factors mean that isolated acoustic signals are not generally diagnostic of phonemes:
+in different contexts, the same acoustic signal might be a consequence of the articulation of any of several phonemes.</div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p>- isolated acoustic signals not diagnostic</p></div></div></div><div class="slide"><div class="notes">So here there is a parallel between speech and emotion.
+Much as isolated facial expressions are not diagnostic of emotions (as we saw a moment ago), isolated acoustic signals are plausibly not diagnostic of phonetic articulations.</div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p>- isolated facial expressions not diagnostic</p></div></div></div><div class="clear"></div><div class="slide"><div class="notes">Why then are isolated acoustic signals---which rarely even occur outside the lab---categorised by perceptual or motor processes at all?
 To answer this question we first need a rough idea of what it is to articulate a phoneme.
 Articulating a phoneme involves making coordinated movements of the lips, tongue, velum and larynx.
 How these should move depends in complex ways on numerous factors including phonetic context \citep{Browman:1992da,Goldstein:2003bn}.
 In preparing for such movements, it is plausible that the articulation of a particular phoneme is an outcome represented motorically,
-where this motor representation coordinates the movements and normally does so in such a way as to increase the probability that the outcome represented will occur.
-      </div>
-      <div class="grid_6 words left-half">
-        <div style="padding-right:1em;">
-          <p>- complex coordinated<span class="goal-directed hide">, goal-directed </span><span> movements</span></p>
-          <div class="slide">
-            <div data-what=".goal-directed" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">This implies that the articulation of a particular phoneme,
+where this motor representation coordinates the movements and normally does so in such a way as to increase the probability that the outcome represented will occur.</div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p>- complex coordinated<span class="goal-directed hide">, goal-directed </span><span> movements</span></p><div class="slide"><div data-what=".goal-directed" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">This implies that the articulation of a particular phoneme,
 although probably not an intentional action,
-is a goal-directed action whose goal is the articulation of that phoneme.
-            </div>
-            <div class="notes">(On the link between  motor representation and goal-directed action, see \citealp{butterfill:2012_intention}.)
-            </div>
-            <div class="notes">Now some hold that the things categorised in categorical perception of speech are not sounds or movements (say) but rather these outcomes---the very outcomes in terms of which speech actions are represented motorically (\citealp{Liberman:2000gr}; see also \citealp{Browman:1992da}).%
+is a goal-directed action whose goal is the articulation of that phoneme.</div><div class="notes">(On the link between  motor representation and goal-directed action, see \citealp{butterfill:2012_intention}.)</div><div class="notes">Now some hold that the things categorised in categorical perception of speech are not sounds or movements (say) but rather these outcomes---the very outcomes in terms of which speech actions are represented motorically (\citealp{Liberman:2000gr}; see also \citealp{Browman:1992da}).%
 \footnote{
 Note that this claim does not entail commitment to other components of the motor theory of speech perception.
 }
 %
 On this view, 
 categorical perception of speech is a process which takes as input the bodily and acoustic effects of speech actions and attempts to identify which outcomes the actions are directed to bringing about, that is, which phonemes the speaker is attempting to articulate.
-That isolated acoustic signals can engage this process and thereby trigger categorical perception  is merely a side-effect, albeit one with useful methodological consequences.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="grid_6 words invert right-half">
-        <div style="padding-left:1em;">
-          <p>- complex coordinated, goal-directed movements</p>
-        </div>
-      </div>
-      <div class="notes">We can think of expressions of emotion as goal-directed in the same sense that 
+That isolated acoustic signals can engage this process and thereby trigger categorical perception  is merely a side-effect, albeit one with useful methodological consequences.</div></div></div></div></div><div class="slide"><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p>- complex coordinated, goal-directed movements</p></div></div><div class="notes">We can think of expressions of emotion as goal-directed in the same sense that 
 articulations of phonemes are.
-They are actions whose goal is the expression of a particular emotional episode.
-      </div>
-      <div class="notes">This may initially strike you as implausible given that such expressions of emotion can be spontaneous, unintentional and involuntary.
+They are actions whose goal is the expression of a particular emotional episode.</div><div class="notes">This may initially strike you as implausible given that such expressions of emotion can be spontaneous, unintentional and involuntary.
 But note that expressing an emotion by, say, smiling or frowning,
 whether intentionally or not,
 involves making coordinated movements of multiple muscles
@@ -829,50 +160,18 @@ and being coordinated around an outcome (the goal) in virtue of that outcome bei
 \footnote{
 To increase the plausibility of the conjecture under consideration, we should allow that some categorically perceived expressions of emotion are not goal-directed actions but events grounded by two or more goal-directed actions.  
 For ease of exposition I shall ignore this complication.
-}
-      </div>
-      <div class="notes">Recognising that some expressions of emotion are goal-directed actions in this sense makes it possible to explain 
+}</div><div class="notes">Recognising that some expressions of emotion are goal-directed actions in this sense makes it possible to explain 
 what distinguishes a genuine expression of emotion of this sort, a smile say, from something unexpressive like the exhalation of wind which might in principle resemble the smile kinematically. 
 Like any goal-directed actions, genuine expressions of emotion of this sort are distinguished from 
 their kinematically similar doppelgänger
-in being directed to outcomes by virtue of the coordinating role of motor representations and processes.
-      </div>
-    </div>
-    
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">the wild conjecture under consideration is that the things categorical perception is supposed to categorise, the ‘expressions of emotion’, are actions of a certain type, and these are categorised by which outcomes they are directed to.
-          </div>
-          <p>What are the perceptual processes supposed to categorise?</p>
-          <p class="em-above">Actions whose goals are to express certain emotions.</p>
-          <div class="slide">
-            <p class="indent">- The perceptual processes categorise events (not e.g. facial configurations).</p>
-            <div class="notes">Let me explain the increasingly bold commitments involved in accepting this conjecture.
-            </div>
-            <div class="notes">First, the things categorised in categorical perception of expressions of emotion are events rather than configurations or anything static.
-(Note that this is consistent the fact that static stimuli can trigger categorical perception; after all, static stimuli can also trigger motor representations of things like grasping \citep{borghi:2007_are}.)
-            </div>
-          </div>
-          <div class="slide">
-            <p class="indent">- These events are not mere physiological reactions.</p>
-            <div class="notes">Second, these events are not mere physiological reactions (as we might intuitively take blushing to be) but things like frowning and smiling, whose performance involves motor expertise.
+in being directed to outcomes by virtue of the coordinating role of motor representations and processes.</div></div>
+</div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">the wild conjecture under consideration is that the things categorical perception is supposed to categorise, the ‘expressions of emotion’, are actions of a certain type, and these are categorised by which outcomes they are directed to.</div><p>What are the perceptual processes supposed to categorise?</p><p class="em-above">Actions whose goals are to express certain emotions.</p><div class="slide"><p class="indent">- The perceptual processes categorise events (not e.g. facial configurations).</p><div class="notes">Let me explain the increasingly bold commitments involved in accepting this conjecture.</div><div class="notes">First, the things categorised in categorical perception of expressions of emotion are events rather than configurations or anything static.
+(Note that this is consistent the fact that static stimuli can trigger categorical perception; after all, static stimuli can also trigger motor representations of things like grasping \citep{borghi:2007_are}.)</div></div><div class="slide"><p class="indent">- These events are not mere physiological reactions.</p><div class="notes">Second, these events are not mere physiological reactions (as we might intuitively take blushing to be) but things like frowning and smiling, whose performance involves motor expertise.
 \footnote{
 To emphasise, one consequence of this is that not everything which might intuitively be labelled as an expression of emotion is relevant to understanding what is categorised by perceptual processes.
 %For example, in the right context a blush may signal emotion without requiring motor expertise.
-}
-            </div>
-          </div>
-          <div class="slide">
-            <p class="indent">- These events are are perceptually categorised  by the outcomes to which they are directed.</p>
-            <div class="notes">Third, these events are perceptually categorised  by the outcomes to which they are directed.
-That is, outcomes represented motorically in performing these actions are things by which these events are categorised in categorical perception.
-            </div>
-            <div class="notes">Should we accept the wild conjecture? 
+}</div></div><div class="slide"><p class="indent">- These events are are perceptually categorised  by the outcomes to which they are directed.</p><div class="notes">Third, these events are perceptually categorised  by the outcomes to which they are directed.
+That is, outcomes represented motorically in performing these actions are things by which these events are categorised in categorical perception.</div><div class="notes">Should we accept the wild conjecture? 
 It goes well beyond the available evidence and currently lacks any reputable endorsement.
 In fact, we lack direct evidence for even the first of the increasingly bold commitments just mentioned (namely, the claim that the things categorically perceived are events).
 A further problem is that we know relatively little about the actions which, according to the wild conjecture, are the things categorical perception is supposed to categorise  (\citealp[p.\ 47]{scherer:2013_understanding}; see also \citealp{scherer:2007_are} and \citealp{fernandez-dols:2013_advances}).
@@ -885,9 +184,7 @@ See
 and
 \citet[p.\ 289]{barrett:2011_context}: ‘scientists have created an artifact’.
 }
-And, as I shall now explain, several considerations make the wild conjecture seem at least worth testing.
-            </div>
-            <div class="notes">Consider again the procedure used in testing for categorical perception.
+And, as I shall now explain, several considerations make the wild conjecture seem at least worth testing.</div><div class="notes">Consider again the procedure used in testing for categorical perception.
 Each experiment begins with a system for categorising the stimuli (expressions).
 This initial system  is either specified by the experimenters or, in some cases, by having the participants first divide stimuli into categories using verbal labels or occasionally using non-verbal decisions.
 The experiment then seeks to measure whether this initial system of categories predicts patterns in discrimination.
@@ -906,9 +203,7 @@ So on the most straightforward interpretation,
 the experiments on categorical perception of expressions of emotion 
 are testing whether there are perceptual processes whose function is to categorise  actions of a certain type by the outcomes to which they are directed.
 So the wild conjecture is needed for the most straightforward interpretation of these experiments.
-This doesn't make it true but it does make it worth testing.
-            </div>
-            <div class="notes">So far I have focussed on evidence for categorical perception from experiments using faces as stimuli.
+This doesn't make it true but it does make it worth testing.</div><div class="notes">So far I have focussed on evidence for categorical perception from experiments using faces as stimuli.
 However, there is also evidence that perceptual processes categorise vocal and facial expressions alike (\citealp{grandjean:2005_voices,laukka:2005_categorical}; see also \citealp{jaywant:2012_categorical}).
 We also know that 
 %judgements about which emotion an observed person is expressing in a photograph can depend on the posture of the whole body and not only the face \citep{aviezer:2012_body}, and that 
@@ -917,96 +212,25 @@ There is even indirect evidence that categorical perception may concern whole bo
 In short, categorical perception of expressions of emotion plausibly resembles categorical perception of speech in being a multimodal phenomenon which concerns the whole body and is affected by several types of contextual feature.
 This is consistent with the wild conjecture we are considering.
 The conjecture generates the further prediction that the effects of context on categorical perception of expressions of emotion will resemble the myriad effects of context on categorical perception of speech so that `every potential cue ... is an actual cue'
- (\citealp[p.\ 11]{Liberman:1985bn}; for evidence of context effects see in categorical perception of speech, for example, \citealp{Repp:1987xo}; \citealp{Nygaard:1995po} pp.\ 72--5; \citealp{Jusczyk:1997lz}, p.\ 44).
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>modest hypothesis about perceptual experience of emotion</p>
-          <p class="em-above">Information about others’ emotions can faciliate categorical perception of their expressions of emotion,</p>
-          <p>which gives rise to phenomenal expectations concerning their bodily configurations, articulations and movements.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">So I first asked, what evidence could bear on the perceptual hypothesis?
+ (\citealp[p.\ 11]{Liberman:1985bn}; for evidence of context effects see in categorical perception of speech, for example, \citealp{Repp:1987xo}; \citealp{Nygaard:1995po} pp.\ 72--5; \citealp{Jusczyk:1997lz}, p.\ 44).</div></div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>modest hypothesis about perceptual experience of emotion</p><p class="em-above">Information about others’ emotions can faciliate categorical perception of their expressions of emotion,</p><p>which gives rise to phenomenal expectations concerning their bodily configurations, articulations and movements.</p></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">So I first asked, what evidence could bear on the perceptual hypothesis?
 I answered that part of the evidence is from studies of categorical perception
-of facial expressions of emotion.
-          </div>
-          <p>‘We sometimes  <span class="see">see</span><span> aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </span></p>
-          <p class="right grey-text">McNeill (2012, p. 573)</p>
-          <p class="huge-glow">challenge <span class="two hide">2</span><span class="three hide">3</span></p>
-          <p style="margin-top:-2.85em;margin-left:3.4em" class="first-challenge-answer">Evidence? <span class="cp">Categorical Perception!</span></p>
-          <p style="margin-top:-2.85em;margin-left:3.4em" class="remove-me hide second-challenge-answer">Which model of the emotions? </p>
-          <p style="margin-top:-2.85em;margin-left:3.4em" class="remove-me hide third-challenge-answer">Relation to speech and action? </p>
-          <div class="notes">Part of the evidence relevant to the perceptual hypothesis is evidence that 
-humans can categorically perceive expressions of emotion.
-          </div>
-          <div class="notes">Then my next question was,
+of facial expressions of emotion.</div><p>‘We sometimes  <span class="see">see</span><span> aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </span></p><p class="right grey-text">McNeill (2012, p. 573)</p><p class="huge-glow">challenge <span class="two hide">2</span><span class="three hide">3</span></p><p style="margin-top:-2.85em;margin-left:3.4em" class="first-challenge-answer">Evidence? <span class="cp">Categorical Perception!</span></p><p style="margin-top:-2.85em;margin-left:3.4em" class="remove-me hide second-challenge-answer">Which model of the emotions? </p><p style="margin-top:-2.85em;margin-left:3.4em" class="remove-me hide third-challenge-answer">Relation to speech and action? </p><div class="notes">Part of the evidence relevant to the perceptual hypothesis is evidence that 
+humans can categorically perceive expressions of emotion.</div><div class="notes">Then my next question was,
 What does the evidence from studies of categorical perception
-tell us about the truth or falsity of the perceptual hypothesis ?
-          </div>
-          <div class="slide">
-            <div data-what=".cp" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".cp" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Now I think we can answer this question.
-Or rather, we know that the answer depends on what the objects of categorical perception are.
-            </div>
-            <div class="notes">If the objects of categorical perception are merely facial expresssions,
+tell us about the truth or falsity of the perceptual hypothesis ?</div><div class="slide"><div data-what=".cp" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".cp" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Now I think we can answer this question.
+Or rather, we know that the answer depends on what the objects of categorical perception are.</div><div class="notes">If the objects of categorical perception are merely facial expresssions,
 then I think the evidence does not support the claim that we see aspects of
-each others’ mental lives.
-            </div>
-            <div class="notes">But if, as I’ve conjectured, the objects of categorical perception are 
+each others’ mental lives.</div><div class="notes">But if, as I’ve conjectured, the objects of categorical perception are 
 actions directed to the expression of particular emotions, then I think the 
 evidence does provide modest support for the claim that we perceive aspects
-of each others’ mental lives.
-            </div>
-            <div class="notes">This claim will need qualifying in various ways.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".see" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".see" data-cls="bkg-red" class="dv dv-addclass"></div>
-            <div class="notes">First, the evidence suggests that categorical perception of expressions of emotion,
+of each others’ mental lives.</div><div class="notes">This claim will need qualifying in various ways.</div></div><div class="slide"><div data-what=".see" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".see" data-cls="bkg-red" class="dv dv-addclass"></div><div class="notes">First, the evidence suggests that categorical perception of expressions of emotion,
 like categorical perception of speech, is not tied to single modality in any very
-robust way.
-            </div>
-            <div class="notes">Second, I suggest elsewhere that categorical perception isn’t exactly like 
+robust way.</div><div class="notes">Second, I suggest elsewhere that categorical perception isn’t exactly like 
 perception as philosophers standardly understand it.
 In particular, its phenomenology is to be understood in terms of 
-\textbf{PHENOMENAL EXPECTATIONS} rather than by analogy with perception of shapes or textures.
-            </div>
-          </div>
-          <div class="slide">
-            <div class="notes">But let me put these aside because I want to mention a second challenge.
-            </div>
-            <div data-what=".see" data-cls="bkg-red" class="dv dv-removeclass"></div>
-            <div data-what=".cp" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".first-challenge-answer" data-cls="remove-me" class="dv dv-addclass"></div>
-            <div data-what=".second-challenge-answer" data-cls="remove-me" class="dv dv-removeclass"></div>
-            <div data-what=".two" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what=".second-challenge-answer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">The challenge is to specify a model of anger and other mental states which captures how these
+\textbf{PHENOMENAL EXPECTATIONS} rather than by analogy with perception of shapes or textures.</div></div><div class="slide"><div class="notes">But let me put these aside because I want to mention a second challenge.</div><div data-what=".see" data-cls="bkg-red" class="dv dv-removeclass"></div><div data-what=".cp" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".first-challenge-answer" data-cls="remove-me" class="dv dv-addclass"></div><div data-what=".second-challenge-answer" data-cls="remove-me" class="dv dv-removeclass"></div><div data-what=".two" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".second-challenge-answer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">The challenge is to specify a model of anger and other mental states which captures how these
 mental states appear to the perceivers. This is a hard challenge to meet because available models
-arguably render mental states imperceptible.
-            </div>
-            <div class="notes">But what is a model of the emotions?
+arguably render mental states imperceptible.</div><div class="notes">But what is a model of the emotions?
 Since emotions are mental states, here I think we can step back and think about mental states generally.
 On a widely accepted view, mental states involve subjects having  attitudes toward contents (see figure).
 Possible attitudes include believing, wanting, being happy that, and being angry that. 
@@ -1024,362 +248,56 @@ The second task is to find a scheme for specifying the contents of mental states
 This typically involves one or another kind of proposition, although some  have suggested other abstract entities including map-like representations.%
 \footnote{
 See \citet[p.\ 163]{Braddon-Mitchell:1996ce}: ‘what is inside our heads should be thought of as more like maps than sentences.’
-}
-            </div>
-            <div class="notes handout">‘emotions are episodic modes of evaluative engagement with the social and practical world’
-\citep[p.\ 1512]{parkinson:2008_emotions}.
-            </div>
-            <div class="notes">FIRST LIMIT:
+}</div><div class="notes handout">‘emotions are episodic modes of evaluative engagement with the social and practical world’
+\citep[p.\ 1512]{parkinson:2008_emotions}.</div><div class="notes">FIRST LIMIT:
 Determinate emotions (the particular evaluation implied by my anger in this case)
 vs the determinable (anger, in this case).  Categorical perception provides evidence 
 only for the determinable. (Joel said in discussion that he made this point
-with an analogy with CP of colour in Smith (2010)).
-            </div>
-            <div class="notes">SECOND LIMIT:
+with an analogy with CP of colour in Smith (2010)).</div><div class="notes">SECOND LIMIT:
 Static emotions vs emotions unfolding (see notes below from ‘sharing a smile’).
-It seems that CP doesn’t capture dynamics of emotion.
-            </div>
-            <div class="notes">So only a very crude model of the mental would capture emotions as we
+It seems that CP doesn’t capture dynamics of emotion.</div><div class="notes">So only a very crude model of the mental would capture emotions as we
 categorically perceive them.
-What we need here is a minimal theory of the emotions.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".two" data-cls="remove-me" class="dv dv-addclass"></div>
-            <div data-what=".second-challenge-answer" data-cls="remove-me" class="dv dv-addclass"></div>
-            <div data-what=".third-challenge-answer" data-cls="remove-me" class="dv dv-removeclass"></div>
-            <div data-what=".three" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what=".third-challenge-answer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Motor theory of speech perception and goal ascription  ...
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center huge-glow">conclusion</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>How do you know about it?<span class="object">  ・   </span><span class="object">it = this pen</span><span class="emotion">  ・   </span><span class="emotion">it = this joy</span></p>
-          <p class="em-above"> </p>
-          <p class="indent">percieve indicator, infer its presence</p>
-          <p class="indent">- vs -</p>
-          <p class="indent perceive">percieve it </p>
-          <p class="em-above grey-text p-is-e">[ but perceiving is inferring <span class="tick">✓ </span><span>]</span></p>
-          <div class="notes">Here are three ways of knowing: inference, testimony and perception.
-          </div>
-          <div data-what=".object" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-          <div data-what=".perceive" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-          <div class="notes">My question was,
+What we need here is a minimal theory of the emotions.</div></div><div class="slide"><div data-what=".two" data-cls="remove-me" class="dv dv-addclass"></div><div data-what=".second-challenge-answer" data-cls="remove-me" class="dv dv-addclass"></div><div data-what=".third-challenge-answer" data-cls="remove-me" class="dv dv-removeclass"></div><div data-what=".three" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".third-challenge-answer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Motor theory of speech perception and goal ascription  ...</div></div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center huge-glow">conclusion</p></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>How do you know about it?<span class="object">  ・   </span><span class="object">it = this pen</span><span class="emotion">  ・   </span><span class="emotion">it = this joy</span></p><p class="em-above"> </p><p class="indent">percieve indicator, infer its presence</p><p class="indent">- vs -</p><p class="indent perceive">percieve it </p><p class="em-above grey-text p-is-e">[ but perceiving is inferring <span class="tick">✓ </span><span>]</span></p><div class="notes">Here are three ways of knowing: inference, testimony and perception.</div><div data-what=".object" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".perceive" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">My question was,
 Are mental states the kinds of thing we can come to know about through
-perceiving them?
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </p>
-          <p class="right grey-text">McNeill (2012, p. 573)</p>
-          <div class="notes">Focussing on emotions like joy, I have suggested that 
-we face two challenges (at least) in answering it.
-          </div>
-          <p class="em-above">challenge 1: evidence?</p>
-          <div class="notes">The first challenge is to explain what kind of evidence might
-bear on the question.
-          </div>
-          <div class="notes">Here I suggested that studies of categorical perception of expressions of emotion
+perceiving them?</div></div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>‘We sometimes see aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’ </p><p class="right grey-text">McNeill (2012, p. 573)</p><div class="notes">Focussing on emotions like joy, I have suggested that 
+we face two challenges (at least) in answering it.</div><p class="em-above">challenge 1: evidence?</p><div class="notes">The first challenge is to explain what kind of evidence might
+bear on the question.</div><div class="notes">Here I suggested that studies of categorical perception of expressions of emotion
 are relevant.
 Whether they provide evidence in favour fo the view that we can know others’ mental
 states through perceiving them depends on what  the objects of categorical perception
-are.
-          </div>
-          <div class="notes">If they are facial configurations, or something like this, then it seems clear that
+are.</div><div class="notes">If they are facial configurations, or something like this, then it seems clear that
 the evidence does not support the view  that we can know others’ mental
 states through perceiving them.
 If anything, such evidence would support the view that when we think we are perceiving
 mental states, we are actually perceiving facial expressions that we associate with
-particular emotions.
-          </div>
-          <div class="notes">But if the objects of categorical perception are actions directed to the goal of expressing
+particular emotions.</div><div class="notes">But if the objects of categorical perception are actions directed to the goal of expressing
 particular emotions, then studies of categorical perception do provide some evidence
-for the view that we have at least phenomenal expectations concerning others’ emotions.
-          </div>
-          <p class="em-above">challenge 2: Which model of the emotions?</p>
-          <div class="notes">The second challenge concerned the limits of categorical perception.
-          </div>
-          <div class="notes">I suggested that because categorical perception is underpinned by automatic processes 
+for the view that we have at least phenomenal expectations concerning others’ emotions.</div><p class="em-above">challenge 2: Which model of the emotions?</p><div class="notes">The second challenge concerned the limits of categorical perception.</div><div class="notes">I suggested that because categorical perception is underpinned by automatic processes 
 which operate over a short temporal window, the emotions which are the goals of the 
 actions that are the objects of categorical perception cannot be modelled as propositional
 attitudes.
 Instead we need a more minimal model of the mental to understand the nature of these
-emotions.
-          </div>
-          <div class="notes">In the end, we are probably not yet in a position to know whether humans ever perceptually experience others' mental states.
+emotions.</div><div class="notes">In the end, we are probably not yet in a position to know whether humans ever perceptually experience others' mental states.
 But thinking about categorical perception does give us a way of finally making some
-progress with this question.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="sharing_a_smile" class="slide"><img src="/img/bkg/bees/DSC_0165_crop.jpg" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Sharing Smiles</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Sharing Smiles}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Sharing Smiles}</div>
-<div class="notes">Sharing smiles and otherwise collectively expressing emotions makes available to us facets of mental states that are not available on the basis of perception.</div>
-
+progress with this question.</div></div></div></div></div></section><section id="sharing_a_smile" class="slide"><img src="/img/bkg/bees/DSC_0165_crop.jpg" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Sharing Smiles</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Sharing Smiles}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Sharing Smiles}</div><div class="notes">Sharing smiles and otherwise collectively expressing emotions makes available to us facets of mental states that are not available on the basis of perception.</div>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">sharing a smile</p>
-          <div class="notes">So my aim is to show that manifesting collective intentionality enables us to exploit routes to knowledge of others' minds
+<section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">sharing a smile</p><div class="notes">So my aim is to show that manifesting collective intentionality enables us to exploit routes to knowledge of others' minds
 which would be unavailable if we were entirely passive observers.
-To this end I want to focus on a one kind of interaction, sharing a smile.
-          </div>
-          <div class="notes">Preview: I'll argue that sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold,</div>
-          <div class="notes">where we might not otherwise be in a position to know these facts.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/lily_bed.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">[FIRST POINT: emotions unfold over time]
+To this end I want to focus on a one kind of interaction, sharing a smile.</div><div class="notes">Preview: I'll argue that sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold,</div><div class="notes">where we might not otherwise be in a position to know these facts.</div></div></div></div></div></section><section class="slide"><img src="/img/lily_bed.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[FIRST POINT: emotions unfold over time]
 When it comes to knowledge of others’ emotions, it might initially seem hard to imagine there could be a role for joint action because mere observation provides so much.
 Because there are characteristic expressions of emotion, a mere observer can know of Lily’s amusement just from her facial expression.
 Expressions of emotion plausibly also enable us to identify the objects of others’ emotions.
 Since the causes of expressions like Lily’s smile are often enough the objects of the emotions they express, 
 we can identify the objects of emotion using whatever sorts of causal reasoning enable us to work out what someone tripped over.
-If you know what is causing Lily to smile you are probably in a position to know what she is amused by, that is the object of her amusement.
-        </div>
-        <div class="notes">Emotions are not simply happiness or fear; they are things that unfold over time.
+If you know what is causing Lily to smile you are probably in a position to know what she is amused by, that is the object of her amusement.</div><div class="notes">Emotions are not simply happiness or fear; they are things that unfold over time.
 That initial jolt of fear as you hear the intruder enter your house is becomes intense as she moves closer, and then acquires an angry edge as you hear her breaking that vase your grandmother gave you.
-Or imagine watching a clown falling over.  Your amusement might develop from an initial wince to growing hilarity that abruptly ends as the clown hits the floor, only to resurge as the wider comic significance of this event becomes apparent.
-        </div>
-        <div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?
+Or imagine watching a clown falling over.  Your amusement might develop from an initial wince to growing hilarity that abruptly ends as the clown hits the floor, only to resurge as the wider comic significance of this event becomes apparent.</div><div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?
 How could we ever appreciate the unfolding of another’s grief, or the way their engagement leads to an explosion of ecstasy at the climax of a concert?
 It's in answering this question that I think we may find support for the idea that collective intentionality enables us to know things about others' emtoions that we might not otherwise be in a position to know.
-My thesis will be that Sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold; this is what's special, rather than knowledge of the category of emotion (amusement vs fear) or its object.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_02.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">[SECOND POINT: control is a way of knowing]</div>
-        <div class="notes">ways of knowing: perception, inference, reason, testimony</div>
-        <div class="notes">ways of knowing --- mention perceiving, testimony etc; </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_03.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">agent’s knowledge of their current and future actions is often thought to depend on control (although I guess perception is important---it's not a pure case);</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_04.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">but control can enable us to know things about others’ actions (using reins as an example---the point of putting a toddler in reins is sometimes that they enable you to know where the toddler will be without observation or inference); </div>
-        <div class="notes ctd">\footnote{</div>
-        <div class="notes ctd">Issue (Joel): does control give knowledge of action independently of perception.  (I launched into AHP, which I think only ends up supporting the point.)  Perception must be relevant in this sense: to know that I’m acting, my judgement must be appropriately sensitive to perceptual confirmation.  (Someone with AHP isn’t in a position to know that she’s acting precisely because the perceptual information doesn’t influence her judgement (the comparator---the link between perceptual feedback and motor representation---is broken).  (Strictly this doesn’t show that we need perceptual information, just that knowing isn’t compatible with ignoring perceptual information if  we have it.)  OK, but how does this affect the argument?  (i) maybe I shouldn’t offer agential control as a way of knowing that is distinct from perception (although I think that, unlike simple cases of perception, the motor representation plays a role in knowing.  Further (ii) what’s perceived is action not emotion in the proposal I make; but then maybe Joel’s objection is that merely controlling isn’t sufficient for knowing---against this, I think the reins example might help (I don’t need perceptual feedback to know the location of the toddler, although I might not be able know the location if I have perceptual feedback and ignore it.)</div>
-        <div class="notes ctd">}</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_05.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">then point out that social interactions often involve reciprocal control.</div>
-        <div class="notes">controlling someone's actions is a way of knowing things about them.</div>
-        <div class="notes ctd">\footnote{</div>
-        <div class="notes ctd">  Issue (Tom Smith): is reciprocal control sufficient for joint control?  No because of walking in the Tarantino sense.  This might tell us something interesting about joint control---e.g. maybe identifying differences between sharing a smile and walking in the Tarantino sense with respect to control will enable me to make the point about control as a way of knowing in sharing a smile better.</div>
-        <div class="notes ctd">}</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_08.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">[THIRD POINT: smiling is a goal-directed action, the goal of which is to smile that smile]</div>
-        <div class="notes">My topic is sharing a smile.  But first think about ordinary, individual actions like genuine smiles.</div>
-        <div class="notes">What distinguishes a genuine smile from a muscle spasm or the exhalation of wind?</div>
-        <div class="notes">I want to suggest that it's this: the smile is a goal-directed action where the goal is to simile that smile.</div>
-        <div class="notes">But why think of the smile as goal-directed?  Because smiling the smile requires considerable motor coordination: it’s not a matter of simple muscle contractions but more like the production of a phonetic gesture where context affects what is needed to realise the smile.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_09.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Further, like grasping an object or articulating a particular phoneme, it is an action that can be realised by different bodily movements in different contexts.</div>
-        <div class="notes">This is why I put slides of two quite different but both genuine smiles.</div>
-        <div class="notes">[Objection:]</div>
-        <div class="notes">Now you might say that the smile can't be goal-directed because is isn't explicable by appeal to belief, desire and intention</div>
-        <div class="notes">This is because the genuine smile is spontaneous and not something that can be produced at will (although it could probably be inhibited, at least to some extent); after all, this is what distinguishes the genuine from the polite smile.</div>
-        <div class="notes ctd">\footnote{</div>
-        <div class="notes ctd">From web source: The Duchenne smile involves both voluntary and involuntary contraction from two muscles: the zygomatic major (raising the corners of the mouth) and the orbicularis oculi (raising the cheeks and producing crow's feet around the eyes). The zygomatic major can be voluntarily contracted but many people can't voluntarily contract the orbicularis oculi muscle.</div>
-        <div class="notes ctd">}</div>
-        <div class="notes">So now we might be tempted by the view that a smile is merely caused by an emotion in the way that gasses can cause you to burp.</div>
-        <div class="notes">[Reply:]</div>
-        <div class="notes">Maybe there are smiles like this, but some genuine smiles are sustained.</div>
-        <div class="notes">And what sustains them is a process of controll</div>
-        <div class="notes">How could this be if such smiles are not consequences of beliefs, desires and intentions?</div>
-        <div class="notes">I think a reasonably natural view here is to think that part of what makes an event a smile, a goal-directed action and not just a muscle spasm caused by excess wind, is the way that motor control is involved.  Specifically, the genuine smile will involve a motor representation of the outcome, the smile, and this motor representation will lead to movements by way of planning-like motor processes.</div>
-        <div class="notes">But you don't have to buy this to agree with me.</div>
-        <div class="notes">All you have to accept is that actions like some smilings can be goal-directed and controlled even in the absence of relevant beliefs, desires and intentions.</div>
-        <div class="notes">I think smiles fall into the category of actions like graspings, reachings and gesturings which are goal-directed but do not necessarily involve intention.</div>
-        <div class="notes">&nbsp;  </div>
-        <div class="notes">So far, then, I've suggested that smiling is a goal-directed action, the goal of which is to smile that smile.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">I'm sorry if all of this is too simple to mention, but I want to recap just to be sure we're all together.</div>
-        <p>summary so far</p>
-        <ol class="em-above">
-          <li>emotions unfold over time</li>
-          <li>control is a way of knowing</li>
-          <li>smiling is sometimes a goal-directed action, the goal of which is to smile a smile</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_15.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Now imagine a situation where a single individual encounters and event (a clown’s falling) which causes amusement which causes her to smile</div>
-        <div class="notes">Note that the smile also modulates the emotion; if, for example, she supressed the smile, the quality of her amusement would change.</div>
-        <div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?</div>
-        <div class="notes">How could we ever appreciate the unfolding of another’s grief, or the way their engagement leads to an explosion of ecstasy at the climax of a concert?</div>
-        <div class="notes">Part of the answer is obvious: by being there, with them.  </div>
-        <div class="notes">[Not that this is the only possibility --- in some cases we might  be told.]</div>
-        <div class="notes">But how exactly does being there, in the same situation help?</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_16.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Merely being in the same situation is surely not enough.</div>
-        <div class="notes">It’s not enough that we each experience amusement, grief or ecstasy.</div>
-        <div class="notes">After all, individuals are different.  Different individuals’ feelings don’t unfold in the same way just because they are in the same situation.</div>
-        <div class="notes">It’s just here that collective intentionality is relevant.</div>
-        <div class="notes">\textbf{What is involved in sharing a smile?}</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Minimally, I think there have to be two kinds of connection between us for us to share a smile.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_18.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">First, the way your smile unfolds is shaped by how mine unfolds and conversely.</div>
-        <div class="notes">I also suppose that our smiles can be minutely coordinated with each other.</div>
-        <div class="notes">But it’s not just that our smiles are interdependent in this way ...</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_19.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">It’s also that each of our smiles is shaping the way our amusement unfolds.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_20.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">So the way your amusement unfolds is being controlled by, and controlling, the way mine unfolds.</div>
-        <div class="notes">In sharing a smile, we are emotionally locked together.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">[*todo: remove motor stuff for this talk!  Also: don't lose sight of idea that control is a way of knowing.]</div>
-        <div class="notes">[*todo: need slide with control arrows highlighted (my emotion controls yours).]</div>
-        <div class="notes">[*Structure:
+My thesis will be that Sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold; this is what's special, rather than knowledge of the category of emotion (amusement vs fear) or its object.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_02.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[SECOND POINT: control is a way of knowing]</div><div class="notes">ways of knowing: perception, inference, reason, testimony</div><div class="notes">ways of knowing --- mention perceiving, testimony etc; </div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_03.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">agent’s knowledge of their current and future actions is often thought to depend on control (although I guess perception is important---it's not a pure case);</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_04.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">but control can enable us to know things about others’ actions (using reins as an example---the point of putting a toddler in reins is sometimes that they enable you to know where the toddler will be without observation or inference); </div><div class="notes ctd">\footnote{</div><div class="notes ctd">Issue (Joel): does control give knowledge of action independently of perception.  (I launched into AHP, which I think only ends up supporting the point.)  Perception must be relevant in this sense: to know that I’m acting, my judgement must be appropriately sensitive to perceptual confirmation.  (Someone with AHP isn’t in a position to know that she’s acting precisely because the perceptual information doesn’t influence her judgement (the comparator---the link between perceptual feedback and motor representation---is broken).  (Strictly this doesn’t show that we need perceptual information, just that knowing isn’t compatible with ignoring perceptual information if  we have it.)  OK, but how does this affect the argument?  (i) maybe I shouldn’t offer agential control as a way of knowing that is distinct from perception (although I think that, unlike simple cases of perception, the motor representation plays a role in knowing.  Further (ii) what’s perceived is action not emotion in the proposal I make; but then maybe Joel’s objection is that merely controlling isn’t sufficient for knowing---against this, I think the reins example might help (I don’t need perceptual feedback to know the location of the toddler, although I might not be able know the location if I have perceptual feedback and ignore it.)</div><div class="notes ctd">}</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_05.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">then point out that social interactions often involve reciprocal control.</div><div class="notes">controlling someone's actions is a way of knowing things about them.</div><div class="notes ctd">\footnote{</div><div class="notes ctd">  Issue (Tom Smith): is reciprocal control sufficient for joint control?  No because of walking in the Tarantino sense.  This might tell us something interesting about joint control---e.g. maybe identifying differences between sharing a smile and walking in the Tarantino sense with respect to control will enable me to make the point about control as a way of knowing in sharing a smile better.</div><div class="notes ctd">}</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_08.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[THIRD POINT: smiling is a goal-directed action, the goal of which is to smile that smile]</div><div class="notes">My topic is sharing a smile.  But first think about ordinary, individual actions like genuine smiles.</div><div class="notes">What distinguishes a genuine smile from a muscle spasm or the exhalation of wind?</div><div class="notes">I want to suggest that it's this: the smile is a goal-directed action where the goal is to simile that smile.</div><div class="notes">But why think of the smile as goal-directed?  Because smiling the smile requires considerable motor coordination: it’s not a matter of simple muscle contractions but more like the production of a phonetic gesture where context affects what is needed to realise the smile.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_09.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Further, like grasping an object or articulating a particular phoneme, it is an action that can be realised by different bodily movements in different contexts.</div><div class="notes">This is why I put slides of two quite different but both genuine smiles.</div><div class="notes">[Objection:]</div><div class="notes">Now you might say that the smile can't be goal-directed because is isn't explicable by appeal to belief, desire and intention</div><div class="notes">This is because the genuine smile is spontaneous and not something that can be produced at will (although it could probably be inhibited, at least to some extent); after all, this is what distinguishes the genuine from the polite smile.</div><div class="notes ctd">\footnote{</div><div class="notes ctd">From web source: The Duchenne smile involves both voluntary and involuntary contraction from two muscles: the zygomatic major (raising the corners of the mouth) and the orbicularis oculi (raising the cheeks and producing crow's feet around the eyes). The zygomatic major can be voluntarily contracted but many people can't voluntarily contract the orbicularis oculi muscle.</div><div class="notes ctd">}</div><div class="notes">So now we might be tempted by the view that a smile is merely caused by an emotion in the way that gasses can cause you to burp.</div><div class="notes">[Reply:]</div><div class="notes">Maybe there are smiles like this, but some genuine smiles are sustained.</div><div class="notes">And what sustains them is a process of controll</div><div class="notes">How could this be if such smiles are not consequences of beliefs, desires and intentions?</div><div class="notes">I think a reasonably natural view here is to think that part of what makes an event a smile, a goal-directed action and not just a muscle spasm caused by excess wind, is the way that motor control is involved.  Specifically, the genuine smile will involve a motor representation of the outcome, the smile, and this motor representation will lead to movements by way of planning-like motor processes.</div><div class="notes">But you don't have to buy this to agree with me.</div><div class="notes">All you have to accept is that actions like some smilings can be goal-directed and controlled even in the absence of relevant beliefs, desires and intentions.</div><div class="notes">I think smiles fall into the category of actions like graspings, reachings and gesturings which are goal-directed but do not necessarily involve intention.</div><div class="notes">&nbsp;  </div><div class="notes">So far, then, I've suggested that smiling is a goal-directed action, the goal of which is to smile that smile.</div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">I'm sorry if all of this is too simple to mention, but I want to recap just to be sure we're all together.</div><p>summary so far</p><ol class="em-above"><li>emotions unfold over time</li><li>control is a way of knowing</li><li>smiling is sometimes a goal-directed action, the goal of which is to smile a smile</li></ol></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_15.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Now imagine a situation where a single individual encounters and event (a clown’s falling) which causes amusement which causes her to smile</div><div class="notes">Note that the smile also modulates the emotion; if, for example, she supressed the smile, the quality of her amusement would change.</div><div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?</div><div class="notes">How could we ever appreciate the unfolding of another’s grief, or the way their engagement leads to an explosion of ecstasy at the climax of a concert?</div><div class="notes">Part of the answer is obvious: by being there, with them.  </div><div class="notes">[Not that this is the only possibility --- in some cases we might  be told.]</div><div class="notes">But how exactly does being there, in the same situation help?</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_16.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Merely being in the same situation is surely not enough.</div><div class="notes">It’s not enough that we each experience amusement, grief or ecstasy.</div><div class="notes">After all, individuals are different.  Different individuals’ feelings don’t unfold in the same way just because they are in the same situation.</div><div class="notes">It’s just here that collective intentionality is relevant.</div><div class="notes">\textbf{What is involved in sharing a smile?}</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Minimally, I think there have to be two kinds of connection between us for us to share a smile.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_18.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">First, the way your smile unfolds is shaped by how mine unfolds and conversely.</div><div class="notes">I also suppose that our smiles can be minutely coordinated with each other.</div><div class="notes">But it’s not just that our smiles are interdependent in this way ...</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_19.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">It’s also that each of our smiles is shaping the way our amusement unfolds.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_20.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">So the way your amusement unfolds is being controlled by, and controlling, the way mine unfolds.</div><div class="notes">In sharing a smile, we are emotionally locked together.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[*todo: remove motor stuff for this talk!  Also: don't lose sight of idea that control is a way of knowing.]</div><div class="notes">[*todo: need slide with control arrows highlighted (my emotion controls yours).]</div><div class="notes">[*Structure:
 (i) I know because my emotion controls yours;
 (ii) But if my emotion controls yours, how can yours be amusement at the clown's falling? because control is partial, and reciprocal;
 (iii) But the mere fact of control isn't enough for knowledge; rather, control must show up in experience somehow.  
@@ -1391,34 +309,24 @@ My thesis will be that Sharing a smile provides us with a route to knowledge of 
   and between our actions and the causes of them.
 (vi) So my position is this: the reciprocal control justifies each agent in making judgements about how the others' amusement is unfolding,
     and this justification is at least indirectly available to the agents by virtue of their having experiences characteristic of sharing a smile.
-  ]
-        </div>
-        <div class="notes">Our being emotionally locked together means that 
+  ]</div><div class="notes">Our being emotionally locked together means that 
 to a significant extent I am feeling what you are feeling, 
         that the way my amusement is unfolding matches they way your amusement is unfolding. 
 So if you know how your own amusement is unfolding and you know that we are emotionally locked together,
 you can know much about how my amusement is unfolding.
-So joint expressions of emotion like sharing a smile have the potential to enable us to know not just that others are amused but how their amusement is unfolding.
-        </div>
-        <div class="notes">But the fact of reciprocal control (which means our emotions are locked together) together doesn’t all by itself mean that we can know how each other’s emotions are unfolding.
+So joint expressions of emotion like sharing a smile have the potential to enable us to know not just that others are amused but how their amusement is unfolding.</div><div class="notes">But the fact of reciprocal control (which means our emotions are locked together) together doesn’t all by itself mean that we can know how each other’s emotions are unfolding.
 After all, for all I have said so far, we might, in sharing a smile, be  unaware that our emotions are locked together. 
 Now you might think this sounds implausible because its hard to imagine sharing a smile without an experience that is distinctive of sharing a smile.
 And it might be natural to describe this experience as an experience of sharing.
-But even if that is correct, it’s necessary to say exactly why someone who is sharing a smile is in a position to know things about how the other’s emotion is unfolding.
-        </div>
-        <div class="notes">I don’t want to say that interaction only helps if you know that your emotions are locked together. 
+But even if that is correct, it’s necessary to say exactly why someone who is sharing a smile is in a position to know things about how the other’s emotion is unfolding.</div><div class="notes">I don’t want to say that interaction only helps if you know that your emotions are locked together. 
 That is, I don’t want to say that  someone who is sharing a smile needs to understand the situation in the way I’m describing it.
-But minimally the fact of reciprocal control must somehow feature in our awareness.
-        </div>
-        <div class="notes">[*The idea in outline:
+But minimally the fact of reciprocal control must somehow feature in our awareness.</div><div class="notes">[*The idea in outline:
 \begin{enumerate}
 \item the ways our amusements unfold is locked together
 \item this is in part because a single motor plan has two functions, production of your smile and prediction of my smile
 \item the single motor process means that we might experience being locked together in some way (not that our emotions are locked together but that our actions are, in something like (but not exactly) we experience actions when seeing ourselves in a mirror or on CCTV (check Johannes’ discussion of this)).
 \end{enumerate}
-]
-        </div>
-        <div class="notes">Here I want to offer a wild conjecture.
+]</div><div class="notes">Here I want to offer a wild conjecture.
 In joint expressions of emotion there is a single motor plan with two functions,
 production and prediction.
 The motor plan both produces your own smile and enables you to predict the way the other’s smile will unfold.
@@ -1428,9 +336,7 @@ From your point of view, it is almost as if the other is smiling your smile.%
 \footnote{
 Joel caricatured this idea seeing me eating fruit: ‘it’s almost as if I’m eating that fruit.’
 }
-This means that sharing a smile has characteristic phenomenology.
-        </div>
-        <div class="notes">This odd phenomenological effect means that in sharing a smile we can each think of the situation almost as if there were a single smile.
+This means that sharing a smile has characteristic phenomenology.</div><div class="notes">This odd phenomenological effect means that in sharing a smile we can each think of the situation almost as if there were a single smile.
 And almost as if there were a single state of amusement.
 (In thinking of the situation like this it is important that we have a subject-neutral conception of the amusement and an agent-neutral conception of the smile.%
 \footnote{
@@ -1441,38 +347,13 @@ It’s a partial model of the situation.
 [*Here I think I’m shifting back from the perspective of the participants in sharing a smile to the perspective of the theorist.
 Probably what I should say is, first, that a theorist can think of the situation in this way and use this to argue, second, that there is a simple, partial conception of the situation that doesn’t require understanding reciprocal control and interlocking emotions but is sufficient for each smiler to have knowledge of  the way the other’s emotion unfolds.]
 So my suggestion is that in sharing a smile you experience my smile almost as if it were yours (or: you experience me almost as if I were smiling your smile),
-and so you might also experience our situation almost as if it involved a single state of amusement.
-        </div>
-        <div class="notes">It's more like we each plan a single smile.
-        </div>
-        <div class="notes">But---to reply to the objection---these plans have a dual function.
+and so you might also experience our situation almost as if it involved a single state of amusement.</div><div class="notes">It's more like we each plan a single smile.</div><div class="notes">But---to reply to the objection---these plans have a dual function.
 Your plan both produces your own smile and enables you to simulate---to experience---my smile.
 And likewise for my plan.
-The interdependence of our smilings means that we could each think of the situation as if it were one in which a single state of amusement were responsible for our actions.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">collective intentionality opens a route to knowing others’ minds</p>
-          <div class="notes">I've just been arguing that manifestations of collective intentionality enable us to know things about others' minds that we might not otherwise be in a position to know.
+The interdependence of our smilings means that we could each think of the situation as if it were one in which a single state of amusement were responsible for our actions.</div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">collective intentionality opens a route to knowing others’ minds</p><div class="notes">I've just been arguing that manifestations of collective intentionality enable us to know things about others' minds that we might not otherwise be in a position to know.
 In particular, I suggested that 
 sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold.
 \textbf{
 Engaging in collective actions like sharing a smile (and crying together) enables us to understand others’ emotions in ways that we probably couldn’t understand them if we were mere observers and unable to engage in collective action.
 The joint expression of emotion matters because it makes available a perspective from which it is almost as if your amusement is my amusement, and my grief is yours.
-}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+}</div></div></div></div></div></section></div></body></html>
