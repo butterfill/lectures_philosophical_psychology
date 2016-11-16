@@ -10,12 +10,6 @@ description: """
   contrast cases to argue that whether something is an ordinary, individual action 
   depends on its antecedents.
   """
-depends: ['']
-source: ['']
-duration: 5
-book: []
-exercises: []
-exercises_fast: []
 ---
 
 include ../../../fragments/unit_mixins
@@ -34,7 +28,7 @@ include ../../../fragments/joint_action_mixins
 +slide_middle
   .notes.handout.show
     p.huge-glow Question
-    p.under-huge-glow(style='margin-top:-3em;'): :t
+    p.under-huge-glow.ctd(style='margin-top:-3em;'): :t
       What distinguishes genuine joint actions from parallel but merely individual actions?
   .notes: :t
     This is the organising question for our project (the project to be investigated in this 
@@ -51,7 +45,7 @@ include ../../../fragments/joint_action_mixins
   .slide
     .notes.handout.show
       p.huge-glow Aim
-      p.under-huge-glow(style='margin-top:-3em;'): :t
+      p.under-huge-glow.ctd(style='margin-top:-3em;'): :t
         An account of joint action must draw a line between joint actions and parallel but 
         merely individual actions.
     .notes: :t
@@ -67,7 +61,8 @@ include ../../../fragments/joint_action_mixins
 +slide_middle
   .notes.handout \emph{The Simple View}
   p The Simple View
-  .notes.handout.show.em-above
+    span.notes.handout.ctd : 
+  .notes.handout.ctd.show.em-above
     +simple_account
   .slide
     +invert('.act-type')
