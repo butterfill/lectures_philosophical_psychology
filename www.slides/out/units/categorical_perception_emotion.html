@@ -1,375 +1,46 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Categorical Perception &amp; Emotion | Philosophical Psychology</title>
-    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="categorical_perception_emotion" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Categorical Perception &amp; Emotion</h2>
-          </div>
-        </div>
-      </section>
-
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Categorical Perception &amp; Emotion | Philosophical Psychology</title><meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="categorical_perception_emotion" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Categorical Perception &amp; Emotion</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section class="slide">
-  <div class="words">
-    <div class="middle">
-      <div class="container_12">
-        <div class="grid_4">
-          <div style="background-color:rgb(51,153,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-          </div>
-          <p class="center">2.5B</p>
-        </div>
-        <div class="grid_4">
-          <div style="background-color:rgb(85,100,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-          </div>
-          <p class="center">7.5BG</p>
-        </div>
-        <div class="grid_4">
-          <div style="background-color:rgb(42,162,42);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box">
-          </div>
-          <p class="center">2.5BG</p>
-        </div>
-      </div>
-      <div class="notes">Categorical perception is perhaps most easily understood from the case of colour.
-      </div>
-      <div class="notes">[For later: colour is doubly relevant because there's been serious debate about 
+<section class="slide"><div class="words"><div class="middle"><div class="container_12"><div class="grid_4"><div style="background-color:rgb(51,153,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box"></div><p class="center">2.5B</p></div><div class="grid_4"><div style="background-color:rgb(85,100,255);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box"></div><p class="center">7.5BG</p></div><div class="grid_4"><div style="background-color:rgb(42,162,42);width:100px;height:100px;margin-left:auto;margin-right:auto;border:20px solid grey;" class="box"></div><p class="center">2.5BG</p></div></div><div class="notes">Categorical perception is perhaps most easily understood from the case of colour.</div><div class="notes">[For later: colour is doubly relevant because there's been serious debate about 
 whether it's possible to perceive categorical 
 colour properties despite copious verbal reports.
 This case shows how evidence can bear on questions about phenomenology,
-although I won’t be talking about that here (probably).]
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes show">
-            <p>fix initial system of categories</p>
-            <p>measure disciminatory responses</p>
-            <p>observe between- vs within-category differences </p>
-            <p>exclude non-cognitive explanations for the differences</p>
-          </div>
-          <div class="notes">greater discrimination between than within catgeories indicated that the inital
+although I won’t be talking about that here (probably).]</div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes show"><p>fix initial system of categories</p><p>measure disciminatory responses</p><p>observe between- vs within-category differences </p><p>exclude non-cognitive explanations for the differences</p></div><div class="notes">greater discrimination between than within catgeories indicated that the inital
 system of categories may be having some influence on whatever underpins
-the responses.
-          </div>
-          <div class="notes">Do any perceptual processes in humans discriminate stimuli according to the expressions 
+the responses.</div><div class="notes">Do any perceptual processes in humans discriminate stimuli according to the expressions 
 of emotion they involve?
-That is, do humans have \emph{categorical perception} of expressions of emotion?
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide01.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Assume that we as theorists have a system which allows us to categorise 
+That is, do humans have \emph{categorical perception} of expressions of emotion?</div></div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide01.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Assume that we as theorists have a system which allows us to categorise 
 static pictures of faces and other stimuli according to which emotion we 
-think they are expressing: some faces are happy, others fearful, and so on.
-        </div>
-        <div class="notes handout">There is a way of categorising static pictures of faces and other stimuli according to which emotion
+think they are expressing: some faces are happy, others fearful, and so on.</div><div class="notes handout">There is a way of categorising static pictures of faces and other stimuli according to which emotion
 someone might think they are expressing: some faces are happy, others fearful, and so on
 From five months of age, 
 or possibly much earlier \citep{field:1982_discrimination}, 
 through to adulthood, humans are better at distinguishing faces when they 
 differ with respect to these categories than when they do not 
-\citep{Etcoff:1992zd,Gelder:1997bf,Bornstein:2003vq,Kotsoni:2001ph,cheal:2011_categorical,hoonhorst:2011_categoricala}.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide02.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">To illustrate, consider these pictures of faces.
-The idea is this.
-        </div>
-        <div class="notes">With respect to all features apart from the expression of emotion, each face picture differs from its neighbours no more than any other picture differs from its neighbours.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide03.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Most neighbouring pairs of face pictures would be relatively hard to distinguish,
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide04.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">especially if they were not presented side-by-side.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide05.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">But most people find one pair of neighbouring face pictures  relatively easy to distinguish---you may notice this yourself.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide06.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide07.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide08.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide09.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide"><img src="/img/categorical_perception_emotion/Slide10.jpg" width="1024px" class="bkg"/>
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">What underlies these patterns of discrimination?
-Several possibilities that would render them uninteresting for our purposes can be ruled out.
-        </div>
-        <div class="notes handout">The patterns of discrimination do not appear to be an artefact of linguistic labels
-(\citealp{sauter:2011_categorical}; see also \citealp{laukka:2005_categorical}, p.\ 291),%
-        </div>
-        <div class="notes">%
+\citep{Etcoff:1992zd,Gelder:1997bf,Bornstein:2003vq,Kotsoni:2001ph,cheal:2011_categorical,hoonhorst:2011_categoricala}.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide02.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">To illustrate, consider these pictures of faces.
+The idea is this.</div><div class="notes">With respect to all features apart from the expression of emotion, each face picture differs from its neighbours no more than any other picture differs from its neighbours.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide03.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Most neighbouring pairs of face pictures would be relatively hard to distinguish,</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide04.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">especially if they were not presented side-by-side.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide05.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">But most people find one pair of neighbouring face pictures  relatively easy to distinguish---you may notice this yourself.</div></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide06.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide07.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide08.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide09.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section class="slide"><img src="/img/categorical_perception_emotion/Slide10.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">What underlies these patterns of discrimination?
+Several possibilities that would render them uninteresting for our purposes can be ruled out.</div><div class="notes handout">The patterns of discrimination do not appear to be an artefact of linguistic labels
+(\citealp{sauter:2011_categorical}; see also \citealp{laukka:2005_categorical}, p.\ 291),%</div><div class="notes">%
 \footnote{
 Puzzlingly, experiments by \citet{fugate:2010_reading} using photos of chimpanzee faces with human subjects are sometimes cited as evidence that categorical perception of expressions of emotion depends on, or can be modulated by, the use of verbal labels for stimuli (e.g.\ \citealp[p.\ 288]{barrett:2011_context}; \citealp[p.\ 315]{gendron:2012_emotion}).
 Caution is needed in interpreting these findings
 given that there may be differences in the ways  humans process human and chimpanzee faces.
 In fact, what \citeauthor{fugate:2010_reading}'s findings show may be simply that `human viewers do not show [categorical perception] for the chimpanzee facial configurations used in their study' \citep[p.\ 1482]{sauter:2011_categorical}.
 }
-%
-        </div>
-        <div class="notes handout ctd">nor of the particular choices subjects in these experiments are presented with \citep{bimler:2001_categorical,fujimura:2011_categorical}.
-Nor are the patterns of discrimination due to narrowly visual features of the stimuli used \citep{sato:2009_detection}.
-        </div>
-        <div class="notes">We can be confident, then, that the patterns of discrimination probably reflect one or more processes which categorises stimuli by expression of emotion.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Examples of stimuli used (they had 200 ish faces) by Batty and Taylor in their ERP study.
-        </div>
-        <div style="position:relative;"><img src="/img/batty_2003_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Batty & Taylor, 2003 figure 1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Don't have details, this is just to stress it's early (around 200ms) and plausibly automatic.</div>
-        <div class="notes handout">‘at a mean latency of 140 ms) the N170 showed both amplitude and latency
+%</div><div class="notes handout ctd">nor of the particular choices subjects in these experiments are presented with \citep{bimler:2001_categorical,fujimura:2011_categorical}.
+Nor are the patterns of discrimination due to narrowly visual features of the stimuli used \citep{sato:2009_detection}.</div><div class="notes">We can be confident, then, that the patterns of discrimination probably reflect one or more processes which categorises stimuli by expression of emotion.</div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Examples of stimuli used (they had 200 ish faces) by Batty and Taylor in their ERP study.</div><div style="position:relative;"><img src="/img/batty_2003_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Batty & Taylor, 2003 figure 1</p></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Don't have details, this is just to stress it's early (around 200ms) and plausibly automatic.</div><div class="notes handout">‘at a mean latency of 140 ms) the N170 showed both amplitude and latency
 modulation differentially with emotional expressions. ...
 [BUT] Whether this is due presently to low-level stimulus factors or to the use of emotional faces
-is still to be determined’ \citep[p.~616]{batty:2003_early}.
-        </div>
-        <div class="notes">‘As the task did not require the subjects to focus on particular emotional expressions ...
-these data suggest an early automatic encoding of emotional facial expression’ \citep[p.~616]{batty:2003_early}.
-        </div>
-        <div style="position:relative;"><img src="/img/batty_2003_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Batty & Taylor, 2003 figure 2</p>
-        <div class="notes">At least some of the processes underpinning categorical perception of facial expressions
+is still to be determined’ \citep[p.~616]{batty:2003_early}.</div><div class="notes">‘As the task did not require the subjects to focus on particular emotional expressions ...
+these data suggest an early automatic encoding of emotional facial expression’ \citep[p.~616]{batty:2003_early}.</div><div style="position:relative;"><img src="/img/batty_2003_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Batty & Taylor, 2003 figure 2</p><div class="notes">At least some of the processes underpinning categorical perception of facial expressions
 of emotion are rapid (occurring within roughly 200 milliseconds of a stimulus' appearance),
 pre-attentive \citep{vuilleumier:2001_emotional} and automatic in the sense that whether they occur
-is to a significant degree independent of subjects' tasks and motivations \citep{batty:2003_early}.%
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>Perceptual?</p>
-          <p>At least for fear & happiness </p>
-          <p class="indent">- ERP (Campanella et al 2002)</p>
-          <p class="indent">- visual search : behavioural (Williams et al 2005)</p>
-          <div class="notes">But are any of the processes that categorise stimuli by expression of emotion perceptual?
+is to a significant degree independent of subjects' tasks and motivations \citep{batty:2003_early}.%</div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Perceptual?</p><p>At least for fear & happiness </p><p class="indent">- ERP (Campanella et al 2002)</p><p class="indent">- visual search : behavioural (Williams et al 2005)</p><div class="notes">But are any of the processes that categorise stimuli by expression of emotion perceptual?
 %That is, are the observed abilities to discriminate  expressions of emotion ever based on perceptual processes?
 Answering this question is complicated by the fact that many parts of the brain are involved \citep{adolphs:2002_recognizing,vuilleumier:2007_distributed}.  
 There is evidence that both the amygdala \citep{harris:2012_morphing,harris:2014_dynamic} and also some cortical structures \citep{batty:2003_early}
@@ -380,13 +51,4 @@ from both neurophysiological \citep{Campanella:2002aa} and behavioural measures 
 of categorisation occurring in perceptual processing.
 So while the evidence is not conclusive,
 there is converging evidence that some perceptual processes categorise stimuli including faces by  expression of emotion.
-Humans may have categorical perception not only for speech, colour, orientation and other properties but also for expressions of emotion.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+Humans may have categorical perception not only for speech, colour, orientation and other properties but also for expressions of emotion.</div></div></div></div></div></section></div></body></html>
