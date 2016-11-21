@@ -245,20 +245,30 @@ html body {
 .width-350 {
   width: 350px;
 }
-.deck-container .hem-above {
+.deck-container .hem-above,
+.deck-container .hem-above-children > * {
   padding-top: 0.5em;
 }
-.deck-container .hem-around {
+.deck-container .hem-around,
+.deck-container .hem-around-children > * {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-.deck-container .em-above {
+.deck-container .em-above,
+.deck-container em-above-children > * {
   padding-top: 1em;
 }
-.deck-container .em-after {
+.deck-container .em-around,
+.deck-container .em-around-children > * {
+  padding-top: 1em;
   padding-bottom: 1em;
 }
-.deck-container .em-around {
+.deck-container .em-after,
+.deck-container .em-after-children > * {
+  padding-bottom: 1em;
+}
+.deck-container .em-around,
+.deck-container .em-around-children > * {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
@@ -1681,6 +1691,10 @@ table.data tbody tr.even td {
 .glow-border-red {
   -webkit-box-shadow: 0 0 15px 8px #f00, 0 0 18px 9px rgba(255,255,102,0.5);
   box-shadow: 0 0 15px 8px #f00, 0 0 18px 9px rgba(255,255,102,0.5);
+}
+.glow-border {
+  -webkit-box-shadow: 0 0 40px #fff, 0 0 4px #fff;
+  box-shadow: 0 0 40px #fff, 0 0 4px #fff;
 }
 /**
  * borders & rotation

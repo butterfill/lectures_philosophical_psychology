@@ -225,16 +225,19 @@ blur()
 
 
 .deck-container
-  .hem-above
+  .hem-above, .hem-above-children > *
     padding-top: 0.5em
-  .hem-around
+  .hem-around, .hem-around-children > *
     padding-top: 0.5em
     padding-bottom: 0.5em
-  .em-above
+  .em-above, em-above-children > *
     padding-top: 1em
-  .em-after
+  .em-around, .em-around-children > *
+    padding-top: 1em
     padding-bottom: 1em
-  .em-around
+  .em-after, .em-after-children > *
+    padding-bottom: 1em
+  .em-around, .em-around-children > *
     padding-top: 0.5em
     padding-bottom: 0.5em
   .em-above-each-td td
@@ -717,6 +720,10 @@ make-bkg-words('faint-grey', rgba(125,125,125,0.3))
 
 .glow-border-red
   box-shadow: 0 0 15px 8px rgba(255,0,0,1), 0 0 18px 9px rgba(255,255,102,0.5)
+
+.glow-border
+  box-shadow 0 0 40px #FFF, 0 0 4px #FFF
+
 
 /**
  * borders & rotation

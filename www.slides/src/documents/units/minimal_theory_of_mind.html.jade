@@ -89,4 +89,15 @@ each img_no in img_nos
   - var filename = 'unit_441/slide_cambridge_model_0'+(img_no<10 ? '0' : '')+img_no+'.jpg'
   +slide({bkg:filename})
 
-
++slide_middle
+  .hem-around-children
+    p Fact:
+    p Minimal theory of mind specifics a model of minds and actions
+      span.step2.hide , 
+    p.step2.hide one which could in principle explain how certain mindreading processes trade accuracy for speed.
+    .slide
+      +show('.step2')
+  .slide.em-above.hem-around-children
+    p Conjecture:
+    p Automatic mindreading processes are characterised by a minimal model of minds and actions.
+  
