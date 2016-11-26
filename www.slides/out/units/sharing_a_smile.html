@@ -1,25 +1,367 @@
 
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Sharing Smiles | Philosophical Psychology</title><meta name="description" content="Sharing smiles and otherwise collectively expressing emotions makes available to us facets of mental states that are not available on the basis of perception."/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
---><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
-<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="sharing_a_smile" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Sharing Smiles</h2></div></div></section>
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Sharing Smiles | Philosophical Psychology</title>
+    <meta name="description" content="Sharing smiles and otherwise collectively expressing emotions makes available to us facets of mental states that are not available on the basis of perception."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sharing_a_smile" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Sharing Smiles</h2>
+          </div>
+        </div>
+      </section>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">sharing a smile</p><div class="notes">So my aim is to show that manifesting collective intentionality enables us to exploit routes to knowledge of others' minds
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">sharing a smile</p>
+          <div class="notes">So my aim is to show that manifesting collective intentionality enables us to exploit routes to knowledge of others' minds
 which would be unavailable if we were entirely passive observers.
-To this end I want to focus on a one kind of interaction, sharing a smile.</div><div class="notes">Preview: I'll argue that sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold,</div><div class="notes">where we might not otherwise be in a position to know these facts.</div></div></div></div></div></section><section class="slide"><img src="/img/lily_bed.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[FIRST POINT: emotions unfold over time]
+To this end I want to focus on a one kind of interaction, sharing a smile.
+          </div>
+          <div class="notes">Preview: I'll argue that sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold,</div>
+          <div class="notes">where we might not otherwise be in a position to know these facts.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/lily_bed.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">[FIRST POINT: emotions unfold over time]
 When it comes to knowledge of others’ emotions, it might initially seem hard to imagine there could be a role for joint action because mere observation provides so much.
 Because there are characteristic expressions of emotion, a mere observer can know of Lily’s amusement just from her facial expression.
 Expressions of emotion plausibly also enable us to identify the objects of others’ emotions.
 Since the causes of expressions like Lily’s smile are often enough the objects of the emotions they express, 
 we can identify the objects of emotion using whatever sorts of causal reasoning enable us to work out what someone tripped over.
-If you know what is causing Lily to smile you are probably in a position to know what she is amused by, that is the object of her amusement.</div><div class="notes">Emotions are not simply happiness or fear; they are things that unfold over time.
+If you know what is causing Lily to smile you are probably in a position to know what she is amused by, that is the object of her amusement.
+        </div>
+        <div class="notes">Emotions are not simply happiness or fear; they are things that unfold over time.
 That initial jolt of fear as you hear the intruder enter your house is becomes intense as she moves closer, and then acquires an angry edge as you hear her breaking that vase your grandmother gave you.
-Or imagine watching a clown falling over.  Your amusement might develop from an initial wince to growing hilarity that abruptly ends as the clown hits the floor, only to resurge as the wider comic significance of this event becomes apparent.</div><div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?
+Or imagine watching a clown falling over.  Your amusement might develop from an initial wince to growing hilarity that abruptly ends as the clown hits the floor, only to resurge as the wider comic significance of this event becomes apparent.
+        </div>
+        <div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?
 How could we ever appreciate the unfolding of another’s grief, or the way their engagement leads to an explosion of ecstasy at the climax of a concert?
 It's in answering this question that I think we may find support for the idea that collective intentionality enables us to know things about others' emtoions that we might not otherwise be in a position to know.
-My thesis will be that Sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold; this is what's special, rather than knowledge of the category of emotion (amusement vs fear) or its object.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_02.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[SECOND POINT: control is a way of knowing]</div><div class="notes">ways of knowing: perception, inference, reason, testimony</div><div class="notes">ways of knowing --- mention perceiving, testimony etc; </div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_03.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">agent’s knowledge of their current and future actions is often thought to depend on control (although I guess perception is important---it's not a pure case);</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_04.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">but control can enable us to know things about others’ actions (using reins as an example---the point of putting a toddler in reins is sometimes that they enable you to know where the toddler will be without observation or inference); </div><div class="notes ctd">\footnote{</div><div class="notes ctd">Issue (Joel): does control give knowledge of action independently of perception.  (I launched into AHP, which I think only ends up supporting the point.)  Perception must be relevant in this sense: to know that I’m acting, my judgement must be appropriately sensitive to perceptual confirmation.  (Someone with AHP isn’t in a position to know that she’s acting precisely because the perceptual information doesn’t influence her judgement (the comparator---the link between perceptual feedback and motor representation---is broken).  (Strictly this doesn’t show that we need perceptual information, just that knowing isn’t compatible with ignoring perceptual information if  we have it.)  OK, but how does this affect the argument?  (i) maybe I shouldn’t offer agential control as a way of knowing that is distinct from perception (although I think that, unlike simple cases of perception, the motor representation plays a role in knowing.  Further (ii) what’s perceived is action not emotion in the proposal I make; but then maybe Joel’s objection is that merely controlling isn’t sufficient for knowing---against this, I think the reins example might help (I don’t need perceptual feedback to know the location of the toddler, although I might not be able know the location if I have perceptual feedback and ignore it.)</div><div class="notes ctd">}</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_05.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">then point out that social interactions often involve reciprocal control.</div><div class="notes">controlling someone's actions is a way of knowing things about them.</div><div class="notes ctd">\footnote{</div><div class="notes ctd">  Issue (Tom Smith): is reciprocal control sufficient for joint control?  No because of walking in the Tarantino sense.  This might tell us something interesting about joint control---e.g. maybe identifying differences between sharing a smile and walking in the Tarantino sense with respect to control will enable me to make the point about control as a way of knowing in sharing a smile better.</div><div class="notes ctd">}</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_08.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[THIRD POINT: smiling is a goal-directed action, the goal of which is to smile that smile]</div><div class="notes">My topic is sharing a smile.  But first think about ordinary, individual actions like genuine smiles.</div><div class="notes">What distinguishes a genuine smile from a muscle spasm or the exhalation of wind?</div><div class="notes">I want to suggest that it's this: the smile is a goal-directed action where the goal is to simile that smile.</div><div class="notes">But why think of the smile as goal-directed?  Because smiling the smile requires considerable motor coordination: it’s not a matter of simple muscle contractions but more like the production of a phonetic gesture where context affects what is needed to realise the smile.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_09.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Further, like grasping an object or articulating a particular phoneme, it is an action that can be realised by different bodily movements in different contexts.</div><div class="notes">This is why I put slides of two quite different but both genuine smiles.</div><div class="notes">[Objection:]</div><div class="notes">Now you might say that the smile can't be goal-directed because is isn't explicable by appeal to belief, desire and intention</div><div class="notes">This is because the genuine smile is spontaneous and not something that can be produced at will (although it could probably be inhibited, at least to some extent); after all, this is what distinguishes the genuine from the polite smile.</div><div class="notes ctd">\footnote{</div><div class="notes ctd">From web source: The Duchenne smile involves both voluntary and involuntary contraction from two muscles: the zygomatic major (raising the corners of the mouth) and the orbicularis oculi (raising the cheeks and producing crow's feet around the eyes). The zygomatic major can be voluntarily contracted but many people can't voluntarily contract the orbicularis oculi muscle.</div><div class="notes ctd">}</div><div class="notes">So now we might be tempted by the view that a smile is merely caused by an emotion in the way that gasses can cause you to burp.</div><div class="notes">[Reply:]</div><div class="notes">Maybe there are smiles like this, but some genuine smiles are sustained.</div><div class="notes">And what sustains them is a process of controll</div><div class="notes">How could this be if such smiles are not consequences of beliefs, desires and intentions?</div><div class="notes">I think a reasonably natural view here is to think that part of what makes an event a smile, a goal-directed action and not just a muscle spasm caused by excess wind, is the way that motor control is involved.  Specifically, the genuine smile will involve a motor representation of the outcome, the smile, and this motor representation will lead to movements by way of planning-like motor processes.</div><div class="notes">But you don't have to buy this to agree with me.</div><div class="notes">All you have to accept is that actions like some smilings can be goal-directed and controlled even in the absence of relevant beliefs, desires and intentions.</div><div class="notes">I think smiles fall into the category of actions like graspings, reachings and gesturings which are goal-directed but do not necessarily involve intention.</div><div class="notes">&nbsp;  </div><div class="notes">So far, then, I've suggested that smiling is a goal-directed action, the goal of which is to smile that smile.</div></div></div></div></section><section class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">I'm sorry if all of this is too simple to mention, but I want to recap just to be sure we're all together.</div><p>summary so far</p><ol class="em-above"><li>emotions unfold over time</li><li>control is a way of knowing</li><li>smiling is sometimes a goal-directed action, the goal of which is to smile a smile</li></ol></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_15.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Now imagine a situation where a single individual encounters and event (a clown’s falling) which causes amusement which causes her to smile</div><div class="notes">Note that the smile also modulates the emotion; if, for example, she supressed the smile, the quality of her amusement would change.</div><div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?</div><div class="notes">How could we ever appreciate the unfolding of another’s grief, or the way their engagement leads to an explosion of ecstasy at the climax of a concert?</div><div class="notes">Part of the answer is obvious: by being there, with them.  </div><div class="notes">[Not that this is the only possibility --- in some cases we might  be told.]</div><div class="notes">But how exactly does being there, in the same situation help?</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_16.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Merely being in the same situation is surely not enough.</div><div class="notes">It’s not enough that we each experience amusement, grief or ecstasy.</div><div class="notes">After all, individuals are different.  Different individuals’ feelings don’t unfold in the same way just because they are in the same situation.</div><div class="notes">It’s just here that collective intentionality is relevant.</div><div class="notes">\textbf{What is involved in sharing a smile?}</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">Minimally, I think there have to be two kinds of connection between us for us to share a smile.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_18.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">First, the way your smile unfolds is shaped by how mine unfolds and conversely.</div><div class="notes">I also suppose that our smiles can be minutely coordinated with each other.</div><div class="notes">But it’s not just that our smiles are interdependent in this way ...</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_19.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">It’s also that each of our smiles is shaping the way our amusement unfolds.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_20.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">So the way your amusement unfolds is being controlled by, and controlling, the way mine unfolds.</div><div class="notes">In sharing a smile, we are emotionally locked together.</div></div></div></div></section><section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/><div class="words"><div class="container_12"><div class="grid_12"><div class="notes">[*todo: remove motor stuff for this talk!  Also: don't lose sight of idea that control is a way of knowing.]</div><div class="notes">[*todo: need slide with control arrows highlighted (my emotion controls yours).]</div><div class="notes">[*Structure:
+My thesis will be that Sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold; this is what's special, rather than knowledge of the category of emotion (amusement vs fear) or its object.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_02.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">[SECOND POINT: control is a way of knowing]</div>
+        <div class="notes">ways of knowing: perception, inference, reason, testimony</div>
+        <div class="notes">ways of knowing --- mention perceiving, testimony etc; </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_03.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">agent’s knowledge of their current and future actions is often thought to depend on control (although I guess perception is important---it's not a pure case);</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_04.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">but control can enable us to know things about others’ actions (using reins as an example---the point of putting a toddler in reins is sometimes that they enable you to know where the toddler will be without observation or inference); </div>
+        <div class="notes ctd">\footnote{</div>
+        <div class="notes ctd">Issue (Joel): does control give knowledge of action independently of perception.  (I launched into AHP, which I think only ends up supporting the point.)  Perception must be relevant in this sense: to know that I’m acting, my judgement must be appropriately sensitive to perceptual confirmation.  (Someone with AHP isn’t in a position to know that she’s acting precisely because the perceptual information doesn’t influence her judgement (the comparator---the link between perceptual feedback and motor representation---is broken).  (Strictly this doesn’t show that we need perceptual information, just that knowing isn’t compatible with ignoring perceptual information if  we have it.)  OK, but how does this affect the argument?  (i) maybe I shouldn’t offer agential control as a way of knowing that is distinct from perception (although I think that, unlike simple cases of perception, the motor representation plays a role in knowing.  Further (ii) what’s perceived is action not emotion in the proposal I make; but then maybe Joel’s objection is that merely controlling isn’t sufficient for knowing---against this, I think the reins example might help (I don’t need perceptual feedback to know the location of the toddler, although I might not be able know the location if I have perceptual feedback and ignore it.)</div>
+        <div class="notes ctd">}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_05.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">then point out that social interactions often involve reciprocal control.</div>
+        <div class="notes">controlling someone's actions is a way of knowing things about them.</div>
+        <div class="notes ctd">\footnote{</div>
+        <div class="notes ctd">  Issue (Tom Smith): is reciprocal control sufficient for joint control?  No because of walking in the Tarantino sense.  This might tell us something interesting about joint control---e.g. maybe identifying differences between sharing a smile and walking in the Tarantino sense with respect to control will enable me to make the point about control as a way of knowing in sharing a smile better.</div>
+        <div class="notes ctd">}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_08.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">[THIRD POINT: smiling is a goal-directed action, the goal of which is to smile that smile]</div>
+        <div class="notes">My topic is sharing a smile.  But first think about ordinary, individual actions like genuine smiles.</div>
+        <div class="notes">What distinguishes a genuine smile from a muscle spasm or the exhalation of wind?</div>
+        <div class="notes">I want to suggest that it's this: the smile is a goal-directed action where the goal is to simile that smile.</div>
+        <div class="notes">But why think of the smile as goal-directed?  Because smiling the smile requires considerable motor coordination: it’s not a matter of simple muscle contractions but more like the production of a phonetic gesture where context affects what is needed to realise the smile.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_09.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Further, like grasping an object or articulating a particular phoneme, it is an action that can be realised by different bodily movements in different contexts.</div>
+        <div class="notes">This is why I put slides of two quite different but both genuine smiles.</div>
+        <div class="notes">[Objection:]</div>
+        <div class="notes">Now you might say that the smile can't be goal-directed because is isn't explicable by appeal to belief, desire and intention</div>
+        <div class="notes">This is because the genuine smile is spontaneous and not something that can be produced at will (although it could probably be inhibited, at least to some extent); after all, this is what distinguishes the genuine from the polite smile.</div>
+        <div class="notes ctd">\footnote{</div>
+        <div class="notes ctd">From web source: The Duchenne smile involves both voluntary and involuntary contraction from two muscles: the zygomatic major (raising the corners of the mouth) and the orbicularis oculi (raising the cheeks and producing crow's feet around the eyes). The zygomatic major can be voluntarily contracted but many people can't voluntarily contract the orbicularis oculi muscle.</div>
+        <div class="notes ctd">}</div>
+        <div class="notes">So now we might be tempted by the view that a smile is merely caused by an emotion in the way that gasses can cause you to burp.</div>
+        <div class="notes">[Reply:]</div>
+        <div class="notes">Maybe there are smiles like this, but some genuine smiles are sustained.</div>
+        <div class="notes">And what sustains them is a process of controll</div>
+        <div class="notes">How could this be if such smiles are not consequences of beliefs, desires and intentions?</div>
+        <div class="notes">I think a reasonably natural view here is to think that part of what makes an event a smile, a goal-directed action and not just a muscle spasm caused by excess wind, is the way that motor control is involved.  Specifically, the genuine smile will involve a motor representation of the outcome, the smile, and this motor representation will lead to movements by way of planning-like motor processes.</div>
+        <div class="notes">But you don't have to buy this to agree with me.</div>
+        <div class="notes">All you have to accept is that actions like some smilings can be goal-directed and controlled even in the absence of relevant beliefs, desires and intentions.</div>
+        <div class="notes">I think smiles fall into the category of actions like graspings, reachings and gesturings which are goal-directed but do not necessarily involve intention.</div>
+        <div class="notes">&nbsp;  </div>
+        <div class="notes">So far, then, I've suggested that smiling is a goal-directed action, the goal of which is to smile that smile.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">I'm sorry if all of this is too simple to mention, but I want to recap just to be sure we're all together.</div>
+        <p>summary so far</p>
+        <ol class="em-above">
+          <li>emotions unfold over time</li>
+          <li>control is a way of knowing</li>
+          <li>smiling is sometimes a goal-directed action, the goal of which is to smile a smile</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_15.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Now imagine a situation where a single individual encounters and event (a clown’s falling) which causes amusement which causes her to smile</div>
+        <div class="notes">Note that the smile also modulates the emotion; if, for example, she supressed the smile, the quality of her amusement would change.</div>
+        <div class="notes">How could we gain insight into the fine-grained dynamics of others’ emotions?</div>
+        <div class="notes">How could we ever appreciate the unfolding of another’s grief, or the way their engagement leads to an explosion of ecstasy at the climax of a concert?</div>
+        <div class="notes">Part of the answer is obvious: by being there, with them.  </div>
+        <div class="notes">[Not that this is the only possibility --- in some cases we might  be told.]</div>
+        <div class="notes">But how exactly does being there, in the same situation help?</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_16.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Merely being in the same situation is surely not enough.</div>
+        <div class="notes">It’s not enough that we each experience amusement, grief or ecstasy.</div>
+        <div class="notes">After all, individuals are different.  Different individuals’ feelings don’t unfold in the same way just because they are in the same situation.</div>
+        <div class="notes">It’s just here that collective intentionality is relevant.</div>
+        <div class="notes">\textbf{What is involved in sharing a smile?}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Minimally, I think there have to be two kinds of connection between us for us to share a smile.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_18.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">First, the way your smile unfolds is shaped by how mine unfolds and conversely.</div>
+        <div class="notes">I also suppose that our smiles can be minutely coordinated with each other.</div>
+        <div class="notes">But it’s not just that our smiles are interdependent in this way ...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_19.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">It’s also that each of our smiles is shaping the way our amusement unfolds.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_20.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So the way your amusement unfolds is being controlled by, and controlling, the way mine unfolds.</div>
+        <div class="notes">In sharing a smile, we are emotionally locked together.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/slide_share_smile_17.jpg" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">[*todo: remove motor stuff for this talk!  Also: don't lose sight of idea that control is a way of knowing.]</div>
+        <div class="notes">[*todo: need slide with control arrows highlighted (my emotion controls yours).]</div>
+        <div class="notes">[*Structure:
 (i) I know because my emotion controls yours;
 (ii) But if my emotion controls yours, how can yours be amusement at the clown's falling? because control is partial, and reciprocal;
 (iii) But the mere fact of control isn't enough for knowledge; rather, control must show up in experience somehow.  
@@ -31,24 +373,34 @@ My thesis will be that Sharing a smile provides us with a route to knowledge of 
   and between our actions and the causes of them.
 (vi) So my position is this: the reciprocal control justifies each agent in making judgements about how the others' amusement is unfolding,
     and this justification is at least indirectly available to the agents by virtue of their having experiences characteristic of sharing a smile.
-  ]</div><div class="notes">Our being emotionally locked together means that 
+  ]
+        </div>
+        <div class="notes">Our being emotionally locked together means that 
 to a significant extent I am feeling what you are feeling, 
         that the way my amusement is unfolding matches they way your amusement is unfolding. 
 So if you know how your own amusement is unfolding and you know that we are emotionally locked together,
 you can know much about how my amusement is unfolding.
-So joint expressions of emotion like sharing a smile have the potential to enable us to know not just that others are amused but how their amusement is unfolding.</div><div class="notes">But the fact of reciprocal control (which means our emotions are locked together) together doesn’t all by itself mean that we can know how each other’s emotions are unfolding.
+So joint expressions of emotion like sharing a smile have the potential to enable us to know not just that others are amused but how their amusement is unfolding.
+        </div>
+        <div class="notes">But the fact of reciprocal control (which means our emotions are locked together) together doesn’t all by itself mean that we can know how each other’s emotions are unfolding.
 After all, for all I have said so far, we might, in sharing a smile, be  unaware that our emotions are locked together. 
 Now you might think this sounds implausible because its hard to imagine sharing a smile without an experience that is distinctive of sharing a smile.
 And it might be natural to describe this experience as an experience of sharing.
-But even if that is correct, it’s necessary to say exactly why someone who is sharing a smile is in a position to know things about how the other’s emotion is unfolding.</div><div class="notes">I don’t want to say that interaction only helps if you know that your emotions are locked together. 
+But even if that is correct, it’s necessary to say exactly why someone who is sharing a smile is in a position to know things about how the other’s emotion is unfolding.
+        </div>
+        <div class="notes">I don’t want to say that interaction only helps if you know that your emotions are locked together. 
 That is, I don’t want to say that  someone who is sharing a smile needs to understand the situation in the way I’m describing it.
-But minimally the fact of reciprocal control must somehow feature in our awareness.</div><div class="notes">[*The idea in outline:
+But minimally the fact of reciprocal control must somehow feature in our awareness.
+        </div>
+        <div class="notes">[*The idea in outline:
 \begin{enumerate}
 \item the ways our amusements unfold is locked together
 \item this is in part because a single motor plan has two functions, production of your smile and prediction of my smile
 \item the single motor process means that we might experience being locked together in some way (not that our emotions are locked together but that our actions are, in something like (but not exactly) we experience actions when seeing ourselves in a mirror or on CCTV (check Johannes’ discussion of this)).
 \end{enumerate}
-]</div><div class="notes">Here I want to offer a wild conjecture.
+]
+        </div>
+        <div class="notes">Here I want to offer a wild conjecture.
 In joint expressions of emotion there is a single motor plan with two functions,
 production and prediction.
 The motor plan both produces your own smile and enables you to predict the way the other’s smile will unfold.
@@ -58,7 +410,9 @@ From your point of view, it is almost as if the other is smiling your smile.%
 \footnote{
 Joel caricatured this idea seeing me eating fruit: ‘it’s almost as if I’m eating that fruit.’
 }
-This means that sharing a smile has characteristic phenomenology.</div><div class="notes">This odd phenomenological effect means that in sharing a smile we can each think of the situation almost as if there were a single smile.
+This means that sharing a smile has characteristic phenomenology.
+        </div>
+        <div class="notes">This odd phenomenological effect means that in sharing a smile we can each think of the situation almost as if there were a single smile.
 And almost as if there were a single state of amusement.
 (In thinking of the situation like this it is important that we have a subject-neutral conception of the amusement and an agent-neutral conception of the smile.%
 \footnote{
@@ -69,13 +423,38 @@ It’s a partial model of the situation.
 [*Here I think I’m shifting back from the perspective of the participants in sharing a smile to the perspective of the theorist.
 Probably what I should say is, first, that a theorist can think of the situation in this way and use this to argue, second, that there is a simple, partial conception of the situation that doesn’t require understanding reciprocal control and interlocking emotions but is sufficient for each smiler to have knowledge of  the way the other’s emotion unfolds.]
 So my suggestion is that in sharing a smile you experience my smile almost as if it were yours (or: you experience me almost as if I were smiling your smile),
-and so you might also experience our situation almost as if it involved a single state of amusement.</div><div class="notes">It's more like we each plan a single smile.</div><div class="notes">But---to reply to the objection---these plans have a dual function.
+and so you might also experience our situation almost as if it involved a single state of amusement.
+        </div>
+        <div class="notes">It's more like we each plan a single smile.
+        </div>
+        <div class="notes">But---to reply to the objection---these plans have a dual function.
 Your plan both produces your own smile and enables you to simulate---to experience---my smile.
 And likewise for my plan.
-The interdependence of our smilings means that we could each think of the situation as if it were one in which a single state of amusement were responsible for our actions.</div></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">collective intentionality opens a route to knowing others’ minds</p><div class="notes">I've just been arguing that manifestations of collective intentionality enable us to know things about others' minds that we might not otherwise be in a position to know.
+The interdependence of our smilings means that we could each think of the situation as if it were one in which a single state of amusement were responsible for our actions.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">collective intentionality opens a route to knowing others’ minds</p>
+          <div class="notes">I've just been arguing that manifestations of collective intentionality enable us to know things about others' minds that we might not otherwise be in a position to know.
 In particular, I suggested that 
 sharing a smile provides us with a route to knowledge of facts about the ways others' emotions unfold.
 \textbf{
 Engaging in collective actions like sharing a smile (and crying together) enables us to understand others’ emotions in ways that we probably couldn’t understand them if we were mere observers and unable to engage in collective action.
 The joint expression of emotion matters because it makes available a perspective from which it is almost as if your amusement is my amusement, and my grief is yours.
-}</div></div></div></div></div></section></div></body></html>
+}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

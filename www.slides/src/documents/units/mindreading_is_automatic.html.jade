@@ -12,22 +12,21 @@ include ../../../fragments/unit_mixins
 
 .handout Are human adults’ abilities to track others’ beliefs automatic?
 .handout: :t
-  For our purposes, a process is \emph{automatic} if whether it occurs is to 
-  as significant degree independent of the subject’s task and motivation.
+  For our purposes, a process is \emph{automatic} to the degree that whether it occurs is independent of
+  its relevance to the particulars of the subject's task, motives and aims.
 .handout: :t
   ‘Automatic mindreading’ is short for ‘mindreading that is a consequence of
   automatic processes only.’
+.handout: :t
+  \citet{Southgate:2007js} created an anticipatory looking false belief task, originally
+  for use with two-year-olds, which has been adapated to provide evidence for automatic 
+  false belief tracking.
 .handout: :t
   There is evidence that some mindreading in human adults is
   entirely a consequence of relatively automatic processes
   \citep{kovacs_social_2010,Schneider:2011fk,Wel:2013uq} and
   that not all mindreading in human adults is
-  \citep{apperly:2008_back,apperly_why_2010}.
-.handout: :t
-  \citet{qureshi:2010_executive} found that automatic and nonautomatic
-  mindreading processes are differently influenced by cognitive load, and
-  \citet{todd:2016_dissociating} provided evidence that adding time pressure
-  affects nonautomatic but not automatic mindreading processes.
+  \citep{apperly:2008_back,apperly_why_2010,Wel:2013uq}.
 
 
 +slide_middle
@@ -35,7 +34,7 @@ include ../../../fragments/unit_mixins
     A process involves \emph{belief-tracking} if how processes of this type unfold
     typically and nonaccidentally depends on facts about beliefs.
     So belief tracking can, but need not, involve representing beliefs.
-  p.center.notes.handout.show 
+  p.center.notes.show 
     //- span.step2.hide Is
     span.belief-tracking belief-tracking
     span.step2.hide  is 
@@ -46,18 +45,15 @@ include ../../../fragments/unit_mixins
   .slide
     +fade('.belief-tracking')
     +show('.automatic')
-    .notes.handout: :t
+    .notes: :t
       A process is \emph{automatic} to the degree that whether it occurs is independent of its 
       relevance to the particulars of the subject's task, motives and aims.
   .slide
     +unfade('.belief-tracking')
     +show('.step2')
-    .notes.handout: :t
-      Or, more carefully, does belief tracking in human adults depend only
+    .notes: :t
+      Or, carefully, does belief tracking in human adults depend only
       on processes which are automatic?
-    .handout Yes: \citet{Schneider:2011fk,schneider:2014_task,kovacs_social_2010} 
-    .handout No: \citet{back:2010_apperly}
-    .handout Yes and No: \citep[p.\ 132]{Wel:2013uq}
     .notes: :t
       There is now a variety of evidence that belief-tracking is sometimes and
       not always automatic in adults.  Let me give you just one experiment here
@@ -65,37 +61,11 @@ include ../../../fragments/unit_mixins
   .slide
     +invert('.sometimes')
 
-+slide({bkg:'kovacs_et_al/01.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/02.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/03.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/04.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/01.jpg'}) 
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/04.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/07.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/01.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/09.jpg'})
-  p.source Kovacs et al, 2010
-+slide({bkg:'kovacs_et_al/10.jpg'})
-  p.source Kovacs et al, 2010
 
 
-+slide_middle
-  p.center anticipatory looking
 
 +slide({bkg:'southgate_2007_cap1.png'})
   p.source Southgate et al, 2007; Senju et al, 2009 video S1
-  .handout: :t
-    \citet{Southgate:2007js} created an anticipatory looking false belief task, originally
-    for use with two-year-olds, which has been adapated to provide evidence for automatic 
-    false belief tracking.
   .notes: :t
     Explain the southgate et al paradigm
 +slide({bkg:'southgate_2007_cap2.png'})
@@ -106,10 +76,15 @@ include ../../../fragments/unit_mixins
   p.source Southgate et al, 2007; Senju et al, 2009 video S1
 +slide({bkg:'southgate_2007_cap5.png'})
   p.source Southgate et al, 2007; Senju et al, 2009 video S1
++slide({bkg:'southgate_2007_cap2.png'})
+  p.source Southgate et al, 2007; Senju et al, 2009 video S1
++slide({bkg:'southgate_2007_cap3.png'})
+  p.source Southgate et al, 2007; Senju et al, 2009 video S1
 +slide({bkg:'southgate_2007_cap6.png'})
   p.source Southgate et al, 2007; Senju et al, 2009 video S1
 +slide({bkg:'southgate_2007_cap7.png'})
   p.source Southgate et al, 2007; Senju et al, 2009 video S1
+
 
 
 +slide({bkg:'schneider_2014_fig1.png'})
@@ -120,6 +95,7 @@ include ../../../fragments/unit_mixins
     One way to show that mindreading is automatic is to give subjects a task which does not require tracking beliefs and then to compare their performance in two scenarios:
     a scenario where someone else has a false belief, and a scenario in which someone else has a true belief.
     If mindreading occurs automatically, performance should not vary between the two scenarios because others’ beliefs are always irrelevant to the subjects’ task and motivations.
+
 +slide({bkg:'schneider_2014_fig3.png'})
   p.source Schneider et al (2014, figure 3)
   .notes: :t
@@ -149,9 +125,37 @@ include ../../../fragments/unit_mixins
     and by \citet{Wel:2013uq}, who showed that the same can influence the paths people take to reach an object.
     Taken together, this is compelling evidence that mindreading in adult humans sometimes involves automatic processes only.
   .handout: :t
-     ‘Participants never reported belief tracking when questioned in an open format after the experiment (“What do you think this experiment was about?”). Furthermore, this verbal debriefing about the experiment’s purpose never triggered participants to indicate that they followed the actor’s belief state’ \citep[p.~2]{Schneider:2011fk}
+     ‘Participants never reported belief tracking when questioned in an open format after the experiment
+     (“What do you think this experiment was about?”). Furthermore, this verbal debriefing about the
+     experiment’s purpose never triggered participants to indicate that they followed the actor’s belief
+     state’ \citep[p.~2]{Schneider:2011fk}
 
 
++slide_middle
+  p.center altercentric interference
+
+
+
++slide({bkg:'kovacs_et_al/01.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/02.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/03.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/04.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/01.jpg'}) 
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/04.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/07.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/01.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/09.jpg'})
+  p.source Kovacs et al, 2010
++slide({bkg:'kovacs_et_al/10.jpg'})
+  p.source Kovacs et al, 2010
 
 
 
@@ -166,6 +170,15 @@ include ../../../fragments/unit_mixins
     span &nbsp;
     span.automatic automatic
   +invert('.sometimes', 0)
+  .slide
+    p.em-above.center aside: altercentric interference vs procative gaze
+    .notes: :t
+      It’s good that we have both altercentric interference (which indicates that
+      the contents of beliefs are represented) and proactive gaze (which might
+      be taken to indicate an action prediction).
+      Altercentric interference indicates automaticity because it is counterproductive;
+      proactive gaze indicates automaticity because it occurs irrespective of 
+      instructions.
   .slide
     +uninvert('.sometimes')
     +invert('.not-always')
@@ -333,7 +346,12 @@ section.slide
     \emph{Dual Process Theory of Mindreading}.  
     Automatic and nonautomatic mindreading processes are independent in
     this sense: different conditions influence whether they occur and
-    which ascriptions they generate \citep[e.g.][]{todd:2016_dissociating,qureshi:2010_executive}. 
+    which ascriptions they generate. 
+  .handout: :t
+    \citet{qureshi:2010_executive} found that automatic and nonautomatic
+    mindreading processes are differently influenced by cognitive load, and
+    \citet{todd:2016_dissociating} provided evidence that adding time pressure
+    affects nonautomatic but not automatic mindreading processes.
   .slide
     p.em-above evidence?
 
@@ -350,6 +368,11 @@ section.slide
   .notes: :t
     Also idea: no correlations between anticipatory looking and button press responses,
     except perhaps under max time pressure (when button presses may become more accurate).
+
++slide({bkg:'qureshi_2010_table1i.png'})
+  .notes: :t
+    Most of the evidence comes not from false belief but from a L1 VPT task
++slide({bkg:'qureshi_2010_table1ii.png'})
 
 +slide_middle
   p.center Dual Process Theory of Mindreading
@@ -379,7 +402,7 @@ section.slide
   .handout.notes: :t
     \citet{lin:2010_reflexively} show that successful visual perspective taking (in the 
     director task) is faster among those with greater working memory capacity (Experiment 1) and 
-    slowed when cognitive load is imposed (Experiment 2).
+    slower when cognitive load is imposed (Experiment 2).
   p.source Lin et al (2010, figure 3)
   .notes: :t
     ‘Fig. 3. Latency of decision window for the target as a function of
