@@ -1,0 +1,1247 @@
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lecture 09: Interaction in Radical Interpretation | Philosophical Psychology</title>
+    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<div class="notes notes-header-tex">\title {Philosophical Psychology \\ Lecture 09: Interaction in Radical Interpretation}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\maketitle</div>
+<div id="title-slide" class="slide"><img src="/img/AADSC_AB_8178.low.JPG" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div class="fade-in">
+    <div style="position:relative; top:375px" class="title-block">
+      <div class="title-container">
+        <h1 style="line-height:45pt;" class="title1 fade-in">Lecture 09: Interaction in Radical Interpretation</h1>
+        <h3 class="email fade-in">s.butterfill@warwick.ac.uk</h3>
+      </div>
+    </div>
+  </div>
+  <div class="handout">\def \ititle {Lecture 09: Interaction in Radical Interpretation}</div>
+  <div class="handout">\begin{center}</div>
+  <div class="handout">{\Large</div>
+  <div class="handout">\textbf{\ititle}</div>
+  <div class="handout">}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
+  <div class="handout">\end{center}</div>
+  <div class="notes"><t:015376071422360837></t:015376071422360837>
+  </div>
+</div>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Radical Interpretation: The Question}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Radical Interpretation: The Question}</div>
+<div class="notes">‘I want to know what it is about propositional thought--our beliefs,
+desires, intentions and speech--that makes it intelligible to others.’
+(Davidson, 1995 p. 14)</div>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes handout show">
+            <p class="em-above"><span>‘I want to know what it is about </span><span class="propositional-thought">propositional thought</span><span>---our beliefs, desires, </span><span>intentions and speech---that makes it intelligible to others.’</span></p>
+          </div>
+          <div class="notes handout ctd">\citep[p.~14]{Davidson:1995nl}</div>
+          <p class="right grey-text">Davidson (1995, 14)</p>
+          <div class="slide">
+            <div data-what=".propositional-thought" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".propositional-thought" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">The difference is just that whereas Davidson focusses on propositional thought,
+one theme of my talk will be that we need to consider a wider range of mental phenomena, including
+emotional processes, attention and goal-directed action.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-src="img/radical_interpretation_handout.png" class="img handout"></div>
+          <div class="notes">Let me start with the aim of an account of radical interpretation.
+An account of radical interpretation is an account of how you could 
+in principle infer facts about actions and mental states from
+non-mental evidence.
+This is the fundamental project in theorising about social cognition
+(as I’ll explain shortly [by invoking Marr’s levels]).
+          </div>
+          <p style="line-height:.6em" class="huge-glow-60">radical interpretation</p>
+          <div class="slide">
+            <p><span class="infer">Infer</span><span> The Mind from The Evidence</span></p>
+          </div>
+          <div class="slide">
+            <p class="em-above indent">The Mind: facts about actions, emotions, desires, beliefs, ...</p>
+          </div>
+          <div class="slide">
+            <p class="em-above indent"><span class="the-evidence">The Evidence</span><span>: facts about events and states of affairs that could be known without 
+knowing what any particular individual believes, desires, intends, ...</span></p>
+          </div>
+          <div class="slide">
+            <div data-what=".the-evidence" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".the-evidence" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">The evidence is evidence that you could possess in advance of knowing
+what any particular individual believes, desires, intends and so on.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".the-evidence" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".infer" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".infer" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Here we must be careful.
+Donald Davidson and David Lewis have both used the term ‘radical interpretation’.
+But Lewis is interested in how what I am calling ‘The Evidence’ determines facts about
+the mind.  This is a *metaphysical* question.
+By contrast, Davidson is interested in the possibility of inferring The Mind from
+The Evidence.  He is not assuming---and, I think, does not belive, that the Evidence
+metaphysically determines The Mind (although he’s sometimes interpreted as so believing).
+Davidson’s project (and the part of Dennett’s we’re interested in) is
+epistemological, not metaphysical.
+            </div>
+            <div class="notes">[NB: this is particularly important because we’re talking about Dennett]
+            </div>
+            <div class="slide">
+              <div data-what=".infer" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{The Intentional Stance}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{The Intentional Stance}</div>
+<div class="notes">The ‘Intentional Stance’ (also ‘Intentional Strategy’) is Dennett’s name for 
+a procedure for ascribing desires, beliefs and other mental states to an individual
+without assuming any prior knowledge of what distinguishes her mind from others’ minds.</div>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Dennett doesn’t use the term ‘radical interpretation’ but his description
+of the Intentional Stance does provide a candidate account of radical 
+interpretation.
+          </div>
+          <div class="notes handout show">
+            <p>‘the intentional stance ...</p>
+            <p class="slide">‘first you decide to treat the object whose behavior is to be predicted as a rational agent; </p>
+            <p class="slide">‘then you figure out what <span class="beliefs-ought">beliefs that agent <span class="ought1">ought</span><span> to have</span></span><span> , given its place in the world and </span><span class="purpose">its purpose</span><span>. </span></p>
+            <p class="slide">‘Then you figure out what <span class="desires-ought">desires it <span class="ought2">ought</span><span> to have</span></span><span>, on the same considerations, </span></p>
+            <div class="slide"> 
+              <p>‘and finally you predict that this <span class="rational-agent">rational agent</span><span> will act to further its </span><span class="goal">goals</span><span> in the light of its beliefs’</span></p>
+              <div class="handout notes">\citep[p.~17]{Dennett:1987sf}</div>
+              <div class="notes">A couple of things about this are confusing.
+              </div>
+            </div>
+          </div>
+          <p class="right grey-text">Dennett (1987, 17)</p>
+          <div class="slide">
+            <div data-what=".purpose" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".purpose" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">First, what is the purpose of me?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".purpose" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".goal" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".goal" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Second, where do these goals come from?
+Does Dennett mean desires here?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".goal" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".beliefs-ought" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".beliefs-ought" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">This does make sense to me.
+Dennett derives this rule from the fundamental injunction to attribute all the beliefs
+the agent ought to have:
+            </div>
+            <div class="notes handout">‘one rule for attributing beliefs in the intentional strategy is this: attribute as beliefs all the truths relevant to the system's interests (or desires) that the system's experience to date has made available’ \citep[p.~18]{Dennett:1987sf}
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".beliefs-ought" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".desires-ought" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".desires-ought" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">But what about the desires?
+Which desires ought we to have?
+Here Dennett is less helpful.
+            </div>
+            <div class="notes">I prefer gold rings to platinum ones; you prefer the converse.
+Does one of us have the wrong preferences?
+            </div>
+            <div class="notes handout">‘We attribute the desires the system ought to have. That is the fundamental rule. It dictates, on a first pass, that we attribute the familiar list of highest, or most basic, desires to people: survival, absence of pain, food, comfort, procreation, entertainment.’ \citep[p.~20]{Dennett:1987sf}
+            </div>
+            <div class="notes">He also suggests attributing desires for things we believe are good for us,
+or that will further other desires.
+From the context, I think Dennett’s idea is that, in essence, we all desire 
+a small number of basic things but differ in our beliefs about how to get these.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".desires-ought" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div class="notes">Put aside for the moment the question of whether this succeeds as an account
+of radical interpretation.
+I’ll come back to this.
+First I want to be sure we understand the point of giving
+an account of radical interpretation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Social Cognition vs Radical Interpretation}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Social Cognition vs Radical Interpretation}</div>
+<div class="notes">How would an account of the radical interpretation (which is about how discoveries about
+minds are in principle possible) further our understanding of actual social 
+cognition?</div>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="notes handout show">What is the relation between an account of radical interpretation
+and a theory of social cognition?
+          </p>
+          <div class="notes">(This is a way of asking, How is radical interpretation relevant given
+that our topic is social cognition?)
+          </div>
+          <div class="notes">An account of radical interpretation describes a route to knowledge
+starting from  evidence that can be described without knowing anything about the
+particular actions, beliefs, desires and other mental states of any individual
+and ending with knowledge of these particulars.
+          </div>
+          <div class="notes">A theory of social cognition is (in part) a theory of the processes by
+which we actually predict, understand, align with and shape each other.
+          </div>
+          <div class="notes">What do these two things have to do with each other?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="notes">Sometimes when you read Davidson and Dennett, it seems like an account
+of radical interpretation just is a theory of social cognition, a theory 
+of the processes by which we predict, understand, align with and 
+shape each other  ...
+    </div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="notes handout show">‘Do people actually use this strategy? Yes, all the time.’
+        </p>
+        <div class="notes handout ctd">\citep[p.~21]{Dennett:1987sf}</div>
+        <p class="right grey-text">Dennett (1987, p. 21)</p>
+        <div class="slide">
+          <p class="em-above"></p>
+          <p class="notes handout show">‘[a]ll understanding of the speech  [and thoughts] of another involves radical interpretation’
+          </p>
+          <div class="notes handout ctd">\citep[p.~125]{Davidson:1973jx}</div>
+          <p class="right grey-text">Davidson (1973, 125)</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half hide">
+      <div style="padding-left:1em;">
+        <div class="slide">
+          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">But elsewhere Davidson says things which give the opposite impression.
+          </div>
+          <p class="notes handout show">‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’
+          </p>
+          <div class="notes handout ctd">\citep[p.~12]{Davidson:1980xp}</div>
+          <p class="right grey-text">Davidson (1980, 12) </p>
+          <div class="notes">How should we understand the relation between an account of radical interpretation 
+and a theory of social cognition?
+(This is a way of asking, How is radical interpretation relevant given 
+that our topic is social cognition?)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">\citet[p.~22ff]{Marr:1982kx} distinguishes:
+          </div>
+          <div class="handout">\begin{itemize}
+          </div>
+          <div class="handout">\item computational description---What is the thing for and how does it achieve this?
+          </div>
+          <div class="handout">\item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?
+          </div>
+          <div class="handout">\item hardware implementation---How are the representations and algorithms physically realised?
+          </div>
+          <div class="handout">\end{itemize}
+          </div>
+          <div class="notes">One possibility is to appeal to David Marr’s famous three-fold distinction
+bweteen levels of description of a system: the computational theory, the 
+representations and algorithm, and the hardware implementation.
+          </div>
+          <div class="notes">This is easy to understand in simple cases.
+To illustrate, consider a GPS locator.
+It receives information from four satellites and tells you where on Earth the device is.
+          </div>
+          <div class="notes">There are three ways in which we can characterise this device.
+          </div>
+          <div class="slide">
+            <div class="computational hem-around">
+              <p>1. computational description</p>
+              <div class="notes">First, we can explain how in theory it is possible to infer the 
+device’s location from it receives from satellites.
+This involves a bit of maths: given time signals from four different satellites,
+you can work out what time it is and how far you are away from each
+of the satellites.
+Then, if you know where the satellites are and what shape the Earth is,
+you can work out where on Earth you are.
+              </div>
+              <div class="slide">
+                <p class="indent">-- What is the thing for and how does it achieve this?</p>
+              </div>
+              <div class="notes">The computational description tells us what the GPS locator does and 
+what it is for.
+It also establishes the theoretical possibility of a GPS locator.
+              </div>
+              <div class="notes">But merely having the computational description does not enable you to build 
+a GPS locator, nor to understand how a particular GPS locator works.
+For that you also need to identify representations and alogrithms ...
+              </div>
+            </div>
+          </div>
+          <div class="slide hem-around">
+            <p>2. representations and algorithms</p>
+            <div class="notes">At the level of representations and algorthms we specify 
+how the GPS receiver represents the information it receives from the satellites
+(for example, it might in principle be a number, a vector or a time).
+We also specify the algorithm the device uses to compute the time and its location.
+The algorithm will be different from the computational theory: it is a procedure
+for discovering time and location.
+The algorithm may involve all kinds of shortcuts and approximations.
+And, unlike the computational theory, constraints on time, memory and other
+limited resources will be evident.
+            </div>
+            <div class="slide">
+              <div class="notes">So an account of the representations and algorithms tells us ...</div>
+              <p class="notes show indent">-- How are the inputs and outputs represented, and how is the transformation accomplished?</p>
+            </div>
+          </div>
+          <div class="slide hem-around">
+            <p>3. hardware implementation</p>
+            <div class="notes">The final thing we need to understand the GPS locator is a description of the
+hardware in which the algorithm is implemented.  It’s only here that 
+we discover whether the device is narrowly mechanical device, using cogs, say, 
+or an electronic device, or some new kind of biological entity.
+            </div>
+          </div>
+          <div class="slide">
+            <p class="indent">-- How are the  representations and algorithms physically realised?</p>
+            <div class="notes">The hardware implementation tells us how the representations and algorithms are represented physically.
+            </div>
+          </div>
+          <p class="right grey-text">Marr (1992, 22ff)</p>
+          <div class="slide">
+            <div data-what="p" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div class="notes">How is this relevant to my question?
+My question was, What is the relation between an account of radical interpretation 
+and a theory of social cognition?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what="p" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div data-what=".computational" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+            <div class="notes">I suggest that an account of radical interpretation is supposed to provide
+a computational description of social cognition; it tells us what social
+cognition is for and how, in the most abstract sense, it is possible.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <div class="firstQ">
+          <p>‘Do people actually use this strategy? Yes, all the time.’
+          </p>
+          <p class="right grey-text">Dennett (1987, p. 21)</p>
+        </div>
+        <p class="em-above"></p>
+        <div class="secondQ">
+          <p>‘[a]ll understanding of the speech [and thoughts] of another involves radical interpretation’
+          </p>
+          <p class="right grey-text">Davidson (1973, 125)</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <div class="thirdQ">
+          <p><t:0882485426729545></t:0882485426729545>
+          </p>‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’
+          <p class="right grey-text">Davidson (1980, 12) </p>
+        </div>
+      </div>
+    </div>
+    <div data-what=".firstQ, .secondQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+    <div class="notes">This is why Davidson says that a theory of radical interpretation isn’t
+‘meant to throw any direct light on how in real life we come to understand each other’.
+What he means is that it isn’t about the representations and algorithsm, nor about the 
+hardware implementation--the neurophysiology in our case--of social cognition.
+    </div>
+    <div class="slide">
+      <div data-what=".thirdQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+      <div data-what=".secondQ" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="notes">But he’s also right that all 
+‘[a]ll understanding of the speech [and thoughts] of another involves radical interpretation’.
+This follows trivially from the fact that 
+a theory of radical interpretation is supposed to be a computational description
+of  social cognition.
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".secondQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+      <div data-what=".firstQ" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="notes">Finally, the view I’m offering (a theory of radical interpretation is supposed to provide
+a computational description of social cognition) makes sense of a puzzle about 
+Dennett’s claim that people use the Intentional Strategy all the time.
+The puzzle is to understand how he could know this without doing some research.
+The answer, I think, is that Dennett’s Intentional Stance, like any theory of
+radical interpretation, isn’t a theory about how individuals understand each other;
+it is a theory about what it is to understand each other---that is, a computational
+description of social cognition.
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">I’ve been arguing that
+          </div>
+          <p class="center notes handout show">A theory of radical interpretation is supposed to provide
+a computational description of social cognition.
+          </p>
+          <div class="notes">If this is right, then an account of radical interpretation makes a fundamental
+contribution to the study of social cognition.
+          </div>
+          <div class="slide">
+            <p class="center em-above">aside: simulation vs theory</p>
+            <div class="notes">Simulation theory and theory theory are theories about  REPRESENTATIONS AND 
+ALGORITHMS, not about the COMPUTATIONAL DESCRIPTION.
+For this reason, you could accept Davidson’s theory about radical interpretation
+while taking any view on simulation vs theory.  The issues ([1]radical interpretation
+and [2] simluation vs theory) are only indirecty related.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <table class="data">
+            <thead>
+              <tr>
+                <td>level</td>
+                <td>social cognition</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd">
+                <td> 
+                  <p>computational description </p>
+                  <p class="indent">(What is the thing for and how does it achieve this?)</p>
+                </td>
+                <td class="hide">
+                  <p>theory of radical interpretation</p>
+                </td>
+              </tr>
+              <tr class="even">
+                <td> 
+                  <p>representations and algorithms </p>
+                  <p class="indent">(How are the inputs and outputs represented, and how is the transformation accomplished?)</p>
+                </td>
+                <td class="hide">
+                  <p>simulation, ‘theory theory’, ...</p>
+                </td>
+              </tr>
+              <tr class="odd">
+                <td>
+                  <p>hardware implementation </p>
+                </td>
+                <td class="hide">
+                  <p>TPJ, ...</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="slide">
+            <div data-what="tr:eq(1) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what="tr:eq(2) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what="tr:eq(3) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes show">
+            <p class="center">Social cognition needs a theory of radical interpretation ...</p>
+            <div class="slide">
+              <p class="center">... but we don’t have one.</p>
+            </div>
+          </div>
+          <div class="notes">So far I’ve argued that we need a theory of radical interpretation
+in order to understand social cognition because a theory of radical
+interpretation provides a computational description of social cognition.
+          </div>
+          <div class="notes">Now I want to argue that there is a problem: 
+we don't have an adequate theory of radical interpretation.
+There are actually two main theories of radical interpretaion,
+Davidson’s and Dennett’s, so strictly I should offer objections to 
+both.  But here I’ll just consider Dennett’s theory.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="objection_to_intentional_stance" class="slide"><img src="/img/bkg/bali/AP3232947.JPG" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">An Objection to the Intentional Stance</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{An Objection to the Intentional Stance}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{An Objection to the Intentional Stance}</div>
+<div class="notes">Does the Intentional Stance actually describe how it would be possible,
+even in principle, to infer facts about minds and actions from 
+evidence that can 
+be described without knowing anything about the particular actions, beliefs, desires and 
+other mental states of any individual?</div>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Objection to the Intentional Stance</p>
+          <div class="notes">So far I’ve argued that we need a theory of radical interpretation
+in order to understand social cognition because a theory of radical
+interpretation provides a computational description of social cognition.
+          </div>
+          <div class="notes">Now I want to argue that there is a problem: 
+we don't have an adequate theory of radical interpretation.
+There are actually two main theories of radical interpretaion,
+Davidson’s and Dennett’s, so strictly I should offer objections to 
+both.  But here I’ll just consider Dennett’s theory.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">Does the Intentional Stance actually describe how it would be possible,
+even in principle, to infer facts about minds and actions from 
+evidence that can 
+be described without knowing anything about the particular actions, beliefs, desires and 
+other mental states of any individual?</div>
+          <div class="handout">No.  If an interpreter actually used Dennett’s Intentional Strategy,
+what would enable her to distinguish your actions, beliefs, desires,
+feelings and other mental states from anybody else’s?
+Essentially only your location in space and your biological needs.
+This is probably insufficient to distinguish 
+distinguish your actions, beliefs, desires, feelings and other mental 
+states from others nearby who have similiar biological needs.
+          </div>
+          <div class="container_12 em-above">
+            <div class="grid_6">
+              <p class="center">
+                <div style="background-color:red;width:150px;height:150px;margin-left:auto;margin-right:auto;border:30px solid grey;" class="box">
+                </div>
+              </p>
+              <p class="center">[contains food]</p>
+            </div>
+            <div class="grid_6">
+              <p class="center"> 
+                <div style="background-color:blue;width:150px;height:150px;margin-left:auto;margin-right:auto;border:30px solid grey;" class="box">
+                </div>
+              </p>
+              <p class="center">[contains poison]</p>
+            </div>
+          </div>
+          <div class="notes">Suppose someone is faced with a choice between these two things.
+What will she choose?
+Let’s apply the Intentional Stance to make a prediction.
+          </div>
+          <div class="notes">The Intentional Stance tells us to attribute a desire for food.
+And to attribute beliefs the agent ought to have, which in this case
+are the beliefs that this stuff is poison and that this stuff is food.
+          </div>
+          <div class="notes">We then assume rationality in order to predict an action:
+she will choose the food, not the poison.
+          </div>
+          <div class="notes">Now what happens when we observe that our prediction is wrong
+and that she chooses the poison which looks like food?
+          </div>
+          <div class="notes">It’s just here that her behaviour is informative, on the Intentional
+Stance.
+The failure of our prediction tells us that we are wrong about something.
+          </div>
+          <div class="slide">
+            <div class="notes">But what are we wrong about?  The belief, the desire or the rationality?
+            </div>
+            <p class="em-above">Error of</p>
+            <p class="indent">- belief</p>
+            <p class="indent">- desire</p>
+            <p class="indent">- rationality</p>
+            <div class="notes">Of course we cannot hope to work out what the error is on the basis
+of just this observation.
+But we can sometimes distinguish false belief (this poison is food)
+from inappropriate desire (to eat something poisonous) from 
+a faulty link between beliefs-desire pairs to actions.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what="p:not(.theQ)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div data-what="img" data-css="{&quot;blur&quot;:&quot;10pxn&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div class="notes">What we want from a theory of interpretation is an explanation of
+how the available evidence ever enables us to distinguish between
+different kinds of errors. 
+And as far as I can tell Dennett has not attempted to supply such a 
+theory.
+            </div>
+            <div class="notes">This illustrates a more general problem for Dennett.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">On the intentional strategy,</div>
+          <p>The Intentional Strategy </p>
+          <p class="em-above notes show">What enables an interpreter to distinguish your actions, beliefs, desires,
+feelings and other mental states from anybody else’s?
+          </p>
+          <div class="notes">On the intentional strategy as Dennett describes it, it basically comes
+down to two things:
+          </div>
+          <div class="slide notes show">
+            <p class="indent">- your ‘place in the world’ (location?)</p>
+            <p class="indent">- your biological needs</p>
+          </div>
+          <div class="notes">So I think it is clearly a mistake to say that the Intentional Strategy 
+is an account of radical interpretation.
+Minimally, an account of radical interpretation needs to explain how 
+the interpreter can identify the distinctive actions, emotions, 
+beliefs, desires and other
+mental states of an individual.  
+The Intentional Strategy appears fundamentally unsuited to this purpose
+because the Intentional Strategy involves making very little use of evidence.
+          </div>
+          <div class="notes">By itself,
+this is not a deep objection to Dennett.  You might say, his theory 
+is fine as far as it goes; it was only meant to cover a couple of basic
+principles, leaving much of the project for future development.
+          </div>
+          <div class="notes">But what exercises me is that we don’t have an account of radical interpretation.
+We have yet to explain how 
+an interpreter can identify the distinctive actions, emotions, 
+beliefs, desires and other
+mental states of another individual.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Objections to Davidson}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Objections to Davidson}</div>
+<div class="notes">There are some compelling objections to 
+Davidson’s account of radical interpretation 
+which motivate searching for ways to improve it.</div>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">An account of radical interpretation is an account of how you could 
+in principle infer facts about actions and mental states from
+non-mental evidence.
+          </div>
+          <div class="notes">This is the fundamental project in theorising about social cognition.
+In what sense is it the fundamental project?
+It aims to provide the computational theory of social cognition.
+          </div>
+          <p style="line-height:.6em" class="huge-glow-60">radical interpretation</p>
+          <p class="under-huge-glow"> <span class="infer">Infer</span><span> The Mind from The Evidence</span></p>
+          <p class="em-above">The Mind: facts about actions, desires, beliefs, ...</p>
+          <p class="em-above"> <span class="the-evidence">The Evidence</span><span>: facts about events and states of affairs that could be known without 
+knowing what any particular individual believes, desires, intends, ...</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes show">
+            <p>Evidence:</p>
+            <p>At <span class="time-t">time t,</span><span>   </span><span class="Ayesha">Ayesha</span><span> </span><span class="changes-in-belief">comes to</span><span> </span><span class="hold-true">hold <span class="sentence-S">‘Sta piovendo’</span><span> true</span></span><span> because </span><span class="p"> p</span></p>
+          </div>
+          <div class="slide">
+            <div data-what=".time-t" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <p class="em-above">Generalisation:</p>
+            <p>Ayesha comes to hold <span class="sentence-S">sentence S</span><span> true because it’s raining</span></p>
+            <div class="notes">The evidence confirms or falsifies a generalisation of the form, 
+Ayesha comes to hold S true because p.
+            </div>
+            <div class="notes">The hope is this: if we have enough evidence, we will find that 
+the only generalisation supported by all the evidence is this one:
+Ayesha comes to hold the sentence ‘It is raining’ true because it is raining.
+            </div>
+          </div>
+          <div class="slide">
+            <p class="em-above">Assumption:</p>
+            <p>Ayesha’s beliefs true</p>
+            <div class="notes">We already saw that this assumption is required by Dennett’s Intentional Strategy.
+The assumption allows us to draw a conclusion about meaning:
+            </div>
+          </div>
+          <div class="slide">
+            <p class="em-above">Conclusion:</p>
+            <p>S is <span class="tiff">true if and only if</span><span> it’s raining</span></p>
+            <p class="notes show indent">... so when Ayesha comes to hold S true, she comes to believe that it’s raining</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">(1) No account of social cognition when the targets are wordless agents.</div>
+          <p class="center">Minds without words</p>
+          <div class="notes">Dennett: his account is fine for targets of interpretation who lack words,
+but it offers no way of exploiting evidence about
+linguistic behaviours in his account of radical interpretation.
+          </div>
+          <div class="notes">Davidson: his view has the converse weakness.
+(Why is this a weakness?  Our inability to use words in communicating with
+an alien species would not necessarily prevent us from coming to know
+much about their minds and actions.)
+          </div>
+          <div class="notes">An adequate theory of radical interpretation ought to avoid both weaknesses:
+it should characterise inferences for targets of interpretation without words,
+and it should characterise the additional complexities for radical 
+interpretation entailed by the use of words.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">(2) No account of non-propositional mental phenomena, such as the unfolding of emotions.</div>
+          <p class="center">Emotions unfold</p>
+          <div class="notes">What is the point of being there with someone while it’s happening to her?
+Being there with someone often enables you to know and to regulate---and 
+even to share, sometimes---what she’s feeling. ...
+          </div>
+          <div class="notes">Why is this an objection to the claim that Davidson’s accounnt of 
+Radical Interpretation is a fully adequate computational description 
+of social cogntion in humans?  Let me explain ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout notes show">
+            <p class="one hem-around">1. On Radical Interpretation (and the Intentional Stance), the outputs of social cognition are (i) propositional attitude ascriptions and (ii) action predictions.</p>
+            <div class="slide">
+              <p class="two hem-around">2. Emotions unfold ...</p>
+              <div data-what=".one" data-css="{&quot;opacity&quot;:0.3}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <p class="three hem-around">3. ... and this is not comprehensible as a series of changes in propositional attitudes.</p>
+              <div data-what=".two" data-css="{&quot;opacity&quot;:0.3}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <p class="four hem-around">So: 4. Understanding the way emotions unfold is not a matter of ascribing propositional attitudes or predicting actions.</p>
+              <div data-what=".three" data-css="{&quot;opacity&quot;:0.3}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <p class="five hem-around">But: 5. Humans do sometimes understand the way anothers’ emotions are unfolding.</p>
+              <div data-what=".four" data-css="{&quot;opacity&quot;:0.3}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <p class="six hem-around">So: 6. Radical Interpretation (and the Intentional Stance) is not a fully adequate computational description of human social cognition.</p>
+              <div data-what=".five" data-css="{&quot;opacity&quot;:0.3}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">(3) Indeterminacy of reference</div>
+          <p class="center">Indeterminacy of reference</p>
+          <div class="notes">On Davidson’s account of radical interpretation, we can think of its upshot
+as an assignment of propositions to sentences.
+The propositions give the truth conditions, or meanings, of the sentences and 
+so enable us to identify the target’s beliefs and other propositional attitudes.
+          </div>
+          <div class="notes">Because the evidence Davidson considers is attitudes towards whole sentences,
+it turns out that, for any assignment of propositions to sentences,
+there are ways of generating an alternative assigment of propositions to sentences
+which is exactly as well supported by the evidence as the original assignment
+of propositions to sentences is.
+          </div>
+          <div class="notes">So on Davidson’s account of radical interpretation, there is no possibility 
+of uniquely determining the truth conditions, or meanings, of sentences.
+          </div>
+          <div class="notes">This is analogous to having a computational theory of a GPS device on which 
+there is just no possibility of the device distinguishing between its being here
+and its being at the same point on the opposite side of the earth.
+          </div>
+          <div class="notes">Let me illustrate how the indeterminacy arises ...
+          </div>
+          <div class="slide">
+            <p class="em-above"> </p>
+            <table class="data">
+              <thead>
+                <tr>
+                  <td></td>
+                  <td>ordinary</td>
+                  <td>contrived</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="odd">
+                  <td>names</td>
+                  <td>‘Beatrice’ refers to Beatrice</td>
+                  <td>‘Beatrice’ refers to shadow-Beatrice</td>
+                </tr>
+                <tr class="even">
+                  <td> <span class="step2 hide">predicates</span></td>
+                  <td> <span class="step2 hide">‘... is happy’ - is true of happy things</span></td>
+                  <td> <span class="step2 hide">‘... is happy’ - is true of things that are the shadows of happy things</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="notes">[Use Shoemaker’s shadows.]
+            </div>
+            <div class="slide">
+              <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+              <div class="notes">Incidentally, a similar objection involving indeterminacy arises for Dennett.
+              </div>
+              <div class="notes">What does the objection tell us?
+If I gave you a computational theory of the GPS device that suffered from 
+indeterminacy, you would rightly reject that theory because the device
+can, as a matter of fact, determine which side of the planet it is on.
+But should we take the same attitude towards Davidson’s theory.
+He says not ...
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what="table" data-css="{&quot;opacity&quot;:0,&quot;font-size&quot;:0}" data-options="{&quot;display&quot;:&quot;none&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <p class="handout notes show em-above">‘It makes no sense, on this approach, to complain that a theory comes up with 
+the right truth conditions time after time, but has the logical form 
+(or deep structure) wrong. We should take the same view of reference.’
+            </p>
+            <div class="handout notes ctd">\citep[p.~223]{Davidson:1977kn}</div>
+            <p class="right grey-text">Davidson (1977, p. 223)</p>
+            <div class="notes">But pointing ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">(4) A dilemma about The Evidence: actions or joint displacements</div>
+          <p class="center">A dilemma about The Evidence: <span class="hide low-level">joint displacements</span><span> or  </span><span class="hide actions">actions</span></p>
+          <div class="notes">The evidence Davidson starts from is changes in the attitude of holding
+a sentence true.  To be detectable, such changes must involve the target
+of interpretation uttering a sentence.
+How are such events represented at the outset of radical interpretation?
+          </div>
+          <div class="slide">
+            <div data-what=".low-level" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">If they are represented merely as sequences of joint displacements,
+bodily configurations and sounds, then we need an account of how it is determined
+which events are changes in the attitude of holding a particular sentence true.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".actions" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">If, on the other horn, they are represented as intentional actions, then
+we are presupposing some insight into the contents of the target of radical
+interpretation’s intentions.  
+We know that she has an intention to express a particular attitude towards
+a particular sentence.
+            </div>
+          </div>
+          <div class="slide">
+            <p class="em-above notes handout show">‘a radical interpreter is not, at the beginning of his study, informed about 
+any of the basic propositional attitudes of his subject.’
+            </p>
+            <div class="notes handout ctd">\citep[p.~17]{Davidson:1984pr}</div>
+            <p class="right grey-text">Davidson (1984, 17)</p>
+            <div class="notes handout">‘The important limitation is that [the radical interpreter] doesn’t know in 
+detail the contents of any of the propositional attitudes of the person to 
+be interpreted: she doesn’t know what he intends, believes, wants or means 
+by what he says.’ \citep[p.~]{Davidson:1994ff}
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".actions" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".actions" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Davidson might take this horn of the dilemma and just insist that 
+his view of what an account of radical interpretation aims to achieve 
+is a bit less exciting than I have been suggesting.
+It doesn’t start from no insight into what someone intends, just relatively little.
+            </div>
+            <div class="notes">I think this response would be unsatisfactory given our interests in 
+social cognition.  The hardest part is surely to understand the step from
+*no* insight into others’ minds and actions to *some* such insight.
+If Davidson’s account of radical interpretation is really just about 
+the step from *some* insight into others’ minds and actions to a bit more 
+insight, it might be interesting but it isn’t the theory we were looking for.
+It won’t after all provide us with a computational theory of social cognition.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".actions" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".low-level" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".low-level" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Can Davidson instead take the first horn of the dilemma and say that the changes 
+in attitude are represented merely as sequences of joint displacements,
+bodily configurations and sounds?
+            </div>
+            <div class="notes">He might insist that as long as there is some account of how we get from the
+joint displacement to the changes in attitude towards the sentence, 
+there is no problem.
+            </div>
+            <div class="notes">So on this horn, Davidson’s radical interpretation project is the computational
+theory of social cognition which we are looking for.  But it is incomplete because 
+it doesn’t include an account of the transition from
+joint displacements, bodily configurations and their effects (such as sounds)
+to changes in attitude towards the truth of sentences.
+            </div>
+            <div class="notes">On the face of it, this doesn’t sound like there’s going to be an objection
+to Davidson here.  But things get very interesting when we consider what is
+currently known about how this transition is made.
+Essentially, we will see that the capacities involved in getting from joint displacements,
+bodily configurations and their effects (such as sounds) to goal-directed actions
+provides a significant form of social cognition in its own right.
+            </div>
+            <div class="notes">[This line of objection leads beautifully into speech perception and the motor theory!]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">diagnosis <span class="step2 hide"> </span></p>
+          <div class="notes">I think all of these objections arise from a single source.
+Davidson’s account of radical interpretation starts and ends with 
+linguistic expressions of changes in attitudes towards whole sentences.
+It doesn’t consider simple object-directed actions like reaching for a mug
+or catching a ball, and it doesn’t consider nonlinguistic communicative 
+activities like pointing; nor does it consider expressions of emotion like 
+some smiles and grimaces.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">... so what next?</p>
+          <div class="notes">So what next?
+We have a choice.
+          </div>
+          <div class="notes">One possibility would be to consider whether we can 
+perceptually experience mental states.
+This appears to involve taking a position substantially at odds with Davidson’s account
+of radical interpretation insofar as the computational theory will look
+quite different for perception ... the evidence that we start from will
+not be linguistic expressions of changes in attitude towards sentences,
+and the sorts of inference we make will probably not have the causal character
+of the inferences Davidson makes use of in his account of radical interpretation.
+          </div>
+          <div class="notes">A different possibility is to try to continue developing Davidson’s account of
+radical interpretation by thinking about this question:
+How do humans make the transition from bodily configurations, joint displacements
+and their effects (e.g. sounds) to goal-directed actions?
+          </div>
+          <div class="notes">I want us to pursue the first possibility in seminars, and the second
+possibility in lectures.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

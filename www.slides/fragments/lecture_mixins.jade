@@ -59,13 +59,19 @@ mixin title_slide(p)
   .notes.notes-header-tex &nbsp;
   .notes.notes-header-tex \maketitle
   #title-slide.slide
-    - var img = p.images.first()
-    - var _ = p.images.next(); //avoid re-using first image 
-    img.bkg(src='#{img.url}')
-    .spacer &nbsp;
+    - var filename = ''
+    if p.images
+      - var img = p.images.first()
+      - var _ = p.images.next(); //avoid re-using first image 
+      img.bkg(src='#{img.url}')
+      - filename = img.filename
+    if p.bkg
+      - filename = p.bkg
+      img.bkg(src="/img/#{p.bkg}")
     - var low = false
-      if img.filename.indexOf('.low.') != -1
+      if filename.indexOf('.low.') != -1
         - low = true
+    .spacer &nbsp;
     .fade-in
       .title-block(style="#{low ? 'position:relative; top:375px' : ''}"): .title-container
         //- line-height:25pt;font-size:30pt; is just for this particular title
