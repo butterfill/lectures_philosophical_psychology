@@ -8,6 +8,7 @@ description: """
 ---
 
 include ../../../fragments/unit_mixins
+include ../../../fragments/joint_action_mixins
 
 
 //-
@@ -24,25 +25,7 @@ include ../../../fragments/unit_mixins
 
 
 +slide_middle
-  .img.handout(data-src='img/radical_interpretation_handout.png')
-  
-  .notes: :t
-    Let me start by reminding you what the aim of an account of radical interpretation is.
-    An account of radical interpretation is an account of how you could 
-    in principle infer facts about actions and mental states from
-    non-mental evidence.
-    This is the fundamental project in theorising about social cognition
-    (as I’ll explain shortly).
-  p.huge-glow-60(style='line-height:.6em') radical interpretation
-  p.under-huge-glow 
-    span.infer Infer
-    span  The Mind from The Evidence
-  p.em-above The Mind: facts about actions, desires, beliefs, ...
-  p.em-above 
-    span.the-evidence The Evidence
-    span: :t
-      : facts about events and states of affairs that could be known without 
-      knowing what any particular individual believes, desires, intends, ...
+  +radicalInterpretationProject({handout:false, step:false})
   .slide
     +invert('.the-evidence')
     .notes: :t

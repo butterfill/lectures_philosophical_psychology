@@ -31,9 +31,9 @@ include ../../../fragments/joint_action_mixins
 
 
 
+
 +slide_middle
-  .img.handout(data-src='img/radical_interpretation_handout.png')
-  
+  +radicalInterpretationProject({handout:true, step:true})
   .notes: :t
     Let me start with the aim of an account of radical interpretation.
     An account of radical interpretation is an account of how you could 
@@ -41,19 +41,6 @@ include ../../../fragments/joint_action_mixins
     non-mental evidence.
     This is the fundamental project in theorising about social cognition
     (as I’ll explain shortly [by invoking Marr’s levels]).
-  p.huge-glow-60(style='line-height:.6em') radical interpretation
-  .slide
-    p
-      span.infer Infer
-      span  The Mind from The Evidence
-  .slide
-    p.em-above.indent The Mind: facts about actions, emotions, desires, beliefs, ...
-  .slide
-    p.em-above.indent
-      span.the-evidence The Evidence
-      span: :t
-        : facts about events and states of affairs that could be known without 
-        knowing what any particular individual believes, desires, intends, ...
   .slide
     +invert('.the-evidence')
     .notes: :t

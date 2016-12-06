@@ -1,0 +1,532 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Your goal is my goal | Philosophical Psychology</title>
+    <meta name="description" content="If an interpreter is able to interact with her targets,
+if she is not limited to merely observing them,
+how might this enable her to exploit a route to knowledge of the goals of their actions?
+The answer hinges on interactions involving collective goals.
+"/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="your_goal_is_my_goal" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Your goal is my goal</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="handout notes">An outcome is a \emph{collective goal} of two or more actions involving multiple agents
+just if the actions are directed to this goal and this is not, or not just, a matter
+of each action being individually directed to that goal.
+    </div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="center">collective </p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p class="center step2 hide">not collective</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="words">
+      <p class="center">goals</p>
+    </div>
+    <div class="container_12"></div>
+    <div class="slide">
+      <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="grid_6 words left-half">
+        <div style="padding-right:1em;">
+          <p class="em-above">Jack’s and Ayehsa’s actions are collectively directed to getting the food.</p>
+        </div>
+      </div>
+      <div class="grid_6 words invert right-half">
+        <div style="padding-left:1em;">
+          <p class="em-above">Ilsa and Ahmed’s actions are each individually directed to getting the food.</p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="slide">
+      <div class="clear"></div>
+      <div class="words">
+        <p class="center">functions</p>
+      </div>
+      <div class="container_12"></div>
+      <div class="grid_6 words left-half">
+        <div style="padding-right:1em;">
+          <p class="em-above">Those speakers collectively provide high fidelity reproduction.</p>
+        </div>
+      </div>
+      <div class="grid_6 words invert right-half">
+        <div style="padding-left:1em;">
+          <p class="em-above">Each of those speakers is individually provides high fidelity reproduction</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what="p" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+      <div class="notes">In what follows I’m going to rely on two assumptions:
+(1) joint actions involve collective goals
+(2) you can identify something as a joint action without ascribing any mental states.
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">intuitive idea<span class="its-wrong hide">, not quite right</span></p>
+          <div class="notes">Here is an intuitive idea that doesn't quite work:
+if an interpreter is engaged in an interaction with her target that involves a collective goal, 
+it may be easy for the interpreter to know what the goal of her target's actions is because this 
+goal is the goal of her own actions.
+So if she knows the goal of her own actions and she knows that she is engaged with 
+her target in an interaction involving a collective goal,
+then she already knows what the goal of her target's actions are.
+          </div>
+          <div class="notes">Roughly speaking, the mindreader can reason about her target thus: your goal is my goal.
+          </div>
+          <div class="slide">
+            <div data-what=".its-wrong" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">Of course this intuitive idea is no use it stands.  
+For the inference it captures relies on the premise that the interpreter and her 
+target are engaged in actions with a collective goal.
+But for the mindreader to know this premise it seems she must   
+already know which goal her target's actions are directed to.
+            </div>
+          </div>
+          <div class="slide">
+            <p class="em-above center">but: cues to joint action</p>
+            <div class="notes">Fortunately there is a way around this.  
+For there are various cues which signal that one agent is prepared 
+to engage in some joint action or other with another,
+and joint actions involve collective goals.  
+\label{twin_pram}
+Seeing you struggling to get your twin pram onto a bus and noticing you have 
+the haggard look of a new parent, a passing stranger  grabs the front wheels 
+and makes eye contact with you, raising her eyebrows and smiling.
+(The noise of the street rules out talking.)   
+In this way she signals that she is about to act jointly with you.   
+Since you are fully committed to getting your pram onto the bus,
+you know what the sole goal of your own actions will be.
+But you also know that the stranger will engage in joint action with you,
+which means that, taken together, her actions and your actions will have a collective goal.
+This may enable you to infer the goal of the stranger's imminent actions: 
+her goal is your goal, to get the pram onto the bus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/whitney.png" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="handout notes">\begin{enumerate}
+\label{your_goal_is_my_goal}
+\item You are 
+about to attempt to 
+engage in some joint action\footnote{
+We leave open the issue of how joint action is to be characterised subject only to the 
+requirement that all joint actions must involve collective goals.
+Attempts to characterise joint action in ways relevant to explaining development include
+	\citet{Tollefsen:2005vh},
+	\citet{Carpenter:2009wq},
+	\citet{pacherie_framing_2011} and
+	\citet{Butterfill:2011fk}.
+}
+or other with me.
+%(for example, because you have made eye contact with me while I was in the middle of attempting to do something).
+
+\item I am not about to change the single goal to which my actions will be directed.
+
+\end{enumerate}
+%
+Therefore:
+%
+\begin{enumerate}[resume]
+%
+\item A goal of your actions will be my goal, the goal I now envisage that my actions will be directed to.
+\end{enumerate}
+        </div>
+        <div class="slide">
+          <p>Your-goal-is-my-goal</p>
+          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.3}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <p class="one em-above">1. You are about to attempt to 
+engage in some joint action
+or other with me.
+          </p>
+          <div class="notes">For example, because you have made eye contact with me while I was in the middle of attempting to do something)
+          </div>
+          <div class="slide">
+            <p class="two em-above">2. I am not about to change the single goal to which my actions will be directed.
+            </p>
+          </div>
+          <div class="slide">
+            <p class="em-above">Therefore:</p>
+            <p class="three em-above">3. A goal of your actions will be my goal, the goal I now envisage that my actions will be directed to.
+            </p>
+            <div class="notes">I claim (i) you could know the premises without already knowing the conclusion,
+and (ii) knowing the premises could put you in a position to know the conclusion.
+So the inference is a route to knowledge.
+            </div>
+            <div class="notes">It describes how interacting interpreters might come to know facts
+about the goals of others’ actions.
+            </div>
+            <div class="notes">The teleological stance is one route to knowlegde of other’s goals,
+and this is another.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What about the Problem of False Belief?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">So the Teleological Stance and Your-Goal-Is-My-Goal provide
+computational descriptions of complementary processes of goal
+ascription.  Each is limited, but in different ways than the other.
+          </div>
+          <div class="container_12 em-above">
+            <div class="grid_6">
+              <p class="center">
+                <div style="background-color:red;width:150px;height:150px;margin-left:auto;margin-right:auto;border:30px solid grey;" class="box">
+                </div>
+              </p>
+              <p class="center">[contains food]</p>
+            </div>
+            <div class="grid_6">
+              <p class="center"> 
+                <div style="background-color:blue;width:150px;height:150px;margin-left:auto;margin-right:auto;border:30px solid grey;" class="box">
+                </div>
+              </p>
+              <p class="center">[contains poison]</p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_12"></div>
+            <div class="slide em-above">
+              <p class="em-above center">
+                <table class="data">
+                  <thead>
+                    <tr>
+                      <td>action</td>
+                      <td>belief</td>
+                      <td>teleological stance</td>
+                      <td>your-goal-is-my-goal </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>blue</td>
+                      <td>true</td>
+                      <td class="center">✓</td>
+                      <td class="center">✓</td>
+                    </tr>
+                    <tr>
+                      <td>blue</td>
+                      <td>false</td>
+                      <td class="center">✗</td>
+                      <td class="center">✓</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What about the Problem of Opaque Means?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">The two routes to knowledge are complementary: one 
+demands knowledge of means-ends relations and so is no good when the
+means are opaque to the interpreter; the other places different demands
+on the interpreter.
+          </div>
+          <table class="data">
+            <thead>
+              <tr>
+                <td> </td>
+                <td>teleological stance</td>
+                <td>your-goal-is-my-goal</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="even">
+                <td>demands know means</td>
+                <td valign="middle" class="center">✓</td>
+                <td valign="middle" class="center">✗</td>
+              </tr>
+              <tr class="odd">
+                <td>demands can interact</td>
+                <td valign="middle" class="center">✗</td>
+                <td valign="middle" class="center">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What about the problem of opaque means?</p>
+          <div class="notes">I claim that your-goal-is-my-goal enables you to avoid 
+the problem of opaque means.  But how does it work?
+          </div>
+          <div class="notes">Earlier I mentioned three examples.
+Let’s see how your-goal-is-my-goal enables you to avoid 
+the problem of opaque means in each of these three cases.
+          </div>
+          <div class="slide">
+            <div class="eg">
+              <p class="hem-around">e.g. pram -> bus<span class="step2">; gorilla preparing nettles</span></p>
+            </div>
+            <div class="eg">
+              <p class="hem-around">e.g. tool use <span class="inversion-of-demand hide">illustrates inversion of demands</span></p>
+            </div>
+            <div class="eg">
+              <p class="hem-around">e.g. communicative actions</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".eg:eq(0)" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+            <div class="notes">Actually I already did this one in introducing the inference.</div>
+          </div>
+          <div class="slide">
+            <div data-what=".eg:eq(0)" data-cls="bkg-grey-row " class="dv dv-removeclass"></div>
+            <div data-what=".eg:eq(1)" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+            <div class="notes">We saw earlier that the problem of opaque means  may impair goal 
+ascription where actions involve novel uses for tools.
+How could your-goal-is-my-goal mitigate the problem in such cases?
+Imagine we are interacting with a young child,
+Ayesha,
+and want her to understand how a new tool is used.  
+It is difficult to convey this to her directly.  
+So we first get her interested in achieving an outcome that would require the new tool,
+knowing that she will perform actions directed to achieving this outcome.  
+We then signal to Ayesha that we will act jointly with her.  
+Now she is in a position to know what the goal of our action will be when we deploy the tool.  
+She is able to identify this goal 
+despite being unable to recognize it as an end to which our tool-using action is a means.
+She is able to identify this goal 
+because she knows that this is her goal
+and that we were attempting to engage in joint action with her.
+This is one illustration of how 
+interacting interpreters have at their disposal ways of
+identifying the goals of actions involving novel uses of tools
+which are unavailable to interpreters who can only observe.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".inversion-of-demand" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">As this example indicates,
+exploiting your-goal-is-my-goal 
+can shift the burden of identifying goals from a mindreader to her target.
+In the example Ayesha is the focal mindreader and we are her target;
+but her success in identifying the goal of our actions
+depends on this,
+that our willingness to act jointly with her is based on \emph{our} knowledge of the goals of \emph{her} actions.
+In purely observational mindreading, the target's beliefs about the goals of the mindreader's actions are not normally relevant (except, of course, when the mindreader is ascribing such beliefs).
+But interacting mindreaders who rely on your-goal-is-my-goal
+thereby rely on their targets' having correctly identified the goals of their actions.
+Of course this is sometimes a reason not to rely on your-goal-is-my-goal.
+But where the target understands relevant means-ends relations,
+such as actions involving novel tools,
+the your-goal-is-my-goal route to knowledge of others' goals may sometimes be the only option.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".eg:eq(1)" data-cls="bkg-grey-row " class="dv dv-removeclass"></div>
+            <div data-what=".eg:eq(2)" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+            <div class="notes">This is a bit of a problem ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>
