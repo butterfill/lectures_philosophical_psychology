@@ -55,13 +55,14 @@ include ../../../fragments/joint_action_mixins
         span.sentence-S ‘Sta piovendo’
         span  true
       span  because 
-      span.p  p
-  .slide
-    +invert('.Ayesha')
-    .notes: :t
-      Ayesha is just the person we are trying to interpret; 
-      she is the target of radical interpretation.
-      We want to what her sentences mean and what she believes.
+      span.p  it’s raining
+      span .
+  //- .slide
+  //-   +invert('.Ayesha')
+  //-   .notes: :t
+  //-     Ayesha is just the person we are trying to interpret;
+  //-     she is the target of radical interpretation.
+  //-     We want to what her sentences mean and what she believes.
   .slide
     +uninvert('.Ayesha')
     +invert('.hold-true')
@@ -114,8 +115,8 @@ include ../../../fragments/joint_action_mixins
     +uninvert('.time-t')
     p.em-above Generalisation:
     p Ayesha comes to hold 
-      span.sentence-S sentence S
-      span  true because p
+      span.sentence-S ‘Sta piovendo’
+      span  true because it’s raining.
     .notes: :t
       The evidence confirms or falsifies a generalisation of the form, 
       Ayesha comes to hold S true because p.
@@ -153,9 +154,9 @@ include ../../../fragments/joint_action_mixins
       The assumption allows us to draw a conclusion about meaning:
   .slide
     p.em-above Conclusion:
-    p S is 
+    p ‘Sta piovendo’ is 
       span.tiff true if and only if
-      span  p
+      span  it’s raining.
   .slide
     +invert('.tiff')
     .notes: :t
@@ -165,7 +166,7 @@ include ../../../fragments/joint_action_mixins
       central on this course.)
   .slide
     +uninvert('.tiff')
-    p.notes.show.indent ... so when Ayesha comes to hold S true, she comes to believe that p
+    p.notes.show.indent ... so when Ayesha comes to hold ‘Sta piovendo’ true, she comes to believe that it’s raining.
        
 +slide_middle
     p.notes.show Why is Davidson’s a better theory?
