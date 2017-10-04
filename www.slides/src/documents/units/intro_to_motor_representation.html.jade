@@ -34,11 +34,32 @@ include ../../../fragments/joint_action_mixins
 
 +slide_middle({bkg:'egg.jpg'})
   +hide('img.bkg', 0)
-  p.center motor representation
-    span.step2.hide s represent outcomes
+  p(style="margin-top:4.5em;")
+    span.some.hide some
+    br
+    span motor representation
+      span.step4.hide s 
+      span.schema.remove-me (/schema) 
+      span.step4.hide represent 
+        span.qqq ???
+      span.step5.hide.outcomes outcomes
+        span.goals.remove-me  = goals
+  .step3.hide
+    .handout: :t
+      ‘a given motor act may change both as a function of what motor act will follow it—a sign of
+      planning—and as a function of what motor act preceded it—a sign
+      of memory’ \citep[p.~294]{cohen:2004_wherea}.
+    p: :t
+      ‘a given motor act may change ... as a function of what motor act will follow it—a sign of
+      planning’
+    p.right.grey-text Cohen & Rosenbaum 2004, p. 294
+    
   .notes: :t
-    Let me mention some almost uncontroversial facts about motor representations and 
+    Let me go back and start with some almost uncontroversial facts about motor representations and 
     their action-coordinating role.
+  .notes: :t
+    Why postulate motor representations at all?  [Dependence of present actions on future actions
+    is one reason for doing so.]
   .slide
     +show('img.bkg')
     .notes: :t
@@ -62,9 +83,8 @@ include ../../../fragments/joint_action_mixins
       is not plausibly a consequence of mindless physiology, nor of intention and practical reasoning.
       This is one reason for postulating motor representations, which characteristically play a role in
       coordinating sequences of very small scale actions such as grasping an egg in order to lift it.
-
     .notes: :t
-      The scale of an actual action can be defined in terms of means-end relations.  
+      [The scale of an actual action can be defined in terms of means-end relations.  
       Given two actions which are related as means to ends by the processes and representations 
       involved in their performance, the first is smaller in scale than the second just if the 
       first is a means to the second.  Generalising, we associate the scale of an actual action 
@@ -83,14 +103,26 @@ include ../../../fragments/joint_action_mixins
       such representations.%
       \footnote{% 
       Much more to be said about what motor representations are; for instance, see \citet{butterfill:2012_intention} for the view that motor representations can be distinguished by representational format.
-      }
+      }]
   .slide
-    +show('.step2')
+    +show('.step3')
+    .notes: :t
+      ‘a given motor act may change both as a function of what motor act will follow it—a sign of
+      planning—and as a function of what motor act preceded it—a sign
+      of memory’ \citep[p.~294]{cohen:2004_wherea}.
+    
+  .slide
+    +blur('.step3')
+    +show('.step4')
     +blur('img.bkg', '50px', 1000)
     .notes: :t
       What do motor representations represent? An initially attractive, conservative 
       view would be that they represent bodily configurations and joint displacements, 
       or perhaps sequences of these, only.
+  .slide
+    +remove('.qqq')
+    +show('.step5')
+    .notes: :t
       However there is now a significant body of evidence that some motor representations 
       do not specify particular sequences of bodily configurations and joint displacements, 
       but rather represent outcomes such as the grasping of an egg or the pressing of a switch.  
@@ -100,9 +132,108 @@ include ../../../fragments/joint_action_mixins
     .notes: :t
       Such outcomes are abstract relative to bodily configurations and joint displacements 
       in that there are many different ways of achieving them.
+  .slide
+    +show('.some')
+    +invert('.some')
+  .slide
+    +uninvert('.some')
+    +invert('.outcomes')
     .notes: :t
-      But how do we know that motor representations carry information about such outcomes?
-      I’m glad you asked, let me explain ...
+      Since this is important, let me pause for a moment.
+      To say that something is an outcome is not to say very much: merely that it is a 
+      possible or actual state of affairs which is brought about in some way by an action.
+    .notes: :t
+      What I mean is that motor representations represent the sort of outcomes that are plausibly
+      thought of as goals of actions, things such as transporting and breaking an egg,
+      or flipping a switch.
+    .notes: :t
+      This kind of outcomes are quite different from both patterns of joint displacement and 
+      bodily movements and also from end states.
+  .slide
+    +unremove('.goals')
+    .notes: :t
+      In my terms, a goal is merely outcome.
+      Contrast goals with goal-states, which are mental or functional states which specify goals. 
+      A motor representation is a goal-state; the goal is the thing it represents.
+  
+  .slide
+    +uninvert('.outcomes')
+    +unremove('.schema')
+    +invert('.schema')
+    .notes: :t
+      Motor schema are just motor representations which specify incomplete outcomes.
+      [Of course schema are incomplete, so do not specify outcomes but outcome types.]
+    .notes: :t
+      Motor schema are ‘internal models or stored representations that represent generic knowledge about
+      a certain pattern of action and are implicated in the production and control of action’
+      \citep{mylopoulos:2016_intentions}.
+    .notes: :t
+      ‘Motor schemas are more abstract and stable representations of actions than motor
+      representations.’
+    .notes: :t
+      ‘They are internal models or stored representations that represent generic knowledge
+      about a certain pattern of action and are implicated in the production and control of
+      action. For instance, in the influential Motor Schema Theory proposed by Richard Schmidt
+      (1975, 2003), a motor schema involves a generalized motor program, together with corre-
+      sponding ‘recall’ and ‘recognition’ schemas. The generalized motor program is thought to
+      contain an abstract representation defining the general form or pattern of an action,
+      that is the organization and structure common to a set of motor acts (e.g., invariant
+      features pertaining to the order of events, their spatial configuration, their relative
+      timing and the relative force with which they are produced). This generalized motor
+      program has parameters that control it. In order to determine how an action should be
+      performed on a given occasion, parameter values adapted to the situation must be
+      specified. Thus, a motor schema also includes a rule or system of rules describing the
+      relationships between initial conditions, parameter values and outcomes and allowing us
+      to perform the action over a large range of conditions (the ‘recall schema’ in Schmidt’s
+      terminology). Finally, the motor schema also includes a rule or system of rules
+      describing the relationships between initial conditions, exteroceptive and propri-
+      oceptive sensory feedback during an action, and action outcome (a recognition sche- ma),
+      allowing agents to know when they have made an error – i.e., the action does not have
+      the sensory consequences it is expected to have – and to correct for it.’
+    .notes: :t
+      Are motor schemas an alterantive to motor representations? Tempting to think that where
+      they talk about motor schema, we think of motor representations that represent outcomes
+      that are relatively distal from action (e.g. are affector-neutral).
+    .notes: :t
+      This would explain why they contrast motor schema with motor programmes. We use ‘motor
+      representation’ to include both.
+  
++slide({bkg:'motor_representation_fig/Slide02.jpg'})
+  .notes: :t
+    A goal represented motorically triggers a process which, via computations of things 
+    like end states, starting states and smoothness, eventually results in joint
+    displacements; and when things go well, these joint displacements together with the 
+    resulting bodily configurations bring about, or constitute, the occurrence of the goal.
+    
++slide({bkg:'motor_representation_fig/Slide03.jpg'})
+  .notes: :t
+    But of course this is a simplification. Motor representations can trigger processes
+    which result in further goals being represented, as for example when a motor 
+    representation of the transporting of an object triggers representations of reaching,
+    grasping, placing and releasing.
+    
++slide({bkg:'motor_representation_fig/Slide04.jpg'})
+  .notes: :t
+    The processes linking motor representations are planning like in two respects:
+    (i) means-end ...
+    
++slide({bkg:'motor_representation_fig/Slide05.jpg'})
+  .notes: :t
+    ... and (ii) relational constraints
+    
+    
+
+
+//-  the rest should probably be another unit
+
+
+
++slide_middle
+  p.center How do we know that outcomes are represented motorically?
+  .notes: :t
+    But how do we know that motor representations carry information about such outcomes?
+    I’m glad you asked, let me explain ...
+
 
 
 +slide_middle
@@ -114,10 +245,6 @@ include ../../../fragments/joint_action_mixins
   .notes: :t
     This will be a focus of interest in a later session.
     For now it’s just a handy fact that simplifies testing.
-
-
-+slide_middle
-  p.center first illustration: same kinematics, different goal
 
 +slide_middle
   p.center glossary
@@ -138,6 +265,9 @@ section.slide
       (compare ‘visual’, which also has narrower and broader uses in 
       neuroscience).
 
+
++slide_middle
+  p.center first illustration: same kinematics, different goal
 section.slide
   +_slide_middle_inner
     +img('villiger_2010_fig1ab.png')

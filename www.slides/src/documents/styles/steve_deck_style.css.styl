@@ -15,6 +15,11 @@ filter(what)
   filter what
 
 
+@font-face {
+    font-family: "Linux Libertine";
+    src: url("/fonts/LinLibertine_R.woff") format('woff');
+}
+
 font_size = 19pt
 background_color = black
 text_color = white
@@ -45,6 +50,7 @@ html
   body
     font-kerning normal
     font-variant-ligatures common-ligatures
+    font-feature-settings "kern" 1, "liga" 1
 
 .deck-container 
   font-family: "Lato", sans-serif;
@@ -189,6 +195,8 @@ blur()
     font-weight bold
   .grey-text
     color grey
+  .red-text
+    color red
   .lightgrey-text
     color lightgrey
   .line-through
@@ -198,6 +206,8 @@ blur()
   filter unquote('brightness(150%)')
 .bw
   filter unquote('saturate(0)')
+.contrast-120
+  filter unquote('contrast(1.2)')
 .contrast-150
   filter unquote('contrast(1.5)')
 .blur
@@ -212,6 +222,8 @@ blur()
   text-align: center
 .right
   text-align: right
+.float-right
+  float right
 
 
 .width-720
@@ -242,6 +254,7 @@ blur()
     padding-bottom: 0.5em
   .em-above-each-td td
     padding-top: 1em
+
 
   .up-10
     margin-top -10px
@@ -601,6 +614,7 @@ make-row-bkg('faint-pink', rgba(255, 111, 207,0.3))
 make-row-bkg('yellow', rgba(255, 255, 0, 1))
 make-row-bkg('faint-yellow', rgba(255, 255, 0, 0.3))
 make-row-bkg('red', rgba(255, 0, 0, 1))
+make-row-bkg('darkred', rgba(139, 0, 0, 1))
 make-row-bkg('faint-red', rgba(255, 0, 0, 0.3))
 make-row-bkg('forestgreen', rgba(34,139,34,1))
 make-row-bkg('faint-forestgreen', rgba(34,139,34,0.3))
@@ -687,6 +701,7 @@ make-bkg-words('faint-pink', rgba(255, 111, 207,0.3))
 make-bkg-words('yellow', rgba(255, 255, 0, 1))
 make-bkg-words('faint-yellow', rgba(255, 255, 0, 0.3))
 make-bkg-words('red', rgba(255, 0, 0, 1))
+make-bkg-words('darkred', rgba(139, 0, 0, 1))
 make-bkg-words('faint-red', rgba(255, 0, 0, 0.3))
 make-bkg-words('forestgreen', rgba(34,139,34,1))
 make-bkg-words('faint-forestgreen', rgba(34,139,34,0.3))
@@ -720,10 +735,9 @@ make-bkg-words('faint-grey', rgba(125,125,125,0.3))
 
 .glow-border-red
   box-shadow: 0 0 15px 8px rgba(255,0,0,1), 0 0 18px 9px rgba(255,255,102,0.5)
-
+  
 .glow-border
   box-shadow 0 0 40px #FFF, 0 0 4px #FFF
-
 
 /**
  * borders & rotation
@@ -760,6 +774,13 @@ make-bkg-words('faint-grey', rgba(125,125,125,0.3))
   top: 0
   left: 0
   z-index: -1
+  max-width 100%
+.deck-container img.fill
+  float: left
+  height: auto
+  position: absolute
+  top: 0
+  left: 0
   max-width 100%
 
 
@@ -829,6 +850,7 @@ make-bkg-words('faint-grey', rgba(125,125,125,0.3))
 make-huge-glow(class-name, size)
   .deck-container 
     {class-name}
+      font-family: Linux Libertine
       font-size: size
       color: background_color
       text-shadow: 0 0 (size/2) text_color, 0 0 (size/4) text_color, 1px 1px 2px text_color, 1px -1px 2px text_color, -1px 1px 2px text_color, -1px -1px 2px text_color
@@ -853,9 +875,37 @@ make-huge-glow('.huge-glow-300', 300pt)
 make-huge-glow('.glow', font_size)
 
 
+make-huge-glow-invert(class-name, size)
+  .deck-container 
+    {class-name}
+      font-family: Linux Libertine
+      font-size: size
+      color: text_color
+      text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+      -webkit-text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+      -moz-text-shadow: 0 0 (size/2) background_color, 0 0 (size/4) background_color, 1px 1px 2px background_color, 1px -1px 2px background_color, -1px 1px 2px background_color, -1px -1px 2px background_color
+
+make-huge-glow-invert('.huge-glow-invert', 90pt)
+make-huge-glow-invert('.huge-glow-invert-40', 40pt)
+make-huge-glow-invert('.huge-glow-invert-50', 50pt)
+make-huge-glow-invert('.huge-glow-invert-60', 60pt)
+make-huge-glow-invert('.huge-glow-invert-70', 70pt)
+make-huge-glow-invert('.huge-glow-invert-80', 80pt)
+make-huge-glow-invert('.huge-glow-invert-90', 90pt)
+make-huge-glow-invert('.huge-glow-invert-120', 120pt)
+make-huge-glow-invert('.huge-glow-invert-150', 150pt)
+make-huge-glow-invert('.huge-glow-invert-180', 180pt)
+make-huge-glow-invert('.huge-glow-invert-210', 210pt)
+make-huge-glow-invert('.huge-glow-invert-240', 240pt)
+make-huge-glow-invert('.huge-glow-invert-270', 270pt)
+make-huge-glow-invert('.huge-glow-invert-300', 300pt)
+
+make-huge-glow-invert('.glow-invert', font_size)
+
+
 .deck-container .under-huge-glow
   padding-top: 0
-  margin-top: -3.4em
+  margin-top: -1.4em
 
 
 /**
@@ -1033,8 +1083,23 @@ timer(class-name, timer-color, timer-background-color, timer-size, timer-duratio
 
 timer(".timer-30s", timer-color, timer-background-color, timer-size, 30s)
 timer(".timer-60s", timer-color, timer-background-color, timer-size, 60s)
+timer(".timer-90s", timer-color, timer-background-color, timer-size, 90s)
 timer(".timer-120s", timer-color, timer-background-color, timer-size, 120s)
 timer(".timer-180s", timer-color, timer-background-color, timer-size, 120s)
 timer(".timer-300s", timer-color, timer-background-color, timer-size, 300s)
+timer(".timer-480s", timer-color, timer-background-color, timer-size, 480s)
+timer(".timer-600s", timer-color, timer-background-color, timer-size, 600s)
 
 
+.columns-2
+  -webkit-column-count: 2;
+  -webkit-column-rule: 1px dashed #AAA;
+  -webkit-column-gap: 2.5em;
+
+.dont-break-paragraphs p
+  -webkit-column-break-inside avoid
+
+
+.deck-container .invert-text-grey
+  color background_color()
+  text-shadow: 0 0 2px #949494, 1px 1px 2px #949494, 1px -1px 2px #949494, -1px 1px 2px #949494, -1px -1px 2px #949494, 0 0 5px #949494, 0 0 5px #949494

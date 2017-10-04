@@ -1,5 +1,5 @@
 //-
-//- unit_mixins version 0.2
+//- unit_mixins version 0.3
 //- upgrading from slide_mixins:
 //-  - remove recall and unrecall (use the new slide-clone plugin instead)
 //-  - replace showhide and showremove with show_ hide_ etc
@@ -32,27 +32,43 @@ mixin _photo(p)
 mixin _slide_inner(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
+  if ('blend' in p)
+    - p.style += "; mix-blend-mode:"+p.blend
   if ('bkg' in p)
-    img.bkg(src='/img/#{p.bkg}', width='1024px')
+    - bkgStyle = ''
+    if ('bkgFilter' in p)
+      - bkgStyle += 'filter:'+p.bkgFilter+';'
+    img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
   +_photo(p)
-  .words
+  .words(style="#{p.style}")
     .container_12: .grid_12
       block
 
 mixin slide(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
   if ('id' in p)
-    section.slide(id="#{p.id}")
+    section.slide(id="#{p.id}", style="#{p.style}")
       +_slide_inner(p)
         block
   else
-    section.slide
+    section.slide(style="#{p.style}")
       +_slide_inner(p)
         block
     
+    
 mixin middle(p)
-  .container_12
+  if typeof(p) === 'undefined'
+    - p = {}
+  if !('style' in p)
+    - p.style = ''
+  if ('blend' in p)
+    - p.style += "; mix-blend-mode: "+p.blend+";"
+  .container_12(style="#{p.style}")
     - var width = 12;
     if typeof(p) === 'undefined'
       - p = {}
@@ -65,23 +81,32 @@ mixin middle(p)
 mixin _slide_middle_inner(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
+  - bkgStyle = ''
   if ('bkg' in p)
-    img.bkg(src='/img/#{p.bkg}', width='1024px')
+    - bkgStyle = ''
+    if ('bkgFilter' in p)
+      - bkgStyle += 'filter:'+p.bkgFilter+';'
+    img.bkg(src='/img/#{p.bkg}', width='1024px', style=bkgStyle)
   +_photo(p)
-  +middle
+  +middle(p)
     block
 
 mixin slide_middle(p)
   if typeof(p) === 'undefined'
     - p = {}
+  if !('style' in p)
+    - p.style = ''
   if ('id' in p)
-    section.slide(id="#{p.id}")
+    section.slide(id="#{p.id}", style="#{p.style}")
       +_slide_middle_inner(p)
         block
   else
-    section.slide
+    section.slide(style="#{p.style}")
       +_slide_middle_inner(p)
         block
+
 
 //- don't use: pass img as param bkg to +slide({bkg:'file.jpg'})
 mixin slide_img(filename)
@@ -105,6 +130,9 @@ mixin clear-slide()
 mixin clear-slide-escape-inner()
   div(style='position: absolute; top:-40px; left:-50px; width:800px; height:600px').background-color
     block
+mixin clear-slide-escape-inner-rh-white()
+  div(style='position: absolute; top:0px; left:0px; width:800px; height:600px').background-color
+    block
 
 //- This sequence creates rh_white slides
 mixin left_half()
@@ -116,7 +144,7 @@ mixin left_half_lh_white()
   .grid_6.words.invert.left-half
     div(style='padding-right:1em;')
       block
-      
+
 mixin right_half(p)
   if typeof(p) === 'undefined' 
     - p = {}
@@ -142,7 +170,7 @@ mixin right_half_lh_white(p)
 mixin run_across()
   .clear
   //- .container_12: .grid_12: .words
-  .words
+  .words.run-across
     block
   .container_12
 mixin slide_rh_white(p)
@@ -161,7 +189,6 @@ mixin slide_lh_white(p)
     .left-half-white(style="z-index:-22;", class="#{ p.step ? 'hide' : '' }")
     .container_12
       block
-
             
       
 //- create a sequence of slides from a list of images
@@ -202,9 +229,11 @@ mixin img_clip(filename, theClip)
     img(src='/img/#{filename}', style="clip: #{theClip}; position: absolute; max-width:720px; max-height:550px;")
 
 
-mixin question_mark()
-  div(style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:-150px;")
-    p.center.huge-glow(style="font-size:300px")  ?
+mixin question_mark(p)
+  - p = p || {}
+  - p.marginTop = p.marginTop || '-150px'
+  div(style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:#{p.marginTop};")
+    p.center.question-mark.huge-glow(style="font-size:300px")  ?
 
 
 mixin colour-box(colour, size)
@@ -328,7 +357,7 @@ mixin unremove(what)
 mixin fade(what, duration)
   if typeof(duration) === 'undefined'
     - duration = 400
-  +anim(what, {opacity:0.3},{duration:duration})
+  +anim(what, {opacity:0.5},{duration:duration})
 
 mixin unfade(what, duration)
   if typeof(duration) === 'undefined'
@@ -386,10 +415,10 @@ mixin flash(what, color, duration)
 mixin glow(what, duration)
   if typeof(duration) === 'undefined' || ( duration !== '0'  && duration !== 0 )
     +add-class(what, "transition-04")
-  +add-class(what, 'glow')
+  +add-class(what, 'glow-border')
 
 mixin unglow(what)
-  +remove-class(what, "glow")
+  +remove-class(what, "glow-border")
 
 
 
@@ -421,8 +450,8 @@ mixin unhighlight-row(what, color)
 //- use like this
 //-   +slide_middle
 //-     +timer-element('timer1','60s')
-//-       p.center some text in the timer
-//-     +start-timer('timer1')
+//-     p.center some text in the timer
+//-   +start-timer('timer1')
 //- ----------
 
 mixin timer-element(id, duration, p)

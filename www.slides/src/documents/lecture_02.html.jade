@@ -1,10 +1,11 @@
----
+---cson
 layout: 'default2'
-title: 'Lecture 02: Intention and Motor Representation in Purposive Action'
+title: 'Lecture 01: Intention and Motor Representation in Purposive Action'
 subtitle: ''
 weburl: ''
 units: []
-lecture_date: '2016/10/13'
+lecture_date: '2017/10/05'
+hidden: true
 ---
 
 include ../../fragments/lecture_mixins
@@ -17,7 +18,7 @@ include ../../fragments/unit_mixins
   to assume that flexible goal-specific trajectory updates require 
   intention.)
 
-- var images = get_images('joint_action01')
+- var images = get_images('bali')
 
 +title_slide({document:document, images:images})
   .notes: :t
@@ -66,7 +67,7 @@ include ../../fragments/unit_mixins
 
 
 //- section on intention : see Budapest lecture05 slides
-+insert_unit({unit:'intro_to_intention', title_slide:true, images:images, handout:true})
++insert_unit({unit:'intro_to_intention', title_slide:false, images:images, handout:true})
 
 +insert_unit({unit:'intro_to_motor_representation', title_slide:true, images:images, handout:true})
 
@@ -110,5 +111,55 @@ include ../../fragments/unit_mixins
 
 +insert_unit({unit:'the_interface_problem', title_slide:true, images:images, handout:true})
 
++insert_unit({unit:'five_complications', title_slide:false, images:images, handout:true})
 
-//- NEXT: categorical_perception_of_speech.ppt in folder `london talk 2010-01-28`
+
+
+
+
++slide_middle
+  p.center.huge-glow conclusion
+
++slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  .notes: :t
+    I started by observing that there are two quite different approaches to 
+    answering the question, Which events are actions?
+    Philosophers mostly invoke intention, whereas neuroscientists and cognitive psychologists
+    focus on motor representation.
+  .notes: :t
+    What are we to make of the disparity? Are the two simply talking about different phenomena?
+    I’ve offered two considerations which, taken together, suggest that they are not.
+  .slide
+    +blur('img.bkg', '5px')
+    .notes: :t
+      The first consideration is that
+    p.notes.show Motor representations ground the directedness of actions to goals.
+  .slide
+    .notes: :t
+      The second consideration is that
+    p.em-above.notes.show Some actions involve both intention and motor representation.
+  .slide
+    .notes: :t
+      Given these two considerations, it seems to me that, in some cases, nonaccidentally successful
+      action requires that motor representations and intentions play a harmonious role in 
+      guiding actions.
+      In particular, their contents must match.
+    .notes: :t
+      But this requirement leads us to a question, which I’ve called ‘The Interface Problem’
+    p.em-above.notes.show How are non-accidental matches possible?
+    .notes: :t
+      The interface problem is the problem of explaining how there could be nonaccidental matches
+      between motor representations and intentions.
+    .notes: :t
+      In this talk I haven’t tried to solve the problem but merely mentioned five complications
+      which anyone who tries to solve it faces.
+    .notes: :t
+      The interface problem is complicated by the \textbf{anatomy} of outcomes, the varying \textbf{scales}
+      at which intentions can specify actions, and by the possibility of nonaccidental \textbf{dynamical} 
+      matching.
+    .notes: :t
+      So while various researchers have proposed solutions to the Interface Problem -- Pacherie, Shepherd and 
+      Butterfill and Sinigaglia, I’m doubtful that any are sufficient.
+
+
++insert_unit({unit:'action_experience', title_slide:true, images:images, handout:true})

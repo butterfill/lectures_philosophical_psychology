@@ -5,6 +5,10 @@
  * presentation style for deck.js presentations
  * assumes 800px wide design width
  */
+@font-face {
+  font-family: "Linux Libertine";
+  src: url("/fonts/LinLibertine_R.woff") format('woff');
+}
 .background-color {
   background-color: #000;
 }
@@ -17,6 +21,7 @@ html {
 html body {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 .deck-container {
   font-family: "Lato", sans-serif;
@@ -183,6 +188,9 @@ html body {
 .deck-container .grey-text {
   color: #808080;
 }
+.deck-container .red-text {
+  color: #f00;
+}
 .deck-container .lightgrey-text {
   color: #d3d3d3;
 }
@@ -202,6 +210,13 @@ html body {
   -o-filter: saturate(0);
   -ms-filter: saturate(0);
   filter: saturate(0);
+}
+.contrast-120 {
+  -webkit-filter: contrast(1.2);
+  -moz-filter: contrast(1.2);
+  -o-filter: contrast(1.2);
+  -ms-filter: contrast(1.2);
+  filter: contrast(1.2);
 }
 .contrast-150 {
   -webkit-filter: contrast(1.5);
@@ -232,6 +247,9 @@ html body {
 }
 .right {
   text-align: right;
+}
+.float-right {
+  float: right;
 }
 .width-720 {
   width: 720px;
@@ -851,6 +869,22 @@ table.data tbody tr.even td {
   -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
   box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
 }
+.deck-container .bkg-darkred-row {
+  background-color: #8b0000;
+  margin-left: -80em;
+  border-left: solid 80em #8b0000;
+  margin-right: -80em;
+  border-right: solid 80em #8b0000;
+  text-outline: 1px 2px #f00;
+  -webkit-box-shadow: 0px 4px 2px -2px rgba(139,0,0,0.5), 0px -4px 2px -2px rgba(139,0,0,0.5);
+  box-shadow: 0px 4px 2px -2px rgba(139,0,0,0.5), 0px -4px 2px -2px rgba(139,0,0,0.5);
+  position: relative;
+  z-index: -20;
+}
+.deck-container .invert .bkg-darkred-row {
+  -webkit-box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+  box-shadow: 0 0 1px #fff, 0 0 0.5em #000;
+}
 .deck-container .bkg-faint-red-row {
   background-color: rgba(255,0,0,0.3);
   margin-left: -80em;
@@ -1318,6 +1352,27 @@ table.data tbody tr.even td {
   left: 0;
   z-index: -3;
 }
+.deck-container span.bkg-darkred {
+  position: relative;
+  z-index: -1;
+}
+.deck-container .bkg-darkred {
+  background-color: #8b0000;
+  -webkit-box-shadow: 0 0 8px 8px #8b0000;
+  box-shadow: 0 0 8px 8px #8b0000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.deck-container span.bkg-darkred {
+  position: relative;
+  z-index: -2;
+}
+.deck-container p.bkg-darkred {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
 .deck-container span.bkg-faint-red {
   position: relative;
   z-index: -1;
@@ -1732,6 +1787,14 @@ table.data tbody tr.even td {
   z-index: -1;
   max-width: 100%;
 }
+.deck-container img.fill {
+  float: left;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
 /**
  * for title overwrite deck.core.css
  */
@@ -1805,6 +1868,7 @@ table.data tbody tr.even td {
  * huge-glow classes
  */
 .deck-container .huge-glow {
+  font-family: Linux Libertine;
   font-size: 90pt;
   color: #000;
   text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1812,6 +1876,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-40 {
+  font-family: Linux Libertine;
   font-size: 40pt;
   color: #000;
   text-shadow: 0 0 20pt #fff, 0 0 10pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1819,6 +1884,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 20pt #fff, 0 0 10pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-50 {
+  font-family: Linux Libertine;
   font-size: 50pt;
   color: #000;
   text-shadow: 0 0 25pt #fff, 0 0 12.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1826,6 +1892,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 25pt #fff, 0 0 12.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-60 {
+  font-family: Linux Libertine;
   font-size: 60pt;
   color: #000;
   text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1833,6 +1900,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 30pt #fff, 0 0 15pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-70 {
+  font-family: Linux Libertine;
   font-size: 70pt;
   color: #000;
   text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1840,6 +1908,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 35pt #fff, 0 0 17.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-80 {
+  font-family: Linux Libertine;
   font-size: 80pt;
   color: #000;
   text-shadow: 0 0 40pt #fff, 0 0 20pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1847,6 +1916,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 40pt #fff, 0 0 20pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-90 {
+  font-family: Linux Libertine;
   font-size: 90pt;
   color: #000;
   text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1854,6 +1924,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-120 {
+  font-family: Linux Libertine;
   font-size: 120pt;
   color: #000;
   text-shadow: 0 0 60pt #fff, 0 0 30pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1861,6 +1932,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 60pt #fff, 0 0 30pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-150 {
+  font-family: Linux Libertine;
   font-size: 150pt;
   color: #000;
   text-shadow: 0 0 75pt #fff, 0 0 37.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1868,6 +1940,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 75pt #fff, 0 0 37.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-180 {
+  font-family: Linux Libertine;
   font-size: 180pt;
   color: #000;
   text-shadow: 0 0 90pt #fff, 0 0 45pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1875,6 +1948,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 90pt #fff, 0 0 45pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-210 {
+  font-family: Linux Libertine;
   font-size: 210pt;
   color: #000;
   text-shadow: 0 0 105pt #fff, 0 0 52.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1882,6 +1956,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 105pt #fff, 0 0 52.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-240 {
+  font-family: Linux Libertine;
   font-size: 240pt;
   color: #000;
   text-shadow: 0 0 120pt #fff, 0 0 60pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1889,6 +1964,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 120pt #fff, 0 0 60pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-270 {
+  font-family: Linux Libertine;
   font-size: 270pt;
   color: #000;
   text-shadow: 0 0 135pt #fff, 0 0 67.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1896,6 +1972,7 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 135pt #fff, 0 0 67.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-300 {
+  font-family: Linux Libertine;
   font-size: 300pt;
   color: #000;
   text-shadow: 0 0 150pt #fff, 0 0 75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
@@ -1903,15 +1980,136 @@ table.data tbody tr.even td {
   -moz-text-shadow: 0 0 150pt #fff, 0 0 75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .glow {
+  font-family: Linux Libertine;
   font-size: 19pt;
   color: #000;
   text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 9.5pt #fff, 0 0 4.75pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-invert {
+  font-family: Linux Libertine;
+  font-size: 90pt;
+  color: #fff;
+  text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-40 {
+  font-family: Linux Libertine;
+  font-size: 40pt;
+  color: #fff;
+  text-shadow: 0 0 20pt #000, 0 0 10pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 20pt #000, 0 0 10pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 20pt #000, 0 0 10pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-50 {
+  font-family: Linux Libertine;
+  font-size: 50pt;
+  color: #fff;
+  text-shadow: 0 0 25pt #000, 0 0 12.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 25pt #000, 0 0 12.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 25pt #000, 0 0 12.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-60 {
+  font-family: Linux Libertine;
+  font-size: 60pt;
+  color: #fff;
+  text-shadow: 0 0 30pt #000, 0 0 15pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 30pt #000, 0 0 15pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 30pt #000, 0 0 15pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-70 {
+  font-family: Linux Libertine;
+  font-size: 70pt;
+  color: #fff;
+  text-shadow: 0 0 35pt #000, 0 0 17.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 35pt #000, 0 0 17.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 35pt #000, 0 0 17.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-80 {
+  font-family: Linux Libertine;
+  font-size: 80pt;
+  color: #fff;
+  text-shadow: 0 0 40pt #000, 0 0 20pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 40pt #000, 0 0 20pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 40pt #000, 0 0 20pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-90 {
+  font-family: Linux Libertine;
+  font-size: 90pt;
+  color: #fff;
+  text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-120 {
+  font-family: Linux Libertine;
+  font-size: 120pt;
+  color: #fff;
+  text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-150 {
+  font-family: Linux Libertine;
+  font-size: 150pt;
+  color: #fff;
+  text-shadow: 0 0 75pt #000, 0 0 37.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 75pt #000, 0 0 37.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 75pt #000, 0 0 37.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-180 {
+  font-family: Linux Libertine;
+  font-size: 180pt;
+  color: #fff;
+  text-shadow: 0 0 90pt #000, 0 0 45pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 90pt #000, 0 0 45pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 90pt #000, 0 0 45pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-210 {
+  font-family: Linux Libertine;
+  font-size: 210pt;
+  color: #fff;
+  text-shadow: 0 0 105pt #000, 0 0 52.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 105pt #000, 0 0 52.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 105pt #000, 0 0 52.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-240 {
+  font-family: Linux Libertine;
+  font-size: 240pt;
+  color: #fff;
+  text-shadow: 0 0 120pt #000, 0 0 60pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 120pt #000, 0 0 60pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 120pt #000, 0 0 60pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-270 {
+  font-family: Linux Libertine;
+  font-size: 270pt;
+  color: #fff;
+  text-shadow: 0 0 135pt #000, 0 0 67.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 135pt #000, 0 0 67.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 135pt #000, 0 0 67.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-300 {
+  font-family: Linux Libertine;
+  font-size: 300pt;
+  color: #fff;
+  text-shadow: 0 0 150pt #000, 0 0 75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 150pt #000, 0 0 75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 150pt #000, 0 0 75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .glow-invert {
+  font-family: Linux Libertine;
+  font-size: 19pt;
+  color: #fff;
+  text-shadow: 0 0 9.5pt #000, 0 0 4.75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 9.5pt #000, 0 0 4.75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 9.5pt #000, 0 0 4.75pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
 .deck-container .under-huge-glow {
   padding-top: 0;
-  margin-top: -3.4em;
+  margin-top: -1.4em;
 }
 /**
  * speech bubbles
@@ -2334,6 +2532,236 @@ p.speech-right:after {
   transform-origin: 100% 50%;
 }
 .deck-container .timer-60s-block-wrapper .timer-60s-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+@-moz-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@-webkit-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@-o-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+.deck-container .timer-90s {
+  background: -webkit-linear-gradient(left, #fff 50%, #000 50%);
+  background: -moz-linear-gradient(left, #fff 50%, #000 50%);
+  background: -o-linear-gradient(left, #fff 50%, #000 50%);
+  background: -ms-linear-gradient(left, #fff 50%, #000 50%);
+  background: linear-gradient(to right, #fff 50%, #000 50%);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  height: 400px;
+  position: relative;
+  width: 400px;
+  -webkit-box-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  box-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.deck-container .timer-90s.running {
+  -webkit-animation: time 90s steps(60, start) 1 normal forwards;
+  -moz-animation: time 90s steps(60, start) 1 normal forwards;
+  -o-animation: time 90s steps(60, start) 1 normal forwards;
+  -ms-animation: time 90s steps(60, start) 1 normal forwards;
+  animation: time 90s steps(60, start) 1 normal forwards;
+}
+.deck-container .timer-90s.running .mask {
+  -webkit-animation: mask 90s steps(30, start) 1 normal forwards;
+  -moz-animation: mask 90s steps(30, start) 1 normal forwards;
+  -o-animation: mask 90s steps(30, start) 1 normal forwards;
+  -ms-animation: mask 90s steps(30, start) 1 normal forwards;
+  animation: mask 90s steps(30, start) 1 normal forwards;
+}
+.deck-container .timer-90s:not(.running) .mask {
+  background: #000;
+}
+.deck-container .timer-90s .mask {
+  -webkit-border-radius: 100% 0 0 100%/50% 0 0 50%;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.deck-container .timer-90s-block-wrapper .timer-90s-block {
   position: absolute;
   left: 0;
   right: 0;
@@ -3205,6 +3633,478 @@ p.speech-right:after {
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
   }
+}
+.deck-container .timer-480s {
+  background: -webkit-linear-gradient(left, #fff 50%, #000 50%);
+  background: -moz-linear-gradient(left, #fff 50%, #000 50%);
+  background: -o-linear-gradient(left, #fff 50%, #000 50%);
+  background: -ms-linear-gradient(left, #fff 50%, #000 50%);
+  background: linear-gradient(to right, #fff 50%, #000 50%);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  height: 400px;
+  position: relative;
+  width: 400px;
+  -webkit-box-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  box-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.deck-container .timer-480s.running {
+  -webkit-animation: time 480s steps(60, start) 1 normal forwards;
+  -moz-animation: time 480s steps(60, start) 1 normal forwards;
+  -o-animation: time 480s steps(60, start) 1 normal forwards;
+  -ms-animation: time 480s steps(60, start) 1 normal forwards;
+  animation: time 480s steps(60, start) 1 normal forwards;
+}
+.deck-container .timer-480s.running .mask {
+  -webkit-animation: mask 480s steps(30, start) 1 normal forwards;
+  -moz-animation: mask 480s steps(30, start) 1 normal forwards;
+  -o-animation: mask 480s steps(30, start) 1 normal forwards;
+  -ms-animation: mask 480s steps(30, start) 1 normal forwards;
+  animation: mask 480s steps(30, start) 1 normal forwards;
+}
+.deck-container .timer-480s:not(.running) .mask {
+  background: #000;
+}
+.deck-container .timer-480s .mask {
+  -webkit-border-radius: 100% 0 0 100%/50% 0 0 50%;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.deck-container .timer-480s-block-wrapper .timer-480s-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+@-moz-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@-webkit-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@-o-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+.deck-container .timer-600s {
+  background: -webkit-linear-gradient(left, #fff 50%, #000 50%);
+  background: -moz-linear-gradient(left, #fff 50%, #000 50%);
+  background: -o-linear-gradient(left, #fff 50%, #000 50%);
+  background: -ms-linear-gradient(left, #fff 50%, #000 50%);
+  background: linear-gradient(to right, #fff 50%, #000 50%);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  height: 400px;
+  position: relative;
+  width: 400px;
+  -webkit-box-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  box-shadow: 0 0 40px #fff, 0 0 20px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.deck-container .timer-600s.running {
+  -webkit-animation: time 600s steps(60, start) 1 normal forwards;
+  -moz-animation: time 600s steps(60, start) 1 normal forwards;
+  -o-animation: time 600s steps(60, start) 1 normal forwards;
+  -ms-animation: time 600s steps(60, start) 1 normal forwards;
+  animation: time 600s steps(60, start) 1 normal forwards;
+}
+.deck-container .timer-600s.running .mask {
+  -webkit-animation: mask 600s steps(30, start) 1 normal forwards;
+  -moz-animation: mask 600s steps(30, start) 1 normal forwards;
+  -o-animation: mask 600s steps(30, start) 1 normal forwards;
+  -ms-animation: mask 600s steps(30, start) 1 normal forwards;
+  animation: mask 600s steps(30, start) 1 normal forwards;
+}
+.deck-container .timer-600s:not(.running) .mask {
+  background: #000;
+}
+.deck-container .timer-600s .mask {
+  -webkit-border-radius: 100% 0 0 100%/50% 0 0 50%;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+.deck-container .timer-600s-block-wrapper .timer-600s-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+@-moz-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes time {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@-webkit-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@-o-keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+@keyframes mask {
+  0% {
+    background: #000;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #000;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  50.01% {
+    background: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    background: #fff;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+.columns-2 {
+  -webkit-column-count: 2;
+  -webkit-column-rule: 1px dashed #aaa;
+  -webkit-column-gap: 2.5em;
+}
+.dont-break-paragraphs p {
+  -webkit-column-break-inside: avoid;
+}
+.deck-container .invert-text-grey {
+  color: background_color();
+  text-shadow: 0 0 2px #949494, 1px 1px 2px #949494, 1px -1px 2px #949494, -1px 1px 2px #949494, -1px -1px 2px #949494, 0 0 5px #949494, 0 0 5px #949494;
 }
 @-moz-keyframes anim_blur {
   0% {
