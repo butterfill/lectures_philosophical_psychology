@@ -72,16 +72,23 @@ mixin title_slide(p)
       if filename.indexOf('.low.') != -1
         - low = true
     .spacer &nbsp;
-    .fade-in
+    
+    .no-fade-in
       .title-block(style="#{low ? 'position:relative; top:375px' : ''}"): .title-container
         //- line-height:25pt;font-size:30pt; is just for this particular title
-        h1.title1.fade-in(style="line-height:45pt;") #{p.document.title}
+        h1.title1.no-fade-in(style="line-height:45pt;") 
+          each word,idx in p.document.title.split(' ')
+            span(class="word_#{idx}") #{word} 
+        //- #{p.document.title}
         if p.document.subtitle
-          h1.title2.fade-in #{p.document.subtitle}
+          h1.title2.no-fade-in 
+            each word,idx in p.document.subtitle.split(' ')
+              span(class="word_#{idx}") #{word} 
         if p.document.email
-          h3.email.fade-in #{p.document.email}
+          h3.email.no-fade-in #{p.document.email}
         else
-          h3.email.fade-in s.butterfill@warwick.ac.uk
+          h3.email.no-fade-in s.butterfill@warwick.ac.uk
+    
     if p.document.weburl
       .words
         span(style="position:relative;top:250px;left:450px;").white-box.big.center #{p.document.weburl}

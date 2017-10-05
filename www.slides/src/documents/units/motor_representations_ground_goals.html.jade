@@ -40,9 +40,25 @@ include ../../../fragments/joint_action_mixins
 
       And of course in many cases it may be that both intention and motor representation are involved.
 
-+slide_middle
-  p.center intention = motor representation?
-    span.step2.hide   No!
++slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  .notes: :t
+    I started by observing that there are two quite different approaches to 
+    answering the question, Which events are actions?
+    What does the ground I’ve so far tell us about this?
+  .notes: :t
+    I don’t think it tells us much yet (there’s much more to come).
+  .notes: :t
+    First, both stories are stories about purposive actions.
+    So they don’t have clearly demarcated domains.
+  .notes: :t
+    Second, it may make it tempting to think that motor representations are just a kind of intention,
+    and so to take the radical view that there are not really two distinct stories here at all.
+
   .slide
-    +show('.step2')
+    +blur('img.bkg', '10px')
+    p.center intention = motor representation?
+      span.step2.hide   No!
+    .slide
+      +fade('img.bkg')
+      +show('.step2')
 

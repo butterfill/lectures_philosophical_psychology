@@ -1,6 +1,6 @@
 ---cson
 layout: 'deck_unit'
-title: "Intention in the Philosophy of Action"
+title: "Intention"
 tags: []
 description: """
   What are intentions and what is their role in practical reasoning and action? Some basic
@@ -23,7 +23,7 @@ include ../../../fragments/joint_action_mixins
     fill his glass.
   p.question.hide  What is the relation between a purposive action and the outcome or outcomes to which it is directed?
   //- diagram is in joint_action_mixins
-  .slide
+  .slide.diagram
     +diagram_action_goal
     .notes: :t
       As this illustrates, 
@@ -72,3 +72,18 @@ include ../../../fragments/joint_action_mixins
     .notes: :t
       But is intention the only thing that can link actions to outcomes?
       I will suggest that motor representations can likewise perform this role.
+  +reset-escape-inner
+    +_slide_middle_inner
+      .slide
+        +blur('.question, .diagram')
+        p.center.huge-glow-210 ?
+        .notes: :t
+          Any questions or remarks? 
+        .notes: :t
+          I wonder if anyone wants to say something about this story and whether it answers the question,
+          What is the relation between a purposive action and the outcome or outcomes to which it is directed?
+          (I think it does and no one has so far objected to it except on very broad theoretical grounds
+          involving Anscombe.)
+        .notes: :t
+          Or maybe there’s a basic question about intention.
+

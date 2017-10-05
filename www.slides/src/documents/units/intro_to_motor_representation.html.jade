@@ -6,7 +6,7 @@ description: """
   Motor representations are involved in performing and preparing actions.
   Not all representations represent patterns of joint displacements and bodily 
   configurations: some represent outcomes such as the grasping of an object, which
-  may done in different ways in different contexts.
+  may be done in different ways in different contexts.
   """
 ---
 
@@ -245,11 +245,29 @@ include ../../../fragments/joint_action_mixins
   .notes: :t
     This will be a focus of interest in a later session.
     For now it’s just a handy fact that simplifies testing.
+  .slide
+    p.em-above glossary: TMS
 
-+slide_middle
-  p.center glossary
-  p.em-around TMS
-  p.em-around MEP 
++slide
+  +img_clip('dausilio_2009_fig1.png')
+  p.source D'Ausilio et al (2009, figure 1)
+  .notes: :t
+    For a quick illustration of how we know about the double life of motor representation, consider
+    this experiment ....
+  .notes: :t
+    ‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical
+    activity specifically in the lip (LipM1) or tongue (TongueM1) area’
+    \citep[p.~381]{dausilio:2009_motor}
+  .notes: :t
+    ‘We hypothesized that focal stimulation would facilitate the perception of 
+    the concordant phonemes ([d] and [t] with TMS to TongueM1), but that 
+    there would be inhibition of perception of the discordant items 
+    ([b] and [p] in this case). Behavioral effects were measured via reaction 
+    times (RTs) and error rates.’ \citep[p.~382]{dausilio:2009_motor}
+
++slide
+  +img_clip('dausilio_2009_fig2.png')
+  p.source D'Ausilio et al (2009, figure 2)
 
 section.slide
   +_slide_middle_inner
@@ -266,8 +284,20 @@ section.slide
       neuroscience).
 
 
+
+
+
++slide_middle
+  .notes [end of aside on the double life of motor representation]
+  p.center How do we know that outcomes are represented motorically?
+  .notes: :t
+    
+
 +slide_middle
   p.center first illustration: same kinematics, different goal
+  .slide
+    p.em-above glossary: MEP
+  
 section.slide
   +_slide_middle_inner
     +img('villiger_2010_fig1ab.png')
@@ -359,15 +389,13 @@ section.slide
     .slide
       +show('img.bkg')
       +show('.step2')
-    .slide
       p 1. are unaffected by variations in kinematic features but not goals
     .slide
       +attr('img.bkg', 'src', '/img/carry_information/Slide2.jpg')
+      p 2. are affected by variations in goals but not kinematic features
     .slide
       +attr('img.bkg', 'src', '/img/carry_information/Slide3.jpg')
       +blur('img.bkg', '5px')
-      p 2. are affected by variations in goals but not kinematic features
-    .slide
       p So: 3. 
         span.carry-information carry information
         span   about goals  (from 1,2)
@@ -400,7 +428,7 @@ section.slide
   .notes: :t
     So motor representations of outcomes guide planning-like processes.
     This is why I think it’s not just that they carry information about outcomes
-    like grasping an apply, but that they also represent such outcomes.
+    like grasping an apple, but that they also represent such outcomes.
 
 
 
