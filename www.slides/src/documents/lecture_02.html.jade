@@ -1,10 +1,10 @@
 ---cson
 layout: 'default2'
-title: 'Lecture 01: Intention and Motor Representation in Purposive Action'
+title: 'Lecture 02: Pure Goal Tracking - A Developmental Puzzle'
 subtitle: ''
 weburl: ''
 units: []
-lecture_date: '2017/10/05'
+lecture_date: '2017/10/12'
 ---
 
 
@@ -12,223 +12,231 @@ include ../../fragments/lecture_mixins
 include ../../fragments/unit_mixins
 
 //- 
-  TODO : should have metioned Fridland 2016 on the interface problem
-  and the dynamic version of it.  (Although she seems to be working
-  with a rather restricted version of what is motoric, e.g. she appears
-  to assume that flexible goal-specific trajectory updates require 
-  intention.)
-
-- var images = get_images('bali')
-
-+title_slide({document:document, images:images})
-  .notes: :t
-    Any attempt to bring scientific discoveries about action into a philosophical
-    discussion quickly runs into a significant obstacle ...
-    [The obstacle will be apparently completely different way of thinking about action.]
-
-
-
-+slide({bkg:'intention_and_motor_representation/Slide03.jpg'})
-  .notes: :t
-    Which events are actions?
-    In philosophy, answering this question would typically answered by appeal to intention 
-    or practical reasoning.
-  .notes: :t
-    Such views tend to be neutral on how 
-    the attitudes and processes ultimately connect to bodily movements; 
-    that is considered to be merely an implementation detail ...
-  .notes: :t
-    They are neutral in this sense: the views do not depend in any way on facts about that 
-    distinguish one kind of body from another, or on facts about how the body’s movements 
-    are ultimately controlled ... 
-
-+slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
-  .notes: :t
-    In cognitive science ... little to say about actions whose purposes
-    involve things the motor system doesn’t care about---your motor system
-    doesn’t care whether the plane you are stepping is headed for Milan or
-    for Rome, but this sort of difference can affect whether your actions succeed or fail.
-  .slide
-    +blur('img.bkg','5px')
-    p.center talking past each other?
-    .notes: :t
-      You might just say that the two disciplines are talking past each other,
-      or you might say that they are offering two complementary but independent
-      models of action.
-    .notes: :t
-      Call this the ‘Two Stories View’ (or divorced, but living together).
-    .notes: :t
-      But we want to argue that these two views are components of a single, larger story about action.
-      Although intention and motor representation can usefully be studied in isolation
-      to some extent, a full understanding of action will require understanding
-      interfaces between the two …
-    .notes: :t
-      But first let me fill in a little detail about each of the stories ...
-
-
-//- different kinds of project
+  AFTER : OBJECTIONS
+  
+  Objection 1:
+    Hernik and Southgate 2012 - Nine-months-old infants do not need to know what the agent prefers
+    in order to even the original jumping study goes against subtlety
     
-+slide({bkg:'folk_psychology_roots/Slide1.jpg'})
-  .notes: :t
-    Intentions and motor representations belong to quite different enterprises, I think.
-  .notes: :t
-    WHY MOTOR REPRESENTATION? ONE ADVANTAGE OF THEORISING ABOUT MOTOR REPRESENTATIONS IS 
-    THAT YOU CAN GENERATE TESTABLE PREDICTIONS. INTENTIONS ARE FICTIONS. YOU CANNOT GENERATE 
-    TESTABLE PREDICTIONS FROM A THEORY ABOUT INTENTION. SO IF YOUR QUESTION IS ABOUT WHAT 
-    ENABLES COOPERATION, YOU WILL PROBABLY NEED A STORY ABOUT PSYCHOLOGICAL MECHANISMS.
-  .notes: :t
-    ONTOLOGY : YOU WOULDN’T DO IT WITHOUT THINKING ABOUT PHYSICS, WOULD YOU?
-    SOCIAL ONTOLOGY NEEDS PSYCHOLOGY LIKE ONTOLOGY NEEDS PHYSICS.
+  
+  make claw agentive do get results [Sam]
+    (a) Luo and Baillargeon 2005?
+    (b) Biro and Leslie, 2007?
     
-+slide({bkg:'folk_psychology_roots/Slide2.jpg'})
-
-+slide_middle({bkg:'folk_psychology_roots/Slide3.jpg'})
-  .slide
-    +fade('img.bkg', 0)
-    +blur('img.bkg', '5px')
-    .notes: :t
-      Gilbert is explicit about this.
-      What grounds her theorising>
-    p ‘informal observation including self-observation’ and my ‘own sense of the matter’.
-    p.grey-text.right (Gilbert, 2014 pp. 24, 358) 
-    .notes: :t
-      This is fine. But it doesn't involve anything measurable or repeatable.
-      You will never be able to generate any testable predictions.
-      So you are quite unlikely to be on the path to discovering about how things work.
-    .notes: :t
-      Which is fine if you’re Gilbert, of course, because she has no such aim.
-      But if you’re me, you want to know how things work.
-
-
-
-//- section on intention : see Budapest lecture05 slides
-+insert_unit({unit:'intro_to_intention', title_slide:true, images:images, handout:true})
-
-+insert_unit({unit:'intro_to_motor_representation', title_slide:true, images:images, handout:true})
-
-+insert_unit({unit:'motor_representations_ground_goals', title_slide:true, images:images, handout:true})
-
-+insert_unit({unit:'motor_representations_arent_intentions', title_slide:true, images:images, handout:true})
-
-
-+slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
-  +blur('img.bkg', '10px', 0)
-  p.center.i-equals-m intention = motor representation?
-    span.step2   No!
-  +fade('img.bkg', 0)
-  .notes: :t
-    So my concern was to argue that motor representations aren’t intentions.
-  .slide
-    +hide('.i-equals-m')
-    +unblur('img.bkg')
-    +unfade('img.bkg')
-    .notes: :t
-      So where does this leave us with respect to our starting point,
-      the ‘Two Stories’ view?
-    .notes: :t
-      On the face of it, everything I’ve said so far is compatible with that View
-      and might even be taken to support it.
-    .notes: :t
-      But there is a problem ...
-
-        
-+slide_middle({bkg:'planning_like/Slide4.jpg'})
-  .notes: :t
-    Recall stealing an apple ...
-+slide_middle({bkg:'planning_like/Slide5.jpg'})
-  .notes: :t
-    Imagine you are a hungry shoplifter with a powerful desire for an apple.  After carefully 
-    considering the pile of apples on the stall, you identify one that can be discretely 
-    snatched and form an intention to steal that apple as you casually saunter past the stall.  
-    In grasping, transporting and pocketing the apple your movements are controlled by motor 
-    representations of these outcomes.  So your theft depends on an intention, on some motor 
-    representations and on there being a match between the outcome specified by the intention 
-    and the outcomes specified by the motor representations.
-  .notes: :t
-    In short: practical reasoning and motor processes are part of a single story about the 
-    performance of action; there must be non-accidental matches between the contents of 
-    intentions and motor representations.
-  .notes: :t
-    \textbf{So we can’t accept the Two Stories View because there must sometimes be content-respecting
-    causal interactions involving intentions and motor representations.
-    Without these, our intentions and motor representations would never non-accidentally
-    have synergistic effects on our actions.}
-
-+insert_unit({unit:'the_interface_problem', title_slide:true, images:images, handout:true})
-
-+slide_middle
-  p.center.huge-glow about this course
-  .notes: :t
-    There isn’t a big idea or single theme running through it.
-    I’m just going to present research that I’ve done in different areas---most or all
-    on  action, on joint action and on mind reading.
-  .notes: :t
-    But the Interface Problem stands exemplifies the sort of thing the course is about.
-    It’s how I think of philosophical psychology.
-    Reflection on psychological (and neuroscientific) discoveries raises a question 
-    which is philosophically challenging in some way.
-  .notes: :t
-    So the idea is to start with the discoveries and find broadly philosophical
-    questions arising from what has been discovered so far.
+  Mi Hernik:
+    (a) It's not that goal-tracking is LIMITED by motor abilities; it's that they FACILITATE goal-tracking!
+    
+  Skerry, Carey & Spelke
+    3mnth olds PNAS recent sticky mittens
+    nb something gets stuck to the mittents; it's not really grasping!
+    No possible way that the training gives them experience of efficient goal-directed actions
+    PROBLEM FOR ME BECAUSE They shouldn't appreciate the efficiency of the two routes to the 
+    object (they can't reach overhand to the object)!
+    Most likely the infants realise that contact is a candidate for a goal-directed action.
     
 
-+insert_unit({unit:'five_complications', title_slide:false, images:images, handout:true})
+
+//- 
+  IMPROVEMENTS 
+    (a) Introduce Marr’s levels of description
+    (b) cover Skerry, Carey & Spelke [nb: this is an issue if Infants can’t reach overhand]
+
+  
+//-
+  OUTLINE
+  
+  0. Goal tracking is ...
+  
+  1. Infants can track [nb: not ‘identify’] goals from around six months of age. (e.g. Woodward; Ambrosini et al) -- variety of paradigms and measures (violation-of-expectations, anticipatory looking)
+  
+  2. Q1 How do they do this?
+  
+  3. Teleological stance. [Just present it my way, as a computational description of pure goal tracking]
+  
+  4. How is this implemented? By reasoning. Relation to Q3: no special system; relation to Q6: teleological stance is continuous with mindreading (the latter merely involves using an enriched model with includes mental states; the two can be parts of a single process).
+  
+  5. But goal-tracking is limited: own-action constraint
+  
+  6. Q2 In infants and adults, abilities to perform actions enable identifying goals when observing them: Why?
+  
+  7. Motor theory of goal tracking (mTgt).
+  
+  8. Marr’s levels: mTgt is not an alternative to the Teleological Stance but to it plus the claim about reasoning. 
+  
+  9. Importantly, mTgt explains aspects of *adult’s* performance as well as infants.  
+  
+  10. This supports a dual-process theory.
+  
+  11. But: infants’ abilities are (i) not invariably limited in ways that mTgt predicts (cartoon fish,
+      etc); and (ii) limited in ways that mTgt does not predict (dissociations)
+  
+  12. This then is the Developmental Puzzle: there appears to be evidence against
+  both mTgt and Csibra’s view. This makes Q1 hard to answer (How do six month olds track goals?) and so supports the view that the question is a puzzle.
+  
+  13. Perceptual animacy is the answer?
+  
+
+
+
+
+
+.handout: :t
+  \emph{The Simple View}
+  The principles comprising the Teleological Stance are things infants know or believe, and infants are
+  able to track goals by making inferences from these principles plus their beliefs about the means
+  agents have selected.
+
+
+  
+
+section.slide
+  img.bkg(src='/img/PA301239.JPG', style="filter:contrast(1.5)").hide
+  +_slide_middle_inner({blend:'multiply'})
+    p.center.secondtitle.huge-glow-invert-50.hide(style="margin-top:-30px;")
+      span A Developmental Puzzle
+  +reset
+    +_slide_middle_inner({blend:'overlay'})
+      p.center.firsttitle.huge-glow-110(style="line-height:.9em;")
+          span.huge-glow-invert-110.pure.hide Pure 
+          span Goal
+          span.tracking.hide -Tracking
+  +reset
+    +_slide_inner
+      p.right(style="margin-top:500px;").signature.hide s.butterfill@warwick.ac.uk
+
+  .notes: :t
+    I seize little Isabel and swing her around, thereby making her laugh and 
+    breaking a vase.
+    Asked about this I might say, ‘The goal of my actions was not to break the vase
+    but only to make her laugh, of course.’
+    In talking about goals in this way I am not talking about mental representations:
+    I am talking about actual and possible outcomes of an action, things which did or might 
+    have happened.
+  .notes: :t
+    A goal is an outcome to which an outcome is directed.
+  
+  .slide
+    +show('.tracking')
+    .notes: :t
+      For a process to track a goal of an action is for how that process unfolds to nonaccidentally
+      depend in some way on whether that outcome is indeed a goal of the action.
+      
+  .slide
+    +show('img, .secondtitle, .signature', 1000)
+    
+    .notes: :t
+      In this lecture I propose to introduce a developmental puzzle about goal tracking.
+      Along the way I will also introduce some theories of goal-tracking, none of which 
+      seems entirely adequate to the evidence.
+      
+
+  .slide
+    +show('.pure', 1000)
+    .notes: :t
+      One last thing before I start: my focus is pure goal-tracking, that is, goal-tracking which
+      does not depend on any information about mental states.
+    .notes: :t
+      I take pure goal-tracking to be a fundamental capacity, one which anchors abilities to 
+      understand others’ minds and underpins capacities to perform joint actions.
+      [Because it underpins our abilities to identify mental states and to generate predictions based on
+      ascriptions of mental states.]
+
+
++insert_unit({unit:'goal_tracking_when', title_slide:false, images:images, handout:true})
++insert_unit({unit:'goal_tracking_how', title_slide:false, images:images, handout:true})
++insert_unit({unit:'goal_tracking_limit', title_slide:true, images:images, handout:true})
++insert_unit({unit:'motor_theory_goal_tracking', title_slide:true, images:images, handout:true})
++insert_unit({unit:'goal_tracking_developmental_puzzle', title_slide:false, images:images, handout:true})
++insert_unit({unit:'perceptual_animacy', title_slide:true, images:images, handout:true})
+
 
 
 
 
 
 +slide_middle
-  p.center.huge-glow conclusion
-
-+slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  p.huge-glow-120.center Conclusion
   .notes: :t
-    I started by observing that there are two quite different approaches to 
-    answering the question, Which events are actions?
-    Philosophers mostly invoke intention, whereas neuroscientists and cognitive psychologists
-    focus on motor representation.
+     My question was, How can infants in the first 9 months of life track goals?
+     Given that infants’ goal-tracking is limited by their abilities to perform actions,
+     I proposed to answer this question by appeal to the mTgt:
+     Infants’ pure goal-tracking, like much of adults’, depends on the double life of motor processes.
   .notes: :t
-    What are we to make of the disparity? Are the two simply talking about different phenomena?
-    I’ve offered two considerations which, taken together, suggest that they are not.
-  .slide
-    +blur('img.bkg', '5px')
-    .notes: :t
-      The first consideration is that
-    p.notes.show Motor representations ground the directedness of actions to goals.
-  .slide
-    .notes: :t
-      The second consideration is that
-    p.em-above.notes.show Some actions involve both intention and motor representation.
-  .slide
-    .notes: :t
-      Given these two considerations, it seems to me that, in some cases, nonaccidentally successful
-      action requires that motor representations and intentions play a harmonious role in 
-      guiding actions.
-      In particular, their contents must match.
-    .notes: :t
-      But this requirement leads us to a question, which I’ve called ‘The Interface Problem’
-    p.em-above.notes.show How are non-accidental matches possible?
-    .notes: :t
-      The interface problem is the problem of explaining how there could be nonaccidental matches
-      between motor representations and intentions.
-    .notes: :t
-      In this talk I haven’t tried to solve the problem but merely mentioned five complications
-      which anyone who tries to solve it faces.
-    .notes: :t
-      The interface problem is complicated by the \textbf{anatomy} of outcomes, the varying \textbf{scales}
-      at which intentions can specify actions, and by the possibility of nonaccidental \textbf{dynamical} 
-      matching.
-    .notes: :t
-      So while various researchers have proposed solutions to the Interface Problem -- Pacherie, Shepherd and 
-      Butterfill and Sinigaglia, I’m doubtful that any are sufficient.
-    .notes: :t
-      There’s also an obstacle I haven’t properly considered here yet.
-      As I said at the start, whereas motor representations are postulates of 
-      scientific theories, intentions are, well, of less certain origin.
-      We know what motor representations are because they creatures of our own theories.
-      But talk about intention seems to be rooted in what philosophers think about
-      what Ben thinks about what is going on with Ayesha.
-      Maybe part of what makes the interface problem challenging is that we’re taking
-      intentions too seriously.
+     This yielded a simple dual-process theory of goal-tracking.
+  .notes: :t
+     But this is much too simple, as
+     findings on infants’ goal-tracking in the first 9 months of life confronts us with a puzzle.
+     For they appear to show that, in many cases, infants can track the goals of actions 
+     performed by cartoon fish and spheres; and these are clearly actions that no infant (or adult)
+     could perform.
+  .notes: :t
+     Apparantly, then, we must reject the mTgt. But if we do that, it seems we lack any way of 
+     explaining why infants’ goal-tracking is so often limited by their abilities to act.
+  .notes: :t
+     The solution, I suggested, is to invoke perceptual animacy.
+     That is what led me to this conjecture ...
+     
 
-+insert_unit({unit:'action_experience', title_slide:true, images:images, handout:true})
++slide_rh_white({step:true})
+  +left_half
+    .notes.show
+      p Conjecture
+      p.em-above: :t
+        In 9-month-olds, 
+      p.hem-above: :t
+        all pure goal-tracking is explained by the Motor Theory;
+      p.hem-above: :t
+        appearances that goal-tracking is not limited by their abilities to act
+        are due to perceptual animacy.     
+  .notes: :t
+    This conjecture is quite bold, but I think it’s one worth betting on partly because,
+    as I suggested, it generates readily testable predictions.
+  .notes: :t
+    This conjecture also has another virtue.
+    Goal-tracking is so fundamental to social cognition and joint action that it is 
+    likely to depend on a rich mix of many kinds of processes, including associative learning.
+    We need ways to identify these processes, to distinguish their limits and to understand their 
+    synergies.
+    Distinguishing motor processes which support goal-tracking by realising the Teleological Stance 
+    from perceptual animacy is a step towards meeting this need.
+  
+  .notes: :t
+    So how does this bear on the conference topic,
+    Action Perception?
+    In short, there isn’t any.
+    At least not if actions are goal-directed actions.
+  .notes: :t
+    Why do I say this?  Not because I can rule out the possibility of action perception, of course.
+    But goal-tracking is like speech perception in this sense: in both cases, the best supported,
+    most carefully developed theories are not about perceptual processes but about motor processes.
+    
+
+  
+
+section.slide
+  img.bkg(src='/img/PA301239.JPG', style="filter:contrast(1.5)")
+  +_slide_middle_inner({blend:'multiply'})
+    p.center.secondtitle.huge-glow-invert-50(style="margin-top:-30px;")
+      span A Developmental Puzzle
+  +reset
+    +_slide_middle_inner({blend:'overlay'})
+      p.center.firsttitle.huge-glow-110(style="line-height:.9em;")
+          span.huge-glow-invert-110.pure Pure 
+          span Goal
+          span.tracking -Tracking
+  +reset
+    +_slide_inner
+      p.right(style="margin-top:500px;").signature s.butterfill@warwick.ac.uk
+  
+  .notes: :t
+    That, anyway, is my conclusion.
+    The double life of motor processes underpins humans’ earliest 
+    pure goal-tracking, and so provides a basis for the many and varied forms of social cognition,
+    including mindreading, which depend on pure goal-tracking.
+  .notes: :t
+    Many will disagree with this.
+    What I hope we will agree about, though, is that solving the developmental puzzle
+    about pure-goal tracking is essential if we care at all about the abilities
+    which underpin humans’ capacities for social cognition and joint action.
+
+   

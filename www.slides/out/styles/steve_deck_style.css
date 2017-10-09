@@ -1923,6 +1923,22 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 45pt #fff, 0 0 22.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
+.deck-container .huge-glow-100 {
+  font-family: Linux Libertine;
+  font-size: 100pt;
+  color: #000;
+  text-shadow: 0 0 50pt #fff, 0 0 25pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 50pt #fff, 0 0 25pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 50pt #fff, 0 0 25pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-110 {
+  font-family: Linux Libertine;
+  font-size: 110pt;
+  color: #000;
+  text-shadow: 0 0 55pt #fff, 0 0 27.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 55pt #fff, 0 0 27.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 55pt #fff, 0 0 27.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
 .deck-container .huge-glow-120 {
   font-family: Linux Libertine;
   font-size: 120pt;
@@ -1930,6 +1946,22 @@ table.data tbody tr.even td {
   text-shadow: 0 0 60pt #fff, 0 0 30pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -webkit-text-shadow: 0 0 60pt #fff, 0 0 30pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
   -moz-text-shadow: 0 0 60pt #fff, 0 0 30pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-130 {
+  font-family: Linux Libertine;
+  font-size: 130pt;
+  color: #000;
+  text-shadow: 0 0 65pt #fff, 0 0 32.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 65pt #fff, 0 0 32.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 65pt #fff, 0 0 32.5pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+}
+.deck-container .huge-glow-140 {
+  font-family: Linux Libertine;
+  font-size: 140pt;
+  color: #000;
+  text-shadow: 0 0 70pt #fff, 0 0 35pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -webkit-text-shadow: 0 0 70pt #fff, 0 0 35pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
+  -moz-text-shadow: 0 0 70pt #fff, 0 0 35pt #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .deck-container .huge-glow-150 {
   font-family: Linux Libertine;
@@ -2043,6 +2075,22 @@ table.data tbody tr.even td {
   -webkit-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 45pt #000, 0 0 22.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
+.deck-container .huge-glow-invert-100 {
+  font-family: Linux Libertine;
+  font-size: 100pt;
+  color: #fff;
+  text-shadow: 0 0 50pt #000, 0 0 25pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 50pt #000, 0 0 25pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 50pt #000, 0 0 25pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-110 {
+  font-family: Linux Libertine;
+  font-size: 110pt;
+  color: #fff;
+  text-shadow: 0 0 55pt #000, 0 0 27.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 55pt #000, 0 0 27.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 55pt #000, 0 0 27.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
 .deck-container .huge-glow-invert-120 {
   font-family: Linux Libertine;
   font-size: 120pt;
@@ -2050,6 +2098,22 @@ table.data tbody tr.even td {
   text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -webkit-text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
   -moz-text-shadow: 0 0 60pt #000, 0 0 30pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-130 {
+  font-family: Linux Libertine;
+  font-size: 130pt;
+  color: #fff;
+  text-shadow: 0 0 65pt #000, 0 0 32.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 65pt #000, 0 0 32.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 65pt #000, 0 0 32.5pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+}
+.deck-container .huge-glow-invert-140 {
+  font-family: Linux Libertine;
+  font-size: 140pt;
+  color: #fff;
+  text-shadow: 0 0 70pt #000, 0 0 35pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -webkit-text-shadow: 0 0 70pt #000, 0 0 35pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
+  -moz-text-shadow: 0 0 70pt #000, 0 0 35pt #000, 1px 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, -1px -1px 2px #000;
 }
 .deck-container .huge-glow-invert-150 {
   font-family: Linux Libertine;

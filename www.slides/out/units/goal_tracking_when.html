@@ -1,0 +1,282 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>When can infants first track goals? | Philosophical Psychology</title>
+    <meta name="description" content="A variety of evidence indicates that 
+infants may be able to track goals from three months of age (or earlier)."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="goal_tracking_when" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">When can infants first track goals?</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">When?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">When can infants first track goals to which actions are directed?
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Consider a much-replicated study by Woodward and colleagues.</div>
+        <div class="layer1">
+          <div style="position:relative;"><img src="/img/wodward_2001_fig1.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+          <p class="source">Woodward et al 2001, figure 1</p>
+        </div>
+        <div class="slide">
+          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+          <div class="notes handout">'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'</div>
+          <div class="notes handout ctd">\citep[p.\ 153]{woodward:2001_making}</div>
+        </div>
+        <div class="slide layer2">
+          <div data-what=".layer1" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what=".layer1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
+            <div style="" class="container_12">
+              <div class="grid_12 ">
+                <div class="words">
+                  <div class="middle">
+                    <p class="center">from <span class="three">three</span><span class="remove-me nine"> nine</span><span>  months of age</span></p>
+                    <div class="notes">Using a manipulation we’ll discuss later (‘sticky mittens’),
+\citet{sommerville:2005_action} used this paradigm to show that even
+three-month-olds can form expectations based on the goal of an action
+(for another study with three-month-olds, see also \citealp{luo:2011_threemonthold}).
+                    </div>
+                    <div class="slide">
+                      <div data-what=".layer1" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+                      <p class="center em-above">but:</p>
+                      <p class="center">target vs type</p>
+                      <div class="notes">The studies we have considered so far focus on infants’ abilities to identify the targets of actions.
+They do not show that infants can identify the type of an action---for instance, whether it is a grasping or a pushing action.
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div data-what=".layer1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+                      <div data-what=".layer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+                      <div data-what=".layer2" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+                      <div data-what=".layer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+                      <div class="notes">To say that infants can track  goals to which actions are directed implies that they can distinguish both the target and the type of an action.
+So can infants also distinguish between two actions which are directed to the same target but differ in type?
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="filter:grayscale(1) contrast(1.1) brightness(1.6)" class="slide"><img src="/img/goal_act_type_habituation_study.jpg" width="1024px" style="" class="bkg"/>
+  <div style="filter:grayscale(1) contrast(1.1) brightness(1.6)" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">To answer this question, we would ideally have pairs of scenarios in which the target of an action
+is kept constant while the type of action varies.
+To the extent that subjects respond appropriately to the difference in type of action, we can be
+confident that they can distinguish actions not just by their targets but also by their types.
+        </div>
+        <div class="notes">This is illustrated here, where you are habituated to a grasping event and the test events are
+(a) grasping but with novel kinematics (from a different angle), or (b) a novel goal event (pushing).
+        </div>
+        <div class="notes">Unfortunately, as far as I know this has not yet been done.
+But there are some studies which, although not intended to get at exactly the issue of whether
+infants track goals and not just targets of actions, do indirectly shed light on this issue.
+        </div>
+        <div class="notes">These studies demonstrate competence in goal-tracking from nine months of age, and give us no reason
+to doubt that, in simple enough cases, infants might show competence in goal tracking much earlier.
+        </div>
+        <div class="notes">\citet{Behne:2005dw} created just such pairs of contrasting scenarios.
+In one of their contrasts, an experimenter holds a ball out for an infant to grasp and then
+either ‘accidentally’ drops it or teasingly pulls it back.
+So in each case there is a goal-directed action involving the ball, but in one case the goal
+of the action is to pass the ball to the infant whereas in the other case the goal is to
+tease the infant.
+\citet[Study 2]{Behne:2005dw} found that nine-month-olds (but not six-month-olds)
+consistently and appropriately discriminated between these scenarios by, for example,
+banging more when the ball was ‘accidentally’ dropped than when it was teasingly retracted.
+This and other research
+(e.g. \citealp{ambrosini:2013_looking}) suggests that, at least from nine months of age,
+infants can indeed distinguish both the type and target of a goal-directed action.
+        </div>
+        <div class="notes">% \citet{ambrosini:2013_looking} is important: shows that type of grasp and not just target is tracked, implying that anticipatory looking is not merely perceptual animacy.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="hide how">
+            <p style="font-family:Lato" class="center huge-glow-180">How?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show">Infants can track goals from nine months of age (or earlier).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>
