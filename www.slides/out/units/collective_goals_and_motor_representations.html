@@ -1,64 +1,551 @@
 
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Collective Goals and Motor Representations | Philosophical Psychology</title><meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
---><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
-<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="collective_goals_and_motor_representations" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Collective Goals and Motor Representations</h2></div></div></section>
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Collective Goals and Motor Representations | Philosophical Psychology</title>
+    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="collective_goals_and_motor_representations" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Collective Goals and Motor Representations</h2>
+          </div>
+        </div>
+      </section>
+
 
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><img src="/img/family_railcard.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><div class="handout">Motor representations concern not only bodily configurations and movements but also more distal
+
+<section style="" class="slide"><img src="/img/family_railcard.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">Motor representations concern not only bodily configurations and movements but also more distal
 outcomes such as the grasping of a mug or the pressing of a switch
-\citep{butterfill:2012_intention,hamilton:2008_action,cattaneo:2009_representation}.</div><div class="handout">Some motor processes are planning-like in that they involve deriving means by which the outcomes could
+\citep{butterfill:2012_intention,hamilton:2008_action,cattaneo:2009_representation}.
+</div>
+<div class="handout">Some motor processes are planning-like in that they involve deriving means by which the outcomes could
 be brought about and in that they involve coordinating subplans
-\citep{jeannerod_motor_2006,zhang:2007_planning}.</div><div class="handout">Motor processes concerning actions others will perform occur in observing others act
+\citep{jeannerod_motor_2006,zhang:2007_planning}.
+</div>
+<div class="handout">Motor processes concerning actions others will perform occur in observing others act
 \citep{Gangitano:2001ft}---and even in observing several others act jointly
 \citep{manera:2013_time}---and enables us to anticipate their actions
-\citep{ambrosini:2011_grasping,aglioti_action_2008}.</div><div class="handout">In joint action, motor processes concerning actions another will perform can occur
+\citep{ambrosini:2011_grasping,aglioti_action_2008}.
+</div>
+<div class="handout">In joint action, motor processes concerning actions another will perform can occur
 \citep{kourtis:2012_predictive, meyer:2011_joint}, and can inform planning for one's own actions
-\citep{vesper:2012_jumping,novembre:2013_motor,loehr:2011_temporal}.</div><div class="handout">In some joint actions, the agents have a single representation of the whole action (not only separate
+\citep{vesper:2012_jumping,novembre:2013_motor,loehr:2011_temporal}.
+</div>
+<div class="handout">In some joint actions, the agents have a single representation of the whole action (not only separate
 representations of each agent's part)
 \citep{tsai:2011_groop_effect,loehr:2013_monitoring,Menoret:2013fk}, and may each make a plan for both
-their actions \citep{meyer:2013_higher-order,kourtis:2014_attention}.</div><div class="handout">An interagential structure of motor representation: 
+their actions \citep{meyer:2013_higher-order,kourtis:2014_attention}.
+</div>
+<div class="handout">An interagential structure of motor representation: 
 \begin{enumerate} \item there is an outcome to
 which a joint action could be collectively directed and in each agent there is a motor representation
 of this outcome; \item these motor representations trigger planning-like processes in each agent which
 result in plan-like hierarchies of motor representations; \item the plan-like hierarchy in each agent
 involves motor representations concerning another's actions as well as her own; \item the plan-like
 hierarchies of motor representations in the agents nonaccidentally match. 
-\end{enumerate}</div><section style="" class="slide"><img src="/img/prosecco_accident.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="question hide"> In virtue of what do actions involving multiple agents ever have collective goals?</p><div class="notes">Recall how Ayesha takes a glass and holds it up while Beatrice pours prosecco;
-and unfortunately the prosecco misses the glass, soaking Zachs’s trousers.</div><div class="slide"><svg width="665px" height="445px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="glow-large" width="3" height="3" x="-.5" y="-.5"><feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="15"></feGaussianBlur><feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="10"></feGaussianBlur><feGaussianBlur result="blurOut3" in="SourceGraphic" stddeviation="5"></feGaussianBlur><femerge><femergenode in="blurOut"></femergenode><femergenode in="blurOut2"></femergenode><femergenode in="blurOut3"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter><filter id="glow-small" width="1.5" height="1.5" x="-.25" y="-.25"><feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="4"></feGaussianBlur><feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="4"></feGaussianBlur><femerge><femergenode in="blurOut"></femergenode><femergenode in="blurOut2"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter><filter id="dropGlowBlack" width="1.5" height="1.5" x="-.25" y="-.25"><fegaussianblur in="SourceAlpha" stdDeviation="10" result="blur"></fegaussianblur><femerge><femergenode in="blur"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter><g id="action-ellipse"><ellipse cx="0" cy="0" rx="40" ry="40" fill="#000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></ellipse></g><g id="action-ellipse-neon"><ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></ellipse><ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></ellipse><ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse></g></defs><g transform="translate(0.5,0.5)"><g class="action-light"><ellipse cx="42" cy="42" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(12,27)"><switch><foreignobject pointer-events="all" width="59" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">light</font></div></div></foreignobject><text x="30" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="action-smoke"><ellipse cx="132" cy="402" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(91,387)"><switch><foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">smoke</font></div></div></foreignobject><text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="joint-action"><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></rect><g class="neon-rect hide"><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></rect><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></rect></g><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></rect><g class="action drop"><use xlink:href="#action-ellipse" x="87" y="132"></use><g class="neon-ellipse hide"><use xlink:href="#action-ellipse-neon" x="87" y="132"></use></g><g transform="translate(51,117)"><switch><foreignobject pointer-events="all" width="61" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">open</font></div></div></foreignobject><text x="31" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="action throw"><use xlink:href="#action-ellipse" x="82" y="242"></use><g class="neon-ellipse hide"><use xlink:href="#action-ellipse-neon" x="82" y="242"></use></g><g transform="translate(44,227)"><switch><foreignobject pointer-events="all" width="75" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">pour</font></div></div></foreignobject><text x="38" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="action discard"><use xlink:href="#action-ellipse" x="112" y="312"></use><g class="neon-ellipse hide"><use xlink:href="#action-ellipse-neon" x="112" y="312"></use></g><g transform="translate(68,297)"><switch><foreignobject pointer-events="all" width="88" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">tilt</font></div></div></foreignobject><text x="44" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g></g><g class="outcome amuse hide"><ellipse cx="562" cy="92" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(521,77)"><switch><foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">soak</font></div></div></foreignobject><text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="outcome scare hide"><ellipse cx="562" cy="272" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(527,257)"><switch><foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">scare</font></div></div></foreignobject><text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="outcome freakout hide"><ellipse cx="522" cy="362" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(483,332)"><switch><foreignobject pointer-events="all" width="77" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">freak out</font></div></div></foreignobject><text x="39" y="43" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="outcome block hide"><g class="block-glow hide"><ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse><ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse></g><ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" class="no-glow"></ellipse><g transform="translate(547,167)"><switch><foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">fill</font></div></div></foreignobject><text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="explain-collective-directedness hide"><g class="the-box"><rect x="242" y="262" width="210" height="60" rx="9" ry="9" fill="#ffffff" stroke="#ffffff" stroke-width="3" transform="rotate(-15,347,292)" pointer-events="none"></rect><g transform="translate(252,262)rotate(-15,94.5,30)"><switch><foreignobject pointer-events="all" width="189" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;" class="invert">intention<span class="mr remove-me hide noinvert"> or motor representation</span><br/><span class="iasmr hide">or ???</span></div></div></foreignobject></switch></g></g><g class="coordinates hide"><path d="M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path><path d="M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path><g transform="translate(199,155)"><switch><foreignobject pointer-events="all" width="126" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">coordinates</font></div></div></foreignobject><text x="63" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text></switch></g></g><g class="represents hide"><path d="M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path><path d="M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path><g transform="translate(374,167)rotate(-12,58,12)"><switch><foreignobject pointer-events="all" width="116" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">specifies</font></div></div></foreignobject><text x="58" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text></switch></g></g></g></g></svg><div class="notes">As this illustrates, 
-some actions involving multiple agents are purposive in the sense that</div></div><div class="slide"><div data-what=".outcome" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">among all their actual and possible consequences,</div></div><div class="slide"><div data-what=".outcome.block .block-glow" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">there are outcomes to which they are directed</div></div><div class="slide"><div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">and the actions are collectively directed to this outcome</div></div><div class="slide"><div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".joint-action .neon-ellipse" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">so it is not just a matter of each individual action being directed to this outcome.</div></div><div class="slide"><div data-what=".joint-action .neon-ellipse" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">In such cases we can say that the actions have a collective goal.</div></div><div class="slide"><div data-what=".question" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes"><t:05267247916199267></t:05267247916199267></div></div><div class="slide"><div data-what=".explain-collective-directedness" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">As what Ayesha and Beatrice are doing---filling a glass together---is a paradigm case of joint action, it might seem natural to answer the question by invoking a notion of shared (or `collective') intention.
+\end{enumerate}
+</div>
+<section style="" class="slide"><img src="/img/prosecco_accident.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="question hide"> In virtue of what do actions involving multiple agents ever have collective goals?</p>
+        <div class="notes">Recall how Ayesha takes a glass and holds it up while Beatrice pours prosecco;
+and unfortunately the prosecco misses the glass, soaking Zachs’s trousers.
+        </div>
+        <div class="slide">
+          <svg width="665px" height="445px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <defs>
+              <filter id="glow-large" width="3" height="3" x="-.5" y="-.5">
+                <feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="15"></feGaussianBlur>
+                <feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="10"></feGaussianBlur>
+                <feGaussianBlur result="blurOut3" in="SourceGraphic" stddeviation="5"></feGaussianBlur>
+                <femerge>
+                  <femergenode in="blurOut"></femergenode>
+                  <femergenode in="blurOut2"></femergenode>
+                  <femergenode in="blurOut3"></femergenode>
+                  <femergenode in="SourceGraphic"></femergenode>
+                </femerge>
+              </filter>
+              <filter id="glow-small" width="1.5" height="1.5" x="-.25" y="-.25">
+                <feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="4"></feGaussianBlur>
+                <feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="4"></feGaussianBlur>
+                <femerge>
+                  <femergenode in="blurOut"></femergenode>
+                  <femergenode in="blurOut2"></femergenode>
+                  <femergenode in="SourceGraphic"></femergenode>
+                </femerge>
+              </filter>
+              <filter id="dropGlowBlack" width="1.5" height="1.5" x="-.25" y="-.25">
+                <fegaussianblur in="SourceAlpha" stdDeviation="10" result="blur"></fegaussianblur>
+                <femerge>
+                  <femergenode in="blur"></femergenode>
+                  <femergenode in="SourceGraphic"></femergenode>
+                </femerge>
+              </filter>
+              <g id="action-ellipse">
+                <ellipse cx="0" cy="0" rx="40" ry="40" fill="#000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></ellipse>
+              </g>
+              <g id="action-ellipse-neon">
+                <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></ellipse>
+                <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></ellipse>
+                <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              </g>
+            </defs>
+            <g transform="translate(0.5,0.5)">
+              <g class="action-light">
+                <ellipse cx="42" cy="42" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+                <g transform="translate(12,27)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="59" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">light</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="30" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="action-smoke">
+                <ellipse cx="132" cy="402" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+                <g transform="translate(91,387)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">smoke</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="joint-action">
+                <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></rect>
+                <g class="neon-rect hide">
+                  <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></rect>
+                  <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></rect>
+                </g>
+                <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></rect>
+                <g class="action drop">
+                  <use xlink:href="#action-ellipse" x="87" y="132"></use>
+                  <g class="neon-ellipse hide">
+                    <use xlink:href="#action-ellipse-neon" x="87" y="132"></use>
+                  </g>
+                  <g transform="translate(51,117)">
+                    <switch>
+                      <foreignobject pointer-events="all" width="61" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;">
+                          <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">open</font></div>
+                        </div>
+                      </foreignobject>
+                      <text x="31" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                    </switch>
+                  </g>
+                </g>
+                <g class="action throw">
+                  <use xlink:href="#action-ellipse" x="82" y="242"></use>
+                  <g class="neon-ellipse hide">
+                    <use xlink:href="#action-ellipse-neon" x="82" y="242"></use>
+                  </g>
+                  <g transform="translate(44,227)">
+                    <switch>
+                      <foreignobject pointer-events="all" width="75" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;">
+                          <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">pour</font></div>
+                        </div>
+                      </foreignobject>
+                      <text x="38" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                    </switch>
+                  </g>
+                </g>
+                <g class="action discard">
+                  <use xlink:href="#action-ellipse" x="112" y="312"></use>
+                  <g class="neon-ellipse hide">
+                    <use xlink:href="#action-ellipse-neon" x="112" y="312"></use>
+                  </g>
+                  <g transform="translate(68,297)">
+                    <switch>
+                      <foreignobject pointer-events="all" width="88" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;">
+                          <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">tilt</font></div>
+                        </div>
+                      </foreignobject>
+                      <text x="44" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                    </switch>
+                  </g>
+                </g>
+              </g>
+              <g class="outcome amuse hide">
+                <ellipse cx="562" cy="92" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+                <g transform="translate(521,77)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">soak</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="outcome scare hide">
+                <ellipse cx="562" cy="272" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+                <g transform="translate(527,257)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">scare</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="outcome freakout hide">
+                <ellipse cx="522" cy="362" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+                <g transform="translate(483,332)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="77" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">freak out</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="39" y="43" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="outcome block hide">
+                <g class="block-glow hide">
+                  <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse>
+                  <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse>
+                </g>
+                <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" class="no-glow"></ellipse>
+                <g transform="translate(547,167)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">fill</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="explain-collective-directedness hide">
+                <g class="the-box">
+                  <rect x="242" y="262" width="210" height="60" rx="9" ry="9" fill="#ffffff" stroke="#ffffff" stroke-width="3" transform="rotate(-15,347,292)" pointer-events="none"></rect>
+                  <g transform="translate(252,262)rotate(-15,94.5,30)">
+                    <switch>
+                      <foreignobject pointer-events="all" width="189" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;">
+                          <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;" class="invert">intention<span class="mr remove-me hide noinvert"> or motor representation</span><br/><span class="iasmr hide">or ???</span></div>
+                        </div>
+                      </foreignobject>
+                    </switch>
+                  </g>
+                </g>
+                <g class="coordinates hide">
+                  <path d="M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
+                  <path d="M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
+                  <g transform="translate(199,155)">
+                    <switch>
+                      <foreignobject pointer-events="all" width="126" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;">
+                          <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">coordinates</font></div>
+                        </div>
+                      </foreignobject>
+                      <text x="63" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text>
+                    </switch>
+                  </g>
+                </g>
+                <g class="represents hide">
+                  <path d="M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path>
+                  <path d="M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path>
+                  <g transform="translate(374,167)rotate(-12,58,12)">
+                    <switch>
+                      <foreignobject pointer-events="all" width="116" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;">
+                          <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">specifies</font></div>
+                        </div>
+                      </foreignobject>
+                      <text x="58" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text>
+                    </switch>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <div class="notes">As this illustrates, 
+some actions involving multiple agents are purposive in the sense that
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".outcome" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">among all their actual and possible consequences,
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".outcome.block .block-glow" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">there are outcomes to which they are directed
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">and the actions are collectively directed to this outcome
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what=".joint-action .neon-ellipse" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">so it is not just a matter of each individual action being directed to this outcome.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".joint-action .neon-ellipse" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">In such cases we can say that the actions have a collective goal.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".question" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes"><t:010349590075202286></t:010349590075202286>
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".explain-collective-directedness" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">As what Ayesha and Beatrice are doing---filling a glass together---is a paradigm case of joint action, it might seem natural to answer the question by invoking a notion of shared (or `collective') intention.
 Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
-Then, on many accounts of shared intention,</div></div><div class="slide"><div data-what=".represents" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass; 
-or each of them being in some other state which picks out this outcome.</div></div><div class="slide"><div data-what=".coordinates" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">The shared intention also provides for the coordination of their actions (so that, for example, 
+Then, on many accounts of shared intention,
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".represents" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass; 
+or each of them being in some other state which picks out this outcome.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".coordinates" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">The shared intention also provides for the coordination of their actions (so that, for example, 
 Beatrice doesn't start pouring until Ayesha is holding the glass under the bottle).  And 
 coordination of this type would normally facilitate occurrences of the type of outcome intended. 
 In this way, invoking a notion of shared intention provides one answer to our question about what 
-it is for some actions to be collectively directed to an outcome.</div></div><div class="slide"><div data-what=".iasmr" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">But we’ve already seen that the existence of collective goal does not 
+it is for some actions to be collectively directed to an outcome.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".iasmr" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">But we’ve already seen that the existence of collective goal does not 
 require a shared intention.  Collective goals can also exist in virtue of 
-the way two or more agents’ actions are coordinated.</div><div class="notes">Are there also ways of answering the question which involve psychological structures 
+the way two or more agents’ actions are coordinated.
+          </div>
+          <div class="notes">Are there also ways of answering the question which involve psychological structures 
 other than shared intention? In this talk I shall argue that there are.  
 Our actions having collective goals is not always only a matter of what we intend: 
-sometimes it constitutively involves motor representation.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">one agent</p><div class="notes">Let me start by stepping back and consider an individual action.
+sometimes it constitutively involves motor representation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">one agent</p>
+          <div class="notes">Let me start by stepping back and consider an individual action.
 Consider what Ayesha and Beatrice do---their attempt to fill Zach's glass by one pouring prosecco while the 
-other holds a glass---but now imagine that one person does both parts of the action.</div><div class="notes">In virtue of what do actions involving just one agent ever have goals?</div><div class="notes">A standard answer involves appeal to intention.
+other holds a glass---but now imagine that one person does both parts of the action.
+          </div>
+          <div class="notes">In virtue of what do actions involving just one agent ever have goals?
+          </div>
+          <div class="notes">A standard answer involves appeal to intention.
 For an intention identifies an outcome, coordinates some of the agent’s actions around that outcome, and coordinates them in such a way that, normally, the coordination would facilitate the occurrence of the outcome.
 Thus someone's intention to wash the dishes might, for example, constrain the order of her actions so that that the prosecco glasses are done before greasy pans.
 In this way, appealing to an intention concerning an outcome and its role in coordinating actions can sometimes allow us to explain in virtue of what several actions are collectively directed to that outcome.
-Are there other facts in virtue of which  multiple actions involving just one agent can be collectively directed to an outcome?</div><div class="notes">But some philosophers have argued that some actions have goals in virtue of motor 
+Are there other facts in virtue of which  multiple actions involving just one agent can be collectively directed to an outcome?
+          </div>
+          <div class="notes">But some philosophers have argued that some actions have goals in virtue of motor 
 representation rather than intention.
 It will be helpful to outline these arguments since my aim today is 
-an attempt to generalise such arguments from one agent to multiple agents.</div></div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Introduction to Motor Representation}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Introduction to Motor Representation}</div>
+an attempt to generalise such arguments from one agent to multiple agents.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Introduction to Motor Representation}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Introduction to Motor Representation}</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><img src="/img/egg.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p class="center">motor representation<span class="step2 hide">s represent goals</span><br/><span class="step3 hide">and trigger planning-like processes</span></p><div class="notes">Let me mention some almost uncontroversial facts about motor representations and 
-their action-coordinating role.</div><div class="slide"><div class="notes">Explaining the coordination of 
+
+<section style="" class="slide"><img src="/img/egg.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+          <p class="center">motor representation<span class="step2 hide">s represent goals</span><br/><span class="step3 hide">and trigger planning-like processes</span></p>
+          <div class="notes">Let me mention some almost uncontroversial facts about motor representations and 
+their action-coordinating role.
+          </div>
+          <div class="slide">
+            <div class="notes">Explaining the coordination of 
 sequences of very small scale actions appears to involve representations but not, or not 
 only, intentions.  To a first approximation, \emph{motor representation} is a label for 
-such representations.  But why accept that motor representations exist?</div><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the shell) into a bowl ready for beating into a carbonara sauce.  
+such representations.  But why accept that motor representations exist?
+            </div>
+            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the shell) into a bowl ready for beating into a carbonara sauce.  
 Even for such mundane, routine actions, the constraints on adequate performance can vary significantly depending on subtle variations in context. For example, the position of a hot pan may require altering the trajectory along which the egg is transported, or time pressures may mean that the action must be performed unusually swiftly on this occasion.
 Further, many of the constraints on performance involve relations between actions occurring at different times.
 To illustrate, how tightly you need to grip the egg now depends, among other things, on the forces to which you will subject the egg in lifting it later.
@@ -70,7 +557,13 @@ is not plausibly a consequence of mindless physiology, nor of intention and prac
 This is one reason for postulating motor representations, which characteristically play a role in coordinating sequences of very small scale actions such as grasping an egg in order to lift it.%
 \footnote{% 
 Much more to be said about what motor representations are; for instance, see \citet{butterfill:2012_intention} for the view that motor representations can be distinguished by representational format.
-}</div></div><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;50px&quot;}" data-options="{&quot;duration&quot;:1000}" class="dv dv-velocity"></div><div class="notes">What do motor representations represent? An initially attractive, conservative 
+}
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;50px&quot;}" data-options="{&quot;duration&quot;:1000}" class="dv dv-velocity"></div>
+            <div class="notes">What do motor representations represent? An initially attractive, conservative 
 view would be that they represent bodily configurations and joint displacements, 
 or perhaps sequences of these, only.
 However there is now a significant body of evidence that some motor representations 
@@ -78,12 +571,43 @@ do not specify particular sequences of bodily configurations and joint displacem
 but rather represent outcomes such as the grasping of an egg or the pressing of a switch.  
 These are outcomes which might, on different occasions, involve very different bodily 
 configurations and joint displacements
-(see \citealp{rizzolatti_functional_2010} for a selective review).</div><div class="notes">Such outcomes are abstract relative to bodily configurations and joint displacements 
-in that there are many different ways of achieving them.</div><div class="notes"><t:06761964380275458></t:06761964380275458></div></div><div class="slide"><div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div></div></div></div></section>
+(see \citealp{rizzolatti_functional_2010} for a selective review).
+            </div>
+            <div class="notes">Such outcomes are abstract relative to bodily configurations and joint displacements 
+in that there are many different ways of achieving them.
+            </div>
+            <div class="notes"><t:06689143206458539></t:06689143206458539>
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Consider this case.
+
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide1.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Consider this case.
 An agent fills a glass by holding it in one hand, holding the bottle in the other,
-bringing the two together and pouring from the bottle into the glass.</div><div class="notes">[*demonstrate].</div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide2.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">It’s a familiar idea that motor representations of outcomes resemble intentions in that they can 
+bringing the two together and pouring from the bottle into the glass.
+        </div>
+        <div class="notes">[*demonstrate].
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide2.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">It’s a familiar idea that motor representations of outcomes resemble intentions in that they can 
 trigger processes which are like planning in some respects. 
 These processes are like planning in that they involve starting with representations of relatively 
 distal outcomes and gradually filling in details, resulting in a structure of motor representations 
@@ -91,7 +615,17 @@ that can be hierarchically arranged by the means-end relation \citep{bekkering:2
 grafton:2007_evidence}. 
 Processes triggered by motor representations of outcomes are also planning-like in that they 
 involve selecting means for actions to be performed now in ways that anticipate future actions  
-\citep{jeannerod_motor_2006,zhang:2007_planning,rosenbaum:2012_cognition}.</div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Now in this action of moving a mug, there is a need, even for the single agent, to coordinate the 
+\citep{jeannerod_motor_2006,zhang:2007_planning,rosenbaum:2012_cognition}.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide3.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Now in this action of moving a mug, there is a need, even for the single agent, to coordinate the 
 exchange between her two hands. 
 (If her action is fluid, 
 she may proactively adjust her left hand in advance of the mug’s being lifted by her right hand 
@@ -102,97 +636,817 @@ actions involving each hand are not entirely independent of each other.
 Rather there is a plan-like structure of motor representation for the whole action and motor 
 representations concerning actions involving each hand are components of this larger plan-like structure. 
 It is in part because they are components of a larger plan-like structure that the movements of 
-one hand constrain and are constrained by the movements of the other hand.</div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">But how is any of this relevant to our question about in virtue of what an individuals’ actions can
-have a goal?</div><div class="notes">The idea is that motor representations can ground the directedness of actions to goals,
+one hand constrain and are constrained by the movements of the other hand.
+        </div>
+        <div class="slide">
+          <div data-what="img:eq(0)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div class="notes">But how is any of this relevant to our question about in virtue of what an individuals’ actions can
+have a goal?
+          </div>
+          <div class="notes">The idea is that motor representations can ground the directedness of actions to goals,
 much as intentions can.
 For, like intentions, motor representations represent outcomes, trigger
 planning-like processes which compute means-ends relations, and thereby provide 
-for the coordination of actions.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/individual_joint_diagram/Slide1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes"><t:03855640033725649></t:03855640033725649></div></div></div></div></section><section style="" class="slide"><img src="/img/individual_joint_diagram/Slide2.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes"><t:08002285128459334></t:08002285128459334></div></div></div></div></section><section style="" class="slide"><img src="/img/individual_joint_diagram/Slide3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes"><t:0012716565048322082></t:0012716565048322082></div></div></div></div></section><section style="" class="slide"><img src="/img/individual_joint_diagram/Slide4.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes"><t:039175597950816154></t:039175597950816154></div></div></div></div></section><section style="" class="slide"><img src="/img/individual_joint_diagram/Slide5.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes"><t:033083813870325685></t:033083813870325685></div>
-</div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes show"><p>Conjecture</p><p class="em-above">Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:</p></div><div class="notes"><ol><li>Each represents a single outcome motorically<span class="step-next">, and </span></li><li class="em-above">in each agent this representation triggers planning-like processes</li><li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li><li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li></ol></div><div class="slide"><div class="em-above conjecture-iasmr"><ol><li>Each represents a single outcome motorically<span class="step-next">, and </span></li><li class="em-above">in each agent this representation triggers planning-like processes</li><li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li><li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li></ol></div><div data-what=".conjecture-iasmr li:gt(0), .step-next" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="notes">What do we need?
-(i) Evidence that a single outcome to which all the actions are directed is represented motorically.</div></div><div class="slide"><div data-what=".conjecture-iasmr li:eq(1), .conjecture-iasmr li:eq(0) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">(ii) Evidence that this triggers planning-like processes,</div></div><div class="slide"><div data-what=".conjecture-iasmr li:eq(2), .conjecture-iasmr li:eq(1) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">(iii) where these  concern all the agents' actions,</div></div><div class="slide"><div data-what=".conjecture-iasmr li:eq(3), .conjecture-iasmr li:eq(2) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">and (iv) the existence of such representations facilitates coordination of the agents' actions.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes show"><p>Conjecture</p><p class="em-above">Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:</p></div><div class="notes"><ol><li>Each represents a single outcome motorically<span class="step-next">, and </span></li><li class="em-above">in each agent this representation triggers planning-like processes</li><li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li><li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li></ol></div><div class="s"><div class="em-above conjecture-iasmr"><ol><li>Each represents a single outcome motorically<span class="step-next">, and </span></li><li class="em-above">in each agent this representation triggers planning-like processes</li><li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li><li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li></ol></div><div data-what=".conjecture-iasmr li:gt(0), .step-next" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="notes">What do we need?
-(i) Evidence that a single outcome to which all the actions are directed is represented motorically.</div></div><div class="s"><div data-what=".conjecture-iasmr li:eq(1), .conjecture-iasmr li:eq(0) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">(ii) Evidence that this triggers planning-like processes,</div></div><div class="s"><div data-what=".conjecture-iasmr li:eq(2), .conjecture-iasmr li:eq(1) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">(iii) where these  concern all the agents' actions,</div></div><div class="s"><div data-what=".conjecture-iasmr li:eq(3), .conjecture-iasmr li:eq(2) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">and (iv) the existence of such representations facilitates coordination of the agents' actions.</div></div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Kourtis et al (2014)}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Kourtis et al (2014)}</div>
+for the coordination of actions.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/individual_joint_diagram/Slide1.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes"><t:012339641992002726></t:012339641992002726>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/individual_joint_diagram/Slide2.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes"><t:0668990426696837></t:0668990426696837>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/individual_joint_diagram/Slide3.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes"><t:02297394636552781></t:02297394636552781>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/individual_joint_diagram/Slide4.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes"><t:015845189802348614></t:015845189802348614>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/individual_joint_diagram/Slide5.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes"><t:03709486809093505></t:03709486809093505>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes show">
+          <p>Conjecture</p>
+          <p class="em-above">Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:</p>
+        </div>
+        <div class="notes">
+          <ol>
+            <li>Each represents a single outcome motorically<span class="step-next">, and </span></li>
+            <li class="em-above">in each agent this representation triggers planning-like processes</li>
+            <li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li>
+            <li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li>
+          </ol>
+        </div>
+        <div class="slide">
+          <div class="em-above conjecture-iasmr">
+            <ol>
+              <li>Each represents a single outcome motorically<span class="step-next">, and </span></li>
+              <li class="em-above">in each agent this representation triggers planning-like processes</li>
+              <li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li>
+              <li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li>
+            </ol>
+          </div>
+          <div data-what=".conjecture-iasmr li:gt(0), .step-next" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+          <div class="notes">What do we need?
+(i) Evidence that a single outcome to which all the actions are directed is represented motorically.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".conjecture-iasmr li:eq(1), .conjecture-iasmr li:eq(0) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">(ii) Evidence that this triggers planning-like processes,
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".conjecture-iasmr li:eq(2), .conjecture-iasmr li:eq(1) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">(iii) where these  concern all the agents' actions,
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".conjecture-iasmr li:eq(3), .conjecture-iasmr li:eq(2) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">and (iv) the existence of such representations facilitates coordination of the agents' actions.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes show">
+          <p>Conjecture</p>
+          <p class="em-above">Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:</p>
+        </div>
+        <div class="notes">
+          <ol>
+            <li>Each represents a single outcome motorically<span class="step-next">, and </span></li>
+            <li class="em-above">in each agent this representation triggers planning-like processes</li>
+            <li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li>
+            <li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li>
+          </ol>
+        </div>
+        <div class="s">
+          <div class="em-above conjecture-iasmr">
+            <ol>
+              <li>Each represents a single outcome motorically<span class="step-next">, and </span></li>
+              <li class="em-above">in each agent this representation triggers planning-like processes</li>
+              <li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li>
+              <li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li>
+            </ol>
+          </div>
+          <div data-what=".conjecture-iasmr li:gt(0), .step-next" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+          <div class="notes">What do we need?
+(i) Evidence that a single outcome to which all the actions are directed is represented motorically.
+          </div>
+        </div>
+        <div class="s">
+          <div data-what=".conjecture-iasmr li:eq(1), .conjecture-iasmr li:eq(0) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">(ii) Evidence that this triggers planning-like processes,
+          </div>
+        </div>
+        <div class="s">
+          <div data-what=".conjecture-iasmr li:eq(2), .conjecture-iasmr li:eq(1) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">(iii) where these  concern all the agents' actions,
+          </div>
+        </div>
+        <div class="s">
+          <div data-what=".conjecture-iasmr li:eq(3), .conjecture-iasmr li:eq(2) .step-next" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">and (iv) the existence of such representations facilitates coordination of the agents' actions.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Kourtis et al (2014)}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Kourtis et al (2014)}</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><img src="/img/kourtis_2014_fig1c-joint.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kourtis et al (2014, figure 1c)</p><div class="notes">I think we're a long way from having a large body of converging evidence for this conjecture,
+
+<section style="" class="slide"><img src="/img/kourtis_2014_fig1c-joint.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Kourtis et al (2014, figure 1c)</p>
+        <div class="notes">I think we're a long way from having a large body of converging evidence for this conjecture,
 but there is some that points in this direction.
-One of the most relevant experiments is this one by \citet{kourtis:2014_attention}.</div><div class="notes">They contrasted a simple joint action involving two agents clinking glasses.</div></div></div></div></section><section style="" class="slide"><img src="/img/kourtis_2014_fig1c-bimanual.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kourtis et al (2014, figure 1c)</p></div></div></div></section><section style="" class="slide"><img src="/img/kourtis_2014_fig1c-unimanual.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kourtis et al (2014, figure 1c)</p></div></div></div></section><section style="" class="slide"><img src="/img/kourtis_2014_fig1b.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kourtis et al (2014, figure 1b)</p><div class="notes">Here's the procedure.</div></div></div></div></section><section class="slide"><div style="height:75px;"></div><div class="container_12 figures"><div class="grid_4"><img src="/img/kourtis_2014_fig1c-joint.png" style="width:150px"/><p class="center">joint</p></div><div class="grid_4"><img src="/img/kourtis_2014_fig1c-bimanual.png" style="width:150px"/><p class="center">individual-bimanual</p></div><div class="grid_4"><img src="/img/kourtis_2014_fig1c-unimanual.png" style="width:150px"/><p class="center">individual-unimanual</p></div></div><div class="notes">This is fine but what are we going to measure?</div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kourtis et al (2014, figure 1c)</p><div style="height:300px;"></div><div class="slide"><div data-what=".source, .figures" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p class="center">CNV</p><div class="notes">This is a signal of motor preparation for action which is time-locked to action onset.
+One of the most relevant experiments is this one by \citet{kourtis:2014_attention}.
+        </div>
+        <div class="notes">They contrasted a simple joint action involving two agents clinking glasses.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/kourtis_2014_fig1c-bimanual.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Kourtis et al (2014, figure 1c)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/kourtis_2014_fig1c-unimanual.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Kourtis et al (2014, figure 1c)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/kourtis_2014_fig1b.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Kourtis et al (2014, figure 1b)</p>
+        <div class="notes">Here's the procedure.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="height:75px;"></div>
+  <div class="container_12 figures">
+    <div class="grid_4"><img src="/img/kourtis_2014_fig1c-joint.png" style="width:150px"/>
+      <p class="center">joint</p>
+    </div>
+    <div class="grid_4"><img src="/img/kourtis_2014_fig1c-bimanual.png" style="width:150px"/>
+      <p class="center">individual-bimanual</p>
+    </div>
+    <div class="grid_4"><img src="/img/kourtis_2014_fig1c-unimanual.png" style="width:150px"/>
+      <p class="center">individual-unimanual</p>
+    </div>
+  </div>
+  <div class="notes">This is fine but what are we going to measure?
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <p class="source">Kourtis et al (2014, figure 1c)</p>
+          <div style="height:300px;"></div>
+          <div class="slide">
+            <div data-what=".source, .figures" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <p class="center">CNV</p>
+            <div class="notes">This is a signal of motor preparation for action which is time-locked to action onset.
 In previous research, Kourtis et al show (i) that the CNV occurs when joint action
 partners act, suggesting that when acting together we represent others' actions motorically
 as well as our own \cite{kourtis:2012_predictive};
 and
 (ii) (roughly) a stronger CNV occurs in relation to actions of others one is engaged in joint action than
-in relation to actions of others one is merely observing \cite{kourtis:2010_favoritism}.</div><div class="notes">Kourtis et al hypothesised that in actions like clinking glasses,
+in relation to actions of others one is merely observing \cite{kourtis:2010_favoritism}.
+            </div>
+            <div class="notes">Kourtis et al hypothesised that in actions like clinking glasses,
 A single outcome represented is motorically,
 which triggers planning-like processes
 concerning all the agents' actions.
 This leads to the prediction that the CNV in joint action will resemble that occurring in
-bimanual action more than that occuring in unimanual action.</div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/kourtis_2014_fig4a.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kourtis et al (2014, figure 4a)</p><div class="notes">... and this is exactly what they found.</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Prediction</p><p class="em-above">There are minimally different pairs of cases, one involving joint action
+bimanual action more than that occuring in unimanual action.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/kourtis_2014_fig4a.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Kourtis et al (2014, figure 4a)</p>
+        <div class="notes">... and this is exactly what they found.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>Prediction</p>
+          <p class="em-above">There are minimally different pairs of cases, one involving joint action
 and one involving parallel but merely individual action,
-which differ on whether a collective goal is represented motorically.</p></div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Kourtis et al (2014)}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Kourtis et al (2014)}</div>
+which differ on whether a collective goal is represented motorically.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Kourtis et al (2014)}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Kourtis et al (2014)}</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><img src="/img/della_gatta_design.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">della Gatta et al (submitted)</p><div class="notes">To test this conjecture, Corrado Sinigaglia and I teamed up with
+
+<section style="" class="slide"><img src="/img/della_gatta_design.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">della Gatta et al (submitted)</p>
+        <div class="notes">To test this conjecture, Corrado Sinigaglia and I teamed up with
 Francesco della Gatta, Francesca Garbarini and Marco Rabuffetti. 
 We adapted a bimanual paradigm, the circle-line drawing paradigm, which has been 
-extensively employed for investigating bimanual interference (Franz et al, 1991).</div><div class="notes">When people have to simultaneously perform noncongruent movements, 
+extensively employed for investigating bimanual interference (Franz et al, 1991).
+        </div>
+        <div class="notes">When people have to simultaneously perform noncongruent movements, 
 such as drawing lines with one hand while drawing circles with the 
 other hand, each movement interferes with the other and line trajectories 
 tend to become ovalized. This “ovalization” has been described as a \textbf{bimanual coupling effect}, 
 suggesting that motor representations for drawing circles can affect motor representations 
 for drawing lines (Garbarini et al. 2012; 2013a; 2015a; 2015b; Garbarini and Pia 2013; 
-Piedimonte et al. 2014).</div><div class="notes">In the key conditions of our adapted version of the circle-line drawing paradigm, 
+Piedimonte et al. 2014).
+        </div>
+        <div class="notes">In the key conditions of our adapted version of the circle-line drawing paradigm, 
 participants were asked to unimanually draw circles with their right hands 
 while observing either lines being unimanually drawn by a confederate (Garbarini et al, 2013b; 
-Garbarini et al, 2016).</div><div class="notes">We contrasted a Parallel Action task with a Joint Action task. 
-These tasks differed only in the instructions given.</div><div class="notes">In the Joint Action task participants were instructed to perform the task 
-together with the confederate, as if their two drawing hands gave shape to a single design.</div><div class="notes">In the Parallel Action task, participants were given no such instruction so that 
-they could draw in parallel, observing each other but not acting together.</div><div class="notes">If participants were to follow our instructions, their actions would have 
+Garbarini et al, 2016).
+        </div>
+        <div class="notes">We contrasted a Parallel Action task with a Joint Action task. 
+These tasks differed only in the instructions given.
+        </div>
+        <div class="notes">In the Joint Action task participants were instructed to perform the task 
+together with the confederate, as if their two drawing hands gave shape to a single design.
+        </div>
+        <div class="notes">In the Parallel Action task, participants were given no such instruction so that 
+they could draw in parallel, observing each other but not acting together.
+        </div>
+        <div class="notes">If participants were to follow our instructions, their actions would have 
 the collective goal of drawing a circle and a line in the Joint Action task but not in 
-the Parallel Task.</div><div class="notes">Our conjecture entails that this collective goal could be represented motorically. 
+the Parallel Task.
+        </div>
+        <div class="notes">Our conjecture entails that this collective goal could be represented motorically. 
 Accordingly, we predicted that there should be an interpersonal motor coupling effect. 
 This would result in greater ovalization of the lines drawn in the Joint Action task 
-than in the Parallel Action task ...</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">And that was actually what we found.</div><div class="notes">Our hypothesis is that interpersonal motor coupling may occur when an individual is acting unimanually, providing she is acting jointly with another and not merely acting in parallel. This is because in joint action, but not in parallel action, an individual could represent motorically the collective goal of drawing both a circle and a line even if she is actually only drawing a line. Somewhat as in the case of individual bimanual action, so also in joint action: the motor representations of one hand’s drawing can influence the motor representations of the other hand’s drawing.  One difference in joint action, of course, is that the hands belong to different individuals.</div><img src="/img/della_gatta_fig.png" style=""/><p class="source">della Gatta et al (submitted)</p></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>“Look at the screen in front of you. You will see either circles or lines drawn by
+than in the Parallel Action task ...
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">And that was actually what we found.
+        </div>
+        <div class="notes">Our hypothesis is that interpersonal motor coupling may occur when an individual is acting unimanually, providing she is acting jointly with another and not merely acting in parallel. This is because in joint action, but not in parallel action, an individual could represent motorically the collective goal of drawing both a circle and a line even if she is actually only drawing a line. Somewhat as in the case of individual bimanual action, so also in joint action: the motor representations of one hand’s drawing can influence the motor representations of the other hand’s drawing.  One difference in joint action, of course, is that the hands belong to different individuals.
+        </div><img src="/img/della_gatta_fig.png" style=""/>
+        <p class="source">della Gatta et al (submitted)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>“Look at the screen in front of you. You will see either circles or lines drawn by
 the experimenter [i.e. confederate] sitting in front of you. Look at them while
 drawing either a circle or a line. While drawing, please don’t lift the pen from the
-tablet and try to take advantage of the whole drawing area.”</p><div class="slide"><p class="em-above">“You and Gabriele [name
+tablet and try to take advantage of the whole drawing area.”
+          </p>
+          <div class="slide">
+            <p class="em-above">“You and Gabriele [name
 of confederate] are old friends who have the collective goal of drawing lines and
 circles together in order to produce a single design. Look at the screen in front of
 you. You will see either circles or lines drawn by Gabriele. Look at them while
 drawing either a circle or a line together with him. While drawing, please don’t lift
-your pens from the tablet and try to take advantage of the whole drawing area.”</p></div></div></div></div></div></section>
-<section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><p>Conjecture</p><p class="em-above">Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:</p><div class="em-above conjecture-iasmr"><ol><li>Each represents a single outcome motorically<span class="step-next">, and </span></li><li class="em-above">in each agent this representation triggers planning-like processes</li><li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li><li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li></ol></div><div class="notes">There is more evidence for this conjecture than I have given here,
+your pens from the tablet and try to take advantage of the whole drawing area.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>Conjecture</p>
+        <p class="em-above">Sometimes, when two or more actions involving multiple agents are, or need to be, coordinated:</p>
+        <div class="em-above conjecture-iasmr">
+          <ol>
+            <li>Each represents a single outcome motorically<span class="step-next">, and </span></li>
+            <li class="em-above">in each agent this representation triggers planning-like processes</li>
+            <li class="em-above">concerning all the agents’ actions<span class="step-next">, with the result that</span></li>
+            <li class="em-above"><span class="coordination">coordination of their actions is facilitated.</span></li>
+          </ol>
+        </div>
+        <div class="notes">There is more evidence for this conjecture than I have given here,
 but there is not a lot more converging evidence.
 This is a conjecture that we hope will be tested further 
-rather than something we take to be established already.</div><div class="slide"><div data-what=".coordination" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".coordination" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">What about coordination?
+rather than something we take to be established already.
+        </div>
+        <div class="slide">
+          <div data-what=".coordination" data-cls="transition-04" class="dv dv-addclass"></div>
+          <div data-what=".coordination" data-cls="bkg-invert" class="dv dv-addclass"></div>
+          <div class="notes">What about coordination?
 There is a little bit of direct evidence for this that I won't mention.
 But I do want to take you through why the interagential structure of motor representation
-might in theory result in the agents actions being coordinated.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Earlier we considered what is involved in performing an ordinary, individual action, where an agent 
+might in theory result in the agents actions being coordinated.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide3.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Earlier we considered what is involved in performing an ordinary, individual action, where an agent 
 fills a glass from a bottle, taking one in each hand and moving them in a carefully coordinated way.
 Compare this individual action with the same action performed by two agents as a joint action.
 One agent takes the glass while the other takes the bottle.
-The joint action is like the individual action in several respects.</div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide4.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">First, the goal to which the joint action is directed is the same, namely to move the mug from here to there.</div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide5.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Second, there is a similar coordination problem---the agents’ two hands have to meet.</div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide6.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">And, third, the evidence we have mentioned suggests that in joint action, motor representations and processes occur in each agent much like those that would occur if this agent were performing the whole action alone.</div><div class="notes">Why would this be helpful?  </div><div class="notes">&nbsp;</div><div class="notes">Suppose the agents' planning-like motor processes are similar enough that, in this context, they will reliably produce approximately the same plan-like structures of motor representations.</div><div class="notes">Then having a single planning-like motor process for the whole joint action in each agent means that</div><div class="notes">\begin{enumerate}</div><div class="notes">\item in each agent there is a plan-like structure of motor representations concerning each of the others’ actions,</div><div class="notes">\item each agent's plan-like structure concerning another's actions is approximately the same as any other agent's plan-like structure concerning those actions,</div><div class="notes">\item each agent's plan-like structure concerning her own actions is constrained by her plan-like structures concerning the other’s actions.</div><div class="notes">\end{enumerate}</div><div class="notes">So each agent’s plan-like structure of motor representations concerning her own actions is indirectly constrained by the other agents' plan-like structures concerning their own actions </div><div class="notes">by virtue of being directly constrained by her plan-like structures concerning their actions.</div><div class="notes">In this way it is possible to use ordinary planning-like motor processes to achieve coordination in joint action.</div><div class="notes">What enables the two or more agents' plan-like structures of motor representations to mesh is not that they represent each other's plans but that they processes motorically each other's actions and their own as parts of a single action.</div><div class="notes">&nbsp;</div><div class="notes">  So how does the joint action differ from the corresponding individual action?  </div><div class="notes">There are at least two differences.  </div><div class="notes">First, we now have two plan-like structures of motor representations because in each agent there is a planning-like motor process concerning the whole action.</div><div class="notes">These two structures of motor representations have to be identical or similar enough that the differences don’t matter for the coordination of the agents’ actions---let us abbreviate this by saying that they have to \emph{match}.  </div><div class="notes">The need for matching planning-like structures is not specific to joint action;</div><div class="notes">it is also required where one agent observing another is able to predict her actions thanks to planning-like motor processes concerning the other’s actions (we mentioned evidence that this occurs above). </div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide7.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">A second difference between the joint action and the individual action is this.</div><div class="notes">In joint action there are planning-like motor processes in each agent concerning some actions which she will not eventually perform. </div><div class="notes">There must therefore be something that prevents part but not all of the planning-like motor process leading all the way to action.</div><div class="notes">Exactly how this selective prevention works is an open question.</div><div class="notes">We expect bodily and environmental constraints are often relevant. </div><div class="notes">There may also be differences in how others’ actions are processed motorically \citep[compare][]{novembre:2012_distinguishing}.</div><div class="notes">\footnote{\citep[p.\ 2901]{novembre:2012_distinguishing}: 'in the context of a joint action—the motor control system is particularly sensitive to the identity of the agent (self or other) of a represented action and that (social) contextual information is one means for achieving this distinction'}</div><div class="notes">And inhibition could be involved too \citep[compare][]{sebanz:2006_twin_peaks}.</div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what="img:eq(0)" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">My proposal, then, is this.
+The joint action is like the individual action in several respects.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide4.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">First, the goal to which the joint action is directed is the same, namely to move the mug from here to there.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide5.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Second, there is a similar coordination problem---the agents’ two hands have to meet.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide6.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">And, third, the evidence we have mentioned suggests that in joint action, motor representations and processes occur in each agent much like those that would occur if this agent were performing the whole action alone.</div>
+        <div class="notes">Why would this be helpful?  </div>
+        <div class="notes">&nbsp;</div>
+        <div class="notes">Suppose the agents' planning-like motor processes are similar enough that, in this context, they will reliably produce approximately the same plan-like structures of motor representations.</div>
+        <div class="notes">Then having a single planning-like motor process for the whole joint action in each agent means that</div>
+        <div class="notes">\begin{enumerate}</div>
+        <div class="notes">\item in each agent there is a plan-like structure of motor representations concerning each of the others’ actions,</div>
+        <div class="notes">\item each agent's plan-like structure concerning another's actions is approximately the same as any other agent's plan-like structure concerning those actions,</div>
+        <div class="notes">\item each agent's plan-like structure concerning her own actions is constrained by her plan-like structures concerning the other’s actions.</div>
+        <div class="notes">\end{enumerate}</div>
+        <div class="notes">So each agent’s plan-like structure of motor representations concerning her own actions is indirectly constrained by the other agents' plan-like structures concerning their own actions </div>
+        <div class="notes">by virtue of being directly constrained by her plan-like structures concerning their actions.</div>
+        <div class="notes">In this way it is possible to use ordinary planning-like motor processes to achieve coordination in joint action.</div>
+        <div class="notes">What enables the two or more agents' plan-like structures of motor representations to mesh is not that they represent each other's plans but that they processes motorically each other's actions and their own as parts of a single action.</div>
+        <div class="notes">&nbsp;</div>
+        <div class="notes">  So how does the joint action differ from the corresponding individual action?  </div>
+        <div class="notes">There are at least two differences.  </div>
+        <div class="notes">First, we now have two plan-like structures of motor representations because in each agent there is a planning-like motor process concerning the whole action.</div>
+        <div class="notes">These two structures of motor representations have to be identical or similar enough that the differences don’t matter for the coordination of the agents’ actions---let us abbreviate this by saying that they have to \emph{match}.  </div>
+        <div class="notes">The need for matching planning-like structures is not specific to joint action;</div>
+        <div class="notes">it is also required where one agent observing another is able to predict her actions thanks to planning-like motor processes concerning the other’s actions (we mentioned evidence that this occurs above). </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide7.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">A second difference between the joint action and the individual action is this.</div>
+        <div class="notes">In joint action there are planning-like motor processes in each agent concerning some actions which she will not eventually perform. </div>
+        <div class="notes">There must therefore be something that prevents part but not all of the planning-like motor process leading all the way to action.</div>
+        <div class="notes">Exactly how this selective prevention works is an open question.</div>
+        <div class="notes">We expect bodily and environmental constraints are often relevant. </div>
+        <div class="notes">There may also be differences in how others’ actions are processed motorically \citep[compare][]{novembre:2012_distinguishing}.</div>
+        <div class="notes">\footnote{\citep[p.\ 2901]{novembre:2012_distinguishing}: 'in the context of a joint action—the motor control system is particularly sensitive to the identity of the agent (self or other) of a represented action and that (social) contextual information is one means for achieving this distinction'}</div>
+        <div class="notes">And inhibition could be involved too \citep[compare][]{sebanz:2006_twin_peaks}.</div>
+        <div class="slide">
+          <div data-what="img:eq(0)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div data-what="img:eq(0)" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">My proposal, then, is this.
 In both practical reasoning and motorically, sometimes agents are able to achieve coordination
  for joint action not by representing each others’ plans but 
- by treating each other's actions and their own as if they were parts of a single action.</div><div class="notes">So perhaps joint action is not always only a matter of intention, knowledge or commitment: 
-perhaps sometimes joint action constitutively involves motor representation.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">collective goals</p><div class="notes">So far this has all been about coordination.
-But our question was about collective goals.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/prosecco_accident.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><svg width="665px" height="445px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><filter id="glow-large" width="3" height="3" x="-.5" y="-.5"><feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="15"></feGaussianBlur><feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="10"></feGaussianBlur><feGaussianBlur result="blurOut3" in="SourceGraphic" stddeviation="5"></feGaussianBlur><femerge><femergenode in="blurOut"></femergenode><femergenode in="blurOut2"></femergenode><femergenode in="blurOut3"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter><filter id="glow-small" width="1.5" height="1.5" x="-.25" y="-.25"><feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="4"></feGaussianBlur><feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="4"></feGaussianBlur><femerge><femergenode in="blurOut"></femergenode><femergenode in="blurOut2"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter><filter id="dropGlowBlack" width="1.5" height="1.5" x="-.25" y="-.25"><fegaussianblur in="SourceAlpha" stdDeviation="10" result="blur"></fegaussianblur><femerge><femergenode in="blur"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter><g id="action-ellipse"><ellipse cx="0" cy="0" rx="40" ry="40" fill="#000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></ellipse></g><g id="action-ellipse-neon"><ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></ellipse><ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></ellipse><ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse></g></defs><g transform="translate(0.5,0.5)"><g class="action-light"><ellipse cx="42" cy="42" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(12,27)"><switch><foreignobject pointer-events="all" width="59" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">light</font></div></div></foreignobject><text x="30" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="action-smoke"><ellipse cx="132" cy="402" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(91,387)"><switch><foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">smoke</font></div></div></foreignobject><text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="joint-action"><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></rect><g class="neon-rect hide"><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></rect><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></rect></g><rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></rect><g class="action drop"><use xlink:href="#action-ellipse" x="87" y="132"></use><g class="neon-ellipse hide"><use xlink:href="#action-ellipse-neon" x="87" y="132"></use></g><g transform="translate(51,117)"><switch><foreignobject pointer-events="all" width="61" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">drop</font></div></div></foreignobject><text x="31" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="action throw"><use xlink:href="#action-ellipse" x="82" y="242"></use><g class="neon-ellipse hide"><use xlink:href="#action-ellipse-neon" x="82" y="242"></use></g><g transform="translate(44,227)"><switch><foreignobject pointer-events="all" width="75" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">throw</font></div></div></foreignobject><text x="38" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="action discard"><use xlink:href="#action-ellipse" x="112" y="312"></use><g class="neon-ellipse hide"><use xlink:href="#action-ellipse-neon" x="112" y="312"></use></g><g transform="translate(68,297)"><switch><foreignobject pointer-events="all" width="88" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">discard</font></div></div></foreignobject><text x="44" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g></g><g class="outcome amuse"><ellipse cx="562" cy="92" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(521,77)"><switch><foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">amuse</font></div></div></foreignobject><text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="outcome scare"><ellipse cx="562" cy="272" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(527,257)"><switch><foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">scare</font></div></div></foreignobject><text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="outcome freakout"><ellipse cx="522" cy="362" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse><g transform="translate(483,332)"><switch><foreignobject pointer-events="all" width="77" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">freak out</font></div></div></foreignobject><text x="39" y="43" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="outcome block"><g class="block-glow"><ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse><ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse></g><ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" class="no-glow"></ellipse><g transform="translate(547,167)"><switch><foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">block</font></div></div></foreignobject><text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text></switch></g></g><g class="explain-collective-directedness"><g class="the-box"><rect x="242" y="262" width="210" height="60" rx="9" ry="9" fill="#ffffff" stroke="#ffffff" stroke-width="3" transform="rotate(-15,347,292)" pointer-events="none"></rect><g transform="translate(252,262)rotate(-15,94.5,30)"><switch><foreignobject pointer-events="all" width="189" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 189px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;" class="invert">shared intention<br/><span class="iasmr hide">or i.a.s.m.r.</span></div></div></foreignobject></switch></g></g><g class="coordinates"><path d="M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path><path d="M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path><g transform="translate(199,155)"><switch><foreignobject pointer-events="all" width="126" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">coordinates</font></div></div></foreignobject><text x="63" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text></switch></g></g><g class="represents"><path d="M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path><path d="M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path><g transform="translate(374,167)rotate(-12,58,12)"><switch><foreignobject pointer-events="all" width="116" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">represents</font></div></div></foreignobject><text x="58" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text></switch></g></g></g></g></svg><div class="slide"><div data-what=".iasmr" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".iasmr" data-cls="noinvert" class="dv dv-addclass"></div></div><div class="notes">Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
-Then, on many accounts of shared intention,</div><div class="notes">the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass; 
-or each of them being in some other state which picks out this outcome.</div><div class="notes">The shared intention also provides for the coordination of their actions (so that, for example, 
+ by treating each other's actions and their own as if they were parts of a single action.
+          </div>
+          <div class="notes">So perhaps joint action is not always only a matter of intention, knowledge or commitment: 
+perhaps sometimes joint action constitutively involves motor representation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">collective goals</p>
+          <div class="notes">So far this has all been about coordination.
+But our question was about collective goals.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/prosecco_accident.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <svg width="665px" height="445px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+          <defs>
+            <filter id="glow-large" width="3" height="3" x="-.5" y="-.5">
+              <feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="15"></feGaussianBlur>
+              <feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="10"></feGaussianBlur>
+              <feGaussianBlur result="blurOut3" in="SourceGraphic" stddeviation="5"></feGaussianBlur>
+              <femerge>
+                <femergenode in="blurOut"></femergenode>
+                <femergenode in="blurOut2"></femergenode>
+                <femergenode in="blurOut3"></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+              </femerge>
+            </filter>
+            <filter id="glow-small" width="1.5" height="1.5" x="-.25" y="-.25">
+              <feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="4"></feGaussianBlur>
+              <feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="4"></feGaussianBlur>
+              <femerge>
+                <femergenode in="blurOut"></femergenode>
+                <femergenode in="blurOut2"></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+              </femerge>
+            </filter>
+            <filter id="dropGlowBlack" width="1.5" height="1.5" x="-.25" y="-.25">
+              <fegaussianblur in="SourceAlpha" stdDeviation="10" result="blur"></fegaussianblur>
+              <femerge>
+                <femergenode in="blur"></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+              </femerge>
+            </filter>
+            <g id="action-ellipse">
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="#000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></ellipse>
+            </g>
+            <g id="action-ellipse-neon">
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></ellipse>
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></ellipse>
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+            </g>
+          </defs>
+          <g transform="translate(0.5,0.5)">
+            <g class="action-light">
+              <ellipse cx="42" cy="42" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(12,27)">
+                <switch>
+                  <foreignobject pointer-events="all" width="59" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">light</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="30" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="action-smoke">
+              <ellipse cx="132" cy="402" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(91,387)">
+                <switch>
+                  <foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">smoke</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="joint-action">
+              <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></rect>
+              <g class="neon-rect hide">
+                <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></rect>
+                <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></rect>
+              </g>
+              <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></rect>
+              <g class="action drop">
+                <use xlink:href="#action-ellipse" x="87" y="132"></use>
+                <g class="neon-ellipse hide">
+                  <use xlink:href="#action-ellipse-neon" x="87" y="132"></use>
+                </g>
+                <g transform="translate(51,117)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="61" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">drop</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="31" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="action throw">
+                <use xlink:href="#action-ellipse" x="82" y="242"></use>
+                <g class="neon-ellipse hide">
+                  <use xlink:href="#action-ellipse-neon" x="82" y="242"></use>
+                </g>
+                <g transform="translate(44,227)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="75" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">throw</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="38" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="action discard">
+                <use xlink:href="#action-ellipse" x="112" y="312"></use>
+                <g class="neon-ellipse hide">
+                  <use xlink:href="#action-ellipse-neon" x="112" y="312"></use>
+                </g>
+                <g transform="translate(68,297)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="88" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">discard</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="44" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+            </g>
+            <g class="outcome amuse">
+              <ellipse cx="562" cy="92" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(521,77)">
+                <switch>
+                  <foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">amuse</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="outcome scare">
+              <ellipse cx="562" cy="272" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(527,257)">
+                <switch>
+                  <foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">scare</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="outcome freakout">
+              <ellipse cx="522" cy="362" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(483,332)">
+                <switch>
+                  <foreignobject pointer-events="all" width="77" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">freak out</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="39" y="43" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="outcome block">
+              <g class="block-glow">
+                <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse>
+                <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse>
+              </g>
+              <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" class="no-glow"></ellipse>
+              <g transform="translate(547,167)">
+                <switch>
+                  <foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">block</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="explain-collective-directedness">
+              <g class="the-box">
+                <rect x="242" y="262" width="210" height="60" rx="9" ry="9" fill="#ffffff" stroke="#ffffff" stroke-width="3" transform="rotate(-15,347,292)" pointer-events="none"></rect>
+                <g transform="translate(252,262)rotate(-15,94.5,30)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="189" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 189px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;" class="invert">shared intention<br/><span class="iasmr hide">or i.a.s.m.r.</span></div>
+                      </div>
+                    </foreignobject>
+                  </switch>
+                </g>
+              </g>
+              <g class="coordinates">
+                <path d="M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
+                <path d="M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
+                <g transform="translate(199,155)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="126" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">coordinates</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="63" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="represents">
+                <path d="M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path>
+                <path d="M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path>
+                <g transform="translate(374,167)rotate(-12,58,12)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="116" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">represents</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="58" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <div class="slide">
+          <div data-what=".iasmr" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what=".iasmr" data-cls="noinvert" class="dv dv-addclass"></div>
+        </div>
+        <div class="notes">Suppose Ayesha and Beatrice have a shared intention that they fill the glass.
+Then, on many accounts of shared intention,
+        </div>
+        <div class="notes">the shared intention involves each of them intending that they, Ayesha and Beatrice, fill the glass; 
+or each of them being in some other state which picks out this outcome.
+        </div>
+        <div class="notes">The shared intention also provides for the coordination of their actions (so that, for example, 
 Beatrice doesn't start pouring until Ayesha is holding the glass under the bottle).  And 
 coordination of this type would normally facilitate occurrences of the type of outcome intended. 
 In this way, invoking a notion of shared intention provides one answer to our question about what 
-it is for some actions to be collectively directed to an outcome.</div><div class="notes">What we've just seen is that a parallel answer can be given by appeal to i.a.s.m.r. ...</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="grid_6 words left-half"><div style="padding-right:1em;"> <p>Joint action:</p><p class="ja-df1">An event with two or more agents.</p><div class="notes">We’ve been considering the idea that we can extend our defintion of joint to include the notion 
-of a collective goal ...</div><p class="ja-df2 hide em-above">An event with two or more agents where the actions have a collective goal.</p><p class="ja-df3 hide em-above">An event with two or more agents where the actions have a collective goal
-in virtue of an interagential structure of motor representations.</p><div class="slide"><div data-what=".ja-df1" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div><div data-what=".ja-df2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".ja-df2" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div><div data-what=".ja-df3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Against this idea we might offer two lines of objection, based on the idea 
+it is for some actions to be collectively directed to an outcome.
+        </div>
+        <div class="notes">What we've just seen is that a parallel answer can be given by appeal to i.a.s.m.r. ...
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="grid_6 words left-half">
+          <div style="padding-right:1em;"> 
+            <p>Joint action:</p>
+            <p class="ja-df1">An event with two or more agents.</p>
+            <div class="notes">We’ve been considering the idea that we can extend our defintion of joint to include the notion 
+of a collective goal ...
+            </div>
+            <p class="ja-df2 hide em-above">An event with two or more agents where the actions have a collective goal.</p>
+            <p class="ja-df3 hide em-above">An event with two or more agents where the actions have a collective goal
+in virtue of an interagential structure of motor representations.
+            </p>
+            <div class="slide">
+              <div data-what=".ja-df1" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
+              <div data-what=".ja-df2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".ja-df2" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
+              <div data-what=".ja-df3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+              <div class="notes">Against this idea we might offer two lines of objection, based on the idea 
 that we want an account of joint action to distinguish genuine joint actions
-from actions that are parallel but merely individual.</div><div class="notes">The first line of objection is that it is too narrow.
+from actions that are parallel but merely individual.
+              </div>
+              <div class="notes">The first line of objection is that it is too narrow.
 There are surely joint actions which don't have collective goals
-in virtue of any interagential structure of motor representations.</div><div class="notes">The second line of objection is that it fails to make good on the idea
+in virtue of any interagential structure of motor representations.
+              </div>
+              <div class="notes">The second line of objection is that it fails to make good on the idea
 that cooperation is a feature of joint action.
 An interagential structure
 of motor representations appears to facilitate coordination; but 
-it does not obviously matter for coopertion.  Or does it?</div></div></div></div></div></div></div></section></div></body></html>
+it does not obviously matter for coopertion.  Or does it?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>
