@@ -1,0 +1,619 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>The Behaviour Reading Demon | Philosophical Psychology</title>
+    <meta name="description" content="The behaviour reading demon (a counterpart of Laplace’s demon) has unlimited cognitive capacities,
+perfect knowledge of history and can conceptualise behaviours in any way imaginable. Although blind to
+mental states, it can predict others’ future behaviours at least as well as any mindreader."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="behaviour_reading_demon" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">The Behaviour Reading Demon</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide"><img src="/img/hare_2001_fig1.png" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Hare et al (2001, figure 1)</p>
+        <div class="notes">Recall this experiment.
+Could we explain success without appeal to the idea that chimpanzees
+can ascribe knowledge and ignorance?
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="container_12">
+          <div class="grid_9">
+            <p class="handout notes show"><span>‘an intelligent chimpanzee could simply use the  </span><span class="behavioural-abstraction">behavioural abstraction</span><span> […]:  ‘Joe was present and oriented; he will probably go after the food. </span><span>Mary was not present; she probably won’t.’’</span></p>
+            <div class="notes handout ctd">\citep{Povinelli:2003bg}</div>
+            <p class="right grey-text">Povinelli and Vonk (2003)</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".behavioural-abstraction" data-cls="transition-04" class="dv dv-addclass"></div>
+          <div data-what=".behavioural-abstraction" data-cls="bkg-invert" class="dv dv-addclass"></div>
+          <div class="notes">What’s that?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout notes">\begin{quote}
+For any food (x) and agent (y), if any of the following do not hold:
+
+(i) the agent (y) was present when the food (x) was placed,
+
+(ii) the agent (y) was oriented to the food (x) when it was placed, 
+
+and:
+
+(iii) the agent (y) can go after the food (x) 
+
+then probably not:
+
+(iv) the agent (y) will go after the food (x).
+
+Also, if all of (i)–(iii) do hold, then probably (iv).
+\end{quote}
+          </div>
+          <p class="em-above">For any food (x) and agent (y), if any of the following do not hold:</p>
+          <p class="em-above indent">(i) the agent (y) was present when the food (x) was placed,</p>
+          <p class="em-above indent">(ii) the agent (y) was oriented to the food (x) <span class="when-placed">when it was placed</span><span>, </span></p>
+          <p class="em-above">and:</p>
+          <p class="em-above indent">(iii) the agent (y) can go after the food (x) </p>
+          <p class="em-above">then probably <span class="not">not</span><span>: </span></p>
+          <p class="em-above indent">(iv) the agent (y) will go after the food (x).</p>
+          <div class="slide">
+            <div data-what=".when-placed" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".when-placed" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Doesn’t work as it stands because in the ‘misinformed’ condition
+the dominant was oriented to the food when it was first placed
+(just not when it was subsequently moved).
+            </div>
+            <div class="notes">Right way to formulate this is tricky: should we say last placed?
+Or should we say when the food was last placed at its current location,
+the dominant was oriented to the food there?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".when-placed" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".not" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".not" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Predicting a non-behaviour is particularly challenging.
+            </div>
+            <div class="notes">There are some conditions which could trump this; for example,
+if the food is in a place where food is has recently been found, or if the food 
+is particularly smelly or noisy, or if a trail of grapes 
+leads to the food ...
+            </div>
+            <div class="notes">So is the hypothesis that chimps ignore all such further factors,
+or do we think that this claim should be elaborated?
+            </div>
+          </div>
+          <div class="slide">
+            <p class="em-above">Also, if all of (i)–(iii) do hold, then probably (iv).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="notes handout show">‘Don't go after food if a dominant who is present has oriented towards it’
+          </p>
+          <div class="notes handout ctd">\citep[p.~735]{Penn:2007ey}</div>
+          <p class="right grey-text">Penn and Povinelli (2007, 735)</p>
+          <div class="notes">By shifting from a prediction of the dominant’s behaviour to a 
+restriction on how the subordinate behaves, a lot of the problems vanish.
+But this clearly not an interesting proposal: to see why, we need to think
+about scientific methodology (predicting vs retrodicting the order in which
+people entered the room).
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>The ‘Logical Problem’ ...</p>
+          <div class="notes">Maybe it’s not necessary that we actually construct detailed accounts of how each task
+is solved using behavioural rules.  Following Povinelli and colleagues, Lurz has argued
+that the sorts of experiments we have been considering are in principle incapable of 
+eliminating a hypothesis about behaviour reading ...
+          </div>
+          <div class="slide">
+            <p class="em-above notes handout show">‘since mental state attribution in [nonhuman] animals will (if extant) be based on observable 
+features of other agents’ behaviors and environment ... every mindreading hypothesis has ... 
+a complementary behavior-reading hypothesis.
+            </p>
+            <div class="notes handout ctd">Such a hypothesis proposes that the animal relies upon certain behavioral/environmental cues 
+to predict 
+[... the behaviour which], on the mindreading hypothesis, 
+the animal is hypothesized to use as its observable grounds for attributing the 
+mental state in question.’
+            </div>
+            <div class="notes handout ctd">\citep[p.~26]{lurz:2011_mindreading}; also \citep[p.~453]{lurz:2011_how}</div>
+            <p class="right grey-text">Lurz (2011, 26)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="em-above">1. Ascriptions of mental states ultimately depend on information about behaviours</p>
+          <p class="indent">- information triggering ascription</p>
+          <p class="indent">- predictions derived from ascription</p>
+          <div class="slide">
+            <p class="em-above">2. In principle, anything you can predict by ascribing a mental state you could have predicted just by tracking behaviours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Is there an experimental solution to the ‘Logical Problem’?</p>
+          <p class="center em-above">Lurz and Karchun (2011) : yes ...</p>
+          <div class="slide">
+            <p class="em-above notes handout show">‘Behavior-reading animals can appeal only to ...
+reality-based, mind-independent facts, such as facts about agents’ past behavior or 
+their current line of gaze to objects in the environment.
+            </p>
+            <p class="notes handout show">‘Mindreading animals, in contrast, can appeal to the subjective ways environmental 
+objects perceptually appear to agents to predict their behavior.’
+            </p>
+            <div class="notes handout ctd">\citep[p.~469]{lurz:2011_how}</div>
+            <div class="notes handout">Experimental implementations: e.g. \citep{karg:2015_goggles}
+            </div>
+            <p class="right grey-text">Lurz and Krachun (2011, p. 469)</p>
+            <div class="notes">E.g. seeing an insect or a piece of fruit as an insect or piece of fruit
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/lurz_krachun_2011_fig1.png" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Lurz & Krachun 2011, figure 1</p>
+        <div class="notes">There’s a competitor, two graps and some size-distorting glass ... can 
+Subject predict that Competitor will choose not the largest grape but
+the one which appears largest?
+        </div>
+        <div class="notes">‘The objective here is to test whether chimpanzees are capable of anticipating (as evidenced by their
+looking behavior) the actions of a human competitor by understanding how an illusory stimulus (grape)
+looks to the human.’ \citep{lurz:2011_how}
+        </div>
+        <div class="notes">‘the competitor is absent when the grapes are placed inside the containers (as in the pretest stage),
+he does not observe the change in apparent size of the grapes as they are placed inside the
+containers, as the chimpanzee does. After the grapes are placed, the competitor enters the room, sits
+at the table, looks at each grape through the sides of the containers’
+\citep[p.~476]{lurz:2011_how}
+        </div>
+        <div class="notes">‘dependent measure is anticipatory looking’.  
+In this case, the subjects (chimps) know which grape is which and how they appear.
+Also a Krachun-like competitive version (in this case, the chimps have to
+infer which is larger from the failed reach of the human competitor)...
+        </div>
+        <div class="notes">Also a Krachun-like reaching measure:
+‘After the competitor has acted in one of these two ways toward the container with the large grape,
+the experimenter places opaque coverings completely over each container and moves the platform toward
+the chimpanzee. Once the platform is in place before the chimpanzee, the chimpanzee is allowed to
+choose one of the two containers (by pointing to it through a finger hole). Since the containers are
+covered, the chimpanzee cannot make its choice by seeing the grape or grapes inside the containers.
+Rather, to make its preferred choice (which we assume will be the remaining small grape in
+competitor-first success trials and the large grape in competitor-first failure trials) the chimpanzee
+must attend to the selection process of the competitor.’
+\citep[p.~475]{lurz:2011_how}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">The Lurz and Krachun proposal looks really good because it identifies a gap
+in the argument for the logical problem ...
+          </div>
+          <p>The logical problem</p>
+          <p class="em-above">1. Ascriptions of mental states ultimately depend on information about behaviours <span class="step2a hide">and objects</span></p>
+          <p class="indent">- information triggering ascription</p>
+          <p class="indent">- predictions derived from ascription</p>
+          <p class="indent"><span class="step2b hide">- ways objects appear</span></p>
+          <p class="em-above">2. In principle, anything you can predict by ascribing a mental state you could have predicted just by tracking behaviours.</p>
+          <div class="slide">
+            <div data-what=".step2a" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div data-what=".step2a, .step2b" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".step2a, .step2b" data-cls="bkg-pink" class="dv dv-addclass"></div>
+            <div data-what=".step2b" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">Progress ... but does this enable us to solve the logical problem?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="step1">‘Behavior-reading animals can appeal only to ...
+reality-based, mind-independent facts, such as facts about agents’ past behavior or 
+their current line of gaze to objects in the environment.
+          </p>
+          <p class="step1">‘Mindreading animals, in contrast, can appeal to the subjective ways environmental 
+objects perceptually appear to agents to predict their behavior.’
+          </p>
+          <p class="step1 right grey-text">Lurz and Krachun (2011, p. 469)</p>
+          <div class="notes">E.g. seeing an insect or a piece of fruit as an insect or piece of fruit
+          </div>
+          <div class="slide">
+            <div data-what=".step1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <p class="em-above">But: objects have appearance properties, and provide affordances, which are independent of any particular mind. </p>
+            <div class="notes">Camoflauge ain’t mindreading.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Return to the question; this is for discussion ...
+          </div>
+          <p class="center notes show">Do goggles solve the ‘Logical Problem’?</p>
+          <p class="em-above notes handout show">‘“self-informed” belief induction variables [... are those] that, if the participant is
+capable of mentalizing, he or she knows only through extrapolation from her own experience to be
+indicative of what an agent can or cannot see and, therefore, does or does not believe’
+          </p>
+          <div class="notes handout ctd">\citep[p.~139]{heyes:2014_submentalizing}</div>
+          <p class="right grey-text">Heyes, 2014 p. 139</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/karg_2015_fig4.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Karg et al, 2015 figure 4 (Experiment 2)</p>
+        <div class="notes">Experiment 2: chimp attempts to steal from human, 
+who will remove food if she sees the chimp approach.
+One cover is transparent, the other opaque. But actually when they are down,
+both look opaque from the chimp’s point of view.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/karg_2015_fig5.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Karg et al, 2015 figure 5 (Experiment 2)</p>
+        <div class="notes">(This is just a photo of the apparatus, with covers up (top) and down (bottom).)</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/karg_2015_fig6.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Karg et al, 2015 figure 5 (Experiment 2)</p>
+        <div class="notes">‘Mean percentage of trials with the choice of the opaque box across the three conditions. In the
+transparent condition, one lid was opaque, the other transparent. In the screen condition, one lid
+was a screen, the other opaque. The control was like the transparent condition, but without the
+experimenter's presence at the time of choice. Error bars indicate 95% CI. The horizontal line
+indicates chance level (50%). *P < 0.05; **P < 0.01’
+\citep{karg:2015_goggles}.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Return to the question; this is for discussion ...
+          </div>
+          <p class="center notes show">Do goggles solve the ‘Logical Problem’?</p>
+          <p class="em-above notes show">‘“self-informed” belief induction variables [... are those] that, if the participant is
+capable of mentalizing, he or she knows only through extrapolation from her own experience to be
+indicative of what an agent can or cannot see and, therefore, does or does not believe’
+          </p>
+          <div class="notes ctd">\citep[p.~139]{heyes:2014_submentalizing}</div>
+          <p class="right grey-text">Heyes, 2014 p. 139</p>
+          <div class="notes">I think: what you ‘project’ from your own experience could be merely knowledge
+of affordances (in Bugnyar et al) and appearances (in Karg et al).  There’s no special
+reason to think that what you project is mental states rather than a better understanding
+of objects and their properties.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center notes show">Could altercentric interference effects solve the ‘Logical Problem’?</p>
+          <div class="notes">[Not planning to talk about this at any length, just curious what they say.]
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="clear"></div>
+    <div class="words">
+      <p class="center">What does the ‘Logical Problem’ show?</p>
+    </div>
+    <div class="container_12"></div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p>Lurz, Krachun et al</p>
+        <p class="em-above">The ‘Logical Problem’ can be overcome with experimental design.
+        </p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half hide">
+      <div style="padding-left:1em;">
+        <div class="slide">
+          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <p>Halina, Heyes (?), et al</p>
+          <p class="em-above">The ‘Logical Problem’ is a logical problem.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="em-above">Its existence shows that these are the wrong experiments whereas those are the right ones.
+        </p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <div class="step3 hide">
+          <p class="em-above">Its existence shows that being able to track mental states 
+does not logically entail
+being able to to represent mental states.
+          </p>
+          <div class="notes">I’m not here arguing for one side or the other, merely pointing out that
+there are two sides.
+But in what follows I will assume that the ‘Logical Problem’ is a logical problem.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="clear"></div>
+  <div class="container_12 em-above">
+    <div class="grid_9">
+      <p><span>‘because behavioural strategies are so unconstrained ...</span><span>it is very difficult indeed, </span><span class="perhaps-impossible">perhaps impossible</span><span>, to design experiments </span><span>that could show that animals are mindreading rather than behaviour reading.’</span></p>
+      <div class="handout notes">‘because behavioural strategies are so unconstrained ...
+it is very difficult indeed, perhaps impossible, to design experiments 
+that could show that animals are mindreading rather than behaviour reading.’
+      </div>
+      <div class="handout notes ctd">\citep[p.~322]{heyes:2014_animal}</div>
+      <p class="right grey-text">Heyes, 2015 322</p>
+    </div>
+    <div class="grid_3">
+      <p class="right"><img src="/img/celia_heyes.png" style="width:150px"/>
+      </p>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="slide">
+    <div class="container_12 em-above">
+      <div class="grid_9">
+        <p class="notes handout show">‘the logical problem ... is not solvable ...
+any experiment aimed at testing mindreading will fail to reject the hypothesis that subjects are
+reasoning in terms of observable regularities alone.
+... the logical problem is a general skeptical problem’
+        </p>
+        <div class="notes handout ctd">\citep[pp.~483--5]{halina:2015_there}</div>
+        <p class="right grey-text">Halina, 2015 pp. 483-5</p>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

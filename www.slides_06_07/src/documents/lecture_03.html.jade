@@ -1,0 +1,262 @@
+---
+layout: 'default2'
+title: 'Lecture 03: On the Motor Theory of Speech Perception'
+subtitle: ''
+weburl: ''
+units: []
+lecture_date: '2016/10/20'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('joint_action01')
+
++title_slide({document:document, images:images})
+
++insert_unit({unit:'question_experience_action', title_slide:false, images:images, handout:true})
++insert_unit({unit:'categorical_perception_speech', title_slide:true, images:images, handout:true})
+
+
+
+//- TODO: relation to experience (mention the Paulesu design)
+//- TODO: relation to motor representation (metion TMS studies, etc)
+//- Could also link this to the ‘two hypotheses’ rather than going
+//- via the goal ascription story.
+
+//-
+  A.
+  [1] The double life of motor representation
+  [2] creates a puzzle : what are those motor representations doing there
+  [3] or two: how is it that they have a content-respecting influence on judgement?
+  
+  Actually: after [2], answer with: they facilitate judgements about goals.
+  Question: How is it that motor representations concerning the goals of observed actions sometimes influence thoughts about them?
+  Answer: Teleological stance ...
+  Then Puzzle 2: how is it that they have a content-respecting influence on judgement?
+  I.e. teleological stance realised motorically and influencing judgements
+  raises question about the connections!
+  
+  B.
+  On the first puzzle: think about pure goal ascription
+  [1] Marr’s distinction between levels
+  [2] The teleological stance as a computational description of pure goal ascription
+  [3] The R() problem
+  [4] Implementation with motor representations and processes?  This would solve puzzle A.2
+  [5] But the directedness can’t be represented
+  [6] Solution: functional goal ascription; capturing the directedness without representing it.
+  
+  C. 
+  Approach the second puzzle (in A.3) by considering speech perception (speech is action).
+  Speech perception is
+    [1] categorical,
+    [2] where the objects of categorical perception are articulatory gestures,
+      --- emphasise this (it's analogous to the point about bodily configurations and joint
+      displacements vs outcomes: see Galantucci p. 364: ‘In the 1967 version of the theory,
+      the motoric objects were understood by Liberman and colleagues as invariant motor
+      commands to muscles that moved anatomical structures—that is, the individual vocal tract
+      articulators. However, this idea faced two challenges. First, there was evidence for
+      considerable context sensitivity in the muscle activity driving the articulators’
+      movements and, by implication, in the motor commands that underlay that activity (e.g.,
+      MacNeilage, 1970). Second, three related theoretical developments made the idea that the
+      phonetic invariances were to be found in motor commands to ana- tomical structures ever
+      more implausible. Turvey (1977) developed a theory of action in which the motor system
+      was to be understood in terms of functional units—called coordinative structures (cf.
+      easton, 1972)—rather than anatomical structures. Next, Fowler, Rubin, Remez, and Turvey
+      (1980) extended Turvey’s theory to the domain of speech production. Finally, Browman and
+      Goldstein’s articulatory phonology (Browman & Goldstein, 1986) identified coordinative
+      structures as fundamental linguistic units that they called phonetic gestures (see
+      note 2).’)
+    [3] and the objects are represented motorically.
+    [4] What is experienced? (a) Different outcome -> different experience; (b) this does not 
+    straightforwardly imply that the outcome is experienced, still less that the event 
+    is experienced as directed to the outcome.
+    [5] Two Hypotheses
+    [6] Does motor representation affect experience generally, or only in the case of speech?
+    Consider the Repp and Knoblich studies from paper2
+    [7] How to distinguish the Two Hypotheses experimentally.
+    
+  D. 
+  Conclusion: The double life of motor representation creates two puzzles.
+  A.2: Motor representation appears to underpin functional pure goal ascription,
+  and so may be foundational for social cognition [see conclusions of Jan Coello chapter].
+  A.3: If the Direct Hypothesis is right, motor representation may play a key role
+  in our ability think about actions, much as experience of physical objects matters for 
+  being able think about them.
+  But we don’t know whether the Direct Hypothesis is true. [see conclusions of paper2]
+  
+
++insert_unit({unit:'double_life_motor_representation', title_slide:true, images:images, handout:true})
+
++slide_middle
+  p.center Speech Perception Reprise
+  .notes: :t
+    Recall two facts mentioned in discucssing speech perception ...
+  .slide
+    p.em-above Speech and auditory perception involve distinct processes.
+    .notes: :t
+      This makes sense given that, as \citet{dausilio:2009_motor} argue,
+      motor processes facilitate the identification of articulatory gestures.
+      After all, motor processes and auditory processes are likely distinct.
+  .slide
+    p.em-above The objects of speech perception are articulatory gestures.
+    .notes: :t
+      This also makese sense: given that there’s a link between observing an
+      articulatory gesture and representing it motorically, it seems that the 
+      motor representation of the articulatory gesture could be what speech
+      perception aims at.
+    .notes: :t
+      (I’m ignoring a lot of complexity about how, given enough context,
+      motor impairments can have very little impact on speech perception.
+      Maybe not all speech perception depends on recovering articulatory gestures,
+      and maybe there are multiple kinds of process that enable us to comprehend
+      what someone is saying.)
+
++slide_middle
+  .notes: :t
+    Also recall the question
+  p.notes.show How could the objects of categorical perception of speech be articulatory gestures?
+  .notes: :t
+    The puzzle here is simple.
+    Categorical perception of speech happens raidly, and goal-directed actions
+    are complex.  How can something so complex be computed so quickly?
+  .notes: :t
+    Put it another way: how is it that the articulatory gesture is identified?
+  p.em-above.notes.handout.show: :t
+    ‘Humans [can] understand speech delivered at a rate of 20 to 30 ... phonemes per second’
+  .notes.handout.ctd  \citep{Devlin:2006qg}
+  p.right.grey-text Devlin (2006)
+  .notes: :t
+    Nothing we’ve yet covered enables us to answer this question.
+
+//- Do I need to go via the Teleological Stance at all?
+//- DO NEED the ‘pure goal ascription idea’
++insert_unit({unit:'teleological_stance', title_slide:true, images:images, handout:true})
+
+//- The Motor Theory of Goal Ascription
++insert_unit({unit:'motor_theory_goal_ascription', title_slide:true, images:images, handout:true})
+
+
+
+//- Reconcile Teleological Stance and The Motor Theory of Goal Ascription
++insert_unit({unit:'marrs_levels', title_slide:true, images:images, handout:true})
+
++slide_middle
+  p.center The Motor Theory of Goal Ascription 
+  p.center is
+  p.center the Teleological Stance
+  
+section.slide
+  +_slide_middle_inner
+    p.center.huge-glow-180 How?
+  +reset
+    +_slide_middle_inner
+      p.center Motor representations concerning the goals of observed actions sometimes facilitate the identification of goals.
+    .notes: :t
+      Now we’ve solved this: the Motor Theory of Goal Ascription is the solution.
+
++slide_middle
+  .notes: :t
+    Also recall the question
+  p.notes.show How could the objects of categorical perception of speech be articulatory gestures?
+  .notes: :t
+    The puzzle here is simple.
+    Categorical perception of speech happens raidly, and goal-directed actions
+    are complex.  How can something so complex be computed so quickly?
+  .notes: :t
+    Put it another way: how is it that the articulatory gesture is identified?
+  p.em-above.notes.handout.show: :t
+    ‘Humans [can] understand speech delivered at a rate of 20 to 30 ... phonemes per second’
+  .notes.handout.ctd  \citep{Devlin:2006qg}
+  p.right.grey-text Devlin (2006)
+  .notes: :t
+    We’ve also solved this with the Motor Theory of Goal Ascription.
+    (a) Motor processes are fast enough (production speed = comprehension speed);
+    (b) The Motor Theory explains how motor processes can implement functional 
+    goal ascription, which is to say, how they can get from observed bodily configurations
+    and joint displacements to the identification of goals to which the action is directed. 
+    
+//- PUZZLE 
++insert_unit({unit:'puzzle_thought_experience_motoric', title_slide:true, images:images, handout:true})
+
+
+//-
+//-
+//- //- NO PERCEPTUAL EXPERIENCE
+//- +slide_middle
+//-   p  Phenomenal character ‘stands ready and available to make a direct impact on beliefs’
+//-   p.grey-text.right Tye, 1995 pp. 143–4 (see also 103–4)
+//-   .notes: :t
+//-     perceptual experiences have phenomenal character where phenomenal character is something which
+//-     “stands ready and available to make a direct impact on beliefs” (1995: 143–4, see also 103–4).
+//-
+//- +slide({bkg:'categorical_perception_of_speech/Slide13.jpg'})
+//-   .notes: :t
+//-     Infants enjoy categorical perception of speech from around four months of age or earlier.
+//-     Prelinguistic infants’ categorical perception is adult-like in the sense that it is subject to
+//-     complex effects of speaker and context on where perceptual category boundaries fall (Kuhl 1987:
+//-     376–82, 2004: 834). Infants’ categorical perception also plays an important role in language
+//-     acquisition (Eimas, Siqueland, et al. 1971; Jusczyk 1995; Saffran, Newport and Aslin 1996).
+//- +slide({bkg:'categorical_perception_of_speech/Slide14.jpg'})
+//- +slide({bkg:'categorical_perception_of_speech/Slide15.jpg'})
+//- +slide({bkg:'categorical_perception_of_speech/Slide16.jpg'})
+//- +slide({bkg:'categorical_perception_of_speech/Slide17.jpg'})
+//- +slide({bkg:'categorical_perception_of_speech/Slide18.jpg'})
+//- +slide({bkg:'categorical_perception_of_speech/Slide19.jpg'})
+//- +slide({bkg:'categorical_perception_of_speech/Slide20.jpg'})
+//- +slide({bkg:'categorical_perception_of_speech/Slide21.jpg'})
+//-   .notes: :t
+//-      Consider perceptually-based beliefs involving demonstrative concepts such as the belief that This
+//-      phoneme is that phoneme. Children’s and adults’ untrained judgements about phonemes are often
+//-      surprisingly inaccurate, and they are typically influenced by acoustic features such as sonority as
+//-      well as their knowledge of spelling and linguistic structure (Scarborough, Ehri, et al. 1998;
+//-      Treiman and Cassar 1997; Lehtonen and Treiman 2007; Hallé, Chéreau and Segui 2000). In addition,
+//-      children tend to systematically misidentify phonemes depending on the context in which they appear
+//-      (Treiman 1985: 197). Categorical perception is not similarly affected by these factors (Serniclaes,
+//-      Ventura, et al. 2005). This is evidence for the view that whereas categorical perception tracks
+//-      articulatory gestures, demonstrative concepts track some sort of hybrid acoustic-
+//-      linguistic properties.20 This view is further supported by the fact that untrained subjects
+//-      sometimes regard their phonetic beliefs as beliefs about the sounds which make up words (compare
+//-      Scarborough, Ehri, et al. 1998: 119–20 on ‘little sounds’).
+//-
+//- +slide_middle
+//-   p  Phenomenal character ‘stands ready and available to make a direct impact on beliefs’
+//-   p.grey-text.right Tye, 1995 pp. 143–4 (see also 103–4)
+//-   .notes: :t
+//-     How does this bear on Tye’s claim that perceptual experiences stand “ready and available to make a
+//-     direct impact on beliefs”? This claim implies that in good circumstances and where background
+//-     conditions are met, the properties subjects enjoy perceptual experiences as of are also properties
+//-     they can think about. Suppose categorical perception of speech were a form of perceptual experience.
+//-     In that case, subjects would enjoy perceptual experiences as of articulatory gestures (or as of
+//-     events or properties matching these in extension). Despite this, they fail to be able to think about
+//-     any such properties, for, as we have seen, there is a large and systematic discrepancy between the
+//-     boundaries of their perceptual categories and the extensions of the concepts involved in their
+//-     judgements, even the simplest perceptually-based demonstrative judgements. All by itself this
+//-     discrepancy carries little weight. For Tye’s claim about perceptual experiences making a direct
+//-     impact on beliefs must allow for the possibilities of interference and inhibition from false
+//-     beliefs. And in the case of categorical perception of speech, there is evidence that both
+//-     interference and relevant false beliefs are present. But, crucially, these factors do not fully
+//-     explain the extent of the discrepancies between categorical perception and belief (see footnote 20).
+//-     Rather it appears that whereas categorical perception tracks one type of thing (articulatory
+//-     gestures), demonstrative concepts track something altogether different (little sounds, perhaps). So
+//-     if categorical perception of speech did involve perceptual experiences as of acoustic properties,
+//-     its existence would be evidence against Tye’s claim that perceptual experiences stand “ready and
+//-     available to make a direct impact on beliefs.”
+//-   .notes: :t
+//-     footnote 20: There are two alternative possible explanations for the discrepancies between
+//-     categorical perception and phonetic judgements: subjects may find it difficult to attend to phonetic
+//-     properties, and they may find it difficult to inhibit tendencies to make judgements on the basis of
+//-     orthography. While both claims may be true (first claim: Treiman 1985: 199–200; second claim:
+//-     Scarborough, Ehri, et al. 1998: 138), they do not fully explain the discrepancies.
+//-
+//-
+//-
+//-
+//- //- SENSATIONS
+//- +insert_unit({unit:'phenomenal_expectations', title_slide:true, images:images, handout:true})
+//-
+//-
+//- +slide_middle
+//-   p Q1: What are the objects of categorical perception?  Articulatory gestures!
+//-   p Q2: Do we perceptually experience articulatory gestures?  Maybe not.
+//-   p.em-above Next: Do motor representations underpin categorical perception of speech?

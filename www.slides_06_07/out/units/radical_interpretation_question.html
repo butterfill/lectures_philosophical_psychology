@@ -1,0 +1,232 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Radical Interpretation: The Question | Philosophical Psychology</title>
+    <meta name="description" content="‘I want to know what it is about propositional thought--our beliefs,
+desires, intentions and speech--that makes it intelligible to others.’
+(Davidson, 1995 p. 14)"/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="radical_interpretation_question" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Radical Interpretation: The Question</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes handout show">
+            <p class="em-above"><span>‘I want to know what it is about </span><span class="propositional-thought">propositional thought</span><span>---our beliefs, desires, </span><span>intentions and speech---that makes it intelligible to others.’</span></p>
+          </div>
+          <div class="notes handout ctd">\citep[p.~14]{Davidson:1995nl}</div>
+          <p class="right grey-text">Davidson (1995, 14)</p>
+          <div class="slide">
+            <div data-what=".propositional-thought" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".propositional-thought" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">The difference is just that whereas Davidson focusses on propositional thought,
+one theme of my talk will be that we need to consider a wider range of mental phenomena, including
+emotional processes, attention and goal-directed action.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-src="img/radical_interpretation_handout.png" class="img handout"></div>
+          <p style="line-height:.6em" class="huge-glow-60">radical interpretation</p>
+          <div class="slide">
+            <p><span class="infer">Infer</span><span> The Mind from The Evidence</span></p>
+          </div>
+          <div class="slide">
+            <p class="em-above indent">The Mind: facts about actions, emotions, desires, beliefs, ...</p>
+          </div>
+          <div class="slide">
+            <p class="em-above indent"><span class="the-evidence">The Evidence</span><span>: facts about events and states of affairs that could be known without 
+knowing what any particular individual believes, desires, intends, ...</span></p>
+          </div>
+          <div class="notes">Let me start with the aim of an account of radical interpretation.
+An account of radical interpretation is an account of how you could 
+in principle infer facts about actions and mental states from
+non-mental evidence.
+This is the fundamental project in theorising about social cognition
+(as I’ll explain shortly [by invoking Marr’s levels]).
+          </div>
+          <div class="slide">
+            <div data-what=".the-evidence" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".the-evidence" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">The evidence is evidence that you could possess in advance of knowing
+what any particular individual believes, desires, intends and so on.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".the-evidence" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".infer" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".infer" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Here we must be careful.
+Donald Davidson and David Lewis have both used the term ‘radical interpretation’.
+But Lewis is interested in how what I am calling ‘The Evidence’ determines facts about
+the mind.  This is a *metaphysical* question.
+By contrast, Davidson is interested in the possibility of inferring The Mind from
+The Evidence.  He is not assuming---and, I think, does not belive, that the Evidence
+metaphysically determines The Mind (although he’s sometimes interpreted as so believing).
+Davidson’s project (and the part of Dennett’s we’re interested in) is
+epistemological, not metaphysical.
+            </div>
+            <div class="notes">[NB: this is particularly important because we’re talking about Dennett]
+            </div>
+            <div class="slide">
+              <div data-what=".infer" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

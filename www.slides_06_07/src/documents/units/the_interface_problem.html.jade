@@ -1,0 +1,623 @@
+---cson
+layout: 'deck_unit'
+title: "The Interface Problem"
+tags: []
+description: """
+  For a single action, which outcomes it is directed to may be multiply
+  determined by an intention and, seemingly independently, by a motor
+  representation. Unless such intentions and motor representations are to pull
+  an agent in incompatible directions, which would typically impair action
+  execution, there are requirements concerning how the outcomes they represent
+  must be related to each other. This is the interface problem: explain how any
+  such requirements could be non-accidentally met.
+  """
+---
+
+include ../../../fragments/unit_mixins
+
+.handout: :t
+  The interface problem: explain how intentions and motor representations, with their distinct
+  representational formats, are related in such a way that, in at least some cases, the outcomes they
+  specify non-accidentally match.
+  
+.handout: :t
+  ‘both mundane cases of action slips and pathological conditions, such as apraxia or anarchic hand
+  syndrome (AHS), illustrate the existence of an interface problem’ 
+  \citep[p.~7]{mylopoulos:2016_intentions}.
+  
+.handout: :t
+  Two collections of outcomes, A and B, \emph{match} in a particular context just if, in that context,
+  either the occurrence of the A-outcomes would normally constitute or cause, at least partially, the
+  occurrence of the B-outcomes or vice versa. To illustrate, one way of matching is for the B-outcomes
+  to be the A-outcomes. Another way of matching is for the B-outcomes to stand to the A-outcomes as
+  elements of a more detailed plan stand to those of a less detailed one.
+
+
+
++slide_rh_white({step:true})
+  .notes: :t
+    Imagine that you are strapped to a spinning wheel facing near certain death as it plunges you into
+    freezing water. To your right you can see a lever and to your left there is a button. In deciding
+    that pulling the lever offers you a better chance of survival than pushing the button, you form an
+    intention to pull the lever, hoping that this will stop the wheel. If things go well, and if
+    intentions are not mere epiphenomena, this intention will result in your reaching for, grasping and
+    pulling the lever. These actions---reaching, grasping and pulling---may be directed to specific
+    outcomes in virtue of motor representations which guide their execution. It shouldn't be an accident
+    that, in your situation, you both intend to pull a lever and you end up with motor representations
+    of reaching for, grasping and pulling that very lever, so that the outcomes specified by your
+    intention match those specified by motor representations. If this match between outcomes variously
+    specified by intentions and by motor representations is not to be accidental, what could explain it?
+  +run_across 
+    p.center The Interface Problem
+      span.step2.hide :
+    p.center.step2.hide 
+      span.qq How are non-accidental matches possible?
+  .slide
+    +left_half
+      p.step3.hide: :t
+        Two  outcomes, A and B, match in a particular context just if, in that context, 
+        either the occurrence of A would normally constitute or cause, at least 
+        partially, the occurrence of B or vice versa. 
+      p.em-above Some actions involve both intention and motor representation
+  +right_half({step:true})
+    p Motor representations:
+    p.em-above i. represent outcomes;
+    p.em-above ii. ground the purposiveness of some actions
+      span.step4.hide ; and
+    p.em-above.step4.hide iii. 
+      span.format differ in format
+      span  from intentions.
+  .slide
+    +show('.step3')
+  .slide
+    +show('.step2')
+    +highlight('.qq')
+  .slide
+    +show('.step4')
+    +highlight('.format')
+    .notes: :t
+      I want to offer a conjecture about how the interface problem is solved ...
+    
+
++slide_middle
+  p
+    span ‘both mundane cases of  
+    span.action-slips action slips
+    span  and pathological conditions, such as 
+    span.apraxia apraxia
+    span  or 
+    span.ahs anarchic hand syndrome (AHS)
+    span , illustrate the existence of an interface problem.’
+  p.grey-text.right Mylopoulos and Pacherie (2016, p. 7)
+  .slide
+    +invert('.action-slips')
+    .notes: :t
+      Having an intention is neither necessary nor sufficient.
+  .slide
+    +uninvert('.action-slips')
+    +invert('.apraxia')
+    .notes: :t
+      Jeannerod 2006, p. 12:
+      ‘the term apraxia was coined by Liepmann to account for higher order motor
+      disorders observed in patients who, in spite of having no problem in executing
+      simple actions (e.g. grasping an object), fail in actions involving more
+      complex, and perhaps more conceptual, representations.’
+    .notes: :t
+      Can people with ideomotor apraxia form intentions?
+  .slide
+    +uninvert('.apraxia')
+    +invert('.ahs')
+    .notes: :t
+      \citep[p.~7]{mylopoulos:2016_intentions}: ‘Typically the result of lesion
+      to SMA or anterior corpus callosum, AHS is a condition in which patients
+      perform complex, goal-oriented movements with their cross-lesional limb
+      that they feel unable to directly inhibit or control. The limb is often
+      disproportionately reactive to environmental stimuli, carrying out
+      habitual behaviors that are inappropriate to the context, e.g., grabbing
+      food from a dinner companion’s plate (Della Sala 2005, 606). It is clear
+      from many of the behaviors observed in these cases that the anarchic limb
+      fails to hook up with the agent’s intentions.’
+
+
++slide_middle
+  p.center Could we appeal to content-respecting causal processes?
+  .notes: :t
+    It’s no mystery that their are nonaccidental matches between your desires and your
+    intentions. After all, these are linked by a process of practical reasoning. One of the
+    key jobs of practical reasoning is to ensure that, within limits, your intentions match
+    your desires.
+  .notes: :t
+    Why not suppose that some related, inference-like process links your intentions
+    to your motor representations?
+    So you would form an intention, and then some process analogous to practical reasoning
+    would be engaged to ensure that matching motor representations occur in you.
+  .slide
+    p.center.em-above Obstacle: representational format
+    .notes: :t
+      The main obstacle is the difference in representational format.
+      This means that inferrential integration, or any kind of content-respecting 
+      causal process would require translation between representational formats.
+      And as far as we know there is no such process of translation.
+  .slide.em-above
+    p.em-above A solution?
+    .notes Mylopoulos and Pacherie claim to offer 
+    p.em-above.notes.ctd.show: :t
+      ‘a version of the content-respecting causal
+      processes solution’
+    p.right.grey-text Mylopoulos & Pacherie 2016, p. 18
+    .notes: :t
+      Let’s consider their view ...
+
+
+
+
++slide_middle
+  p.center Mylopoulos & Pacherie:
+  p.center 
+    span.schema motor schema
+    span  +   
+    span.eac executable action concept
+  .notes: :t
+    Mylopoulos and Pacherie’s idea has two parts, motor schema and executable action concept.
+  .slide
+    +invert('.schema')
+    +style('.schema',{'z-index':0})
+    .handout: :t
+      Motor schema are ‘internal models or stored representations that represent generic knowledge about
+      a certain pattern of action and are implicated in the production and control of action’
+      \citep{mylopoulos:2016_intentions}.
+    .notes: :t
+      Mylopoulos and Pacherie’s ‘motor schema’ idea.
+    .notes: :t
+      ‘Motor schemas are more abstract and stable representations of actions than motor
+      representations.’
+    .notes: :t
+      ‘They are internal models or stored representations that represent generic knowledge
+      about a certain pattern of action and are implicated in the production and control of
+      action. For instance, in the influential Motor Schema Theory proposed by Richard Schmidt
+      (1975, 2003), a motor schema involves a generalized motor program, together with corre-
+      sponding ‘recall’ and ‘recognition’ schemas. The generalized motor program is thought to
+      contain an abstract representation defining the general form or pattern of an action,
+      that is the organization and structure common to a set of motor acts (e.g., invariant
+      features pertaining to the order of events, their spatial configuration, their relative
+      timing and the relative force with which they are produced). This generalized motor
+      program has parameters that control it. In order to determine how an action should be
+      performed on a given occasion, parameter values adapted to the situation must be
+      specified. Thus, a motor schema also includes a rule or system of rules describing the
+      relationships between initial conditions, parameter values and outcomes and allowing us
+      to perform the action over a large range of conditions (the ‘recall schema’ in Schmidt’s
+      terminology). Finally, the motor schema also includes a rule or system of rules
+      describing the relationships between initial conditions, exteroceptive and propri-
+      oceptive sensory feedback during an action, and action outcome (a recognition sche- ma),
+      allowing agents to know when they have made an error – i.e., the action does not have
+      the sensory consequences it is expected to have – and to correct for it.’
+    .notes: :t
+      Are motor schemas an alterantive to motor representations? Tempting to think that where
+      they talk about motor schema, we think of motor representations that represent outcomes
+      that are relatively distal from action (e.g. are affector-neutral).
+    .notes: :t
+      This would explain why they contrast motor schema with motor programmes. We use ‘motor
+      representation’ to include both.
+    .notes: :t
+      Consider an example ...
+      
+  .slide.schema-is-motor-repn
+    +reset-escape-inner
+      +_slide_inner({bkg:'carry_information/Slide1.jpg'})
+    .notes: :t
+      In Mylopoulos and Pacherie’s terms, you would need to say that this 
+      involves sameness of schema rather than sameness of motor representation.
+    .notes: :t
+      I think the difference is mainly terminological.  Because we are uncertain about
+      the nature of the motoric, we don’t distinguish motor representations that
+      specify actions in more detail (particular effector, particular grip) from
+      motor representations that specify actions in less detail.
+      Because they think that motor representations (or motor programmes) must be tied to
+      particular actions, they need motor schema.
+      (Partly this debate may hinge on the importance of bodily synergies and
+      nonrepresentational processes in the control of action: how much has to be represented
+      at all? More than intentions. But not necessarily each joint displacement. So we don’t
+      currently know where representation ends.)
+  .slide
+    +hide('.schema-is-motor-repn', 0)
+    +uninvert('.schema')
+  .slide
+    +invert('.eac')
+    .notes: :t
+      There explanation: two different kinds of action concept, one purely
+      observational.  
+      ‘For instance, most of us have a concept of ‘tail wagging’ that we can deploy when we
+      judge, for instance, that Julius the dog is wagging his tail. Or if you are not
+      convinced that tail wagging constitutes purposive behavior, consider the action concept
+      ‘tail swinging’, as in ‘cows constantly swing their tails to flick away flies’.’
+    .notes: :t
+      A demonstrative action concept would be an executable action concept, 
+      but not convesely.
+      So this is potentially a good generalisation.
+    .notes: :t
+      But regardless of this, how on their view do the motor schema connect to the 
+      executable action concepts?
+
+
+
++slide_middle
+  p.center The Interface Problem as Selection of Afforadances
+  .notes: :t
+    What you represent motorically is not only the actions you will perform.
+    Many potential actions are represented motorically, depending on what a situation
+    affords you.
+    Only some of the affordances represented become actions.
+  .notes: :t
+    What we want is this: what you intend influences 
+    which motor representations lead to action.
+  .notes: :t
+    To echo Velleman, we want intentions to throw their weight behind some 
+    motor representations and not others.
+  .notes: :t
+    How could this happen?
+  .notes: :t
+    I think part of the idea of an executable action concept is this.
+    The concept is associated with a motor representation (or schema),
+    and so activating the concept strengthens the associated motor
+    representation.
+  .notes: :t
+    So far, so good.  There are just two problems ...
+    
+    
++slide_middle
+  p Problem 1
+  p.em-above.notes.handout.show: :t
+    ‘As defined by Tutiya et al., an executable concept of a type of movement is a
+    representation, that could guide the formation of a volition, itself the proximal cause of
+    a corresponding movement. Possession of an executable concept of a type of movement thus
+    implies a capacity to form volitions that cause the production of movements that are
+    instances of that type.’
+  .notes.handout.ctd \citep[p.~7]{pacherie:2011_nonconceptual}
+  p.right.grey-text Pacherie 2011, p. 8
+  .notes: :t
+    It looks like the executable action concept builds in a solution to the interface problem
+    rather than solving it.
+    The executable action concept is a ready-made solution.
+    This is the first problem.
+
++slide_middle
+  p Problem 2
+  p.em-above How does using an executable action concept give me insight into which action I’m thinking about?
+  .notes: :t
+    The second problem is based on a general assumption.
+    The assumption is that in using a concept, you know which thing you are thinking about.
+  .notes: :t
+    A concept is not a brute way of relating a thinker to a thing; it is a way that provides
+    the thinker with some kind of cognitive connection to the thing in question.
+  .notes: :t
+    That is why having a concept cannot be a matter of merely having a mental symbol
+    which is associated in some way with the thing it is a concept of.
+    (Compare the corresponding view about words.)
+  .notes: :t
+    How does using an executable action concept give me insight into which action I’m thinking
+    about?
+    
++slide_middle
+  p.notes.handout.show
+    span ‘Motor schemas are thus, we submit, what bridges the gap between intentions and motor 
+    span representations, ensuring proper, 
+    span.cp content-preserving
+    span  coordination without requiring any 
+    span mysterious translation process.’ 
+  p.right.grey-text Pacherie 2011, p. 18
+  .notes: :t
+    This is good.  But how do you connect executable action concepts to motor schema?
+  .notes: :t
+    M&P say that there are concepts tied to motor schema, and provide some evidence
+    for this.  I think this is progress.
+    Executable action concepts are a solution to the interface problem. We know they exist.
+    They probably don’t always involve demonstratives that refer to actions by deferring to
+    motor representations.
+    So we should step back.
+  .slide
+    +invert('.cp')
+  .slide
+    p.notes.show: :t
+      Mylopoulos and Pacherie claim to offer ‘a version of the content-respecting causal
+      processes solution’
+    p.right.grey-text Mylopoulos & Pacherie 2016, p. 18
+    .notes: :t
+      But is their view really a content-respecting causal processes solution?
+      As far as I can see, there is no reason to assume that it is.
+      Everything depends on how executive action concepts get hooked up to
+      the motoric.
+    .notes: :t
+      And this could be a matter of concepts and motor schema (or representations) somehow
+      becoming associated.
+    .notes: :t
+
+
++slide_middle
+  p.center Mylopoulos & Pacherie:
+  p.center 
+    span.schema motor schema
+    span  +   
+    span.eac executable action concept
+  +invert('.eac', 0)
+  .notes: :t
+    How do you connect a concept to a motor representation (or schema)?
+    This looks like a version of the interface problem ...
+
+            
++slide_middle({bkg:'intention_and_motor_representation/Slide49.jpg'})
+  .notes: :t
+    There is a way to make the problem of comparison between representational formats trivial
+    
+
++slide_middle({bkg:'intention_and_motor_representation/Slide50.jpg'})
+  .notes: :t
+    Suppose one representation involves a demonstrative that refers by
+    deferring to another representation
+    
+    
++slide_middle({bkg:'intention_and_motor_representation/Slide51.jpg'})
+  .notes: :t
+    Then the comparison doesn’t require translation between formats after all.
+    Maybe the same can be true for intentions and motor representations.
+    Maybe intentions can involve demonstrative concepts which refer to actions by deferring to motor representations?
+  .notes: :t
+    [*cut:
+    Set that aside, suppose it can be solved --- essentially because MR must give rise to
+    experience of action.
+    On this view, it is demonstrative deference to motor representation that connects
+    intentions to bodily movements.
+    Only by recognising how intentions interlock with motor representations can we hope to
+    understand how our intentions ever make a difference to the world around us.
+    On this view experience of action plays a novel role.
+    Action experiences in which motor representations feature, such as those associated with
+    motor imagery and those associated with really acting, are arguably necessary for there to
+    be concepts which are constituents of intentions and refer to actions by deferring to
+    motor representations.
+    But if, as we conjecture, such deference is necessary for intentions to properly and
+    reliably result in bodily movements, it may turn out that intentionally acting in the
+    world de- pends on action experiences featuring motor representation.
+    Much as on some views thought about objects depends on perceptual experience (e.g.
+    Campbell 2002), so also intending actions may depend on motor experience.
+
++slide_middle
+  p.center I wish I had done 
+    span.that that
+    span   too.
+  .slide
+    +invert('.that')
+    .notes: :t
+      There are demonstratives which refer to action types.
+      (The wish was not to perform another agent’s action but to perform an action of a certain
+      type.)
+  .slide
+    p.em-above How is the referent of this demonstrative fixed? 
+      span.hide.experience Experience!
+    .notes: :t
+      How are such demonstratives possible? What determines which action is referred to?
+  .slide
+    +show('.experience')
+    .notes: :t
+      In general, demonstrative reference depends on experience of the referent (Campbell).
+      But what sort of experience do we have of the referent?
+  .slide
+    p.em-above.notes.show What experience?   
+      span.pantomime.hide One which also occurs in pantomime ...
+  .slide
+    +show('.pantomime')
+    .notes: :t
+      Observation: you can refer demonstratively to an action that you pantomime.
+    .notes: :t
+      Our example: ‘consider purely mental pantomime—that is, phenomenologically
+      action-like imagination. One might use this kind of imagination to explore
+      different ways of completing a task and then, having hit on a good
+      solution, think to oneself ‘Do that!’. It seems possible that in some such
+      cases the demonstrative refers by deferring to a motor representation of
+      action involved in imagining acting (135)’
+  .slide
+    p.em-above.notes.show: :t
+      Experiences associated with act types are (i) shaped by motor representations and (ii)
+      make act types possible objects of demonstrative reference.
+
++slide_middle
+  p Refer to action by deferring to a motor representation.
+  .notes: :t
+    Our idea, then, is that you can 
+    refer to an action by deferring to a motor representation
+  .slide.notes.show
+    p.em-above.indent -- motor representation shapes experience
+    p.em-above.indent -- experience is of action
+    p.em-above.indent -- experience enables demonstrative reference to action
+    p.em-above.indent -- which action is determined by what is represented motorically (deference).
+
+  
+    
++slide_middle
+  p.center Mylopoulos & Pacherie:
+  p.center 
+    span.schema motor schema
+    span  +   
+    span.eac executable action concept
+  +invert('.eac', 0)
+  .notes: :t
+    So Mylopoulos & Pacherie say we can solve the Interface Problem if we have 
+    executable action concepts.  This seems to raise the question,
+    How do executable action concept hook up to motor representations?
+    And this seems to be a version of the Interface Problem.
+  .slide.em-above
+    p.center ... which are demonstrative concepts
+    p.center that refer to actions by deferring to motor representations
+    .notes: :t
+      But we can solve that problem by supposing that executable action concept
+      are demonstrative concepts
+      which refer to actions by deferring to motor representations.
+      Or so I’ve suggested.
+
+
+
++slide_rh_white({step:false})
+  +run_across 
+    p.center The Interface Problem
+      span :
+    p.center 
+      span.qq How are non-accidental matches possible?
+  +left_half
+    p: :t
+      Two  outcomes, A and B, match in a particular context just if, in that context, 
+      either the occurrence of A would normally constitute or cause, at least 
+      partially, the occurrence of B or vice versa. 
+    p.em-above Some actions involve both intention and motor representation
+  +right_half({step:false})
+    p Motor representations:
+    p.em-above i. represent outcomes;
+    p.em-above ii. ground the purposiveness of some actions
+      span ; and
+    p.em-above iii. 
+      span.format differ in format
+      span  from intentions.
+  
+  
+  
+  
++slide_middle
+  p.center.huge-glow objections
+
++slide_middle({bkg:'intention_and_motor_representation/Slide49.jpg'})
+  .notes: :t
+    Recall the analogy with maps: 
+    
++slide_middle({bkg:'intention_and_motor_representation/Slide51.jpg'})
+  .notes: :t
+    using a map to 
+    refer demonstratively to a route by deferring to a representation of it
+    solves an interface problem.
+    
++slide_middle({bkg:'intention_and_motor_representation/Slide52.jpg'})
+  .notes: :t
+    But we can’t point to motor representations like we can point to maps!
+    Mylopoulous & Pacherie make this vivid ...
+    
++slide_middle
+  .notes: :t
+    ... Mylopoulous & Pacherie (2016, 11) when they write that
+  p.notes.show
+    span ‘in the case of intention, there is no such perceptual-attentional link 
+    span.wtmr with the motor representation
+    span ; these are not mental representations that we can attend to or perceive.’ 
+
++slide_middle({bkg:'intention_and_motor_representation/Slide52.jpg'})
+  .notes: :t
+    But we can’t point to motor representations like we can point to maps!
+  .notes: :t
+    What we need for reference by deference to a motor representation is
+    experience of motor action.
+  .notes: :t
+    And if you think about motor imagination it seems quite plausible that we
+    do have such experiences.
+  .notes: :t
+    So here’s the thought:
+    There are no direct inferential connections between intentions and motor
+    representations. Harmony is ensured by the fact that where an intention
+    involves a bodily movement, either executing that intention involves
+    forming a further intention or else the intention involves a demonstrative
+    that refers to an action by deferring to a motor representation.
+  .notes: :t
+    So what connects intentions to motor representations---what connects the reflective to the
+    pre-reflective---is the use of demonstratives, and this depends on experience of motor
+    action.
+  .notes: :t
+    Much as on some views all thought about objects ultimately depends on
+    perceptual experience (e.g. Campbell 2002), so also intending bodily
+    actions may ultimately depend on motor experience. Experience anchors the
+    reflective in the pre-reflective.
+
++slide_middle
+  p.center demonstrative reference and experience
+  .notes: :t
+    Our view requires that motor representations enable consciousness of the
+    action referred to.
+
+
++slide_middle
+  p.center But do any intentions ever defer to motor representations?
+  p.em-above: :t
+    ‘there are no clear examples of intention deferring to motor representation, which makes
+    it dubious that this ever takes place’
+  p.right.grey-text Mylopoulos & Pacherie 2016, p. 11
+  .notes: :t
+    Mylopoulos and Pacherie object (p. 11): ‘there are no clear examples of intention deferring
+    to motor representation, which makes it dubious that this ever takes place’
+  .notes: :t
+    Our example was: ‘consider purely mental pantomime—that is, phenomenologically
+    action-like imagination. One might use this kind of imagination to explore
+    different ways of completing a task and then, having hit on a good
+    solution, think to oneself ‘Do that!’. It seems possible that in some such
+    cases the demonstrative refers by deferring to a motor representation of
+    action involved in imagining acting (135)’
+  .notes: :t
+    Mylopoulos and Pacherie reply (p. 11): ‘The obvious problem here is that we need not
+    suppose that the intention refers to the relevant action by way of deferring to a motor
+    representation. What seems more likely is that it does so by deferring to the mental image
+    of the relevant action.’
+  .notes: :t
+    But what is a mental image of an action? Maybe it’s nothing other than the
+    experience that the motor representation gives rise to.  If so, there is no 
+    real disagreement here.
+
+
+
++slide_middle
+  p.notes.show: :t
+    ‘Yet another pressing issue for Butterfill and Sinigaglia’s view is that it seems not to
+    have the resources to explain errors in action execution.’
+  p.right.grey-text Mylopoulos & Pacherie 2016, p. 11
+  .slide
+    p.indent.em-above -- nonintended actions
+    .notes: :t
+      No problem here since intentions are not the only cause of motor representations ...
+  .slide
+    p.indent.em-above -- intentions cause ‘wrong’ actions
+    .notes: :t
+      Example: you intend to put on your shirt and this very intention causes you 
+      to comb your hair.  (*Better example?)  
+    .notes: :t
+      Mylopoulos and Pacherie are assuming that this requires defernce to the
+      ‘wrong’ motor representation.
+      We agree that this can’t happen --- we can’t easily make sense of the possibility that
+      your failed to refer, in intention, to the action you were trying to pick out.
+
++slide_middle
+  p.notes.show
+    span ‘In the case of a regular demonstrative utterance, the speaker has an independent way of 
+    span picking out 
+    span.which-object which object to refer to
+    span . If I want to demonstratively refer to the green 
+    span apple in the heap, I will employ my perceptual resources in order to determine which item 
+    span to point to. Similarly, in the case of demonstrative deferral in intention, the agent must 
+    span have an independent grasp of 
+    span.which-mr which motor representation is the appropriate one to select
+    span  via such deferral’ 
+  p.right.grey-text Mylopoulos & Pacherie 2016, p. 12
+  .notes: :t
+    I don’t understand this objection.  One problem is that the analogy seems to require 
+    only that we have an independent way of picking out the thing referred to.
+    But this is the action, not the motor representation.
+    (It is not part of our view that we demonstratively refer to motor representations.)
+  .slide
+    +invert('.which-object')
+  .slide
+    +invert('.which-mr')
+    .notes: :t
+      The analogy we’d go for is: I will employ my motor resources in order to determine
+      which action to perform.
+
+
++slide_middle
+  p.center yet another issue
+  p.em-above type of action : e.g. reach vs grasp
+  p.em-above target of action : e.g. my cup vs your cup
+
++slide_middle
+  p Outstanding questions
+  p.em-above.indent What links executable action concepts to the motoric?
+  p.em-above.indent Is there a role for experience in solving the interface problem?
+  p.em-above.indent Do motor representations shape experiences?

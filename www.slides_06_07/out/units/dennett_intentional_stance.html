@@ -1,0 +1,233 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>The Intentional Stance | Philosophical Psychology</title>
+    <meta name="description" content="The ‘Intentional Stance’ (also ‘Intentional Strategy’) is Dennett’s name for 
+a procedure for ascribing desires, beliefs and other mental states to an individual
+without assuming any prior knowledge of what distinguishes her mind from others’ minds."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="dennett_intentional_stance" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">The Intentional Stance</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Dennett doesn’t use the term ‘radical interpretation’ but his description
+of the Intentional Stance does provide a candidate account of radical 
+interpretation.
+          </div>
+          <div class="notes handout show">
+            <p>‘the intentional stance ...</p>
+            <p class="slide">‘first you decide to treat the object whose behavior is to be predicted as a rational agent; </p>
+            <p class="slide">‘then you figure out what <span class="beliefs-ought">beliefs that agent <span class="ought1">ought</span><span> to have</span></span><span> , given its place in the world and </span><span class="purpose">its purpose</span><span>. </span></p>
+            <p class="slide">‘Then you figure out what <span class="desires-ought">desires it <span class="ought2">ought</span><span> to have</span></span><span>, on the same considerations, </span></p>
+            <div class="slide"> 
+              <p>‘and finally you predict that this <span class="rational-agent">rational agent</span><span> will act to further its </span><span class="goal">goals</span><span> in the light of its beliefs’</span></p>
+              <div class="handout notes">\citep[p.~17]{Dennett:1987sf}</div>
+              <div class="notes">A couple of things about this are confusing.
+              </div>
+            </div>
+          </div>
+          <p class="right grey-text">Dennett (1987, 17)</p>
+          <div class="slide">
+            <div data-what=".purpose" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".purpose" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">First, what is the purpose of me?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".purpose" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".goal" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".goal" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Second, where do these goals come from?
+Does Dennett mean desires here?
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".goal" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".beliefs-ought" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".beliefs-ought" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">This does make sense to me.
+Dennett derives this rule from the fundamental injunction to attribute all the beliefs
+the agent ought to have:
+            </div>
+            <div class="notes handout">‘one rule for attributing beliefs in the intentional strategy is this: attribute as beliefs all the truths relevant to the system's interests (or desires) that the system's experience to date has made available’ \citep[p.~18]{Dennett:1987sf}
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".beliefs-ought" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".desires-ought" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".desires-ought" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">But what about the desires?
+Which desires ought we to have?
+Here Dennett is less helpful.
+            </div>
+            <div class="notes">I prefer gold rings to platinum ones; you prefer the converse.
+Does one of us have the wrong preferences?
+            </div>
+            <div class="notes handout">‘We attribute the desires the system ought to have. That is the fundamental rule. It dictates, on a first pass, that we attribute the familiar list of highest, or most basic, desires to people: survival, absence of pain, food, comfort, procreation, entertainment.’ \citep[p.~20]{Dennett:1987sf}
+            </div>
+            <div class="notes">He also suggests attributing desires for things we believe are good for us,
+or that will further other desires.
+From the context, I think Dennett’s idea is that, in essence, we all desire 
+a small number of basic things but differ in our beliefs about how to get these.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".desires-ought" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div class="notes">Put aside for the moment the question of whether this succeeds as an account
+of radical interpretation.
+I’ll come back to this.
+First I want to be sure we understand the point of giving
+an account of radical interpretation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

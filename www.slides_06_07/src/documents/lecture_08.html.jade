@@ -1,0 +1,86 @@
+---cson
+layout: 'default2'
+title: 'Lecture 08: Mindreading in Nonhumans'
+subtitle: ''
+weburl: ''
+units: []
+abstract: """
+  
+  """
+lecture_date: '2016/12/01'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bali')
+
++title_slide({document:document, images:images})
+  .notes: :t
+
++insert_unit({unit:'nonhuman_mindreading_evidence', title_slide:false, images:images, handout:true})
++insert_unit({unit:'nonhuman_mindreading_question', title_slide:true, images:images, handout:true})
++insert_unit({unit:'behaviour_reading_demon', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'how_do_nonhumans_model_minds', title_slide:true, images:images, handout:true})
++insert_unit({unit:'behaviour_reading', title_slide:true, images:images, handout:true})
+
++slide_middle
+  p.center.huge-glow conclusions
+  .slide.em-above
+    p.q What do 
+      span.infants infants
+      span , chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? 
+    +line-through('.infants')
+    .notes: :t
+      (1) It’s a mistake to think that satisfactory answers are ‘behaviour’ or ‘mental states’,
+      or that there individual experimental paradigms could distinguish these two options.
+      Neither option is sufficiently well specified to readily generate testable predictions
+    .notes: :t
+      (2) The ‘Logical Problem’ is a logical problem; it shows that tracking mental
+      states doesn’t entail representing mental states.
+    .notes: :t
+      (3) We can make progress by formulating hypotheses that specify the models of minds
+      and actions that characterise different species’ mindreading abilities,
+      and by developing theories of behaviour reading.
+    .notes: :t
+      (4) If it’s true that behaviour reading largely depends on domain-general learning 
+      mechanisms, then it is unlikely to explain the abilities to represent mental states
+      demonstrated in typical experiments on nonhuman mindreading.
+  
+      
+//- 
+  PLAN:
+  (0) some evidence - Hare, ravens, FB chimps
+  (1) the question, with the two alternatives, phrased in terms of tracking
+  (2) the logical problem (cast out the demon)
+  (3) should we therefore accept Halina’s idea? 
+      ‘Comparative psychologists test for mindreading in non-human animals by determining whether they
+      detect the presence and absence of particular cognitive states in a wide variety of
+      circumstances. They eliminate potential confounding variables by ensuring that there is no one
+      observable state to which subjects might be responding’ 
+      \citep[p.~487]{halina:2015_there}.
+  (4a) No, we should not accept Halina’s idea because there may be alternative hypotheses that we haven’t
+       yet formulated.
+  (4b) And, more importantly, it ignores a challenge about models of the mental:
+      
+      NB: Question is not behaviour vs mental states? (as earlier)
+          BUT What could underpin nonhumans’ abilities to track others’ mental states?
+      
+      ‘What could someone represent that would enable her to track, at least within limits, the toxicity
+      of potential food items? Here the most straightforward answer (she could represent their toxicity)
+      is clearly not the only one. After all, someone might track toxicity by representing odours or by
+      representing visual features associated with putrefaction, say. Suppose Sinead has no conception of
+      toxins but represents the odours of food items and treats those with foul odours as dangerous to
+      eat, so that she would not normally offer them to friends or family nor conceal them from
+      competitors. This brings nutritional and competitive benefits obtaining which depends on facts
+      about toxicity. If Sinead tends to behave in this way because of these benefits, representing
+      odours enables her to track, in a limited but useful range of cases, toxicity. Our question, put
+      very roughly, is whether belief has something like an odour.’
+
+      
+  (4) construct hypotheses and generate predictions
+  (5) construction of an account of behaviour reading ...
+  (6) ... and of minimal theory of mind
+  (7) How to test their complementary predictions? (i) Altercentric interference. Signature limit, e.g. (ii) identity [Mention new FB chimp task.].
+

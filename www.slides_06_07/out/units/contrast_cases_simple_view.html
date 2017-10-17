@@ -1,0 +1,282 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Contrast Cases and the Simple View | Philosophical Psychology</title>
+    <meta name="description" content="Getting a pre-theoretical handle on joint action is best done by contrasting 
+joint actions with actions that are merely individual but occur in parrallel.
+
+The method of contrast cases is familiar from citet{Pears:1971fk}, who used 
+contrast cases to argue that whether something is an ordinary, individual action 
+depends on its antecedents."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contrast_cases_simple_view" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Contrast Cases and the Simple View</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide"><img src="/img/unit_001/slide03.jpg" class="bkg"/>
+</section>
+<section class="slide"><img src="/img/unit_001/slide04.jpg" class="bkg"/>
+</section>
+<section class="slide"><img src="/img/unit_001/slide05.jpg" class="bkg"/>
+</section>
+<section class="slide"><img src="/img/unit_001/slide06.jpg" class="bkg"/>
+</section>
+<section class="slide"><img src="/img/unit_001/slide07.jpg" class="bkg"/>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes handout show">
+            <p class="huge-glow">Question</p>
+            <p style="margin-top:-3em;" class="under-huge-glow ctd">What distinguishes genuine joint actions from parallel but merely individual actions?
+            </p>
+          </div>
+          <div class="notes">This is the organising question for our project (the project to be investigated in this 
+series of lectures).  Of course there will be lots of further questions, but I like to
+have something simple to frame our thinking and this question serves that purpose.
+          </div>
+          <div class="notes">My hope is that by answering this seemingly straightforward question, we will be 
+in a position to answer the hard question about which forms of shared agency
+underpin our social nature.
+          </div>
+          <div class="notes">The first two contrast cases are supposed to show that this question isn’t easy
+to answer because the most obvious, simplest things you might appeal to---coordination
+and common effects---won’t enable you to draw the distinction.
+          </div>
+          <div class="slide">
+            <div class="notes handout show">
+              <p class="huge-glow">Aim</p>
+              <p style="margin-top:-3em;" class="under-huge-glow ctd">An account of joint action must draw a line between joint actions and parallel but 
+merely individual actions.
+              </p>
+            </div>
+            <div class="notes">This invites us to think in terms of necessary and sufficient conditions.
+Of course, there are all kinds of reasons why this might be problematic, and we 
+will consider many such reasons.
+But as I just said, having simple ideas to frame our thinking is good, and that’s why
+I take this as my working aim.
+(The ultimate aim is a ‘Blueprint for a Social Animal’, but it is difficult to be
+precise about what that will involve at this stage.)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes handout">\emph{The Simple View}</div>
+          <p>The Simple View<span class="notes handout ctd">: </span></p>
+          <div class="notes handout ctd show em-above">
+            <p>Two or more agents perform an <span class="intentional">intentional</span><span> joint action </span><span class="necessary-and-sufficient">exactly when</span><span> there is an </span><span class="act-type">act-type</span><span>, </span><span class="phi">φ</span><span>, such that each of several agents intends that they, these agents, </span><span class="phi">φ</span><span>  </span><span class="together">together</span><span> and their intentions are  </span><span class="appropriately-related">appropriately related </span><span> to their actions.</span></p>
+          </div>
+          <div class="slide">
+            <div data-what=".act-type" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".act-type" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Explain: ‘I wish I had done that’.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".act-type" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".phi" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".phi" data-cls="bkg-invert" class="dv dv-addclass"></div>
+          </div>
+          <div class="slide">
+            <div data-what=".phi" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".intentional" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".intentional" data-cls="bkg-orange" class="dv dv-addclass"></div>
+            <div class="notes">We are no longer talking about joint action generally, only about intentional joint action.
+Compare individual action: much individual action is arguably purposive but not 
+intentional.  Similarly, we might think that there are non-intentional but purposive joint
+actions.
+            </div>
+            <div class="notes">A further problem concerns the link between intentional joint action and intention.
+Consider individual action.  Bratman has good arguments for holding that actions can
+be intentional under a description even when no intention specifies that description;
+and he also holds that agents incapable of intending may nevertheless perform intentional
+actions.
+So it is conceivable that not all intentional joint action will involve intention.
+In that case, the Simple View may not even be a fully general account of intentional
+joint action.
+            </div>
+            <div class="notes">I’m not going to pursue these issues yet, but we will come back to them.
+For now I just want to note that, for all its simplicity, the Simple View raises some
+tricky questions.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".intentional" data-cls="bkg-orange" class="dv dv-removeclass"></div>
+            <div data-what=".necessary-and-sufficient" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".necessary-and-sufficient" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">For now I am treating the Simple View as offering necessary and sufficient conditions
+for intentional joint action, because I want to start with an ambitious claim.
+But reflecion on the relation between intention and intentional action may force us to back
+down later.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".necessary-and-sufficient" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".appropriately-related" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".appropriately-related" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Explain: deviant causal chains.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".appropriately-related" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div data-what=".together" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".together" data-cls="bkg-red" class="dv dv-addclass"></div>
+            <div class="notes">Explain: threat of circularity.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

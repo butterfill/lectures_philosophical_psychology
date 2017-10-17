@@ -1,0 +1,114 @@
+---
+layout: 'default2'
+title: 'Lecture 01: Intention and Motor Representation in Purposive Action'
+subtitle: ''
+weburl: ''
+units: []
+lecture_date: '2016/10/13'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+//- 
+  TODO : should have metioned Fridland 2016 on the interface problem
+  and the dynamic version of it.  (Although she seems to be working
+  with a rather restricted version of what is motoric, e.g. she appears
+  to assume that flexible goal-specific trajectory updates require 
+  intention.)
+
+- var images = get_images('joint_action01')
+
++title_slide({document:document, images:images})
+  .notes: :t
+    Any attempt to bring scientific discoveries about action into a philosophical
+    discussion quickly runs into a significant obstacle ...
+    [The obstacle will be apparently completely different way of thinking about action.]
+
+
+
++slide({bkg:'intention_and_motor_representation/Slide03.jpg'})
+  .notes: :t
+    Which events are actions?
+    In philosophy, answering this question would typically answered by appeal to intention 
+    or practical reasoning.
+  .notes: :t
+    Such views tend to be neutral on how 
+    the attitudes and processes ultimately connect to bodily movements; 
+    that is considered to be merely an implementation detail ...
+  .notes: :t
+    They are neutral in this sense: the views do not depend in any way on facts about that 
+    distinguish one kind of body from another, or on facts about how the body’s movements 
+    are ultimately controlled ... 
+
++slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  .notes: :t
+    In cognitive science ... little to say about actions whose purposes
+    involve things the motor system doesn’t care about---your motor system
+    doesn’t care whether the plane you are stepping is headed for Milan or
+    for Rome, but this sort of difference can affect whether your actions succeed or fail.
+  .slide
+    +blur('img.bkg','5px')
+    p.center talking past each other?
+    .notes: :t
+      You might just say that the two disciplines are talking past each other,
+      or you might say that they are offering two complementary but independent
+      models of action.
+    .notes: :t
+      Call this the ‘Two Stories View’ (or divorced, but living together).
+    .notes: :t
+      But we want to argue that these two views are components of a single, larger story about action.
+      Although intention and motor representation can usefully be studied in isolation
+      to some extent, a full understanding of action will require understanding
+      interfaces between the two …
+    .notes: :t
+      But first let me fill in a little detail about each of the stories ...
+
+
+//- section on intention : see Budapest lecture05 slides
++insert_unit({unit:'intro_to_intention', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'intro_to_motor_representation', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'motor_representations_ground_goals', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'motor_representations_arent_intentions', title_slide:true, images:images, handout:true})
+
+
++slide_middle({bkg:'intention_and_motor_representation/Slide04.jpg'})
+  .notes: :t
+    So where does this leave us with respect to our starting point,
+    the ‘Two Stories’ view?
+  .notes: :t
+    On the face of it, everything I’ve said so far is compatible with that View
+    and might even be taken to support it.
+  .notes: :t
+    But there is a problem ...
+
+        
++slide_middle({bkg:'planning_like/Slide4.jpg'})
+  .notes: :t
+    Recall stealing an apple ...
++slide_middle({bkg:'planning_like/Slide5.jpg'})
+  .notes: :t
+    Imagine you are a hungry shoplifter with a powerful desire for an apple.  After carefully 
+    considering the pile of apples on the stall, you identify one that can be discretely 
+    snatched and form an intention to steal that apple as you casually saunter past the stall.  
+    In grasping, transporting and pocketing the apple your movements are controlled by motor 
+    representations of these outcomes.  So your theft depends on an intention, on some motor 
+    representations and on there being a match between the outcome specified by the intention 
+    and the outcomes specified by the motor representations.
+  .notes: :t
+    In short: practical reasoning and motor processes are part of a single story about the 
+    performance of action; there must be non-accidental matches between the contents of 
+    intentions and motor representations.
+  .notes: :t
+    \textbf{So we can’t accept the Two Stories View because there must sometimes be content-respecting
+    causal interactions involving intentions and motor representations.
+    Without these, our intentions and motor representations would never non-accidentally
+    have synergistic effects on our actions.}
+
++insert_unit({unit:'the_interface_problem', title_slide:true, images:images, handout:true})
+
+
+//- NEXT: categorical_perception_of_speech.ppt in folder `london talk 2010-01-28`

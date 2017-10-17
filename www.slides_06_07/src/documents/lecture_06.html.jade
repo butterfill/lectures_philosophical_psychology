@@ -1,0 +1,70 @@
+---cson
+layout: 'default2'
+title: 'Lecture 06: Acting Together'
+subtitle: ''
+weburl: ''
+units: []
+abstract: """
+  Acting together with a purpose is a familiar feature of everyday life. People
+  play duets, move pianos together, and drink toasts together. In such cases
+  the actions people perform have a collective goal in at least this sense:
+  they are directed to an outcome and this is not, or not only, a matter of
+  each action being individually directed to this outcome. But in virtue of
+  what do the actions people perform in acting together have collective goals?
+  In considering a counterpart of this question concerning acting alone with a
+  purpose, several philosophers have argued that it is necessary to identify a
+  role for motor representations. By contrast, philosophical discussions of
+  acting together have mainly ignored motor representation. They have also have
+  neglected very small scale cases of acting together with a purpose such as
+  two pianists playing a chord together, two people elevating a piano together,
+  or two people clinking glasses. In this seminar I introduce a proposal to
+  fill both gaps. The strategy is to generalise a view about goals and motor
+  representations in acting alone with a purpose. The conclusion is that some
+  cases of acting together with a purpose constitutively involve motor
+  representations. This may have implications for understanding the varieties
+  of ways in which people can act together.
+  """
+lecture_date: '2016/11/17'
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('joint_action05')
+
+
+//- 
+  TODO: explain what justifies attempting to avoid Bratman
+  without explaining the problems?  (NB: Bratman himself doesn’t think
+  that cooperation is a feature of shared intention.)
+
++title_slide({document:document, images:images})
+  .notes: :t
+    In this seminar, I will outline a minimal framework for theorising
+    about joint action. 
+    I will also argue that attention to the role of 
+    motor representation in coordinating joint action
+    proves unexpectedly helpful in enabling us to understand 
+    the sophisticated sort of cooperative interactions that are often
+    the focus of philosophical discussions of joint action.
+    
+// the question
++insert_unit({unit:'contrast_cases_simple_view', title_slide:false, images:images, handout:true})
++insert_unit({unit:'walking_together_tarantino', title_slide:true, images:images, handout:true})
+
++insert_unit({unit:'multi_agent_events', title_slide:true, images:images, handout:true})
++insert_unit({unit:'collective_goals', title_slide:true, images:images, handout:true})
++insert_unit({unit:'collective_goals_and_motor_representations', title_slide:true, images:images, handout:true})
++insert_unit({unit:'motor_representations_and_cooperation', title_slide:true, images:images, handout:true})
+
++slide_middle
+  p.center.huge-glow conclusion
+  .notes: :t()
+    In conclusion, my question was about in virtue of what ... collective goals.
+    Many researchers have answered this question by appeal to one or another kind of shared intention.
+    What we have shown is that in some cases the right answer to the question involves 
+    motor representation rather than intention.
+    And, more tenatively, this suggests that there may be a role for motor representation
+    in characterising joint action.
+    Perhaps understanding joint action and shared intention requires appeal not just to intention, commitment and the rest,
+    but also to motor representation. 

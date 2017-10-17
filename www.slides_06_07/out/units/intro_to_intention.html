@@ -1,0 +1,626 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Intention in the Philosophy of Action | Philosophical Psychology</title>
+    <meta name="description" content="What are intentions and what is their role in practical reasoning and action? Some basic
+distinctions from the Philosophy of Action can give us a fix on the notion of intention as
+many philosophers conceive of it."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="intro_to_intention" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Intention in the Philosophy of Action</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">intention != goal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="photobox-bottom-right"><img src="/img/davidson.gif" class="photo-right"/></div>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>The expression ‘the intention with which James went to church’ ... cannot be taken to refer to a ...
+state ....
+        </p>
+        <p>Its function ... is to generate new descriptions of actions in terms of their reasons;
+        </p>
+        <p>thus ‘James went to church with the intention of pleasing his mother’ yields a new, and fuller,
+description of the action described in ‘James went to church’.’
+        </p>
+        <p class="grey-text right">(Davidson 1963: 690)</p>
+        <div class="handout">‘The expression ‘the intention with which James went to church’ ... cannot be taken to refer to a
+... state .... Its function ... is to generate new descriptions of actions in terms of their
+reasons; thus ‘James went to church with the intention of pleasing his mother’ yields a new, and
+fuller, description of the action described in ‘James went to church’.’ 
+\citep[p.~690]{davidson:1963_orig}
+        </div>
+        <div class="slide em-above">
+          <p>Desire: to please my mother</p>
+          <p>Belief: I can  please my mother by going to church.</p>
+          <p>Action: Go to church.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">intention = action-casuing belief-desire pair?</p>
+          <div class="slide">
+            <p class="center">No because squirrel house!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What are intentions for?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/zhang_rosenbaum_2007.png" width="1024px" class="bkg"/>
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12"> 
+        <p class="source">Zhang & Rosenbaum, 2008</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="em-around">desire: to earn more money</p>
+        <p class="em-around">belief: I can earn more money by getting a new job sometime.</p>
+        <p class="em-around">judgement: My getting a new job sometime would be desirable.</p>
+        <div class="step2 em-above hide">
+          <p class="em-around intention">intention: that I get a new job sometime</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half hide">
+      <div style="padding-left:1em;">
+        <div class="slide">
+          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <p class="em-around">desire: to take it easy today</p>
+          <p class="em-around">belief:  I can take it easy today by not getting a new job today.</p>
+          <p class="em-around">judgement: My not getting a new job today would be desirable.</p>
+          <div class="step2 em-above hide">
+            <p class="em-around intention">intention: that I do not get a new job today</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+    </div>
+    <div class="slide">
+      <div data-what="p:not(.agglomeration)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+      <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
+        <div class="container_12">
+          <div class="grid_12 ">
+            <div class="words">
+              <div class="middle">
+                <p class="center agglomeration huge-glow">agglomeration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="handout">The norm of \emph{agglomeration} says it is a mistake to knowingly have several intentions if it
+would be a mistake to knowingly have one large intention agglomerating the several intentions; see
+\citet{Bratman:1987xw} or \citet[§4]{setiya:2014_intention}.
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".intention" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="notes">nothing wrong with desiring these things ... is something wrong with intending them
+Agglomeration is important because it distinguishes intention from desire, and from strongest desire.
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What are intentions for?</p>
+          <div class="notes">So what are intentions for?
+          </div>
+          <div class="notes">I’m going to assume that intention is something over and above basic beliefs and desires; that an
+intention is not, for instance, merely a strongest desire.
+          </div>
+          <div class="notes">There is a temptation to assume that intention is involved in every case of purposive action.
+But it’s hard to see what the argument for this could be.
+In many cases it seems that beliefs, desires and motor representations are all that is needed to explain purposive action. 
+You offer me a biscuit.  I want one, and I believe I can get one by reaching out for it.  So I do reach for it.  As far as I can see, there’s no need to suppose that, in addition to the belief and desire, it must be the case that I also intend to take a biscuit.  
+(At least not unless we take ‘intention’ to mean ‘strongest desire’, which it does not.)  
+Maybe I do intend this.  
+But it’s possible for an agent to take and eat a biscuit, and to do so purposively, without having any intentions at all.  
+Beliefs desires and motor representations are sufficient.
+          </div>
+          <div class="notes">So (again), what are intentions for?
+The answer has something to do with planning.  
+But here we must be careful because not all planning involves intending.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>‘why should rational agents like us have the capacity to have both </p>
+        <p>ordinary intentions (subject to demands for consistency and agglomeration) </p>
+        <p>and </p>
+        <p>guiding desires (which are not subject to these demands)?’</p>
+        <p class="right grey-text">Bratman 1987, pp. 137–8</p>
+        <div class="handout">‘why should rational agents like us have the capacity to have both ordinary intentions (subject to
+demands for consistency and agglomeration) and guiding desires (which are not subject to these
+demands)?’ \citep[pp.~137–8]{Bratman:1987xw}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="question hide"> What is the relation between a purposive action and the outcome or outcomes to which it is directed?</p>
+        <svg width="665px" height="445px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+          <defs>
+            <filter id="glow-large" width="3" height="3" x="-.5" y="-.5">
+              <feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="15"></feGaussianBlur>
+              <feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="10"></feGaussianBlur>
+              <feGaussianBlur result="blurOut3" in="SourceGraphic" stddeviation="5"></feGaussianBlur>
+              <femerge>
+                <femergenode in="blurOut"></femergenode>
+                <femergenode in="blurOut2"></femergenode>
+                <femergenode in="blurOut3"></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+              </femerge>
+            </filter>
+            <filter id="glow-small" width="1.5" height="1.5" x="-.25" y="-.25">
+              <feGaussianBlur result="blurOut" in="SourceGraphic" stddeviation="4"></feGaussianBlur>
+              <feGaussianBlur result="blurOut2" in="SourceGraphic" stddeviation="4"></feGaussianBlur>
+              <femerge>
+                <femergenode in="blurOut"></femergenode>
+                <femergenode in="blurOut2"></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+              </femerge>
+            </filter>
+            <filter id="dropGlowBlack" width="1.5" height="1.5" x="-.25" y="-.25">
+              <fegaussianblur in="SourceAlpha" stdDeviation="10" result="blur"></fegaussianblur>
+              <femerge>
+                <femergenode in="blur"></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+              </femerge>
+            </filter>
+            <g id="action-ellipse">
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="#000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></ellipse>
+            </g>
+            <g id="action-ellipse-neon">
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></ellipse>
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></ellipse>
+              <ellipse cx="0" cy="0" rx="40" ry="40" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+            </g>
+          </defs>
+          <g transform="translate(0.5,0.5)">
+            <g class="action-light">
+              <ellipse cx="42" cy="42" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(12,27)">
+                <switch>
+                  <foreignobject pointer-events="all" width="59" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 59px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">light</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="30" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="action-smoke">
+              <ellipse cx="132" cy="402" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(91,387)">
+                <switch>
+                  <foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">smoke</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="joint-action">
+              <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#dropGlowBlack)"></rect>
+              <g class="neon-rect hide">
+                <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#A0A" stroke-width="3" pointer-events="none" filter="url(#glow-large)"></rect>
+                <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#2C75FF" stroke-width="3" pointer-events="none" filter="url(#glow-small)"></rect>
+              </g>
+              <rect x="32" y="72" width="140" height="310" rx="21" ry="21" fill="none" stroke="#ffffff" stroke-width="3" pointer-events="none"></rect>
+              <g class="action drop">
+                <use xlink:href="#action-ellipse" x="87" y="132"></use>
+                <g class="neon-ellipse hide">
+                  <use xlink:href="#action-ellipse-neon" x="87" y="132"></use>
+                </g>
+                <g transform="translate(51,117)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="61" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">open</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="31" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="action throw">
+                <use xlink:href="#action-ellipse" x="82" y="242"></use>
+                <g class="neon-ellipse hide">
+                  <use xlink:href="#action-ellipse-neon" x="82" y="242"></use>
+                </g>
+                <g transform="translate(44,227)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="75" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">pour</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="38" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="action discard">
+                <use xlink:href="#action-ellipse" x="112" y="312"></use>
+                <g class="neon-ellipse hide">
+                  <use xlink:href="#action-ellipse-neon" x="112" y="312"></use>
+                </g>
+                <g transform="translate(68,297)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="88" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">tilt</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="44" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+            </g>
+            <g class="outcome amuse hide">
+              <ellipse cx="562" cy="92" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(521,77)">
+                <switch>
+                  <foreignobject pointer-events="all" width="81" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">soak</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="41" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="outcome scare hide">
+              <ellipse cx="562" cy="272" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(527,257)">
+                <switch>
+                  <foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">scare</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="outcome freakout hide">
+              <ellipse cx="522" cy="362" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none"></ellipse>
+              <g transform="translate(483,332)">
+                <switch>
+                  <foreignobject pointer-events="all" width="77" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">freak out</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="39" y="43" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="outcome block hide">
+              <g class="block-glow hide">
+                <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse>
+                <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" filter="url(#glow-large)" class="glow"></ellipse>
+              </g>
+              <ellipse cx="582" cy="182" rx="40" ry="40" fill="#000000" stroke="#ffffff" stroke-width="3" pointer-events="none" class="no-glow"></ellipse>
+              <g transform="translate(547,167)">
+                <switch>
+                  <foreignobject pointer-events="all" width="69" height="32" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">fill</font></div>
+                    </div>
+                  </foreignobject>
+                  <text x="35" y="28" fill="#000000" text-anchor="middle" font-size="24px" font-family="Lato">[Not supported by viewer]</text>
+                </switch>
+              </g>
+            </g>
+            <g class="explain-collective-directedness hide">
+              <g class="the-box">
+                <rect x="242" y="262" width="210" height="60" rx="9" ry="9" fill="#ffffff" stroke="#ffffff" stroke-width="3" transform="rotate(-15,347,292)" pointer-events="none"></rect>
+                <g transform="translate(252,262)rotate(-15,94.5,30)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="189" height="62" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;" class="invert">intention<span class="mr remove-me hide noinvert"> or motor representation</span><br/><span class="iasmr hide">or ???</span></div>
+                      </div>
+                    </foreignobject>
+                  </switch>
+                </g>
+              </g>
+              <g class="coordinates hide">
+                <path d="M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
+                <path d="M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"></path>
+                <g transform="translate(199,155)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="126" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 126px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">coordinates</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="63" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+              <g class="represents hide">
+                <path d="M 352 262 Q 342 222 392 207 Q 442 192 531.95 183.01" fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path>
+                <path d="M 538.66 182.33 L 530.16 187.71 L 531.95 183.01 L 529.26 178.75 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10" pointer-events="none" filter="url(#dropGlowBlack)"></path>
+                <g transform="translate(374,167)rotate(-12,58,12)">
+                  <switch>
+                    <foreignobject pointer-events="all" width="116" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                      <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font color="#ffffff">specifies</font></div>
+                      </div>
+                    </foreignobject>
+                    <text x="58" y="25" fill="#000000" text-anchor="middle" font-size="24px">[Not supported by viewer]</text>
+                  </switch>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <div class="notes">As this illustrates, 
+some actions involving are purposive in the sense that
+        </div>
+        <div class="slide">
+          <div data-what=".outcome" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">among all their actual and possible consequences,
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".outcome.block .block-glow" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">there are outcomes to which they are directed
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">and the actions are collectively directed to this outcome
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what=".joint-action .neon-ellipse" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">so it is not just a matter of each individual action being directed to this outcome.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".joint-action .neon-ellipse" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what=".joint-action .neon-rect" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">In such cases we can say that the actions are clearly purposive.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".question" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">Concerning any such actions, we can ask
+What is the relation between a purposive action and the outcome or outcomes to which it is directed?
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".explain-collective-directedness" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">The standard answer to this question involves intention.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".represents" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">An intention (1) specifies an outcome,
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".coordinates" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">(2) coordinates the one or several activities which comprise the action;
+          </div>
+          <div class="notes">and (3) coordinate these activities in a way that would normally facilitate the outcome’s occurrence.
+          </div>
+          <div class="notes">What binds particular component actions together into larger purposive actions?  
+It is the fact that these actions are all parts of plans involving a single intention.
+What singles out an actual or possible outcome as one to which the component 
+actions are collectively directed?  It is the fact that this outcome is 
+represented by the intention.
+          </div>
+          <div class="notes">So the intention is what binds component actions together into purposive actions and 
+links the action taken as a whole to the outcomes to which they are directed.
+          </div>
+        </div>
+        <div class="slide">
+          <div data-what=".iasmr" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">But is intention the only thing that can link actions to outcomes?
+I will suggest that motor representations can likewise perform this role.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

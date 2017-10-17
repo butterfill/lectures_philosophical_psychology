@@ -1,0 +1,118 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{extarticle}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle {Origins of Mind}
+
+\def \isubtitle {Lecture 01}
+
+\def \iauthor {Stephen A. Butterfill}
+\def \iemail{s.butterfill@warwick.ac.uk}
+\date{}
+
+%for strikethrough
+\usepackage[normalem]{ulem}
+
+\input{$HOME/Documents/submissions/preamble_steve_handout}
+
+%\bibpunct{}{}{,}{s}{}{,}  %use superscript TICS style bib
+%remove hanging indent for TICS style bib
+%TODO doesnt work
+\setlength{\bibhang}{0em}
+%\setlength{\bibsep}{0.5em}
+
+
+%itemize bullet should be dash
+\renewcommand{\labelitemi}{$-$}
+
+\begin{document}
+
+\begin{multicols*}{3}
+
+\setlength\footnotesep{1em}
+
+
+\bibliographystyle{newapa} %apalike
+
+%\maketitle
+%\tableofcontents
+
+
+
+
+%---------------
+%--- start paste
+
+
+
+
+\def \ititle {Lecture 05: Do Humans Perceive Others’ Feelings}
+
+\begin{center}
+
+{\Large
+
+\textbf{\ititle}
+
+}
+
+
+
+\iemail %
+
+\end{center}
+
+\citet[p.\ 573]{mcneill:2012_embodiment}: ‘We sometimes {see} aspects of each others’ mental lives, and thereby come to have non-inferential knowledge of them.’
+
+
+
+\section{Categorical Perception \& Emotion}
+
+There is a way of categorising static pictures of faces and other stimuli according to which emotion
+someone might think they are expressing: some faces are happy, others fearful, and so on
+From five months of age,
+or possibly much earlier \citep{field:1982_discrimination},
+through to adulthood, humans are better at distinguishing faces when they
+differ with respect to these categories than when they do not
+\citep{Etcoff:1992zd,Gelder:1997bf,Bornstein:2003vq,Kotsoni:2001ph,cheal:2011_categorical,hoonhorst:2011_categoricala}.
+
+The patterns of discrimination do not appear to be an artefact of linguistic labels
+(\citealp{sauter:2011_categorical}; see also \citealp{laukka:2005_categorical}, p.\ 291),%
+nor of the particular choices subjects in these experiments are presented with \citep{bimler:2001_categorical,fujimura:2011_categorical}.
+Nor are the patterns of discrimination due to narrowly visual features of the stimuli used \citep{sato:2009_detection}.
+
+‘at a mean latency of 140 ms) the N170 showed both amplitude and latency
+modulation differentially with emotional expressions. ...
+[BUT] Whether this is due presently to low-level stimulus factors or to the use of emotional faces
+is still to be determined’ \citep[p.~616]{batty:2003_early}.
+
+
+
+\section{The Objects of Categorical Perception}
+
+The same facial configuration can express intense joy or intense anguish depending on the posture of
+the body it is attached to; and humans cannot accurately determine emotions from
+spontaneously occurring (as opposed to acted out) facial
+configurations \citep{motley:1988_facial,aviezer:2008_angry,aviezer:2012_body}.
+
+Aviezer et al's puzzle:
+Given that  facial configurations are not diagnostic of emotion, why  are they categorised by perceptual processes?
+
+‘emotions are episodic modes of evaluative engagement with the social and practical world’
+\citep[p.\ 1512]{parkinson:2008_emotions}.
+
+
+ 
+
+
+%--- end paste
+%---------------
+
+\footnotesize
+\bibliography{$HOME/endnote/phd_biblio}
+
+\end{multicols*}
+
+\end{document}
