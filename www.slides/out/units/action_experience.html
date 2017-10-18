@@ -1,154 +1,14 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Action Experience | Philosophical Psychology</title>
-    <meta name="description" content="What do you experience when someone acts?
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Action Experience | Philosophical Psychology</title><meta name="description" content="What do you experience when someone acts?
 According to the Action Index Conjecture,
 motor representations of outcomes structure 
 experiences, imaginings and (prospective) memories
 in ways which provide opportunities for attention to actions directed to those outcomes.
 Forming intentions concerning an outcome can influence attention to the action,
-which can influence the persistence of a motor representation of the outcome."/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="action_experience" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Action Experience</h2>
-          </div>
-        </div>
-      </section>
-
+which can influence the persistence of a motor representation of the outcome."/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="action_experience" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Action Experience</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
-
 
 
 
@@ -156,91 +16,25 @@ var inject = function(){
 connected systems that work largely independently of each other. To a certain extent it’s fine for
 them to go their own way; and of course since they all get the same inputs (what with being parts of
 a single subject), there are limits on how separate the ways the go can be. Still, it’s often good
-for them to be aligned, at least eventually.
-</div>
-<div class="notes">Experience is what enables there to be nonaccidental eventual alignment of largely independent
-cognitive systems. This is what experience is for.
-</div>
-<div class="notes">Can we think along these lines in the case of action?
-</div>
-<div class="notes">\textbf{What do we experience when someone acts?}
+for them to be aligned, at least eventually.</div><div class="notes">Experience is what enables there to be nonaccidental eventual alignment of largely independent
+cognitive systems. This is what experience is for.</div><div class="notes">Can we think along these lines in the case of action?</div><div class="notes">\textbf{What do we experience when someone acts?}
 One possibility is that we experience only bodily configurations, joint displacements and
 effects characteristic of particular actions.
 For the purposes of this talk, I will assume that this is wrong.
 Instead I will assume that we experience not only bodily configurations, joint displacements,
-sounds and the rest but also goal-directed actions.
-</div>
-<div class="notes">What might it mean to experience action?
-</div>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white"></div>
-  <div class="container_12">
-    <div class="clear"></div>
-    <div class="words run-across">
-      <p class="center">How are non-accidental matches possible?</p>
-    </div>
-    <div class="container_12"></div>
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p class="center">action</p>
-        <p class="em-above step2 hide"> Contents of motor representations vs contents of intentions.</p>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half">
-      <div style="padding-left:1em;">
-        <p class="center">vision</p>
-        <p class="em-above step2 hide">Contents of visual representations vs contents of beliefs.</p>
-        <div class="notes">Could action experiences be like visual experiences?
+sounds and the rest but also goal-directed actions.</div><div class="notes">What might it mean to experience action?</div><section class="slide"><div style="z-index:-22;" class="right-half-white"></div><div class="container_12"><div class="clear"></div><div class="words run-across"><p class="center">How are non-accidental matches possible?</p></div><div class="container_12"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="center">action</p><p class="em-above step2 hide"> Contents of motor representations vs contents of intentions.</p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p class="center">vision</p><p class="em-above step2 hide">Contents of visual representations vs contents of beliefs.</p><div class="notes">Could action experiences be like visual experiences?
 This wound imply that there are expeirences of action which stand to motor representations
 in something like the way that visual experiences stand
-to visual representations.
-        </div>
-        <div class="slide">
-          <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          <div class="notes">If this were right, how would it help with the interface problem?
-          </div>
-        </div>
-        <div class="slide">
-          <p class="em-above notes show">Visual representations cause visual experiences, which provide reasons for beliefs.</p>
-          <p class="hem-above notes show">Beliefs (and desires) influence orientation and attention, and thereby visual representations.</p>
-          <div class="notes">This seems unlikely for several reasons.
+to visual representations.</div><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">If this were right, how would it help with the interface problem?</div></div><div class="slide"><p class="em-above notes show">Visual representations cause visual experiences, which provide reasons for beliefs.</p><p class="hem-above notes show">Beliefs (and desires) influence orientation and attention, and thereby visual representations.</p><div class="notes">This seems unlikely for several reasons.
 First, vision involves a particular sensory modality. It would be quite radical to 
-postulate a motor modality.
-          </div>
-          <div class="notes">Second, the interface problem in the case of vision is, I suppose, primarily about how 
+postulate a motor modality.</div><div class="notes">Second, the interface problem in the case of vision is, I suppose, primarily about how 
 visual representations influence beliefs; 
 you don’t want influence in the other direction, or at least not too much.
 By contrast, influence from intention to motor representation is essential;
 so vision seems likely to provide a poor
-for the case of action.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">model 2: sensations (the feeling of familiarity)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">model 3: object indexes</p>
-          <div class="notes">what is an object index? Formally, an object index is ‘a mental token that functions as a pointer to
+for the case of action.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">model 2: sensations (the feeling of familiarity)</p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">model 3: object indexes</p><div class="notes">what is an object index? Formally, an object index is ‘a mental token that functions as a pointer to
 an object’ \citep[p.\ 11]{Leslie:1998zk}. If you imagine using your fingers to track moving objects,
-an object index is the mental counterpart of a finger \citep[p.~68]{pylyshyn:1989_role}.
-          </div>
-          <div class="notes">The interesting thing about object indexes is that a system of object
+an object index is the mental counterpart of a finger \citep[p.~68]{pylyshyn:1989_role}.</div><div class="notes">The interesting thing about object indexes is that a system of object
 indexes (at least one, maybe more)
 appears to underpin cognitive processes which are not
 strictly perceptual but also do not involve beliefs or knowledge states.
@@ -248,47 +42,12 @@ While I can’t fully explain the evidence for this claim here,
 I do want to mention one of the experimental tools that is used to
 investigate the existence of, and the principles underpinning, 
 a system of object indexes which operates 
-between perception and thought ...
-          </div>
-          <div class="notes">[Object indexes are going to come in twice: once as a partial solution to the 
+between perception and thought ...</div><div class="notes">[Object indexes are going to come in twice: once as a partial solution to the 
 interface problem, then again as a model for a further conjecture about how it might be solved
-(the ‘action index’ conjecture).]
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="object-indexes-fix">
-          <div style="position:relative;"><img src="/img/pylyshyn_2001_fig6.png" style="clip: rect(0, 200px, 300px, 0); position: absolute; max-width:720px; max-height:550px;"/></div>
-        </div>
-        <div class="notes">Suppose you are shown a display involving eight stationary circles, like 
-this one.
-        </div>
-        <div style="margin-top:300px;" class="kludge">&nbsp;</div>
-        <div class="slide">
-          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;rect(0, 370px, 300px, 0)&quot;}" class="dv dv-style"></div>
-          <div class="notes">Four of these circles flash, indicating that you should track these circles.
-          </div>
-        </div>
-        <div class="slide">
-          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;rect(0, 530px, 300px, 0)&quot;}" class="dv dv-style"></div>
-          <div class="notes">All eight circles now begin to move around rapidly, and keep moving unpredictably for some time.
-          </div>
-        </div>
-        <div class="slide">
-          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
-          <div class="notes">Then they stop and one of the circles flashes.
+(the ‘action index’ conjecture).]</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="object-indexes-fix"><div style="position:relative;"><img src="/img/pylyshyn_2001_fig6.png" style="clip: rect(0, 200px, 300px, 0); position: absolute; max-width:720px; max-height:550px;"/></div></div><div class="notes">Suppose you are shown a display involving eight stationary circles, like 
+this one.</div><div style="margin-top:300px;" class="kludge">&nbsp;</div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;rect(0, 370px, 300px, 0)&quot;}" class="dv dv-style"></div><div class="notes">Four of these circles flash, indicating that you should track these circles.</div></div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;rect(0, 530px, 300px, 0)&quot;}" class="dv dv-style"></div><div class="notes">All eight circles now begin to move around rapidly, and keep moving unpredictably for some time.</div></div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">Then they stop and one of the circles flashes.
 Your task is to say whether the flashing circle is one you were supposed to track.
-Adults are good at this task \citep{pylyshyn:1988_tracking}, indicating that they can use at least four object indexes simultaneously.
-          </div>
-          <div class="notes">They can also sometimes specify which direction the object was moving in (*ref).
-          </div>
-          <div class="notes">(\emph{Aside.} That this experiment provides evidence for the existence of 
+Adults are good at this task \citep{pylyshyn:1988_tracking}, indicating that they can use at least four object indexes simultaneously.</div><div class="notes">They can also sometimes specify which direction the object was moving in (*ref).</div><div class="notes">(\emph{Aside.} That this experiment provides evidence for the existence of 
 a system of object indexes has been challenged.  
 See \citet[p.\ 59]{scholl:2009_what}:
 \begin{quote}
@@ -304,249 +63,72 @@ However, contra what Scholl seems to be suggesting here, the MOT paradigm
 can be adapated to provide such evidence.
 Thus, for instance, \citet{horowitz:2010_direction} show that, in a MOT paradigm, observers 
 can report the direction of one or two targets without advance knowledge of which 
-targets' directions they will be asked to report.)
-          </div>
-        </div>
-        <p class="source">Pylyshyn 2001, figure 6</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="change-features-fig"><img src="/img/scholl_2007_fig4.png" style=""/>
-          <p class="source">Scholl 2007, figure 4</p>
-        </div>
-        <div class="notes">Object indexes are belief-independent.
+targets' directions they will be asked to report.)</div></div><p class="source">Pylyshyn 2001, figure 6</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="change-features-fig"><img src="/img/scholl_2007_fig4.png" style=""/><p class="source">Scholl 2007, figure 4</p></div><div class="notes">Object indexes are belief-independent.
 In this scenario, 
 a patterned square disappears behind the barrier; later a plain black ring emerges.  
 If you consider speed and direction only, these movements are consistent with there being just one object.
 But given the distinct shapes and textures of these things, it seems all but certain that there must be two objects.
-Yet in many cases these two objects will be assigned the same object index \citep{flombaum:2006_temporal,mitroff:2007_space}.
-        </div>
-        <div class="slide">
-          <div data-what=".change-features-fig" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
-            <div style="" class="container_12">
-              <div class="grid_12 ">
-                <div class="words">
-                  <div class="middle">
-                    <div class="object-index-properties">
-                      <p>Object indexes</p>
-                      <ul>
-                        <li class="judgement-independent">can conflict with beliefs,</li>
-                        <div class="notes">This system of object indexes
+Yet in many cases these two objects will be assigned the same object index \citep{flombaum:2006_temporal,mitroff:2007_space}.</div><div class="slide"><div data-what=".change-features-fig" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="object-index-properties"><p>Object indexes</p><ul><li class="judgement-independent">can conflict with beliefs,</li><div class="notes">This system of object indexes
 does not involve belief or knowledge
 and may assign indexes to objects in ways that are inconsistent with
 a subject’s beliefs about the identities of objects 
-\citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}
-                        </div>
-                        <div class="notes">Object indexes can conflict with beliefs, although they are surely not
+\citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}</div><div class="notes">Object indexes can conflict with beliefs, although they are surely not
 entirely independent of beliefs because they can influence how
-attention is allocated.
-                        </div>
-                        <li>are nonmodal,</li>
-                        <li>influence how attention is allocated<span class="step2 hide">, and</span></li>
-                        <li class="step2 hide"><span class="guide-action">guide ongoing action (e.g. visual tracking, reaching).</span></li>
-                      </ul>
-                    </div>
-                    <div class="slide">
-                      <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-                      <div class="notes">Object indexes can guide ongoing object-directed actions.
+attention is allocated.</div><li>are nonmodal,</li><li>influence how attention is allocated<span class="step2 hide">, and</span></li><li class="step2 hide"><span class="guide-action">guide ongoing action (e.g. visual tracking, reaching).</span></li></ul></div><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Object indexes can guide ongoing object-directed actions.
 For example, if you are aiming to catch a moving target,
-object indexes are supposed to influence where you reach. (*ref!)
-                      </div>
-                    </div>
-                    <div class="slide">
-                      <div data-what=".guide-action" data-cls="transition-04" class="dv dv-addclass"></div>
-                      <div data-what=".guide-action" data-cls="bkg-invert" class="dv dv-addclass"></div>
-                      <div class="notes">The fact that object indexes may guide action suggests that they
+object indexes are supposed to influence where you reach. (*ref!)</div></div><div class="slide"><div data-what=".guide-action" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".guide-action" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">The fact that object indexes may guide action suggests that they
 can contribute to solving 
 the interface problem? 
 Suppose you are aiming to catch one of
 several possible targets. What do you do? You attend to the target. 
-What’s going on here?
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/motor_representation_fig/Slide16.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">... my conjecture is that this is what is going on.
+What’s going on here?</div></div></div></div></div></div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/motor_representation_fig/Slide16.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">... my conjecture is that this is what is going on.
 \begin{enumerate}
 \item Object indexes enable attention to an object,
 \item which enables the formation of an intention,
 \item which influences attention to objects,
 \item which in turn influences assignments of object indexes,
 \item thereby guiding action.
-\end{enumerate}
-          </div>
-          <div class="slide">
-            <div data-what=".bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div class="notes">Now I want to suggest that we can think of the way things work in the case of 
+\end{enumerate}</div><div class="slide"><div data-what=".bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">Now I want to suggest that we can think of the way things work in the case of 
 object indexes as inspiration for a somewhat analogous idea about how motor representations
-might contribute to what we experience when someone acts.
-            </div>
-            <div class="notes">What do we experience when someone acts?
+might contribute to what we experience when someone acts.</div><div class="notes">What do we experience when someone acts?
 Perhaps we can answer this question by analogy with the effects of object indexes on experience.
 There’s no perceptual modality linked to objects; instead, a system of object indexes appears to
-imposes a sort of structure on experience which can influence attention and guide action.
-            </div>
-            <div class="notes">By analogy, we might think that the system of motor representations imposes a sort of structure
-on experience which can influence attention too.
-            </div>
-            <div class="notes">Earlier I suggested that object indexes provide a partial solution to the interface problem
+imposes a sort of structure on experience which can influence attention and guide action.</div><div class="notes">By analogy, we might think that the system of motor representations imposes a sort of structure
+on experience which can influence attention too.</div><div class="notes">Earlier I suggested that object indexes provide a partial solution to the interface problem
 (Object index->attention->intention->attention->object index->action.)
 Similarly, if experience of things around you presents possible actions by way of
 structuring, what you need to do to act in a certain way is to attend to a particular action
-possibility structure.
-            </div>
-          </div>
-          <div class="slide">
-            <div class="notes show">
-              <p>‘Action index’ conjecture</p>
-              <p class="em-above indent">Motor representations of outcomes structure  <br/><span>experiences</span><span class="imaginings hide">, imaginings and (prospective) memories</span></p>
-              <p class="indent">in ways which provide opportunities for attention to actions directed to those outcomes.</p>
-              <div class="step2 hide">
-                <p class="em-above indent">Forming intentions concerning an outcome can influence attention to the action,</p>
-                <p class="indent">which can influence the persistence of a motor representation of the outcome.</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="notes">There’s one major disanalogy with object indexes.
+possibility structure.</div></div><div class="slide"><div class="notes show"><p>‘Action index’ conjecture</p><p class="em-above indent">Motor representations of outcomes structure  <br/><span>experiences</span><span class="imaginings hide">, imaginings and (prospective) memories</span></p><p class="indent">in ways which provide opportunities for attention to actions directed to those outcomes.</p><div class="step2 hide"><p class="em-above indent">Forming intentions concerning an outcome can influence attention to the action,</p><p class="indent">which can influence the persistence of a motor representation of the outcome.</p></div></div></div><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="notes">There’s one major disanalogy with object indexes.
 Object indexes are about things which are actually present, whereas the motor representations
-we are interested in specify possible future outcomes.
-          </div>
-          <div class="notes">This appears to be an objection because 
+we are interested in specify possible future outcomes.</div><div class="notes">This appears to be an objection because 
 on the face of it, it seems that there could not be expeirence of future actions 
-any more than we can experience future events.
-          </div>
-          <div class="notes">So, you might object, the idea that motor representations structure experience is ok if you
-are merely observing someone act, but it will not help with performing actions.
-          </div>
-          <div class="slide">
-            <div data-what=".imaginings" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">I want to answer this objection in two parts.
+any more than we can experience future events.</div><div class="notes">So, you might object, the idea that motor representations structure experience is ok if you
+are merely observing someone act, but it will not help with performing actions.</div><div class="slide"><div data-what=".imaginings" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">I want to answer this objection in two parts.
 The first part of the answer is that motor representations may structure not only
-experiences but also imaginigs, memories and prospective memories.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/costantini_2010_fig1b.png" style="width:720px"/>
-        <p class="source">Costantini et al, 2010 figure 1b</p>
-        <div class="notes">The second part of the answer to the objection is that motor representations of 
+experiences but also imaginigs, memories and prospective memories.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/costantini_2010_fig1b.png" style="width:720px"/><p class="source">Costantini et al, 2010 figure 1b</p><div class="notes">The second part of the answer to the objection is that motor representations of 
 outcomes may structure our experiences of objects.
-The existence of affordances suggests that this is at least possible.
-        </div>
-        <div class="notes">So here is the idea:
+The existence of affordances suggests that this is at least possible.</div><div class="notes">So here is the idea:
 What is experienced is an object, not an action or an outcome.
 So the fact that the action lies in the future and the outcome has not yet occurred is no objection.
 But the motor representation of the outcome structures the experience of the object in some way.
 So the overall character of the experience of the mug differs when an action is represented
-motorically compared to when it does not.
-        </div>
-        <div class="notes">And this difference is structural in the same sense that the difference object indexes make 
+motorically compared to when it does not.</div><div class="notes">And this difference is structural in the same sense that the difference object indexes make 
 is structural. It’s about how elements of experience are organised rather than about any
-particular sensory modality.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>‘Action index’ conjecture</p>
-          <p class="em-above indent">Motor representations of outcomes structure  <br/><span>experiences</span><span class="imaginings">, imaginings and (prospective) memories</span></p>
-          <p class="indent">in ways which provide opportunities for attention to actions directed to those outcomes.</p>
-          <div class="step2">
-            <p class="em-above indent">Forming intentions concerning an outcome can influence attention to the action,</p>
-            <p class="indent">which can influence the persistence of a motor representation of the outcome.</p>
-          </div>
-          <div class="notes">A second objection: intentions and motor representations need to match in situations where 
+particular sensory modality.</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>‘Action index’ conjecture</p><p class="em-above indent">Motor representations of outcomes structure  <br/><span>experiences</span><span class="imaginings">, imaginings and (prospective) memories</span></p><p class="indent">in ways which provide opportunities for attention to actions directed to those outcomes.</p><div class="step2"><p class="em-above indent">Forming intentions concerning an outcome can influence attention to the action,</p><p class="indent">which can influence the persistence of a motor representation of the outcome.</p></div><div class="notes">A second objection: intentions and motor representations need to match in situations where 
 you merely imagine acting or merely imaginary objects.  In such situations there are no objects
-to experience.
-          </div>
-          <div class="notes">Reply: motor representations structure experiences associated with imaginig things as they do
+to experience.</div><div class="notes">Reply: motor representations structure experiences associated with imaginig things as they do
 experiences associated with actually perceiving things. To imagine acting on a mug (say), you need
-to imagine the mug.
-          </div>
-          <div class="notes">A third objection: close your eyes, put yourself in a sensory deprivation chamber.
+to imagine the mug.</div><div class="notes">A third objection: close your eyes, put yourself in a sensory deprivation chamber.
 Let your hand rest palm down on a table.
 Now intend to turn your hand palm up.
 Often enough, the intention will succeed.
-But by hypothesis there is nothing you experience (you are in a sensory deprivation chamber).
-          </div>
-          <div class="notes">Two points in reply to this objection: first, we haven’t removed proprioception and other 
+But by hypothesis there is nothing you experience (you are in a sensory deprivation chamber).</div><div class="notes">Two points in reply to this objection: first, we haven’t removed proprioception and other 
 somasomatic senses.  It may be that motor representations structure experiences of the body
-just as much as they structure experiences of mere objects.
-          </div>
-          <div class="notes">But what if you remove somasomatic senses too?  This is likely to impair action, but unlikely 
+just as much as they structure experiences of mere objects.</div><div class="notes">But what if you remove somasomatic senses too?  This is likely to impair action, but unlikely 
 to make it impossible. Perhaps the ability to act in such situations depends on memory and 
-imagination.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Predictions<span class="q">?</span></p>
-          <div class="notes">So far I’ve suggested that this conjecture (a) might contribute to solving the interface
+imagination.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">Predictions<span class="q">?</span></p><div class="notes">So far I’ve suggested that this conjecture (a) might contribute to solving the interface
 problem and (b) isn’t obviously wrong.  But how could we tell whether it is right?
-What predictions does it generate?
-          </div>
-          <div class="slide">
-            <div data-what=".q" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <p class="indent">1. Not all action-related changes in experience are merely changes in 
-bodily configurations, movements and their sensory effects.
-            </p>
-            <div class="notes">Prediction 1: it is possible to vary which action someone experiences while holding fixed her
-perceptual experiences of bodily configurations and joint displacements and their sensory effects.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".q" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <p class="indent">2. Memory for objects should be influenced by their affordances.
-            </p>
-            <div class="notes"><t:0715043876087293></t:0715043876087293>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+What predictions does it generate?</div><div class="slide"><div data-what=".q" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><p class="indent">1. Not all action-related changes in experience are merely changes in 
+bodily configurations, movements and their sensory effects.</p><div class="notes">Prediction 1: it is possible to vary which action someone experiences while holding fixed her
+perceptual experiences of bodily configurations and joint displacements and their sensory effects.</div></div><div class="slide"><div data-what=".q" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><p class="indent">2. Memory for objects should be influenced by their affordances.</p><div class="notes"><t:04031778248026967></t:04031778248026967></div>
+</div></div></div></div></div></section></div></body></html>
