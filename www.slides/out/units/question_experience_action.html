@@ -156,19 +156,32 @@ var inject = function(){
     <div class="grid_12 ">
       <div class="words">
         <div class="middle">
-          <p class="center">What do we experience when we encounter others’ <span class="speech hide">speech </span><span> actions?</span></p>
-          <div class="slide">
-            <p class="em-above center">Indirect Hypothesis <span class="direct-h hide">vs Direct Hypothesis</span></p>
-            <div class="slide">
-              <div data-what=".direct-h" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div id="timer1" class="timer-outer">
+            <div class="timer center timer-120s hide">
+              <div class="mask"></div>
+            </div>
+            <div class="timer-120s-block-wrapper">
+              <div class="timer-120s-block">
+                <p class="center">What do we experience when we <br/><span>encounter others’ </span><span class="speech hide">speech </span><span> actions?</span></p>
+                <p class="em-above center indirect-h hide">Indirect Hypothesis <span class="direct-h hide">vs Direct Hypothesis</span></p>
+              </div>
             </div>
           </div>
           <div class="slide">
             <div data-what=".speech" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".speech" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".speech" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">I suppose that speech actions are actions, so I will start with those.
-            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".indirect-h" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what=".direct-h" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what="#timer1 .timer" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what="#timer1 .timer.hide" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+            <div data-what="#timer1 .timer" data-cls="running" class="dv dv-addclass"></div>
           </div>
         </div>
       </div>

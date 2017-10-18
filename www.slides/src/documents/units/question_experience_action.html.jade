@@ -16,17 +16,29 @@ include ../../../fragments/unit_mixins
 
 
 +slide_middle
-  p.center What do we experience when we encounter others’ 
-    span.speech.hide speech 
-    span  actions?
-  .slide
-    p.em-above.center Indirect Hypothesis 
+  +timer-element('timer1','120s', {hide:true})
+    p.center What do we experience when we 
+      br
+      span encounter others’ 
+      span.speech.hide speech 
+      span  actions?
+    p.em-above.center.indirect-h.hide Indirect Hypothesis 
       span.direct-h.hide vs Direct Hypothesis
-    .slide
-      +show('.direct-h')
+    
   .slide
     +show('.speech')
-    +invert('.speech')
-    .notes: :t
-      I suppose that speech actions are actions, so I will start with those.
+  .slide
+    +show('.indirect-h')
+  .slide
+    +show('.direct-h')
+  //- these mixins introduce new .slide elements
+  +show-timer('timer1')
+  +start-timer('timer1')
+
+  //-
+    .slide
+      +show('.speech')
+      +invert('.speech')
+      .notes: :t
+        I suppose that speech actions are actions, so I will start with those.
   

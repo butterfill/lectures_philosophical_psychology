@@ -108,4 +108,17 @@ include ../../../fragments/unit_mixins
     .notes: :t
       So this is the Interface Problem: how do the outcomes specified by intentions and 
       motor representations ever nonaccidentally match?
-    
+  .slide
+    +blur('.left-half, .right-half, .run-across','5px')
+    +reset
+      +middle  
+        +timer-element('timer1','120s')
+          p.center 
+            span How do the outcomes specified 
+            br
+            span by intentions and 
+            span motor representations 
+            br
+            span ever nonaccidentally match?
+        +start-timer('timer1')
+          

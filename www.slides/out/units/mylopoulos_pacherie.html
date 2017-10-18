@@ -1,0 +1,263 @@
+
+
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html>
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Mylopoulos and Pacherie’s Proposal | Philosophical Psychology</title>
+    <meta name="description" content="Mylopoulos and Pacherie propose that the Interface Problem can be solved
+by appeal to executable action concepts.
+This is perhaps also a promising idea for tacking the New Interface Problem too."/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mylopoulos_pacherie" class="slide">
+        <div class="spacer">&nbsp;</div>
+        <div style="" class="title-block">
+          <div class="title-container">
+            <h2 class="title1">Mylopoulos and Pacherie’s Proposal</h2>
+          </div>
+        </div>
+      </section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+<section class="slide">
+  <div class="layer main">
+    <div style="" class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="notes handout">‘As defined by Tutiya et al., an executable concept of a type of movement is a
+representation, that could guide the formation of a volition, itself the proximal cause of
+a corresponding movement. Possession of an executable concept of a type of movement thus
+implies a capacity to form volitions that cause the production of movements that are
+instances of that type.’
+          </div>
+          <div class="notes handout ctd">\citep[p.~7]{pacherie:2011_nonconceptual}</div>
+          <p class="center">Mylopoulos and Pacherie:</p>
+          <p class="em-above"> <span class="step2 hide">‘an </span><span>executable </span><span class="step2 hide"> [</span><span class="executable">action</span><span class="step2 hide">] </span><span class="executable">concept</span><span class="step2 hide"> of a <span class="type-of-movement">type of movement</span><span> is a </span></span><span class="step2 hide">representation, that could guide the formation of a volition, itself the proximal cause of </span><span class="step2 hide">a corresponding movement. </span></p>
+          <p><span class="step3 hide">Possession of an executable concept of a type of movement thus </span><span class="step3 hide">implies a capacity to form volitions that cause the production of movements that are </span><span class="step3 hide">instances of that type.’</span></p>
+          <div class="notes">There explanation: two different kinds of action concept, one purely
+observational.  
+‘For instance, most of us have a concept of ‘tail wagging’ that we can deploy when we
+judge, for instance, that Julius the dog is wagging his tail. Or if you are not
+convinced that tail wagging constitutes purposive behavior, consider the action concept
+‘tail swinging’, as in ‘cows constantly swing their tails to flick away flies’.’
+          </div>
+          <p class="right step2 hide grey-text">Pacherie 2011, p. 8</p>
+          <div class="slide">
+            <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">Objections: 
+(i) It looks like the executable action concept builds in a solution to the interface problem
+rather than solving it.
+The executable action concept is a ready-made solution.
+            </div>
+            <div class="notes">To answer this objection, we need an account of how concepts and motor representations
+become bound together.
+            </div>
+          </div>
+          <div class="slide">
+            <p class="em-above simple-theory-eac"><span>Simple theory of executable action concepts: </span><br/><span>there are concept--motor schema associations.</span></p>
+            <div class="notes">REPLY: Simple theory of executable action concepts: they’re just associations between 
+concepts and motor schema (partially specified outcomes that are represented motorically).
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".simple-theory-eac" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div data-what=".type-of-movement" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".type-of-movement" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">[Objections (ctd):
+(ii) Fridland: there is a dynamic component to the interface problem. 
+An an answer to it must specify ‘not just how motor representations are triggered by
+intentions, but how motor representations’ continue to match intentions as circumstances
+change in unforeseen ways ‘throughout skill execution’ (Fridland, 2016 p. 19).]
+            </div>
+            <div class="notes">(iii) We need to understand how there is matching not only concerning how you act
+(push vs pull, say) but also on which object you act (this switch or that one, say).
+            </div>
+            <div class="notes">On (iii), note that, as Elisabeth has stressed,
+motor representations represent not only ways of acting but also objects on which actions
+might be performed and some of their features related to possible action outcomes involving
+them (for a review see Gallese & Sinigaglia 2011; for discussion see Pacherie 2000, pp.
+410-3). For example visually encountering a mug sometimes involves representing features
+such as the orientation and shape of its handle in motor terms (Buccino et al. 2009;
+Costantini et al. 2010; Cardellicchio et al. 2011; Tucker & Ellis 1998, 2001).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div data-what=".layer.main" data-cls="remove-me" class="dv dv-addclass"></div>
+    <div data-what=".parts-of-action" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+    <div class="notes">Executable action concepts might work for manipulation and form, but are less likely to work
+for tagets since there are just so many of them. 
+On the other hand, we might think of the interface problem as having many aspects so that
+we don't solve it all at once.
+    </div>
+  </div>
+  <div class="slide">
+    <div data-what=".parts-of-action" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+    <div data-what=".layer.main" data-cls="remove-me" class="dv dv-removeclass"></div>
+    <div data-what=".type-of-movement" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+    <div class="notes">Further issues:
+(iv) knowledge of action: shouldn’t the relation should be such as to allow someone who uses the
+concept to know which action she is thinking about.
+    </div>
+    <div class="notes">(v)
+    </div>
+  </div>
+  <div class="slide">
+    <div data-what=".step2, .step3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+    <div class="notes">So I think that while there’s much more to be done in thinking through Myrto and Elisabeth’s 
+proposal about executive action concepts, this is a step forwards but not necessarily a full
+solution to the interface problem.
+What other resources are available?
+    </div>
+  </div>
+  <div class="layer parts-of-action hide">
+    <div style="position: absolute; top:0; left:0; width:100%; height:100%;"><img src="/img/motor_representation_fig/Slide14.jpg" class="bkg"/>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/mylopoulous_pacherie_sars.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>
