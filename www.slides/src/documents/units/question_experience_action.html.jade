@@ -29,16 +29,25 @@ include ../../../fragments/unit_mixins
     +show('.speech')
   .slide
     +show('.indirect-h')
+    .notes.handout: :t
+      Indirect Hypothesis: experiences revelatory of action are all experiences of bodily
+      configurations, of joint displacements and of effects characteristic of particular
+      actions. Some such experiences are influenced by motor representations in ways that
+      reliably improve veridicality. And such experiences can provide reasons for judgements
+      about the goals of actions providing that the subject knows, or is entitled to rely on,
+      certain facts about which bodily configurations, joint displacements and sensory effects
+      are characteristic of which actions.
+      
   .slide
     +show('.direct-h')
-  //- these mixins introduce new .slide elements
+    .notes.handout: :t
+      Direct Hypothesis some experiences revelatory of action are experiences of actions as
+      directed to particular outcomes. In observing action we experience not only bodily
+      configurations, joint displacements, sounds and the rest but also goal-directed actions.
+      Further, such experiences stand to motor representations somewhat as perceptual
+      experiences stand to perceptual representations. These experiences provide reasons for
+      judgements in something like the way that, on some views, perceptual experience of a
+      physical object might provide a reason for a judgement about that object.
+      
   +show-timer('timer1')
   +start-timer('timer1')
-
-  //-
-    .slide
-      +show('.speech')
-      +invert('.speech')
-      .notes: :t
-        I suppose that speech actions are actions, so I will start with those.
-  

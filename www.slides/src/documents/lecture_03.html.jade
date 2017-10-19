@@ -5,7 +5,7 @@ subtitle: ''
 weburl: ''
 units: []
 lecture_date: '2017/10/19'
-hidden: true
+hidden: false
 ---
 
 include ../../fragments/lecture_mixins
@@ -14,15 +14,15 @@ include ../../fragments/unit_mixins
 - var images = get_images('flowers')
 
 +title_slide({document:document, images:images})
-
-
-
-+insert_unit({unit:'the_interface_problem_recap', title_slide:false, images:images, handout:true})
   .notes: :t
     I want to start by recalling some issues from the first two lectures.
     Today I will attempt to tie these together, then, next week, we will move
     on to a different set of issues.
     (Perhaps colour?)
+    
+
+
++insert_unit({unit:'the_interface_problem_recap', title_slide:false, images:images, handout:true})
     
 +slide_middle
   p.center from lecture 2 ...
