@@ -1,169 +1,16 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Introduction to Motor Representation | Philosophical Psychology</title>
-    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="motor_representation_intro" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Introduction to Motor Representation</h2>
-          </div>
-        </div>
-      </section>
-
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Introduction to Motor Representation | Philosophical Psychology</title><meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="motor_representation_intro" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Introduction to Motor Representation</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section style="" class="slide"><img src="/img/egg.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
-          <p class="center">motor representation<span class="step2 hide">s represent goals</span><br/><span class="step3 hide">and trigger planning-like processes</span></p>
-          <div class="notes">Let me mention some almost uncontroversial facts about motor representations and 
-their action-coordinating role.
-          </div>
-          <div class="slide">
-            <div class="notes">Explaining the coordination of 
+<section style="" class="slide"><img src="/img/egg.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p class="center">motor representation<span class="step2 hide">s represent goals</span><br/><span class="step3 hide">and trigger planning-like processes</span></p><div class="notes">Let me mention some almost uncontroversial facts about motor representations and 
+their action-coordinating role.</div><div class="slide"><div class="notes">Explaining the coordination of 
 sequences of very small scale actions appears to involve representations but not, or not 
 only, intentions.  To a first approximation, \emph{motor representation} is a label for 
-such representations.  But why accept that motor representations exist?
-            </div>
-            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the shell) into a bowl ready for beating into a carbonara sauce.  
+such representations.  But why accept that motor representations exist?</div><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the shell) into a bowl ready for beating into a carbonara sauce.  
 Even for such mundane, routine actions, the constraints on adequate performance can vary significantly depending on subtle variations in context. For example, the position of a hot pan may require altering the trajectory along which the egg is transported, or time pressures may mean that the action must be performed unusually swiftly on this occasion.
 Further, many of the constraints on performance involve relations between actions occurring at different times.
 To illustrate, how tightly you need to grip the egg now depends, among other things, on the forces to which you will subject the egg in lifting it later.
@@ -175,13 +22,7 @@ is not plausibly a consequence of mindless physiology, nor of intention and prac
 This is one reason for postulating motor representations, which characteristically play a role in coordinating sequences of very small scale actions such as grasping an egg in order to lift it.%
 \footnote{% 
 Much more to be said about what motor representations are; for instance, see \citet{butterfill:2012_intention} for the view that motor representations can be distinguished by representational format.
-}
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;50px&quot;}" data-options="{&quot;duration&quot;:1000}" class="dv dv-velocity"></div>
-            <div class="notes">What do motor representations represent? An initially attractive, conservative 
+}</div></div><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;50px&quot;}" data-options="{&quot;duration&quot;:1000}" class="dv dv-velocity"></div><div class="notes">What do motor representations represent? An initially attractive, conservative 
 view would be that they represent bodily configurations and joint displacements, 
 or perhaps sequences of these, only.
 However there is now a significant body of evidence that some motor representations 
@@ -189,43 +30,12 @@ do not specify particular sequences of bodily configurations and joint displacem
 but rather represent outcomes such as the grasping of an egg or the pressing of a switch.  
 These are outcomes which might, on different occasions, involve very different bodily 
 configurations and joint displacements
-(see \citealp{rizzolatti_functional_2010} for a selective review).
-            </div>
-            <div class="notes">Such outcomes are abstract relative to bodily configurations and joint displacements 
-in that there are many different ways of achieving them.
-            </div>
-            <div class="notes"><t:0994384027319029></t:0994384027319029>
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+(see \citealp{rizzolatti_functional_2010} for a selective review).</div><div class="notes">Such outcomes are abstract relative to bodily configurations and joint displacements 
+in that there are many different ways of achieving them.</div><div class="notes"><t:00340385630261153></t:00340385630261153></div></div><div class="slide"><div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div></div></div></div></section>
 
-
-<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide1.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Consider this case.
+<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Consider this case.
 An agent fills a glass by holding it in one hand, holding the bottle in the other,
-bringing the two together and pouring from the bottle into the glass.
-        </div>
-        <div class="notes">[*demonstrate].
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide2.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">It’s a familiar idea that motor representations of outcomes resemble intentions in that they can 
+bringing the two together and pouring from the bottle into the glass.</div><div class="notes">[*demonstrate].</div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide2.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">It’s a familiar idea that motor representations of outcomes resemble intentions in that they can 
 trigger processes which are like planning in some respects. 
 These processes are like planning in that they involve starting with representations of relatively 
 distal outcomes and gradually filling in details, resulting in a structure of motor representations 
@@ -233,17 +43,7 @@ that can be hierarchically arranged by the means-end relation \citep{bekkering:2
 grafton:2007_evidence}. 
 Processes triggered by motor representations of outcomes are also planning-like in that they 
 involve selecting means for actions to be performed now in ways that anticipate future actions  
-\citep{jeannerod_motor_2006,zhang:2007_planning,rosenbaum:2012_cognition}.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide3.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Now in this action of moving a mug, there is a need, even for the single agent, to coordinate the 
+\citep{jeannerod_motor_2006,zhang:2007_planning,rosenbaum:2012_cognition}.</div></div></div></div></section><section style="" class="slide"><img src="/img/action_hierarchy_diagrams/Slide3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Now in this action of moving a mug, there is a need, even for the single agent, to coordinate the 
 exchange between her two hands. 
 (If her action is fluid, 
 she may proactively adjust her left hand in advance of the mug’s being lifted by her right hand 
@@ -254,24 +54,9 @@ actions involving each hand are not entirely independent of each other.
 Rather there is a plan-like structure of motor representation for the whole action and motor 
 representations concerning actions involving each hand are components of this larger plan-like structure. 
 It is in part because they are components of a larger plan-like structure that the movements of 
-one hand constrain and are constrained by the movements of the other hand.
-        </div>
-        <div class="slide">
-          <div data-what="img:eq(0)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-          <div class="notes">But how is any of this relevant to our question about in virtue of what an individuals’ actions can
-have a goal?
-          </div>
-          <div class="notes">The idea is that motor representations can ground the directedness of actions to goals,
+one hand constrain and are constrained by the movements of the other hand.</div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">But how is any of this relevant to our question about in virtue of what an individuals’ actions can
+have a goal?</div><div class="notes">The idea is that motor representations can ground the directedness of actions to goals,
 much as intentions can.
 For, like intentions, motor representations represent outcomes, trigger
 planning-like processes which compute means-ends relations, and thereby provide 
-for the coordination of actions.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+for the coordination of actions.</div></div></div></div></div></section></div></body></html>
