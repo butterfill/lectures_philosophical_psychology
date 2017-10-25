@@ -6,6 +6,7 @@ weburl: ''
 units: []
 lecture_date: '2017/10/26'
 hidden: false
+handout: false
 ---
 
 include ../../fragments/lecture_mixins
@@ -32,43 +33,41 @@ include ../../fragments/unit_mixins
 
 
 +insert_unit({unit:'twin_puzzles', title_slide:false, images:images, handout:true})
++slide_rh_white
+  +left_half
+    p.center(style="margin-top:125px;") Interface Problem
+    p.hem-above intention -> motor representation
+    p.hem-above How 
+      span.could could
+      span  intentions have content-respecting influences on motor representations given their inferential isolation?
+  +right_half
+    p.center(style="margin-top:125px;") New Interface Problem
+    p.hem-above motor representation -> judgement
+    p.hem-above How 
+      span.could could
+      span  motor representations have content-respecting influences on thoughts given their inferential isolation?
+  +invert('.could')
+  .notes: :t
+    To recap, I want to ask, How DO they.
+    (We know THAT they do, what we don’t know is HOW they could do so.)
+  .notes: :t
+    In the case of intention -> motor representation, we do not have direct evidence.
+    It is just an assumption based on some things for which we do have evidence ...
+
 
 +insert_unit({unit:'the_interface_problem_recap', title_slide:true, images:images, handout:true})
 
 
-    
-+slide_middle
-  p.center from lecture 2 ...
++insert_unit({unit:'twin_puzzles', title_slide:false, images:images, handout:true})
+    .notes: :t
+      Now for the other problem ...
 
-+insert_unit({unit:'motor_theory_goal_tracking_recap', title_slide:false, images:images, handout:true})
+//- +insert_unit({unit:'motor_theory_goal_tracking_recap', title_slide:false, images:images, handout:true})
 
-+slide_rh_white
-  .notes: :t
-    Next I want to build on what we did in lecture 2 and argue that there is a further
-    puzzle.
-    The further puzzle concerns how motor representation may influence judgements about 
-    the goals of actions.
-  .notes: :t
-    To see how the puzzle arises, I want to go back and reconsider the double life of 
-    motor representations. This is something I’ve already mentioned twice; now I want
-    to fill in some details that make it even more puzzling.
-  +left_half
-    p.center(style="margin-top:125px;") Interface Problem
-    p.hem-above intention -> motor representation
-    p.hem-above How could intentions have content-respecting influences on motor representations given their inferential isolation?
-  +right_half
-    p.center(style="margin-top:125px;") New Interface Problem
-    p.hem-above motor representation -> judgement
-    p.hem-above How could motor representations have content-respecting influences on thoughts given their inferential isolation?
-
-
-+insert_unit({unit:'double_life_motor_representation', title_slide:true, images:images, handout:true})
-
-//- I’m using bits of this unit:
-//- +insert_unit({unit:'puzzle_thought_experience_motoric', title_slide:true, images:images, handout:true})
++insert_unit({unit:'double_life_motor_representation_recap', title_slide:true, images:images, handout:true})
 +slide_middle
   p.hem-around In action observation, motor representations of outcomes 
-  p.hem-around.step3.hide sometimes facilitate the identification of goals in thought.
+    span.hem-around.step3.hide sometimes facilitate the identification of goals in thought.
   .slide
     +show('.step3')
   .slide
@@ -98,16 +97,6 @@ include ../../fragments/unit_mixins
     .slide
       +show('.step4')
 
-+slide_middle
-  +timer-element('timer1','120s')
-    p.center 
-      span How do motor representations
-      br
-      span have content-respecting influences
-      br
-      span on thoughts?
-  +start-timer('timer1')
-          
 
 
 
