@@ -1,151 +1,11 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Motor Representation | Philosophical Psychology</title>
-    <meta name="description" content="Motor representations are involved in performing and preparing actions.
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Motor Representation | Philosophical Psychology</title><meta name="description" content="Motor representations are involved in performing and preparing actions.
 Not all representations represent patterns of joint displacements and bodily 
 configurations: some represent outcomes such as the grasping of an object, which
-may be done in different ways in different contexts."/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="intro_to_motor_representation" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Motor Representation</h2>
-          </div>
-        </div>
-      </section>
-
+may be done in different ways in different contexts."/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="intro_to_motor_representation" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Motor Representation</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
-
 
 
 
@@ -164,34 +24,12 @@ Also
 \begin{enumerate}[resume]
 \item Information about outcomes guides planning-like processes
   \citep[consider][]{grafton:2007_evidence,jeannerod:1998nbo,wolpert:1995internal, miall:1996_forward,arbib:1985_coordinated,mason:2001_hand,santello:2002_patterns}.
-\end{enumerate}
-</div>
-<section style="" class="slide"><img src="/img/egg.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
-          <p style="margin-top:4.5em;"><span class="some hide">some</span><br/><span>motor representation<span class="step4 hide">s </span><span class="schema remove-me">(/schema) </span><span class="step4 hide">represent <span class="qqq">???</span></span><span class="step5 hide outcomes">outcomes<span class="goals remove-me"> = goals</span></span></span></p>
-          <div class="step3 hide">
-            <div class="handout">‘a given motor act may change both as a function of what motor act will follow it—a sign of
+\end{enumerate}</div><section style="" class="slide"><img src="/img/egg.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p style="margin-top:4.5em;"><span class="some hide">some</span><br/><span>motor representation<span class="step4 hide">s </span><span class="schema remove-me">(/schema) </span><span class="step4 hide">represent <span class="qqq">???</span></span><span class="step5 hide outcomes">outcomes<span class="goals remove-me"> = goals</span></span></span></p><div class="step3 hide"><div class="handout">‘a given motor act may change both as a function of what motor act will follow it—a sign of
 planning—and as a function of what motor act preceded it—a sign
-of memory’ \citep[p.~294]{cohen:2004_wherea}.
-            </div>
-            <p>‘a given motor act may change ... as a function of what motor act will follow it—a sign of
-planning’
-            </p>
-            <p class="right grey-text">Cohen & Rosenbaum 2004, p. 294</p>
-          </div>
-          <div class="notes">Let me go back and start with some almost uncontroversial facts about motor representations and 
-their action-coordinating role.
-          </div>
-          <div class="notes">Why postulate motor representations at all?  [Dependence of present actions on future actions
-is one reason for doing so.]
-          </div>
-          <div class="slide">
-            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the
+of memory’ \citep[p.~294]{cohen:2004_wherea}.</div><p>‘a given motor act may change ... as a function of what motor act will follow it—a sign of
+planning’</p><p class="right grey-text">Cohen & Rosenbaum 2004, p. 294</p></div><div class="notes">Let me go back and start with some almost uncontroversial facts about motor representations and 
+their action-coordinating role.</div><div class="notes">Why postulate motor representations at all?  [Dependence of present actions on future actions
+is one reason for doing so.]</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Suppose you are a cook who needs to take an egg from its box, crack it and put it (except for the
 shell) into a bowl ready for beating into a carbonara sauce.
 Even for such mundane, routine actions, the constraints on adequate performance can vary
 significantly depending on subtle variations in context. For example, the position of a hot pan
@@ -210,9 +48,7 @@ This anticipatory control of grasp,
 like several other features of action performance (\citealp[see][chapter 1]{rosenbaum:2010_human} for more examples),
 is not plausibly a consequence of mindless physiology, nor of intention and practical reasoning.
 This is one reason for postulating motor representations, which characteristically play a role in
-coordinating sequences of very small scale actions such as grasping an egg in order to lift it.
-            </div>
-            <div class="notes">[The scale of an actual action can be defined in terms of means-end relations.  
+coordinating sequences of very small scale actions such as grasping an egg in order to lift it.</div><div class="notes">[The scale of an actual action can be defined in terms of means-end relations.  
 Given two actions which are related as means to ends by the processes and representations 
 involved in their performance, the first is smaller in scale than the second just if the 
 first is a means to the second.  Generalising, we associate the scale of an actual action 
@@ -231,83 +67,28 @@ only, intentions.  To a first approximation, \emph{motor representation} is a la
 such representations.%
 \footnote{% 
 Much more to be said about what motor representations are; for instance, see \citet{butterfill:2012_intention} for the view that motor representations can be distinguished by representational format.
-}]
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">‘a given motor act may change both as a function of what motor act will follow it—a sign of
+}]</div></div><div class="slide"><div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">‘a given motor act may change both as a function of what motor act will follow it—a sign of
 planning—and as a function of what motor act preceded it—a sign
-of memory’ \citep[p.~294]{cohen:2004_wherea}.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".step3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div data-what=".step4" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;50px&quot;}" data-options="{&quot;duration&quot;:1000}" class="dv dv-velocity"></div>
-            <div class="notes">What do motor representations represent? An initially attractive, conservative 
+of memory’ \citep[p.~294]{cohen:2004_wherea}.</div></div><div class="slide"><div data-what=".step3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".step4" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;50px&quot;}" data-options="{&quot;duration&quot;:1000}" class="dv dv-velocity"></div><div class="notes">What do motor representations represent? An initially attractive, conservative 
 view would be that they represent bodily configurations and joint displacements, 
-or perhaps sequences of these, only.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".qqq" data-cls="remove-me" class="dv dv-addclass"></div>
-            <div data-what=".step5" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">However there is now a significant body of evidence that some motor representations 
+or perhaps sequences of these, only.</div></div><div class="slide"><div data-what=".qqq" data-cls="remove-me" class="dv dv-addclass"></div><div data-what=".step5" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">However there is now a significant body of evidence that some motor representations 
 do not specify particular sequences of bodily configurations and joint displacements, 
 but rather represent outcomes such as the grasping of an egg or the pressing of a switch.  
 These are outcomes which might, on different occasions, involve very different bodily 
 configurations and joint displacements
-(see \citealp{rizzolatti_functional_2010} for a selective review).
-            </div>
-            <div class="notes">Such outcomes are abstract relative to bodily configurations and joint displacements 
-in that there are many different ways of achieving them.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".some" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".some" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".some" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          </div>
-          <div class="slide">
-            <div data-what=".some" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".outcomes" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".outcomes" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Since this is important, let me pause for a moment.
+(see \citealp{rizzolatti_functional_2010} for a selective review).</div><div class="notes">Such outcomes are abstract relative to bodily configurations and joint displacements 
+in that there are many different ways of achieving them.</div></div><div class="slide"><div data-what=".some" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".some" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".some" data-cls="bkg-invert" class="dv dv-addclass"></div></div><div class="slide"><div data-what=".some" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".outcomes" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".outcomes" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Since this is important, let me pause for a moment.
 To say that something is an outcome is not to say very much: merely that it is a 
-possible or actual state of affairs which is brought about in some way by an action.
-            </div>
-            <div class="notes">What I mean is that motor representations represent the sort of outcomes that are plausibly
+possible or actual state of affairs which is brought about in some way by an action.</div><div class="notes">What I mean is that motor representations represent the sort of outcomes that are plausibly
 thought of as goals of actions, things such as transporting and breaking an egg,
-or flipping a switch.
-            </div>
-            <div class="notes">This kind of outcomes are quite different from both patterns of joint displacement and 
-bodily movements and also from end states.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".goals" data-cls="remove-me" class="dv dv-removeclass"></div>
-            <div class="notes">In my terms, a goal is merely outcome.
+or flipping a switch.</div><div class="notes">This kind of outcomes are quite different from both patterns of joint displacement and 
+bodily movements and also from end states.</div></div><div class="slide"><div data-what=".goals" data-cls="remove-me" class="dv dv-removeclass"></div><div class="notes">In my terms, a goal is merely outcome.
 Contrast goals with goal-states, which are mental or functional states which specify goals. 
-A motor representation is a goal-state; the goal is the thing it represents.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".outcomes" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".schema" data-cls="remove-me" class="dv dv-removeclass"></div>
-            <div data-what=".schema" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".schema" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Motor schema are just motor representations which specify incomplete outcomes.
-[Of course schema are incomplete, so do not specify outcomes but outcome types.]
-            </div>
-            <div class="notes">Motor schema are ‘internal models or stored representations that represent generic knowledge about
+A motor representation is a goal-state; the goal is the thing it represents.</div></div><div class="slide"><div data-what=".outcomes" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".schema" data-cls="remove-me" class="dv dv-removeclass"></div><div data-what=".schema" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".schema" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Motor schema are just motor representations which specify incomplete outcomes.
+[Of course schema are incomplete, so do not specify outcomes but outcome types.]</div><div class="notes">Motor schema are ‘internal models or stored representations that represent generic knowledge about
 a certain pattern of action and are implicated in the production and control of action’
-\citep{mylopoulos:2016_intentions}.
-            </div>
-            <div class="notes">‘Motor schemas are more abstract and stable representations of actions than motor
-representations.’
-            </div>
-            <div class="notes">‘They are internal models or stored representations that represent generic knowledge
+\citep{mylopoulos:2016_intentions}.</div><div class="notes">‘Motor schemas are more abstract and stable representations of actions than motor
+representations.’</div><div class="notes">‘They are internal models or stored representations that represent generic knowledge
 about a certain pattern of action and are implicated in the production and control of
 action. For instance, in the influential Motor Schema Theory proposed by Richard Schmidt
 (1975, 2003), a motor schema involves a generalized motor program, together with corre-
@@ -325,322 +106,45 @@ terminology). Finally, the motor schema also includes a rule or system of rules
 describing the relationships between initial conditions, exteroceptive and propri-
 oceptive sensory feedback during an action, and action outcome (a recognition sche- ma),
 allowing agents to know when they have made an error – i.e., the action does not have
-the sensory consequences it is expected to have – and to correct for it.’
-            </div>
-            <div class="notes">Are motor schemas an alterantive to motor representations? Tempting to think that where
+the sensory consequences it is expected to have – and to correct for it.’</div><div class="notes">Are motor schemas an alterantive to motor representations? Tempting to think that where
 they talk about motor schema, we think of motor representations that represent outcomes
-that are relatively distal from action (e.g. are affector-neutral).
-            </div>
-            <div class="notes">This would explain why they contrast motor schema with motor programmes. We use ‘motor
-representation’ to include both.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/motor_representation_fig/Slide02.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">A goal represented motorically triggers a process which, via computations of things 
+that are relatively distal from action (e.g. are affector-neutral).</div><div class="notes">This would explain why they contrast motor schema with motor programmes. We use ‘motor
+representation’ to include both.</div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/motor_representation_fig/Slide02.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">A goal represented motorically triggers a process which, via computations of things 
 like end states, starting states and smoothness, eventually results in joint
 displacements; and when things go well, these joint displacements together with the 
-resulting bodily configurations bring about, or constitute, the occurrence of the goal.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/motor_representation_fig/Slide03.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">But of course this is a simplification. Motor representations can trigger processes
+resulting bodily configurations bring about, or constitute, the occurrence of the goal.</div></div></div></div></section><section style="" class="slide"><img src="/img/motor_representation_fig/Slide03.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">But of course this is a simplification. Motor representations can trigger processes
 which result in further goals being represented, as for example when a motor 
 representation of the transporting of an object triggers representations of reaching,
-grasping, placing and releasing.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/motor_representation_fig/Slide04.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">The processes linking motor representations are planning like in two respects:
-(i) means-end ...
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/motor_representation_fig/Slide05.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">... and (ii) relational constraints
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+grasping, placing and releasing.</div></div></div></div></section><section style="" class="slide"><img src="/img/motor_representation_fig/Slide04.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">The processes linking motor representations are planning like in two respects:
+(i) means-end ...</div></div></div></div></section><section style="" class="slide"><img src="/img/motor_representation_fig/Slide05.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">... and (ii) relational constraints</div></div></div></div></section>
 
-
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">How do we know that outcomes are represented motorically?</p>
-          <div class="notes">But how do we know that motor representations carry information about such outcomes?
-I’m glad you asked, let me explain ...
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Aside: The Double Life of Motor Representations</p>
-          <div class="notes">If you were to observe someone phi-ing,
+<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">How do we know that outcomes are represented motorically?</p><div class="notes">But how do we know that motor representations carry information about such outcomes?
+I’m glad you asked, let me explain ...</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">Aside: The Double Life of Motor Representations</p><div class="notes">If you were to observe someone phi-ing,
 then motor representations would occur in you
-much like those that would occur in you if it were you, not her, who was phi-ing.
-          </div>
-          <div class="notes">This will be a focus of interest in a later session.
-For now it’s just a handy fact that simplifies testing.
-          </div>
-          <div class="slide">
-            <p class="em-above">glossary: TMS</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/dausilio_2009_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">D'Ausilio et al (2009, figure 1)</p>
-        <div class="notes">For a quick illustration of how we know about the double life of motor representation, consider
-this experiment ....
-        </div>
-        <div class="notes">‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical
+much like those that would occur in you if it were you, not her, who was phi-ing.</div><div class="notes">This will be a focus of interest in a later session.
+For now it’s just a handy fact that simplifies testing.</div><div class="slide"><p class="em-above">glossary: TMS</p></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/dausilio_2009_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">D'Ausilio et al (2009, figure 1)</p><div class="notes">For a quick illustration of how we know about the double life of motor representation, consider
+this experiment ....</div><div class="notes">‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical
 activity specifically in the lip (LipM1) or tongue (TongueM1) area’
-\citep[p.~381]{dausilio:2009_motor}
-        </div>
-        <div class="notes">‘We hypothesized that focal stimulation would facilitate the perception of 
+\citep[p.~381]{dausilio:2009_motor}</div><div class="notes">‘We hypothesized that focal stimulation would facilitate the perception of 
 the concordant phonemes ([d] and [t] with TMS to TongueM1), but that 
 there would be inhibition of perception of the discordant items 
 ([b] and [p] in this case). Behavioral effects were measured via reaction 
-times (RTs) and error rates.’ \citep[p.~382]{dausilio:2009_motor}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/dausilio_2009_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">D'Ausilio et al (2009, figure 2)</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle"><img src="/img/rizzolatti_2006_figure1_1.png" style=""/>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
-    <div style="" class="words">
-      <div class="container_12">
-        <div class="grid_12">
-          <p class="source">Rizzolatti and Sinigaglia, 2006 figure 1.1</p>
-        </div>
-      </div>
-    </div>
-    <div class="notes">‘The posterior section of the frontal lobe contains the motor areas,’ (p.~4)
-Now you know as much about the brain as I do.
-    </div>
-    <div class="notes">Mention primary and supplementary motor areas : we use the term ‘motor’ loosely
+times (RTs) and error rates.’ \citep[p.~382]{dausilio:2009_motor}</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/dausilio_2009_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">D'Ausilio et al (2009, figure 2)</p></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><img src="/img/rizzolatti_2006_figure1_1.png" style=""/></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Rizzolatti and Sinigaglia, 2006 figure 1.1</p></div></div></div><div class="notes">‘The posterior section of the frontal lobe contains the motor areas,’ (p.~4)
+Now you know as much about the brain as I do.</div><div class="notes">Mention primary and supplementary motor areas : we use the term ‘motor’ loosely
 (compare ‘visual’, which also has narrower and broader uses in 
-neuroscience).
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">[end of aside on the double life of motor representation]</div>
-          <p class="center">How do we know that outcomes are represented motorically?</p>
-          <div class="notes"><t:03193255860824138></t:03193255860824138>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">first illustration: same kinematics, different goal</p>
-          <div class="slide">
-            <p class="em-above">glossary: MEP</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle"><img src="/img/villiger_2010_fig1ab.png" style=""/>
-          <div class="step2 hide"><img src="/img/villiger_2010_fig1cd.png" style=""/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
-    <div style="" class="words">
-      <div class="container_12">
-        <div class="grid_12">
-          <p class="source">Villiger et al, 2010 figure 1AB</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="notes">TMS to measure MEP
-  </div>
-  <div class="slide">
-    <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-    <div class="notes">They also had an occluded end version ...
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/villiger_2010_fig2.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div data-what="img.bkg" data-css="{&quot;clip&quot;:&quot;rect(0px, 400px, 999px,0px)&quot;}" class="dv dv-style"></div>
-        <p class="source">Villiger et al, 2010 figure 2</p>
-        <div class="notes">Incidentally, ‘the observed direction of the modulation was not consistent with previous TMS
+neuroscience).</div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">[end of aside on the double life of motor representation]</div><p class="center">How do we know that outcomes are represented motorically?</p><div class="notes"><t:001567853312008083></t:001567853312008083></div>
+</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">first illustration: same kinematics, different goal</p><div class="slide"><p class="em-above">glossary: MEP</p></div></div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><img src="/img/villiger_2010_fig1ab.png" style=""/><div class="step2 hide"><img src="/img/villiger_2010_fig1cd.png" style=""/></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Villiger et al, 2010 figure 1AB</p></div></div></div></div><div class="notes">TMS to measure MEP</div><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">They also had an occluded end version ...</div></div></section><section style="" class="slide"><img src="/img/villiger_2010_fig2.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div data-what="img.bkg" data-css="{&quot;clip&quot;:&quot;rect(0px, 400px, 999px,0px)&quot;}" class="dv dv-style"></div><p class="source">Villiger et al, 2010 figure 2</p><div class="notes">Incidentally, ‘the observed direction of the modulation was not consistent with previous TMS
 literature. Specifically, MEP amplitudes were significantly lower in the Object-Present than in the
 Object-Absent conditions (Fig. 2), suggesting that there was an inhibitory effect of object
-manipulation on the activity of M1 during action observation.’
-        </div>
-        <div class="slide">
-          <div data-what="img.bkg" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center step1">first illustration: same kinematics, different goal</p>
-          <div class="slide">
-            <div data-what=".step1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <p class="center em-above">second illustration: different kinematics, same goal</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/umilta_2008_figure1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Umiltà et al, 2008 figure 1</p>
-        <div class="notes">Umiltà et al, 2008 : single cell recordings in monkeys
-        </div>
-        <div class="notes">MEPs (TMS amplified) in humans
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/cattaneo_2010_fig1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Cattaneo et al, 2010 figure 1</p>
-        <div class="notes">TMS MEP, humans.
-        </div>
-        <div class="notes">Shown video, then a static picture.
+manipulation on the activity of M1 during action observation.’</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center step1">first illustration: same kinematics, different goal</p><div class="slide"><div data-what=".step1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p class="center em-above">second illustration: different kinematics, same goal</p></div></div></div></div></div></section><section style="" class="slide"><img src="/img/umilta_2008_figure1.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Umiltà et al, 2008 figure 1</p><div class="notes">Umiltà et al, 2008 : single cell recordings in monkeys</div><div class="notes">MEPs (TMS amplified) in humans</div></div></div></div></section><section style="" class="slide"><img src="/img/cattaneo_2010_fig1.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Cattaneo et al, 2010 figure 1</p><div class="notes">TMS MEP, humans.</div><div class="notes">Shown video, then a static picture.
 Is this the same goal as you saw in the video?
 Press one of two keys.
-‘They were explicitly told to ignore the effector and make a judgment on the type of act only.’
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/cattaneo_2010_fig3.png" style=""/>
-        <p class="source">Cattaneo et al, 2010 figure 3</p>
-        <div class="notes">Key finding: TMS to both ventral premotor cortex (PMv) and left supramarginal gyrus (SMG)
+‘They were explicitly told to ignore the effector and make a judgment on the type of act only.’</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/cattaneo_2010_fig3.png" style=""/><p class="source">Cattaneo et al, 2010 figure 3</p><div class="notes">Key finding: TMS to both ventral premotor cortex (PMv) and left supramarginal gyrus (SMG)
 increases RTs regardless of whether it’s the same effector or a different effector.
-(You can’t see same/different effector in this figure.)
-        </div>
-        <div class="notes">KEY: superior temporal sulcus (STS), and a parietofrontal system consisting of the intraparietal
+(You can’t see same/different effector in this figure.)</div><div class="notes">KEY: superior temporal sulcus (STS), and a parietofrontal system consisting of the intraparietal
 sulcus (IPS) and inferior parietal lobule (IPL) plus the ventral premotor cortex (PMv) and caudal
-part of inferior frontal gyrus (IFG). In some instances also, the superior parietal lobule (SPL)
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/cattaneo_2010_fig4.png" style=""/>
-        <p class="source">Cattaneo et al, 2010 figure 4</p>
-        <div class="notes">By contrast, TMS to superior temporal sulcus (STS) increased RT only for judgements
-where the video effector was the same as the photo effector.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/carry_information/Slide1.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
-          <div class="grid_6 words left-half">
-            <div style="padding-right:1em;">
-              <p>Markers of motor representation <span class="step2 hide"> ...</span></p>
-              <div class="notes">The experiments providing such evidence typically involve a marker of motor representation, 
+part of inferior frontal gyrus (IFG). In some instances also, the superior parietal lobule (SPL)</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/cattaneo_2010_fig4.png" style=""/><p class="source">Cattaneo et al, 2010 figure 4</p><div class="notes">By contrast, TMS to superior temporal sulcus (STS) increased RT only for judgements
+where the video effector was the same as the photo effector.</div></div></div></div></section><section style="" class="slide"><img src="/img/carry_information/Slide1.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p>Markers of motor representation <span class="step2 hide"> ...</span></p><div class="notes">The experiments providing such evidence typically involve a marker of motor representation, 
 such as a pattern of neuronal firings, a motor evoked potential or a behavioural performance 
 profile, which, in controlled settings, allows sameness or difference of motor representation 
 to be distinguished.  Such markers can be exploited to show that the sameness and difference 
@@ -649,117 +153,13 @@ grasping of a particular object.
 (Pioneering uses of this method include \citealp{rizzolatti:1988_functional,Rizzolatti:2001ug}; 
 it has since been developed in many ways: see, for example,
 \citet{hamilton:2008_action, cattaneo:2009_representation, cattaneo:2010_state-dependent, 
-rochat:2010_responses, bonini:2010_ventral, koch:2010_resonance}.)
-              </div>
-              <div class="slide">
-                <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-                <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-                <p>1. are unaffected by variations in kinematic features but not goals</p>
-              </div>
-              <div class="slide">
-                <div data-what="img.bkg" data-attr="src" data-value="/img/carry_information/Slide2.jpg" class="dv dv-attr"></div>
-                <p>2. are affected by variations in goals but not kinematic features</p>
-              </div>
-              <div class="slide">
-                <div data-what="img.bkg" data-attr="src" data-value="/img/carry_information/Slide3.jpg" class="dv dv-attr"></div>
-                <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-                <p>So: 3. <span class="carry-information">carry information</span><span>  about goals  (from 1,2)</span></p>
-              </div>
-              <div class="slide">
-                <div data-what=".carry-information" data-cls="transition-04" class="dv dv-addclass"></div>
-                <div data-what=".carry-information" data-cls="bkg-invert" class="dv dv-addclass"></div>
-              </div>
-              <div class="slide">
-                <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;15px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-                <div data-what=".carry-information" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-                <p class="em-above">Also</p>
-                <p>4. Information about outcomes guides planning-like processes ...</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/planning_like/Slide1.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">To illustrate, consider a sequence of actions which might be involved in shoplifting an apple: you have to secure the apple, transport it, and position it in your pocket.
-Each of these outcomes can be represented motorically.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/planning_like/Slide2.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Motor processes are planning-like in that they involve computing means from ends.
+rochat:2010_responses, bonini:2010_ventral, koch:2010_resonance}.)</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><p>1. are unaffected by variations in kinematic features but not goals</p></div><div class="slide"><div data-what="img.bkg" data-attr="src" data-value="/img/carry_information/Slide2.jpg" class="dv dv-attr"></div><p>2. are affected by variations in goals but not kinematic features</p></div><div class="slide"><div data-what="img.bkg" data-attr="src" data-value="/img/carry_information/Slide3.jpg" class="dv dv-attr"></div><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p>So: 3. <span class="carry-information">carry information</span><span>  about goals  (from 1,2)</span></p></div><div class="slide"><div data-what=".carry-information" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".carry-information" data-cls="bkg-invert" class="dv dv-addclass"></div></div><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;15px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".carry-information" data-cls="bkg-invert" class="dv dv-removeclass"></div><p class="em-above">Also</p><p>4. Information about outcomes guides planning-like processes ...</p></div></div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/planning_like/Slide1.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">To illustrate, consider a sequence of actions which might be involved in shoplifting an apple: you have to secure the apple, transport it, and position it in your pocket.
+Each of these outcomes can be represented motorically.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/planning_like/Slide2.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Motor processes are planning-like in that they involve computing means from ends.
 Thus a representation of an end like securing it [the apple] can trigger a process 
-that results in the representation of outcomes that are means to this end.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/planning_like/Slide3.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Motor processes are also planning-like in that which means are selected in preparing an 
+that results in the representation of outcomes that are means to this end.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/planning_like/Slide3.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Motor processes are also planning-like in that which means are selected in preparing an 
 action that will occur early in the sequence may affect needs that will arise only later 
 in a later part of the actions.
 For instance, how the apple is grasped at an early point in the sequence may be determined 
-in part by what would be a more comfortable way for the other hand to grasp it later.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/planning_like/Slide4.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">So motor representations of outcomes guide planning-like processes.
+in part by what would be a more comfortable way for the other hand to grasp it later.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/planning_like/Slide4.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">So motor representations of outcomes guide planning-like processes.
 This is why I think it’s not just that they carry information about outcomes
-like grasping an apple, but that they also represent such outcomes.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="grid_6 words left-half">
-            <div style="padding-right:1em;">
-              <p>Markers of motor representation <span class="step2 hide"> ...</span></p>
-              <p>1. are unaffected by variations in kinematic features but not goals</p>
-              <p>2. are affected by variations in goals but not kinematic features</p>
-              <p>So: </p>
-              <p>3. <span class="carry-information">carry information</span><span>  about goals  (from 1,2)</span></p>
-              <p class="em-above">Also</p>
-              <p>4. Information about outcomes guides planning-like processes.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+like grasping an apple, but that they also represent such outcomes.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="grid_6 words left-half"><div style="padding-right:1em;"><p>Markers of motor representation <span class="step2 hide"> ...</span></p><p>1. are unaffected by variations in kinematic features but not goals</p><p>2. are affected by variations in goals but not kinematic features</p><p>So: </p><p>3. <span class="carry-information">carry information</span><span>  about goals  (from 1,2)</span></p><p class="em-above">Also</p><p>4. Information about outcomes guides planning-like processes.</p></div></div></div></div></div></div></section></div></body></html>

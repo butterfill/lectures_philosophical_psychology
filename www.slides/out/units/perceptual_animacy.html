@@ -1,181 +1,23 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Perceptual Animacy | Philosophical Psychology</title>
-    <meta name="description" content="Perceptual animacy is
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Perceptual Animacy | Philosophical Psychology</title><meta name="description" content="Perceptual animacy is
 the detection by broadly perceptual processes of animate objects and their targets
 citet[e.g.][]{gao:2009_psychophysics}.
 Could its existence provide us with a solution to the developmental puzzle about 
-goal tracking?"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="perceptual_animacy" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Perceptual Animacy</h2>
-          </div>
-        </div>
-      </section>
-
+goal tracking?"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="perceptual_animacy" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Perceptual Animacy</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">\emph{perceptual animacy},
-the detection by broadly perceptual processes of animate objects and their targets.
-        </div>
-        <div style="position:relative;"><img src="/img/gao_2009_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Gao et al, 2009 figure 2</p>
-        <div class="notes">Evidence for the existence of perceptual animacy comes from a variety of studies 
+<section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">\emph{perceptual animacy},
+the detection by broadly perceptual processes of animate objects and their targets.</div><div style="position:relative;"><img src="/img/gao_2009_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Gao et al, 2009 figure 2</p><div class="notes">Evidence for the existence of perceptual animacy comes from a variety of studies 
 where adults are given a simple visual task such as identifying which circle is the ‘wolf’
 and which the ‘sheep’, or, in another experiment, moving the sheep around in order to 
-avoid being caught by the wolf.
-        </div>
-        <div class="notes">It is also possible to examine how having a sheep and a wolf affects how attention is allocated by
-measuring how well participants can detect probes placed on different shapes.
-        </div>
-        <div class="notes"><t:08923199572600424></t:08923199572600424>
-        </div>
-        <div class="notes">The literature on perceptual animacy mostly confounds it with goal tracking.
-But there are two key differences.
-        </div>
-        <div class="notes">First, perceptual animacy is a broadly
-perceptual phenomenon.
-        </div>
-        <div class="notes">Second,
+avoid being caught by the wolf.</div><div class="notes">It is also possible to examine how having a sheep and a wolf affects how attention is allocated by
+measuring how well participants can detect probes placed on different shapes.</div><div class="notes"><t:016674748063087463></t:016674748063087463></div><div class="notes">The literature on perceptual animacy mostly confounds it with goal tracking.
+But there are two key differences.</div><div class="notes">First, perceptual animacy is a broadly
+perceptual phenomenon.</div><div class="notes">Second,
 the perceptual detection of animacy is clearly distinct from goal tracking
 for it involves detecting relations between objects in motion rather than
 outcomes to which actions are directed.
@@ -185,19 +27,7 @@ and heuristics and is unlikely to be correctly described by the
 Teleological Stance.
 So perceptual animacy does not involve tracking goals to which an action is
 directed: it is a matter of tracking objects to which animate movements are
-directed.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/gao_2009_fig4a_part.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Gao et al, 2009 figure 3b</p>
-        <div class="notes">\emph{{perceptual animacy}},
+directed.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/gao_2009_fig4a_part.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Gao et al, 2009 figure 3b</p><div class="notes">\emph{{perceptual animacy}},
 the detection by broadly perceptual processes of animate objects and their targets.
 To illustrate, consider a groundbreaking experiment by \citet[experiment 1]{gao:2009_psychophysics}.
 Adults were shown a display which contained some moving circles.
@@ -211,58 +41,9 @@ directly the chaser approaches its target (‘subtlety’).
 The detection of animacy appears to be a broadly perceptual phenomena since it depends on areas of
 the brain associated with vision and influences how perceptual attention is allocated
 \citep{scholl:2013_perceiving} irrespective of your beliefs and intentions
-\citep{buren:2016_automaticity}.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/gao_2009_fig4a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Gao et al, 2009 figures 3b, 4a</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">[This comparison is a bit confused because pure-goal tracking is the kind of thing 
+\citep{buren:2016_automaticity}.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/gao_2009_fig4a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Gao et al, 2009 figures 3b, 4a</p></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">[This comparison is a bit confused because pure-goal tracking is the kind of thing 
 that can be (and is) achieved by way of different mechanisms (e.g. reasoning; motor processes),
-whereas perceptual animacy is a mechanism.]
-          </div>
-          <table style="table-layout:fixed;width:100%;" class="data">
-            <thead>
-              <tr style="width:30%">
-                <td></td>
-                <td style="width:35%">pure goal-tracking</td>
-                <td style="width:35%">perceptual animacy</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="slide even">
-                <td>What is tracked?</td>
-                <td>goals</td>
-                <td>targets</td>
-              </tr>
-              <tr class="slide odd">
-                <td>How is it tracked?</td>
-                <td>Teleological Stance</td>
-                <td>spatio-temporal <span>heuristics</span><br/><span>(e.g. subtlety, directionality)</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="notes">The perceptual detection of animacy resembles goal tracking, for it involves detecting a relation
+whereas perceptual animacy is a mechanism.]</div><table style="table-layout:fixed;width:100%;" class="data"><thead><tr style="width:30%"><td></td><td style="width:35%">pure goal-tracking</td><td style="width:35%">perceptual animacy</td></tr></thead><tbody><tr class="slide even"><td>What is tracked?</td><td>goals</td><td>targets</td></tr><tr class="slide odd"><td>How is it tracked?</td><td>Teleological Stance</td><td>spatio-temporal <span>heuristics</span><br/><span>(e.g. subtlety, directionality)</span></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><div class="notes">The perceptual detection of animacy resembles goal tracking, for it involves detecting a relation
 between a chaser and its target.
 However the perceptual detection of animacy is clearly distinct from goal tracking.%
 \footnote{%
@@ -273,120 +54,15 @@ which actions are directed.
 Relatedly, it does not involve sensitivity to the type of action.
 Finally, the perceptual detection of animacy appears to depend on simple cues and heuristics and is
 unlikely to be correctly described by the Teleological Stance.
-For these reasons, we should distinguish the perceptual detection of animacy from tracking goals to which actions are directed.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white hide"></div>
-  <div class="container_12">
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <div class="notes show">
-          <p>Conjecture</p>
-          <p class="em-above">In 9-month-olds,
-          </p>
-          <p class="hem-above">all pure goal-tracking is explained by the Motor Theory;
-          </p>
-          <p class="hem-above">appearances that goal-tracking is not limited by their abilities to act
-are due to perceptual animacy.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half hide">
-      <div style="padding-left:1em;">
-        <div class="slide">
-          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          <div class="notes show">
-            <p>Predictions
-            </p>
-            <p class="em-above"><span>Where 9-month-olds appear to be tracking goals </span><br/><span>in ways not limited by their abilities to act,</span><br/><span>they will be subject to signature limits of perceptual animacy</span><br/><span>(e.g. subtlety, directionality);</span></p>
-            <p class="hem-above">and the processes underlying their abilities will be broadly perceptual.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Objection: Skerry et al, 2013</p>
-          <div class="notes">[Haven’t slides; will use printout from their paper]
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="notes">How does the conjecture help with the puzzles about development?
-  </div>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p style="font-family:lato;" class="center huge-glow-180">Puzzles</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
-    <div style="" class="container_12">
-      <div class="grid_12 ">
-        <div class="words">
-          <div class="middle">
-            <p class="center notes show"> <span>In infants, </span><br/><span>it </span><span class="appears">appears</span><span> that </span><span class="first-puzzle hide"><br/><span>some, </span><br/><span>but not all, </span><br/><span class="gt">goal-tracking</span><span> is limited by their abilities to act ...</span></span></p>
-            <p class="center hem-above notes show"><span class="second-puzzle"><span class="first-puzzle hide">... and that </span><span class="gt">goal-tracking</span><span> sometimes manifests in dishabitution or pupil dilation but not proactive gaze.</span></span></p>
-            <div class="notes">The second puzzle was a dissociation between dishabituation and pupil dilation on the one
+For these reasons, we should distinguish the perceptual detection of animacy from tracking goals to which actions are directed.</div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white hide"></div><div class="container_12"><div class="grid_6 words left-half"><div style="padding-right:1em;"><div class="notes show"><p>Conjecture</p><p class="em-above">In 9-month-olds,</p><p class="hem-above">all pure goal-tracking is explained by the Motor Theory;</p><p class="hem-above">appearances that goal-tracking is not limited by their abilities to act
+are due to perceptual animacy.</p></div></div></div><div class="grid_6 words invert right-half hide"><div style="padding-left:1em;"><div class="slide"><div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes show"><p>Predictions</p><p class="em-above"><span>Where 9-month-olds appear to be tracking goals </span><br/><span>in ways not limited by their abilities to act,</span><br/><span>they will be subject to signature limits of perceptual animacy</span><br/><span>(e.g. subtlety, directionality);</span></p><p class="hem-above">and the processes underlying their abilities will be broadly perceptual.</p></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">Objection: Skerry et al, 2013</p><div class="notes">[Haven’t slides; will use printout from their paper]</div></div></div></div></div></section><section class="slide"><div class="notes">How does the conjecture help with the puzzles about development?</div><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="font-family:lato;" class="center huge-glow-180">Puzzles</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show"> <span>In infants, </span><br/><span>it </span><span class="appears">appears</span><span> that </span><span class="first-puzzle hide"><br/><span>some, </span><br/><span>but not all, </span><br/><span class="gt">goal-tracking</span><span> is limited by their abilities to act ...</span></span></p><p class="center hem-above notes show"><span class="second-puzzle"><span class="first-puzzle hide">... and that </span><span class="gt">goal-tracking</span><span> sometimes manifests in dishabitution or pupil dilation but not proactive gaze.</span></span></p><div class="notes">The second puzzle was a dissociation between dishabituation and pupil dilation on the one
 hand and proactive gaze on the other.
 The conjecture I have formulated suggests a solution: perhaps perceptual animacy is sometimes
-responsible for pupil dilation and dishabituation; but never responsible for proactive gaze.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div data-what=".second-puzzle" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-      <div data-what=".first-puzzle" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-      <div class="notes">The first puzzle was the appearance of cases of goal-tracking in infancy which is not
+responsible for pupil dilation and dishabituation; but never responsible for proactive gaze.</div></div></div></div></div><div class="slide"><div data-what=".second-puzzle" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".first-puzzle" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">The first puzzle was the appearance of cases of goal-tracking in infancy which is not
 limited by infants’ abilities to act.
 The conjecture I have proposed suggests a solution to this too: those cases 
-are underpinned by perceptual animacy and so not genuine cases of goal-tracking at all.
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/gredebäck_2010_fig.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
-          <p class="center">further complication: associative learning for sequencing</p>
-          <div class="slide">
-            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
-            <p class="source">Gredebäck & Melinder, 2010</p>
-            <div class="notes">Pupil dilation at 6 and 12-months of age; unlike proactive gaze, it  does not 
+are underpinned by perceptual animacy and so not genuine cases of goal-tracking at all.</div></div></div></section><section style="" class="slide"><img src="/img/gredebäck_2010_fig.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p class="center">further complication: associative learning for sequencing</p><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p class="source">Gredebäck & Melinder, 2010</p><div class="notes">Pupil dilation at 6 and 12-months of age; unlike proactive gaze, it  does not 
 correlate with experience of being fed; but it isn’t plausibly perceptual animacy either.
 (Why would perceptual animacy predict a difference between spoon going to mouth or hand?)
 Instead it may be a consequence of associative learning about the typical sequence
-of chunks of actions.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+of chunks of actions.</div></div></div></div></div></div></section></div></body></html>

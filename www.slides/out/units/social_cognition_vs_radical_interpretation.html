@@ -1,276 +1,40 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Social Cognition vs Radical Interpretation | Philosophical Psychology</title>
-    <meta name="description" content="How would an account of the radical interpretation (which is about how discoveries about
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Social Cognition vs Radical Interpretation | Philosophical Psychology</title><meta name="description" content="How would an account of the radical interpretation (which is about how discoveries about
 minds are in principle possible) further our understanding of actual social 
-cognition?"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="social_cognition_vs_radical_interpretation" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Social Cognition vs Radical Interpretation</h2>
-          </div>
-        </div>
-      </section>
-
+cognition?"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="social_cognition_vs_radical_interpretation" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Social Cognition vs Radical Interpretation</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="notes handout show">What is the relation between an account of radical interpretation
-and a theory of social cognition?
-          </p>
-          <div class="notes">(This is a way of asking, How is radical interpretation relevant given
-that our topic is social cognition?)
-          </div>
-          <div class="notes">An account of radical interpretation describes a route to knowledge
+<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="notes handout show">What is the relation between an account of radical interpretation
+and a theory of social cognition?</p><div class="notes">(This is a way of asking, How is radical interpretation relevant given
+that our topic is social cognition?)</div><div class="notes">An account of radical interpretation describes a route to knowledge
 starting from  evidence that can be described without knowing anything about the
 particular actions, beliefs, desires and other mental states of any individual
-and ending with knowledge of these particulars.
-          </div>
-          <div class="notes">A theory of social cognition is (in part) a theory of the processes by
-which we actually predict, understand, align with and shape each other.
-          </div>
-          <div class="notes">What do these two things have to do with each other?
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white hide"></div>
-  <div class="container_12">
-    <div class="notes">Sometimes when you read Davidson and Dennett, it seems like an account
+and ending with knowledge of these particulars.</div><div class="notes">A theory of social cognition is (in part) a theory of the processes by
+which we actually predict, understand, align with and shape each other.</div><div class="notes">What do these two things have to do with each other?</div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white hide"></div><div class="container_12"><div class="notes">Sometimes when you read Davidson and Dennett, it seems like an account
 of radical interpretation just is a theory of social cognition, a theory 
 of the processes by which we predict, understand, align with and 
-shape each other  ...
-    </div>
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p class="notes handout show">‘Do people actually use this strategy? Yes, all the time.’
-        </p>
-        <div class="notes handout ctd">\citep[p.~21]{Dennett:1987sf}</div>
-        <p class="right grey-text">Dennett (1987, p. 21)</p>
-        <div class="slide">
-          <p class="em-above"></p>
-          <p class="notes handout show">‘[a]ll understanding of the speech  [and thoughts] of another involves radical interpretation’
-          </p>
-          <div class="notes handout ctd">\citep[p.~125]{Davidson:1973jx}</div>
-          <p class="right grey-text">Davidson (1973, 125)</p>
-        </div>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half hide">
-      <div style="padding-left:1em;">
-        <div class="slide">
-          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          <div class="notes">But elsewhere Davidson says things which give the opposite impression.
-          </div>
-          <p class="notes handout show">‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’
-          </p>
-          <div class="notes handout ctd">\citep[p.~12]{Davidson:1980xp}</div>
-          <p class="right grey-text">Davidson (1980, 12) </p>
-          <div class="notes">How should we understand the relation between an account of radical interpretation 
+shape each other  ...</div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="notes handout show">‘Do people actually use this strategy? Yes, all the time.’</p><div class="notes handout ctd">\citep[p.~21]{Dennett:1987sf}</div><p class="right grey-text">Dennett (1987, p. 21)</p><div class="slide"><p class="em-above"></p><p class="notes handout show">‘[a]ll understanding of the speech  [and thoughts] of another involves radical interpretation’</p><div class="notes handout ctd">\citep[p.~125]{Davidson:1973jx}</div><p class="right grey-text">Davidson (1973, 125)</p></div></div></div><div class="grid_6 words invert right-half hide"><div style="padding-left:1em;"><div class="slide"><div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">But elsewhere Davidson says things which give the opposite impression.</div><p class="notes handout show">‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’</p><div class="notes handout ctd">\citep[p.~12]{Davidson:1980xp}</div><p class="right grey-text">Davidson (1980, 12) </p><div class="notes">How should we understand the relation between an account of radical interpretation 
 and a theory of social cognition?
 (This is a way of asking, How is radical interpretation relevant given 
-that our topic is social cognition?)
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="handout">\citet[p.~22ff]{Marr:1982kx} distinguishes:
-          </div>
-          <div class="handout">\begin{itemize}
-          </div>
-          <div class="handout">\item computational description---What is the thing for and how does it achieve this?
-          </div>
-          <div class="handout">\item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?
-          </div>
-          <div class="handout">\item hardware implementation---How are the representations and algorithms physically realised?
-          </div>
-          <div class="handout">\end{itemize}
-          </div>
-          <div class="notes">One possibility is to appeal to David Marr’s famous three-fold distinction
+that our topic is social cognition?)</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="handout">\citet[p.~22ff]{Marr:1982kx} distinguishes:</div><div class="handout">\begin{itemize}</div><div class="handout">\item computational description---What is the thing for and how does it achieve this?</div><div class="handout">\item representations and algorithms---How are the inputs and outputs represented, and how is the transformation accomplished?</div><div class="handout">\item hardware implementation---How are the representations and algorithms physically realised?</div><div class="handout">\end{itemize}</div><div class="notes">One possibility is to appeal to David Marr’s famous three-fold distinction
 bweteen levels of description of a system: the computational theory, the 
-representations and algorithm, and the hardware implementation.
-          </div>
-          <div class="notes">This is easy to understand in simple cases.
+representations and algorithm, and the hardware implementation.</div><div class="notes">This is easy to understand in simple cases.
 To illustrate, consider a GPS locator.
-It receives information from four satellites and tells you where on Earth the device is.
-          </div>
-          <div class="notes">There are three ways in which we can characterise this device.
-          </div>
-          <div class="no-slide">
-            <div class="computational hem-around">
-              <p>1. computational description</p>
-              <div class="notes">First, we can explain how in theory it is possible to infer the 
+It receives information from four satellites and tells you where on Earth the device is.</div><div class="notes">There are three ways in which we can characterise this device.</div><div class="no-slide"><div class="computational hem-around"><p>1. computational description</p><div class="notes">First, we can explain how in theory it is possible to infer the 
 device’s location from it receives from satellites.
 This involves a bit of maths: given time signals from four different satellites,
 you can work out what time it is and how far you are away from each
 of the satellites.
 Then, if you know where the satellites are and what shape the Earth is,
-you can work out where on Earth you are.
-              </div>
-              <div class="no-slide">
-                <p class="indent">-- What is the thing for and how does it achieve this?</p>
-              </div>
-              <div class="notes">The computational description tells us what the GPS locator does and 
+you can work out where on Earth you are.</div><div class="no-slide"><p class="indent">-- What is the thing for and how does it achieve this?</p></div><div class="notes">The computational description tells us what the GPS locator does and 
 what it is for.
-It also establishes the theoretical possibility of a GPS locator.
-              </div>
-              <div class="notes">But merely having the computational description does not enable you to build 
+It also establishes the theoretical possibility of a GPS locator.</div><div class="notes">But merely having the computational description does not enable you to build 
 a GPS locator, nor to understand how a particular GPS locator works.
-For that you also need to identify representations and alogrithms ...
-              </div>
-            </div>
-          </div>
-          <div class="no-slide hem-around">
-            <p>2. representations and algorithms</p>
-            <div class="notes">At the level of representations and algorthms we specify 
+For that you also need to identify representations and alogrithms ...</div></div></div><div class="no-slide hem-around"><p>2. representations and algorithms</p><div class="notes">At the level of representations and algorthms we specify 
 how the GPS receiver represents the information it receives from the satellites
 (for example, it might in principle be a number, a vector or a time).
 We also specify the algorithm the device uses to compute the time and its location.
@@ -278,193 +42,35 @@ The algorithm will be different from the computational theory: it is a procedure
 for discovering time and location.
 The algorithm may involve all kinds of shortcuts and approximations.
 And, unlike the computational theory, constraints on time, memory and other
-limited resources will be evident.
-            </div>
-            <div class="no-slide">
-              <div class="notes">So an account of the representations and algorithms tells us ...</div>
-              <p class="notes show indent">-- How are the inputs and outputs represented, and how is the transformation accomplished?</p>
-            </div>
-          </div>
-          <div class="no-slide hem-around">
-            <p>3. hardware implementation</p>
-            <div class="notes">The final thing we need to understand the GPS locator is a description of the
+limited resources will be evident.</div><div class="no-slide"><div class="notes">So an account of the representations and algorithms tells us ...</div><p class="notes show indent">-- How are the inputs and outputs represented, and how is the transformation accomplished?</p></div></div><div class="no-slide hem-around"><p>3. hardware implementation</p><div class="notes">The final thing we need to understand the GPS locator is a description of the
 hardware in which the algorithm is implemented.  It’s only here that 
 we discover whether the device is narrowly mechanical device, using cogs, say, 
-or an electronic device, or some new kind of biological entity.
-            </div>
-          </div>
-          <div class="no-slide">
-            <p class="indent">-- How are the  representations and algorithms physically realised?</p>
-            <div class="notes">The hardware implementation tells us how the representations and algorithms are represented physically.
-            </div>
-          </div>
-          <p class="right grey-text">Marr (1992, 22ff)</p>
-          <div class="slide">
-            <div data-what="p" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div class="notes">How is this relevant to my question?
+or an electronic device, or some new kind of biological entity.</div></div><div class="no-slide"><p class="indent">-- How are the  representations and algorithms physically realised?</p><div class="notes">The hardware implementation tells us how the representations and algorithms are represented physically.</div></div><p class="right grey-text">Marr (1992, 22ff)</p><div class="slide"><div data-what="p" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">How is this relevant to my question?
 My question was, What is the relation between an account of radical interpretation 
-and a theory of social cognition?
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="p" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".computational" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-            <div class="notes">I suggest that an account of radical interpretation is supposed to provide
+and a theory of social cognition?</div></div><div class="slide"><div data-what="p" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".computational" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">I suggest that an account of radical interpretation is supposed to provide
 a computational description of social cognition; it tells us what social
-cognition is for and how, in the most abstract sense, it is possible.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white"></div>
-  <div class="container_12">
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <div class="firstQ">
-          <p>‘Do people actually use this strategy? Yes, all the time.’
-          </p>
-          <p class="right grey-text">Dennett (1987, p. 21)</p>
-        </div>
-        <p class="em-above"></p>
-        <div class="secondQ">
-          <p>‘[a]ll understanding of the speech [and thoughts] of another involves radical interpretation’
-          </p>
-          <p class="right grey-text">Davidson (1973, 125)</p>
-        </div>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half">
-      <div style="padding-left:1em;">
-        <div class="thirdQ">
-          <p><t:0611956192413345></t:0611956192413345>
-          </p>‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’
-          <p class="right grey-text">Davidson (1980, 12) </p>
-        </div>
-      </div>
-    </div>
-    <div data-what=".firstQ, .secondQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
-    <div class="notes">This is why Davidson says that a theory of radical interpretation isn’t
+cognition is for and how, in the most abstract sense, it is possible.</div></div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white"></div><div class="container_12"><div class="grid_6 words left-half"><div style="padding-right:1em;"><div class="firstQ"><p>‘Do people actually use this strategy? Yes, all the time.’</p><p class="right grey-text">Dennett (1987, p. 21)</p></div><p class="em-above"></p><div class="secondQ"><p>‘[a]ll understanding of the speech [and thoughts] of another involves radical interpretation’</p><p class="right grey-text">Davidson (1973, 125)</p></div></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><div class="thirdQ"><p><t:028558185370638967></t:028558185370638967></p>‘The approach ... I have outlined is not, I am sure it is clear, meant to throw any direct light on how in real life we come to understand each other’<p class="right grey-text">Davidson (1980, 12) </p></div></div></div><div data-what=".firstQ, .secondQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="notes">This is why Davidson says that a theory of radical interpretation isn’t
 ‘meant to throw any direct light on how in real life we come to understand each other’.
 What he means is that it isn’t about the representations and algorithsm, nor about the 
-hardware implementation--the neurophysiology in our case--of social cognition.
-    </div>
-    <div class="slide">
-      <div data-what=".thirdQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-      <div data-what=".secondQ" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-      <div class="notes">But he’s also right that all 
+hardware implementation--the neurophysiology in our case--of social cognition.</div><div class="slide"><div data-what=".thirdQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".secondQ" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">But he’s also right that all 
 ‘[a]ll understanding of the speech [and thoughts] of another involves radical interpretation’.
 This follows trivially from the fact that 
 a theory of radical interpretation is supposed to be a computational description
-of  social cognition.
-      </div>
-    </div>
-    <div class="slide">
-      <div data-what=".secondQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-      <div data-what=".firstQ" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-      <div class="notes">Finally, the view I’m offering (a theory of radical interpretation is supposed to provide
+of  social cognition.</div></div><div class="slide"><div data-what=".secondQ" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".firstQ" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Finally, the view I’m offering (a theory of radical interpretation is supposed to provide
 a computational description of social cognition) makes sense of a puzzle about 
 Dennett’s claim that people use the Intentional Strategy all the time.
 The puzzle is to understand how he could know this without doing some research.
 The answer, I think, is that Dennett’s Intentional Stance, like any theory of
 radical interpretation, isn’t a theory about how individuals understand each other;
 it is a theory about what it is to understand each other---that is, a computational
-description of social cognition.
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">I’ve been arguing that
-          </div>
-          <p class="center notes handout show">A theory of radical interpretation is supposed to provide
-a computational description of social cognition.
-          </p>
-          <div class="notes">If this is right, then an account of radical interpretation makes a fundamental
-contribution to the study of social cognition.
-          </div>
-          <div class="slide">
-            <p class="center em-above">aside: simulation vs theory</p>
-            <div class="notes">Simulation theory and theory theory are theories about  REPRESENTATIONS AND 
+description of social cognition.</div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">I’ve been arguing that</div><p class="center notes handout show">A theory of radical interpretation is supposed to provide
+a computational description of social cognition.</p><div class="notes">If this is right, then an account of radical interpretation makes a fundamental
+contribution to the study of social cognition.</div><div class="slide"><p class="center em-above">aside: simulation vs theory</p><div class="notes">Simulation theory and theory theory are theories about  REPRESENTATIONS AND 
 ALGORITHMS, not about the COMPUTATIONAL DESCRIPTION.
 For this reason, you could accept Davidson’s theory about radical interpretation
 while taking any view on simulation vs theory.  The issues ([1]radical interpretation
-and [2] simluation vs theory) are only indirecty related.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <table class="data">
-            <thead>
-              <tr>
-                <td>level</td>
-                <td>social cognition</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="odd">
-                <td> 
-                  <p>computational description </p>
-                  <p class="indent">(What is the thing for and how does it achieve this?)</p>
-                </td>
-                <td class="hide">
-                  <p>theory of radical interpretation</p>
-                </td>
-              </tr>
-              <tr class="even">
-                <td> 
-                  <p>representations and algorithms </p>
-                  <p class="indent">(How are the inputs and outputs represented, and how is the transformation accomplished?)</p>
-                </td>
-                <td class="hide">
-                  <p>simulation, ‘theory theory’, ...</p>
-                </td>
-              </tr>
-              <tr class="odd">
-                <td>
-                  <p>hardware implementation </p>
-                </td>
-                <td class="hide">
-                  <p>TPJ, ...</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="slide">
-            <div data-what="tr:eq(1) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what="tr:eq(2) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Debates over simulation vs theory theory are debates about alogrithms and representations.
+and [2] simluation vs theory) are only indirecty related.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><table class="data"><thead><tr><td>level</td><td>social cognition</td></tr></thead><tbody><tr class="odd"><td> <p>computational description </p><p class="indent">(What is the thing for and how does it achieve this?)</p></td><td class="hide"><p>theory of radical interpretation</p></td></tr><tr class="even"><td> <p>representations and algorithms </p><p class="indent">(How are the inputs and outputs represented, and how is the transformation accomplished?)</p></td><td class="hide"><p>simulation, ‘theory theory’, ...</p></td></tr><tr class="odd"><td><p>hardware implementation </p></td><td class="hide"><p>TPJ, ...</p></td></tr></tbody></table><div class="slide"><div data-what="tr:eq(1) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what="tr:eq(2) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Debates over simulation vs theory theory are debates about alogrithms and representations.
 Whichever view is selected here, a computational description (theory of radical 
 interpretation) is still needed. The computational description characterises minds and actions
 from the point of view of the simulation process (that is, as they are simulated) or
-from the point of view of the theory (that is, as the theory characterises them as being).
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="tr:eq(3) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+from the point of view of the theory (that is, as the theory characterises them as being).</div></div><div class="slide"><div data-what="tr:eq(3) td:eq(1)" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div></div></div></div></section></div></body></html>
