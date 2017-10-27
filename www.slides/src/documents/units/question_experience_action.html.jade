@@ -17,13 +17,14 @@ include ../../../fragments/unit_mixins
 
 +slide_middle
   +timer-element('timer1','120s', {hide:true})
-    p.center What do we experience when we 
-      br
-      span encounter others’ 
-      span.speech.hide speech 
-      span  actions?
-    p.em-above.center.indirect-h.hide Indirect Hypothesis 
-      span.direct-h.hide vs Direct Hypothesis
+    .question
+      p.center What do we experience when we 
+        br
+        span encounter others’ 
+        span.speech.hide speech 
+        span  actions?
+      p.em-above.center.indirect-h.hide Indirect Hypothesis 
+        span.direct-h.hide vs Direct Hypothesis
     
   .slide
     +show('.speech')
@@ -48,6 +49,25 @@ include ../../../fragments/unit_mixins
       experiences stand to perceptual representations. These experiences provide reasons for
       judgements in something like the way that, on some views, perceptual experience of a
       physical object might provide a reason for a judgement about that object.
+  
+
++slide_middle
+  audio(width="720", height="300", controls, src="img/mcgurk_audio_only.mp3")
++slide_middle
+  video(width="720", height="300", controls, src="img/McGurk_large_crop.mp4")
++slide_middle
+  video(width="720", height="300", controls, src="img/McGurk_large.mp4")
       
++slide_middle
+  +timer-element('timer1','120s', {hide:true})
+    .question
+      p.center What do we experience when we 
+        br
+        span encounter others’ 
+        span.speech.hide speech 
+        span  actions?
+      p.em-above.center.indirect-h.hide Indirect Hypothesis 
+        span.direct-h.hide vs Direct Hypothesis
+  +show('.speech, .indirect-h, .direct-h', 0)
   +show-timer('timer1')
   +start-timer('timer1')

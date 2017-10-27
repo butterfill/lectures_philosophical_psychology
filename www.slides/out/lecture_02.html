@@ -1,48 +1,315 @@
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg"><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Lecture 02: Pure Goal Tracking - A Developmental Puzzle | Philosophical Psychology</title><meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - fonts--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
---><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
 
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lecture 02: Pure Goal Tracking - A Developmental Puzzle | Philosophical Psychology</title>
+    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
 
-<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section>
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 <!-- param @cls and param @options should be objects-->
+
 
 
 
 <div class="handout">\emph{The Simple View}
 The principles comprising the Teleological Stance are things infants know or believe, and infants are
 able to track goals by making inferences from these principles plus their beliefs about the means
-agents have selected.</div><section class="slide"><img src="/img/PA301239.JPG" style="filter:contrast(1.5)" class="bkg hide"/><div style="; mix-blend-mode: multiply;" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="margin-top:-30px;" class="center secondtitle huge-glow-invert-50 hide"><span>A Developmental Puzzle</span></p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="; mix-blend-mode: overlay;" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="line-height:.9em;" class="center firsttitle huge-glow-110"><span class="huge-glow-invert-110 pure hide">Pure </span><span>Goal</span><span class="tracking hide">-Tracking</span></p></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="words"><div class="container_12"><div class="grid_12"><p style="margin-top:500px;" class="right signature hide">s.butterfill@warwick.ac.uk</p></div></div></div></div><div class="notes">I seize little Isabel and swing her around, thereby making her laugh and 
+agents have selected.
+</div>
+<section class="slide"><img src="/img/PA301239.JPG" style="filter:contrast(1.5)" class="bkg hide"/>
+  <div style="; mix-blend-mode: multiply;" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="margin-top:-30px;" class="center secondtitle huge-glow-invert-50 hide"><span>A Developmental Puzzle</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="; mix-blend-mode: overlay;" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p style="line-height:.9em;" class="center firsttitle huge-glow-110"><span class="huge-glow-invert-110 pure hide">Pure </span><span>Goal</span><span class="tracking hide">-Tracking</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <p style="margin-top:500px;" class="right signature hide">s.butterfill@warwick.ac.uk</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">I seize little Isabel and swing her around, thereby making her laugh and 
 breaking a vase.
 Asked about this I might say, ‘The goal of my actions was not to break the vase
 but only to make her laugh, of course.’
 In talking about goals in this way I am not talking about mental representations:
 I am talking about actual and possible outcomes of an action, things which did or might 
-have happened.</div><div class="notes">A goal is an outcome to which an outcome is directed.</div><div class="slide"><div data-what=".tracking" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">For a process to track a goal of an action is for how that process unfolds to nonaccidentally
-depend in some way on whether that outcome is indeed a goal of the action.</div></div><div class="slide"><div data-what="img, .secondtitle, .signature" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:1000}" class="dv dv-velocity"></div><div class="notes">In this lecture I propose to introduce a developmental puzzle about goal tracking.
+have happened.
+  </div>
+  <div class="notes">A goal is an outcome to which an outcome is directed.
+  </div>
+  <div class="slide">
+    <div data-what=".tracking" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+    <div class="notes">For a process to track a goal of an action is for how that process unfolds to nonaccidentally
+depend in some way on whether that outcome is indeed a goal of the action.
+    </div>
+  </div>
+  <div class="slide">
+    <div data-what="img, .secondtitle, .signature" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:1000}" class="dv dv-velocity"></div>
+    <div class="notes">In this lecture I propose to introduce a developmental puzzle about goal tracking.
 Along the way I will also introduce some theories of goal-tracking, none of which 
-seems entirely adequate to the evidence.</div></div><div class="slide"><div data-what=".pure" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:1000}" class="dv dv-velocity"></div><div class="notes">One last thing before I start: my focus is pure goal-tracking, that is, goal-tracking which
-does not depend on any information about mental states.</div><div class="notes">I take pure goal-tracking to be a fundamental capacity, one which anchors abilities to 
+seems entirely adequate to the evidence.
+    </div>
+  </div>
+  <div class="slide">
+    <div data-what=".pure" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:1000}" class="dv dv-velocity"></div>
+    <div class="notes">One last thing before I start: my focus is pure goal-tracking, that is, goal-tracking which
+does not depend on any information about mental states.
+    </div>
+    <div class="notes">I take pure goal-tracking to be a fundamental capacity, one which anchors abilities to 
 understand others’ minds and underpins capacities to perform joint actions.
 [Because it underpins our abilities to identify mental states and to generate predictions based on
-ascriptions of mental states.]</div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{When can infants first track goals?}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{When can infants first track goals?}</div><div class="notes">A variety of evidence indicates that 
+ascriptions of mental states.]
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{When can infants first track goals?}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{When can infants first track goals?}</div>
+<div class="notes">A variety of evidence indicates that 
 infants may be able to track goals from three months of age (or earlier).</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">When?</p></div></div></div></div><div class="notes">When can infants first track goals to which actions are directed?</div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Consider a much-replicated study by Woodward and colleagues.</div><div class="layer1"><div style="position:relative;"><img src="/img/wodward_2001_fig1.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Woodward et al 2001, figure 1</p></div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes handout">'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'</div><div class="notes handout ctd">\citep[p.\ 153]{woodward:2001_making}</div></div><div class="slide layer2"><div data-what=".layer1" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".layer1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">from <span class="three">three</span><span class="remove-me nine"> nine</span><span>  months of age</span></p><div class="notes">Using a manipulation we’ll discuss later (‘sticky mittens’),
+
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">When?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">When can infants first track goals to which actions are directed?
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Consider a much-replicated study by Woodward and colleagues.</div>
+        <div class="layer1">
+          <div style="position:relative;"><img src="/img/wodward_2001_fig1.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+          <p class="source">Woodward et al 2001, figure 1</p>
+        </div>
+        <div class="slide">
+          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+          <div class="notes handout">'Six-month-olds and 9-month-olds showed a stronger novelty response (i.e., looked longer) on new-goal trials than on new-path trials (Woodward 1998). That is, like toddlers, young infants selectively attended to and remembered the features of the event that were relevant to the actor’s goal.'</div>
+          <div class="notes handout ctd">\citep[p.\ 153]{woodward:2001_making}</div>
+        </div>
+        <div class="slide layer2">
+          <div data-what=".layer1" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div data-what=".layer1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
+            <div style="" class="container_12">
+              <div class="grid_12 ">
+                <div class="words">
+                  <div class="middle">
+                    <p class="center">from <span class="three">three</span><span class="remove-me nine"> nine</span><span>  months of age</span></p>
+                    <div class="notes">Using a manipulation we’ll discuss later (‘sticky mittens’),
 \citet{sommerville:2005_action} used this paradigm to show that even
 three-month-olds can form expectations based on the goal of an action
-(for another study with three-month-olds, see also \citealp{luo:2011_threemonthold}).</div><div class="slide"><div data-what=".layer1" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><p class="center em-above">but:</p><p class="center">target vs type</p><div class="notes">The studies we have considered so far focus on infants’ abilities to identify the targets of actions.
-They do not show that infants can identify the type of an action---for instance, whether it is a grasping or a pushing action.</div></div><div class="slide"><div data-what=".layer1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what=".layer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what=".layer2" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".layer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">To say that infants can track  goals to which actions are directed implies that they can distinguish both the target and the type of an action.
-So can infants also distinguish between two actions which are directed to the same target but differ in type?</div></div></div></div></div></div></div></div></div></div></div></section><section style="filter:grayscale(1) contrast(1.1) brightness(1.6)" class="slide"><img src="/img/goal_act_type_habituation_study.jpg" width="1024px" style="" class="bkg"/><div style="filter:grayscale(1) contrast(1.1) brightness(1.6)" class="words"><div class="container_12"><div class="grid_12"><div class="notes">To answer this question, we would ideally have pairs of scenarios in which the target of an action
+(for another study with three-month-olds, see also \citealp{luo:2011_threemonthold}).
+                    </div>
+                    <div class="slide">
+                      <div data-what=".layer1" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+                      <p class="center em-above">but:</p>
+                      <p class="center">target vs type</p>
+                      <div class="notes">The studies we have considered so far focus on infants’ abilities to identify the targets of actions.
+They do not show that infants can identify the type of an action---for instance, whether it is a grasping or a pushing action.
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div data-what=".layer1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+                      <div data-what=".layer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+                      <div data-what=".layer2" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+                      <div data-what=".layer1" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+                      <div class="notes">To say that infants can track  goals to which actions are directed implies that they can distinguish both the target and the type of an action.
+So can infants also distinguish between two actions which are directed to the same target but differ in type?
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="filter:grayscale(1) contrast(1.1) brightness(1.6)" class="slide"><img src="/img/goal_act_type_habituation_study.jpg" width="1024px" style="" class="bkg"/>
+  <div style="filter:grayscale(1) contrast(1.1) brightness(1.6)" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">To answer this question, we would ideally have pairs of scenarios in which the target of an action
 is kept constant while the type of action varies.
 To the extent that subjects respond appropriately to the difference in type of action, we can be
-confident that they can distinguish actions not just by their targets but also by their types.</div><div class="notes">This is illustrated here, where you are habituated to a grasping event and the test events are
-(a) grasping but with novel kinematics (from a different angle), or (b) a novel goal event (pushing).</div><div class="notes">Unfortunately, as far as I know this has not yet been done.
+confident that they can distinguish actions not just by their targets but also by their types.
+        </div>
+        <div class="notes">This is illustrated here, where you are habituated to a grasping event and the test events are
+(a) grasping but with novel kinematics (from a different angle), or (b) a novel goal event (pushing).
+        </div>
+        <div class="notes">Unfortunately, as far as I know this has not yet been done.
 But there are some studies which, although not intended to get at exactly the issue of whether
-infants track goals and not just targets of actions, do indirectly shed light on this issue.</div><div class="notes">These studies demonstrate competence in goal-tracking from nine months of age, and give us no reason
-to doubt that, in simple enough cases, infants might show competence in goal tracking much earlier.</div><div class="notes">\citet{Behne:2005dw} created just such pairs of contrasting scenarios.
+infants track goals and not just targets of actions, do indirectly shed light on this issue.
+        </div>
+        <div class="notes">These studies demonstrate competence in goal-tracking from nine months of age, and give us no reason
+to doubt that, in simple enough cases, infants might show competence in goal tracking much earlier.
+        </div>
+        <div class="notes">\citet{Behne:2005dw} created just such pairs of contrasting scenarios.
 In one of their contrasts, an experimenter holds a ball out for an infant to grasp and then
 either ‘accidentally’ drops it or teasingly pulls it back.
 So in each case there is a goal-directed action involving the ball, but in one case the goal
@@ -53,60 +320,299 @@ consistently and appropriately discriminated between these scenarios by, for exa
 banging more when the ball was ‘accidentally’ dropped than when it was teasingly retracted.
 This and other research
 (e.g. \citealp{ambrosini:2013_looking}) suggests that, at least from nine months of age,
-infants can indeed distinguish both the type and target of a goal-directed action.</div><div class="notes">% \citet{ambrosini:2013_looking} is important: shows that type of grasp and not just target is tracked, implying that anticipatory looking is not merely perceptual animacy.</div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="hide how"><p style="font-family:Lato" class="center huge-glow-180">How?</p></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show">Infants can track goals from nine months of age (or earlier).</p></div></div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{How are infants first able to track goals?}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{How are infants first able to track goals?}</div><div class="notes">The Teleological Stance provides a computational description of goal tracking.
+infants can indeed distinguish both the type and target of a goal-directed action.
+        </div>
+        <div class="notes">% \citet{ambrosini:2013_looking} is important: shows that type of grasp and not just target is tracked, implying that anticipatory looking is not merely perceptual animacy.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="hide how">
+            <p style="font-family:Lato" class="center huge-glow-180">How?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show">Infants can track goals from nine months of age (or earlier).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{How are infants first able to track goals?}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{How are infants first able to track goals?}</div>
+<div class="notes">The Teleological Stance provides a computational description of goal tracking.
 It hinges on the principle that the goals of an action are those outcomes which the means are a
 best available way of brining about.
 Given this principle, we can infer goals from means by identifying which outcomes the means 
 are a best available way of brining about.
 But how is this computation performed?</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="font-family:Lato" class="center huge-glow-180">How?</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show">Infants can track goals from nine months of age (or earlier).</p></div></div></div></div></div><div class="notes">The question, of course, is how?</div></section><section class="slide"><div style="z-index:-22;" class="right-half-white hide"></div><div class="container_12"><div class="teleological hide"><div class="clear"></div><div class="words run-across"><p class="center"><span>The ‘Teleological Stance’</span><br/><span style="mix-blend-mode:difference">~ The goals of an action are those outcomes which the means is a best available way of brining about.</span></p></div><div class="container_12"></div><p class="right invert">Csibra & Gergely</p></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="center invert">Planning</p><p class="hem-around">1. This outcome, G, is the goal (specification)</p><p class="hem-around">2. Means m is a best available<span class="star">*</span><span> way of bringing G about</span></p><p class="hem-above">3. ∴ adopt m</p></div></div><div class="grid_6 words invert right-half hide"><div style="padding-left:1em;"><div class="slide"><div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><p class="center noinvert">Tracking</p><p class="hem-around one">1. This means, m, has been adopted (observation)</p><p class="hem-around two">2. G is an outcome such that: m is a best available<span class="star">*</span><span> way of brining G about</span></p><p class="hem-above">3. ∴ G is a goal of the observed action</p><div class="notes">So planning is the process of moving from goals to means,
+
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="font-family:Lato" class="center huge-glow-180">How?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show">Infants can track goals from nine months of age (or earlier).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">The question, of course, is how?
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="teleological hide">
+      <div class="clear"></div>
+      <div class="words run-across">
+        <p class="center"><span>The ‘Teleological Stance’</span><br/><span style="mix-blend-mode:difference">~ The goals of an action are those outcomes which the means is a best available way of brining about.</span></p>
+      </div>
+      <div class="container_12"></div>
+      <p class="right invert">Csibra & Gergely</p>
+    </div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="center invert">Planning</p>
+        <p class="hem-around">1. This outcome, G, is the goal (specification)</p>
+        <p class="hem-around">2. Means m is a best available<span class="star">*</span><span> way of bringing G about</span></p>
+        <p class="hem-above">3. ∴ adopt m</p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half hide">
+      <div style="padding-left:1em;">
+        <div class="slide">
+          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <p class="center noinvert">Tracking</p>
+          <p class="hem-around one">1. This means, m, has been adopted (observation)</p>
+          <p class="hem-around two">2. G is an outcome such that: m is a best available<span class="star">*</span><span> way of brining G about</span></p>
+          <p class="hem-above">3. ∴ G is a goal of the observed action</p>
+          <div class="notes">So planning is the process of moving from goals to means,
 whereas tracking goes in the reverse direction, from means to goals.
 But what is common to the two is the relation between means and goals.
 In both cases, planning and goal-tracking, the means that are adopted should be a best available
-way of bringing the goal about.</div></div></div></div><div class="slide"><div data-what=".star" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".star" data-cls="bkg-invert" class="dv dv-addclass"></div></div><div class="slide"><div data-what=".star" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".teleological" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="notes">Note that this is not exactly an answer to our question,
+way of bringing the goal about.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".star" data-cls="transition-04" class="dv dv-addclass"></div>
+      <div data-what=".star" data-cls="bkg-invert" class="dv dv-addclass"></div>
+    </div>
+    <div class="slide">
+      <div data-what=".star" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+      <div data-what=".teleological" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+      <div class="notes">Note that this is not exactly an answer to our question,
 How can infants track goals from nine months of age (or earlier)?
-It provides what Marr would call a computational description.</div><div class="notes">That is, it provides a function
+It provides what Marr would call a computational description.
+      </div>
+      <div class="notes">That is, it provides a function
 from 
 facts about events and states of affairs that could be known without knowing which goals any
 particular actions are directed to, nor any facts about particular mental states
 to 
-one or more outcomes which are the goals of an action.</div><div class="notes">Providing this function explains how pure goal-tracking is possible in principle.</div><div class="notes">But what we want to know, of course, is how infants (and adults) actually compute this function.
+one or more outcomes which are the goals of an action.
+      </div>
+      <div class="notes">Providing this function explains how pure goal-tracking is possible in principle.
+      </div>
+      <div class="notes">But what we want to know, of course, is how infants (and adults) actually compute this function.
 If this is (roughly) the function which computationally describes pure goal tracking,
-what are the representations and processes involved in pure goal tracking?</div></div><div class="slide"><div data-what=".left-half" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".two" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">An we need to know how they compute to which outcome a means is the best available.</div></div></div></section><section style="" class="slide"><img src="/img/teleological_stance_diy.jpeg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p class="center">The Simple View</p><div class="notes">The principles comprising the Teleological Stance are things we know or believe, and we are
+what are the representations and processes involved in pure goal tracking?
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".left-half" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div data-what=".two" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+      <div class="notes">An we need to know how they compute to which outcome a means is the best available.
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/teleological_stance_diy.jpeg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+          <p class="center">The Simple View</p>
+          <div class="notes">The principles comprising the Teleological Stance are things we know or believe, and we are
 able to track goals by making inferences from these principles and our beliefs about the
-means someone is pursuing.</div><div class="notes">Infants and adults engaged in goal-tracking reason about 
+means someone is pursuing.
+          </div>
+          <div class="notes">Infants and adults engaged in goal-tracking reason about 
 to which outcome a means is the best available
-in fundamentally the same way that you or I do when trying to work it out explicitly.</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes"> [*TODO: illustrate with picture.]</div></div><div class="slide step2"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">Although I don’t think they have written about it in quite the terms I use,
-I take Gergely and Csibra to be endorsing the Simple View.</div><p class="em-above notes show">‘when taking the teleological stance one-year-olds apply the same
+in fundamentally the same way that you or I do when trying to work it out explicitly.
+          </div>
+          <div class="slide">
+            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes"> [*TODO: illustrate with picture.]</div>
+          </div>
+          <div class="slide step2">
+            <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div class="notes">Although I don’t think they have written about it in quite the terms I use,
+I take Gergely and Csibra to be endorsing the Simple View.
+            </div>
+            <p class="em-above notes show">‘when taking the teleological stance one-year-olds apply the same
 inferential principle of rational action that drives everyday mentalistic
-reasoning about intentional actions in adults’</p><p class="right grey-text">(Gergely and Csibra 2003; cf. Csibra, Bíró, et al. 2003; Csibra and Gergely 1998: 259)</p></div><div class="slide"><div data-what=".step2" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">The Simple View makes no use of the idea that there might be action perception.</div><div class="notes">Relation to Q3: no special system.
+reasoning about intentional actions in adults’
+            </p>
+            <p class="right grey-text">(Gergely and Csibra 2003; cf. Csibra, Bíró, et al. 2003; Csibra and Gergely 1998: 259)</p>
+          </div>
+          <div class="slide">
+            <div data-what=".step2" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">The Simple View makes no use of the idea that there might be action perception.
+            </div>
+            <div class="notes">Relation to Q3: no special system.
 [Q3: Are these properties and happenings tracked by modality specific systems, or are they tracked by
 special purpose perceptual mechanisms of their own (e.g. Liberman, 1967)/ cross-modal objects of
-perception?]</div><div class="notes">Relation to Q6: teleological stance is continuous with mindreading (the latter merely involves
+perception?]
+            </div>
+            <div class="notes">Relation to Q6: teleological stance is continuous with mindreading (the latter merely involves
 using an enriched model with includes mental states; the two can be parts of a single process).
-[Q6: How do these processes relate to theory of mind abilities (e.g. Simmons et al., 2009)?]</div></div></div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="how"><p style="font-family:Lato" class="center huge-glow-180">How?</p></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show">Infants can track goals from nine months of age (or earlier).</p></div></div></div></div></div></section><section id="goal_tracking_limit" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">A signature limit of infant goal tracking?</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{A signature limit of infant goal tracking?}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{A signature limit of infant goal tracking?}</div><div class="notes">A signature limit of a system is a pattern of behaviour the system exhibits which is both defective
+[Q6: How do these processes relate to theory of mind abilities (e.g. Simmons et al., 2009)?]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="how">
+            <p style="font-family:Lato" class="center huge-glow-180">How?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show">Infants can track goals from nine months of age (or earlier).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="goal_tracking_limit" class="slide">
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">A signature limit of infant goal tracking?</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{A signature limit of infant goal tracking?}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{A signature limit of infant goal tracking?}</div>
+<div class="notes">A signature limit of a system is a pattern of behaviour the system exhibits which is both defective
 given what the system is for and peculiar to that system.
 There is some evidence that goal-tracking 
 in infants (and adults) 
 is limited by their abilities to act.
 Could this be a signature limit of infant goal-tracking?</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Limit:</p><p class="hem-above">infants can only track goals of actions they can perform.</p></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/flanagan_2003_fig1.png" style="clip: rect(0,395px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Flanagan and Johansson, 2003 figure 1 (part)</p><div class="notes">To explain this I have to step back and show you something interesting about 
-adults when they perform, and when they observe actions.</div><div class="notes">Performing actions (e.g. stacking blocks): you don't look at your hand but at
+
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>Limit:</p>
+          <p class="hem-above">infants can only track goals of actions they can perform.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/flanagan_2003_fig1.png" style="clip: rect(0,395px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Flanagan and Johansson, 2003 figure 1 (part)</p>
+        <div class="notes">To explain this I have to step back and show you something interesting about 
+adults when they perform, and when they observe actions.
+        </div>
+        <div class="notes">Performing actions (e.g. stacking blocks): you don't look at your hand but at
 the block it will pick up, or, when holding a block, at the location where it will place a block.
-That is, in acting the eyes move just ahead of the action.</div><div class="slide"><div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">\citet{Flanagan:2003lm} showed that the same pattern occurs when adults observe another 
+That is, in acting the eyes move just ahead of the action.
+        </div>
+        <div class="slide">
+          <div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+          <div class="notes">\citet{Flanagan:2003lm} showed that the same pattern occurs when adults observe another 
 acting. 
-In observing an action, the eyes move just ahead of the action.</div><div class="notes">This proactive gaze is important for our purposes because it can reveal goal-tracking ...</div><div class="notes handout">\citet{Flanagan:2003lm} showed that 
-‘patterns of eye–hand coordination are similar when performing and observing a block stacking task’.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/kanakogi_2011_fig5.jpg" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Kanakogi and Itakura, 2011 figure 5</p><div class="notes">Kanakogi & Itakuar, 2011 show that abilities to grasp objects are correlated with
-abilities to track the goal of a grasping action (as measured by proactive gaze).</div><div class="notes">x-axis is alpha, grasping angle. ‘An α angle value from 90 to 180° indicates that the infant
-is engaged in a one-handed grasping action.’</div><div class="notes">‘The angle α is an index of the development of the one­handed grasping action and was
+In observing an action, the eyes move just ahead of the action.
+          </div>
+          <div class="notes">This proactive gaze is important for our purposes because it can reveal goal-tracking ...
+          </div>
+          <div class="notes handout">\citet{Flanagan:2003lm} showed that 
+‘patterns of eye–hand coordination are similar when performing and observing a block stacking task’.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/kanakogi_2011_fig5.jpg" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Kanakogi and Itakura, 2011 figure 5</p>
+        <div class="notes">Kanakogi & Itakuar, 2011 show that abilities to grasp objects are correlated with
+abilities to track the goal of a grasping action (as measured by proactive gaze).
+        </div>
+        <div class="notes">x-axis is alpha, grasping angle. ‘An α angle value from 90 to 180° indicates that the infant
+is engaged in a one-handed grasping action.’
+        </div>
+        <div class="notes">‘The angle α is an index of the development of the one­handed grasping action and was
 calculated by measuring the angle of a straight line de ned by the infant’s two hands (the
 apex of the junction of the thumb and index nger) when crossed by an imaginary line
 projecting frontally from the infant (Fig. 2b). If infants grasped for the objects with their
@@ -115,42 +621,282 @@ calculated the angle α in the same way. e angle α value of 90° corresponded t
 alignment of the hands in a two­handed reach. Therefore, the angle α value deviates from 90°
 towards 180°, and bigger angle α value indicates more mature one­handed grasping. If the
 angle α was over 90°, the infant was considered to be engaged in a one­handed grasping
-action.’</div><div class="notes">‘three action conditions: grasping hand (GH, n = 31), back of hand (BH, n = 31), and
+action.’
+        </div>
+        <div class="notes">‘three action conditions: grasping hand (GH, n = 31), back of hand (BH, n = 31), and
 mechanical claw (MC, n = 32). Pearson’s r reflects the partial correlation between timing of
 gaze arrival at the goal and grasping ability in each condition after controlling for age.
-Asterisk indicates statistical signi cance, P < 0.05; ns, not significant.’</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/kanakogi_2011_fig1Cii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><div data-what="img" data-css="{&quot;filter&quot;:&quot;contrast(1.2) brightness(1.5)&quot;}" class="dv dv-style"></div><p class="source">Kanakogi and Itakura, 2011 figure 1C (part)</p><div class="notes">Further, changing from a bodily action to the operation of a mechanical claw
-(say) undermines the goal tracking effect.</div><div class="notes">So  Kanakogi & Itakuar, 2011 make two points:
+Asterisk indicates statistical signi cance, P < 0.05; ns, not significant.’
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/kanakogi_2011_fig1Cii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <div data-what="img" data-css="{&quot;filter&quot;:&quot;contrast(1.2) brightness(1.5)&quot;}" class="dv dv-style"></div>
+        <p class="source">Kanakogi and Itakura, 2011 figure 1C (part)</p>
+        <div class="notes">Further, changing from a bodily action to the operation of a mechanical claw
+(say) undermines the goal tracking effect.
+        </div>
+        <div class="notes">So  Kanakogi & Itakuar, 2011 make two points:
 (i) goal-tracking depends on action capabilities; and 
-(ii) only works for events involving biomechanically similar affectors</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>If infants can only track goals of actions they can perform, what happens if you intervene on their abilities to act?</p></div></div></div></div></section><section style="" class="slide"><img src="/img/needham_sticky_mittens.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Needham et al, 2002 / https://news.vanderbilt.edu/files/sticky-mittens.jpg</p><div class="notes">Needham et al, 2002 showed that putting ‘sticky mittens’ on 3-month-old infants 
+(ii) only works for events involving biomechanically similar affectors
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>If infants can only track goals of actions they can perform, what happens if you intervene on their abilities to act?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/needham_sticky_mittens.png" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">Needham et al, 2002 / https://news.vanderbilt.edu/files/sticky-mittens.jpg</p>
+        <div class="notes">Needham et al, 2002 showed that putting ‘sticky mittens’ on 3-month-old infants 
 (for 10-14 play sessions of 10 minutes each) resulted in their spending 
-more time visually and manually exporing novel objects.</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Sommerville, Woodward and Needham, 2005</p><p class="indent em-above">Play wearing mittens then observe action.</p><p class="indent em-above">vs</p><p class="indent em-above">Observe action then play wearing mittens.</p><div class="notes">In this study, I think infants wore the mittens for just 200 seconds
-(so the play sessions were much shorter than in Needhman et al, 2002).</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">The observation was based on this study, which we saw earlier</div><div style="position:relative;"><img src="/img/wodward_2001_fig1.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Woodward et al 2001, figure 1</p><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/sommerville_2005_fig3_part.jpg" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Sommerville, Woodward and Needham, 2005 figure 3</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/sommerville_2005_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Sommerville, Woodward and Needham, 2005 figure 3</p><div class="notes">The results show that infants who played wearing the mittens first
-were more attentive to the goal.</div><div class="notes handout">From at least three months of age, some of infants’ abilities to identify
+more time visually and manually exporing novel objects.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>Sommerville, Woodward and Needham, 2005</p>
+          <p class="indent em-above">Play wearing mittens then observe action.</p>
+          <p class="indent em-above">vs</p>
+          <p class="indent em-above">Observe action then play wearing mittens.</p>
+          <div class="notes">In this study, I think infants wore the mittens for just 200 seconds
+(so the play sessions were much shorter than in Needhman et al, 2002).
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The observation was based on this study, which we saw earlier</div>
+        <div style="position:relative;"><img src="/img/wodward_2001_fig1.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Woodward et al 2001, figure 1</p>
+        <div class="slide">
+          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/sommerville_2005_fig3_part.jpg" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Sommerville, Woodward and Needham, 2005 figure 3</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/sommerville_2005_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Sommerville, Woodward and Needham, 2005 figure 3</p>
+        <div class="notes">The results show that infants who played wearing the mittens first
+were more attentive to the goal.
+        </div>
+        <div class="notes handout">From at least three months of age, some of infants’ abilities to identify
 the goals of actions they observe are linked to their abilities to perform
-actions \citep{woodward:2009_infants}.</div><div class="notes">But one potential objection to this study concerns observation vs performance.
+actions \citep{woodward:2009_infants}.
+        </div>
+        <div class="notes">But one potential objection to this study concerns observation vs performance.
 The infants who played wearing sticky mittens first had spent longer observing
 actions by the time it came to the violation of expectations trial.
 Could it be observation of action (including one’s own) rather than performance
-that matters?</div><div class="handout">In adults, tying the hands impairs proactive gaze \citep{ambrosini:2012_tie}; in 
+that matters?
+        </div>
+        <div class="handout">In adults, tying the hands impairs proactive gaze \citep{ambrosini:2012_tie}; in 
 infants, boosting grasping with ‘sticky mittens’ facilitates proactive gaze
 (\citealp{sommerville:2005_action}; see also \citealp{sommerville:2008_experience},
-\citealp{ambrosini:2013_looking}).</div><div class="slide"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img, .source" data-css="{&quot;filter&quot;:&quot;blur(5px) grayscale(1) opacity(0.5)&quot;}" class="dv dv-style"></div><p style="font-family:lato;" class="center huge-glow-120">objection</p></div></div></div></div></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">It’s not really grasping</p><div class="notes">nb something gets stuck to the mittens; it's not really grasping!</div></div></div></div></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/sommerville_2008_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Sommerville et al 2008, figure 1</p><div class="notes">To address this issue, \citet{sommerville:2008_experience} did a study in 
+\citealp{ambrosini:2013_looking}).
+        </div>
+        <div class="slide">
+          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
+            <div style="" class="container_12">
+              <div class="grid_12 ">
+                <div class="words">
+                  <div class="middle">
+                    <div data-what="img, .source" data-css="{&quot;filter&quot;:&quot;blur(5px) grayscale(1) opacity(0.5)&quot;}" class="dv dv-style"></div>
+                    <p style="font-family:lato;" class="center huge-glow-120">objection</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
+            <div style="" class="container_12">
+              <div class="grid_12 ">
+                <div class="words">
+                  <div class="middle">
+                    <p class="center">It’s not really grasping</p>
+                    <div class="notes">nb something gets stuck to the mittens; it's not really grasping!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/sommerville_2008_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Sommerville et al 2008, figure 1</p>
+        <div class="notes">To address this issue, \citet{sommerville:2008_experience} did a study in 
 which one group had observation while the other group had performance.
-The participants were 10-month-old infants this time.</div><div class="notes">The materials were a bit different: so that training vs observation could 
+The participants were 10-month-old infants this time.
+        </div>
+        <div class="notes">The materials were a bit different: so that training vs observation could 
 be as similar as possible with respect to the causal structure exposed,
-there was a hook to get an object.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/sommerville_2008_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Sommerville et al 2008, figure 2</p><div class="notes">The results show that infants with the training paid attention to the
+there was a hook to get an object.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/sommerville_2008_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Sommerville et al 2008, figure 2</p>
+        <div class="notes">The results show that infants with the training paid attention to the
 distal goal (choice of toy) whereas those without paid attention to the
-choice of cane.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/ambrosini_2013_fig1i.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Ambrosini et al, 2013 figure 1 (part)</p><div class="notes">Further support for a link between action performance and goal tracking
+choice of cane.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/ambrosini_2013_fig1i.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Ambrosini et al, 2013 figure 1 (part)</p>
+        <div class="notes">Further support for a link between action performance and goal tracking
 comes from a developmental study by Ambrosini et al which studied whether proactive
 gaze in infants is influenced by pre-shaping of the hand, and, in particular, 
-whether it is influenced by precision grips.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/ambrosini_2013_fig1ii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Ambrosini et al, 2013 figure 1 (part)</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/ambrosini_2013_fig1iii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Ambrosini et al, 2013 figure 1 (part)</p><div class="notes">By using no shaping (a fist), Ambrosini et al could treat sensitivity
-to whole-hand grasp and precision grip separately.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/ambrosini_2013_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Ambrosini et al, 2013 figure 3</p><div class="notes">‘infants’ ability to perform specific grasping actions with fewer fingers directly predicted the degree with which they took advantage of the availability of corresponding pre-shape motor information in shifting their gaze towards the goal of others’ actions’ \citep[p.~6]{ambrosini:2013_looking}.</div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="font-family:lato;" class="center huge-glow-180">Why?</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show">In infants (and adults), <br/><span>goal-tracking is limited by their abilities to act.</span></p><div class="notes">Why is this true?
+whether it is influenced by precision grips.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/ambrosini_2013_fig1ii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Ambrosini et al, 2013 figure 1 (part)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/ambrosini_2013_fig1iii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Ambrosini et al, 2013 figure 1 (part)</p>
+        <div class="notes">By using no shaping (a fist), Ambrosini et al could treat sensitivity
+to whole-hand grasp and precision grip separately.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/ambrosini_2013_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Ambrosini et al, 2013 figure 3</p>
+        <div class="notes">‘infants’ ability to perform specific grasping actions with fewer fingers directly predicted the degree with which they took advantage of the availability of corresponding pre-shape motor information in shifting their gaze towards the goal of others’ actions’ \citep[p.~6]{ambrosini:2013_looking}.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="font-family:lato;" class="center huge-glow-180">Why?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show">In infants (and adults), <br/><span>goal-tracking is limited by their abilities to act.</span></p>
+            <div class="notes">Why is this true?
 Why is goal-tracking in infants (and adult) limited by their abilities to act?
 On the Simple View, goal tracking is a matter of thinking and reasoning about the 
 best means to perform an action. 
 On this View, there’s no obvious reason why 
-your goal-tracking should be limited by your abilities to act in this way.</div><div class="notes">Although I can’t jump over a house, I can perfectly well think about different ways
-to do so and distinguish better and worse approaches, at least to some extent.</div></div></div></div></div></div></section><section id="motor_theory_goal_tracking" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">The Motor Theory of Goal Tracking</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{The Motor Theory of Goal Tracking}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{The Motor Theory of Goal Tracking}</div><div class="notes">How do infants (and adults) track the goals of others’ actions?
+your goal-tracking should be limited by your abilities to act in this way.
+            </div>
+            <div class="notes">Although I can’t jump over a house, I can perfectly well think about different ways
+to do so and distinguish better and worse approaches, at least to some extent.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="motor_theory_goal_tracking" class="slide">
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">The Motor Theory of Goal Tracking</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{The Motor Theory of Goal Tracking}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{The Motor Theory of Goal Tracking}</div>
+<div class="notes">How do infants (and adults) track the goals of others’ actions?
 According to the Motor Theory of Goal Tracking, it is sometimes* by 
 means of motor processes.
 More carefully, the Motor Theory of Goal Tracking consists of these claims: 
@@ -163,13 +909,19 @@ The result is that, often enough, the only only outcomes to which the observed a
 are represented strongly.
 
 (*‘sometimes’ because the Motor Theory is part of a dual-process account of goal-tracking.)</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
+
 <div class="handout">\emph{The Motor Theory of Goal Tracking}
-Infants’ pure goal-tracking depends on the double life of motor processes.</div><div class="handout">According to the \emph{Motor Theory of Goal Tracking}, infants (and adults) sometimes track the
-goals of others’ by means of motor processes \citep[see][for details]{sinigaglia:2015_puzzle}.</div><div class="handout">More carefully  the \emph{Motor Theory of Goal Tracking} states that: 
+Infants’ pure goal-tracking depends on the double life of motor processes.
+</div>
+<div class="handout">According to the \emph{Motor Theory of Goal Tracking}, infants (and adults) sometimes track the
+goals of others’ by means of motor processes \citep[see][for details]{sinigaglia:2015_puzzle}.
+</div>
+<div class="handout">More carefully  the \emph{Motor Theory of Goal Tracking} states that: 
 \begin{enumerate}
 \item in action observation, possible outcomes of observed actions are represented motorically;
 \item these representations trigger motor processes much as if the observer were performing actions directed to the outcomes;
@@ -177,7 +929,15 @@ goals of others’ by means of motor processes \citep[see][for details]{sinigagl
 \item a triggering representation is weakened if the predictions it generates fail.
 \end{enumerate}
 The result is that, often enough, the only only outcomes to which the observed action is a means
-are represented strongly.</div><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">The Double Life of Motor Representation</p><div class="notes">Suppose you are reaching for, grasping, transporting and then placing a pen. Performing even
+are represented strongly.
+</div>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">The Double Life of Motor Representation</p>
+          <div class="notes">Suppose you are reaching for, grasping, transporting and then placing a pen. Performing even
 relatively simple action sequences like this involves satisfying many constraints that cannot
 normally be satisfied by explicit practical reasoning, especially if performance is to be rapid and
 fluent. Rather, such performances require motor representations.
@@ -190,25 +950,83 @@ But they also live a double life. Motor representations concerning a particular 
 involved not only in performing an action of that type but also sometimes in observing one. That is,
 if you were to observe Ayesha reach for, grasp, transport and then place a pen, motor representations
 would occur in you much like those that would also occur in you if it were you---not Ayesha---who was
-doing this.</div><div class="notes">Converging evidence for this assertion comes from a variety of methods and measures;
-but I won’t mention any of that here.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">What are those motor representations doing there?</p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">Motor Theory of  <span class="goal"> Goal Tracking </span><span class="speech hide">(including Speech Perception)</span></p><div class="notes">mTgt is an alternative to the Simple View.
+doing this.
+          </div>
+          <div class="notes">Converging evidence for this assertion comes from a variety of methods and measures;
+but I won’t mention any of that here.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">What are those motor representations doing there?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Motor Theory of  <span class="goal"> Goal Tracking </span><span class="speech hide">(including Speech Perception)</span></p>
+          <div class="notes">mTgt is an alternative to the Simple View.
 The idea is that pure goal-tracking involves motor processes rather than thinking
-and reasoning about goals.</div><div class="notes">But how could motor processes enable goal tracking?</div><div class="slide"><div data-what=".speech" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">At this point it is helpful to think about speech.
+and reasoning about goals.
+          </div>
+          <div class="notes">But how could motor processes enable goal tracking?
+          </div>
+          <div class="slide">
+            <div data-what=".speech" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">At this point it is helpful to think about speech.
 To utter a phoneme is to produce complex coordinated movements of the 
 lips, larynx, tongue and velum.
 Further, how these should be moved and what sound should be produced depends on
-many factors including phonemic context, rate of speech and prosody.</div><div class="notes">So uttering a phoneme is unlike pressing a key on a piano keyboard:
+many factors including phonemic context, rate of speech and prosody.
+            </div>
+            <div class="notes">So uttering a phoneme is unlike pressing a key on a piano keyboard:
 it not a matter of producing a particular sound
-but of performing a complex, goal-directed action.</div><div class="notes">We know from Riikka Möttönen’s research that there is striking new
-evidence for what is sometimes called the Motor Theory of Speech Perception.</div><div class="notes">So speech perception is special case of goal-tracking.
-The perceiver’s task is to recover the goal to which the utterance of a phoneme is directed.</div><div class="notes">mTgt is simply a generalisation of the Motor Theory of Speech Perception</div><div class="notes">In performing an action, there are motor processes which compute means given goals.
-The same processes can be used when observing an action for tracking goals.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/sinigaglia_butterfill_2005_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Sinigalia & Butterfill 2015, figure 1</p><div class="notes">Goal-tracking is acting in reverse.
+but of performing a complex, goal-directed action.
+            </div>
+            <div class="notes">We know from Riikka Möttönen’s research that there is striking new
+evidence for what is sometimes called the Motor Theory of Speech Perception.
+            </div>
+            <div class="notes">So speech perception is special case of goal-tracking.
+The perceiver’s task is to recover the goal to which the utterance of a phoneme is directed.
+            </div>
+            <div class="notes">mTgt is simply a generalisation of the Motor Theory of Speech Perception
+            </div>
+            <div class="notes">In performing an action, there are motor processes which compute means given goals.
+The same processes can be used when observing an action for tracking goals.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/sinigaglia_butterfill_2005_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Sinigalia & Butterfill 2015, figure 1</p>
+        <div class="notes">Goal-tracking is acting in reverse.
 -- in action observation, possible outcomes of observed actions are represented
 -- these representations trigger planning as if performing actions directed to the outcomes
 -- such planning generates predictions
 -- a triggering representation is weakened if its predictions fail
 The result is that the only only outcomes to which the observed action is a means
-are represented strongly.</div><div class="notes">There is evidence that a motor representation of an outcome can cause a determination of which
+are represented strongly.
+        </div>
+        <div class="notes">There is evidence that a motor representation of an outcome can cause a determination of which
 movements are likely to be performed to achieve that outcome \citep[see, for
 instance,][]{kilner:2004_motor, urgesi:2010_simulating}. Further, the processes involved in
 determining how observed actions are likely to unfold given their outcomes are closely related,
@@ -227,40 +1045,222 @@ motor abilities will interfere with the eye movements \citep{Costantini:2012fk}.
 These proactive eye movements also depend on planning-like processes; requiring the observer to
 perform actions incongruent with those she is observing can eliminate proactive eye movements
 \citep{Costantini:2012uq}. This, then, is further evidence for planning-like motor processes in
-action observation.</div><div class="notes">So observers represent outcomes motorically and these representations trigger planning-like processes
+action observation.
+        </div>
+        <div class="notes">So observers represent outcomes motorically and these representations trigger planning-like processes
 which generate expectations about how the observed actions will unfold and their sensory consequences.
 Now the mere occurrence of these processes is not sufficient to explain why, in action observation,
 an outcome represented motorically is likely to be an outcome to which the observed action is
-directed.</div><div class="notes">To take a tiny step further, we conjecture that, in action observation, \textbf{motor representations of
+directed.
+        </div>
+        <div class="notes">To take a tiny step further, we conjecture that, in action observation, \textbf{motor representations of
 outcomes are weakened to the extent that the expectations they generate are unmet}
 \citep[compare][]{Fogassi:2005nf}.
 A motor representation of an outcome to which an observed action is not directed is likely to
 generate incorrect expectations about how this action will unfold, and failures of these
 expectations to be met will weaken the representation.
 This is what ensures that there is a correspondence between outcomes represented motorically in
-observing actions and the goals of those actions.</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center"> <span>The Motor Theory of Goal Tracking </span><br/><span>is part of a </span><span class="dp">dual-process theory</span><span> ...</span></p><div class="notes">The mTgt cannot be a full theory of goal-tracking in adults, of course.
-Instead we need a dual process theory of goal-tracking.</div><div class="slide"><div data-what=".dp" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".dp" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">But what is a dual process theory of goal-tracking?
+observing actions and the goals of those actions.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center"> <span>The Motor Theory of Goal Tracking </span><br/><span>is part of a </span><span class="dp">dual-process theory</span><span> ...</span></p>
+          <div class="notes">The mTgt cannot be a full theory of goal-tracking in adults, of course.
+Instead we need a dual process theory of goal-tracking.
+          </div>
+          <div class="slide">
+            <div data-what=".dp" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".dp" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">But what is a dual process theory of goal-tracking?
 I’m so glad you asked.
-It’s very simple ...</div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">‘proactive gaze’ and ‘explicit judgement’ are variables whose values represent
+It’s very simple ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide1.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">‘proactive gaze’ and ‘explicit judgement’ are variables whose values represent
 whether there is a proactive gaze or explicit judgement, and what is it to or about.
-Likewise, ‘motor process’ is a variable whose values represent ...</div><div class="notes">The lines depict how the variables are causally related. I’ve used thick and thin
-lines informally, to indicate weaker and stronger influences.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide2.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide4.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">The dual-process theory of goal-tracking makes perfect sense of development.
+Likewise, ‘motor process’ is a variable whose values represent ...
+        </div>
+        <div class="notes">The lines depict how the variables are causally related. I’ve used thick and thin
+lines informally, to indicate weaker and stronger influences.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide2.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide3.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_goal_tracking/Slide4.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The dual-process theory of goal-tracking makes perfect sense of development.
 It says that what we observe in six- and nine-month-olds is motor-based goal-tracking.
 Presumably the more flexible, reasoning-based goal-tracking processes emerge some time
-later in development.</div></div></div></div></section><section class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="font-family:Lato" class="center huge-glow-180">How?</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show">Infants can track goals from nine months of age (or earlier).</p></div></div></div></div></div><div class="notes">The Motor Theory of Goal Tracking</div><div class="notes">Relation to Q3: special system, namely the motor system.</div><div class="notes">Relation to Q6 [How do these processes relate to theory of mind abilities (e.g. Simmons et al.,
+later in development.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="font-family:Lato" class="center huge-glow-180">How?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show">Infants can track goals from nine months of age (or earlier).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">The Motor Theory of Goal Tracking
+  </div>
+  <div class="notes">Relation to Q3: special system, namely the motor system.
+  </div>
+  <div class="notes">Relation to Q6 [How do these processes relate to theory of mind abilities (e.g. Simmons et al.,
 2009)?]:
 It looks like, in endorsing mTgt, we are postulating a discrepancy between goal-tracking and
 theory of mind abilities, since theory of mind abilities are perhaps unlikely to depend on motor
 processes in the way in which goal-tracking does. 
 However, we should probably be cautious here; in pilot research with Jason Low, we have some
 preliminary evidence that some theory of mind abilities may be more closely tied to motor processes
-than anyone has yet imagined.</div></section><section class="slide"><div style="z-index:-22;" class="right-half-white"></div><div class="container_12"><div class="teleological"><div class="clear"></div><div class="words run-across"><p class="center"><span>The ‘Teleological Stance’</span><br/><span style="mix-blend-mode:difference">~ The goals of an action are those outcomes which the means is a best available way of brining about.</span></p></div><div class="container_12"></div><p class="right invert">Csibra & Gergely</p></div><div class="grid_6 words left-half"><div style="padding-right:1em;"></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p class="center noinvert">Tracking</p><p class="hem-around one">1. This means, m, has been adopted (observation)</p><p class="hem-around two">2. G is an outcome such that: m is a best available<span class="star">*</span><span> way of brining G about</span></p><p class="hem-above">3. ∴ G is a goal of the observed action</p></div></div><div class="slide"><div data-what=".two" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">Important that 
-mTgt is not an alternative to the Teleological Stance but to it plus the claim about reasoning.</div><div class="notes">Simple View and mTgt do not differ on the relation between means and goals that is to be 
+than anyone has yet imagined.
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="teleological">
+      <div class="clear"></div>
+      <div class="words run-across">
+        <p class="center"><span>The ‘Teleological Stance’</span><br/><span style="mix-blend-mode:difference">~ The goals of an action are those outcomes which the means is a best available way of brining about.</span></p>
+      </div>
+      <div class="container_12"></div>
+      <p class="right invert">Csibra & Gergely</p>
+    </div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p class="center noinvert">Tracking</p>
+        <p class="hem-around one">1. This means, m, has been adopted (observation)</p>
+        <p class="hem-around two">2. G is an outcome such that: m is a best available<span class="star">*</span><span> way of brining G about</span></p>
+        <p class="hem-above">3. ∴ G is a goal of the observed action</p>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".two" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+      <div class="notes">Important that 
+mTgt is not an alternative to the Teleological Stance but to it plus the claim about reasoning.
+      </div>
+      <div class="notes">Simple View and mTgt do not differ on the relation between means and goals that is to be 
 computed in pure goal-tracking.
 The Simple View and mTgt differ only on what processes is responsible for identifying which outcome or
-outcomes the observed means is a best available way of achieving.</div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><table class="data"><thead><tr><td></td><td>The Simple View</td><td>Motor Theory of Goal-Tracking</td></tr></thead><tbody><tr class="odd first"><td>What is the function to be computed?</td><td>[Teleological Stance]</td><td>[Teleological Stance]</td></tr><tr class="even second slide"><td>How is this function computed?</td><td class="slide">By reasoning from knowledge.</td><td class="slide">By using motor processes ‘in reverse’.</td></tr><tr class="odd third hide"><td> <span class="why-limited">Why is goal-tracking limited by action ability?</span></td><td>???</td><td>Because both rely on motor processes.</td></tr><tr><td></td><td></td><td></td></tr></tbody></table><div class="slide"><div data-what=".first,.second" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".third" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".why-limited" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".why-limited" data-cls="bkg-red" class="dv dv-addclass"></div><div class="notes">There’s just one small problem. It’s not quite true to say that 
+outcomes the observed means is a best available way of achieving.
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <table class="data">
+            <thead>
+              <tr>
+                <td></td>
+                <td>The Simple View</td>
+                <td>Motor Theory of Goal-Tracking</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd first">
+                <td>What is the function to be computed?</td>
+                <td>[Teleological Stance]</td>
+                <td>[Teleological Stance]</td>
+              </tr>
+              <tr class="even second slide">
+                <td>How is this function computed?</td>
+                <td class="slide">By reasoning from knowledge.</td>
+                <td class="slide">By using motor processes ‘in reverse’.</td>
+              </tr>
+              <tr class="odd third hide">
+                <td> <span class="why-limited">Why is goal-tracking limited by action ability?</span></td>
+                <td>???</td>
+                <td>Because both rely on motor processes.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="slide">
+            <div data-what=".first,.second" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div data-what=".third" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what=".why-limited" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".why-limited" data-cls="bkg-red" class="dv dv-addclass"></div>
+            <div class="notes">There’s just one small problem. It’s not quite true to say that 
 infants goal-tracking is limited by action ability.
-Some of it is, but some of it isn’t ...</div></div></div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{A Developmental Puzzle about Goal-Tracking}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{A Developmental Puzzle about Goal-Tracking}</div><div class="notes">In infants,
+Some of it is, but some of it isn’t ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{A Developmental Puzzle about Goal-Tracking}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{A Developmental Puzzle about Goal-Tracking}</div>
+<div class="notes">In infants,
 it appears that
 some,
 but not all,
@@ -270,60 +1270,306 @@ This contradicts both the Simple View and the Motor Theory of Goal Tracking.
 A further puzzle arises from the fact that goal-tracking sometimes manifests in dishabitution or
 pupil dilation but not proactive gaze.
 How can we explain, in a principled way, why there should be discrepancies between these measures?</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/kanakogi_2011_fig1Cii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><div data-what="img" data-css="{&quot;filter&quot;:&quot;contrast(1.2) brightness(1.5)&quot;}" class="dv dv-style"></div><p class="source">Kanakogi and Itakura, 2011 figure 1C (part)</p><div class="notes">Earlier I mentioned this experiment, which shows that infants 
+
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/kanakogi_2011_fig1Cii.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <div data-what="img" data-css="{&quot;filter&quot;:&quot;contrast(1.2) brightness(1.5)&quot;}" class="dv dv-style"></div>
+        <p class="source">Kanakogi and Itakura, 2011 figure 1C (part)</p>
+        <div class="notes">Earlier I mentioned this experiment, which shows that infants 
 fail to track goals involving things which would appear to them to be 
 biomechanically non-agent-like events.
 
-But ...</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">\#source 'research/teleological stance -- csibra and gergely.doc'</div><div class="notes">\#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'</div><div class="notes">\#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'</div><div class="notes">When do human infants first track goal-directed actions and not just movements?</div><div class="notes">Here's a classic experiment from way back in 1995.</div><div class="notes">The subjects were 12 month old infants.</div><div class="notes">They were habituated to this sequence of events.</div><div style="position:relative;"><img src="/img/gergely_1995_fig1.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">There was also a control group who were habituated to a display like this
+But ...
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">\#source 'research/teleological stance -- csibra and gergely.doc'</div>
+        <div class="notes">\#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture05 actions intentions goals'</div>
+        <div class="notes">\#source 'lectures/mindreading and joint action - philosophical tools (ceu budapest 2012-autumn fall)/lecture06 goal ascription teleological motor'</div>
+        <div class="notes">When do human infants first track goal-directed actions and not just movements?</div>
+        <div class="notes">Here's a classic experiment from way back in 1995.</div>
+        <div class="notes">The subjects were 12 month old infants.</div>
+        <div class="notes">They were habituated to this sequence of events.</div>
+        <div style="position:relative;"><img src="/img/gergely_1995_fig1.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        <div class="slide">
+          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+          <div class="notes">There was also a control group who were habituated to a display like this
 one but with the central barrier moved to the right, so that the action
-of the ball is 'non-rational'.</div></div><p class="source">Gergely et al 1995, figure 1</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/gergely_1995_fig3.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div><div class="notes">For the test condition, infants were divided into two groups.  One saw a new action, ...</div><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">... the other saw an old action.</div><div class="notes">Now if infants were considering the movements only and ignoring information about the goal, the 'new action' (movement in a straight line) should be more interesting because it is most different.</div><div class="notes">But if infants are taking goal-related information into action, the 'old action' might be unexpected and so might generate greater dishabituation.</div><p class="source">Gergely et al 1995, figure 3</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/gergely_1995_fig5.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Gergely et al 1995, figure 5</p><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="handout">‘by the end of the first year infants are indeed capable of taking the intentional stance (Dennett, 1987) in interpreting the goal- directed behavior of rational agents.’</div><div class="handout ctd">\citep[p.\ 184]{Gergely:1995sq}</div><div class="handout">‘12-month-old babies could identify the agent’s goal and analyze its actions causally in relation to it’</div><div class="handout ctd">\citep[p.\ 190]{Gergely:1995sq}</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">You might say, it's bizarre to have used balls in this study, that can't show us anything about infants' understanding of action.</div><div class="notes">But adult humans naturally interpret the movements of even very simple shapes in terms of goals.</div><div class="notes">So using even very simple stimuli doesn't undermine the interpretation of these results.</div><img src="/img/heider_1946_fig1.png"/><p class="source">Heider and Simmel, figure 1</p></div></div></div></section><section class="slide"><div class="container_12"><div class="grid_6"><div class="words"><div class="notes">Consider a further experiment by \citet{Csibra:2003jv}, also with
+of the ball is 'non-rational'.
+          </div>
+        </div>
+        <p class="source">Gergely et al 1995, figure 1</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/gergely_1995_fig3.png" style="clip: rect(0,1000px,250px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        <div class="notes">For the test condition, infants were divided into two groups.  One saw a new action, ...</div>
+        <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+        <div class="notes">... the other saw an old action.</div>
+        <div class="notes">Now if infants were considering the movements only and ignoring information about the goal, the 'new action' (movement in a straight line) should be more interesting because it is most different.</div>
+        <div class="notes">But if infants are taking goal-related information into action, the 'old action' might be unexpected and so might generate greater dishabituation.</div>
+        <p class="source">Gergely et al 1995, figure 3</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/gergely_1995_fig5.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Gergely et al 1995, figure 5</p>
+        <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+        <div class="handout">‘by the end of the first year infants are indeed capable of taking the intentional stance (Dennett, 1987) in interpreting the goal- directed behavior of rational agents.’</div>
+        <div class="handout ctd">\citep[p.\ 184]{Gergely:1995sq}</div>
+        <div class="handout">‘12-month-old babies could identify the agent’s goal and analyze its actions causally in relation to it’</div>
+        <div class="handout ctd">\citep[p.\ 190]{Gergely:1995sq}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">You might say, it's bizarre to have used balls in this study, that can't show us anything about infants' understanding of action.</div>
+        <div class="notes">But adult humans naturally interpret the movements of even very simple shapes in terms of goals.</div>
+        <div class="notes">So using even very simple stimuli doesn't undermine the interpretation of these results.</div><img src="/img/heider_1946_fig1.png"/>
+        <p class="source">Heider and Simmel, figure 1</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="container_12">
+    <div class="grid_6">
+      <div class="words">
+        <div class="notes">Consider a further experiment by \citet{Csibra:2003jv}, also with
 12-month-olds. This is just like the first ball-jumping experiment
 except that here infants see the action but not the circumstances in
 which it occurs. Do they expect there to be an object in the way behind
-that barrier?</div><div style="margin-top:100px"><div style="position:relative;"><img src="/img/csibra_2003_fig6.png" style="clip: rect(0,1000px,175px,0); position: absolute; max-width:720px; max-height:550px;"/></div></div></div></div><div class="slide grid_6"><div class="words"><div style="margin-top:-175px"><div style="position:relative;"><img src="/img/csibra_2003_fig6.png" style="clip: rect(175px,1000px,1000px,0); position: absolute; max-width:720px; max-height:550px;"/></div></div></div></div></div><div class="clear"></div><div class="words"><p class="source">Csibra et al 2003, figure 6</p></div></section><section class="slide"><div class="notes">Here then is the puzzle about development that I mentioned this talk was about:</div><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="font-family:lato;" class="center huge-glow-180">Puzzle</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show"> <span>In infants, </span><br/><span>it appears that </span><br/><span>some, </span><br/><span class="notall">but not all, </span><br/><span>goal-tracking is limited by their abilities to act.</span></p></div></div></div></div></div><div class="notes">Let me recap how we got here and why this is puzzling.</div><div class="notes">I started by asking, How 9-month-olds track can goals?
+that barrier?
+        </div>
+        <div style="margin-top:100px">
+          <div style="position:relative;"><img src="/img/csibra_2003_fig6.png" style="clip: rect(0,1000px,175px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="slide grid_6">
+      <div class="words">
+        <div style="margin-top:-175px">
+          <div style="position:relative;"><img src="/img/csibra_2003_fig6.png" style="clip: rect(175px,1000px,1000px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="words">
+    <p class="source">Csibra et al 2003, figure 6</p>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">Here then is the puzzle about development that I mentioned this talk was about:
+  </div>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="font-family:lato;" class="center huge-glow-180">Puzzle</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show"> <span>In infants, </span><br/><span>it appears that </span><br/><span>some, </span><br/><span class="notall">but not all, </span><br/><span>goal-tracking is limited by their abilities to act.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">Let me recap how we got here and why this is puzzling.
+  </div>
+  <div class="notes">I started by asking, How 9-month-olds track can goals?
 The Simple View offers one answer: 
 the principles comprising the Teleological Stance are things they know or believe, and they are able
-to track goals by making inferences from these principles.</div><div class="notes">I suggested that the Simple View should be rejected because it cannot explain why infants’
-abilities to track goals are limited by their abilities to perform actions.</div><div class="notes">At least, mTga provides a better alternative to the Simple View.
+to track goals by making inferences from these principles.
+  </div>
+  <div class="notes">I suggested that the Simple View should be rejected because it cannot explain why infants’
+abilities to track goals are limited by their abilities to perform actions.
+  </div>
+  <div class="notes">At least, mTga provides a better alternative to the Simple View.
 According to mTga,
-Infants’ pure goal-tracking depends on the double life of motor processes.</div><div class="notes">mTga correctly predicts that infants’ pure goal-tracking should be limited by infants’
-abilities to act ...</div><div class="slide"><div data-what=".notall" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".notall" data-cls="bkg-red" class="dv dv-addclass"></div><div class="notes">But, unfortunately, there appear to be cases in which infants’ pure goal-tracking
-is not limited by their abilities to act, and this is contrary to mTga.</div><div class="notes">The puzzle, then, to explain how infants can track goals if neither the Simple View
-nor mTga is correct.</div><div class="notes">Even worse, 
-there’s another, apparently unrelated puzzle to explain too ...</div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/daum_2012_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Daum et al, 2012 figure 1</p><div class="notes">Daum et al created a modified version of Woodward’s paradigm which allowed them to measure
-both anticipatory looking and dishabituation.</div><div class="notes">where researchers have measured two different responses to a single
+Infants’ pure goal-tracking depends on the double life of motor processes.
+  </div>
+  <div class="notes">mTga correctly predicts that infants’ pure goal-tracking should be limited by infants’
+abilities to act ...
+  </div>
+  <div class="slide">
+    <div data-what=".notall" data-cls="transition-04" class="dv dv-addclass"></div>
+    <div data-what=".notall" data-cls="bkg-red" class="dv dv-addclass"></div>
+    <div class="notes">But, unfortunately, there appear to be cases in which infants’ pure goal-tracking
+is not limited by their abilities to act, and this is contrary to mTga.
+    </div>
+    <div class="notes">The puzzle, then, to explain how infants can track goals if neither the Simple View
+nor mTga is correct.
+    </div>
+    <div class="notes">Even worse, 
+there’s another, apparently unrelated puzzle to explain too ...
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/daum_2012_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Daum et al, 2012 figure 1</p>
+        <div class="notes">Daum et al created a modified version of Woodward’s paradigm which allowed them to measure
+both anticipatory looking and dishabituation.
+        </div>
+        <div class="notes">where researchers have measured two different responses to a single
 scenario, anticipatory looking and either dishabituation or pupil dilation.
 Generally, they appear to find evidence for goal tracking in dishabituation
 or pupil dilation but not in anticipatory looking. 
-(This is true of Daum et al, 2012; and Gredeback and Melinder, 2010.)</div><div class="notes">Why the discrepancy?
+(This is true of Daum et al, 2012; and Gredeback and Melinder, 2010.)
+        </div>
+        <div class="notes">Why the discrepancy?
 This is another question we can’t answer with the Motor Theory of Goal
-Tracking.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/daum_2012_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Daum et al, 2012 figure 2</p><div class="notes">[skip -- just here in case need for discussion; shows that anticipatory looking
-to cartoon fish takes years to develop]</div></div></div></div></section><section class="slide"><div class="notes">Here then is another puzzle about development:</div><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="font-family:lato;" class="center huge-glow-180">Puzzles</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show"> <span>In infants, </span><br/><span>it </span><span class="appears">appears</span><span> that </span><br/><span>some, </span><br/><span>but not all, </span><br/><span class="gt">goal-tracking</span><span> is limited by their abilities to act ...</span></p><p class="center hem-above notes show"><span>... and that </span><span class="gt">goal-tracking</span><span> sometimes manifests in dishabitution or pupil dilation but not proactive gaze.</span></p><div class="notes">The \textbf{second puzzle} is how to explain, in a principled way, why there should be discrepancies
+Tracking.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/daum_2012_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Daum et al, 2012 figure 2</p>
+        <div class="notes">[skip -- just here in case need for discussion; shows that anticipatory looking
+to cartoon fish takes years to develop]
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">Here then is another puzzle about development:
+  </div>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="font-family:lato;" class="center huge-glow-180">Puzzles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show"> <span>In infants, </span><br/><span>it </span><span class="appears">appears</span><span> that </span><br/><span>some, </span><br/><span>but not all, </span><br/><span class="gt">goal-tracking</span><span> is limited by their abilities to act ...</span></p>
+            <p class="center hem-above notes show"><span>... and that </span><span class="gt">goal-tracking</span><span> sometimes manifests in dishabitution or pupil dilation but not proactive gaze.</span></p>
+            <div class="notes">The \textbf{second puzzle} is how to explain, in a principled way, why there should be discrepancies
 between these measures. We cannot do this by invoking mTgt because on mTgt, proactive gaze is a
-case in which goal-tracking is paradigmatically manifest.</div></div></div></div></div></div><div class="slide"><div data-what=".gt" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".gt" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">I want to respond by arguing that not everything which appears to be goal-tracking in infants
-actually is goal-tracking.</div></div><div class="slide"><div data-what=".appears" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".appears" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">So I will be arguing that the puzzle is merely apparent.
+case in which goal-tracking is paradigmatically manifest.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div data-what=".gt" data-cls="transition-04" class="dv dv-addclass"></div>
+    <div data-what=".gt" data-cls="bkg-invert" class="dv dv-addclass"></div>
+    <div class="notes">I want to respond by arguing that not everything which appears to be goal-tracking in infants
+actually is goal-tracking.
+    </div>
+  </div>
+  <div class="slide">
+    <div data-what=".appears" data-cls="transition-04" class="dv dv-addclass"></div>
+    <div data-what=".appears" data-cls="bkg-invert" class="dv dv-addclass"></div>
+    <div class="notes">So I will be arguing that the puzzle is merely apparent.
 The appearance is due to the fact that we do not carefully enough distinguish tracking
-the target of an action from tracking the goal of an action.</div></div></section><section id="perceptual_animacy" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Perceptual Animacy</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Perceptual Animacy}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Perceptual Animacy}</div><div class="notes">Perceptual animacy is
+the target of an action from tracking the goal of an action.
+    </div>
+  </div>
+</section>
+<section id="perceptual_animacy" class="slide">
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Perceptual Animacy</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Perceptual Animacy}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Perceptual Animacy}</div>
+<div class="notes">Perceptual animacy is
 the detection by broadly perceptual processes of animate objects and their targets
 citet[e.g.][]{gao:2009_psychophysics}.
 Could its existence provide us with a solution to the developmental puzzle about 
 goal tracking?</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">\emph{perceptual animacy},
-the detection by broadly perceptual processes of animate objects and their targets.</div><div style="position:relative;"><img src="/img/gao_2009_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Gao et al, 2009 figure 2</p><div class="notes">Evidence for the existence of perceptual animacy comes from a variety of studies 
+
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">\emph{perceptual animacy},
+the detection by broadly perceptual processes of animate objects and their targets.
+        </div>
+        <div style="position:relative;"><img src="/img/gao_2009_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Gao et al, 2009 figure 2</p>
+        <div class="notes">Evidence for the existence of perceptual animacy comes from a variety of studies 
 where adults are given a simple visual task such as identifying which circle is the ‘wolf’
 and which the ‘sheep’, or, in another experiment, moving the sheep around in order to 
-avoid being caught by the wolf.</div><div class="notes">It is also possible to examine how having a sheep and a wolf affects how attention is allocated by
-measuring how well participants can detect probes placed on different shapes.</div><div class="notes"><t:016674748063087463></t:016674748063087463></div><div class="notes">The literature on perceptual animacy mostly confounds it with goal tracking.
-But there are two key differences.</div><div class="notes">First, perceptual animacy is a broadly
-perceptual phenomenon.</div><div class="notes">Second,
+avoid being caught by the wolf.
+        </div>
+        <div class="notes">It is also possible to examine how having a sheep and a wolf affects how attention is allocated by
+measuring how well participants can detect probes placed on different shapes.
+        </div>
+        <div class="notes"><t:03091653590090573></t:03091653590090573>
+        </div>
+        <div class="notes">The literature on perceptual animacy mostly confounds it with goal tracking.
+But there are two key differences.
+        </div>
+        <div class="notes">First, perceptual animacy is a broadly
+perceptual phenomenon.
+        </div>
+        <div class="notes">Second,
 the perceptual detection of animacy is clearly distinct from goal tracking
 for it involves detecting relations between objects in motion rather than
 outcomes to which actions are directed.
@@ -333,7 +1579,19 @@ and heuristics and is unlikely to be correctly described by the
 Teleological Stance.
 So perceptual animacy does not involve tracking goals to which an action is
 directed: it is a matter of tracking objects to which animate movements are
-directed.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/gao_2009_fig4a_part.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Gao et al, 2009 figure 3b</p><div class="notes">\emph{{perceptual animacy}},
+directed.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/gao_2009_fig4a_part.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Gao et al, 2009 figure 3b</p>
+        <div class="notes">\emph{{perceptual animacy}},
 the detection by broadly perceptual processes of animate objects and their targets.
 To illustrate, consider a groundbreaking experiment by \citet[experiment 1]{gao:2009_psychophysics}.
 Adults were shown a display which contained some moving circles.
@@ -347,9 +1605,58 @@ directly the chaser approaches its target (‘subtlety’).
 The detection of animacy appears to be a broadly perceptual phenomena since it depends on areas of
 the brain associated with vision and influences how perceptual attention is allocated
 \citep{scholl:2013_perceiving} irrespective of your beliefs and intentions
-\citep{buren:2016_automaticity}.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/gao_2009_fig4a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Gao et al, 2009 figures 3b, 4a</p></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">[This comparison is a bit confused because pure-goal tracking is the kind of thing 
+\citep{buren:2016_automaticity}.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/gao_2009_fig4a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Gao et al, 2009 figures 3b, 4a</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">[This comparison is a bit confused because pure-goal tracking is the kind of thing 
 that can be (and is) achieved by way of different mechanisms (e.g. reasoning; motor processes),
-whereas perceptual animacy is a mechanism.]</div><table style="table-layout:fixed;width:100%;" class="data"><thead><tr style="width:30%"><td></td><td style="width:35%">pure goal-tracking</td><td style="width:35%">perceptual animacy</td></tr></thead><tbody><tr class="slide even"><td>What is tracked?</td><td>goals</td><td>targets</td></tr><tr class="slide odd"><td>How is it tracked?</td><td>Teleological Stance</td><td>spatio-temporal <span>heuristics</span><br/><span>(e.g. subtlety, directionality)</span></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><div class="notes">The perceptual detection of animacy resembles goal tracking, for it involves detecting a relation
+whereas perceptual animacy is a mechanism.]
+          </div>
+          <table style="table-layout:fixed;width:100%;" class="data">
+            <thead>
+              <tr style="width:30%">
+                <td></td>
+                <td style="width:35%">pure goal-tracking</td>
+                <td style="width:35%">perceptual animacy</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slide even">
+                <td>What is tracked?</td>
+                <td>goals</td>
+                <td>targets</td>
+              </tr>
+              <tr class="slide odd">
+                <td>How is it tracked?</td>
+                <td>Teleological Stance</td>
+                <td>spatio-temporal <span>heuristics</span><br/><span>(e.g. subtlety, directionality)</span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="notes">The perceptual detection of animacy resembles goal tracking, for it involves detecting a relation
 between a chaser and its target.
 However the perceptual detection of animacy is clearly distinct from goal tracking.%
 \footnote{%
@@ -360,43 +1667,230 @@ which actions are directed.
 Relatedly, it does not involve sensitivity to the type of action.
 Finally, the perceptual detection of animacy appears to depend on simple cues and heuristics and is
 unlikely to be correctly described by the Teleological Stance.
-For these reasons, we should distinguish the perceptual detection of animacy from tracking goals to which actions are directed.</div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white hide"></div><div class="container_12"><div class="grid_6 words left-half"><div style="padding-right:1em;"><div class="notes show"><p>Conjecture</p><p class="em-above">In 9-month-olds,</p><p class="hem-above">all pure goal-tracking is explained by the Motor Theory;</p><p class="hem-above">appearances that goal-tracking is not limited by their abilities to act
-are due to perceptual animacy.</p></div></div></div><div class="grid_6 words invert right-half hide"><div style="padding-left:1em;"><div class="slide"><div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes show"><p>Predictions</p><p class="em-above"><span>Where 9-month-olds appear to be tracking goals </span><br/><span>in ways not limited by their abilities to act,</span><br/><span>they will be subject to signature limits of perceptual animacy</span><br/><span>(e.g. subtlety, directionality);</span></p><p class="hem-above">and the processes underlying their abilities will be broadly perceptual.</p></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">Objection: Skerry et al, 2013</p><div class="notes">[Haven’t slides; will use printout from their paper]</div></div></div></div></div></section><section class="slide"><div class="notes">How does the conjecture help with the puzzles about development?</div><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="font-family:lato;" class="center huge-glow-180">Puzzles</p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show"> <span>In infants, </span><br/><span>it </span><span class="appears">appears</span><span> that </span><span class="first-puzzle hide"><br/><span>some, </span><br/><span>but not all, </span><br/><span class="gt">goal-tracking</span><span> is limited by their abilities to act ...</span></span></p><p class="center hem-above notes show"><span class="second-puzzle"><span class="first-puzzle hide">... and that </span><span class="gt">goal-tracking</span><span> sometimes manifests in dishabitution or pupil dilation but not proactive gaze.</span></span></p><div class="notes">The second puzzle was a dissociation between dishabituation and pupil dilation on the one
+For these reasons, we should distinguish the perceptual detection of animacy from tracking goals to which actions are directed.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <div class="notes show">
+          <p>Conjecture</p>
+          <p class="em-above">In 9-month-olds,
+          </p>
+          <p class="hem-above">all pure goal-tracking is explained by the Motor Theory;
+          </p>
+          <p class="hem-above">appearances that goal-tracking is not limited by their abilities to act
+are due to perceptual animacy.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half hide">
+      <div style="padding-left:1em;">
+        <div class="slide">
+          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes show">
+            <p>Predictions
+            </p>
+            <p class="em-above"><span>Where 9-month-olds appear to be tracking goals </span><br/><span>in ways not limited by their abilities to act,</span><br/><span>they will be subject to signature limits of perceptual animacy</span><br/><span>(e.g. subtlety, directionality);</span></p>
+            <p class="hem-above">and the processes underlying their abilities will be broadly perceptual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">Objection: Skerry et al, 2013</p>
+          <div class="notes">[Haven’t slides; will use printout from their paper]
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">How does the conjecture help with the puzzles about development?
+  </div>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="font-family:lato;" class="center huge-glow-180">Puzzles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p class="center notes show"> <span>In infants, </span><br/><span>it </span><span class="appears">appears</span><span> that </span><span class="first-puzzle hide"><br/><span>some, </span><br/><span>but not all, </span><br/><span class="gt">goal-tracking</span><span> is limited by their abilities to act ...</span></span></p>
+            <p class="center hem-above notes show"><span class="second-puzzle"><span class="first-puzzle hide">... and that </span><span class="gt">goal-tracking</span><span> sometimes manifests in dishabitution or pupil dilation but not proactive gaze.</span></span></p>
+            <div class="notes">The second puzzle was a dissociation between dishabituation and pupil dilation on the one
 hand and proactive gaze on the other.
 The conjecture I have formulated suggests a solution: perhaps perceptual animacy is sometimes
-responsible for pupil dilation and dishabituation; but never responsible for proactive gaze.</div></div></div></div></div><div class="slide"><div data-what=".second-puzzle" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".first-puzzle" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">The first puzzle was the appearance of cases of goal-tracking in infancy which is not
+responsible for pupil dilation and dishabituation; but never responsible for proactive gaze.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".second-puzzle" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+      <div data-what=".first-puzzle" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="notes">The first puzzle was the appearance of cases of goal-tracking in infancy which is not
 limited by infants’ abilities to act.
 The conjecture I have proposed suggests a solution to this too: those cases 
-are underpinned by perceptual animacy and so not genuine cases of goal-tracking at all.</div></div></div></section><section style="" class="slide"><img src="/img/gredebäck_2010_fig.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p class="center">further complication: associative learning for sequencing</p><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div><p class="source">Gredebäck & Melinder, 2010</p><div class="notes">Pupil dilation at 6 and 12-months of age; unlike proactive gaze, it  does not 
+are underpinned by perceptual animacy and so not genuine cases of goal-tracking at all.
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/gredebäck_2010_fig.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+          <p class="center">further complication: associative learning for sequencing</p>
+          <div class="slide">
+            <div data-what="img.bkg" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+            <p class="source">Gredebäck & Melinder, 2010</p>
+            <div class="notes">Pupil dilation at 6 and 12-months of age; unlike proactive gaze, it  does not 
 correlate with experience of being fed; but it isn’t plausibly perceptual animacy either.
 (Why would perceptual animacy predict a difference between spoon going to mouth or hand?)
 Instead it may be a consequence of associative learning about the typical sequence
-of chunks of actions.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="huge-glow-120 center">Conclusion</p><div class="notes">My question was, How can infants in the first 9 months of life track goals?
+of chunks of actions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="huge-glow-120 center">Conclusion</p>
+          <div class="notes">My question was, How can infants in the first 9 months of life track goals?
 Given that infants’ goal-tracking is limited by their abilities to perform actions,
 I proposed to answer this question by appeal to the mTgt:
-Infants’ pure goal-tracking, like much of adults’, depends on the double life of motor processes.</div><div class="notes">This yielded a simple dual-process theory of goal-tracking.</div><div class="notes">But this is much too simple, as
+Infants’ pure goal-tracking, like much of adults’, depends on the double life of motor processes.
+          </div>
+          <div class="notes">This yielded a simple dual-process theory of goal-tracking.
+          </div>
+          <div class="notes">But this is much too simple, as
 findings on infants’ goal-tracking in the first 9 months of life confronts us with a puzzle.
 For they appear to show that, in many cases, infants can track the goals of actions 
 performed by cartoon fish and spheres; and these are clearly actions that no infant (or adult)
-could perform.</div><div class="notes">Apparantly, then, we must reject the mTgt. But if we do that, it seems we lack any way of 
-explaining why infants’ goal-tracking is so often limited by their abilities to act.</div><div class="notes">The solution, I suggested, is to invoke perceptual animacy.
-That is what led me to this conjecture ...</div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white hide"></div><div class="container_12"><div class="grid_6 words left-half"><div style="padding-right:1em;"><div class="notes show"><p>Conjecture</p><p class="em-above">In 9-month-olds,</p><p class="hem-above">all pure goal-tracking is explained by the Motor Theory;</p><p class="hem-above">appearances that goal-tracking is not limited by their abilities to act
-are due to perceptual animacy.</p></div></div></div><div class="notes">This conjecture is quite bold, but I think it’s one worth betting on partly because,
-as I suggested, it generates readily testable predictions.</div><div class="notes">This conjecture also has another virtue.
+could perform.
+          </div>
+          <div class="notes">Apparantly, then, we must reject the mTgt. But if we do that, it seems we lack any way of 
+explaining why infants’ goal-tracking is so often limited by their abilities to act.
+          </div>
+          <div class="notes">The solution, I suggested, is to invoke perceptual animacy.
+That is what led me to this conjecture ...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white hide"></div>
+  <div class="container_12">
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <div class="notes show">
+          <p>Conjecture</p>
+          <p class="em-above">In 9-month-olds,
+          </p>
+          <p class="hem-above">all pure goal-tracking is explained by the Motor Theory;
+          </p>
+          <p class="hem-above">appearances that goal-tracking is not limited by their abilities to act
+are due to perceptual animacy.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="notes">This conjecture is quite bold, but I think it’s one worth betting on partly because,
+as I suggested, it generates readily testable predictions.
+    </div>
+    <div class="notes">This conjecture also has another virtue.
 Goal-tracking is so fundamental to social cognition and joint action that it is 
 likely to depend on a rich mix of many kinds of processes, including associative learning.
 We need ways to identify these processes, to distinguish their limits and to understand their 
 synergies.
 Distinguishing motor processes which support goal-tracking by realising the Teleological Stance 
-from perceptual animacy is a step towards meeting this need.</div><div class="notes">So how does this bear on the conference topic,
+from perceptual animacy is a step towards meeting this need.
+    </div>
+    <div class="notes">So how does this bear on the conference topic,
 Action Perception?
 In short, there isn’t any.
-At least not if actions are goal-directed actions.</div><div class="notes">Why do I say this?  Not because I can rule out the possibility of action perception, of course.
+At least not if actions are goal-directed actions.
+    </div>
+    <div class="notes">Why do I say this?  Not because I can rule out the possibility of action perception, of course.
 But goal-tracking is like speech perception in this sense: in both cases, the best supported,
-most carefully developed theories are not about perceptual processes but about motor processes.</div></div></section><section class="slide"><img src="/img/PA301239.JPG" style="filter:contrast(1.5)" class="bkg"/><div style="; mix-blend-mode: multiply;" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="margin-top:-30px;" class="center secondtitle huge-glow-invert-50"><span>A Developmental Puzzle</span></p></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="; mix-blend-mode: overlay;" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="line-height:.9em;" class="center firsttitle huge-glow-110"><span class="huge-glow-invert-110 pure">Pure </span><span>Goal</span><span class="tracking">-Tracking</span></p></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="" class="words"><div class="container_12"><div class="grid_12"><p style="margin-top:500px;" class="right signature">s.butterfill@warwick.ac.uk</p></div></div></div></div><div class="notes">That, anyway, is my conclusion.
+most carefully developed theories are not about perceptual processes but about motor processes.
+    </div>
+  </div>
+</section>
+<section class="slide"><img src="/img/PA301239.JPG" style="filter:contrast(1.5)" class="bkg"/>
+  <div style="; mix-blend-mode: multiply;" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p style="margin-top:-30px;" class="center secondtitle huge-glow-invert-50"><span>A Developmental Puzzle</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="; mix-blend-mode: overlay;" class="container_12">
+      <div class="grid_12 ">
+        <div class="words">
+          <div class="middle">
+            <p style="line-height:.9em;" class="center firsttitle huge-glow-110"><span class="huge-glow-invert-110 pure">Pure </span><span>Goal</span><span class="tracking">-Tracking</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <div style="" class="words">
+      <div class="container_12">
+        <div class="grid_12">
+          <p style="margin-top:500px;" class="right signature">s.butterfill@warwick.ac.uk</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes">That, anyway, is my conclusion.
 The double life of motor processes underpins humans’ earliest 
 pure goal-tracking, and so provides a basis for the many and varied forms of social cognition,
-including mindreading, which depend on pure goal-tracking.</div><div class="notes">Many will disagree with this.
+including mindreading, which depend on pure goal-tracking.
+  </div>
+  <div class="notes">Many will disagree with this.
 What I hope we will agree about, though, is that solving the developmental puzzle
 about pure-goal tracking is essential if we care at all about the abilities
-which underpin humans’ capacities for social cognition and joint action.</div></section></div></body></html>
+which underpin humans’ capacities for social cognition and joint action.
+  </div>
+</section>
+    </div>
+  </body>
+</html>
