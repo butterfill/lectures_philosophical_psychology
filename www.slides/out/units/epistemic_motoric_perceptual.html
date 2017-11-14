@@ -1,146 +1,7 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>A Crude Distinction: Epistemic, Motoric and Perceptual | Philosophical Psychology</title>
-    <meta name="description" content="  "/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="epistemic_motoric_perceptual" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">A Crude Distinction: Epistemic, Motoric and Perceptual</h2>
-          </div>
-        </div>
-      </section>
-
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>A Crude Distinction: Epistemic, Motoric and Perceptual | Philosophical Psychology</title><meta name="description" content="  "/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="epistemic_motoric_perceptual" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">A Crude Distinction: Epistemic, Motoric and Perceptual</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
@@ -148,181 +9,46 @@ var inject = function(){
 
 
 
-
-<!-- *todo* duplicated!-->
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="title-text center">4- to 6-month-olds can <span class="track">track</span><span> briefly occluded objects</span></p>
-        <p class="em-above">
-          <table class="data">
-            <thead>
-              <tr>
-                <td> <span>scenario</span></td>
-                <td><span>method</span></td>
-                <td class="grey-text">source</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="odd">
-                <td> <span>1 vs 2 objects </span></td>
-                <td><span>habituation</span></td>
-                <td class="grey-text">Spelke et al 1995</td>
-              </tr>
-              <tr class="even">
-                <td> <span>one unperceived object constrains another’s movement</span></td>
-                <td><span>habituation</span></td>
-                <td class="grey-text">Baillargeon 1987</td>
-              </tr>
-              <tr class="odd">
-                <td> <span>where did I hide it?</span></td>
-                <td><span>violation-of-expectations</span></td>
-                <td class="grey-text">Wilcox et al 1996</td>
-              </tr>
-              <tr class="even">
-                <td> <span>wide objects can’t disappear behind a narrow occluder</span></td>
-                <td><span>violation-of-expectations</span></td>
-                <td class="grey-text">Wang et al 2004</td>
-              </tr>
-              <tr class="odd">
-                <td> <span>when and where will it reappear?</span></td>
-                <td><span>anticipatory looking</span></td>
-                <td class="grey-text">Rosander et al 2004</td>
-              </tr>
-              <tr class="even">
-                <td> <span>marker of object maintenanc</span></td>
-                <td><span>EEG</span></td>
-                <td class="grey-text">Kaufman et al 2005</td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
-        <div data-what="table" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-        <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
-          <div style="" class="container_12">
-            <div class="grid_12 ">
-              <div class="words">
-                <div class="middle">
-                  <p class="center huge-glow-120">How?</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="notes">So theories of core knowledge do not seem to be equipped
+<!-- *todo* duplicated!--><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="title-text center">4- to 6-month-olds can <span class="track">track</span><span> briefly occluded objects</span></p><p class="em-above"><table class="data"><thead><tr><td> <span>scenario</span></td><td><span>method</span></td><td class="grey-text">source</td></tr></thead><tbody><tr class="odd"><td> <span>1 vs 2 objects </span></td><td><span>habituation</span></td><td class="grey-text">Spelke et al 1995</td></tr><tr class="even"><td> <span>one unperceived object constrains another’s movement</span></td><td><span>habituation</span></td><td class="grey-text">Baillargeon 1987</td></tr><tr class="odd"><td> <span>where did I hide it?</span></td><td><span>violation-of-expectations</span></td><td class="grey-text">Wilcox et al 1996</td></tr><tr class="even"><td> <span>wide objects can’t disappear behind a narrow occluder</span></td><td><span>violation-of-expectations</span></td><td class="grey-text">Wang et al 2004</td></tr><tr class="odd"><td> <span>when and where will it reappear?</span></td><td><span>anticipatory looking</span></td><td class="grey-text">Rosander et al 2004</td></tr><tr class="even"><td> <span>marker of object maintenanc</span></td><td><span>EEG</span></td><td class="grey-text">Kaufman et al 2005</td></tr></tbody></table></p><div data-what="table" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center huge-glow-120">How?</p></div></div></div></div></div><div class="notes">So theories of core knowledge do not seem to be equipped
 to explain existing patterns in infants’ successes and failures
 in tracking briefly occluded objects.
 Nor do they generate new predictions.
-Let us therefore put them to one side for the moment.
-        </div>
-        <div class="notes">If it isn’t a matter of knowledge, 
+Let us therefore put them to one side for the moment.</div><div class="notes">If it isn’t a matter of knowledge, 
 and if it can’t be explained by appeal to core knowledge,
 then how do four- and five-month-olds track briefly
-occluded objects?
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Sometimes when you’re looking for a theory, less is more.
-          </div>
-          <div class="notes">Consider a crude, but hopefully very familiar picture of the adult mind.
-          </div>
-          <div class="notes">The mind has different bits, and these are to an interesting extent independent of each other.
-          </div>
-          <div class="notes">And there are at least three kinds of state, epistemic, motoric and perceptual.
-          </div>
-          <p class="hem-around">Crude Picture of the Mind</p>
-          <ul class="hem-around-children">
-            <li><span class="epistemic">epistemic</span><br/><span>(knowledge states)</span></li>
-            <li><span>broadly </span><span class="motoric">motoric </span><br/><span>(motor representations of outcomes and affordances)</span></li>
-            <li><span>broadly </span><span class="perceptual">perceptual </span><br/><span>(visual, tactual, ... representations; </span><span class="object-indexes">object indexes</span><span>  ...)</span></li>
-          </ul>
-          <div class="notes">These three kinds of state are not inferentially integrated.
+occluded objects?</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Sometimes when you’re looking for a theory, less is more.</div><div class="notes">Consider a crude, but hopefully very familiar picture of the adult mind.</div><div class="notes">The mind has different bits, and these are to an interesting extent independent of each other.</div><div class="notes">And there are at least three kinds of state, epistemic, motoric and perceptual.</div><p class="hem-around">Crude Picture of the Mind</p><ul class="hem-around-children"><li><span class="epistemic">epistemic</span><br/><span>(knowledge states)</span></li><li><span>broadly </span><span class="motoric">motoric </span><br/><span>(motor representations of outcomes and affordances)</span></li><li><span>broadly </span><span class="perceptual">perceptual </span><br/><span>(visual, tactual, ... representations; </span><span class="object-indexes">object indexes</span><span>  ...)</span></li></ul><div class="notes">These three kinds of state are not inferentially integrated.
 They can also come apart in the sense that there can be multiple 
 representations in you simultaneously which can’t all be correct.
 For example, there can be discrepancies between your knowedge of 
-a physical object’s location and where your perceptual systems represent it as being.
-          </div>
-          <div class="notes">Given this crude picture, we might guess that a similar distinction applies to 
+a physical object’s location and where your perceptual systems represent it as being.</div><div class="notes">Given this crude picture, we might guess that a similar distinction applies to 
 infants’ minds.
 Then we can ask, Which kind of representation does
-their abilities to track briefly occluded objects involve?
-          </div>
-          <div class="slide">
-            <div data-what=".epistemic" data-cls="bkg-red-row " class="dv dv-addclass"></div>
-            <div class="notes">We know it isn’t knowledge because this view generates incorrect predictions.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".epistemic" data-cls="bkg-red-row " class="dv dv-removeclass"></div>
-            <div data-what=".motoric" data-cls="bkg-red-row " class="dv dv-addclass"></div>
-            <div class="notes">We also know it isn’t motoric, because motor representations depend on 
+their abilities to track briefly occluded objects involve?</div><div class="slide"><div data-what=".epistemic" data-cls="bkg-red-row " class="dv dv-addclass"></div><div class="notes">We know it isn’t knowledge because this view generates incorrect predictions.</div></div><div class="slide"><div data-what=".epistemic" data-cls="bkg-red-row " class="dv dv-removeclass"></div><div data-what=".motoric" data-cls="bkg-red-row " class="dv dv-addclass"></div><div class="notes">We also know it isn’t motoric, because motor representations depend on 
 possibilities for action and when an object is occluded by a barrier which
-prevents action, it becomes impossible to act on the object.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".motoric" data-cls="bkg-red-row " class="dv dv-removeclass"></div>
-            <div data-what=".perceptual" data-cls="bkg-red-row " class="dv dv-addclass"></div>
-            <div class="notes">And, on the face of it, the representation cannot be perceptual.
+prevents action, it becomes impossible to act on the object.</div></div><div class="slide"><div data-what=".motoric" data-cls="bkg-red-row " class="dv dv-removeclass"></div><div data-what=".perceptual" data-cls="bkg-red-row " class="dv dv-addclass"></div><div class="notes">And, on the face of it, the representation cannot be perceptual.
 After all, in most of the experiments there is only visual information an occluded object 
-is not providing visual information about its location.
-            </div>
-            <div class="notes">(Interestingly, infants’ problem with searching for occluded objects is not simply caused
+is not providing visual information about its location.</div><div class="notes">(Interestingly, infants’ problem with searching for occluded objects is not simply caused
 by an absence of perceptual information concerning the object.
 (\citeauthor{moore:2008_factors} has a toy make a noise continuously:
 they found that eight-month-olds failed to search for a toy irrespective
-of whether it made a noise \citep[Experiment 2]{moore:2008_factors}.)
-            </div>
-            <div class="notes">So we seem to have a problem ... this was the attraction of invoking something
-exotic like core knowledge
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".perceptual" data-cls="bkg-red-row " class="dv dv-removeclass"></div>
-            <div data-what=".perceptual" data-cls="bkg-limegreen-row " class="dv dv-addclass"></div>
-            <div class="notes">But we should reconsider the possibility that infants’ abilities to track briefly 
+of whether it made a noise \citep[Experiment 2]{moore:2008_factors}.)</div><div class="notes">So we seem to have a problem ... this was the attraction of invoking something
+exotic like core knowledge</div></div><div class="slide"><div data-what=".perceptual" data-cls="bkg-red-row " class="dv dv-removeclass"></div><div data-what=".perceptual" data-cls="bkg-limegreen-row " class="dv dv-addclass"></div><div class="notes">But we should reconsider the possibility that infants’ abilities to track briefly 
 occluded objects do indeed depend on perceptual information because there are some
-broadly perceptual representations that do can specify the locations of occluded objects ...
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".object-indexes" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".object-indexes" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">... namely, object indexes.
-            </div>
-            <div class="notes">In adult humans,
+broadly perceptual representations that do can specify the locations of occluded objects ...</div></div><div class="slide"><div data-what=".object-indexes" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".object-indexes" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">... namely, object indexes.</div><div class="notes">In adult humans,
 there is a system of object indexes which enables them to track 
 potentially moving objects in ongoing actions such as visually tracking or 
 reaching for objects, and which influences how their attention is allocated 
-\citep{flombaum:2008_attentional}.
-            </div>
-            <div class="notes">But what is an object index?
+\citep{flombaum:2008_attentional}.</div><div class="notes">But what is an object index?
 Formally, an object index is ‘a mental token that functions as a 
 pointer to an object’ \citep[p.\ 11]{Leslie:1998zk}.
 If you imagine using your fingers to track moving objects,
-an object index is the mental counterpart of a finger \citep[p.~68]{pylyshyn:1989_role}.
-            </div>
-            <div class="notes handout">Leslie et al say an object index is ‘a mental token that functions as a pointer to an 
-object’ \citep[p.\ 11]{Leslie:1998zk}
-            </div>
-            <div class="notes handout">‘Pylyshyn’s FINST model: you have four or five indexes which can be attached to objects; 
+an object index is the mental counterpart of a finger \citep[p.~68]{pylyshyn:1989_role}.</div><div class="notes handout">Leslie et al say an object index is ‘a mental token that functions as a pointer to an 
+object’ \citep[p.\ 11]{Leslie:1998zk}</div><div class="notes handout">‘Pylyshyn’s FINST model: you have four or five indexes which can be attached to objects; 
 it’s a bit like having your fingers on an object: you might not know anything about the 
 object, but you can say where it is relative to the other objects you’re fingering. 
-(ms. 19-20)’ \citep{Scholl:1999mi}
-            </div>
-            <div class="notes">A key experimental tool used to investigate the existence of, 
+(ms. 19-20)’ \citep{Scholl:1999mi}</div><div class="notes">A key experimental tool used to investigate the existence of, 
 and the principles underpinning, 
-a system of object indexes is the Object Specific Preview Benefit.
-            </div>
-            <div class="handout">Object indexes ...
+a system of object indexes is the Object Specific Preview Benefit.</div><div class="handout">Object indexes ...
 \begin{itemize}
 \item guide ongoing action (e.g.~visual tracking, reaching)
 \item influence how attention is allocated 
@@ -331,19 +57,7 @@ a system of object indexes is the Object Specific Preview Benefit.
 \item have behavioural  and neural markers, in adults and infants   \citep{richardson:2004_multimodal,kaufman:2005_oscillatory}.
 \item are subject to signature limits \citep[pp.~83--87]{carey:2009_origin}
 \item sometimes survive occlusion \citep{flombaum:2006_temporal}
-\end{itemize}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">The interesting thing about object indexes is that a system of object
+\end{itemize}</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">The interesting thing about object indexes is that a system of object
 indexes (at least one, maybe more)
 appears to underpin cognitive processes which are not
 strictly perceptual but also do not involve beliefs or knowledge states.
@@ -351,23 +65,11 @@ While I can’t fully explain the evidence for this claim here,
 I do want to mention the two basic experimental tools that are used to
 investigate the existence of, and the principles underpinning, 
 a system of object indexes which operates 
-between perception and thought ...
-        </div>
-        <div class="notes">There is a behavioural marker of object-indexes called the object-specific preview benefit.
+between perception and thought ...</div><div class="notes">There is a behavioural marker of object-indexes called the object-specific preview benefit.
 Suppose that you are shown an array of two objects, as depicted here.
 At the start a letter appears briefly on each object.
 (It is not important that letters are used; in theory, any readily 
-distinguishable features should work.)
-        </div>
-        <div style="position:relative;"><img src="/img/kahneman_1992_fig3.png" style="clip: rect(5px,175px, 600px, 0); position: absolute; max-width:720px; max-height:550px;"/></div>
-        <div class="slide">
-          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;rect(5px,315px, 600px, 0)&quot;}" class="dv dv-style"></div>
-          <div class="notes">The objects now start moving.
-          </div>
-        </div>
-        <div class="slide">
-          <div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
-          <div class="notes">At the end of the task, a letter appears on one of the objects.
+distinguishable features should work.)</div><div style="position:relative;"><img src="/img/kahneman_1992_fig3.png" style="clip: rect(5px,175px, 600px, 0); position: absolute; max-width:720px; max-height:550px;"/></div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;rect(5px,315px, 600px, 0)&quot;}" class="dv dv-style"></div><div class="notes">The objects now start moving.</div></div><div class="slide"><div data-what="img:eq(0)" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">At the end of the task, a letter appears on one of the objects.
 Your task is to say whether this letter is one of the letters that appeared at the start or whether it is a new letter.
 Consider just those cases in which the answer is yes: the letter at the end is one of those which you saw at the start.
 Of interest is how long this takes you to respond in two cases: when the letter appears on the same object at the start and end, and, in contrast, when the letter appears on one object at the start and a different object at the end.
@@ -378,98 +80,34 @@ This difference in response times is the
 % $glossary: object-specific preview benefit
 \emph{object-specific preview benefit}.
 Its existence shows that, in this task, you are keeping track of which object is which as they move.
-This is why the existence of an object-specific preview benefit is taken to be evidence that object indexes exist.
-          </div>
-        </div>
-        <p class="source">Kahneman et al 1992, figure 3</p>
-        <div class="notes handout">The \emph{object-specific preview benefit} is the reduction in time needed to identify that a
+This is why the existence of an object-specific preview benefit is taken to be evidence that object indexes exist.</div></div><p class="source">Kahneman et al 1992, figure 3</p><div class="notes handout">The \emph{object-specific preview benefit} is the reduction in time needed to identify that a
 letter (or other feature) matches a target presented earlier when the letter and target both
-appear on the same object rather than on different objects.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">In what follows I will take it for granted that, in adult humans,
+appear on the same object rather than on different objects.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">In what follows I will take it for granted that, in adult humans,
 there is a system of object indexes which enables them to track 
 potentially moving objects in ongoing actions such as visually tracking or 
 reaching for objects, and which influences how their attention is allocated 
-\citep{flombaum:2008_attentional}.
-        </div>
-        <p>object indexes <span class="object-files hide">/ files</span><span> in  </span><span class="adults">adults</span><span class="and-infants hide"> and <span class="infants">infants</span></span><span> ...</span></p>
-        <ul>
-          <li>guide ongoing action (e.g. visual tracking, reaching)</li>
-          <li>influence how attention is allocated</li>
-          <div class="slide">
-            <div data-what="li:lt(2)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <li class="judgement-independent">can conflict with beliefs and knowledge states</li>
-            <div class="notes">This system of object indexes
+\citep{flombaum:2008_attentional}.</div><p>object indexes <span class="object-files hide">/ files</span><span> in  </span><span class="adults">adults</span><span class="and-infants hide"> and <span class="infants">infants</span></span><span> ...</span></p><ul><li>guide ongoing action (e.g. visual tracking, reaching)</li><li>influence how attention is allocated</li><div class="slide"><div data-what="li:lt(2)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><li class="judgement-independent">can conflict with beliefs and knowledge states</li><div class="notes">This system of object indexes
 does not involve belief or knowledge
 and may assign indexes to objects in ways that are inconsistent with
 a subject’s beliefs about the identities of objects 
-\citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="li:eq(2)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <li class="markers"> <span>have </span><span class="behavioural-markers">behavioural</span><span>  </span><span class="neural-markers hide">and neural </span><span> markers</span></li>
-            <div class="notes">We have observed one behavioural marker of object 
-indexes, namely the object-specific preview benefit.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".neural-markers" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">There are also neural markers of object indexes.
+\citep[e.g.][]{Mitroff:2004pc, mitroff:2007_space}</div></div><div class="slide"><div data-what="li:eq(2)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><li class="markers"> <span>have </span><span class="behavioural-markers">behavioural</span><span>  </span><span class="neural-markers hide">and neural </span><span> markers</span></li><div class="notes">We have observed one behavioural marker of object 
+indexes, namely the object-specific preview benefit.</div></div><div class="slide"><div data-what=".neural-markers" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">There are also neural markers of object indexes.
 That is, in adults there is a pattern of brain activity which appears to be 
 characteristic of processes involved in maintaining an object index 
-for an object that is briefly hidden from view.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="li:eq(3)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <li class="signature-limits"> <span class="signature-limits">are subject to signature limits</span></li>
-            <div class="notes">The system of object indexes is also subject to signature limits.
-In general, a \emph{signature limit of a system} is a pattern of behaviour the system exhibits which is both defective given what the system is for and peculiar to that system.
-            </div>
-            <div class="notes">One signature limit of a system of object indexes is that featural information sometimes fails to influence how objects are assigned in ways that seem quite dramatic.
-Let me illustrate ...
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">In this scenario, 
+for an object that is briefly hidden from view.</div></div><div class="slide"><div data-what="li:eq(3)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><li class="signature-limits"> <span class="signature-limits">are subject to signature limits</span></li><div class="notes">The system of object indexes is also subject to signature limits.
+In general, a \emph{signature limit of a system} is a pattern of behaviour the system exhibits which is both defective given what the system is for and peculiar to that system.</div><div class="notes">One signature limit of a system of object indexes is that featural information sometimes fails to influence how objects are assigned in ways that seem quite dramatic.
+Let me illustrate ...</div></div><div class="slide"><div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">In this scenario, 
 a patterned square disappears behind the barrier; later a plain black ring emerges.  
 If you consider speed and direction only, these movements are consistent with there being just one object.
 But given the distinct shapes and textures of these things, it seems all but certain that there must be two objects.
 Yet in many cases these two objects will be assigned the same object index \citep{flombaum:2006_temporal,mitroff:2007_space}.
-So one signature limit of systems of object indexes is that information about speed and distance can override information about shape and texture.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what="li:eq(4)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <li class="occlusion">sometimes <span class="occlusion">survive occlusion </span></li>
-            <div class="notes">As the findings I just describes imply,
+So one signature limit of systems of object indexes is that information about speed and distance can override information about shape and texture.</div></div><div class="slide"><div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what="li:eq(4)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><li class="occlusion">sometimes <span class="occlusion">survive occlusion </span></li><div class="notes">As the findings I just describes imply,
 object indexes can survive brief occlusion.
 That is, an object index 
 can remain attached to an object even if that
 object is briefly occluded by a screen.
 (Sameness of object index may be detected by the presence of an 
-object-specific preview benefit).
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="li:eq(5)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div data-what=".object-files" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".object-files" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".object-files" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">To clarify terminology,
+object-specific preview benefit).</div></div><div class="slide"><div data-what="li:eq(5)" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".object-files" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".object-files" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".object-files" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">To clarify terminology,
 I should say that whereas I’m talking about object indexes,
 researchers more typically interpret this research in terms of object
 files. 
@@ -478,93 +116,29 @@ reasons of simplicity and caution.
 If you believe in object files then you can interpret what I’m saying
 as referring to object files.
 And if you have doubts about object files, you might still have reason
-to accept that a system of object indexes exists.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".object-files" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".adults" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".adults" data-cls="bkg-blue" class="dv dv-addclass"></div>
-            <div class="notes">So far I have been talking about object indexes in adult humans.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".adults" data-cls="bkg-blue" class="dv dv-removeclass"></div>
-            <div data-what=".and-infants" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".infants" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".infants" data-cls="bkg-blue" class="dv dv-addclass"></div>
-            <div class="notes">But our interest in object indexes stems from a hypothesis about 
+to accept that a system of object indexes exists.</div></div><div class="slide"><div data-what=".object-files" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".adults" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".adults" data-cls="bkg-blue" class="dv dv-addclass"></div><div class="notes">So far I have been talking about object indexes in adult humans.</div></div><div class="slide"><div data-what=".adults" data-cls="bkg-blue" class="dv dv-removeclass"></div><div data-what=".and-infants" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".infants" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".infants" data-cls="bkg-blue" class="dv dv-addclass"></div><div class="notes">But our interest in object indexes stems from a hypothesis about 
 four-month-old infants’
 abilities to track briefly occluded objects.
 According to this hypothesis, these abilities depend on a system of 
 object indexes like that which underpins multiple object tracking or 
 object-specific preview benefits
 \citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
-What makes this hypothesis attractive?
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.clstx-conjecture" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.clstx-conjecture" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          </div>
-          <div class="slide">
-            <div data-what="li.occlusion" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">One reason the hypothesis seems like a good bet is that object 
+What makes this hypothesis attractive?</div></div><div class="slide"><div data-what=".layer.clstx-conjecture" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".layer.clstx-conjecture" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what="li.occlusion" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">One reason the hypothesis seems like a good bet is that object 
 indexes are the kind of thing which could in principle explain
 infants’ abilities to track unperceived objects because object indexes 
-can, within limits, survive occlusion.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="li.markers" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".behavioural-markers" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".behavioural-markers" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">If we consider six-month-olds, we can also find behavioural markers 
-of object indexes in infants \citep{richardson:2004_multimodal} ...
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".neural-markers" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".neural-markers" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">... and there are is also a report of neural markers too \citep{kaufman:2005_oscillatory}.
-            </div>
-            <div class="notes">(\citet{kaufman:2005_oscillatory} measured brain activity in 
+can, within limits, survive occlusion.</div></div><div class="slide"><div data-what="li.markers" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".behavioural-markers" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".behavioural-markers" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">If we consider six-month-olds, we can also find behavioural markers 
+of object indexes in infants \citep{richardson:2004_multimodal} ...</div></div><div class="slide"><div data-what=".neural-markers" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".neural-markers" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">... and there are is also a report of neural markers too \citep{kaufman:2005_oscillatory}.</div><div class="notes">(\citet{kaufman:2005_oscillatory} measured brain activity in 
 six-month-olds infants as they observed a display typical of an object 
 disappearing behind a barrier.
 They found the pattern of brain activity characteristic of maintaining 
 an object index.
 This suggests that in infants, as in adults, object indexes can attach 
-to objects that are briefly unperceived.)
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".behavioural-markers" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".neural-markers" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div class="notes">The evidence we have so far gets us as far as saying, in effect, that someone capable of committing a murder was in the right place at the right time.
-Can we go beyond such circumstantial evidence?
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="li.signature-limits" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what="li.signature-limits" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-            <div class="notes">The key to doing this is to exploit signature limits.
+to objects that are briefly unperceived.)</div></div><div class="slide"><div data-what=".behavioural-markers" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".neural-markers" data-cls="bkg-invert" class="dv dv-removeclass"></div><div class="notes">The evidence we have so far gets us as far as saying, in effect, that someone capable of committing a murder was in the right place at the right time.
+Can we go beyond such circumstantial evidence?</div></div><div class="slide"><div data-what="li.signature-limits" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what="li.signature-limits" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">The key to doing this is to exploit signature limits.
 \citet{carey:2009_origin} argues that what I am calling the signature
 limits of object indexes in adults are related to signature limits on
-infants’ abilities to track briefly occluded objects.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">To illustrate, a moment ago I mentioned that one signature limit of 
-object indexes is that featural information sometimes fails to influence how objects are assigned in ways that seem quite dramatic.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".layer.carey-xu" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">There is evidence that, similarly, even 10-month-olds will sometimes
+infants’ abilities to track briefly occluded objects.</div></div><div class="slide"><div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">To illustrate, a moment ago I mentioned that one signature limit of 
+object indexes is that featural information sometimes fails to influence how objects are assigned in ways that seem quite dramatic.</div></div><div class="slide"><div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".layer.carey-xu" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">There is evidence that, similarly, even 10-month-olds will sometimes
 ignore featural information in tracking occluded objects
 \citep{xu:1996_infants}.%
 \footnote{
@@ -577,42 +151,21 @@ The hypothesis under consideration---that infants’ abilities
 to track briefly occluded objects depend on a system of 
 object indexes like that which underpins multiple object tracking or 
 object-specific preview benefits---is a bet on the match being exact.
-}
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.carey-xu" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".layer.carey-xu-results" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Here are the results.
+}</div></div><div class="slide"><div data-what=".layer.carey-xu" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".layer.carey-xu-results" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Here are the results.
 The central column shows that infants looked longer when they saw
 two objects at test rather than when they saw a single object.
 This is not different from how they performed in a base line condition
 when the information about number was not present.
 And it is different from how they performed in the ‘spatiotemporal
 condition’ in which the two objects were at simultaneously 
-visible at one point before the test phase.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.carey-xu-results" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">While I wouldn’t want to suggest that the evidence on 
+visible at one point before the test phase.</div></div><div class="slide"><div data-what=".layer.carey-xu-results" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">While I wouldn’t want to suggest that the evidence on 
 siganture limits is 
 decisive, I think it does motivate considering the hypothesis and its
 consequences.
 In what follows I will assume the hypothesis is true:
 infants’ abilities 
 to track briefly occluded objects depend on a system of 
-object indexes.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what="li.signature-limits" data-cls="bkg-grey-row " class="dv dv-removeclass"></div>
-            <div data-what="li.occlusion" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div data-what="li.markers" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div data-what="li.signature-limits" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <div data-what="li.judgement-independent" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what="li.judgement-independent" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-            <div class="notes">The hypothesis has an advantage which I don’t think is widely
+object indexes.</div></div><div class="slide"><div data-what="li.signature-limits" data-cls="bkg-grey-row " class="dv dv-removeclass"></div><div data-what="li.occlusion" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what="li.markers" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what="li.signature-limits" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what="li.judgement-independent" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what="li.judgement-independent" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">The hypothesis has an advantage which I don’t think is widely
 recognised.
 This is that object indexes are independent of beliefs and knowledge
 states.
@@ -622,21 +175,12 @@ And nor is having an object index pointing to a series of locations over time
 is the same thing as believing or knowing that these locations
 are points on the path of a single object.
 Further, the assignments of object indexes do not invariably give rise
-to beliefs and need not match your beliefs.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">To emphasise this point, consider once more this scenario 
+to beliefs and need not match your beliefs.</div></div><div class="slide"><div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">To emphasise this point, consider once more this scenario 
 in which a patterned square disappears behind the barrier; later a 
 plain black ring emerges.  You probably don't believe that they are 
 the same object, but they probably do get assigned the same object index.
 Your beliefs and assignments of object indexes are inconsistent in this
-sense: the world cannot be such that both are correct.
-            </div>
-            <div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".layer.shinskey-2001" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">To illustrate, consider an ingenious experiment by \citet{Shinskey:2001fk}.
+sense: the world cannot be such that both are correct.</div><div data-what=".layer.change-features" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".layer.shinskey-2001" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">To illustrate, consider an ingenious experiment by \citet{Shinskey:2001fk}.
 There was an opaque screen that could rotate between lying flat on the ground and being raised to conceal a toy behind it.
 \citeauthor{Shinskey:2001fk} also used a second piece of apparatus just like the first except that the screen was transparent rather than opaque.
 They reasoned that infants would quite often pull the screen forwards just for fun, regardless of what is behind it.
@@ -646,9 +190,7 @@ they sometimes pulled the screen forwards when there was no toy behind it, but t
 What happened  when infants were presented with the opaque screen?
 Here infants pulled the screen forwards no more often when they had observed a toy being placed behind it then when they had observed that there was nothing behind it.
 This is evidence that  seven-month-old infants do not know that a toy they have very recently seen hidden behind a screen is behind the screen.
-After all, since knowledge guides action we would expect infants who know that a toy is behind an opaque screen to pull the screen forward more often than infants who know there is nothing behind the screen, just as they do when the screen is transparent.
-            </div>
-            <div class="notes">More than two decades of research strongly supports the view that 
+After all, since knowledge guides action we would expect infants who know that a toy is behind an opaque screen to pull the screen forward more often than infants who know there is nothing behind the screen, just as they do when the screen is transparent.</div><div class="notes">More than two decades of research strongly supports the view that 
 infants fail to search for objects hidden behind barriers or screens 
 until around eight months of age \citep[p.\ 202]{Meltzoff:1998wp} or 
 maybe even later \citep{moore:2008_factors}.
@@ -658,433 +200,60 @@ control of action.
 We must therefore conclude, I think, that four- and five-month-old 
 infants do not have beliefs about the locations of briefly occluded 
 objects.  
-It is the absence of belief that explains their failures to search.
-            </div>
-          </div>
-        </ul>
-        <div class="layer hide change-features">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="words">
-              <div class="container_12">
-                <div class="grid_12"><img src="/img/scholl_2007_fig4.png" style=""/>
-                  <p class="source">Scholl 2007, figure 4</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide carey-xu">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="words">
-              <div class="container_12">
-                <div class="grid_12"><img src="/img/carey_2001_fig3.png" style="height:500px"/>
-                  <p class="source">Carey and Xu 2001, figure 3</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide carey-xu-results">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="words">
-              <div class="container_12">
-                <div class="grid_12"><img src="/img/xu_carey_1996_fig4.png" style="height:500px"/>
-                  <p class="source">Xu and Carey 1996, figure 4</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide shinskey-2001">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="words">
-              <div class="container_12">
-                <div class="grid_12"><img src="/img/shinskey_munakata_2001_fig1.png" style=""/>
-                  <p class="source">Shinskey & Munakata 2001, figure 1</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide charles-rivera">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="container_12">
-              <div class="grid_12 ">
-                <div class="words">
-                  <div class="middle">
-                    <table class="data">
-                      <thead>
-                        <tr>
-                          <td> </td>
-                          <td>occlusion</td>
-                          <td>endarkening</td>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>violation-of-expectations</td>
-                          <td>+</td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>manual search</td>
-                          <td>-</td>
-                          <td>+</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <p style="margin-top:-300px;" class="source">Charles & Rivera (2009)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide what-can-oi-explain">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
-            <div style="" class="container_12">
-              <div class="grid_12 ">
-                <div class="words">
-                  <div class="middle">
-                    <p style="line-height:40px;" class="center huge-glow-50">What can object indexes explain?</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide wynn-1992">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="words">
-              <div class="container_12">
-                <div class="grid_12">
-                  <div class="img1">
-                    <div style="position:relative;"><img src="/img/wynn_1992_fig1a.png" style="clip: rect(0px, 180px, 160px, 0px); position: absolute; max-width:720px; max-height:550px;"/></div>
-                  </div>
-                  <div class="img2 hide">
-                    <div style="position:relative;"><img src="/img/wynn_1992_fig1a.png" style="clip: rect(160px, 360px, 340px, 0px); position: absolute; max-width:720px; max-height:550px;"/></div>
-                  </div>
-                  <p class="source">Wynn 1992, fig 1 (part)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide wynn-1992-results">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="container_12">
-              <div class="grid_12 ">
-                <div class="words">
-                  <div class="middle"><img src="/img/wynn_1992_figx.png" style="width:720px"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layer hide clstx-conjecture">
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color">
-            <div style="" class="container_12">
-              <div class="grid_12 ">
-                <div class="words">
-                  <div class="middle">
-                    <div class="notes ctd handout">\emph{The CLSTX conjecture} 
+It is the absence of belief that explains their failures to search.</div></div></ul><div class="layer hide change-features"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/scholl_2007_fig4.png" style=""/><p class="source">Scholl 2007, figure 4</p></div></div></div></div></div><div class="layer hide carey-xu"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/carey_2001_fig3.png" style="height:500px"/><p class="source">Carey and Xu 2001, figure 3</p></div></div></div></div></div><div class="layer hide carey-xu-results"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/xu_carey_1996_fig4.png" style="height:500px"/><p class="source">Xu and Carey 1996, figure 4</p></div></div></div></div></div><div class="layer hide shinskey-2001"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/shinskey_munakata_2001_fig1.png" style=""/><p class="source">Shinskey & Munakata 2001, figure 1</p></div></div></div></div></div><div class="layer hide charles-rivera"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><table class="data"><thead><tr><td> </td><td>occlusion</td><td>endarkening</td></tr></thead><tbody><tr><td>violation-of-expectations</td><td>+</td><td>-</td></tr><tr><td>manual search</td><td>-</td><td>+</td></tr></tbody></table><p style="margin-top:-300px;" class="source">Charles & Rivera (2009)</p></div></div></div></div></div></div><div class="layer hide what-can-oi-explain"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p style="line-height:40px;" class="center huge-glow-50">What can object indexes explain?</p></div></div></div></div></div></div><div class="layer hide wynn-1992"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="img1"><div style="position:relative;"><img src="/img/wynn_1992_fig1a.png" style="clip: rect(0px, 180px, 160px, 0px); position: absolute; max-width:720px; max-height:550px;"/></div></div><div class="img2 hide"><div style="position:relative;"><img src="/img/wynn_1992_fig1a.png" style="clip: rect(160px, 360px, 340px, 0px); position: absolute; max-width:720px; max-height:550px;"/></div></div><p class="source">Wynn 1992, fig 1 (part)</p></div></div></div></div></div><div class="layer hide wynn-1992-results"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><img src="/img/wynn_1992_figx.png" style="width:720px"/></div></div></div></div></div></div><div class="layer hide clstx-conjecture"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px" class="background-color"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes ctd handout">\emph{The CLSTX conjecture} 
 Five-month-olds’ abilities to track occluded objects
 are not grounded on belief or knowledge:
 instead 
 they are consequences of the operations of 
 object indexes.
 
-\citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
-                    </div>
-                    <p>The CLSTX conjecture:</p>
-                    <p class="em-above">Five-month-olds’ abilities to track briefly unperceived objects</p>
-                    <p>are not grounded on belief or knowledge:</p>
-                    <p>instead </p>
-                    <p>they are consequences of the operations of </p>
-                    <p>a system of <span class="object-index">object index</span><span>es.</span></p>
-                    <p class="em-above small-text right">Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)</p>
-                    <div class="notes">(‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes ctd handout">\emph{The CLSTX conjecture} 
+\citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.</div><p>The CLSTX conjecture:</p><p class="em-above">Five-month-olds’ abilities to track briefly unperceived objects</p><p>are not grounded on belief or knowledge:</p><p>instead </p><p>they are consequences of the operations of </p><p>a system of <span class="object-index">object index</span><span>es.</span></p><p class="em-above small-text right">Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)</p><div class="notes">(‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})</div></div></div></div></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes ctd handout">\emph{The CLSTX conjecture} 
 Five-month-olds’ abilities to track occluded objects
 are not grounded on belief or knowledge:
 instead 
 they are consequences of the operations of 
 object indexes.
 
-\citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
-          </div>
-          <p>The CLSTX conjecture:</p>
-          <p class="em-above">Five-month-olds’ abilities to track briefly unperceived objects</p>
-          <p>are not grounded on belief or knowledge:</p>
-          <p>instead </p>
-          <p>they are consequences of the operations of </p>
-          <p>a system of <span class="object-index">object index</span><span>es.</span></p>
-          <p class="em-above small-text right">Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)</p>
-          <div class="notes">(‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})</div>
-          <div class="notes">While I wouldn’t want to suggest that the evidence on siganture limits is decisive, I think
+\citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.</div><p>The CLSTX conjecture:</p><p class="em-above">Five-month-olds’ abilities to track briefly unperceived objects</p><p>are not grounded on belief or knowledge:</p><p>instead </p><p>they are consequences of the operations of </p><p>a system of <span class="object-index">object index</span><span>es.</span></p><p class="em-above small-text right">Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)</p><div class="notes">(‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})</div><div class="notes">While I wouldn’t want to suggest that the evidence on siganture limits is decisive, I think
 it does motivate considering the hypothesis and its consequences. In what follows I will
 assume the hypothesis is true: infants’ abilities to track briefly occluded objects depend
-on a system of object indexes.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <table class="data charles-rivera"> 
-            <thead>
-              <tr>
-                <td> </td>
-                <td class="center"><span class="occlusion">occlusion</span></td>
-                <td class="center"><span class="endarkening">endarkening</span></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="violation-of-expectations v-of-e">
-                <td class="center"><span>violation-of-expectations</span></td>
-                <td class="center"><span class="occlusion">✔</span></td>
-                <td class="center"><span class="endarkening">✘</span></td>
-              </tr>
-              <tr class="manual-search search">
-                <td class="center"><span>manual search</span></td>
-                <td class="center"><span class="occlusion">✘</span></td>
-                <td class="center"><span class="endarkening">✔</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <p style="margin-top:-300px;" class="source">Charles & Rivera (2009)</p>
-          <div class="notes">How does help us with the puzzles?
-          </div>
-          <div class="slide">
-            <div data-what=".v-of-e .endarkening" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".v-of-e .endarkening" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Object indexes can survive occlusion ...</div>
-            <div class="notes">... but not the endarkening of a scence</div>
-          </div>
-          <div class="slide">
-            <div data-what=".v-of-e .endarkening" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".search .occlusion, .search .endarkening" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".search .occlusion, .search .endarkening" data-cls="bkg-red" class="dv dv-addclass"></div>
-            <div class="notes">But why do we get the opposite pattern with search measures?
-            </div>
-            <div class="notes">So why do 5 month olds fail to manifest their ability to track briefly
+on a system of object indexes.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><table class="data charles-rivera"> <thead><tr><td> </td><td class="center"><span class="occlusion">occlusion</span></td><td class="center"><span class="endarkening">endarkening</span></td></tr></thead><tbody><tr class="violation-of-expectations v-of-e"><td class="center"><span>violation-of-expectations</span></td><td class="center"><span class="occlusion">✔</span></td><td class="center"><span class="endarkening">✘</span></td></tr><tr class="manual-search search"><td class="center"><span>manual search</span></td><td class="center"><span class="occlusion">✘</span></td><td class="center"><span class="endarkening">✔</span></td></tr></tbody></table><p style="margin-top:-300px;" class="source">Charles & Rivera (2009)</p><div class="notes">How does help us with the puzzles?</div><div class="slide"><div data-what=".v-of-e .endarkening" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".v-of-e .endarkening" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Object indexes can survive occlusion ...</div><div class="notes">... but not the endarkening of a scence</div></div><div class="slide"><div data-what=".v-of-e .endarkening" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".search .occlusion, .search .endarkening" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".search .occlusion, .search .endarkening" data-cls="bkg-red" class="dv dv-addclass"></div><div class="notes">But why do we get the opposite pattern with search measures?</div><div class="notes">So why do 5 month olds fail to manifest their ability to track briefly
 occluded objects by initiating searches for them after they have been
-fully occluded?
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".search .occlusion, .search .endarkening" data-cls="bkg-red" class="dv dv-removeclass"></div>
-            <div data-what=".search .occlusion" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".search .occlusion" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Because object indexes are independent of beliefs 
-and do not by themselves support the initiation of action.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".search .endarkening" data-cls="bkg-red" class="dv dv-addclass"></div>
-            <div class="notes">But we still have to explain this ...
-            </div>
-            <div class="notes">Why do infants succeed in searching for momentarily endarkend objects?
+fully occluded?</div></div><div class="slide"><div data-what=".search .occlusion, .search .endarkening" data-cls="bkg-red" class="dv dv-removeclass"></div><div data-what=".search .occlusion" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".search .occlusion" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Because object indexes are independent of beliefs 
+and do not by themselves support the initiation of action.</div></div><div class="slide"><div data-what=".search .endarkening" data-cls="bkg-red" class="dv dv-addclass"></div><div class="notes">But we still have to explain this ...</div><div class="notes">Why do infants succeed in searching for momentarily endarkend objects?
 This finding seems to run directly against the CLSTX conjecture.
 After all, (1) object indexes do not survive endarkening; and 
 (2) even if they did, they don’t enable you to initiate purposive actions.
 So the CLSTX conjecture provides two independent reasons to predict 
-that 5-month-olds will \textbf{not} search for endarkened objects.
-            </div>
-            <div class="notes">And yet they do.
-What does this mean?
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/cardellicchio_2011_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Cardellicchio, Sinigaglia & Costantini, 2011 figure 1</p>
-        <div class="notes">Thinks about how adults represent objects.
+that 5-month-olds will \textbf{not} search for endarkened objects.</div><div class="notes">And yet they do.
+What does this mean?</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/cardellicchio_2011_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Cardellicchio, Sinigaglia & Costantini, 2011 figure 1</p><div class="notes">Thinks about how adults represent objects.
 For adults, it is not just a matter of knowledge and object indexes.
 Objects are also represented motorically.
-But how an object is represented motorically depends on its affordances.
-        </div>
-        <div class="notes">And representing an object motorically generally depends on its being one you
-could interact with.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/cardellicchio_2011_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Cardellicchio, Sinigaglia & Costantini, 2011 figure 2</p>
-        <div class="notes">[skip --- only included in case need for discussion]
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/costantini_2010_fig1b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Costantini et al, 2010 figure 1B</p>
-        <div class="notes">Importantly, putting a barrier between you and an object means that
+But how an object is represented motorically depends on its affordances.</div><div class="notes">And representing an object motorically generally depends on its being one you
+could interact with.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/cardellicchio_2011_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Cardellicchio, Sinigaglia & Costantini, 2011 figure 2</p><div class="notes">[skip --- only included in case need for discussion]</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/costantini_2010_fig1b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Costantini et al, 2010 figure 1B</p><div class="notes">Importantly, putting a barrier between you and an object means that
 you can’t interact with it, and so the object is unlikely to be
-represented motorically.
-        </div>
-        <div class="notes">And note that it doesn’t matter whether the barrier is an occluder; even a translucent
-barrier will prevent objects being represented motorically.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/costantini_2010_fig2b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Costantini et al, 2010 figure 1B</p>
-        <div class="notes">[skip --- only included in case need for discussion]
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <table class="data">
-            <thead>
-              <tr>
-                <td> </td>
-                <td class="center"><span class="occlusion">survive occlusion</span></td>
-                <td class="center"><span class="endarkening">survive endarkening</span></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="center"><span>object index</span></td>
-                <td class="center"><span class="occlusion">✔</span></td>
-                <td class="center"><span class="endarkening">✘</span></td>
-              </tr>
-              <tr>
-                <td style="vertical-align:middle;" class="center"><span>motor representation</span></td>
-                <td style="vertical-align:middle;" class="center"><span class="occlusion">✘ (barrier)</span></td>
-                <td style="vertical-align:middle;" class="center"><span class="endarkening">✔</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="em-above">&nbsp;</p>
-          <div class="slide em-above">
-            <table class="data charles-rivera"> 
-              <thead>
-                <tr>
-                  <td> </td>
-                  <td class="center"><span class="occlusion">occlusion</span></td>
-                  <td class="center"><span class="endarkening">endarkening</span></td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="violation-of-expectations v-of-e">
-                  <td class="center"><span>violation-of-expectations</span></td>
-                  <td class="center"><span class="occlusion">✔</span></td>
-                  <td class="center"><span class="endarkening">✘</span></td>
-                </tr>
-                <tr class="manual-search search">
-                  <td class="center"><span>manual search</span></td>
-                  <td class="center"><span class="occlusion">✘ (barrier)</span></td>
-                  <td class="center"><span class="endarkening">✔</span></td>
-                </tr>
-              </tbody>
-            </table>
-            <div data-what=".source" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/mccurry_2009_fig1a.png" class="bkg"/>
-        <p class="source">McCurry et al 2009, figure 1 (part)</p>
-        <div class="notes">Perfect way to deconfound barrier and occlusion: a screen
-you can’t see through but can reach through.
-        </div>
-        <div class="notes">Irony: McCurry et al call their paper ‘beyond the search barrier’.
+represented motorically.</div><div class="notes">And note that it doesn’t matter whether the barrier is an occluder; even a translucent
+barrier will prevent objects being represented motorically.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/costantini_2010_fig2b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Costantini et al, 2010 figure 1B</p><div class="notes">[skip --- only included in case need for discussion]</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><table class="data"><thead><tr><td> </td><td class="center"><span class="occlusion">survive occlusion</span></td><td class="center"><span class="endarkening">survive endarkening</span></td></tr></thead><tbody><tr><td class="center"><span>object index</span></td><td class="center"><span class="occlusion">✔</span></td><td class="center"><span class="endarkening">✘</span></td></tr><tr><td style="vertical-align:middle;" class="center"><span>motor representation</span></td><td style="vertical-align:middle;" class="center"><span class="occlusion">✘ (barrier)</span></td><td style="vertical-align:middle;" class="center"><span class="endarkening">✔</span></td></tr></tbody></table><p class="em-above">&nbsp;</p><div class="slide em-above"><table class="data charles-rivera"> <thead><tr><td> </td><td class="center"><span class="occlusion">occlusion</span></td><td class="center"><span class="endarkening">endarkening</span></td></tr></thead><tbody><tr class="violation-of-expectations v-of-e"><td class="center"><span>violation-of-expectations</span></td><td class="center"><span class="occlusion">✔</span></td><td class="center"><span class="endarkening">✘</span></td></tr><tr class="manual-search search"><td class="center"><span>manual search</span></td><td class="center"><span class="occlusion">✘ (barrier)</span></td><td class="center"><span class="endarkening">✔</span></td></tr></tbody></table><div data-what=".source" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:0}" class="dv dv-velocity"></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/mccurry_2009_fig1a.png" class="bkg"/><p class="source">McCurry et al 2009, figure 1 (part)</p><div class="notes">Perfect way to deconfound barrier and occlusion: a screen
+you can’t see through but can reach through.</div><div class="notes">Irony: McCurry et al call their paper ‘beyond the search barrier’.
 But the whole point of an experiment like this should have been to 
 deconfound occluders and barriers (one blocks vision, the other
-prevents action).
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/mccurry_2009_fig1.png" style="margin-top:250px" class="bkg"/>
-        <p class="source">McCurry et al 2009, figure 1</p>
-        <div class="notes">Now consider an experiment with 5-month-olds using an occluder that is no 
+prevents action).</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/mccurry_2009_fig1.png" style="margin-top:250px" class="bkg"/><p class="source">McCurry et al 2009, figure 1</p><div class="notes">Now consider an experiment with 5-month-olds using an occluder that is no 
 barrier to ation.
-Instead the occluder is a fringed screen through which you can reach.
-        </div>
-        <div class="notes">Here's the authors' description of their procedure.
+Instead the occluder is a fringed screen through which you can reach.</div><div class="notes">Here's the authors' description of their procedure.
 'Once the ball came to rest at the right edge of the platform, the platform was pushed forward
 until the edge of the platform was directly in front of, and within easy reach of, the infant. In
-the second phase, the infant was allowed to search for 20 s. ' \citep{mccurry:2009_beyond}
-        </div>
-        <div class="notes">McCurry et al found that 5 month old infants reach towards the cloth screen more often
+the second phase, the infant was allowed to search for 20 s. ' \citep{mccurry:2009_beyond}</div><div class="notes">McCurry et al found that 5 month old infants reach towards the cloth screen more often
 when a cube goes in and a ball comes out than when a cube goes in and a cube comes
-out. (I.e. cube-ball vs cube-cube.)
-        </div>
-        <div class="notes">Why?  On the CLSTX conjecture, this makes no sense.
+out. (I.e. cube-ball vs cube-cube.)</div><div class="notes">Why?  On the CLSTX conjecture, this makes no sense.
 As we saw, a signature limit of object indexes is their disregard for featural
 information.  Further, object indexes don’t enable you to initate purposive actions.
 So the CLSTX conjecture provides two reasons for making the incorrect prediction
 that infants will not search longer in the cube-ball condition than in the ball-ball
-condition.
-        </div>
-        <div class="notes">But if you think about it in terms of motor representations, it makes perfect sense.
+condition.</div><div class="notes">But if you think about it in terms of motor representations, it makes perfect sense.
 Here is an occluder that is no barrier for action, so no obstacle to representing 
 the objects motorically.
 And of course motor processes care deeply about the shapes of things, so we should
-expect a difference between the ball and the cube.
-        </div>
-        <div class="notes">McCurry et al designed the perfect experiment to show that the CLSTX conjecture is not
+expect a difference between the ball and the cube.</div><div class="notes">McCurry et al designed the perfect experiment to show that the CLSTX conjecture is not
 the whole story, and that 5-month-olds can represent unperceived objects motorically.
 But I don’t want to make too much of this because I’m interpreting their findings post
 hoc. 
@@ -1095,9 +264,7 @@ hidden objects.’
 But I don’t think anyone who has carefully considered Shinskey and Munakata’s work
 could be convinced by this idea.
 It’s a shame they weren’t thinking in terms of the Crude Picture of the Mind,
-but, you know, tant pis.
-        </div>
-        <div class="notes">[skip]
+but, you know, tant pis.</div><div class="notes">[skip]
 What should we predict?
 Cloth screen does not prevent action,\footnote{
 ‘In the first familiarization trial, infants were shown the fringed-screen and were encouraged to
@@ -1111,143 +278,24 @@ the experiment requires sensitivity to featural information should not be an iss
 (Further, a version of this task using violation of expectations may fail 
 because featural information is critical.)
 And although these are very far from the terms in which they interpret their findings,
-this is exactly what McCurry et al 2009 found.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/mccurry_2009_fig2.png"/>
-        <p class="source">McCurry et al 2009, figure 2</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes ctd">\emph{The CLSTX conjecture} 
+this is exactly what McCurry et al 2009 found.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/mccurry_2009_fig2.png"/><p class="source">McCurry et al 2009, figure 2</p></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes ctd">\emph{The CLSTX conjecture} 
 Five-month-olds’ abilities to track occluded objects
 are not grounded on belief or knowledge:
 instead 
 they are consequences of the operations of 
 object indexes.
 
-\citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.
-          </div>
-          <p>The CLSTX conjecture:</p>
-          <p class="em-above">Five-month-olds’ abilities to track briefly unperceived objects</p>
-          <p>are not grounded on belief or knowledge:</p>
-          <p>instead </p>
-          <p>they are consequences of the operations of </p>
-          <p>a system of <span class="object-index">object index</span><span>es.</span></p>
-          <p class="em-above small-text right">Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)</p>
-          <div class="notes">(‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})</div>
-          <p>&nbsp;</p>
-          <p class="hem-around invert bkg-white-row">... and of a further, independent capacity to track physical objects which involves
-motor representations and processes.
-          </p>
-          <div class="notes">This generates lots of predictions.
+\citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.</div><p>The CLSTX conjecture:</p><p class="em-above">Five-month-olds’ abilities to track briefly unperceived objects</p><p>are not grounded on belief or knowledge:</p><p>instead </p><p>they are consequences of the operations of </p><p>a system of <span class="object-index">object index</span><span>es.</span></p><p class="em-above small-text right">Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)</p><div class="notes">(‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})</div><p>&nbsp;</p><p class="hem-around invert bkg-white-row">... and of a further, independent capacity to track physical objects which involves
+motor representations and processes.</p><div class="notes">This generates lots of predictions.
 For example, should be able to modulate object tracking of endarkened objects
 by interfering with, or boosting, motor cognition.
-But the same manipulations should not affect occlusion.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:-150px;">
-            <p style="font-size:300px" class="center question-mark huge-glow"> ?</p>
-          </div>
-          <p class="center">core knowledge of objects <br/><span>= </span><br/><span>object indexes + motor representations</span></p>
-          <div class="notes">Consequence: if there is core knowledge of objects, it is a hybrid phenomenon.
+But the same manipulations should not affect occlusion.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div style="position:absolute;top:0px;left:0;z-index:-30;width:100%;margin-top:-150px;"><p style="font-size:300px" class="center question-mark huge-glow"> ?</p></div><p class="center">core knowledge of objects <br/><span>= </span><br/><span>object indexes + motor representations</span></p><div class="notes">Consequence: if there is core knowledge of objects, it is a hybrid phenomenon.
 To fully make sense of patterns of success and failure in tracking
 briefly unperceived objects, we need to recognize that core knowledge
 of objects involves two things that are, to an interesting degree,
-independent of each other: object indexes and motor representations.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Recall my Crude Picture of the Mind.
-          </div>
-          <div class="notes">Consider a crude, but hopefully very familiar picture of the adult mind.
-          </div>
-          <div class="notes">The mind has different bits, and these are to an interesting extent independent of each other.
-          </div>
-          <div class="notes">And there are at least three kinds of state, epistemic, motoric and perceptual.
-          </div>
-          <p class="hem-around">Crude Picture of the Mind</p>
-          <ul class="hem-around-children">
-            <li><span class="epistemic">epistemic</span><br/><span>(knowledge states)</span></li>
-            <li><span>broadly </span><span class="motoric">motoric </span><br/><span>(motor representations of outcomes and affordances)</span></li>
-            <li><span>broadly </span><span class="perceptual">perceptual </span><br/><span>(visual, tactual, ... representations; </span><span class="object-indexes">object indexes</span><span>  ...)</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">So I disagree with Carey about one thing: there is no justification for postulating a
+independent of each other: object indexes and motor representations.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Recall my Crude Picture of the Mind.</div><div class="notes">Consider a crude, but hopefully very familiar picture of the adult mind.</div><div class="notes">The mind has different bits, and these are to an interesting extent independent of each other.</div><div class="notes">And there are at least three kinds of state, epistemic, motoric and perceptual.</div><p class="hem-around">Crude Picture of the Mind</p><ul class="hem-around-children"><li><span class="epistemic">epistemic</span><br/><span>(knowledge states)</span></li><li><span>broadly </span><span class="motoric">motoric </span><br/><span>(motor representations of outcomes and affordances)</span></li><li><span>broadly </span><span class="perceptual">perceptual </span><br/><span>(visual, tactual, ... representations; </span><span class="object-indexes">object indexes</span><span>  ...)</span></li></ul></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">So I disagree with Carey about one thing: there is no justification for postulating a
 ‘third type of conceptual structure’, at least not for understanding infants abilities to
-track objects in the first year of life.
-          </div>
-          <div class="notes handout show">
-            <p class="quote em-above"><span>‘there is a third type of conceptual structure, </span><br/><span>dubbed “core knowledge” ... </span><br/><span>that differs systematically from both </span><br/><span>sensory/perceptual representation[s] ... and ... knowledge.’ </span></p>
-            <p class="right grey-text">Carey, 2009 p. 10</p>
-          </div>
-          <div class="notes">But this isn’t quite the end of the story ...
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">An Objection:</p>
-          <p class="center">What can object indexes explain?</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="hem-around">Functions of object indexes:</p>
-          <p class="indent hem-around">✔ influence how attention is allocated</p>
-          <p class="indent hem-around">✔ guide ongoing actions (e.g. visual tracking, reaching)</p>
-          <p class="indent hem-around">✘ initiate purposive actions</p>
-          <div class="notes">The primary functions of object indexes include influencing the allocation
+track objects in the first year of life.</div><div class="notes handout show"><p class="quote em-above"><span>‘there is a third type of conceptual structure, </span><br/><span>dubbed “core knowledge” ... </span><br/><span>that differs systematically from both </span><br/><span>sensory/perceptual representation[s] ... and ... knowledge.’ </span></p><p class="right grey-text">Carey, 2009 p. 10</p></div><div class="notes">But this isn’t quite the end of the story ...</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">An Objection:</p><p class="center">What can object indexes explain?</p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="hem-around">Functions of object indexes:</p><p class="indent hem-around">✔ influence how attention is allocated</p><p class="indent hem-around">✔ guide ongoing actions (e.g. visual tracking, reaching)</p><p class="indent hem-around">✘ initiate purposive actions</p><div class="notes">The primary functions of object indexes include influencing the allocation
 of attention and perhaps guiding ongoing action.
 If this is right, it may be possible to explain anticipatory looking 
 directly by appeal to the operations of  object indexes.
@@ -1255,20 +303,7 @@ But the operations of object indexes cannot directly explain differences
 in how novel things are to an infant.
 And nor can the operations of object indexes directly explain why infants
 look longer at stimuli involving discrepancies in the physical behaviour
-of objects.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/wynn_1992_fig1a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Wynn 1992, fig 1 (part)</p>
-        <div class="notes">We know that infants are likely to maintain object indexes for the two
+of objects.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/wynn_1992_fig1a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Wynn 1992, fig 1 (part)</p><div class="notes">We know that infants are likely to maintain object indexes for the two
 mice while they are occluded.
 Accordingly, when the screen drops in the condition labelled 
 ‘impossible outcome’, there is an interruption to the normal 
@@ -1277,57 +312,4 @@ but there is only one object.
 But why does this cause infants to look longer at in the
 ‘impossible outcome’ condition than in the ‘possible outcome’ condition?
 How does a difference in operations involving object indexes result
-in a difference in looking times?
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/wynn_1992_table1fig.jpg" style="width:720px"/>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <table class="data charles-rivera"> 
-            <thead>
-              <tr>
-                <td> </td>
-                <td class="center"><span class="occlusion">occlusion</span></td>
-                <td class="center"><span class="endarkening">endarkening</span></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="violation-of-expectations v-of-e">
-                <td class="center"><span>violation-of-expectations</span></td>
-                <td class="center"><span class="occlusion">✔</span></td>
-                <td class="center"><span class="endarkening">✘</span></td>
-              </tr>
-              <tr class="manual-search search">
-                <td class="center"><span>manual search</span></td>
-                <td class="center"><span class="occlusion">✘</span></td>
-                <td class="center"><span class="endarkening">✔</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <p style="margin-top:-300px;" class="source">Charles & Rivera (2009)</p>
-          <div class="notes">How does help us with the puzzles?
-          </div>
-          <div data-what=".v-of-e .occlusion" data-cls="transition-04" class="dv dv-addclass"></div>
-          <div data-what=".v-of-e .occlusion" data-cls="bkg-red" class="dv dv-addclass"></div>
-          <div class="notes">Object indexes can survive occlusion but ...</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+in a difference in looking times?</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/wynn_1992_table1fig.jpg" style="width:720px"/></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><table class="data charles-rivera"> <thead><tr><td> </td><td class="center"><span class="occlusion">occlusion</span></td><td class="center"><span class="endarkening">endarkening</span></td></tr></thead><tbody><tr class="violation-of-expectations v-of-e"><td class="center"><span>violation-of-expectations</span></td><td class="center"><span class="occlusion">✔</span></td><td class="center"><span class="endarkening">✘</span></td></tr><tr class="manual-search search"><td class="center"><span>manual search</span></td><td class="center"><span class="occlusion">✘</span></td><td class="center"><span class="endarkening">✔</span></td></tr></tbody></table><p style="margin-top:-300px;" class="source">Charles & Rivera (2009)</p><div class="notes">How does help us with the puzzles?</div><div data-what=".v-of-e .occlusion" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".v-of-e .occlusion" data-cls="bkg-red" class="dv dv-addclass"></div><div class="notes">Object indexes can survive occlusion but ...</div></div></div></div></div></section></div></body></html>

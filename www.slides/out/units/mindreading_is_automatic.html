@@ -1,321 +1,31 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Automatic Belief-tracking | Philosophical Psychology</title>
-    <meta name="description" content="In adults, mindreading is sometimes entirely a consequence of relatively automatic
-processes and sometimes not."/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="mindreading_is_automatic" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Automatic Belief-tracking</h2>
-          </div>
-        </div>
-      </section>
-
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Automatic Belief-tracking | Philosophical Psychology</title><meta name="description" content="In adults, mindreading is sometimes entirely a consequence of relatively automatic
+processes and sometimes not."/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="mindreading_is_automatic" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Automatic Belief-tracking</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<div class="handout">Are human adults’ abilities to track others’ beliefs automatic?</div>
-<div class="handout">For our purposes, a process is \emph{automatic} to the degree that whether it occurs is independent of
-its relevance to the particulars of the subject's task, motives and aims.
-</div>
-<div class="handout">‘Automatic mindreading’ is short for ‘mindreading that is a consequence of
-automatic processes only.’
-</div>
-<div class="handout">\citet{Southgate:2007js} created an anticipatory looking false belief task, originally
+<div class="handout">Are human adults’ abilities to track others’ beliefs automatic?</div><div class="handout">For our purposes, a process is \emph{automatic} to the degree that whether it occurs is independent of
+its relevance to the particulars of the subject's task, motives and aims.</div><div class="handout">‘Automatic mindreading’ is short for ‘mindreading that is a consequence of
+automatic processes only.’</div><div class="handout">\citet{Southgate:2007js} created an anticipatory looking false belief task, originally
 for use with two-year-olds, which has been adapated to provide evidence for automatic 
-false belief tracking.
-</div>
-<div class="handout">There is evidence that some mindreading in human adults is
+false belief tracking.</div><div class="handout">There is evidence that some mindreading in human adults is
 entirely a consequence of relatively automatic processes
 \citep{kovacs_social_2010,Schneider:2011fk,Wel:2013uq} and
 that not all mindreading in human adults is
-\citep{apperly:2008_back,apperly_why_2010,Wel:2013uq}.
-</div>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">A process involves \emph{belief-tracking} if how processes of this type unfold
+\citep{apperly:2008_back,apperly_why_2010,Wel:2013uq}.</div><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">A process involves \emph{belief-tracking} if how processes of this type unfold
 typically and nonaccidentally depends on facts about beliefs.
-So belief tracking can, but need not, involve representing beliefs.
-          </div>
-          <p class="center notes show"> <span class="belief-tracking">belief-tracking</span><span class="step2 hide"> is <span class="sometimes">sometimes</span><span>  but not always   </span></span><span class="automatic hide">automatic</span>
-          </p>
-          <div class="slide">
-            <div data-what=".belief-tracking" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".automatic" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">A process is \emph{automatic} to the degree that whether it occurs is independent of its 
-relevance to the particulars of the subject's task, motives and aims.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".belief-tracking" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Or, carefully, does belief tracking in human adults depend only
-on processes which are automatic?
-            </div>
-            <div class="notes">There is now a variety of evidence that belief-tracking is sometimes and
+So belief tracking can, but need not, involve representing beliefs.</div><p class="center notes show"> <span class="belief-tracking">belief-tracking</span><span class="step2 hide"> is <span class="sometimes">sometimes</span><span>  but not always   </span></span><span class="automatic hide">automatic</span></p><div class="slide"><div data-what=".belief-tracking" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".automatic" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">A process is \emph{automatic} to the degree that whether it occurs is independent of its 
+relevance to the particulars of the subject's task, motives and aims.</div></div><div class="slide"><div data-what=".belief-tracking" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Or, carefully, does belief tracking in human adults depend only
+on processes which are automatic?</div><div class="notes">There is now a variety of evidence that belief-tracking is sometimes and
 not always automatic in adults.  Let me give you just one experiment here
-to illustrate.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".sometimes" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".sometimes" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-        <div class="notes">Explain the southgate et al paradigm
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap2.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap3.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap4.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap5.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap2.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap3.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap6.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/southgate_2007_cap7.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/schneider_2014_fig1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Schneider et al (2014, figure 1)</p>
-        <div class="notes">[skip this slide]
-        </div>
-        <div class="notes">One way to show that mindreading is automatic is to give subjects a task which does not require tracking beliefs and then to compare their performance in two scenarios:
+to illustrate.</div></div><div class="slide"><div data-what=".sometimes" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".sometimes" data-cls="bkg-invert" class="dv dv-addclass"></div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap1.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p><div class="notes">Explain the southgate et al paradigm</div></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap2.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap3.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap4.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap5.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap2.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap3.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap6.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_2007_cap7.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Southgate et al, 2007; Senju et al, 2009 video S1</p></div></div></div></section><section style="" class="slide"><img src="/img/southgate_replication_problem.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/schneider_2014_fig1.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Schneider et al (2014, figure 1)</p><div class="notes">[skip this slide]</div><div class="notes">One way to show that mindreading is automatic is to give subjects a task which does not require tracking beliefs and then to compare their performance in two scenarios:
 a scenario where someone else has a false belief, and a scenario in which someone else has a true belief.
-If mindreading occurs automatically, performance should not vary between the two scenarios because others’ beliefs are always irrelevant to the subjects’ task and motivations.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/schneider_2014_fig3.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Schneider et al (2014, figure 3)</p>
-        <div class="notes">[skip this slide]
-        </div>
-        <div class="notes">\citet{Schneider:2011fk} did just this.
+If mindreading occurs automatically, performance should not vary between the two scenarios because others’ beliefs are always irrelevant to the subjects’ task and motivations.</div></div></div></div></section><section style="" class="slide"><img src="/img/schneider_2014_fig3.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Schneider et al (2014, figure 3)</p><div class="notes">[skip this slide]</div><div class="notes">\citet{Schneider:2011fk} did just this.
 They showed their participants a series of videos and instructed them to detect when a figure waved or, in a second experiment, to discriminate between high and low tones as quickly as possible.
-Performing these tasks did not require tracking anyone’s beliefs, and the participants did not report mindreading when asked afterwards.
-        </div>
-        <div class="notes">on experiment 1: ‘Participants never reported belief tracking when questioned in an open format after the experiment (“What do you think this experiment was about?”). Furthermore, this verbal debriefing about the experiment’s purpose never triggered participants to indicate that they followed the actor’s belief state’ \citep[p.~2]{Schneider:2011fk}
-        </div>
-        <div class="notes">Nevertheless, participants’ eye movements indicated that they were tracking the beliefs of a person who happened to be in the videos.
-        </div>
-        <div class="notes">In a further study, \citet{schneider:2014_task} raised the stakes by giving participants a task that would be harder to perform if they were tracking another’s beliefs.
+Performing these tasks did not require tracking anyone’s beliefs, and the participants did not report mindreading when asked afterwards.</div><div class="notes">on experiment 1: ‘Participants never reported belief tracking when questioned in an open format after the experiment (“What do you think this experiment was about?”). Furthermore, this verbal debriefing about the experiment’s purpose never triggered participants to indicate that they followed the actor’s belief state’ \citep[p.~2]{Schneider:2011fk}</div><div class="notes">Nevertheless, participants’ eye movements indicated that they were tracking the beliefs of a person who happened to be in the videos.</div><div class="notes">In a further study, \citet{schneider:2014_task} raised the stakes by giving participants a task that would be harder to perform if they were tracking another’s beliefs.
 So now tracking another’s beliefs is not only irrelevant to performing the tasks: it may actually hinder performance.
 Despite this, they found evidence in adults’ looking times that they were tracking another’s false beliefs.
 This indicates that ‘subjects … track the mental states of others even when they have instructions to complete a task that is incongruent with this operation’ \citep[p.~46]{schneider:2014_task} and so provides evidence for automaticity.%
@@ -325,158 +35,17 @@ This indicates that ‘subjects … track the mental states of others even when 
 It is hard to completely rule out the possibility that belief tracking is merely spontaneous rather than automatic. 
 I take the fact that belief tracking occurs despite plausibly making subjects’ tasks harder to perform to indicate automaticity over spontaneity. 
 If non-automatic belief tracking typically involves awareness of belief tracking, then the fact that subjects did not mention belief tracking when asked after the experiment about its purpose and what they were doing in it further supports the claim that belief tracking was automatic.
-}
-        </div>
-        <div class="notes">Further evidence that mindreading can occur in adults even when counterproductive has been provided by \citet{kovacs_social_2010}, who showed that another’s irrelevant beliefs about the location of an object can affect how quickly people can detect the object’s presence, 
+}</div><div class="notes">Further evidence that mindreading can occur in adults even when counterproductive has been provided by \citet{kovacs_social_2010}, who showed that another’s irrelevant beliefs about the location of an object can affect how quickly people can detect the object’s presence, 
 and by \citet{Wel:2013uq}, who showed that the same can influence the paths people take to reach an object.
-Taken together, this is compelling evidence that mindreading in adult humans sometimes involves automatic processes only.
-        </div>
-        <div class="handout">‘Participants never reported belief tracking when questioned in an open format after the experiment
+Taken together, this is compelling evidence that mindreading in adult humans sometimes involves automatic processes only.</div><div class="handout">‘Participants never reported belief tracking when questioned in an open format after the experiment
 (“What do you think this experiment was about?”). Furthermore, this verbal debriefing about the
 experiment’s purpose never triggered participants to indicate that they followed the actor’s belief
-state’ \citep[p.~2]{Schneider:2011fk}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">altercentric interference</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/01.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/02.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/03.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/04.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/01.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"> 
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/04.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/07.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/01.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/09.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/kovacs_et_al/10.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Kovacs et al, 2010</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show"> <span class="belief-tracking">belief-tracking</span><span class="step2"> is <span class="sometimes">sometimes</span><span>  but </span><span class="not-always">not always</span></span><span>&nbsp;</span><span class="automatic">automatic</span>
-          </p>
-          <div data-what=".sometimes" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          <div class="slide">
-            <p class="em-above center">aside: altercentric interference vs procative gaze</p>
-            <div class="notes">It’s good that we have both altercentric interference (which indicates that
+state’ \citep[p.~2]{Schneider:2011fk}</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">altercentric interference</p></div></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/01.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/02.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/03.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/04.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/01.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"> <p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/04.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/07.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/01.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/09.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><img src="/img/kovacs_et_al/10.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Kovacs et al, 2010</p></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show"> <span class="belief-tracking">belief-tracking</span><span class="step2"> is <span class="sometimes">sometimes</span><span>  but </span><span class="not-always">not always</span></span><span>&nbsp;</span><span class="automatic">automatic</span></p><div data-what=".sometimes" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="slide"><p class="em-above center">aside: altercentric interference vs procative gaze</p><div class="notes">It’s good that we have both altercentric interference (which indicates that
 the contents of beliefs are represented) and proactive gaze (which might
 be taken to indicate an action prediction).
 Altercentric interference indicates automaticity because it is counterproductive;
 proactive gaze indicates automaticity because it occurs irrespective of 
-instructions.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".sometimes" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".not-always" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".not-always" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/back_2010_fig3a.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"> 
-        <p class="source">Back & Apperly (2010, fig 1, part)</p>
-        <div class="notes">This is the data for answers that required a ‘yes’ response.
-        </div>
-        <div class="notes">So does all mindreading in adult humans involve only processes which are  automatic?
+instructions.</div></div><div class="slide"><div data-what=".sometimes" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".not-always" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".not-always" data-cls="bkg-invert" class="dv dv-addclass"></div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/back_2010_fig3a.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"> <p class="source">Back & Apperly (2010, fig 1, part)</p><div class="notes">This is the data for answers that required a ‘yes’ response.</div><div class="notes">So does all mindreading in adult humans involve only processes which are  automatic?
 No: it turns out that verbal responses in false belief tasks that are A-tasks are not typically a consequence of automatic belief tracking.
 To show this, \citet{back:2010_apperly} instructed people to watch videos in which someone acquires a belief, either true or false, and then, after the video, asked them an unexpected question about the protagonist’s belief \citep[see also][]{apperly:2006_belief}.
 They measured how long people took to answer this question.
@@ -490,308 +59,34 @@ We must therefore reject the hypothesis that answering a question about belief i
 \footnote{%
 \citet[ms~p.~9]{carruthers:2015_mindreading} objects (following \citealp{cohen:2009_encoding}) that these experiments are ‘not really about encoding belief but recalling it.’
 Note that this objection is already answered by \citet[p.~56]{back:2010_apperly}.
-}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/van_der_wel_2014_fig3.png" style=""/>
-        <div class="notes">\citep[p.\ 132]{Wel:2013uq}:
+}</div></div></div></div></section><section class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/van_der_wel_2014_fig3.png" style=""/><div class="notes">\citep[p.\ 132]{Wel:2013uq}:
 ‘In support of a more rule-based and controlled system, we found that response initiation times 
 changed as a function of the congruency of the participant’s and the agent’s belief in the 
 explicit group only. Thus, when participants had to track both beliefs, they slowed down 
 their responses when there was a belief conflict versus when there was not. The observation 
-that this result only occurred for the explicit group provides evidence for a controlled system.’
-        </div>
-        <p class="source">van der Wel et al (2014, figure 3)</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show"> <span class="belief-tracking">belief-tracking</span><span class="step2"> is <span class="sometimes">sometimes</span><span>  but </span><span class="not-always">not always</span></span><span>&nbsp;</span><span class="automatic">automatic</span>
-          </p>
-          <div data-what=".not-always" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          <div class="slide demanding">
-            <div style="position: absolute; top:0; left:0; width:100%; height:100%;">
-              <div class="spacer">&nbsp;</div>
-              <div class="em-above hem-around-children">
-                <p class="indent">-- can consume attention and working memory</p>
-                <p class="indent">-- can require inhibition</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">More evidence for automaticity and non-automaticity.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">This is what you as subject see.
-Actually you can't see this so well, let me make it bigger.
-        </div>
-        <div class="phase1">
-          <div class="TT"><img src="/img/van_der_wel_2014_fig1_phase1.png" style="margin-left:auto;margin-right:auto;display:block;"/>
-            <div class="slide">
-              <div data-what=".phase1 .TT img" data-css="{&quot;transform&quot;:&quot;scale(3) translateY(50px)&quot;}" class="dv dv-style"></div>
-              <div class="notes">This is what you as subject see.
+that this result only occurred for the explicit group provides evidence for a controlled system.’</div><p class="source">van der Wel et al (2014, figure 3)</p></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center notes show"> <span class="belief-tracking">belief-tracking</span><span class="step2"> is <span class="sometimes">sometimes</span><span>  but </span><span class="not-always">not always</span></span><span>&nbsp;</span><span class="automatic">automatic</span></p><div data-what=".not-always" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="slide demanding"><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div class="spacer">&nbsp;</div><div class="em-above hem-around-children"><p class="indent">-- can consume attention and working memory</p><p class="indent">-- can require inhibition</p></div></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">More evidence for automaticity and non-automaticity.</p></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">This is what you as subject see.
+Actually you can't see this so well, let me make it bigger.</div><div class="phase1"><div class="TT"><img src="/img/van_der_wel_2014_fig1_phase1.png" style="margin-left:auto;margin-right:auto;display:block;"/><div class="slide"><div data-what=".phase1 .TT img" data-css="{&quot;transform&quot;:&quot;scale(3) translateY(50px)&quot;}" class="dv dv-style"></div><div class="notes">This is what you as subject see.
 There is are two balls moving around, two barriers, and a protagonist who is looking on.
 Your task is very simple (this is the 'implicit condition'): you are told to track one
 of these objects at the start, and at the end you're going to have to use a mouse  
-to move a pointer to its location.
-              </div>
-            </div>
-            <div class="slide">
-              <div data-what=".phase1 .TT img" data-css="{&quot;transform&quot;:&quot;none&quot;}" class="dv dv-style"></div>
-            </div>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="phase2">
-            <div class="TT"><img src="/img/van_der_wel_2014_fig1_phase2.png" style="margin-left:auto;margin-right:auto;display:block;"/>
-            </div>
-          </div>
-          <div class="phase3 slide">
-            <div class="TT"><img src="/img/van_der_wel_2014_fig1_phase3.png" style="margin-left:auto;margin-right:auto;display:block;"/>
-            </div>
-            <div class="TF remove-me"><img src="/img/van_der_wel_2014_fig1_phase3_TF.png" style="margin-left:auto;margin-right:auto;display:block;"/>
-            </div>
-          </div>
-          <div class="phase4 slide">
-            <div class="TT"><img src="/img/van_der_wel_2014_fig1_phase4.png" style="margin-left:auto;margin-right:auto;display:block;"/>
-            </div>
-          </div>
-          <div class="notes">This is how the experiment progresses.
-          </div>
-          <div class="slide">
-            <div data-what=".phase3 img" data-cls="glow-border" class="dv dv-addclass"></div>
-          </div>
-          <div class="notes">You can see that the protagonist leaves in the third
-phase.  This is the version of the sequence in which the protagonist has a true belief.
-          </div>
-          <div class="slide">
-            <div data-what=".phase3 .TT" data-cls="remove-me" class="dv dv-addclass"></div>
-            <div data-what=".phase3 .TF" data-cls="remove-me" class="dv dv-removeclass"></div>
-            <div class="notes">This is the version of the sequence in which the protagonist has a false belief.
+to move a pointer to its location.</div></div><div class="slide"><div data-what=".phase1 .TT img" data-css="{&quot;transform&quot;:&quot;none&quot;}" class="dv dv-style"></div></div></div></div><div class="slide"><div class="phase2"><div class="TT"><img src="/img/van_der_wel_2014_fig1_phase2.png" style="margin-left:auto;margin-right:auto;display:block;"/></div></div><div class="phase3 slide"><div class="TT"><img src="/img/van_der_wel_2014_fig1_phase3.png" style="margin-left:auto;margin-right:auto;display:block;"/></div><div class="TF remove-me"><img src="/img/van_der_wel_2014_fig1_phase3_TF.png" style="margin-left:auto;margin-right:auto;display:block;"/></div></div><div class="phase4 slide"><div class="TT"><img src="/img/van_der_wel_2014_fig1_phase4.png" style="margin-left:auto;margin-right:auto;display:block;"/></div></div><div class="notes">This is how the experiment progresses.</div><div class="slide"><div data-what=".phase3 img" data-cls="glow-border" class="dv dv-addclass"></div></div><div class="notes">You can see that the protagonist leaves in the third
+phase.  This is the version of the sequence in which the protagonist has a true belief.</div><div class="slide"><div data-what=".phase3 .TT" data-cls="remove-me" class="dv dv-addclass"></div><div data-what=".phase3 .TF" data-cls="remove-me" class="dv dv-removeclass"></div><div class="notes">This is the version of the sequence in which the protagonist has a false belief.
 (Because the balls swap locations while she's not absent.')
 OK, so there's a simple manipulation: whether the protagonist has true or false beliefs,
 and this is task-irrelevant: all you have to do is move the mouse to where one of the balls is.
-Why is this interesting?
-            </div>
-          </div>
-        </div>
-        <p class="source">van der Wel et al (2014, figure 1)</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Just look at the 'True Belief' lines (the effect can also be found when your belief
+Why is this interesting?</div></div></div><p class="source">van der Wel et al (2014, figure 1)</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Just look at the 'True Belief' lines (the effect can also be found when your belief
 turns out to be false, but I'm not worried about that here.)
 Do you see the area under the curve?
 When you are moving the mouse,
 the protagonist's false belief is pulling you away from the actual location
-and towards the location she believes this object to be in!
-        </div><img src="/img/van_der_wel_2014_fig2A.jpg" style=""/>
-        <p class="source">van der Wel et al (2014, figure 2)</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Here's a zoomed in view.  We're only interested in the top left box (implicit condition,
+and towards the location she believes this object to be in!</div><img src="/img/van_der_wel_2014_fig2A.jpg" style=""/><p class="source">van der Wel et al (2014, figure 2)</p></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Here's a zoomed in view.  We're only interested in the top left box (implicit condition,
 participant has true belief).
 To repeat,
 When you are moving the mouse,
 the protagonist's false belief is pulling you away from the actual location
-and towards the location she believes this object to be in!
-        </div><img src="/img/van_der_wel_2014_fig2B.jpg" style=""/>
-        <p class="source">van der Wel et al (2014, figure 2)</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="notes">Using the same task, van der Wel et al also show that some processes are NOT automatic ...</div>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/van_der_wel_2014_fig3.jpg" style=""/>
-        <div class="notes">\citep[p.\ 132]{Wel:2013uq}:
+and towards the location she believes this object to be in!</div><img src="/img/van_der_wel_2014_fig2B.jpg" style=""/><p class="source">van der Wel et al (2014, figure 2)</p></div></div></div></section><section class="slide"><div class="notes">Using the same task, van der Wel et al also show that some processes are NOT automatic ...</div><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/van_der_wel_2014_fig3.jpg" style=""/><div class="notes">\citep[p.\ 132]{Wel:2013uq}:
 ‘In support of a more rule-based and controlled system, we found that response initiation times 
 changed as a function of the congruency of the participant’s and the agent’s belief in the 
 explicit group only. Thus, when participants had to track both beliefs, they slowed down 
 their responses when there was a belief conflict versus when there was not. The observation 
-that this result only occurred for the explicit group provides evidence for a controlled system.’
-        </div>
-        <p class="source">van der Wel et al (2014, figure 3)</p>
-      </div>
-    </div>
-  </div>
-  <div class="slide">
-    <div data-what="img" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-    <div style="position: absolute; top:0; left:0; width:100%; height:100%;"> 
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Let me emphasise this because we'll come back to it later:
-          </div>
-          <p class="notes show center">‘they slowed down their responses when there was a belief conflict versus when there was not’</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Dual Process Theory of Mindreading</p>
-          <p class="hem-around">Automatic and nonautomatic mindreading processes are distinct : different conditions
-influence whether they occur and which ascriptions they generate.
-          </p>
-          <div class="handout">\emph{Dual Process Theory of Mindreading}.  
-Automatic and nonautomatic mindreading processes are independent in
-this sense: different conditions influence whether they occur and
-which ascriptions they generate.
-          </div>
-          <div class="handout">\citet{qureshi:2010_executive} found that automatic and nonautomatic
-mindreading processes are differently influenced by cognitive load, and
-\citet{todd:2016_dissociating} provided evidence that adding time pressure
-affects nonautomatic but not automatic mindreading processes.
-          </div>
-          <div class="slide">
-            <p class="em-above">evidence?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/dual_process.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">fantasy</p>
-        <div class="notes">What would be the ideal evidence for the Dual Process Theory of Mindreading?
-Suppose we had a version of Southgate et al, 2007’s task in which subjects were 
-instructed to make an action prediction by pressing one of two buttons (depending
-on where they thought the hand would appear).  Now consider what would happen
-if we introduced time pressure, or if we introduced a secondary task.
-Both factors should influence the pattern of errors in the instruction-driven button press, 
-whereas neither factor should affect anticipatory looking.
-        </div>
-        <div class="notes">Also idea: no correlations between anticipatory looking and button press responses,
-except perhaps under max time pressure (when button presses may become more accurate).
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/qureshi_2010_table1i.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Most of the evidence comes not from false belief but from a L1 VPT task
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/qureshi_2010_table1ii.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Dual Process Theory of Mindreading</p>
-          <p class="hem-around">Automatic and nonautomatic mindreading processes are distinct : different conditions
-influence whether they occur and which ascriptions they generate.
-          </p>
-          <p class="em-above">evidence?</p>
-          <div class="slide">
-            <p class="indent">--- automatic mindreading is unaffected by time pressure (L1-VPT; Todd et al, 2016)</p>
-            <p class="indent">--- automatic mindreading is unaffected (or enhanced?) by secondary task (L1-VPT; Qureshi et al, 2010)</p>
-            <div class="notes">Two limits on the available evidence.
-First, the evidence comes from the Samson et al L1 VPT task
-rather than a belief-tracking task.  
-Second, Todd et al dissociate automatic and controlled responses, but the 
-controlled response is not a perspective taking response.  (Similar objections
-could be made to Qureshi.)  So in both cases, treating these 
-findings as evidence for a dual processs theory of mindreading depends on 
-the background assumption that nonautomatic mindreading is affected by
-time pressure and places demands on executive function that are incompatible
-with its being unaffected or enchanced by the occurrence of a secondary task.
-            </div>
-          </div>
-          <div class="slide">
-            <p class="indent">--- Low et al’s location/identity manipulation (coming later ...)</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12"><img src="/img/lin_2010_fig3.png" style=""/>
-        <div class="handout notes">\citet{lin:2010_reflexively} show that successful visual perspective taking (in the 
-director task) is faster among those with greater working memory capacity (Experiment 1) and 
-slower when cognitive load is imposed (Experiment 2).
-        </div>
-        <p class="source">Lin et al (2010, figure 3)</p>
-        <div class="notes">‘Fig. 3. Latency of decision window for the target as a function of
-cognitive load and presence of a competitor (Experiment 2).’
-        </div>
-        <div class="notes">The task is a director study.  ‘competitor present’ means there are two possible objects
-only one of which the director can see.
-        </div>
-        <div class="notes">The ‘decision window’ in ‘the time difference between first noticing the
-target and finally reaching for it’
-        </div>
-        <div class="notes">Note that the decision window widens under cognitive load only when a
-competitor object is present, i.e. only when the task requires perspective
-taking!
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+that this result only occurred for the explicit group provides evidence for a controlled system.’</div><p class="source">van der Wel et al (2014, figure 3)</p></div></div></div><div class="slide"><div data-what="img" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"> <div class="words"><div class="middle"><div class="notes">Let me emphasise this because we'll come back to it later:</div><p class="notes show center">‘they slowed down their responses when there was a belief conflict versus when there was not’</p></div></div></div></div></section></div></body></html>
