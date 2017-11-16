@@ -1,0 +1,512 @@
+---cson
+layout: 'default2'
+title: 'Lecture 07: A Dual-Process Theory of Mindreading'
+subtitle: ''
+weburl: ''
+units: []
+abstract: """
+  
+  """
+lecture_date: '2017/11/23'
+hidden: true
+---
+
+include ../../fragments/lecture_mixins
+include ../../fragments/unit_mixins
+
+- var images = get_images('bali')
+
+
++slide_middle
+  .q1.hide
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+      limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+      
+  .q2
+    p.huge-glow: span.hide Q2
+    p(style='margin-top:-4em;')
+      span.hide Why do infants manifest abilities to 
+      span.track-beliefs track beliefs
+      span.hide  in some cases but not all?
+  .slide
+    +show('.q2 span.hide')
+    
+  .q3.hide
+    p.huge-glow Q3
+    p(style='margin-top:-4em;'): :t
+      Why is belief-tracking in adults sometimes but not always automatic?
+      How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+  .slide
+    +show('.q1')
+  .slide
+    +show('.q3')
+    .notes: :t
+      I think we can provide candidate answers to all three questions by appeal to a 
+      dual-process theory of mindreading.
+
+
+
++title_slide({document:document, images:images})
+  .notes: :t
+    An immediate problem facing any advocate of a dual process theory is that 
+    the most familiar such theories are burdened by what appear to be
+    strong commitments which are not obviously needed to generate predictions.
+  .notes: :t
+    For instance, Spelke and Carey have proposed a distinction between core cognition and
+    knowledge. Their distinction involves commitment to a dual process theory.
+    But it also involves commitment to quite strong claims about innateness, phylogeny and
+    representational format. These commitments appear unrelated to the anomalous pattern of
+    development we aim to explain.
+  .notes: :t
+    To avoid theoretical commitments which seem inessential given our aim, it is perhaps useful
+    to characterise the core commitment of any dual process theory in terms of a very simple
+    causal model.
+  //-
+    Some researchers have proposed an alternative claim.
+    Instead of treating implicit responses as simply providing more sensitive measures,
+    Spelke and Carey have proposed a distinction between core cognition and knowledge.
+    On this view, 
+
+
+
+
+
+
++slide({bkg:'dual_process_operationalized_10.jpg'})
+  .notes: :t
+    Here’s a depiction of the causal model I take to characterise any dual process theory.
+  .notes: :t
+    ‘response 1’ is a variable representing which response the subject will give.
+    [Which values it takes will depend on what sort of response it is (e.g. a verbal
+    response, proactive gaze, button press.)
+    We can think of it as taking three values, one for correct belief tracking,
+    one for fact tracking, and one for any other response.]
+  .notes: :t
+    ‘process 1’ and ‘process 2’ are variables which each represent whether a certain
+    kind of mindreading process will occur and, if so, what it’s outcome is.
+  .notes: :t
+    And the arrows show that the probability that response 1 will have a certain value is
+    influenced by the value of the variables process 1 and process 2 (and by other things
+    not included in the model).
+    So it should be possible to intervene on the value of ‘process 1’ in order to
+    bring about a change in the value of ‘response 1’.
+  .notes: :t
+    [I’ve used thicker and thinner arrows informally to indicate stronger 
+    and weaker dependence. Strictly speaking the width has no meaning and this model
+    doesn’t specify exactly how the values of variables are related, only that they are.]
+
++slide_middle({bkg:'dual_process_operationalized_11.jpg'})
+  .handout.img(data-src='img/dual_process_operationalized_11.neg.jpg')
+  .notes: :t
+    Of course, much the same is true for ‘response 2’ as well.  It’s just that
+    the changing the values of other variables will have different effects on
+    the values of ‘response 1’ and ‘response 2’.
+  .notes: :t
+    [Limit: this depiction ignores time, which is of course critical.]
+    
+  .slide
+    +blur('img.bkg', '5px')
+    .notes: :t
+      So what does a Dual Process Theory claim?
+      The core claim is just this:
+    .step1
+      p.handout.notes.show Dual Process Theory (core part):
+      p.handout.notes.show
+        span Two (or more) processes for tracking Xs are distinct: 
+        br
+        span the conditions which influence whether they occur, 
+        br 
+        span and which outputs they generate, 
+        br 
+        span do not completely overlap.
+    .notes: :t
+      Of course, this is just the core part of a dual process theory, the part common to
+      dual process theories of memory, of physical cognition, of reasoning, of mindreading, and of
+      anything else.
+      
+    
++slide_middle
+  p.center operational characterisation
+  .notes: :t
+    Having given you a formal definition, let me also offer you an
+    operationalization of a dual process theory of mindreading.
+  .notes: :t
+    Suppose you have two response types, R1 and R2, which can both indicate belief tracking
+    (or, thinking more generally, perspective taking) under some conditions.
+    Thinking operationally, what would it be for the two response types to reflect the
+    operations of different systems?
+    
+
+    
+    
+
++slide({bkg:'dual_process_operationalized_1.jpg'})
+  .notes: :t
+    Suppose you have two response types, R1 and R2, which can both indicate belief tracking
+    (or, thinking more generally, perspective taking) under some conditions.
+    Thinking operationally, what would it be for the two response types to reflect the
+    operations of different systems?
+  .notes: :t
+    First, the conditions under which one or another response type tracks beliefs should vary.  
+  .notes: :t
+    1.a E.g. changing the \textbf{instructions} should reduce the probability that responses
+    of one type will track beliefs without much affecting the probability that responses
+    of the other type will track belief.
+  .notes: :t
+    Evidence for this includes studies by Schenider et al
+    
+    
++slide({bkg:'dual_process_operationalized_2.jpg'})
+  .notes: :t
+    1.b Or, e.g., changing the \textbf{content of the belief} to be tracked from location to
+    identity, say, should reduce the probability that responses of one type track beliefs
+    without much affecting the probability that responses of the other type will track beliefs.
+  .notes: :t
+    Evidence for this includes studies by Low and his collaborators.
+      
+    
++slide({bkg:'dual_process_operationalized_3.jpg'})
+  .notes: :t
+    1a+b. And, ideally, it should be possible find different conditions that reduce the
+    probability that different responses track beliefs.
+  
+    
++slide({bkg:'dual_process_operationalized_4.jpg'})
+  .notes: :t
+    Further, the probability that responses of these two types track beliefs should be
+    differently affected by factors such as time pressure and cognitive load. (It isn’t
+    important that either is entirely unaffected; what matters is just that the effects are
+    different.)
+  .notes: :t
+    As far as I know we don’t yet have direct evidence for this, because few studies
+    have compared what happens to two response types as factors like time pressure 
+    or cognitive load are varies.
+    There is, of course, some evidence that responses of some types are less susceptible
+    to cognitive load than others (e.g. \citet{qureshi:2010_executive} on L1 VPT).
+
++slide_middle({bkg:'dual_process_operationalized_5.jpg'})
+  .notes: :t
+    So far I’ve been working with a simplifying assumption about the relation
+    between types of response and kinds of process.
+  .slide
+    +blur('img.bkg', '5px')
+    .first-attempt.center
+      p Process 1 -> Response 1
+      p Process 2 -> Response 2
+    .notes: :t
+      I’ve been assuming that responses of type R1 are dominated by one mindreading process
+      whereas responses of type R2 are dominated by another mindreading process.
+      But responses types and processes may not be so closely associated, of course.
+  .slide
+    +line-through('.first-attempt')
+    .notes: :t
+      This is because (a) any response is likely to be a consequence of multiple processes;
+      and, (b), for some response types such as button selection or proactive gaze,
+      changing factors like time pressure could change which mindreading process dominates
+      responses of that type.
+    .notes: :t
+      In fact variability in the relation between a mindreading process and a response type
+      is a potentially useful source of evidence in support of a dual process 
+      theory of mindreading.
+      Changes in the processes determining a response type can be detected where we have
+      situations in which we know, or assume, the two processes yield different answers 
+      (cf Todd et al).
+      For example ...
+    
++slide({bkg:'dual_process_operationalized_6.jpg'})
+  .notes: :t
+    To illustrate, take the case where we instruct subjects to track the location
+    of a ball. 
+    Subjects are asked to press a button to indicate whether a ball is present or absent.
+    We know that button selection will not track beliefs when subjects are not 
+    under time pressure.
+    But what happens if we increase time pressure.
+
++slide({bkg:'dual_process_operationalized_7.jpg'})
+  .notes: :t
+    It is possible that increasing time pressure will very slightly, but perhaps
+    measurably increase the probability that button presses 
+    are dominated by a different mindreading process, one that is less sensitive to
+    instructions.  In that case, we would expect to observe slightly more 
+    belief tracking in the responses as time pressure is increased.
+  .notes: :t
+    \citet{todd:2016_dissociating} have recently demonstrated this type of effect
+    for L1-VPT; as far as I know, it has not yet been demonstrated for belief tracking.
+
+
++slide({bkg:'dual_process_operationalized_10.jpg'})
+  .notes: :t
+    So here’s the causal model I take to underlie a dual process theory.
+  .notes: :t
+    ‘response 1’ is a variable representing which response the subject will give.
+    [Which values it takes will depend on what sort of response it is (e.g. a verbal
+    response, proactive gaze, button press.)
+    We can think of it as taking three values, one for correct belief tracking,
+    one for fact tracking, and one for any other response.]
+  .notes: :t
+    ‘process 1’ and ‘process 2’ are variables which each represent whether a certain
+    kind of mindreading process will occur and, if so, what it’s outcome is.
+  .notes: :t
+    And the arrows show that the probability that response 1 will have a certain value is
+    influenced by the value of the variables process 1 and process 2 (and by other things
+    not included in the model).
+    So it should be possible to intervene on the value of ‘process 1’ in order to
+    bring about a change in the value of ‘response 1’.
+  .notes: :t
+    [I’ve used thicker and thinner arrows informally to indicate stronger 
+    and weaker dependence. Strictly speaking the width has no meaning and this model
+    doesn’t specify exactly how the values of variables are related, only that they are.]
+
++slide({bkg:'dual_process_operationalized_11.jpg'})
+  .handout.img(data-src='img/dual_process_operationalized_11.neg.jpg')
+  .notes: :t
+    Of course, much the same is true for ‘response 2’ as well.  It’s just that
+    the changing the values of other variables will have different effects on
+    the values of ‘response 1’ and ‘response 2’.
+  .notes: :t
+    [Limit: this depiction ignores time, which is of course critical.]
+    
+  .slide
+    +blur('img.bkg')
+    .notes: :t
+      But for many practical purposes, we can ignore the full complexity of this model.
+      For much of the time we can ignore the fact that changing factors like time pressure may
+      alter how response types relate to mindreading processes.
+      So let me get back to the basic, crude picture.
+
++slide({bkg:'dual_process_operationalized_5.jpg'})
+  .notes: :t
+    On the crude picture, responses of different types, R1 and R2, are dominated by
+    different kinds of mindreading process.
+    This is manifest in that 
+  .notes: :t
+    (1) the conditions under which one or another response type tracks beliefs vary;
+  .notes: :t
+    and
+  .notes: :t
+    (2) the probability that responses of these two types track beliefs should be differently
+    affected by factors such as time pressure and cognitive load.
+  .notes: :t
+    Note that there is nothing peculiar to the case of mindreading here.
+    Much the same ideas apply to dual process theories of memory, or 
+    reasoning or physical cognition.
+
+
++slide_middle({bkg:'dual_process_operationalized_5.jpg'})
+  +blur('img.bkg', '5px')
+  .notes: :t
+    So what does a Dual Process Theory of Mindreading claim?
+    The core claim is just this:
+  .step1
+    p.center.handout.notes.show Dual Process Theory of Mindreading: Schema
+    .slide
+      +fade('img.bkg')
+      p.handout.notes.show: :t
+        Two (or more) mindreading processes are distinct: the conditions which
+        influence whether they occur, and which outputs they generate, do not 
+        completely overlap.
+      
+  //-
+    .slide.step2.em-above
+      +blur('.step1')
+      p.center Process -> Response
+      .notes How are responses related to processes, according to a dual process theory?
+      .notes.show
+        p A single response can be a consequence of multiple processes.
+        p One kind of process may dominate a certain kind of response ...
+        p ... but which process dominates may depend on factors such as time pressure.
+  //-
+  //- .slide.step3.em-above
+  //-   +blur('.step1')
+  //-   .notes You might object that it makes no sense to have more than one process dedicated to mindreading.
+  //-   .notes.show
+  //-     p.center Why might there be more than one mindreading process?
+  //-   .slide
+  //-       p.center speed–accuracy trade-offs, or ...
+  //-     .notes: :t
+  //-       \textbf{Since any broadly inferrential process must make a trade-off between
+  //-       speed and accuracy, having two or more processes devoted to the same domain
+  //-       could be advantageous because it would allow you to achieve vastly different
+  //-       trade-offs between speed and accurcay.}
+  //- .slide.step4.em-above
+  //-   +blur('.step3')
+  //-   .notes.show
+  //-     p.center So what?
+  //-   .notes: :t
+  //-      Why should we care whether a dual process theory is correct?
+  //-   .slide
+  //-       p.center We could explain, and
+  //-         span.predict predict
+  //-         span , apparently discrepant responses to scenarios involving mental states.
+  //-       .notes: :t
+  //-          If we had a dual process theory of mindreading, we could explain, and predict,
+  //-          apparently discrepant responses to scenarios involving mental states.
+  //-          [No predictions yet, we only have the schema]
+  //- .slide
+  //-   +invert('.predict')
+  //- .notes: :t
+  //-   So what are the predictions?
+  //-   Well, so far this is just the outline of a dual process theory.
+  //-   It’s the schematic part which is common to
+  //-   dual process theories of memory and of physical cognition.
+  //-   To generate predictions we need to fill in the
+  //-   the mindreading-specific parts of the dual process theory.
+
+//- 
+  +slide_middle
+    p.center development?
+    .notes: :t
+      So far I haven’t said anything about development at all.
+      The bare idea of a dual process theory doesn’t have developmental committments.
+      But one key attraction of a dual process theory is that it can make sense of 
+      otherwise anomalous patterns in development ...
+
+  +slide_middle({bkg:'dual_process_operationalized_12.jpg'})
+    .notes: :t
+      In particular, a dual process theory has the power to explain why
+      comparing two types of response may yield interactions between age and performance.
+    .notes: :t
+      Much developmental research indicates that there are indeed striking
+      age-performance interactions.
+      This is a huge problem.
+      No current attempt to explain these interactions without a dual process theory of
+      mindreading is even consistent with the available evidence. 
+      This motivates considering the possibility that a dual
+      process theory of mindreading is correct.
+
+
++slide_middle
+  p.center predictions ?!
+  .notes: :t
+    But what are the predictions?
+    Well, so far this is just the outline of a dual process theory.
+    It’s the schematic part which is common to 
+    dual process theories of memory and of physical cognition.
+    To generate predictions we need to fill in the 
+    the mindreading-specific parts of the dual process theory.
+  
+
+
++slide
+  .columns-2.dont-break-paragraphs
+    .mechanisms
+      p.invert 1. Mechanisms
+      p.em-above Conjecture: 
+        span Some mindreading processes are more 
+        span.automatic automatic
+        span  than others.
+      .slide
+        +invert('.automatic')
+      .slide
+        +uninvert('.automatic')
+        p.em-above Prediction: 
+          span Varying task instructions will differentially affect responses indicative of mindreading.
+    .slide.models
+      +blur('.mechanisms')
+      p.invert 2. Models
+      p.em-above Conjecture:  
+        span Some automatic mindreading processes rely on 
+        span.minimal minimal 
+          span.model model
+          span s of the mental.
+        span.
+      .slide
+        +invert('.model')
+      .slide
+        +uninvert('.model')
+        +invert('.minimal')
+      .slide
+        +uninvert('.minimal')
+        p.slide.em-above Prediction: 
+          span Those mindreading processes are subject to the 
+          span.sig-lim signature limits
+          span  of minimal models.
+        .slide
+          +invert('.sig-lim')
+          .notes.handout: :t
+            A \emph{signature limit of a model} is a set of predictions derivable from the model which are
+            incorrect, and which are not predictions of other models under consideration.
+      
+  .notes.handout.ctd (See \citealp{wang:2015_limits,low:2010_preschoolers,low:2014_quack,edwards:2017_reaction}; contrast \citealp{scott:2015_infants}.)
+  
+  .c3.slide
+    +blur('.slide.models > *')
+    p.em-above Conjecture: 
+      span Some automatic mindreading depends on motor processes.
+    p.hem-above Prediction: 
+      span Impairing motor processes can impair mindreading.
+      
+
+
++insert_unit({unit:'minimal_theory_of_mind', title_slide:true, images:images, handout:true})
+
+
++slide
+  .columns-2.dont-break-paragraphs
+    .mechanisms
+      p.invert 1. Mechanisms
+      p.em-above Conjecture: 
+        span Some mindreading processes are more 
+        span.automatic automatic
+        span  than others.
+        p.em-above Prediction: 
+          span Varying task instructions will differentially affect responses indicative of mindreading.
+    .models
+      p.invert 2. Models
+      p.em-above Conjecture:  
+        span Some automatic mindreading processes rely on 
+        span.minimal minimal 
+          span.model model
+          span s of the mental.
+        span.
+        p.slide.em-above Prediction: 
+          span Those mindreading processes are subject to the 
+          span.sig-lim signature limits
+          span  of minimal models.
+        .slide
+          +invert('.sig-lim')
+          .notes.handout: :t
+            A \emph{signature limit of a model} is a set of predictions derivable from the model which are
+            incorrect, and which are not predictions of other models under consideration.
+      
+
+
++insert_unit({unit:'signature_limits', title_slide:true, images:images, handout:true})
+
+
+
+
+//- 
+  TODO : Here : show how the dual process theory answers the three questions ...
+  ALso: include Maymon et al task and Edwards et al ...
+
++slide_middle
+  .q1
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+      limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+      
+  .q2
+    p.huge-glow: span.hide Q2
+    p(style='margin-top:-4em;')
+      span Why do infants manifest abilities to 
+      span.track-beliefs track beliefs
+      span  in some cases but not all?
+  
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-4em;'): :t
+      Why is belief-tracking in adults sometimes but not always automatic?
+      How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+  .slide
+    +show('.q1')
+  .slide
+    +show('.q3')
+    .notes: :t
+      I think we can provide candidate answers to all three questions by appeal to a 
+      dual-process theory of mindreading.
+
+

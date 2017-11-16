@@ -12,57 +12,31 @@ description: """
 include ../../../fragments/unit_mixins
 
 
-+slide_middle
-  p.center Why two processes?
-  .notes: :t
-    \textbf{Since any broadly inferrential process must make a trade-off between
-    speed and accuracy, having two or more systems each capable of 
-    predicting objects’ trajectories could be advantageous.}
-
 
 +slide_middle
-  p.center speed vs accuracy
-  .notes: :t
-    Since this is an important point for me, let me repeat:
-    any broadly inferrential process must make a trade-off between
-    speed and accuracy.
-  .slide
-    +img('henmon_1911_table2.png')
-    p.right.grey-text Henmon (1911, table 2)
+  .q1.hide
+    p.huge-glow Q1
+    p(style='margin-top:-4em;'): :t
+      What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+      limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+      
+  .q2.hide
+    p.huge-glow: span.hide Q2
+    p(style='margin-top:-4em;')
+      span.hide Why do infants manifest abilities to 
+      span.track-beliefs track beliefs
+      span.hide  in some cases but not all?
+    
+  .q3
+    p.huge-glow Q3
+    p(style='margin-top:-4em;')
+      span.a Why is belief-tracking in adults sometimes but not always automatic?
+      span.b How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+  +blur('.q3 .a')
   
-  .notes speed vs accuracy:
-  .notes: :t
-    Here you see the results of an old experiment by Henmon
-    who had subjects judge which of two only very slightly different 
-    lines was longer.
-    He noted that ‘under each category of judgment the wrong judgments 
-    are in general shorter’.
-  .notes: :t
-    This experiment doesn’t provide evidence for a speed-accuracy
-    trade off and wasn’t designed to (speed was not experimentally mainpulated).
-    But it’s interesting that the idea of a speed-accuracy trade-off 
-    goes back such a long way.
-  .notes: :t
-    Henmon p. 195: ‘A continuation of this investigation (1) where the time of 
-    exposure of stimuli was limited, (2) where the time of judgment was voluntarily 
-    shortened or prolonged, (3) and with
-    varying differences in stimuli, should give significant results.
-    footnote: The writer had planned such an investigation, but a change of work 
-    has necessitated its indefinite postponement; hence the publication of these 
-    preliminary results.’
-  .notes: :t
-    \textbf{The value of having two systems which process inputs from a single
-    domain arises from this trade-off.}  Having multiple systems enables 
-    complementary trade-offs to be made.
-    So it is not obvious that there could not be 
-    two systems both of which can predict the trajectories of moving objects.
-
-
+  
 +slide_middle
-  p.center.q1 How to trade accuracy for speed?
-  .slide
-    +blur('.q1')
-    p.em-above.center Which model of minds and actions characterises automatic mindreading?
+  p.em-above.center Which model of minds and actions characterises automatic mindreading?
 
 +slide({bkg:'model_of_the_mental.jpg'})
 
