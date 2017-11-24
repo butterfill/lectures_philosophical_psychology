@@ -18,20 +18,18 @@ include ../../fragments/unit_mixins
 
 
 +slide_middle
-  .q1.hide
+  .q1
     p.huge-glow Q1
     p(style='margin-top:-4em;'): :t
       What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
       limits, to track others’ perceptions, knowledge, beliefs and other mental states?
       
-  .q2
-    p.huge-glow: span.hide Q2
+  .q2.hide
+    p.huge-glow: span Q2
     p(style='margin-top:-4em;')
-      span.hide Why do infants manifest abilities to 
+      span Why do infants manifest abilities to 
       span.track-beliefs track beliefs
-      span.hide  in some cases but not all?
-  .slide
-    +show('.q2 span.hide')
+      span  in some cases but not all?
     
   .q3.hide
     p.huge-glow Q3
@@ -39,7 +37,7 @@ include ../../fragments/unit_mixins
       Why is belief-tracking in adults sometimes but not always automatic?
       How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
   .slide
-    +show('.q1')
+    +show('.q2')
   .slide
     +show('.q3')
     .notes: :t
