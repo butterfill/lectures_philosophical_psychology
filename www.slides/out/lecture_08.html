@@ -1,1624 +1,461 @@
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg"><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Lecture 08: Mindreading / Metacognitive Feelings | Philosophical Psychology</title><meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - fonts--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
 
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Lecture 08: Mindreading in Nonhumans | Philosophical Psychology</title>
-    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
+
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section>
+
+<!-- param @cls and param @options should be objects-->
+
+
+
+<div class="notes notes-header-tex">\title {Philosophical Psychology \\ Lecture 08: Mindreading / Metacognitive Feelings}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\maketitle</div><div id="title-slide" class="slide"><img src="/img/bkg/bali/AP3232947.JPG" class="bkg"/><div class="spacer">&nbsp;</div><div class="no-fade-in"><div style="" class="title-block"><div class="title-container"><h1 style="line-height:45pt;" class="title1 no-fade-in"> <span class="word_0">Lecture </span><span class="word_1">08: </span><span class="word_2">Mindreading </span><span class="word_3">/ </span><span class="word_4">Metacognitive </span><span class="word_5">Feelings </span></h1><h3 class="email no-fade-in">s.butterfill@warwick.ac.uk</h3></div></div></div><div class="handout">\def \ititle {Lecture 08: Mindreading / Metacognitive Feelings}</div><div class="handout">\begin{center}</div><div class="handout">{\Large</div><div class="handout">\textbf{\ititle}</div><div class="handout">}</div><div class="handout">&nbsp;</div><div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div><div class="handout">\end{center}</div><div class="notes"><t:04213240980170667></t:04213240980170667></div>
+
+</div><section style="" class="slide"><img src="/img/dual_process_operationalized_5.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">Recall what a Dual Process Theory of Mindreading claims.
+The core claim is just this:</div><div class="step1"><p class="center handout notes show">Dual Process Theory of Mindreading: Schema</p><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><p class="handout notes show">Two (or more) mindreading processes are distinct: the conditions which
+influence whether they occur, and which outputs they generate, do not 
+completely overlap.</p></div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_11.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">To generate readily testable predictions, we need to go beyond the schematic 
+part of a dual process theory, the part which is common to 
+dual process theories of memory and of physical cognition.
+We were focussed on mindreading in the last lecture;
+but before that we also considered what are actually dual process theories of 
+object cognition and goal tracking.</div><div class="notes">In each domain,
+we generate further predictions by filling in the 
+the domain-specific parts of the dual process theory.</div><div class="notes">table: domain / mechanism-or-model / signature limit / ref. for evidence</div><table class="data"><thead><tr><td>domain</td><td>mechanism/model</td><td>signature limit</td><td>source (e.g.)</td></tr></thead><tbody><tr><td>objects</td><td>object indexes</td><td>featural cues</td><td>Xu & Carey, 1996 </td></tr><tr class="even"><td><p class="mindreading">minds</p></td><td>minimal theory of mind</td><td>identity</td><td>Edwards & Low, 2017</td></tr><tr><td>actions</td><td>motor processes</td><td>own ability</td><td>Kanakogi & Itakura, 2011</td></tr></tbody></table><div class="slide"><div data-what=".mindreading" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">Before going further,
+I want to continue thinking about the case of mindreading,
+to say a little more in defence of the dual-process theory of mindreading 
+and explain how it answers the Three Questions about mindreading ...</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">We have to go from the dual process schema to add claims about the 
+nature of the processes. It’s these claims that give us a theory *of mindreading*.</div><div class="columns-2 dont-break-paragraphs"><div class="mechanisms"><p class="invert">1. Mechanisms</p><p class="em-above">Conjecture: <span>Some mindreading processes are more </span><span class="automatic">automatic</span><span> than others.</span></p><p class="em-above">Prediction: <span>Varying task instructions will differentially affect responses indicative of mindreading.</span></p></div><div class="models"><p class="invert">2. Models</p><p class="em-above">Conjecture:  <span>Some automatic mindreading processes rely on </span><span class="minimal">minimal <span class="model">model</span><span>s of the mental.</span></span><span></span></p><p class="em-above">Prediction: <span>Those mindreading processes are subject to the </span><span class="sig-lim">signature limits</span><span> of minimal models.</span></p></div></div><div class="notes handout ctd">(See \citealp{wang:2015_limits,low:2010_preschoolers,low:2014_quack,edwards:2017_reaction}; contrast \citealp{scott:2015_infants}.)</div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Objection from Action}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Objection from Action}</div><div class="notes">Which responses can automatic mindreading processes dominate? 
+If they could only control proactive gaze, their value would appear limited.
+Further, we know infants can demonstrate belief tracking not only in violation-of-expectation
+and anticipatory looking tasks, but also on tasks which require actions such as pointing and
+helping. Could responses on such tasks be a consequence of automatic mindreading processes?</div>
+<!-- param @cls and param @options should be objects-->
+
+
+
+<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="handout">\section{Maymon, Sivanantham, Low \& Butterfill (pilot)}
+
+\begin{center}
+
+\includegraphics[scale=0.37]{img/maymon_fig1.png}
+
+\end{center}
+
+Sequence of events (1 – 10) in the FB-identity condition.
+
+\begin{center}
+
+\includegraphics[scale=0.3]{img/maymon_fig3.png}
+
+\end{center}
+
+\% of participants displaying type of first look by condition (**P = 0.005; ***P < 0.001).
+
+\vfill
+
+\begin{center}
+
+\includegraphics[scale=0.35]{img/maymon_fig4.png}
+
+\end{center}
+
+Schematic representation of individuals’ (N = 96) course of action in Experiment 1 between
+conditions: (A) FB-identity, (B) FB-location, (C) TB-identity, and (D) TB-location. The course
+was divided into 4 stages: (1) swerving, (2) advancing, (3) reaching, and (4) ultimately handing
+over the actual or non-actual bag (dotted lines represent thresholds for each stage). In
+Experiment 2, we examined how stalling of motor representations, by temporarily tying individual
+observers’ hands (E), affected the course of their (N = 24) helping action in the FB-location
+condition (F).</div><p class="right huge-glow"><span>objection</span><br/><span>from action</span></p><div class="notes">(a) Automatic processes useless if they only control proactive gaze
+(b) Infants can demonstrate belief tracking not only in v-of-e and anticipatory
+looking, but also on tasks which require actions such as pointing and helping.</div><div class="notes">Can a dual process theory of mindreading accommodate this objection?</div><div class="notes">This question came up in discussion with Jason Low 
+and together with Chris Maymon we found a way to answer it.
+Our conjecture was that although automatic mindreading processes 
+are unlikely to feed into deliberative reasoning about what to do,
+they could affect motor actions and so initiate action in the right direction.</div><div class="notes">To test this conjecture, we developed a simple helping paradigm.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>conjecture</p><p>although automatic mindreading processes  are unlikely to feed into deliberative reasoning about what to do,</p><p>they could affect motor actions </p><p>and so initiate action in the right direction.</p></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al, pilot Figure 1, used with permission</p><div class="notes">Participants started while seated at a desk; they needed to get up to help 
+a protagonist by taking their chair, standing on it and retrieving a bag
+from a high place.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig3a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">First fixations show just the pattern you would expect for beliefs about locations.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">First fixations also show just the pattern our dual process theory predicts for 
+beliefs about identity.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_cut_fig.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">Maymon et al divided participants’ movements into four stages:
+swerving (stage-1), advancing (stage-2) towards the actual or non-actual bag, 
+reaching (stage-3) for the bag, and ultimately handing over (stage-4) the actual or
+non-actual bag.</div><div class="notes">The first stage of movement shows just the pattern that first fixation did,
+and indeed in FB-LOC, first fixation and swerve are correlated.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig4b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 4B, used with permission</p><div class="notes">Here you can see how participants moved in the false belief location condition.
+There was also a true belief condition.</div><div class="notes">As you can see, participants mostly started off in the right direction.
+This is the swerve.</div><div class="notes">But there is quite a bit of switching, and a number of</div><div class="notes">The swerve is correlated with the protagonists’ belief state: 
+which direction they swerve in differs between true and false beliefs.
+The direction of swerve is also correlated with proactive gaze</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Automatic belief tracking doesn’t control how you end up acting, but it can set you off in the right direction.</p><div class="slide"><p class="center em-above">Prediction:</p><p>Slowing 1- or 2-year-olds’ helping responses would reduce the probability that their responses indicate belief tracking.</p><p>The opposite is true for adults.</p></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+limits, to track others’ perceptions, knowledge, beliefs and other mental states?</p></div><div class="q2"><p class="huge-glow"><span>Q2</span></p><p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p></div><div class="q3"><p class="huge-glow">Q3</p><p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
+How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?</p></div><div data-what=".q1, .q2, .q3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="slide"><div data-what=".q3" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">I think we can provide candidate answers to two questions by appeal to a 
+dual-process theory of mindreading.</div></div><div class="slide"><div data-what=".q3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".q1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".q1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".q2" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">What about this question?  Minimal theory of mind is sufficient for solving
+standard false belief tasks involving location. Why do infants fail many such tasks?</div></div></div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{What about Development?}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{What about Development?}</div><div class="notes">Formally, minimal theory of mind is in principle sufficient to enable success on 
+standard false belief location tasks. 
+There is also some evidence that infants’ mindreading is based on a model of minds and actions
+specified by minimal theory of mind.
+If this is true, 
+why do infants manifest abilities to track beliefs in some cases but not all?</div>
+<!-- param @cls and param @options should be objects-->
+
+
+
+<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"> <p style="line-height:.9em;" class="right huge-glow-70"><span>What about</span><br/><span>development?</span></p><div class="notes">So far I’ve been characterising a dual process theory of mindreading which, like 
+dual process theories of memory and reasoning, focusses on adults.
+But of course most of the excitement concerns questions about development.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Why is there an age at which children pass some false belief tasks but systematically fail
+others? What feature or features distinguish the tasks these children fail from those they
+pass?</div><div class="notes">When you compare different types of response to a single scenario,
+why do you find that there is an interaction of age and performance?</div><div class="handout notes">Conjecture:
+\begin{enumerate}
+\item Automatic and nonautomatic mindreading processes both occur from the first year of life onwards.
+\item The model of minds and actions underpinning automatic mindreading process does not
+significantly change over development.
+\item In the first three or four years of life, nonautomatic mindreading processes involve
+relatively crude models of minds and actions, models which do not enable belief tracking.
+\item What changes over development is typically just that the model underpinning nonautomatic
+mindreading becomes gradually more sophisticated and eventually comes to enable belief tracking.
+\end{enumerate}</div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_8.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">The model of minds and actions underpinning automatic mindreading process does not
+significantly change over development.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_9.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><div class="notes">By contrast, the model of minds and actions underpinning nonautomatic mindreading process
+does significantly change over development.
+In the first three or four years of life, nonautomatic mindreading processes involve
+relatively crude models of minds and actions, models which do not enable belief tracking.
+What changes over development is typically just that the model underpinning nonautomatic
+mindreading becomes gradually more sophisticated and eventually comes to enable belief
+tracking.</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position:relative;"><img src="/img/low_2014_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Low et al, 2014 figure 2</p><div class="notes">There is evidence for this from a number of studies.</div><div class="notes">There is a pattern of no change across development when you consider 
+responses like looking time and anticipatory looking which tend to reflect
+automatic mindreading (although they do not always do so)</div><div class="notes">But when you consider responses like verbal predictions, which tend to reflect
+nonautomatic mindreading, you see improvements over development.</div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white"></div><div class="container_12"><div class="clear"></div><div class="words run-across"><p class="center">signature limits generate predictions</p></div><div class="container_12"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="center">Adults</p><p class="em-above">Hypothesis:</p><p>Some automatic belief-tracking systems rely on minimal models of the mental.</p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p class="center">Infants</p><p class="em-above">Hypothesis:</p><p>Infants’ belief-tracking abilities rely on minimal models of the mental.</p></div></div><div class="clear"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="em-above">Prediction:</p><p>Automatic belief-tracking is subject to the signature limits of minimal models.</p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p class="em-above">Prediction:</p><p>Infants’ belief-tracking is subject to the signature limits of minimal models.</p></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_13.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="notes show center">same signature limit -> same process</p></div></div></div></div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_9.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div style="position:relative;"><img src="/img/low_2014_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Low et al, 2014 figure 2</p><div class="notes">One important feature of these and other findings is that you get the same
+signature limits in adults and infants.</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+limits, to track others’ perceptions, knowledge, beliefs and other mental states?</p></div><div class="q2"><p class="huge-glow"><span>Q2</span></p><p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p></div><div class="q3"><p class="huge-glow">Q3</p><p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
+How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?</p></div><div class="notes">I think we have now provided candidate answers to two questions by appeal to a 
+dual-process theory of mindreading.</div></div></div></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Mindreading and Motor Representation}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Mindreading and Motor Representation}</div><div class="notes">So far, our dual process theory of mindreading says relatively little about
+the kinds of process involved in mindreading.
+Could automatic mindreading be an extension of motor processes that underpin goal tracking?</div>
+<!-- param @cls and param @options should be objects-->
+
+
+
+<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="right huge-glow">more predictions</p><div class="notes">One problem for the dual process theory currently is that we need to be
+able to generate more predictions.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">As I said before, we need four ingredients to characterise a mindreading process:
+a model of minds and actions, a mechanism, a task- and response-analysis and 
+some signature limits.</div><p>How to characterise a (or the) mindreading process?</p><p class="indent hem-around notes show model">1. model of minds and actions <span class="dp1">(minimal vs canonical)</span></p><p class="indent hem-around show mechanisms">2. mechanisms <br/><span class="dp2a">(automatic vs nonautomatic; </span><span class="dp2b"> <span class="motoric">motoric</span><span>  vs epistemic?</span></span><span class="dp2a">)</span></p><p class="indent hem-around notes show">3. task and response-type analysis</p><p class="indent hem-around notes show sig-lim">4. signature limits</p><div class="slide"><div data-what=".model, .sig-lim" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">So far we have mainly focussed on deriving signature limits from models.
+But this is a fraught process: the more detailed we specify the model, the more
+arbitrary it is. [Compare Spelke’s principles of object perception.]</div><div class="notes">A dual process theory of mindreading is in essence one that says there are multiple
+kinds of somewhat independent mindreading processes.  
+While this implies that the mindreading processes probably involve substantially different
+models of minds and actions, it doesn’t entail any very concrete committments.</div></div><div class="slide"><div data-what=".model" data-cls="bkg-grey-row " class="dv dv-removeclass"></div><div data-what=".mechanisms" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">We therefore need to combine speculation about models with speculation about mechanisms.</div></div><div class="slide"><div data-what=".motoric" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".motoric" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Given my attachment to the Crude Picture of the Mind, I'm attracted to a 
+simple but bold conjecture: \textbf{automatic mindreading is an extension of motor
+processes that underpin goal tracking}.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig4ef.png" style="clip: rect(0,360px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 4E-F, used with permission</p><div class="slide"><div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">Hands tied (a) eliminates anticipatory looking indicative of belief tracking, and
+(b) destorys the swerve indicative of belief tracking.</div><div class="notes">NB: we compared hands-tied with hands-free FB location, and separately with hands-free TB
+location. We did not do hands-tied TB.
+(‘proactive first looks and swerving of subjects in the hands-tied FB-location condition
+resembled proactive first looks and swerving of hands-free subjects in the corresponding
+TB-location condition (P = 0.566 and P = 0.057, respectively). ’)</div><div class="notes">[Stress that the new conjecture,
+automatic mindreading is an extension of motor processes that underpin goal tracking,
+is an optional development of the dual process theory and not something entailed by it.]</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="right huge-glow">dual-process theory of mindreading /end</p></div></div></div></div></section><section class="slide"><div class="layer1"><img src="/img/DSC_2627_crop_announce.low.jpg" class="bkg"/></div><div style="; mix-blend-mode: overlay;" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="firsttitle"><p style="line-height:0.75em" class="huge-glow-invert-80"><span>Metacognitive Feelings</span></p><div style="margin-top:-30px;"></div><p class="right"> s.butterfill@warwick.ac.uk </p></div></div></div></div></div><div style="position: absolute; top:0; left:0; width:100%; height:100%;"><div style="; mix-blend-mode: multiply;" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="secondtitle"><p style="line-height:0.75em" class="huge-glow-invert-80"><span>Metacognitive Feelings</span></p><div style="margin-top:-30px;"></div><p class="right"> s.butterfill@warwick.ac.uk </p></div></div></div></div></div></div><div class="notes">Metacognitive Feelings</div><div class="notes">Now I want to link the discussion of mindreading back to the discussion
+of object cognition.
+You almost certainly do not remember that we ended Lecture 05 with an
+unresolved and rarely considered problem
+about object cognition ...</div></section><div class="handout">&nbsp;</div><div class="handout">\section{A Problem about Object Cognition}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{A Problem about Object Cognition}</div><div class="notes">According to the Revised CLSTX Conjecture, 
+Five-month-olds’ abilities to track briefly unperceived objects
+are not grounded on belief or knowledge:
+instead
+they are consequences 
+of the operations of a system of object indexes
+and 
+of a further, independent capacity to track physical objects which involves motor
+representations and processes.
+Can this conjecture explain performance on habituation and violation-of-expectation tasks?</div>
+<!-- param @cls and param @options should be objects-->
+
+
+
+
+
+
+<!-- *todo* duplicated!--><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes ctd">\emph{The CLSTX conjecture} 
+Five-month-olds’ abilities to track occluded objects
+are not grounded on belief or knowledge:
+instead 
+they are consequences of the operations of 
+object indexes.
+
+\citep{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta}.</div><p>The CLSTX conjecture:</p><p class="em-above">Five-month-olds’ abilities to track briefly unperceived objects</p><p>are not grounded on belief or knowledge:</p><p>instead </p><p>they are consequences of the operations of </p><p>a system of <span class="object-index">object index</span><span>es.</span></p><p class="em-above small-text right">Leslie et al (1989); Scholl and Leslie (1999); Carey and Xu (2001)</p><div class="notes">(‘CLSTX’ stands for Carey-Leslie-Scholl-Tremoulet-Xu \citep[see][]{Leslie:1998zk,Scholl:1999mi,Carey:2001ue,scholl:2007_objecta})</div><p>&nbsp;</p><p class="hem-around">... and of a further, independent capacity to track physical objects which involves
+motor representations and processes.</p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">Objection:</p><p class="center">What can object indexes explain?</p></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/wynn_1992_fig1a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Wynn 1992, fig 1 (part)</p><div class="notes">We know that infants are likely to maintain object indexes for the two
+mice while they are occluded.
+Accordingly, when the screen drops in the condition labelled 
+‘impossible outcome’, there is an interruption to the normal 
+operation of object indexes: infants have assigned two object indexes 
+but there is only one object.
+But why does this cause infants to look longer at in the
+‘impossible outcome’ condition than in the ‘possible outcome’ condition?
+How does a difference in operations involving object indexes result
+in a difference in looking times?</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><img src="/img/wynn_1992_table1fig.jpg" style="width:720px"/>
+</div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="hem-around">Functions of object indexes:</p><p class="indent hem-around">✔ influence how attention is allocated</p><p class="indent hem-around">✔ guide ongoing actions (e.g. visual tracking, reaching)</p><p class="indent hem-around">✘ initiate purposive actions</p><div class="notes">The primary functions of object indexes include influencing the allocation
+of attention and perhaps guiding ongoing action.
+If this is right, it may be possible to explain anticipatory looking 
+directly by appeal to the operations of  object indexes.
+But the operations of object indexes cannot directly explain differences 
+in how novel things are to an infant.
+And nor can the operations of object indexes directly explain why infants
+look longer at stimuli involving discrepancies in the physical behaviour
+of objects.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><table class="data charles-rivera"> <thead><tr><td> </td><td class="center"><span class="occlusion">occlusion</span></td><td class="center"><span class="endarkening">endarkening</span></td></tr></thead><tbody><tr class="violation-of-expectations v-of-e"><td class="center"><span>violation-of-expectations</span></td><td class="center"><span class="occlusion">✔</span></td><td class="center"><span class="endarkening">✘</span></td></tr><tr class="manual-search search"><td class="center"><span>manual search</span></td><td class="center"><span class="occlusion">✘</span></td><td class="center"><span class="endarkening">✔</span></td></tr></tbody></table><p style="margin-top:-300px;" class="source">Charles & Rivera (2009)</p><div class="notes">How does help us with the puzzles?</div><div data-what=".v-of-e .occlusion" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".v-of-e .occlusion" data-cls="bkg-red" class="dv dv-addclass"></div><div class="notes">Object indexes can survive occlusion but ...</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">Can the Revised CLSTX conjecture explain performance on habituation and
+violation-of-expectation tasks?</p></div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Earlier I suggested that
+(a) a dual process theory can help to explain an apparently anomalous pattern of 
+developmental findings, and that (b) by linking infants’ and 
+adults’ performance, it generates testable predictions.</div><div class="notes">[repeat] In essence, the idea is this.  If the processes dominating R1 and R2 are different,
+the different relations between age and performance these responses reveal simply indicate
+that the two processes develop differently.</div><div class="notes">The process or processes dominating R1 changes relatively little over development, while the
+process dominating R2 undergoes gradual change over months or years.</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center huge-glow">challenge</p></div></div></div></div><div class="notes">Accepting a dual process theory complicates answering the question we really want
+answered about the emergence of knowledge in development.</div><div class="notes">[Notes are a bit messy in what follows: originally had three challenges, decided
+to simplify by collapsing the first two; then realised would make more sense just
+to introduce the first challenge (and then talk about the third challenge after 
+(partially) solving the first).]</div><div class="notes">If we do accept a dual process theory in any domain, we are immediately confronted by
+three questions.
+\begin{enumerate}
+\item What is the link between the early-developing processes and the looking-time responses?
+[Why is a relatively autoamtic process not only influencing attention and motor actions but also
+causing a ‘stop and think’ reaction?]
+\item What, if anything, ensures that the processes ever nonaccidentally provide matching answers? [synchronic]
+\item How do processes which are relatively unchanging over development influence the 
+emergence, in development, of knowledge of simple facts about particular things? [diachronic]
+\end{enumerate}</div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_14.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what="img.bkg" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">First challenge ... why is the early-developing process having effects on things
+like looking times in habituation and violtion-of-expectation experiments but not
+influencing things like verbal judgements and the final selection of an answer expressed
+by selecting a key or a picture?</div><div class="notes">This is a particularly tricky question when the infant or child is responding at chance on
+an explicit measure like giving verbal judgements. Why is the implicit process not affecting
+these judgements (or if it is, how is it doing so)?</div><div class="notes">How if at all does the early-developing process influence verbal judgements in adults?
+Do the processes have entirely independent effects on behaviour, or is there some kind
+of interface?  If there’s an interface, how does this interface change over development?</div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white hide"></div><div class="container_12"><div class="middle everything"><div class="clear"></div><div class="words run-across"><p class="center">synchronic </p></div><div class="container_12"></div><div class="clear"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="center">early-developing process</p><p class="center">↓</p><p class="center"> <span class="qqq">???</span></p><p class="center">↓</p><p class="center">looking duration <br/><span>(or dishabituation)</span></p><div class="notes">So my question was how the early developing process might
+explain patterns of looking duration in habituation and 
+violation-of-expectation experiments.
+My guess is that some operations of object indexes give rise to
+metacognitive feelings, which in turn influence looking durations.</div></div></div><div class="grid_6 words invert right-half hide"><div style="padding-left:1em;"><div class="slide"><div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div style="margin-left:1em;margin-right:-1em"><p class="center">early-developing process</p><p class="center">↓</p><p class="center"> <span class="qqq">? ? ?</span></p><p class="center">↓</p><p class="center">verbal response <br/><span>(or keypress, ...)</span></p></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">Can the Revised CLSTX conjecture explain performance on habituation and
+violation-of-expectation tasks?</p></div><div data-what=".q1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="q2"><p class="huge-glow"><span>Q2</span></p><p style="margin-top:-4em;">Why do automatic processes measurably influence things like looking times in habituation
+and violation-of-expectation experiments but not verbal judgements or an answer given by
+pressing a key or selecting picture?</p></div></div></div></div></div></section><section id="sense_of_agency" class="slide"><img src="/img/bkg/bali/P3192679.low.JPG" class="bkg"/><div class="spacer">&nbsp;</div><div style="position:relative; top:425px" class="title-block"><div class="title-container"><h2 class="title1">Feelings of Agency</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Feelings of Agency}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Feelings of Agency}</div><div class="notes">Feelings of agency may be a paradigm case of for metacognitive feelings.
+They seem to arise from a number of cues including
+the fluency of an action selection process (that is, the ease or difficulty involved in
+selecting one among several possible actions to perform motorically; this can be manipulated
+by, for example, providing helpful or misleading cues to action
+citep{wenke:2010_subliminal,sidarus:2013_priming,sidarus:2017_how}).</div>
+<!-- param @cls and param @options should be objects-->
+
+
+
+<section style="" class="slide"><img src="/img/sense_of_agency4.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">In thinking about this challenge it may be helpful to focus on the sense of agency.</div><div class="notes">It’s quite well established that there are feelings of agency, and these seem to arise
+from a number of cues including ...</div></div></div></div></section><section style="" class="slide"><img src="/img/sense_of_agency1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Adapted from Sidarus & Haggard, 2016 figure 5</p><div class="notes">... comparison between outcomes represented motorically and outcomes detected sensorily and ...</div></div></div></div></section><section style="" class="slide"><img src="/img/sense_of_agency2.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><p class="source">Adapted from Sidarus & Haggard, 2016 figure 5</p><div class="notes">... the fluency of an action selection process (that is, the ease or difficulty involved in 
+selecting one among several possible actions to perform motorically; this can be manipulated by,
+for example, providing helpful or misleading cues to action
+\citep{wenke:2010_subliminal,sidarus:2013_priming,sidarus:2017_how}).</div></div></div></div></section><section style="" class="slide"><img src="/img/sense_of_agency3.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><div class="notes">The sense of agency is interesting to us because it serves to link two 
+largely independent processes concerned with evaluating whether you are the agent of an event.</div></div></div></div></section><section style="" class="slide"><img src="/img/sense_of_agency5.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><div class="notes">One involves detecting these cues ...</div></div></div></div></section><section style="" class="slide"><img src="/img/sense_of_agency6.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><div class="notes">the other involves thinking about it, perhaps in the light 
+of your background knowledge.</div><div class="notes">You can think about whether you are the agent of an event, you don’t need to go with your
+feelings. When someone asks you whether you felt you were in control, the right answer is to say
+‘Well, I don’t know, this is a psychological experiment so there’s a good chance you were
+tricking me.’ [But despite all of the possible ways in which reflection on the question might
+lead to a variety of answers, people give replicable answers that seem to reflect fluency. Why?
+Because they’re answering on the basis of a feeling rather than on the basis of reflection.]</div><div class="slide"><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div data-what="img.bkg:not(.layer2), p.source" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><img src="/img/sense_of_agency4.jpg" class="bkg layer2"/></div><div class="notes">So what is this sense of agency?</div><div class="notes">First, it phenomenal rather than epistemic.
+It is an aspect of the phenomenal character of some experience associated with acting.
+So we can call it a feeling.</div><div class="notes">Second, it is metacognitive in the sense that it’s normal causes include processes which 
+monitor action selection and production.
+So we can call it a \emph{metacognitive feeling}.</div><div class="notes">\footnote{Compare \citet[p.~310]{dokic:2012_seeds}: ‘the causal antecedents of noetic feelings
+can be said to be metacognitive insofar as they involve implicit monitoring mechanisms that
+are sensitive to non-intentional properties of first-order cognitive processes.’}</div></div></div></div></div></section><section id="metacognitive_feelings" class="slide"><img src="/img/bkg/bali/P3212809.JPG" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Metacognitive Feelings</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Metacognitive Feelings}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Metacognitive Feelings}</div><div class="notes">What are metacognitive feelings and what is their role in explaining the 
+developmental emergence of knowledge?</div>
+<!-- param @cls and param @options should be objects-->
+
+
+
+<section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/may-farage.jpg" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><div class="notes">The sense of agency is far from the only metacognitive feeling.
+Consider a second illustration ... familiarity</div><div class="notes">Here is a face that I hope will seems familiar to most people.
+When you see this face, you have a feeling of familiarity.
+This feeling of familiarity is not just a matter of belief:
+even if you know for sure that you have never encountered the person
+depicted here (and trust me, you haven’t), the feeling of familiarity
+will persist.
+Nor is the feeling a matter of perceptual experience: you can’t 
+perceptually experience familiarity
+any more than you can perceptually experience electricity.</div><div class="notes">(The face is a composite of May and Farage.  It is chosen to illustrate that
+the feeling of familiarity is not a consequence of how familiar things 
+actually are; instead it may be a consequnece of 
+the degree of fluency with which unconscious processes can identify 
+perceived items \citep{Whittlesea:1993xk,Whittlesea:1998qj}.
+Learning a grammar can also generate feelings of familiarity.
+Subjects who have implicitly learned an artificial grammar report feelings 
+of familiarity when they encounter novel stimuli that are part of 
+the learnt grammar \citep{scott:2008_familiarity}.
+They are also not doomed to treat feelings of familiarity as being
+about actual familiarity:
+instead subjects can use feeling of 
+familiarity in deciding whether a stimulus is from that grammar 
+\citep{Wan:2008_familiarity}.)</div><div class="notes">I could go on to mention the feeling you have when someone’s eyes are 
+boring into your back, 
+the feeling of déjà vu,
+or the feeling that a name is on the tip of your 
+tongue.  
+But let me focus just on the feelings associated with electricity and 
+with familiarity.
+These feelings are paradigm cases of metacognitive feeling.</div></div></div></div></section><section style="" class="slide"><img src="/img/wire.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">What is a metacognitive feeling?  I think it’s a sensation.
+To illustrate,</div><div class="notes">contrast two sensory encounters with this wire. In the first you visually 
+experience the wire as having a certain shape. In the second you receive an 
+electric shock from the wire without seeing or touching it.%
+\footnote{This illustration is borrowed from Campbell (2002: 133–4); I use it to support a claim weaker than his.}
+The first sensory encounter involves perceptual experience as of a property of
+the wire whereas, intuitively, the second does not. 
+I take this intuition to be correct.%
+\footnote{
+Notice that the intuition is not that the shock involves no 
+perceptual experience at all, only that the shock does not involve 
+perceptual experience as of any property of the wire. Notice also that the 
+intuition concerns what a perceptual experience is as of, and not directly 
+what is represented in perception. The relation between these two is 
+arguably not straightforward (compare, e.g., \citet[p.~28]{Shoemaker:1994el} or 
+\citet[pp.~50--2]{Chalmers:2006xq} on distinguishing representational from 
+phenomenal content).
+}</div><div class="notes">The intuition is potentially revealing because the electric shock involves 
+rich phenomenology, and its particular phenomenal character depends in part 
+on properties of its cause (changes in the strength of the electric current 
+would have resulted in an encounter with different phenomenal character). 
+So there are sensory encounters which, despite having phenomenal characters 
+that depend in part on which properties are encountered, are not perceptual 
+experiences as of those properties.</div><div class="notes">Let me give you two more illustrations [bushObama and Wynn’s magic mice]. ...</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">All three examples (the feelings of magic, of electricity and of 
+familiarity) show that:</div><p class="pe notes handout show hide">Metacognitive feelings</p><p><span class="there">There </span><span class="notes handout ctd show">are aspects of the overall phenomenal character of experiences </span><span class="notes handout ctd show">which their subjects take to be informative about things that are only </span><span class="notes handout ctd show">distantly related (if at all) to the things that those experiences </span><span class="notes handout ctd show">intentionally relate the subject to. </span></p><div class="notes">To illustrate, having a feeling of familiarity is not a matter of standing 
+in any
+intentional relation to the property of familiarity, but it is something
+that we can interpret as informative about famility.</div><div class="slide"><div data-what=".there" data-css="{&quot;opacity&quot;:0}" data-options="{&quot;visibility&quot;:&quot;hidden&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div data-what=".pe" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Metacognitive feelings are these aspects of experience.</div><div class="notes">Why accept this?  You cannot perceive familiarity or agency any more than you can 
+perceive electricity.
+Perceptual processes do not reach far back into your past, nor are they concerned
+with questions about whether you are the agent of an action.
+So to think that metacognitive feelings intentionally relate you to facts about
+familiarity or agency requires postulating a novel kind of sensory process, some kind
+of inner or bodily sense.
+While justification for postulating a novel inner sense may ultimately be discovered, I don’t
+think there is currently anything to justify this.</div><div class="notes">[EITHER]
+To see why we are not justified in postulating a novel inner sense, it is worth recalling
+Reid’s theory of sensations.
+
+[OR] But this is right, why do metacognitive feelings invite judgements? Why does the
+feeling of familiarity even so much as nudge you to judge that the face photographed
+here is familiar to you?  (This is roughly \citet{dokic:2012_seeds}’s question.)</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">[Key point to stress there is just that
+metacognitive feelings are not intentional states, they are not representations,
+they have no content. [Or if they do have content, it’s not related to
+the things we take them to be associated with, like familiarity or electricity.] 
+They are blank sensations. Compare the sensation associated
+with an electrical shock. It’s not a perception of electricity.]</div><div class="step1"><p>Metacognitive feelings</p><p>can be thought of as </p><p>sensations.</p></div><div class="notes">metacognitive feelings can be thought of as sensations in approximately
+Reid’s sense.%
+\footnote{
+\citet{Reid:1785cj,Reid:1785nz}.
+Even if you don’t believe that there are sensations in Reid’s sense,
+thinking of metacognitive feelings as if they were sensations will
+serve to illustrate their characteristic features.
+The main points that follow are consistent with several different ways of
+thinking about metacognitive feelings.
+For instance, you might take the view that 
+what I am calling metacognitive feelings are
+perceptual experiences of the body or of bodily reactions,
+or that they involve some kind of cognitive phenomenology.
+The essential claim is just that the metacognitive feelings associated with
+the operations of object indexes are not constituted by states which involve
+intentional relations to any of the things which are assigned an object index.
+}</div><div class="slide step2"><div data-what=".step1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p class="em-above">Sensations are </p><ol><li>monadic properties of perceptual experiences</li><li>individuated by their normal causes</li><li>(so they do not involve an <span class="intentional-relation">intentional relation</span><span>)</span></li><li>which alter the overall phenomenal character of those experiences</li><li>in ways not determined by the experiences’ contents.</li></ol><div class="notes">Sensations are:
+\begin{enumerate}
+\item monadic properties of events, specifically perceptual experiences,  
+\item individuated by their normal causes% %{Tye, 1984 #1744@204}
+---in the case of feelings of familiarity, its normal cause is ease of processing
+\item which alter the overall phenomenal character of those experiences
+\item in ways not determined by the experiences’ contents 
+(so two perceptual experiences can have the same content while one has a sensational property which the other lacks).
+\end{enumerate}</div><div class="handout">Metacognitive feelings can be thought of as sensations in approximately Reid’s sense: they are
+monadic properties of events, specifically perceptual experiences, which are individuated by
+their normal causes and which alter the overall phenomenal character of those experiences in
+ways not determined by the experiences’ contents (so two perceptual experiences can have the
+same content but distinct sensational properties).
+
+Metacognitive feelings are signs:
+they can lead to beliefs via associations or further beliefs
+(\citealp[Essay~II, Chap.~16, p.~228]{Reid:1785cj};
+\citealp[Chap.~VI sect.~III, pp.~164–5]{Reid:1785nz}).</div></div><div class="slide"><div data-what=".step2" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p class="em-above">Sensations can trigger beliefs via associations.</p><div class="notes">An important consequence is that metacognitive feelings can lead to beliefs
+only via associations or further beliefs.
+They are signs which need to be interpreted by their subjects
+(\citealp[Essay~II, Chap.~16, p.~228]{Reid:1785cj}
+\citealp[Chap.~VI sect.~III, pp.~164–5]{Reid:1785nz}).
+Let me explain.</div><div class="notes">As a scientist, you can pick out the feeling of familiarity as that
+metacognitive feeling which is normally caused by the degree to which
+certain processes are fluent.
+But as the subject of who has that metacognitive feeling, you do not 
+necessarily know what its typical causes are.
+This is something you have to work out in whatever ways you work out
+the causes of any other type of event.</div><div class="notes">(Contrast metacognitive feelings with perceptual experiences.
+Having 
+a perceptual experience of, say, a wire’s shape, involves standing
+in an intentional relation to the wire’s shape; and the phenomenal
+character of this perceptual experience is specified by this 
+intentional relation.%
+\footnote{
+Compare \citet[p.~380]{Martin:2002yx}:
+‘I attend to what it is like for me to inspect the lavender bush through 
+perceptually attending to the bush itself.’ 
+And \citet[p.~211]{byrne:2001_intentionalism}
+‘subject can only discover the phenomenal character of her experience by 
+attending to the world ... as her experience represents it.’
 }
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-<!-- param @cls and param @options should be objects-->
-
-
-
-
-<div class="notes notes-header-tex">\title {Philosophical Psychology \\ Lecture 08: Mindreading in Nonhumans}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\maketitle</div>
-<div id="title-slide" class="slide"><img src="/img/bkg/bali/AP3232947.JPG" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div class="no-fade-in">
-    <div style="" class="title-block">
-      <div class="title-container">
-        <h1 style="line-height:45pt;" class="title1 no-fade-in"> <span class="word_0">Lecture </span><span class="word_1">08: </span><span class="word_2">Mindreading </span><span class="word_3">in </span><span class="word_4">Nonhumans </span>
-        </h1>
-        <h3 class="email no-fade-in">s.butterfill@warwick.ac.uk</h3>
-      </div>
-    </div>
-  </div>
-  <div class="handout">\def \ititle {Lecture 08: Mindreading in Nonhumans}</div>
-  <div class="handout">\begin{center}</div>
-  <div class="handout">{\Large</div>
-  <div class="handout">\textbf{\ititle}</div>
-  <div class="handout">}</div>
-  <div class="handout">&nbsp;</div>
-  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
-  <div class="handout">\end{center}</div>
-  <div class="notes"><t:02225912834983319></t:02225912834983319>
-  </div>
-</div>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Some Evidence}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Some Evidence}</div>
-<div class="notes">Many animals including scrub jays (Clayton, Dally and Emery 2007), ravens (Bugnyar, Reber and Buckner
-2016), goats (Kaminski, Call and Tomasello 2006), dogs (Kaminski et al. 2009), ringtailed lemurs
-(Sandel, MacLean and Hare 2011), monkeys (Burkart and Heschl 2007; Hattori, Kuroshima and Fujita 2009)
-and chimpanzees (Melis, Call and Tomasello 2006; Karg et al. 2015) reliably vary their actions in ways
-that are appropriate given facts about another’s mental states. </div>
-
-<!-- param @cls and param @options should be objects-->
-
-
-
-
-<section style="" class="slide"><img src="/img/hare_2001_fig1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Hare et al (2001, figure 1)
-          <div class="notes">In this experiment by Brian Hare and colleagues, a subordinate chimpanzee makes predictions about a
-dominant chimpanzee’s ability to retrieve food. They found that the subordinate’s predictions take
-into account whether the dominant’s view was blocked while the food was placed. This could be
-explained by the Third Principle. For the subordinate to predict that the dominant will not be able
-to recover the food, it is sufficient to think: because the dominant did not encounter the food,
-she will not be able to retrieve it.
-          </div>
-          <div class="notes handout">‘In informed trials dominant individuals witnessed the experimenter hiding 
-food behind one of the occluders whereas in uninformed trials they could 
-not see the baiting procedure. In misinformed trials, dominants witnessed 
-the experimenter hiding food behind one of the occluders, and once the 
-dominant’s visual access was blocked, the experimenter switched the food 
-from its original location to the other occluder’ \citep{Hare:2001ph}.
-          </div>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/clayton_2007_fig11.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Clayton et al, 2007 figure 11</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/clayton_2007_fig12.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Clayton et al, 2007 figure 12</p>
-        <div class="notes handout">‘the jays were much more likely to re-cache if they had been observed by a conspecific while they
-were caching than when they had cached in private. By re-caching items that the observer had seen
-them cache, the cachers significantly reduce the chance of cache theft, as observers would be unable
-to rely on memory to facilitate accurate cache theft’ \citep[p.~516]{Clayton:2007fh}.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/bugnyar_2016_fig1.png" style="clip: rect(0px,999px,365px,0px); position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Bugnyar et al, 2016 figure 1</p>
-        <div class="notes">First show that window open vs window closed affects caching behaviour.
-Then familiarise ravens with the peephole, letting them use it while humans
-cache and letting them ‘steal’ the human-cached food.
-Now test them by allowing them to cache when there’s apparently (from the sound,
-which is actually a recording) 
-a raven on the other side.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/bugnyar_2016_fig2a.png" style="clip: rect(0px, 430px, 999px, 0px); position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Bugnyar et al, 2016 figure 2a</p>
-        <div class="notes">Conclusion 1:
-‘Peephole designs can allow researchers to overcome the confound of gaze cues’ \citep{bugnyar:2016_ravens}.
-        </div>
-        <div class="handout">‘ravens can transfer knowledge from their own experience in a novel context---using peepholes to look
-into an adjacent room---to a caching situation in which they can hear but not see a conspecific in that
-room’ \citep{bugnyar:2016_ravens}.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/bugnyar_2016_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Bugnyar et al, 2016 figure 1</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/bugnyar_2016_fig2a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <video width="640" height="480" controls="controls">
-          <source src="/mov/Krupenye_2016_s1.mp4" type="video/mp4"/>
-        </video>
-        <p class="source">Krupenye et al, 2016</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes show"><span>‘In saying that an individual has a </span><span class="theory-of-mind">theory of mind,</span><span> we mean that the individual [can ascribe] mental states’ </span></div>
-          <p class="right grey-text">Premack & Woodruff, 1978 p. 515</p>
-          <div class="slide">
-            <p class="em-above">Which action a chimp or jay predicts another will perform</p>
-            <p>depends to some extent on</p>
-            <p>what the other sees, knows or believes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="nonhuman_mindreading_question" class="slide"><img src="/img/bkg/bali/P3192679.low.JPG" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="position:relative; top:425px" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">The Question, version 0.1</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{The Question, version 0.1}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{The Question, version 0.1}</div>
-<div class="notes">What could underpin nonhumans’ abilities to track others’ mental states?</div>
-
-<!-- param @cls and param @options should be objects-->
-
-
-
-
-<div class="handout">Many animals including scrub jays \citep{Clayton:2007fh},
-ravens \citep{bugnyar:2016_ravens},
-goats \citep{kaminski:2006_goats},
-dogs \citep{kaminski:2009_domestic},
-ringtailed lemurs \citep{sandel:2011_evidence},
-monkeys \citep{burkart:2007_understanding, hattori:2009_tufted}
-and chimpanzees \citep{melis:2006_chimpanzees,karg:2015_chimpanzees} reliably vary their actions in ways that are appropriate given facts about another’s mental states.
-What could underpin such abilities to track others’ mental states?
-</div>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">tracking vs representing mental states</p>
-          <div class="notes">Contrast {representing} a mental state with {tracking} one.
-          </div>
-          <div class="notes handout">For you to \emph{track} someone’s mental state (such as a belief that there is food behind that rock)
-is for there to be a process in you which nonaccidentally depends in some way on whether she has that
-mental state.
-          </div>
-          <div class="notes">Representing mental states is one way, but not the only way, of tracking them.
-In principle it is possible to track mental states without representing them.
-For example, it is possible, within limits, to track what another visually represents by representing her line of sight only.
-More sophisticated illustrations of how you could in principle track mental states without representing them abound \citep[e.g.][pp.~571ff]{buckner:2014_semantic}.
-What many
-experiments actually measure is whether certain subjects can track mental states:
-the question is whether changes in what another sees, believes or desires are reflected in subjects’ choices of route, caching behaviours, or anticipatory looking (say).
-It is surely possible to infer what is represented by observing what is tracked.
-But such inferences are never merely logical.
-          </div>
-          <div class="notes">Example: toxicity / smell
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/logical_problem/Slide1.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/logical_problem/Slide2.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/logical_problem/Slide3.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="q">What do <span class="infants">infants</span><span>, chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? </span></p>
-          <div data-what=".infants" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
-          <div class="slide">
-            <div class="notes">The standard debate</div>
-            <p class="indent em-above">-- Is it <span class="mental-states">mental states</span><span>?</span></p>
-            <div class="handout notes show">
-              <p class="indent mental-intelligible hide">What could make others’ mental states intelligible (or identifiable) to a chimpanzee<span class="infants">, infant</span><span> or scrub-jab?</span></p>
-            </div>
-            <p class="indent em-above">-- Or only <span class="behaviours">behaviours</span><span>?</span></p>
-            <div class="handout notes show">
-              <p class="indent behaviour-intelligible hide">What could make others’ behaviours  intelligible (or identifiable)  to a chimpanzee<span class="infants">, infant</span><span> or scrub-jab?</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="behaviour_reading_demon" class="slide"><img src="/img/bkg/bali/P3212809.JPG" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">The Behaviour Reading Demon</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{The Behaviour Reading Demon}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{The Behaviour Reading Demon}</div>
-<div class="notes">The behaviour reading demon (a counterpart of Laplace’s demon) has unlimited cognitive capacities,
-perfect knowledge of history and can conceptualise behaviours in any way imaginable. Although blind to
-mental states, it can predict others’ future behaviours at least as well as any mindreader.</div>
-
-<!-- param @cls and param @options should be objects-->
-
-
-
-
-<section style="" class="slide"><img src="/img/hare_2001_fig1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Hare et al (2001, figure 1)</p>
-        <div class="notes">Recall this experiment.
-Could we explain success without appeal to the idea that chimpanzees
-can ascribe knowledge and ignorance?
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="container_12">
-          <div class="grid_9">
-            <p class="handout notes show"><span>‘an intelligent chimpanzee could simply use the  </span><span class="behavioural-abstraction">behavioural abstraction</span><span> […]:  ‘Joe was present and oriented; he will probably go after the food. </span><span>Mary was not present; she probably won’t.’’</span></p>
-            <div class="notes handout ctd">\citep{Povinelli:2003bg}</div>
-            <p class="right grey-text">Povinelli and Vonk (2003)</p>
-          </div>
-        </div>
-        <div class="slide">
-          <div data-what=".behavioural-abstraction" data-cls="transition-04" class="dv dv-addclass"></div>
-          <div data-what=".behavioural-abstraction" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          <div class="notes">What’s that?</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="handout notes">\begin{quote}
-For any food (x) and agent (y), if any of the following do not hold:
-
-(i) the agent (y) was present when the food (x) was placed,
-
-(ii) the agent (y) was oriented to the food (x) when it was placed, 
-
-and:
-
-(iii) the agent (y) can go after the food (x) 
-
-then probably not:
-
-(iv) the agent (y) will go after the food (x).
-
-Also, if all of (i)–(iii) do hold, then probably (iv).
-\end{quote}
-          </div>
-          <p class="em-above">For any food (x) and agent (y), if any of the following do not hold:</p>
-          <p class="em-above indent">(i) the agent (y) was present when the food (x) was placed,</p>
-          <p class="em-above indent">(ii) the agent (y) was oriented to the food (x) <span class="when-placed">when it was placed</span><span>, </span></p>
-          <p class="em-above">and:</p>
-          <p class="em-above indent">(iii) the agent (y) can go after the food (x) </p>
-          <p class="em-above">then probably <span class="not">not</span><span>: </span></p>
-          <p class="em-above indent">(iv) the agent (y) will go after the food (x).</p>
-          <div class="slide">
-            <div data-what=".when-placed" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".when-placed" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Doesn’t work as it stands because in the ‘misinformed’ condition
-the dominant was oriented to the food when it was first placed
-(just not when it was subsequently moved).
-            </div>
-            <div class="notes">Right way to formulate this is tricky: should we say last placed?
-Or should we say when the food was last placed at its current location,
-the dominant was oriented to the food there?
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".when-placed" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".not" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".not" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Predicting a non-behaviour is particularly challenging.
-            </div>
-            <div class="notes">There are some conditions which could trump this; for example,
-if the food is in a place where food is has recently been found, or if the food 
-is particularly smelly or noisy, or if a trail of grapes 
-leads to the food ...
-            </div>
-            <div class="notes">So is the hypothesis that chimps ignore all such further factors,
-or do we think that this claim should be elaborated?
-            </div>
-          </div>
-          <div class="slide">
-            <p class="em-above">Also, if all of (i)–(iii) do hold, then probably (iv).</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="notes handout show">‘Don't go after food if a dominant who is present has oriented towards it’
-          </p>
-          <div class="notes handout ctd">\citep[p.~735]{Penn:2007ey}</div>
-          <p class="right grey-text">Penn and Povinelli (2007, 735)</p>
-          <div class="notes">By shifting from a prediction of the dominant’s behaviour to a 
-restriction on how the subordinate behaves, a lot of the problems vanish.
-But this clearly not an interesting proposal: to see why, we need to think
-about scientific methodology (predicting vs retrodicting the order in which
-people entered the room).
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>The ‘Logical Problem’ ...</p>
-          <div class="notes">Maybe it’s not necessary that we actually construct detailed accounts of how each task
-is solved using behavioural rules.  Following Povinelli and colleagues, Lurz has argued
-that the sorts of experiments we have been considering are in principle incapable of 
-eliminating a hypothesis about behaviour reading ...
-          </div>
-          <div class="slide">
-            <p class="em-above notes handout show">‘since mental state attribution in [nonhuman] animals will (if extant) be based on observable 
-features of other agents’ behaviors and environment ... every mindreading hypothesis has ... 
-a complementary behavior-reading hypothesis.
-            </p>
-            <div class="notes handout ctd">Such a hypothesis proposes that the animal relies upon certain behavioral/environmental cues 
-to predict 
-[... the behaviour which], on the mindreading hypothesis, 
-the animal is hypothesized to use as its observable grounds for attributing the 
-mental state in question.’
-            </div>
-            <div class="notes handout ctd">\citep[p.~26]{lurz:2011_mindreading}; also \citep[p.~453]{lurz:2011_how}</div>
-            <p class="right grey-text">Lurz (2011, 26)</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="em-above">1. Ascriptions of mental states ultimately depend on information about behaviours</p>
-          <p class="indent">- information triggering ascription</p>
-          <p class="indent">- predictions derived from ascription</p>
-          <div class="slide">
-            <p class="em-above">2. In principle, anything you can predict by ascribing a mental state you could have predicted just by tracking behaviours.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Is there an experimental solution to the ‘Logical Problem’?</p>
-          <p class="center em-above">Lurz and Karchun (2011) : yes ...</p>
-          <div class="slide">
-            <p class="em-above notes handout show">‘Behavior-reading animals can appeal only to ...
-reality-based, mind-independent facts, such as facts about agents’ past behavior or 
-their current line of gaze to objects in the environment.
-            </p>
-            <p class="notes handout show">‘Mindreading animals, in contrast, can appeal to the subjective ways environmental 
-objects perceptually appear to agents to predict their behavior.’
-            </p>
-            <div class="notes handout ctd">\citep[p.~469]{lurz:2011_how}</div>
-            <div class="notes handout">Experimental implementations: e.g. \citep{karg:2015_goggles}
-            </div>
-            <p class="right grey-text">Lurz and Krachun (2011, p. 469)</p>
-            <div class="notes">E.g. seeing an insect or a piece of fruit as an insect or piece of fruit
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/lurz_krachun_2011_fig1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Lurz & Krachun 2011, figure 1</p>
-        <div class="notes">There’s a competitor, two graps and some size-distorting glass ... can 
-Subject predict that Competitor will choose not the largest grape but
-the one which appears largest?
-        </div>
-        <div class="notes">‘The objective here is to test whether chimpanzees are capable of anticipating (as evidenced by their
-looking behavior) the actions of a human competitor by understanding how an illusory stimulus (grape)
-looks to the human.’ \citep{lurz:2011_how}
-        </div>
-        <div class="notes">‘the competitor is absent when the grapes are placed inside the containers (as in the pretest stage),
-he does not observe the change in apparent size of the grapes as they are placed inside the
-containers, as the chimpanzee does. After the grapes are placed, the competitor enters the room, sits
-at the table, looks at each grape through the sides of the containers’
-\citep[p.~476]{lurz:2011_how}
-        </div>
-        <div class="notes">‘dependent measure is anticipatory looking’.  
-In this case, the subjects (chimps) know which grape is which and how they appear.
-Also a Krachun-like competitive version (in this case, the chimps have to
-infer which is larger from the failed reach of the human competitor)...
-        </div>
-        <div class="notes">Also a Krachun-like reaching measure:
-‘After the competitor has acted in one of these two ways toward the container with the large grape,
-the experimenter places opaque coverings completely over each container and moves the platform toward
-the chimpanzee. Once the platform is in place before the chimpanzee, the chimpanzee is allowed to
-choose one of the two containers (by pointing to it through a finger hole). Since the containers are
-covered, the chimpanzee cannot make its choice by seeing the grape or grapes inside the containers.
-Rather, to make its preferred choice (which we assume will be the remaining small grape in
-competitor-first success trials and the large grape in competitor-first failure trials) the chimpanzee
-must attend to the selection process of the competitor.’
-\citep[p.~475]{lurz:2011_how}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">The Lurz and Krachun proposal looks really good because it identifies a gap
-in the argument for the logical problem ...
-          </div>
-          <p>The logical problem</p>
-          <p class="em-above">1. Ascriptions of mental states ultimately depend on information about behaviours <span class="step2a hide">and objects</span></p>
-          <p class="indent">- information triggering ascription</p>
-          <p class="indent">- predictions derived from ascription</p>
-          <p class="indent"><span class="step2b hide">- ways objects appear</span></p>
-          <p class="em-above">2. In principle, anything you can predict by ascribing a mental state you could have predicted just by tracking behaviours.</p>
-          <div class="slide">
-            <div data-what=".step2a" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div data-what=".step2a, .step2b" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".step2a, .step2b" data-cls="bkg-pink" class="dv dv-addclass"></div>
-            <div data-what=".step2b" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-            <div class="notes">Progress ... but does this enable us to solve the logical problem?
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="step1">‘Behavior-reading animals can appeal only to ...
-reality-based, mind-independent facts, such as facts about agents’ past behavior or 
-their current line of gaze to objects in the environment.
-          </p>
-          <p class="step1">‘Mindreading animals, in contrast, can appeal to the subjective ways environmental 
-objects perceptually appear to agents to predict their behavior.’
-          </p>
-          <p class="step1 right grey-text">Lurz and Krachun (2011, p. 469)</p>
-          <div class="notes">E.g. seeing an insect or a piece of fruit as an insect or piece of fruit
-          </div>
-          <div class="slide">
-            <div data-what=".step1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <p class="em-above">But: objects have appearance properties, and provide affordances, which are independent of any particular mind. </p>
-            <div class="notes">Camoflauge ain’t mindreading.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Return to the question; this is for discussion ...
-          </div>
-          <p class="center notes show">Do goggles solve the ‘Logical Problem’?</p>
-          <p class="em-above notes handout show">‘“self-informed” belief induction variables [... are those] that, if the participant is
-capable of mentalizing, he or she knows only through extrapolation from her own experience to be
-indicative of what an agent can or cannot see and, therefore, does or does not believe’
-          </p>
-          <div class="notes handout ctd">\citep[p.~139]{heyes:2014_submentalizing}</div>
-          <p class="right grey-text">Heyes, 2014 p. 139</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/karg_2015_fig4.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Karg et al, 2015 figure 4 (Experiment 2)</p>
-        <div class="notes">Experiment 2: chimp attempts to steal from human, 
-who will remove food if she sees the chimp approach.
-One cover is transparent, the other opaque. But actually when they are down,
-both look opaque from the chimp’s point of view.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/karg_2015_fig5.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Karg et al, 2015 figure 5 (Experiment 2)</p>
-        <div class="notes">(This is just a photo of the apparatus, with covers up (top) and down (bottom).)</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/karg_2015_fig6.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Karg et al, 2015 figure 5 (Experiment 2)</p>
-        <div class="notes">‘Mean percentage of trials with the choice of the opaque box across the three conditions. In the
-transparent condition, one lid was opaque, the other transparent. In the screen condition, one lid
-was a screen, the other opaque. The control was like the transparent condition, but without the
-experimenter's presence at the time of choice. Error bars indicate 95% CI. The horizontal line
-indicates chance level (50%). *P < 0.05; **P < 0.01’
-\citep{karg:2015_goggles}.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Return to the question; this is for discussion ...
-          </div>
-          <p class="center notes show">Do goggles solve the ‘Logical Problem’?</p>
-          <p class="em-above notes show">‘“self-informed” belief induction variables [... are those] that, if the participant is
-capable of mentalizing, he or she knows only through extrapolation from her own experience to be
-indicative of what an agent can or cannot see and, therefore, does or does not believe’
-          </p>
-          <div class="notes ctd">\citep[p.~139]{heyes:2014_submentalizing}</div>
-          <p class="right grey-text">Heyes, 2014 p. 139</p>
-          <div class="notes">I think: what you ‘project’ from your own experience could be merely knowledge
-of affordances (in Bugnyar et al) and appearances (in Karg et al).  There’s no special
-reason to think that what you project is mental states rather than a better understanding
-of objects and their properties.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show">Could altercentric interference effects solve the ‘Logical Problem’?</p>
-          <div class="notes">[Not planning to talk about this at any length, just curious what they say.]
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white hide"></div>
-  <div class="container_12">
-    <div class="clear"></div>
-    <div class="words run-across">
-      <p class="center">What does the ‘Logical Problem’ show?</p>
-    </div>
-    <div class="container_12"></div>
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p>Lurz, Krachun et al</p>
-        <p class="em-above">The ‘Logical Problem’ can be overcome with experimental design.
-        </p>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half hide">
-      <div style="padding-left:1em;">
-        <div class="slide">
-          <div data-what=".right-half-white, .right-half" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          <p>Halina, Heyes (?), et al</p>
-          <p class="em-above">The ‘Logical Problem’ is a logical problem.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p class="em-above">Its existence shows that these are the wrong experiments whereas those are the right ones.
-        </p>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half">
-      <div style="padding-left:1em;">
-        <div class="step3 hide">
-          <p class="em-above">Its existence shows that being able to track mental states 
-does not logically entail
-being able to to represent mental states.
-          </p>
-          <div class="notes">I’m not here arguing for one side or the other, merely pointing out that
-there are two sides.
-But in what follows I will assume that the ‘Logical Problem’ is a logical problem.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div data-what=".step3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="clear"></div>
-  <div class="container_12 em-above">
-    <div class="grid_9">
-      <p><span>‘because behavioural strategies are so unconstrained ...</span><span>it is very difficult indeed, </span><span class="perhaps-impossible">perhaps impossible</span><span>, to design experiments </span><span>that could show that animals are mindreading rather than behaviour reading.’</span></p>
-      <div class="handout notes">‘because behavioural strategies are so unconstrained ...
-it is very difficult indeed, perhaps impossible, to design experiments 
-that could show that animals are mindreading rather than behaviour reading.’
-      </div>
-      <div class="handout notes ctd">\citep[p.~322]{heyes:2014_animal}</div>
-      <p class="right grey-text">Heyes, 2015 322</p>
-    </div>
-    <div class="grid_3">
-      <p class="right"><img src="/img/celia_heyes.png" style="width:150px"/>
-      </p>
-    </div>
-  </div>
-  <div class="clear"></div>
-  <div class="slide">
-    <div class="container_12 em-above">
-      <div class="grid_9">
-        <p class="notes handout show">‘the logical problem ... is not solvable ...
-any experiment aimed at testing mindreading will fail to reject the hypothesis that subjects are
-reasoning in terms of observable regularities alone.
-... the logical problem is a general skeptical problem’
-        </p>
-        <div class="notes handout ctd">\citep[pp.~483--5]{halina:2015_there}</div>
-        <p class="right grey-text">Halina, 2015 pp. 483-5</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="how_do_nonhumans_model_minds" class="slide"><img src="/img/bkg/bali/P3212843.JPG" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">The Question, version 0.2</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{The Question, version 0.2}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{The Question, version 0.2}</div>
-<div class="notes">‘chimpanzees probably do not understand others in terms of a fully human-like belief–desire psychology’
-(Call &amp; Tomasello, 2008 p.~191)</div>
-
-<!-- param @cls and param @options should be objects-->
-
-
-
-
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="q">What do <span class="infants">infants</span><span>, chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? </span></p>
-          <div data-what=".infants" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
-          <div class="slide">
-            <p class="em-above notes handout show">‘Comparative psychologists test for mindreading in non-human animals by determining whether they
-detect the presence and absence of particular cognitive states in a wide variety of
-circumstances.
-            </p>
-            <div class="notes handout ctd">They eliminate potential confounding variables by ensuring that there is no one
-observable state to which subjects might be responding’ 
-\citep[p.~487]{halina:2015_there}.
-            </div>
-            <p class="right grey-text">Halina, 2015 p. 487</p>
-            <div class="notes">If we agree with Halina that the ‘Logical Problem’ is a logical problem, should we
-also accept her claim?
-            </div>
-            <div class="notes">I don’t think we should.
-Researchers have so far focussed on a sceptical problem rather than a hypothesis,
-but I think this is a mistake.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Requirement 1: Diversity in Strategies</p>
-          <div class="notes">Should we conclude that all animals which can track mental states are doing so by virtue of 
-representing them?  
-Two versions of this objection: (a) cross-species:
-How confident are we that ringtailed lemurs are doing what chimpanzees are doing?
-(b) within an individual:
-In humans and other animals, tracking mental states likely involves many different 
-processes, including plenty of which that rely on simple cues.
-          </div>
-          <div class="notes">Requirement 1:
-We need a theory that allows us to distinguish mental state tracking underpinned
-by mindreading from other forms of mental state tracking
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show">Requirement 2: Models</p>
-          <div class="notes">The second question concerns how various individuals (or systems within them)
-model minds and actions.
-Let me explain with an illustration ...
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div class="middle">
-    <div class="clear"></div>
-    <div class="container_12 em-above">
-      <div class="grid_9">
-        <p>‘chimpanzees understand … intentions … perception and knowledge,</p>
-        <p class="step2 hide hem-above">‘chimpanzees probably do not understand others in terms of a fully human-like belief–desire
-psychology’
-        </p>
-        <p class="right grey-text">Call & Tomasello, 2008 p.~191</p>
-      </div>
-      <div class="grid_3">
-        <p class="right"><img src="/img/call_tomasello.jpg" style="width:150px"/>
-        </p>
-      </div>
-      <div class="handout">‘chimpanzees understand … intentions … perception and knowledge,’ but ‘chimpanzees probably do not
-understand others in terms of a fully human-like belief–desire psychology’
-\citet[p.~191]{Call:2008di}.
-      </div>
-    </div>
-    <div class="slide">
-      <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-      <div class="notes">After claiming that ‘chimpanzees understand … intentions … perception and knowledge,’
-\citet{Call:2008di} qualify their claim by adding that ‘chimpanzees probably do not understand
-others in terms of a fully human-like belief–desire psychology’ (p.~191).
-      </div>
-      <div class="notes">This is true.
-The emergence in human development of the most sophisticated abilities to represent mental states
-probably depends on rich social interactions involving conversation about the mental
-\citep{Slaughter:1996fv, peterson:2003_opening, moeller:2006_relations}, on linguistic abilities
-\citep{milligan:2007_language,kovacs:2009_early},
-(\citet[p.~760]{moeller:2006_relations}: ‘Our results provide support for the concept that access
-to conversations about the mind is important for deaf children’s ToM development, in that there was
-a significant relationship between maternal talk about mental states and deaf children’s
-performance on verbal ToM tasks.’)
-and on capacities to attend to, hold in mind and inhibit things \citep{benson:2013_individual,
-devine:2014_relations}.
-These are all scarce or absent in chimpanzees and other nonhumans.
-So it seems unlikely that the ways humans at their most reflective represent mental states will
-match the ways nonhumans represent mental states.
-Reflecting on how adult humans talk about mental states is no way to understand how others
-represent them.
-But then what could enable us to understand how nonhuman animals represent mental states?
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show">Requirement 2: Models</p>
-          <p class="em-above center">How do chimps or jays variously model minds and actions?</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show">‘Nonhumans represent mental states’ is not a hypothesis</p>
-          <div class="notes">... or at least not one that generates readily testable predictions.
-          </div>
-          <div class="slide">
-            <p class="em-above notes handout show">‘the core theoretical problem in contemporary research on animal mindreading is that the bar—the
-conception of mindreading that dominates the field—is too low, or more specifically, that it is
-too underspecified to allow effective communication among researchers, and reliable
-identification of evolutionary precursors of human mindreading through observation and experiment’
-            </p>
-            <div class="notes handout ctd">\citep[p.~318]{heyes:2014_animal}</div>
-            <p class="right grey-text">Heyes, 2014, p. 318</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/folk_psychology_roots/Slide1.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/folk_psychology_roots/Slide2.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/folk_psychology_roots/Slide3.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show">Requirement 3: Predict Dissociations</p>
-          <div class="notes">Let me explain by pointing to some cases in which chimpanzees fail to 
-track others’ beliefs according to one measure but may succeed according to another ...
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="krupenye_quote hide container_12">
-          <div class="grid_6">
-            <p class="notes handout show"><span>‘the present evidence may constitute an </span><span class="implicit">implicit</span><span> understanding of belief’</span></p>
-            <div class="notes handout ctd">\citep[p.~113]{krupenye:2016_great}</div>
-            <p class="right grey-text"> Krupenye et al, 2016 p. 113</p>
-          </div>
-        </div>
-        <div class="clear"></div>
-        <div class="figure em-above">
-          <div style="position:relative;"><img src="/img/krachun_2009_fig2a.png" style="clip: rect(0px,999px,999px,350px); position: absolute; max-width:720px; max-height:550px;"/></div>
-        </div>
-        <p class="source">Krachun et al, 2009 figure 2 (part)</p>
-        <div class="notes">Chimpanzee anticipatory looking indicates tracking others’ false beliefs.
-        </div>
-        <div class="notes">“Looking. Our second measure was whether participants looked at least once at the container the
-competitor was not reaching for during the couple of seconds it took E to slide the platform towards
-them.” “Note that proportions are based only on trials in which participants chose the same
-container as the competitor [ie: incorrect trials], and for apes in version A the measure was face
-rather than eye orientation. Bars show standard error. * p < .05.”
-        </div>
-        <div class="slide">
-          <div data-what=".figure img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
-          <div class="notes">Contrast performance on a competitive object choice task. Ropey looking time measure, but nice to
-have looking time and action measures for a single scenario.
-          </div>
-        </div>
-        <div class="slide">
-          <div data-what=".krupenye_quote" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          <div class="notes">[NB: This quote is from another paper.]
-          </div>
-        </div>
-        <div class="slide">
-          <div data-what=".implicit" data-cls="transition-04" class="dv dv-addclass"></div>
-          <div data-what=".implicit" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          <div class="notes">This seems reasonable: just as there are dissociations among different measures
-of mindreading in adults, and developmental dissociations, so it is plausible that
-there will turn out to be dissociations concerning the tasks that adult humans
-and adult nonhumans can pass.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center notes show">Requirement 3: Predict Dissociations</p>
-          <p class="em-above center notes show">Which tasks should chimps and jays pass and fail?</p>
-          <div class="notes">This requires a theory of processes
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="q">What do <span class="infants">infants</span><span>, chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? </span></p>
-          <div data-what=".infants" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
-          <div class="slide hem-around-children">
-            <p class="em-above">Requirement 1: Diversity in Strategies</p>
-            <p>Requirement 2: Models</p>
-            <p>Requirement 3: Predict Dissociations</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">Earlier I mentioned this way of setting up the debate.
-If you think about the requirements, I think you can see that this is not a 
-productive way to shape the debate.
-          </div>
-          <p class="q">What do <span class="infants">infants</span><span>, chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? </span></p>
-          <div data-what=".infants" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
-          <div class="notes">The standard debate</div>
-          <div class="wrong-qq">
-            <p class="indent em-above">-- Is it <span class="mental-states">mental states</span><span>?</span></p>
-            <p class="indent em-above">-- Or only <span class="behaviours">behaviours</span><span>?</span></p>
-          </div>
-          <div class="slide em-above">
-            <div data-what=".wrong-qq" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-            <p>What models of minds and actions, and of behaviours,</p>
-            <p>and what kinds of processes,</p>
-            <p>underpin mental state tracking in different animals?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="behaviour_reading" class="slide"><img src="/img/bkg/bali/P3222906.low.JPG" class="bkg"/>
-  <div class="spacer">&nbsp;</div>
-  <div style="position:relative; top:425px" class="title-block">
-    <div class="title-container">
-      <h2 class="title1">Ingredients for a Theory of Behaviour Reading</h2>
-    </div>
-  </div>
-</section>
-<div class="handout">&nbsp;</div>
-<div class="handout">\section{Ingredients for a Theory of Behaviour Reading}</div>
-<div class="notes notes-header-tex">&nbsp;</div>
-<div class="notes notes-header-tex">\section{Ingredients for a Theory of Behaviour Reading}</div>
-<div class="notes">‘A better conception of ‘not mindreading’ would be more disparate and 
-less dependent on common sense than the current conception of behaviour reading’
-(Heyes, 2015, p. 322).</div>
-
-<!-- param @cls and param @options should be objects-->
-
-
-
-
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="q">What could <span class="infants">infants</span><span>, chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? </span></p>
-          <div data-what=".infants" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slide">
-  <div style="z-index:-22;" class="right-half-white"></div>
-  <div class="container_12">
-    <div class="grid_6 words left-half">
-      <div style="padding-right:1em;">
-        <p>The standard question:</p>
-        <p>Do nonhuman animals represent mental states or only behaviours?</p>
-        <p>The ‘Logical Problem’ ...</p>
-      </div>
-    </div>
-    <div class="grid_6 words invert right-half">
-      <div style="padding-left:1em;">
-        <p>Alternative question: </p>
-        <p>How might nonhuman animals model others’ behaviours, and how might they predict them?</p>
-        <div class="slide em-above">
-          <p class="notes handout show">‘a better conception of ‘not mindreading’ would be more disparate and 
-less dependent on common sense than the current conception of behaviour reading’
-          </p>
-          <div class="notes handout ctd">\citep[p.~322]{heyes:2014_animal}</div>
-          <p class="right grey-text">Heyes (2015, p. 322)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Start with a case in which behaviour reading is clearly involved.
-I take Byrne’s study
-to demonstrate that chimps are capable of sophisticated behaviour reading.
-But how might they represent behaviours?
-        </div>
-        <div class="notes">The procedure for preparing a nettle to eat while avoiding contact with its stings is shown in
-\vref{fig:byrne_2003_fig1}. It involves multiple steps. Some steps may be repeated varying numbers of
-times, and not all steps occur in every case. The fact that gorillas can learn this and other
-procedures for acquiring and preparing food by observing others’ behaviour suggests that they have
-sophisticated behaviour reading abilities \citep[p.~513]{Byrne:2003wx}. If we understood the nature
-of these behaviour reading abilities and their limits, we might be better able to understand their
-abilities to track mental states too.
-        </div>
-        <p class="center"><img src="/img/byrne_2003_fig1.png" style="height:400px;" class="handout show"/></p>
-        <p class="source">Byrne 2003, figure 1</p>
-        <div class="notes handout">‘great apes [are] able to acquire complex and elaborate local traditions of food
-acquisition, some of them involving tool use’ \citep[p~513]{Byrne:2003wx}
-        </div>
-        <div class="notes">So even quite sophisticated behaviour reading is possible without any
-reliance on communication by language.
-We can therefore think of behaviour reading as foundational for any kind 
-of radical interpretation.
-        </div>
-        <div class="notes">[background]
-‘Nettles, Laportea alatipes, are an important food of mountain gorillas in Rwanda (Watts 1984), 
-rich in protein and low in secondary compounds and structural carbohydrate (Waterman et al. 1983). 
-Unfortunately for the gorillas, this plant is 'defended' by powerful stinging hairs, 
-especially dense on the stem, petioles and leaf-edges. 
-All gorillas in the local population process nettles in broadly the same way, 
-a technique that minimizes contact of sting- ing hairs with their hands and 
-lips (Byrne & Byrne 1991; figure 1). A series of small transformations is 
-made to plant material: stripping leaves off stems, accumulating
-larger bundles of leaves, detachment of petioles, picking out unwanted debris, 
-and finally folding a package of leaf blades within a single leaf before 
-ingestion. The means by which each small change is made are idiosyncratic and
-variable with context (Byrne & Byrne 1993), thus presum- ably best learned 
-by individual experience. However, the overall sequence of five discrete 
-stages in the process is standardized and appears to be essential for efficiency
-(Byrne et al. 2001a).’ \citep[pp.~531--2]{Byrne:2003wx}
-        </div>
-        <div class="notes">‘Like other complex feeding tasks in great apes, preparing nettles is a hierarchically 
-organized skill, showing considerable flexibility: stages that are occasionally 
-unnecessary are omitted, and sections of the process (of one or several ordered stages) 
-are often repeated iteratively to a criterion apparently based on an adequate size of 
-food bundle (Byrne & Russon 1998).’ \citep[pp.~532]{Byrne:2003wx}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>Behaviour reading matters for</p>
-          <div class="hem-around-children">
-            <p>identifying mental states</p>
-            <div class="notes">Because ascriptions of mental states are based on observed behaviours.
-            </div>
-            <div class="slide">
-              <p>identifying effects of actions</p>
-              <p>predicting when an event of interest will occur</p>
-              <p>learning how to do things</p>
-            </div>
-            <div class="handout notes">Our primary concern here with behaviour reading is as a potential basis for abilities to track others’ mental states without representing them.
-But behaviour reading is plausibly important in other ways.
-In mindreaders, behaviour reading is thought to be useful or even necessary for identifying intentions and other mental states (\citealp[p.~861]{Newtson:1977dw}; \citealp[p.~708]{Baldwin:2001rn}).
-Behaviour reading may also matter for efficiently representing events \citep{Kurby:2008bk}, identifing the likely effects of actions \citep{Byrne:1999jk}, predicting when an event likely to be of interest will occur \citep[p.~121]{Swallow:2008cf},
-and learning through observation how to do things \citep{Byrne:2003wx}.
-And of course a special case of pure behaviour reading, ‘speech perception’, underpins communication by language in humans.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="hem-around-children">
-            <p>segmentation: Where does an action begin an end?</p>
-            <div class="notes">Behaviour reading involves at least three components: segmentation, categorisation and structure extraction.
-First, it is necessary to segment continuous streams of bodily movements into units of interest.
-Adult humans can readily impose boundaries on continuous sequences of behaviour \citep{Newtson:1976ni,Zacks:2001ua,Kurby:2008bk}, as can infants \citep{Baldwin:2001rs}.
-Segmentation is probably complicated by the fact that units are not performed one after another but can overlap, as when you bat away a fly while squeezing a lemon and talking on the phone.
-A further complication is that identifying unit boundaries probably involves taking into account the context in which a behaviour occurs \citep[p.~847]{Newtson:1977dw}.
-How could segmentation be achieved?
-Commencement and completion of a goal or subgoal typically coincide with dramatic changes in physical features of the movements such as velocity \citep{Zacks:2001vo}.
-Baldwin and Baird express this idea graphically with the notion of a ‘ballistic trajectory’ that provides an ‘envelope’ for a unit of action \citep[p.~174]{Baldwin:2001rs}.
-Research using schematic animations has shown that adults can use a variety of movement features to group behavioural chunks into units
-\citep{Zacks:2004vd,Hard:2006gr}.
-            </div>
-            <div class="slide">
-              <p>categorisation: What is the type of that action?</p>
-              <div class="notes">A second component of behaviour reading is categorisation.
-Adult humans spontaneously label units of behaviour as ‘running’, ‘grasping’, or ‘searching’ (say).
-This is categorisation: two units which may involve quite different bodily configurations and joint displacements and which may occur in quite different contexts are nevertheless treated as equivalent.
-How are categories identified in pure behaviour reading?
-One possibility is that some categorisation processes involve mirroring motor cognition.
-When a monkey or a human observes another’s action, there are often motor representations in her that would normally occur if it were her, the observer, who was performing the action (see \citealp[][]{rizzolatti_functional_2010,rizzolatti_mirrors_2008} for reviews).
-Further, in preparing, performing and monitoring actions, units of action are represented motorically in ways that abstract from particular patterns of joint displacements and bodily configurations \citep[e.g.][]{rizzolatti:1988_functional, Rizzolatti:2001ug, hamilton:2008_action, cattaneo:2010_state-dependent,Umilta:2001zr, villiger:2010_activity, koch:2010_resonance}.
-And, in observation as performance, what is represented motorically depends on contextual factors such as the presence of particular objects on which certain actions might be performed (\citealp{Gallese:2011uq}).
-Taken together, these findings indicate that %there may be a deep connection between processes involved in action performance and one process of categorisation in behaviour reading.
-%Perhaps
-one process by which units of action are categorised is the process by which, in other contexts, your own actions are prepared.
-              </div>
-            </div>
-            <div class="slide">
-              <p>structure extraction: Are these actions related to those?</p>
-              <div class="notes">A third component of behaviour reading is structure extraction.
-Many actions can be analysed as a structure of goals hierarchically ordered by the means-ends relation
-A behaviour reader should be able to extract some or all of this structure.
-But how?
-Units of behaviour that are all involved in bringing about a single outcome are more likely to occur in succession than chunks not so related.
-This suggests that transitional probabilities in the sequence of units could in principle be used to identify larger structures of units, much as phonemes can be grouped into words by means of tracking transitional probabilities \citep{Saffran:1996aj,Gomez:2000jr}.
-We know that human adults can learn to group small chunks of behaviour into larger word-like units on the basis of statistical features alone \citep{Baldwin:2008mw}.
-A statistical learning mechanism required for discerning such units is automatic \citep{Fiser:2001cx}, domain-general \citep{Kirkham:2002cj} and probably present in human infants \citep{saffran:2007_dog} as well as other species including monkeys \citep{Hauser:2001oo}, pigeons \citep{herbranson:_artificial},
-songbirds \citep{abe:2011_songbirds} and rats \citep{Toro:2005ma,murphy:2008_rule}.
-It is therefore plausible that at least some animals’ pure behaviour reading abilities enable them to extract some of the hierarchical structure of actions.
-              </div>
-            </div>
-            <div class="slide">
-              <p>goal ascription: What is the goal of those actions?</p>
-              <div class="notes">Here I think the teleological stance (which may involve motor processes) 
-is helpful.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_17.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div class="notes">Let me recap the four ingredients with a diagram ....
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_18.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_19.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_20.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_21.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_22.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_23.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_24.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/behaviour_reading_25.jpg" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">Limits of Behaviour Reading?</p>
-          <div class="notes">What are the limits of pure behaviour reading?
-While little is currently known about pure behaviour reading outside of communication by language,
-it is perhaps reasonable to assume that structure extraction depends on domain-general learning mechanisms.
-After all, such mechanisms appear sufficient and there is currently little evidence for domain-specific mechanisms.
-%(even in adult humans, the most abundant lab animals)
-This assumption allows us to make conjectures about the limits of pure behaviour reading.
-          </div>
-          <div class="notes">One limit concerns the kinds of structure which animals of a given species might extract.
-How complex are the patterns of behaviour which can be extracted?
-          </div>
-          <div class="slide">
-            <p class="center em-above"><span class="serial">adjacent</span><span> vs </span><span class="hierarchical">non-adjacent</span><span> dependencies</span></p>
-          </div>
-          <div class="slide">
-            <div data-what=".serial" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".serial" data-cls="bkg-invert" class="dv dv-addclass"></div>
-          </div>
-          <div class="slide">
-            <div data-what=".serial" data-cls="bkg-invert" class="dv dv-removeclass"></div>
-            <div data-what=".hierarchical" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".hierarchical" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">There is a non-adjacent dependency in my behaviour when, for example, my now having a line of sight to an object that is currently unobtainable because of a competitor’s presence results in me retrieving the object at some arbitrary later time when the competitor is absent.
-In this case, my retrieving the object depends on my having had it in my line of sight, but there is an arbitrary interval between these events.
-The hypothesis is that structures involving non-adjacent dependencies are relatively difficult to learn and identify, and that difficulty increases as the number of non-adjacent dependencies increases.%
-\footnote{%
-Compare \citet[][]{vries:2012_processing}.
-Of course, whether non-adjacent dependencies are intrinsically difficult depends on the cognitive architecture \citep{udden:2012_implicit}.
-There is evidence that monkeys \citep{ravignani:2013_action} and chimpanzees \citep{sonnweber:2015_non} can learn patterns involving one non-adjacent dependency.
-}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center">The Birdsong Limit?</p>
-          <div class="notes">To generalise, suppose we assume that extracting structure in pure behaviour reading involves domain-general learning mechanisms only.
-Then whenever an animal’s abilities to track others’ mental states are underpinned by pure behaviour reading only, her abilities to learn and identify patterns should be subject to domain-general limits.
-Since birdsongs are discriminable and involve diverse behavioural structures \citep{berwick:2011_songs}, we might take the \emph{Birdsong Limit} as a rough working hypothesis: structures not found in birdsong cannot be extracted in pure behaviour reading.
-          </div>
-          <div class="handout">The \emph{Birdsong Limit}: structures not found in birdsong cannot be extracted in pure behaviour reading.
-          </div>
-          <div class="handout notes">‘The current study tested the hypothesis that a non-human primate species could detect abstract,
-non-adjacent dependencies in acoustic stimuli, even when dependencies occurred over an arbitrary
-variable number of intervening sounds ... Squirrel monkeys consistently recognized and generalized
-the pattern ABnA at different levels, showing sensitivity to arbitrary-distance dependencies’
-(\citealp{ravignani:2013_action}; see also\citealp{sonnweber:2015_non}).
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide"><img src="/img/hare_2001_fig1.png" width="1024px" style="" class="bkg"/>
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <p class="source">Hare et al (2001, figure 1)</p>
-        <div class="notes">Although not designed to test such limits, some existing experimental designs involve features which plausibly exclude explaining subjects’ performance in terms of pure behaviour reading only.
-To illustrate, consider the sequence of events in the ‘misinformed’ condition of \citet[][Experiment 1]{Hare:2001ph}.
-A competitor observes food being placed [$A$], the competitor’s access is blocked [$B$], stuff happens [$X^N$], food is moved [$C$], more stuff happens [$Y^N$], and the competitor’s access is restored [$D$].
-Finding evidence that chimpanzees can learn to identify patterns of this form [$ABX^NCY^ND$] and use them to predict the conspecifics’ behaviours would represent a major discovery.
-        </div>
-        <div class="notes">‘Before the subordinate’s door was raised, thus allowing her to enter the middle cage, we closed the dominant’s door, regard- less of whether it had been open before, and it remained closed until the subordinate’s hand first touched the floor of the middle cage.’ Hare et al (2001, p. 142)
-        </div>
-        <div class="slide">
-          <div data-what="img, .source" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
-          <div data-what="img, .source" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
-          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
-            <div style="" class="container_12">
-              <div class="grid_12 ">
-                <div class="words">
-                  <div class="middle">
-                    <p>A competitor observes food being placed </p>
-                    <p>the competitor’s access is blocked </p>
-                    <p>stuff happens </p>
-                    <p>food is moved</p>
-                    <p>more stuff happens</p>
-                    <p>the competitor’s access is restored</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="center huge-glow">conclusions</p>
-          <div class="slide em-above">
-            <p class="q">What do <span class="infants">infants</span><span>, chimps and scrub-jays reason about, or represent, that enables them, within limits, to track others’ perceptions, knowledge, beliefs and other propositional attitudes? </span></p>
-            <div data-what=".infants" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
-            <div class="notes">(1) It’s a mistake to think that satisfactory answers are ‘behaviour’ or ‘mental states’,
-or that there individual experimental paradigms could distinguish these two options.
-Neither option is sufficiently well specified to readily generate testable predictions
-            </div>
-            <div class="notes">(2) The ‘Logical Problem’ is a logical problem; it shows that tracking mental
-states doesn’t entail representing mental states.
-            </div>
-            <div class="notes">(3) We can make progress by formulating hypotheses that specify the models of minds
-and actions that characterise different species’ mindreading abilities,
-and by developing theories of behaviour reading.
-            </div>
-            <div class="notes">(4) If it’s true that behaviour reading largely depends on domain-general learning 
-mechanisms, then it is unlikely to explain the abilities to represent mental states
-demonstrated in typical experiments on nonhuman mindreading.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+Such perceptual experiences are often held to reveal the wire’s shape to the 
+subject and so lead directly to beliefs.%
+\footnote{
+Compare \citet[p.~222]{Johnston:1992zb}:
+‘[j]ustified belief … is available simply on the basis of visual perception’;
+\citet[p.~143–4]{Tye:1995oa}:
+‘Phenomenal character “stands ready … to make a direct impact on beliefs’;
+and
+\citet[p.~291]{Smith:2001iz}:
+‘[p]erceptual experiences are … intrinsically … belief-inducing.’
+})</div><div class="notes">(By contrast, having a metacognitive feeling concerning familiarity or an
+physical object’s path does not involve standing in any intentional relation
+to these things.
+The metacognitive feeling is individuated by its normal causes, rather 
+than by any intentional relation.
+And a metacognitive feeling leads to belief, if at all, only indirectly.
+For learning is required in order for the subject to come to a view on
+what tends to cause the metacognitive feeling.)</div><div class="notes">metacognitive feelings have been quite widely neglected in philosophy and
+developmental psychology.
+They are a means by which cognitive processes enable perceivers to 
+acquire dispositions to form beliefs about objects’ properties which are 
+reliably true.    
+metacognitive feelings provide a low-cost but efficient bridge between 
+non-conscious cognitive processes and conscious reasoning.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="may-farage"><div style="position:relative;"><img src="/img/may-farage.jpg" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div></div><div class="notes">You can choose to interpret the feeling differently. 
+You are not presented with familiarity in the way that you are presented with, say,
+circularity.</div><div class="slide"><div data-what=".may-farage" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p style="margin-top:150px;" class="right"><svg height="250" width="250"><circle cx="125" cy="125" r="125" stroke="none" stroke-width="3" fill="white"></circle></svg></p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">This, anyway, is why I think that</div><p class="notes show">metacognitive feelings</p><p><span class="hide">There</span><span class="notes show">are aspects of the overall phenomenal character of experiences </span><span class="notes show">which their subjects take to be informative about things that are only </span><span class="notes show">distantly related (if at all) to the things that those experiences </span><span class="notes show">intentionally relate the subject to. </span></p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Recall the Crude Picture of the Mind. 
+(Epistemic, Perceptual, Motoric).
+I wanted to resist introducing an additional state, core cognition or core knowledge.</div><div class="notes">However I have ended up at least postulating one further thing ...</div><p class="hem-around">Crude Picture of the Mind</p><ul class="hem-around-children"><li><span class="epistemic">epistemic</span><br/><span>(knowledge states)</span></li><li><span>broadly </span><span class="motoric">motoric </span><br/><span>(motor representations of outcomes and affordances)</span></li><li><span>broadly </span><span class="perceptual">perceptual </span><br/><span>(visual, tactual, ... representations; </span><span class="object-indexes">object indexes</span><span>  ...)</span></li><li class="slide metacognitive">metacognitive feelings<div class="notes">metacognitive feelings</div></li><div class="slide"><div data-what=".metacognitive" data-cls="bkg-white-row undefined" class="dv dv-addclass"></div></div></ul></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center huge-glow">challenge?</p></div></div></div></div></div><div class="notes">Are metacognitive feelings relevant for solving the Challenges?</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_14.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Recall the first challenge ...</div></div></div></div></section><section style="" class="slide"><img src="/img/wynn_1992_fig1a.png" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">Hood et al, 2013</p><div class="notes">For example here.</div><div class="slide"><div data-what="img.bkg, .source" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center huge-glow">feeling of surprise</p><div class="slide"><div data-what="img.bkg, .source" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><p class="notes handout show"><span>‘the intensity of felt surprise is not only influenced by the unexpectedness of the surprising </span><span>event, but also by the degree of the event’s interference with ongoing mental activity, [...]</span></p><p class="notes handout ctd show"><span>the effect of unexpectedness on surprise is [...] partly mediated by mental interference’</span></p><div class="notes handout ctd">\citep[p.~271]{reisenzein2000subjective}</div><p class="right grey-text">Reisenzein et al, 2000 p. 271</p></div></div></div></div></div></div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white"></div><div class="container_12"><div class="middle everything"><div class="clear"></div><div class="words run-across"><p class="center">synchronic </p></div><div class="container_12"></div><div class="clear"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="center">early-developing process</p><p class="center">↓</p><p class="center"> <span class="qqq">???<br/><span>&nbsp;</span></span><span class="met-feel remove-me">metacognitive feeling<br/><span>&nbsp;</span></span></p><p class="center">↓</p><p class="center">looking duration <br/><span>(or dishabituation)</span></p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><div style="margin-left:1em;margin-right:-1em"><p class="center">early-developing process</p><p class="center">↓</p><p class="center"> <span class="qqq2">???<br/><span>&nbsp;</span></span><span class="met-feel-assoc remove-me">metacognitive feeling<br/><span>+ </span><span class="learnt-associations">learnt associations</span></span></p><p class="center">↓</p><p class="center">verbal response <br/><span>(or keypress, ...)</span></p></div></div></div><div class="slide"><div data-what=".qqq" data-cls="remove-me" class="dv dv-addclass"></div><div data-what=".met-feel" data-cls="remove-me" class="dv dv-removeclass"></div><div class="notes">This is the first of \textbf{two functions metacognitive feelings play in linking 
+early-developing processes to epistemic processes}:
+They create stop-and-think moments.</div></div><div class="slide"><div data-what=".qqq2" data-cls="remove-me" class="dv dv-addclass"></div><div data-what=".met-feel-assoc" data-cls="remove-me" class="dv dv-removeclass"></div><div class="notes">The second function they play is to inform judgements, as when they cause you
+to judge that something is familiar, or surprising, or done by you. 
+Their playing this second function depends on learnt associations between metacognitive 
+feeling, contextual features and interpretations (e.g. surprise, agency, whatever).</div><div class="notes">[It doesn’t matter whether there are several distinct feelings or one (e.g. 
+surprise and agency may or may not be distinct feelings). As long as they reliably occur in 
+sufficiently different contexts and as long as associations can be formed between the 
+feelings, the contexts and the interpretations, the judgements will be secured.]</div><div class="notes">[Dokic rejects the 'water diviner' model because he recognises, correctly, that it cannot
+explain how metacognitive feelings could play this second function. But whereas he suggests
+that they have intentional contents in virtue of which they play it, I think that 
+associations suffice.]</div></div><div class="slide"><div data-what=".learnt-associations" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".learnt-associations" data-cls="bkg-pink" class="dv dv-addclass"></div><div class="notes">It’s the need for learnt associations to get from metacognitive feelings to judgements which
+explains why the early-developing process can guide judgements in adults and older children
+but not infants.  
+This also explains why the early-developing process and the learnt judgements can come
+apart in adults: judgements do not depend entirely on metacognitive feelings; they can
+occur in their absence, and can override them on occasion.
+[Illustration: Maymon et al helping study]</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">[This is an optional illustration of the POSSIBLE effects of 
+metacognitive feelings: skip over it but come back to it in discussion.
+NB: we don’t know what the metacognitive feeling might be in this case 
+so it’s not the strongest example, more of an illustration of what to look for.]</div><div style="position:relative;"><img src="/img/maymon_2017_fig4b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 4B, used with permission</p><div class="notes">Here you can see how participants moved in the false belief location condition.
+There was also a true belief condition.</div><div class="notes">As you can see, participants mostly started off in the right direction.
+This is the swerve.</div><div class="notes">But there is quite a bit of switching, and a number of</div><div class="notes">The swerve is correlated with the protagonists’ belief state: 
+which direction they swerve in differs between true and false beliefs.
+The direction of swerve is also correlated with proactive gaze</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">This view is consistent with what scientists conjecture about the role of metacognitive feelings
+in adults ... I’m just extending ideas about adults to development ...</div><p class="notes handout show">‘the SoA [sense of agency] may provide an important experiential marker, both for alerting to
+the need for corrective action, and for guiding learning’</p><div class="notes handout ctd">\citep[p.~11]{sidarus:2017_how}</div><p class="right grey-text">Sidarus et al, 2017 p. 11</p><div class="slide"><p class="em-above notes handout show">‘metacognitive feelings ... allow a transition from the implicit-automatic mode to the
+explicit-controlled mode of operation.’</p><div class="notes handout ctd">\citep[p.~150]{koriat:2000_feeling}</div><p class="right grey-text">Koriat, 2000 p. 150</p></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="huge-glow center">conclusion</p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">Can the Revised CLSTX conjecture explain performance on habituation and
+violation-of-expectation tasks?</p></div><div class="q2"><p class="huge-glow"><span>Q2</span></p><p style="margin-top:-4em;">Why do automatic processes measurably influence things like looking times in habituation
+and violation-of-expectation experiments but not verbal judgements or an answer given by
+pressing a key or selecting picture?</p></div><div data-what=".q2" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div class="notes">Can the Revised CLSTX conjecture explain performance on habituation and
+violation-of-expectation tasks?</div><div class="notes">Yes: object indexes -> metacognitive feelings -> looking times</div><div class="slide"><div data-what=".q1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".q2" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">Why do automatic processes measurably influence things like looking times in habituation
+and violation-of-expectation experiments but not verbal judgements or an answer given by
+pressing a key or selecting picture?</div><div class="notes">Because metacognitive feelings can cause you to stop and look but they don’t have
+intentional objects.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Dual process theories </p><p class="indent">of mindreading, object cognition and goal tracking</p><p>need</p><p>metacognitive feelings.</p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="handout show">Conjecture</p><div class="notes">Let me offer you a conjecture which I have not argued for but which is perhaps tempting given
+the difficulty of identifying ways in which processes interact ...</div><div class="notes handout ctd show em-above"><span>Only metacognitive feelings </span><br/><span class="indent">(and behaviours, and other intentional isolators)</span><br/><span>connect early-developing processes for tracking objects, causes, actions and minds </span><br/><span>to the epistemic.</span></div><div class="notes">This conjecture linked to a deeply unfashionable picture of the mind as a loosely assembled
+bunch of systems which can be modified more or less independently of each other ...</div></div></div></div></div></section></div></body></html>
