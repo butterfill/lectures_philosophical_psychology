@@ -1,238 +1,28 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Mindreading and Motor Representation | Philosophical Psychology</title>
-    <meta name="description" content="So far, our dual process theory of mindreading says relatively little about
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Mindreading and Motor Representation | Philosophical Psychology</title><meta name="description" content="So far, our dual process theory of mindreading says relatively little about
 the kinds of process involved in mindreading.
-Could automatic mindreading be an extension of motor processes that underpin goal tracking?"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="maymon_motor" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Mindreading and Motor Representation</h2>
-          </div>
-        </div>
-      </section>
-
+Could automatic mindreading be an extension of motor processes that underpin goal tracking?"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="maymon_motor" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Mindreading and Motor Representation</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p class="right huge-glow">more predictions</p>
-          <div class="notes">One problem for the dual process theory currently is that we need to be
-able to generate more predictions.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="notes">As I said before, we need four ingredients to characterise a mindreading process:
+<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="right huge-glow">more predictions</p><div class="notes">One problem for the dual process theory currently is that we need to be
+able to generate more predictions.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">As I said before, we need four ingredients to characterise a mindreading process:
 a model of minds and actions, a mechanism, a task- and response-analysis and 
-some signature limits.
-          </div>
-          <p>How to characterise a (or the) mindreading process?</p>
-          <p class="indent hem-around notes show model">1. model of minds and actions <span class="dp1">(minimal vs canonical)</span></p>
-          <p class="indent hem-around show mechanisms">2. mechanisms <br/><span class="dp2a">(automatic vs nonautomatic; </span><span class="dp2b"> <span class="motoric">motoric</span><span>  vs epistemic?</span></span><span class="dp2a">)</span></p>
-          <p class="indent hem-around notes show">3. task and response-type analysis</p>
-          <p class="indent hem-around notes show sig-lim">4. signature limits</p>
-          <div class="slide">
-            <div data-what=".model, .sig-lim" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-            <div class="notes">So far we have mainly focussed on deriving signature limits from models.
+some signature limits.</div><p>How to characterise a (or the) mindreading process?</p><p class="indent hem-around notes show model">1. model of minds and actions <span class="dp1">(minimal vs canonical)</span></p><p class="indent hem-around show mechanisms">2. mechanisms <br/><span class="dp2a">(automatic vs nonautomatic; </span><span class="dp2b"> <span class="motoric">motoric</span><span>  vs epistemic?</span></span><span class="dp2a">)</span></p><p class="indent hem-around notes show">3. task and response-type analysis</p><p class="indent hem-around notes show sig-lim">4. signature limits</p><div class="slide"><div data-what=".model, .sig-lim" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">So far we have mainly focussed on deriving signature limits from models.
 But this is a fraught process: the more detailed we specify the model, the more
-arbitrary it is. [Compare Spelke’s principles of object perception.]
-            </div>
-            <div class="notes">A dual process theory of mindreading is in essence one that says there are multiple
+arbitrary it is. [Compare Spelke’s principles of object perception.]</div><div class="notes">A dual process theory of mindreading is in essence one that says there are multiple
 kinds of somewhat independent mindreading processes.  
 While this implies that the mindreading processes probably involve substantially different
-models of minds and actions, it doesn’t entail any very concrete committments.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".model" data-cls="bkg-grey-row " class="dv dv-removeclass"></div>
-            <div data-what=".mechanisms" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
-            <div class="notes">We therefore need to combine speculation about models with speculation about mechanisms.
-            </div>
-          </div>
-          <div class="slide">
-            <div data-what=".motoric" data-cls="transition-04" class="dv dv-addclass"></div>
-            <div data-what=".motoric" data-cls="bkg-invert" class="dv dv-addclass"></div>
-            <div class="notes">Given my attachment to the Crude Picture of the Mind, I'm attracted to a 
+models of minds and actions, it doesn’t entail any very concrete committments.</div></div><div class="slide"><div data-what=".model" data-cls="bkg-grey-row " class="dv dv-removeclass"></div><div data-what=".mechanisms" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">We therefore need to combine speculation about models with speculation about mechanisms.</div></div><div class="slide"><div data-what=".motoric" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".motoric" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Given my attachment to the Crude Picture of the Mind, I'm attracted to a 
 simple but bold conjecture: \textbf{automatic mindreading is an extension of motor
-processes that underpin goal tracking}.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/maymon_2017_fig4ef.png" style="clip: rect(0,360px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Maymon et al (pilot), figure 4E-F, used with permission</p>
-        <div class="slide">
-          <div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
-          <div class="notes">Hands tied (a) eliminates anticipatory looking indicative of belief tracking, and
-(b) destorys the swerve indicative of belief tracking.
-          </div>
-          <div class="notes">NB: we compared hands-tied with hands-free FB location, and separately with hands-free TB
+processes that underpin goal tracking}.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig4ef.png" style="clip: rect(0,360px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 4E-F, used with permission</p><div class="slide"><div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">Hands tied (a) eliminates anticipatory looking indicative of belief tracking, and
+(b) destorys the swerve indicative of belief tracking.</div><div class="notes">NB: we compared hands-tied with hands-free FB location, and separately with hands-free TB
 location. We did not do hands-tied TB.
 (‘proactive first looks and swerving of subjects in the hands-tied FB-location condition
 resembled proactive first looks and swerving of hands-free subjects in the corresponding
-TB-location condition (P = 0.566 and P = 0.057, respectively). ’)
-          </div>
-          <div class="notes">[Stress that the new conjecture,
+TB-location condition (P = 0.566 and P = 0.057, respectively). ’)</div><div class="notes">[Stress that the new conjecture,
 automatic mindreading is an extension of motor processes that underpin goal tracking,
-is an optional development of the dual process theory and not something entailed by it.]
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+is an optional development of the dual process theory and not something entailed by it.]</div></div></div></div></div></section></div></body></html>

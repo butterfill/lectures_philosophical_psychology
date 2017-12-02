@@ -1,161 +1,16 @@
 
-
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
-<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
-<html>
-  <head>
-    <!-- (c) copyright 2013 Stephen A. Butterfill-->
-    <meta charset="utf-8"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Objection from Action | Philosophical Psychology</title>
-    <meta name="description" content="Which responses can automatic mindreading processes dominate? 
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Objection from Action | Philosophical Psychology</title><meta name="description" content="Which responses can automatic mindreading processes dominate? 
 If they could only control proactive gaze, their value would appear limited.
 Further, we know infants can demonstrate belief tracking not only in violation-of-expectation
 and anticipatory looking tasks, but also on tasks which require actions such as pointing and
-helping. Could responses on such tasks be a consequence of automatic mindreading processes?"/>
-    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
-    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
-    <meta name="viewport" content="width=device-width"/>
-    <!-- - lato font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
-    <!--if lt IE 9
-    script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-    
-    --><style >html.wait {
-	cursor: wait !important;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
-  </head>
-  <body><script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
-
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
-    <div id="helpUnderlay" class="help-underlay">
-      <div id="helpModal" class="help-modal">
-        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
-        <div id="helpClose" class="help-close">×</div>
-        <!-- .help-close-->
-        <div id="helpModalContent" class="help-modal-content">
-          <div id="helpListWrap" class="help-list-wrap">
-            <ul class="help-list">
-              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
-              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
-            </ul>
-            <!-- .help-list-->
-          </div>
-          <!-- .help-list-wrap-->
-        </div>
-        <!-- .help-modal-content-->
-      </div>
-      <!-- .help-modal-->
-    </div>
-    <!-- .help-underlay-->
-    
-    <div class="deck-notes">
-      <div class="deck-notes-container"></div>
-    </div>
-    <div class="deck-handout">
-      <div class="deck-handout-container"></div>
-    </div>
-    <div class="deck-container">
-      <section id="instructions" class="slide">
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <div class="middle">
-                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slide">
-        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
-        <div class="words">
-          <div class="container_12">
-            <div class="grid_12">
-              <p>also ...</p>
-              <p>Press the left key to go backwards (or swipe right)</p>
-              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
-              <p>Press m or double tap to slide thumbnails (menu)</p>
-              <p>Press ? at any time to show the keyboard shortcuts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="maymon" class="slide">
-        <div class="spacer">&nbsp;</div>
-        <div style="" class="title-block">
-          <div class="title-container">
-            <h2 class="title1">Objection from Action</h2>
-          </div>
-        </div>
-      </section>
-
+helping. Could responses on such tasks be a consequence of automatic mindreading processes?"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - lato font--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
+<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section><section id="maymon" class="slide"><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Objection from Action</h2></div></div></section>
 <!-- param @cls and param @options should be objects-->
 
 
 
-
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <div class="handout">\section{Maymon, Sivanantham, Low \& Butterfill (pilot)}
+<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="handout">\section{Maymon, Sivanantham, Low \& Butterfill (pilot)}
 
 \begin{center}
 
@@ -187,137 +42,21 @@ was divided into 4 stages: (1) swerving, (2) advancing, (3) reaching, and (4) ul
 over the actual or non-actual bag (dotted lines represent thresholds for each stage). In
 Experiment 2, we examined how stalling of motor representations, by temporarily tying individual
 observers’ hands (E), affected the course of their (N = 24) helping action in the FB-location
-condition (F).
-          </div>
-          <p class="right huge-glow"><span>objection</span><br/><span>from action</span></p>
-          <div class="notes">(a) Automatic processes useless if they only control proactive gaze
+condition (F).</div><p class="right huge-glow"><span>objection</span><br/><span>from action</span></p><div class="notes">(a) Automatic processes useless if they only control proactive gaze
 (b) Infants can demonstrate belief tracking not only in v-of-e and anticipatory
-looking, but also on tasks which require actions such as pointing and helping.
-          </div>
-          <div class="notes">Can a dual process theory of mindreading accommodate this objection?
-          </div>
-          <div class="notes">This question came up in discussion with Jason Low 
+looking, but also on tasks which require actions such as pointing and helping.</div><div class="notes">Can a dual process theory of mindreading accommodate this objection?</div><div class="notes">This question came up in discussion with Jason Low 
 and together with Chris Maymon we found a way to answer it.
 Our conjecture was that although automatic mindreading processes 
 are unlikely to feed into deliberative reasoning about what to do,
-they could affect motor actions and so initiate action in the right direction.
-          </div>
-          <div class="notes">To test this conjecture, we developed a simple helping paradigm.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>conjecture</p>
-          <p>although automatic mindreading processes  are unlikely to feed into deliberative reasoning about what to do,</p>
-          <p>they could affect motor actions </p>
-          <p>and so initiate action in the right direction.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/maymon_2017_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Maymon et al, pilot Figure 1, used with permission</p>
-        <div class="notes">Participants started while seated at a desk; they needed to get up to help 
+they could affect motor actions and so initiate action in the right direction.</div><div class="notes">To test this conjecture, we developed a simple helping paradigm.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>conjecture</p><p>although automatic mindreading processes  are unlikely to feed into deliberative reasoning about what to do,</p><p>they could affect motor actions </p><p>and so initiate action in the right direction.</p></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al, pilot Figure 1, used with permission</p><div class="notes">Participants started while seated at a desk; they needed to get up to help 
 a protagonist by taking their chair, standing on it and retrieving a bag
-from a high place.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/maymon_2017_fig3a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Maymon et al (pilot), figure 2, used with permission</p>
-        <div class="notes">First fixations show just the pattern you would expect for beliefs about locations.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/maymon_2017_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Maymon et al (pilot), figure 2, used with permission</p>
-        <div class="notes">First fixations also show just the pattern our dual process theory predicts for 
-beliefs about identity.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/maymon_cut_fig.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Maymon et al (pilot), figure 2, used with permission</p>
-        <div class="notes">Maymon et al divided participants’ movements into four stages:
+from a high place.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig3a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">First fixations show just the pattern you would expect for beliefs about locations.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">First fixations also show just the pattern our dual process theory predicts for 
+beliefs about identity.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_cut_fig.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">Maymon et al divided participants’ movements into four stages:
 swerving (stage-1), advancing (stage-2) towards the actual or non-actual bag, 
 reaching (stage-3) for the bag, and ultimately handing over (stage-4) the actual or
-non-actual bag.
-        </div>
-        <div class="notes">The first stage of movement shows just the pattern that first fixation did,
-and indeed in FB-LOC, first fixation and swerve are correlated.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="words">
-    <div class="container_12">
-      <div class="grid_12">
-        <div style="position:relative;"><img src="/img/maymon_2017_fig4b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
-        <p class="source">Maymon et al (pilot), figure 4B, used with permission</p>
-        <div class="notes">Here you can see how participants moved in the false belief location condition.
-There was also a true belief condition.
-        </div>
-        <div class="notes">As you can see, participants mostly started off in the right direction.
-This is the swerve.
-        </div>
-        <div class="notes">But there is quite a bit of switching, and a number of
-        </div>
-        <div class="notes">The swerve is correlated with the protagonists’ belief state: 
+non-actual bag.</div><div class="notes">The first stage of movement shows just the pattern that first fixation did,
+and indeed in FB-LOC, first fixation and swerve are correlated.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig4b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 4B, used with permission</p><div class="notes">Here you can see how participants moved in the false belief location condition.
+There was also a true belief condition.</div><div class="notes">As you can see, participants mostly started off in the right direction.
+This is the swerve.</div><div class="notes">But there is quite a bit of switching, and a number of</div><div class="notes">The swerve is correlated with the protagonists’ belief state: 
 which direction they swerve in differs between true and false beliefs.
-The direction of swerve is also correlated with proactive gaze
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="" class="slide">
-  <div style="" class="container_12">
-    <div class="grid_12 ">
-      <div class="words">
-        <div class="middle">
-          <p>Automatic belief tracking doesn’t control how you end up acting, but it can set you off in the right direction.</p>
-          <div class="slide">
-            <p class="center em-above">Prediction:</p>
-            <p>Slowing 1- or 2-year-olds’ helping responses would reduce the probability that their responses indicate belief tracking.</p>
-            <p>The opposite is true for adults.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    </div>
-  </body>
-</html>
+The direction of swerve is also correlated with proactive gaze</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Automatic belief tracking doesn’t control how you end up acting, but it can set you off in the right direction.</p><div class="slide"><p class="center em-above">Prediction:</p><p>Slowing 1- or 2-year-olds’ helping responses would reduce the probability that their responses indicate belief tracking.</p><p>The opposite is true for adults.</p></div></div></div></div></div></section></div></body></html>
