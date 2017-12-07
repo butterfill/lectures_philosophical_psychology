@@ -1,136 +1,955 @@
-<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])--><!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])--><html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg"><head><!-- (c) copyright 2013 Stephen A. Butterfill--><meta charset="utf-8"/><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title>Lecture 07: A Dual-Process Theory of Mindreading | Philosophical Psychology</title><meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/><meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/><meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" /><meta name="viewport" content="width=device-width"/><!-- - fonts--><link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/><!--if lt IE 9script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
---><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" /></head><body><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script><div id="helpUnderlay" class="help-underlay"><div id="helpModal" class="help-modal"><h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1><div id="helpClose" class="help-close">×</div><!-- .help-close--><div id="helpModalContent" class="help-modal-content"><div id="helpListWrap" class="help-list-wrap"><ul class="help-list"><li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li><li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li><li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li><li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li><li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li><li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li><li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li></ul><!-- .help-list--></div><!-- .help-list-wrap--></div><!-- .help-modal-content--></div><!-- .help-modal--></div><!-- .help-underlay-->
 
+<!-- - scripts.add(["/vendor/deck.js/deck.core.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.menu.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.hash.js"])-->
+<!-- - scripts.add(["/vendor/deck.js/deck.notes.js"])-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+  <head>
+    <!-- (c) copyright 2013 Stephen A. Butterfill-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Lecture 07: A Dual-Process Theory of Mindreading | Philosophical Psychology</title>
+    <meta name="description" content="Slides for a lecture by s.butterfill@warwick.ac.uk"/>
+    <meta name="keywords" content="philosophy, psychology, action, joint action, metarepresentation, perception"/>
+    <meta name="author" content=""/><meta name="generator" content="DocPad v6.78.4" />
+    <meta name="viewport" content="width=device-width"/>
+    <!-- - fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,400italic" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"/>
+    <!--if lt IE 9
+    script(async src="https://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    --><style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/vendor/boilerplate.min.css" /><link  rel="stylesheet" href="/vendor/normalize.min.css" /><link  rel="stylesheet" href="/vendor/deck.js/deck.all.min.css" /><link  rel="stylesheet" href="/vendor/960_12_col_custom.min.css" /><link  rel="stylesheet" href="/styles/steve_deck_style.css" /><link  rel="stylesheet" href="/vendor/questionmark.js/question.mark.css" />
+  </head>
+  <body><script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
 
-<div class="deck-notes"><div class="deck-notes-container"></div></div><div class="deck-handout"><div class="deck-handout-container"></div></div><div class="deck-container"><section id="instructions" class="slide"><div class="words"><div class="container_12"><div class="grid_12"><div class="middle"><p class="center">Click here and press the right key for the next slide (or swipe left)</p></div></div></div></div></section><section class="slide"><!-- .notes You won't believe how many people emailed me to say the slides don't work.--><div class="words"><div class="container_12"><div class="grid_12"><p>also ...</p><p>Press the left key to go backwards (or swipe right)</p><p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p><p>Press m or double tap to slide thumbnails (menu)</p><p>Press ? at any time to show the keyboard shortcuts</p></div></div></div></section>
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/vendor/jquery.min.js"></script><script defer="defer"  src="/vendor/jquery-svgfix.js"></script><script defer="defer"  src="/vendor/jquery.crSplineBkg.js"></script><script defer="defer"  src="/vendor/velocity.min.js"></script><script defer="defer"  src="/vendor/marked.min.js"></script><script defer="defer"  src="/vendor/modernizr.custom.01932.js"></script><script defer="defer"  src="/vendor/deck.js/deck.velocity.js"></script><script defer="defer"  src="/vendor/deck.js/deck.all.min.js"></script><script defer="defer"  src="/vendor/jquery.jsPlumb-1.3.16-all-min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/vendor/questionmark.js/question.mark.min.js"></script>
+    <div id="helpUnderlay" class="help-underlay">
+      <div id="helpModal" class="help-modal">
+        <h1>Keyboard Shortcuts<kbd class="help-key"><span>?</span></kbd></h1>
+        <div id="helpClose" class="help-close">×</div>
+        <!-- .help-close-->
+        <div id="helpModalContent" class="help-modal-content">
+          <div id="helpListWrap" class="help-list-wrap">
+            <ul class="help-list">
+              <li class="help-key-unit"><kbd class="help-key"><span>→</span></kbd><span class="help-key-def">Next step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>←</span></kbd><span class="help-key-def">Previous step</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↓</span></kbd><span class="help-key-def">Skip this slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>↑</span></kbd><span class="help-key-def">Previous slide</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>m</span></kbd><span class="help-key-def">Show slide thumbnails</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>n</span></kbd><span class="help-key-def">Show notes</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>h</span></kbd><span class="help-key-def">Show handout latex source</span></li>
+              <li class="help-key-unit"><kbd class="help-key"><span>N</span></kbd><span class="help-key-def">Show talk notes latex source</span></li>
+            </ul>
+            <!-- .help-list-->
+          </div>
+          <!-- .help-list-wrap-->
+        </div>
+        <!-- .help-modal-content-->
+      </div>
+      <!-- .help-modal-->
+    </div>
+    <!-- .help-underlay-->
+    
+    
+    
+    <div class="deck-notes">
+      <div class="deck-notes-container"></div>
+    </div>
+    <div class="deck-handout">
+      <div class="deck-handout-container"></div>
+    </div>
+    <div class="deck-container">
+      <section id="instructions" class="slide">
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <div class="middle">
+                <p class="center">Click here and press the right key for the next slide (or swipe left)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide">
+        <!-- .notes You won't believe how many people emailed me to say the slides don't work.-->
+        <div class="words">
+          <div class="container_12">
+            <div class="grid_12">
+              <p>also ...</p>
+              <p>Press the left key to go backwards (or swipe right)</p>
+              <p>Press n to toggle whether notes are shown (or add '?notes' to the url before the #)</p>
+              <p>Press m or double tap to slide thumbnails (menu)</p>
+              <p>Press ? at any time to show the keyboard shortcuts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
-limits, to track others’ perceptions, knowledge, beliefs and other mental states?</p></div><div class="q2 hide"><p class="huge-glow"><span>Q2</span></p><p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p></div><div class="q3 hide"><p class="huge-glow">Q3</p><p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
-How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?</p></div><div class="slide"><div data-what=".q2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".q3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">I think we can provide candidate answers to all three questions by appeal to a 
-dual-process theory of mindreading.</div></div></div></div></div></div></section><div class="notes notes-header-tex">\title {Philosophical Psychology \\ Lecture 07: A Dual-Process Theory of Mindreading}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\maketitle</div><div id="title-slide" class="slide"><img src="/img/bkg/bali/AP3232947.JPG" class="bkg"/><div class="spacer">&nbsp;</div><div class="no-fade-in"><div style="" class="title-block"><div class="title-container"><h1 style="line-height:45pt;" class="title1 no-fade-in"> <span class="word_0">Lecture </span><span class="word_1">07: </span><span class="word_2">A </span><span class="word_3">Dual-Process </span><span class="word_4">Theory </span><span class="word_5">of </span><span class="word_6">Mindreading </span></h1><h3 class="email no-fade-in">s.butterfill@warwick.ac.uk</h3></div></div></div><div class="handout">\def \ititle {Lecture 07: A Dual-Process Theory of Mindreading}</div><div class="handout">\begin{center}</div><div class="handout">{\Large</div><div class="handout">\textbf{\ititle}</div><div class="handout">}</div><div class="handout">&nbsp;</div><div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div><div class="handout">\end{center}</div><div class="notes">An immediate problem facing any advocate of a dual process theory is that 
+
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="q1">
+            <p class="huge-glow">Q1</p>
+            <p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+            </p>
+          </div>
+          <div class="q2 hide">
+            <p class="huge-glow"><span>Q2</span></p>
+            <p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p>
+          </div>
+          <div class="q3 hide">
+            <p class="huge-glow">Q3</p>
+            <p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
+How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+            </p>
+          </div>
+          <div class="slide">
+            <div data-what=".q2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what=".q3" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">I think we can provide candidate answers to all three questions by appeal to a 
+dual-process theory of mindreading.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="notes notes-header-tex">\title {Philosophical Psychology \\ Lecture 07: A Dual-Process Theory of Mindreading}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\maketitle</div>
+<div id="title-slide" class="slide"><img src="/img/bkg/bali/AP3232947.JPG" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div class="no-fade-in">
+    <div style="" class="title-block">
+      <div class="title-container">
+        <h1 style="line-height:45pt;" class="title1 no-fade-in"> <span class="word_0">Lecture </span><span class="word_1">07: </span><span class="word_2">A </span><span class="word_3">Dual-Process </span><span class="word_4">Theory </span><span class="word_5">of </span><span class="word_6">Mindreading </span>
+        </h1>
+        <h3 class="email no-fade-in">s.butterfill@warwick.ac.uk</h3>
+      </div>
+    </div>
+  </div>
+  <div class="handout">\def \ititle {Lecture 07: A Dual-Process Theory of Mindreading}</div>
+  <div class="handout">\begin{center}</div>
+  <div class="handout">{\Large</div>
+  <div class="handout">\textbf{\ititle}</div>
+  <div class="handout">}</div>
+  <div class="handout">&nbsp;</div>
+  <div class="handout">\iemail %<s.butterfill@warwick.ac.uk></div>
+  <div class="handout">\end{center}</div>
+  <div class="notes">An immediate problem facing any advocate of a dual process theory is that 
 the most familiar such theories are burdened by what appear to be
-strong commitments which are not obviously needed to generate predictions.</div><div class="notes">For instance, Spelke and Carey have proposed a distinction between core cognition and
+strong commitments which are not obviously needed to generate predictions.
+  </div>
+  <div class="notes">For instance, Spelke and Carey have proposed a distinction between core cognition and
 knowledge. Their distinction involves commitment to a dual process theory.
 But it also involves commitment to quite strong claims about innateness, phylogeny and
 representational format. These commitments appear unrelated to the anomalous pattern of
-development we aim to explain.</div><div class="notes">To avoid theoretical commitments which seem inessential given our aim, it is perhaps useful
+development we aim to explain.
+  </div>
+  <div class="notes">To avoid theoretical commitments which seem inessential given our aim, it is perhaps useful
 to characterise the core commitment of any dual process theory in terms of a very simple
-causal model.</div></div><section style="" class="slide"><img src="/img/dual_process_operationalized_10.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Here’s a depiction of the causal model I take to characterise any dual process theory.</div><div class="notes">‘response 1’ is a variable representing which response the subject will give.
+causal model.
+  </div>
+</div>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_10.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Here’s a depiction of the causal model I take to characterise any dual process theory.
+        </div>
+        <div class="notes">‘response 1’ is a variable representing which response the subject will give.
 [Which values it takes will depend on what sort of response it is (e.g. a verbal
 response, proactive gaze, button press.)
 We can think of it as taking three values, one for correct belief tracking,
-one for fact tracking, and one for any other response.]</div><div class="notes">‘process 1’ and ‘process 2’ are variables which each represent whether a certain
-kind of mindreading process will occur and, if so, what it’s outcome is.</div><div class="notes">And the arrows show that the probability that response 1 will have a certain value is
+one for fact tracking, and one for any other response.]
+        </div>
+        <div class="notes">‘process 1’ and ‘process 2’ are variables which each represent whether a certain
+kind of mindreading process will occur and, if so, what it’s outcome is.
+        </div>
+        <div class="notes">And the arrows show that the probability that response 1 will have a certain value is
 influenced by the value of the variables process 1 and process 2 (and by other things
 not included in the model).
 So it should be possible to intervene on the value of ‘process 1’ in order to
-bring about a change in the value of ‘response 1’.</div><div class="notes">[I’ve used thicker and thinner arrows informally to indicate stronger 
+bring about a change in the value of ‘response 1’.
+        </div>
+        <div class="notes">[I’ve used thicker and thinner arrows informally to indicate stronger 
 and weaker dependence. Strictly speaking the width has no meaning and this model
-doesn’t specify exactly how the values of variables are related, only that they are.]</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_11.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-src="img/dual_process_operationalized_11.neg.jpg" class="handout img"></div><div class="notes">Of course, much the same is true for ‘response 2’ as well.  It’s just that
+doesn’t specify exactly how the values of variables are related, only that they are.]
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_11.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-src="img/dual_process_operationalized_11.neg.jpg" class="handout img"></div>
+          <div class="notes">Of course, much the same is true for ‘response 2’ as well.  It’s just that
 the changing the values of other variables will have different effects on
-the values of ‘response 1’ and ‘response 2’.</div><div class="notes">[Limit: this depiction ignores time, which is of course critical.]</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">So what does a Dual Process Theory claim?
-The core claim is just this:</div><div class="step1"><p class="handout notes show">Dual Process Theory (core part):</p><p class="handout notes show"><span>Two (or more) processes for tracking Xs are distinct: </span><br/><span>the conditions which influence whether they occur, </span><br/><span>and which outputs they generate, </span><br/><span>do not completely overlap.</span></p></div><div class="notes">Of course, this is just the core part of a dual process theory, the part common to
+the values of ‘response 1’ and ‘response 2’.
+          </div>
+          <div class="notes">[Limit: this depiction ignores time, which is of course critical.]
+          </div>
+          <div class="slide">
+            <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div class="notes">So what does a Dual Process Theory claim?
+The core claim is just this:
+            </div>
+            <div class="step1">
+              <p class="handout notes show">Dual Process Theory (core part):</p>
+              <p class="handout notes show"><span>Two (or more) processes for tracking Xs are distinct: </span><br/><span>the conditions which influence whether they occur, </span><br/><span>and which outputs they generate, </span><br/><span>do not completely overlap.</span></p>
+            </div>
+            <div class="notes">Of course, this is just the core part of a dual process theory, the part common to
 dual process theories of memory, of physical cognition, of reasoning, of mindreading, and of
-anything else.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">operational characterisation</p><div class="notes">Having given you a formal definition, let me also offer you an
-operationalization of a dual process theory of mindreading.</div><div class="notes">Suppose you have two response types, R1 and R2, which can both indicate belief tracking
+anything else.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">operational characterisation</p>
+          <div class="notes">Having given you a formal definition, let me also offer you an
+operationalization of a dual process theory of mindreading.
+          </div>
+          <div class="notes">Suppose you have two response types, R1 and R2, which can both indicate belief tracking
 (or, thinking more generally, perspective taking) under some conditions.
 Thinking operationally, what would it be for the two response types to reflect the
-operations of different systems?</div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Suppose you have two response types, R1 and R2, which can both indicate belief tracking
+operations of different systems?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_1.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Suppose you have two response types, R1 and R2, which can both indicate belief tracking
 (or, thinking more generally, perspective taking) under some conditions.
 Thinking operationally, what would it be for the two response types to reflect the
-operations of different systems?</div><div class="notes">First, the conditions under which one or another response type tracks beliefs should vary.</div><div class="notes">1.a E.g. changing the \textbf{instructions} should reduce the probability that responses
+operations of different systems?
+        </div>
+        <div class="notes">First, the conditions under which one or another response type tracks beliefs should vary.
+        </div>
+        <div class="notes">1.a E.g. changing the \textbf{instructions} should reduce the probability that responses
 of one type will track beliefs without much affecting the probability that responses
-of the other type will track belief.</div><div class="notes">Evidence for this includes studies by Schenider et al</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_2.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">1.b Or, e.g., changing the \textbf{content of the belief} to be tracked from location to
+of the other type will track belief.
+        </div>
+        <div class="notes">Evidence for this includes studies by Schenider et al
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_2.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">1.b Or, e.g., changing the \textbf{content of the belief} to be tracked from location to
 identity, say, should reduce the probability that responses of one type track beliefs
-without much affecting the probability that responses of the other type will track beliefs.</div><div class="notes">Evidence for this includes studies by Low and his collaborators.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">1a+b. And, ideally, it should be possible find different conditions that reduce the
-probability that different responses track beliefs.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_4.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Further, the probability that responses of these two types track beliefs should be
+without much affecting the probability that responses of the other type will track beliefs.
+        </div>
+        <div class="notes">Evidence for this includes studies by Low and his collaborators.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_3.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">1a+b. And, ideally, it should be possible find different conditions that reduce the
+probability that different responses track beliefs.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_4.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Further, the probability that responses of these two types track beliefs should be
 differently affected by factors such as time pressure and cognitive load. (It isn’t
 important that either is entirely unaffected; what matters is just that the effects are
-different.)</div><div class="notes">As far as I know we don’t yet have direct evidence for this, because few studies
+different.)
+        </div>
+        <div class="notes">As far as I know we don’t yet have direct evidence for this, because few studies
 have compared what happens to two response types as factors like time pressure 
 or cognitive load are varies.
 There is, of course, some evidence that responses of some types are less susceptible
-to cognitive load than others (e.g. \citet{qureshi:2010_executive} on L1 VPT).</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_5.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">So far I’ve been working with a simplifying assumption about the relation
-between types of response and kinds of process.</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="first-attempt center"><p>Process 1 -> Response 1</p><p>Process 2 -> Response 2</p></div><div class="notes">I’ve been assuming that responses of type R1 are dominated by one mindreading process
+to cognitive load than others (e.g. \citet{qureshi:2010_executive} on L1 VPT).
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_5.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">So far I’ve been working with a simplifying assumption about the relation
+between types of response and kinds of process.
+          </div>
+          <div class="slide">
+            <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div class="first-attempt center">
+              <p>Process 1 -> Response 1</p>
+              <p>Process 2 -> Response 2</p>
+            </div>
+            <div class="notes">I’ve been assuming that responses of type R1 are dominated by one mindreading process
 whereas responses of type R2 are dominated by another mindreading process.
-But responses types and processes may not be so closely associated, of course.</div></div><div class="slide"><div data-what=".first-attempt" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div><div class="notes">This is because (a) any response is likely to be a consequence of multiple processes;
+But responses types and processes may not be so closely associated, of course.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".first-attempt" data-css="{&quot;text-decoration&quot;:&quot;line-through&quot;}" class="dv dv-style"></div>
+            <div class="notes">This is because (a) any response is likely to be a consequence of multiple processes;
 and, (b), for some response types such as button selection or proactive gaze,
 changing factors like time pressure could change which mindreading process dominates
-responses of that type.</div><div class="notes">In fact variability in the relation between a mindreading process and a response type
+responses of that type.
+            </div>
+            <div class="notes">In fact variability in the relation between a mindreading process and a response type
 is a potentially useful source of evidence in support of a dual process 
 theory of mindreading.
 Changes in the processes determining a response type can be detected where we have
 situations in which we know, or assume, the two processes yield different answers 
 (cf Todd et al).
-For example ...</div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_6.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">To illustrate, take the case where we instruct subjects to track the location
+For example ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_6.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">To illustrate, take the case where we instruct subjects to track the location
 of a ball. 
 Subjects are asked to press a button to indicate whether a ball is present or absent.
 We know that button selection will not track beliefs when subjects are not 
 under time pressure.
-But what happens if we increase time pressure.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_7.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">It is possible that increasing time pressure will very slightly, but perhaps
+But what happens if we increase time pressure.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_7.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">It is possible that increasing time pressure will very slightly, but perhaps
 measurably increase the probability that button presses 
 are dominated by a different mindreading process, one that is less sensitive to
 instructions.  In that case, we would expect to observe slightly more 
-belief tracking in the responses as time pressure is increased.</div><div class="notes">\citet{todd:2016_dissociating} have recently demonstrated this type of effect
-for L1-VPT; as far as I know, it has not yet been demonstrated for belief tracking.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_10.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">So here’s the causal model I take to underlie a dual process theory.</div><div class="notes">‘response 1’ is a variable representing which response the subject will give.
+belief tracking in the responses as time pressure is increased.
+        </div>
+        <div class="notes">\citet{todd:2016_dissociating} have recently demonstrated this type of effect
+for L1-VPT; as far as I know, it has not yet been demonstrated for belief tracking.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_10.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">So here’s the causal model I take to underlie a dual process theory.
+        </div>
+        <div class="notes">‘response 1’ is a variable representing which response the subject will give.
 [Which values it takes will depend on what sort of response it is (e.g. a verbal
 response, proactive gaze, button press.)
 We can think of it as taking three values, one for correct belief tracking,
-one for fact tracking, and one for any other response.]</div><div class="notes">‘process 1’ and ‘process 2’ are variables which each represent whether a certain
-kind of mindreading process will occur and, if so, what it’s outcome is.</div><div class="notes">And the arrows show that the probability that response 1 will have a certain value is
+one for fact tracking, and one for any other response.]
+        </div>
+        <div class="notes">‘process 1’ and ‘process 2’ are variables which each represent whether a certain
+kind of mindreading process will occur and, if so, what it’s outcome is.
+        </div>
+        <div class="notes">And the arrows show that the probability that response 1 will have a certain value is
 influenced by the value of the variables process 1 and process 2 (and by other things
 not included in the model).
 So it should be possible to intervene on the value of ‘process 1’ in order to
-bring about a change in the value of ‘response 1’.</div><div class="notes">[I’ve used thicker and thinner arrows informally to indicate stronger 
+bring about a change in the value of ‘response 1’.
+        </div>
+        <div class="notes">[I’ve used thicker and thinner arrows informally to indicate stronger 
 and weaker dependence. Strictly speaking the width has no meaning and this model
-doesn’t specify exactly how the values of variables are related, only that they are.]</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_11.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div data-src="img/dual_process_operationalized_11.neg.jpg" class="handout img"></div><div class="notes">Of course, much the same is true for ‘response 2’ as well.  It’s just that
+doesn’t specify exactly how the values of variables are related, only that they are.]
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_11.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div data-src="img/dual_process_operationalized_11.neg.jpg" class="handout img"></div>
+        <div class="notes">Of course, much the same is true for ‘response 2’ as well.  It’s just that
 the changing the values of other variables will have different effects on
-the values of ‘response 1’ and ‘response 2’.</div><div class="notes">[Limit: this depiction ignores time, which is of course critical.]</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">But for many practical purposes, we can ignore the full complexity of this model.
+the values of ‘response 1’ and ‘response 2’.
+        </div>
+        <div class="notes">[Limit: this depiction ignores time, which is of course critical.]
+        </div>
+        <div class="slide">
+          <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div class="notes">But for many practical purposes, we can ignore the full complexity of this model.
 For much of the time we can ignore the fact that changing factors like time pressure may
 alter how response types relate to mindreading processes.
-So let me get back to the basic, crude picture.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_5.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">On the crude picture, responses of different types, R1 and R2, are dominated by
+So let me get back to the basic, crude picture.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_5.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">On the crude picture, responses of different types, R1 and R2, are dominated by
 different kinds of mindreading process.
-This is manifest in that</div><div class="notes">(1) the conditions under which one or another response type tracks beliefs vary;</div><div class="notes">and</div><div class="notes">(2) the probability that responses of these two types track beliefs should be differently
-affected by factors such as time pressure and cognitive load.</div><div class="notes">Note that there is nothing peculiar to the case of mindreading here.
+This is manifest in that
+        </div>
+        <div class="notes">(1) the conditions under which one or another response type tracks beliefs vary;
+        </div>
+        <div class="notes">and
+        </div>
+        <div class="notes">(2) the probability that responses of these two types track beliefs should be differently
+affected by factors such as time pressure and cognitive load.
+        </div>
+        <div class="notes">Note that there is nothing peculiar to the case of mindreading here.
 Much the same ideas apply to dual process theories of memory, or 
-reasoning or physical cognition.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_5.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="notes">So what does a Dual Process Theory of Mindreading claim?
-The core claim is just this:</div><div class="step1"><p class="center handout notes show">Dual Process Theory of Mindreading: Schema</p><div class="slide"><div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><p class="handout notes show">Two (or more) mindreading processes are distinct: the conditions which
+reasoning or physical cognition.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_5.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div class="notes">So what does a Dual Process Theory of Mindreading claim?
+The core claim is just this:
+          </div>
+          <div class="step1">
+            <p class="center handout notes show">Dual Process Theory of Mindreading: Schema</p>
+            <div class="slide">
+              <div data-what="img.bkg" data-css="{&quot;opacity&quot;:0.5}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+              <p class="handout notes show">Two (or more) mindreading processes are distinct: the conditions which
 influence whether they occur, and which outputs they generate, do not 
-completely overlap.</p></div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="center">predictions ?!</p><div class="notes">But what are the predictions?
+completely overlap.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="center">predictions ?!</p>
+          <div class="notes">But what are the predictions?
 Well, so far this is just the outline of a dual process theory.
 It’s the schematic part which is common to 
 dual process theories of memory and of physical cognition.
 To generate predictions we need to fill in the 
-the mindreading-specific parts of the dual process theory.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="columns-2 dont-break-paragraphs"><div class="mechanisms"><p class="invert">1. Mechanisms</p><p class="em-above">Conjecture: <span>Some mindreading processes are more </span><span class="automatic">automatic</span><span> than others.</span></p><div class="slide"><div data-what=".automatic" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".automatic" data-cls="bkg-invert" class="dv dv-addclass"></div></div><div class="slide"><div data-what=".automatic" data-cls="bkg-invert" class="dv dv-removeclass"></div><p class="em-above">Prediction: <span>Varying task instructions will differentially affect responses indicative of mindreading.</span></p></div></div><div class="slide models"><div data-what=".mechanisms" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p class="invert">2. Models</p><p class="em-above">Conjecture:  <span>Some automatic mindreading processes rely on </span><span class="minimal">minimal <span class="model">model</span><span>s of the mental.</span></span><span></span></p><div class="slide"><div data-what=".model" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".model" data-cls="bkg-invert" class="dv dv-addclass"></div></div><div class="slide"><div data-what=".model" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".minimal" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".minimal" data-cls="bkg-invert" class="dv dv-addclass"></div></div><div class="slide"><div data-what=".minimal" data-cls="bkg-invert" class="dv dv-removeclass"></div><p class="slide em-above">Prediction: <span>Those mindreading processes are subject to the </span><span class="sig-lim">signature limits</span><span> of minimal models.</span></p><div class="slide"><div data-what=".sig-lim" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".sig-lim" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes handout">A \emph{signature limit of a model} is a set of predictions derivable from the model which are
-incorrect, and which are not predictions of other models under consideration.</div></div></div></div></div><div class="notes handout ctd">(See \citealp{wang:2015_limits,low:2010_preschoolers,low:2014_quack,edwards:2017_reaction}; contrast \citealp{scott:2015_infants}.)</div><div class="c3 slide"><div data-what=".slide.models &gt; *" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><p class="em-above">Conjecture: <span>Some automatic mindreading depends on motor processes.</span></p><p class="hem-above">Prediction: <span>Impairing motor processes can impair mindreading.</span></p></div></div></div></div></section><section id="minimal_theory_of_mind" class="slide"><img src="/img/bkg/bali/P3192679.low.JPG" class="bkg"/><div class="spacer">&nbsp;</div><div style="position:relative; top:425px" class="title-block"><div class="title-container"><h2 class="title1">Minimal Theory of Mind</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Minimal Theory of Mind}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Minimal Theory of Mind}</div><div class="notes">The construction of a minimal theory of mind provides on account of how
+the mindreading-specific parts of the dual process theory.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="columns-2 dont-break-paragraphs">
+          <div class="mechanisms">
+            <p class="invert">1. Mechanisms</p>
+            <p class="em-above">Conjecture: <span>Some mindreading processes are more </span><span class="automatic">automatic</span><span> than others.</span></p>
+            <div class="slide">
+              <div data-what=".automatic" data-cls="transition-04" class="dv dv-addclass"></div>
+              <div data-what=".automatic" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".automatic" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+              <p class="em-above">Prediction: <span>Varying task instructions will differentially affect responses indicative of mindreading.</span></p>
+            </div>
+          </div>
+          <div class="slide models">
+            <div data-what=".mechanisms" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <p class="invert">2. Models</p>
+            <p class="em-above">Conjecture:  <span>Some automatic mindreading processes rely on </span><span class="minimal">minimal <span class="model">model</span><span>s of the mental.</span></span><span></span></p>
+            <div class="slide">
+              <div data-what=".model" data-cls="transition-04" class="dv dv-addclass"></div>
+              <div data-what=".model" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".model" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+              <div data-what=".minimal" data-cls="transition-04" class="dv dv-addclass"></div>
+              <div data-what=".minimal" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            </div>
+            <div class="slide">
+              <div data-what=".minimal" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+              <p class="slide em-above">Prediction: <span>Those mindreading processes are subject to the </span><span class="sig-lim">signature limits</span><span> of minimal models.</span></p>
+              <div class="slide">
+                <div data-what=".sig-lim" data-cls="transition-04" class="dv dv-addclass"></div>
+                <div data-what=".sig-lim" data-cls="bkg-invert" class="dv dv-addclass"></div>
+                <div class="notes handout">A \emph{signature limit of a model} is a set of predictions derivable from the model which are
+incorrect, and which are not predictions of other models under consideration.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="notes handout ctd">(See \citealp{wang:2015_limits,low:2010_preschoolers,low:2014_quack,edwards:2017_reaction}; contrast \citealp{scott:2015_infants}.)</div>
+        <div class="c3 slide">
+          <div data-what=".slide.models &gt; *" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <p class="em-above">Conjecture: <span>Some automatic mindreading depends on motor processes.</span></p>
+          <p class="hem-above">Prediction: <span>Impairing motor processes can impair mindreading.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="minimal_theory_of_mind" class="slide"><img src="/img/bkg/bali/P3192679.low.JPG" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="position:relative; top:425px" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Minimal Theory of Mind</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Minimal Theory of Mind}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Minimal Theory of Mind}</div>
+<div class="notes">The construction of a minimal theory of mind provides on account of how
 automatic and nonautoamtic mindreading could make complementary trade-offs between
 speed and accuracy.</div>
+
 <!-- param @cls and param @options should be objects-->
 
 
 
-<section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1 hide"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
-limits, to track others’ perceptions, knowledge, beliefs and other mental states?</p></div><div class="q2 hide"><p class="huge-glow"><span class="hide">Q2</span></p><p style="margin-top:-4em;"><span class="hide">Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span class="hide"> in some cases but not all?</span></p></div><div class="q3"><p class="huge-glow">Q3</p><p style="margin-top:-4em;"><span class="a">Why is belief-tracking in adults sometimes but not always automatic?</span><span class="b">How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?</span></p></div><div data-what=".q3 .a" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="em-above center">Which model of minds and actions characterises automatic mindreading?</p></div></div></div></div></section><section style="" class="slide"><img src="/img/model_of_the_mental.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_031.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="handout">An agent’s \emph{field} is a set of objects related to the agent by proximity, orientation and other factors.</div><div class="handout">First approximation: an agent \emph{encounters} an object just if it is in her field.</div><div class="handout">A \emph{goal} is an outcome to which one or more actions are, or might be, directed.  </div><div class="handout">%(Not to be confused with a \emph{goal-state}, which is an intention or other state of an agent linking an action to a particular goal to which it is directed.)</div><div class="handout">\textbf{Principle 1}: one can’t goal-directedly act on an object unless one has encountered it.</div><div class="handout">Applications: subordinate chimps retrieve food when a dominant is not informed of its 
-location \citep{Hare:2001ph}; when observed scrub-jays prefer to cache in shady, distant and 
-occluded locations \citep{Dally:2004xf,Clayton:2007fh}.</div><div class="handout">First approximation: an agent \emph{registers} an object at a location just if she most recently encountered the object at that location.</div><div class="handout">A registration is \emph{correct} just if the object is at the location it is registered at.</div><div class="handout">\textbf{Principle 2}: correct registration is a condition of successful action.</div><div class="handout">Applications: 12-month-olds point to inform depending on their informants’ goals and ignorance \citep{Liszkowski:2008al}; 
-chimps retrieve food when a dominant is misinformed about its location \citep{Hare:2001ph}; 
-scrub-jays observed caching food by a competitor later re-cache in private \citep{Clayton:2007fh,Emery:2007ze}.</div><div class="handout">\textbf{Principle 3}: when an agent performs a goal-directed action and the goal specifies an object, the agent will act as if the object were actually in the location she registers it at.</div><div class="handout">Applications: some false belief tasks \citep{Onishi:2005hm,Southgate:2007js,Buttelmann:2009gy}.</div></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_032.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_033.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_034.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_035.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_036.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_037.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_038.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_039.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_040.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_041.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/liskowski_2008/Slide1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/liskowski_2008/Slide2.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/liskowski_2008/Slide3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/liskowski_2008/Slide4.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/liskowski_2008/Slide5.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/liskowski_2008/Slide6.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/liskowski_2008/Slide7.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_042.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Shift from thinking about registration as conditions on success of actions to 
-causes which set parameters for action.</div></div></div></div></section><section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_043.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="hem-around-children"><p>Fact:</p><p>Minimal theory of mind specifics a model of minds and actions<span class="step2 hide">, </span></p><p class="step2 hide">one which could in principle explain how certain mindreading processes trade accuracy for speed.</p><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div><div class="slide em-above hem-around-children"><p>Conjecture:</p><p>Automatic mindreading processes are characterised by a minimal model of minds and actions.</p></div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
-limits, to track others’ perceptions, knowledge, beliefs and other mental states?</p></div><div class="q2"><p class="huge-glow"><span>Q2</span></p><p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p></div><div class="q3"><p class="huge-glow">Q3</p><p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
-How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?</p></div><div data-what=".q1, .q2, .q3" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div data-what=".q1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="q1 hide">
+            <p class="huge-glow">Q1</p>
+            <p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+            </p>
+          </div>
+          <div class="q2 hide">
+            <p class="huge-glow"><span class="hide">Q2</span></p>
+            <p style="margin-top:-4em;"><span class="hide">Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span class="hide"> in some cases but not all?</span></p>
+          </div>
+          <div class="q3">
+            <p class="huge-glow">Q3</p>
+            <p style="margin-top:-4em;"><span class="a">Why is belief-tracking in adults sometimes but not always automatic?</span><span class="b">How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?</span></p>
+          </div>
+          <div data-what=".q3 .a" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="em-above center">Which model of minds and actions characterises automatic mindreading?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/model_of_the_mental.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_031.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="handout">An agent’s \emph{field} is a set of objects related to the agent by proximity, orientation and other factors.</div>
+        <div class="handout">First approximation: an agent \emph{encounters} an object just if it is in her field.</div>
+        <div class="handout">A \emph{goal} is an outcome to which one or more actions are, or might be, directed.  </div>
+        <div class="handout">%(Not to be confused with a \emph{goal-state}, which is an intention or other state of an agent linking an action to a particular goal to which it is directed.)</div>
+        <div class="handout">\textbf{Principle 1}: one can’t goal-directedly act on an object unless one has encountered it.</div>
+        <div class="handout">
+          Applications: subordinate chimps retrieve food when a dominant is not informed of its 
+          location \citep{Hare:2001ph}; when observed scrub-jays prefer to cache in shady, distant and 
+          occluded locations \citep{Dally:2004xf,Clayton:2007fh}.
+        </div>
+        <div class="handout">First approximation: an agent \emph{registers} an object at a location just if she most recently encountered the object at that location.</div>
+        <div class="handout">A registration is \emph{correct} just if the object is at the location it is registered at.</div>
+        <div class="handout">\textbf{Principle 2}: correct registration is a condition of successful action.</div>
+        <div class="handout">
+          Applications: 12-month-olds point to inform depending on their informants’ goals and ignorance \citep{Liszkowski:2008al}; 
+          chimps retrieve food when a dominant is misinformed about its location \citep{Hare:2001ph}; 
+          scrub-jays observed caching food by a competitor later re-cache in private \citep{Clayton:2007fh,Emery:2007ze}.
+        </div>
+        <div class="handout">\textbf{Principle 3}: when an agent performs a goal-directed action and the goal specifies an object, the agent will act as if the object were actually in the location she registers it at.</div>
+        <div class="handout">Applications: some false belief tasks \citep{Onishi:2005hm,Southgate:2007js,Buttelmann:2009gy}.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_032.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_033.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_034.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_035.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_036.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_037.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_038.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_039.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_040.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_041.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/liskowski_2008/Slide1.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/liskowski_2008/Slide2.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/liskowski_2008/Slide3.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/liskowski_2008/Slide4.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/liskowski_2008/Slide5.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/liskowski_2008/Slide6.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/liskowski_2008/Slide7.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_042.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Shift from thinking about registration as conditions on success of actions to 
+causes which set parameters for action.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_441/slide_cambridge_model_043.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="hem-around-children">
+            <p>Fact:</p>
+            <p>Minimal theory of mind specifics a model of minds and actions<span class="step2 hide">, </span></p>
+            <p class="step2 hide">one which could in principle explain how certain mindreading processes trade accuracy for speed.</p>
+            <div class="slide">
+              <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+          </div>
+          <div class="slide em-above hem-around-children">
+            <p>Conjecture:</p>
+            <p>Automatic mindreading processes are characterised by a minimal model of minds and actions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="q1">
+            <p class="huge-glow">Q1</p>
+            <p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+            </p>
+          </div>
+          <div class="q2">
+            <p class="huge-glow"><span>Q2</span></p>
+            <p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p>
+          </div>
+          <div class="q3">
+            <p class="huge-glow">Q3</p>
+            <p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
+How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+            </p>
+          </div>
+          <div data-what=".q1, .q2, .q3" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+          <div data-what=".q1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          <div class="notes">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
 limits, to track others’ perceptions, knowledge, beliefs and other mental states?
 Maybe it is the states defined by minimal theory of mind.
 Further, the mindreading process in them may resemble more automatic mindreading processes in 
-human adults.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="columns-2 dont-break-paragraphs"><div class="mechanisms"><p class="invert">1. Mechanisms</p><p class="em-above">Conjecture: <span>Some mindreading processes are more </span><span class="automatic">automatic</span><span> than others.</span><p class="em-above">Prediction: <span>Varying task instructions will differentially affect responses indicative of mindreading.</span></p></p></div><div class="models"><p class="invert">2. Models</p><p class="em-above">Conjecture:  <span>Some automatic mindreading processes rely on </span><span class="minimal">minimal <span class="model">model</span><span>s of the mental.</span></span><span></span><p class="slide em-above">Prediction: <span>Those mindreading processes are subject to the </span><span class="sig-lim">signature limits</span><span> of minimal models.</span></p><div class="slide"><div data-what=".sig-lim" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".sig-lim" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes handout">A \emph{signature limit of a model} is a set of predictions derivable from the model which are
-incorrect, and which are not predictions of other models under consideration.</div></div></p></div></div></div></div></div></section><section id="signature_limits" class="slide"><img src="/img/bkg/bali/P3212809.JPG" class="bkg"/><div class="spacer">&nbsp;</div><div style="" class="title-block"><div class="title-container"><h2 class="title1">Signature Limits</h2></div></div></section><div class="handout">&nbsp;</div><div class="handout">\section{Signature Limits}</div><div class="notes notes-header-tex">&nbsp;</div><div class="notes notes-header-tex">\section{Signature Limits}</div><div class="notes">A signature limit of a model is a prediction which can be derived from the model,
+human adults.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="columns-2 dont-break-paragraphs">
+          <div class="mechanisms">
+            <p class="invert">1. Mechanisms</p>
+            <p class="em-above">Conjecture: <span>Some mindreading processes are more </span><span class="automatic">automatic</span><span> than others.</span>
+              <p class="em-above">Prediction: <span>Varying task instructions will differentially affect responses indicative of mindreading.</span></p>
+            </p>
+          </div>
+          <div class="models">
+            <p class="invert">2. Models</p>
+            <p class="em-above">Conjecture:  <span>Some automatic mindreading processes rely on </span><span class="minimal">minimal <span class="model">model</span><span>s of the mental.</span></span><span></span>
+              <p class="slide em-above">Prediction: <span>Those mindreading processes are subject to the </span><span class="sig-lim">signature limits</span><span> of minimal models.</span></p>
+              <div class="slide">
+                <div data-what=".sig-lim" data-cls="transition-04" class="dv dv-addclass"></div>
+                <div data-what=".sig-lim" data-cls="bkg-invert" class="dv dv-addclass"></div>
+                <div class="notes handout">A \emph{signature limit of a model} is a set of predictions derivable from the model which are
+incorrect, and which are not predictions of other models under consideration.
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="signature_limits" class="slide"><img src="/img/bkg/bali/P3212809.JPG" class="bkg"/>
+  <div class="spacer">&nbsp;</div>
+  <div style="" class="title-block">
+    <div class="title-container">
+      <h2 class="title1">Signature Limits</h2>
+    </div>
+  </div>
+</section>
+<div class="handout">&nbsp;</div>
+<div class="handout">\section{Signature Limits}</div>
+<div class="notes notes-header-tex">&nbsp;</div>
+<div class="notes notes-header-tex">\section{Signature Limits}</div>
+<div class="notes">A signature limit of a model is a prediction which can be derived from the model,
 which cannot be derived from any other models under consideration, and which is untrue.
 Signature limits make it possible to test hypotheses about which model characterises
 a particular mindreading process.</div>
+
 <!-- param @cls and param @options should be objects-->
+
 
 
 
@@ -138,25 +957,325 @@ a particular mindreading process.</div>
 belief-tracking in infants are both subject to signature limits
 associated with minimal theory of mind
 (\citealp{wang:2015_limits,Low:2012_identity,low:2014_quack,mozuraitis:2015_privileged};
-contrast \citealp{scott:2015_infants}).</div><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes show"><p>How can we test </p><p>which model of the <span class="mental">mental </span><span> </span><span class="physical remove-me">physical </span></p><p><span> a process is using?</span></p></div><div class="slide"><p class="center em-above">Using signature limits!</p><div class="notes">[First say what signature limits in general are]</div><div class="notes"><As>I said,</As><a>signature limit of a model is a set of predictions derivable from the model which </a><are>incorrect, and which are not predictions of other models under consideration.</are></div></div></div></div></div></div></section><section class="slide"><div class="notes">Let me pause to spell out the logic of this.</div><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="center invert">signature limits</p></div></div></div><div class="right-half-white"></div><div class="container_12 notes show"><div class="grid_6 words left-half"><div style="padding-right:1em;"><div class="hypothesis"><p>Hypothesis 1</p><p class="indent"> <span class="response">Response R</span><span> is the product of a process using a model characterised by  </span><span class="theory1">Theory 1</span></p><div class="notes">These are the hypotheses I wanted to test.</div></div><div class="fact hide"><p class="em-above">Fact</p><p class="indent">Theory 1 predicts that the protagonist will J.</p></div><div class="prediction hide"><p class="em-above">Prediction of Hypothesis 1</p><p class="indent">Response R will proceed as if the protagonist will J.</p></div></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><div class="hypothesis"><p>Hypothesis 2</p><p class="indent"> <span class="response">Response R</span><span> is the product of a process using a model characterised by </span><span class="theory2">Theory 2</span></p></div><div class="fact hide"><p class="em-above">Fact</p><p class="indent">Theory 2 predicts that the protagonist will not J.</p></div><div class="prediction hide"><p class="em-above">Prediction of Hypothesis 2</p><p class="indent">Response R will proceed as if the protagonist will not J</p></div></div></div><div class="slide"><div data-what=".theory1" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".theory1" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">E.g. minimal theory of mind.</div></div><div class="slide"><div data-what=".theory2" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".theory2" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">E.g. canonical theory of mind.</div></div><div class="slide"><div data-what=".theory1, .theory2" data-cls="bkg-invert" class="dv dv-removeclass"></div><div data-what=".response" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".response" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">The response might be an explicit verbal response, a proactive gaze, or anything else
-that can indicate belief-tracking and its absence.</div></div><div class="slide"><div data-what=".response" data-cls="bkg-invert" class="dv dv-removeclass"></div></div><div class="slide"><div data-what=".fact" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">To test the hypotheses, I need to identify an area where the theories describing the models
+contrast \citealp{scott:2015_infants}).
+</div>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes show">
+            <p>How can we test </p>
+            <p>which model of the <span class="mental">mental </span><span> </span><span class="physical remove-me">physical </span></p>
+            <p><span> a process is using?</span></p>
+          </div>
+          <div class="slide">
+            <p class="center em-above">Using signature limits!</p>
+            <div class="notes">[First say what signature limits in general are]</div>
+            <div class="notes">
+              <As>I said,</As><a>signature limit of a model is a set of predictions derivable from the model which </a>
+              <are>incorrect, and which are not predictions of other models under consideration.</are>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div class="notes">Let me pause to spell out the logic of this.
+  </div>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="center invert">signature limits</p>
+      </div>
+    </div>
+  </div>
+  <div class="right-half-white"></div>
+  <div class="container_12 notes show">
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <div class="hypothesis">
+          <p>Hypothesis 1</p>
+          <p class="indent"> <span class="response">Response R</span><span> is the product of a process using a model characterised by  </span><span class="theory1">Theory 1</span></p>
+          <div class="notes">These are the hypotheses I wanted to test.
+          </div>
+        </div>
+        <div class="fact hide">
+          <p class="em-above">Fact</p>
+          <p class="indent">Theory 1 predicts that the protagonist will J.</p>
+        </div>
+        <div class="prediction hide">
+          <p class="em-above">Prediction of Hypothesis 1</p>
+          <p class="indent">Response R will proceed as if the protagonist will J.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <div class="hypothesis">
+          <p>Hypothesis 2</p>
+          <p class="indent"> <span class="response">Response R</span><span> is the product of a process using a model characterised by </span><span class="theory2">Theory 2</span></p>
+        </div>
+        <div class="fact hide">
+          <p class="em-above">Fact</p>
+          <p class="indent">Theory 2 predicts that the protagonist will not J.</p>
+        </div>
+        <div class="prediction hide">
+          <p class="em-above">Prediction of Hypothesis 2</p>
+          <p class="indent">Response R will proceed as if the protagonist will not J</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".theory1" data-cls="transition-04" class="dv dv-addclass"></div>
+      <div data-what=".theory1" data-cls="bkg-invert" class="dv dv-addclass"></div>
+      <div class="notes">E.g. minimal theory of mind.
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".theory2" data-cls="transition-04" class="dv dv-addclass"></div>
+      <div data-what=".theory2" data-cls="bkg-invert" class="dv dv-addclass"></div>
+      <div class="notes">E.g. canonical theory of mind.
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".theory1, .theory2" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+      <div data-what=".response" data-cls="transition-04" class="dv dv-addclass"></div>
+      <div data-what=".response" data-cls="bkg-invert" class="dv dv-addclass"></div>
+      <div class="notes">The response might be an explicit verbal response, a proactive gaze, or anything else
+that can indicate belief-tracking and its absence.
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".response" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+    </div>
+    <div class="slide">
+      <div data-what=".fact" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="notes">To test the hypotheses, I need to identify an area where the theories describing the models
 make incompatible predictions.
-This is a signature limit of impetus mechanics.</div></div><div class="slide"><div data-what=".prediction" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">The fact allows me to derive different predicts from the hypotheses.</div></div></div></section><!-- [Cambridge slides 45--65] Signature limits; Prediction; Experiments --><section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_046.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><!-- *todo* remove first figure, replace with something more informative--><div class="handout">\begin{center}</div><div class="handout">\includegraphics[width=0.25\textwidth]{fig/signature_limits_table.png}</div><div class="handout">\end{center}</div><div class="handout">\begin{center}</div><div class="handout">  \includegraphics[width=0.3\textwidth]{fig/low_2012_fig.png}</div><div class="handout">\end{center} </div></div></div></div></section><section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_047.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_048.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_049.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="hem-around-children"><p>While the protagonist is present, the item is placed in Location-1.</p><p>The protagonist [ stays / leaves ], </p><p>and the item is <span class="step2 hide">[ </span><span>moved</span><span class="step2 hide"> / transformed ]</span><span>.</span></p><div class="slide"><div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/low_watts2.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/low_watts3.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/low_watts4.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/low_watts5.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/low_watts1.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"></div></div></div></section><section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_061.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">drawn from Low & Watts (2013); Low et al (2014)</p><div class="notes">Here are standard anticipatory looking and looking time responses 
+This is a signature limit of impetus mechanics.
+      </div>
+    </div>
+    <div class="slide">
+      <div data-what=".prediction" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+      <div class="notes">The fact allows me to derive different predicts from the hypotheses.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- [Cambridge slides 45--65] Signature limits; Prediction; Experiments -->
+<section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_046.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <!-- *todo* remove first figure, replace with something more informative-->
+        <div class="handout">\begin{center}</div>
+        <div class="handout">\includegraphics[width=0.25\textwidth]{fig/signature_limits_table.png}</div>
+        <div class="handout">\end{center}</div>
+        <div class="handout">\begin{center}</div>
+        <div class="handout">  \includegraphics[width=0.3\textwidth]{fig/low_2012_fig.png}</div>
+        <div class="handout">\end{center} </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_047.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_048.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_049.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="hem-around-children">
+            <p>While the protagonist is present, the item is placed in Location-1.</p>
+            <p>The protagonist [ stays / leaves ], </p>
+            <p>and the item is <span class="step2 hide">[ </span><span>moved</span><span class="step2 hide"> / transformed ]</span><span>.</span></p>
+            <div class="slide">
+              <div data-what=".step2" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/low_watts2.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/low_watts3.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/low_watts4.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/low_watts5.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/low_watts1.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_061.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">drawn from Low & Watts (2013); Low et al (2014)</p>
+        <div class="notes">Here are standard anticipatory looking and looking time responses 
 (Since they are approximately the same and this is rough, I'm only
-giving you one bar for both measures)</div></div></div></div></section><section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_062.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">drawn from Low & Watts (2013); Low et al (2014)</p><div class="notes">Now look at what happens when we change the task to an identity/appearance task.</div></div></div></div></section><section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_063.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="source">drawn from Low & Watts (2013); Low et al (2014)</p><div class="notes">And this isn't because the subjects are confused: 
+giving you one bar for both measures)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_062.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">drawn from Low & Watts (2013); Low et al (2014)</p>
+        <div class="notes">Now look at what happens when we change the task to an identity/appearance task.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/unit_451/slide_cambridge_model_063.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="source">drawn from Low & Watts (2013); Low et al (2014)</p>
+        <div class="notes">And this isn't because the subjects are confused: 
 the switch from location to identity/appearance has no measurable effect
-on explicit verbal responses.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><p>signature limits</p><div class="notes">[First say what signature limits in general are]</div><div class="notes"><As>I said,</As><a>signature limit of a model is a set of predictions derivable from the model which </a><are>incorrect, and which are not predictions of other models under consideration.</are></div><div class="notes">As the study just mentioned \citep{kozhevnikov:2001_impetus} beautifully illustrates, 
+on explicit verbal responses.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p>signature limits</p>
+        <div class="notes">[First say what signature limits in general are]</div>
+        <div class="notes">
+          <As>I said,</As><a>signature limit of a model is a set of predictions derivable from the model which </a>
+          <are>incorrect, and which are not predictions of other models under consideration.</are>
+        </div>
+        <div class="notes">As the study just mentioned \citep{kozhevnikov:2001_impetus} beautifully illustrates, 
 identifying signature limits can make it possible to test conjectures about which theory 
-underpins a given cognitive phenomenon.</div><div class="slide"><p>of minimal models of mind</p><p class="indent">- identity as compression/expansion <span class="tested hide">[has been tested<span class="caveat">*</span><span>]</span></span></p><p class="indent">- duck/rabbit <span class="tested hide">[has been tested<span class="caveat">*</span><span>]</span></span></p><p class="indent">- fission/fusion <span class="tested hide">[is being tested<span class="caveat">*</span><span>]</span></span></p><p class="indent">- quantification </p></div><div class="slide"><div data-what=".tested" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".caveat" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".caveat" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">There is a caveat.
+underpins a given cognitive phenomenon.
+        </div>
+        <div class="slide">
+          <p>of minimal models of mind</p>
+          <p class="indent">- identity as compression/expansion <span class="tested hide">[has been tested<span class="caveat">*</span><span>]</span></span></p>
+          <p class="indent">- duck/rabbit <span class="tested hide">[has been tested<span class="caveat">*</span><span>]</span></span></p>
+          <p class="indent">- fission/fusion <span class="tested hide">[is being tested<span class="caveat">*</span><span>]</span></span></p>
+          <p class="indent">- quantification </p>
+        </div>
+        <div class="slide">
+          <div data-what=".tested" data-css="{&quot;opacity&quot;:1}" data-options="{&quot;visibility&quot;:&quot;visible&quot;,&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+        </div>
+        <div class="slide">
+          <div data-what=".caveat" data-cls="transition-04" class="dv dv-addclass"></div>
+          <div data-what=".caveat" data-cls="bkg-invert" class="dv dv-addclass"></div>
+          <div class="notes">There is a caveat.
 I want to test the claim that automatic processes use minimal models of the mental.
-When testing limits, people have used certain measures ...</div></div><div class="slide"><div class="notes show"></div><p class="em-above">measures:<p class="indent">- spontaneous anticipatory looking</p><p class="indent">- looking duration</p><p class="indent">- active helping (Fizke et al, 2017; unpublished data)</p></p><div class="notes">And now you can see the problem.
+When testing limits, people have used certain measures ...
+          </div>
+        </div>
+        <div class="slide">
+          <div class="notes show"></div>
+          <p class="em-above">measures:
+            <p class="indent">- spontaneous anticipatory looking</p>
+            <p class="indent">- looking duration</p>
+            <p class="indent">- active helping (Fizke et al, 2017; unpublished data)</p>
+          </p>
+          <div class="notes">And now you can see the problem.
 Which of these measures are driven by automatic processes?
 Only for the second, looking duration, 
 do we have evidence that it sometimes reflects processes that are
-automatic in false belief tasks \citep{schneider:2014_task}.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/fizke_unpublished_stimuli.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">Just say that you can do this with other stimuli and paradigms, and we
-have done this with infants and would like to do it with adults.</div><div class="notes">These findings complicate the picture: is helping driven by automatic processes only?
+automatic in false belief tasks \citep{schneider:2014_task}.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/fizke_unpublished_stimuli.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">Just say that you can do this with other stimuli and paradigms, and we
+have done this with infants and would like to do it with adults.
+        </div>
+        <div class="notes">These findings complicate the picture: is helping driven by automatic processes only?
 If not, why do we predict that the signature limit of minimal theory of mind
-is found in this case too?</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><p class="center"><div class="brightness-150"><div class="contrast-150"><img src="/img/scott_2015_fig2b.png" class="fill"/></div></div></p><p class="source">Scott et al (2015, figure 2b)</p><div class="notes">Scott and colleagues \citep{scott:2015_infants} provided other evidence 
+is found in this case too?
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <p class="center">
+          <div class="brightness-150">
+            <div class="contrast-150"><img src="/img/scott_2015_fig2b.png" class="fill"/></div>
+          </div>
+        </p>
+        <p class="source">Scott et al (2015, figure 2b)</p>
+        <div class="notes">Scott and colleagues \citep{scott:2015_infants} provided other evidence 
 suggesting that infants’ mindreading may be relatively sophisticated. 
 Specifically, 17-month-olds watched a thief attempt to steal a preferred 
 object (a rattling toy) when its owner was momentarily absent by substituting 
@@ -167,7 +1286,9 @@ silent toy. The authors postulated that infants can ascribe to the thief an
 intention to implant in the owner a false-belief about the identity of the 
 substituted toy. The authors further suggested that infants make such ascriptions 
 only when the substitution involves a visually-matching toy and the owner will 
-not test whether the toy rattles on her return.</div><div class="notes">However, Scott et al.’s \citep{scott:2015_infants} explanations also 
+not test whether the toy rattles on her return.
+        </div>
+        <div class="notes">However, Scott et al.’s \citep{scott:2015_infants} explanations also 
 require postulating that infants take the thief to be strikingly inept; 
 despite having opportunity simply to pilfer from a closed box known to 
 contain at least three rattling toys, the thief engages in elaborate 
@@ -178,9 +1299,44 @@ between conditions, such as the frequencies with which toys visually matching
 one present during the final phase of the test trial have rattled. These 
 considerations jointly indicate that further evidence would be needed to 
 support the claim that humans’ early mindreading capacity enables them to 
-ascribe intentions concerning false beliefs involving numerical identity.</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">A note on the method again ...</div><div class="hem-around-children"><p class="center"> 1. a dual-process theory</p><p class="center"> motivates conjectures about</p><p class="center"> 2. a minimal model of minds and actions</p><p class="center"> which entails</p><p class="center"> 3. signature limits</p><p class="center"> that generate predictions.</p></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">A wish : an identity version of this van der Wel et al task which uses a paradigm optimal for
-distinguishing automatic and non-automatic processes ...</div><img src="/img/van_der_wel_2014_fig1_phase1.png" style="margin-left:auto;margin-right:auto;display:block;"/><img src="/img/van_der_wel_2014_fig1_phase2.png" style="margin-left:auto;margin-right:auto;display:block;"/><img src="/img/van_der_wel_2014_fig1_phase3_TF.png" style="margin-left:auto;margin-right:auto;display:block;"/><img src="/img/van_der_wel_2014_fig1_phase4.png" style="margin-left:auto;margin-right:auto;display:block;"/><p class="source">van der Wel et al (2014, figure 1)</p><div class="notes">Prediction: when the process is automatic, the difference in curve will vanish 
-when the task concerns a mistake about identity rather than location.</div><div class="notes">To make the task about identity, let the cube (say) transform into a
+ascribe intentions concerning false beliefs involving numerical identity.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">A note on the method again ...
+          </div>
+          <div class="hem-around-children">
+            <p class="center"> 1. a dual-process theory</p>
+            <p class="center"> motivates conjectures about</p>
+            <p class="center"> 2. a minimal model of minds and actions</p>
+            <p class="center"> which entails</p>
+            <p class="center"> 3. signature limits</p>
+            <p class="center"> that generate predictions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">A wish : an identity version of this van der Wel et al task which uses a paradigm optimal for
+distinguishing automatic and non-automatic processes ...
+        </div><img src="/img/van_der_wel_2014_fig1_phase1.png" style="margin-left:auto;margin-right:auto;display:block;"/><img src="/img/van_der_wel_2014_fig1_phase2.png" style="margin-left:auto;margin-right:auto;display:block;"/><img src="/img/van_der_wel_2014_fig1_phase3_TF.png" style="margin-left:auto;margin-right:auto;display:block;"/><img src="/img/van_der_wel_2014_fig1_phase4.png" style="margin-left:auto;margin-right:auto;display:block;"/>
+        <p class="source">van der Wel et al (2014, figure 1)</p>
+        <div class="notes">Prediction: when the process is automatic, the difference in curve will vanish 
+when the task concerns a mistake about identity rather than location.
+        </div>
+        <div class="notes">To make the task about identity, let the cube (say) transform into a
 third shape, a diamond (say).  Then let the cylinder transform into a cube
 and, let the diamond transform into a cylinder.
 Let this happen when the protagonist is present (id-TB) or absent (id-FB).
@@ -188,40 +1344,129 @@ This should not affect tracking the objects,
 but it should affect tracking the protagonists' beliefs about the objects.
 (Good controls are possible because can show the effect still 
 occurs in location-FB vs location-TB with the transformations
-(i.e. location-FB+id-TB vs location-TB+id-TB.))</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">We've just seen evidence for the second claim, as promised.</div><div class="notes show hem-around-children"><p>Constructing minimal theories of mind yields models of the mental which</p><p class="indent">... could be used by automatic mindreading processes.</p><p class="indent second-claim bkg-grey-row">... are used by some automatic mindreading processes.</p><p class="indent third-claim">... are the only models used by automatic mindreading processes.</p></div><div class="slide"><div data-what=".second-claim" data-cls="bkg-grey-row " class="dv dv-removeclass"></div><div data-what=".third-claim" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">The evidence we have doesn’t support the third claim (that minimal theories of mind
-yield models which are are the only models used by automatic mindreading).</div></div><div class="slide"><div data-what=".third-claim" data-cls="bkg-grey-row " class="dv dv-removeclass"></div><div data-what=".third-claim" data-cls="bkg-red-row " class="dv dv-addclass"></div><div class="notes">I do think there's an interesting theoretical argument for the third claim but 
+(i.e. location-FB+id-TB vs location-TB+id-TB.))
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">We've just seen evidence for the second claim, as promised.</div>
+          <div class="notes show hem-around-children">
+            <p>Constructing minimal theories of mind yields models of the mental which</p>
+            <p class="indent">... could be used by automatic mindreading processes.</p>
+            <p class="indent second-claim bkg-grey-row">... are used by some automatic mindreading processes.</p>
+            <p class="indent third-claim">... are the only models used by automatic mindreading processes.</p>
+          </div>
+          <div class="slide">
+            <div data-what=".second-claim" data-cls="bkg-grey-row " class="dv dv-removeclass"></div>
+            <div data-what=".third-claim" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+            <div class="notes">The evidence we have doesn’t support the third claim (that minimal theories of mind
+yield models which are are the only models used by automatic mindreading).
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".third-claim" data-cls="bkg-grey-row " class="dv dv-removeclass"></div>
+            <div data-what=".third-claim" data-cls="bkg-red-row " class="dv dv-addclass"></div>
+            <div class="notes">I do think there's an interesting theoretical argument for the third claim but 
 I'm not sure how interested people are so I've left that out.
-(It's in an appendix.)</div></div><div class="slide second-part em-above"><p><span class="efficiency-required">Automaticity requires <span class="caveat">(some degree of)</span><span> cognitive efficiency,</span></span></p><p class="canonical-is-demanding">but using a canonical model is cognitively demanding.</p><div data-what=".caveat" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".caveat" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">[Move ahead to schneiders puzzle and then come back here.]</div><div data-what=".caveat" data-cls="bkg-invert" class="dv dv-removeclass"></div><div class="slide"><p class="indent">- working memory</p><p class="indent">- attention</p><p class="indent">- inhibitory control </p><div class="notes">[*todo: lots of references missing from the following, e.g. Quereshi et al;
-good summary in Schniedier et al 2014 WHat do we know ... paper.]</div><div class="handout notes">For adults (and children who can do this),
+(It's in an appendix.)
+            </div>
+          </div>
+          <div class="slide second-part em-above">
+            <p><span class="efficiency-required">Automaticity requires <span class="caveat">(some degree of)</span><span> cognitive efficiency,</span></span></p>
+            <p class="canonical-is-demanding">but using a canonical model is cognitively demanding.</p>
+            <div data-what=".caveat" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".caveat" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">[Move ahead to schneiders puzzle and then come back here.]</div>
+            <div data-what=".caveat" data-cls="bkg-invert" class="dv dv-removeclass"></div>
+            <div class="slide">
+              <p class="indent">- working memory</p>
+              <p class="indent">- attention</p>
+              <p class="indent">- inhibitory control </p>
+              <div class="notes">[*todo: lots of references missing from the following, e.g. Quereshi et al;
+good summary in Schniedier et al 2014 WHat do we know ... paper.]
+              </div>
+              <div class="handout notes">For adults (and children who can do this),
 representing perceptions and beliefs as such---and even merely holding in mind 
 what another believes, where no inference is required---involves a measurable 
 processing cost \citep{apperly:2008_back,apperly:2010_limits}, consumes attention 
 and working memory in fully competent adults \citealp{Apperly:2009cc, 
 lin:2010_reflexively, McKinnon:2007rr},  may require inhibition \citep{bull:2008_role} 
-and makes demands on executive function \citep{apperly:2004_frontal,samson:2005_seeing}.</div><div class="notes">People sometimes argue that what is cognitively demanding has nothing to do with
+and makes demands on executive function \citep{apperly:2004_frontal,samson:2005_seeing}.
+              </div>
+              <div class="notes">People sometimes argue that what is cognitively demanding has nothing to do with
 belief ascription but extraneous demands imposed in these tasks.
 But there is a wide range of evidence (listed on your handout) using different paradigms
 and carefully controlling for just this possibility (for example, some studies
 compare tasks that are about beliefs with tasks that are as similar as possible
-but not about beliefs).</div><div class="notes">It makes sense to suppose that these cognitive demands are intrinsic rather than extraneous.
+but not about beliefs).
+              </div>
+              <div class="notes">It makes sense to suppose that these cognitive demands are intrinsic rather than extraneous.
 Compare representing beliefs in a canonical model with measuring temperature
-using centigrade ...</div><div class="notes">Let me say one more thing about the cognitive demands of using a canonical model
-of mental states for mindreading ...</div><div class="slide"><p class="indent">- <span class="bkg-pink">it makes people slow down</span></p></div><div class="notes">... it makes people slow down \citep{Wel:2013uq}.
+using centigrade ...
+              </div>
+              <div class="notes">Let me say one more thing about the cognitive demands of using a canonical model
+of mental states for mindreading ...
+              </div>
+              <div class="slide">
+                <p class="indent">- <span class="bkg-pink">it makes people slow down</span></p>
+              </div>
+              <div class="notes">... it makes people slow down \citep{Wel:2013uq}.
 (Also note that in \citet{lin:2010_reflexively}, even for people with high working 
 memory capacity where no additional cognitive load is imposed, it takes significantly
 longer to follow an instruction that requires visual perspective taking than
-to follow an instruction that does not.)</div></div></div></div></div></div></div></section><div class="handout">Objection:
+to follow an instruction that does not.)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="handout">Objection:
 ‘the theoretical arguments offered [...] are [...] unconvincing, and [...]
 the data can be explained in other terms’
-(\citealp{carruthers:2015_two}; see also \citealp{carruthers:2015_mindreading}).</div><div class="handout">‘A cooperative multi-system architecture is better able to explain infant belief representation than a
+(\citealp{carruthers:2015_two}; see also \citealp{carruthers:2015_mindreading}).
+</div>
+<div class="handout">‘A cooperative multi-system architecture is better able to explain infant belief representation than a
 parallel architecture, and causal representation, schemas and models provide a more promising basis
 for flexible belief representation than does a rule-based approach of the kind described by Butterfill
-and Apperly’ (\citealp{christensen:_twoa}; see also \citealp{michael:2016_flexible,michael:2013_mindreading}).</div><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"> <p style="line-height:.9em;" class="right huge-glow-70"><span>What about</span><br/><span>development?</span></p><div class="notes">So far I’ve been characterising a dual process theory of mindreading which, like 
+and Apperly’ (\citealp{christensen:_twoa}; see also \citealp{michael:2016_flexible,michael:2013_mindreading}).
+</div>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle"> 
+          <p style="line-height:.9em;" class="right huge-glow-70"><span>What about</span><br/><span>development?</span></p>
+          <div class="notes">So far I’ve been characterising a dual process theory of mindreading which, like 
 dual process theories of memory and reasoning, focusses on adults.
-But of course most of the excitement concerns questions about development.</div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">Why is there an age at which children pass some false belief tasks but systematically fail
+But of course most of the excitement concerns questions about development.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">Why is there an age at which children pass some false belief tasks but systematically fail
 others? What feature or features distinguish the tasks these children fail from those they
-pass?</div><div class="notes">When you compare different types of response to a single scenario,
-why do you find that there is an interaction of age and performance?</div><div class="handout notes">Conjecture:
+pass?
+          </div>
+          <div class="notes">When you compare different types of response to a single scenario,
+why do you find that there is an interaction of age and performance?
+          </div>
+          <div class="handout notes">Conjecture:
 \begin{enumerate}
 \item Automatic and nonautomatic mindreading processes both occur from the first year of life onwards.
 \item The model of minds and actions underpinning automatic mindreading process does not
@@ -230,18 +1475,143 @@ significantly change over development.
 relatively crude models of minds and actions, models which do not enable belief tracking.
 \item What changes over development is typically just that the model underpinning nonautomatic
 mindreading becomes gradually more sophisticated and eventually comes to enable belief tracking.
-\end{enumerate}</div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_8.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="notes">The model of minds and actions underpinning automatic mindreading process does not
-significantly change over development.</div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_9.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><div class="notes">By contrast, the model of minds and actions underpinning nonautomatic mindreading process
+\end{enumerate}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_8.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">The model of minds and actions underpinning automatic mindreading process does not
+significantly change over development.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_9.jpg" width="1024px" style="" class="bkg"/>
+  <div style="; mix-blend-mode:screen" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="notes">By contrast, the model of minds and actions underpinning nonautomatic mindreading process
 does significantly change over development.
 In the first three or four years of life, nonautomatic mindreading processes involve
 relatively crude models of minds and actions, models which do not enable belief tracking.
 What changes over development is typically just that the model underpinning nonautomatic
 mindreading becomes gradually more sophisticated and eventually comes to enable belief
-tracking.</div><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position:relative;"><img src="/img/low_2014_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Low et al, 2014 figure 2</p><div class="notes">There is evidence for this from a number of studies.</div><div class="notes">There is a pattern of no change across development when you consider 
+tracking.
+        </div>
+        <div class="slide">
+          <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div style="position:relative;"><img src="/img/low_2014_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+          <p class="source">Low et al, 2014 figure 2</p>
+          <div class="notes">There is evidence for this from a number of studies.
+          </div>
+          <div class="notes">There is a pattern of no change across development when you consider 
 responses like looking time and anticipatory looking which tend to reflect
-automatic mindreading (although they do not always do so)</div><div class="notes">But when you consider responses like verbal predictions, which tend to reflect
-nonautomatic mindreading, you see improvements over development.</div></div></div></div></div></section><section class="slide"><div style="z-index:-22;" class="right-half-white"></div><div class="container_12"><div class="clear"></div><div class="words run-across"><p class="center">signature limits generate predictions</p></div><div class="container_12"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="center">Adults</p><p class="em-above">Hypothesis:</p><p>Some automatic belief-tracking systems rely on minimal models of the mental.</p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p class="center">Infants</p><p class="em-above">Hypothesis:</p><p>Infants’ belief-tracking abilities rely on minimal models of the mental.</p></div></div><div class="clear"></div><div class="grid_6 words left-half"><div style="padding-right:1em;"><p class="em-above">Prediction:</p><p>Automatic belief-tracking is subject to the signature limits of minimal models.</p></div></div><div class="grid_6 words invert right-half"><div style="padding-left:1em;"><p class="em-above">Prediction:</p><p>Infants’ belief-tracking is subject to the signature limits of minimal models.</p></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_13.jpg" width="1024px" style="" class="bkg"/><div style="" class="words"><div class="container_12"><div class="grid_12"><div class="slide"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="notes show center">same signature limit -> same process</p></div></div></div></div></div></div></div></div></div></section><section style="" class="slide"><img src="/img/dual_process_operationalized_9.jpg" width="1024px" style="" class="bkg"/><div style="; mix-blend-mode:screen" class="words"><div class="container_12"><div class="grid_12"><div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div><div style="position:relative;"><img src="/img/low_2014_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Low et al, 2014 figure 2</p><div class="notes">One important feature of these and other findings is that you get the same
-signature limits in adults and infants.</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="handout">\section{Maymon, Sivanantham, Low \& Butterfill (pilot)}
+automatic mindreading (although they do not always do so)
+          </div>
+          <div class="notes">But when you consider responses like verbal predictions, which tend to reflect
+nonautomatic mindreading, you see improvements over development.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slide">
+  <div style="z-index:-22;" class="right-half-white"></div>
+  <div class="container_12">
+    <div class="clear"></div>
+    <div class="words run-across">
+      <p class="center">signature limits generate predictions</p>
+    </div>
+    <div class="container_12"></div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="center">Adults</p>
+        <p class="em-above">Hypothesis:</p>
+        <p>Some automatic belief-tracking systems rely on minimal models of the mental.</p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p class="center">Infants</p>
+        <p class="em-above">Hypothesis:</p>
+        <p>Infants’ belief-tracking abilities rely on minimal models of the mental.</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="grid_6 words left-half">
+      <div style="padding-right:1em;">
+        <p class="em-above">Prediction:</p>
+        <p>Automatic belief-tracking is subject to the signature limits of minimal models.</p>
+      </div>
+    </div>
+    <div class="grid_6 words invert right-half">
+      <div style="padding-left:1em;">
+        <p class="em-above">Prediction:</p>
+        <p>Infants’ belief-tracking is subject to the signature limits of minimal models.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_12.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_13.jpg" width="1024px" style="" class="bkg"/>
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="slide">
+          <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div style="position: absolute; top:-40px; left:-50px; width:800px; height:600px">
+            <div style="" class="container_12">
+              <div class="grid_12 ">
+                <div class="words">
+                  <div class="middle">
+                    <p class="notes show center">same signature limit -> same process</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide"><img src="/img/dual_process_operationalized_9.jpg" width="1024px" style="" class="bkg"/>
+  <div style="; mix-blend-mode:screen" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div data-what="img.bkg" data-css="{&quot;blur&quot;:&quot;5px&quot;}" data-options="{&quot;duration&quot;:0}" class="dv dv-velocity"></div>
+        <div style="position:relative;"><img src="/img/low_2014_fig2.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Low et al, 2014 figure 2</p>
+        <div class="notes">One important feature of these and other findings is that you get the same
+signature limits in adults and infants.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="handout">\section{Maymon, Sivanantham, Low \& Butterfill (pilot)}
 
 \begin{center}
 
@@ -273,41 +1643,247 @@ was divided into 4 stages: (1) swerving, (2) advancing, (3) reaching, and (4) ul
 over the actual or non-actual bag (dotted lines represent thresholds for each stage). In
 Experiment 2, we examined how stalling of motor representations, by temporarily tying individual
 observers’ hands (E), affected the course of their (N = 24) helping action in the FB-location
-condition (F).</div><p class="right huge-glow"><span>objection</span><br/><span>from action</span></p><div class="notes">(a) Automatic processes useless if they only control proactive gaze
+condition (F).
+          </div>
+          <p class="right huge-glow"><span>objection</span><br/><span>from action</span></p>
+          <div class="notes">(a) Automatic processes useless if they only control proactive gaze
 (b) Infants can demonstrate belief tracking not only in v-of-e and anticipatory
-looking, but also on tasks which require actions such as pointing and helping.</div><div class="notes">Can a dual process theory of mindreading accommodate this objection?</div><div class="notes">This question came up in discussion with Jason Low 
+looking, but also on tasks which require actions such as pointing and helping.
+          </div>
+          <div class="notes">Can a dual process theory of mindreading accommodate this objection?
+          </div>
+          <div class="notes">This question came up in discussion with Jason Low 
 and together with Chris Maymon we found a way to answer it.
 Our conjecture was that athough automatic mindreading processes 
 are unlikely to feed into deliberative reasoning about what to do,
-they could affect motor actions and so initiate action in the right direction.</div><div class="notes">To test this conjecture, we developed a simple helping paradigm.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al, pilot Figure 1, used with permission</p><div class="notes">Participants started while seated at a desk; they needed to get up to help 
+they could affect motor actions and so initiate action in the right direction.
+          </div>
+          <div class="notes">To test this conjecture, we developed a simple helping paradigm.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/maymon_2017_fig1.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Maymon et al, pilot Figure 1, used with permission</p>
+        <div class="notes">Participants started while seated at a desk; they needed to get up to help 
 a protagonist by taking their chair, standing on it and retrieving a bag
-from a high place.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig3a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">First fixations show just the pattern you would expect for beliefs about locations.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">First fixations also show just the pattern our dual process theory predicts for 
-beliefs about identity.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_cut_fig.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 2, used with permission</p><div class="notes">Maymon et al divided participants’ movements into four stages:
+from a high place.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/maymon_2017_fig3a.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Maymon et al (pilot), figure 2, used with permission</p>
+        <div class="notes">First fixations show just the pattern you would expect for beliefs about locations.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/maymon_2017_fig3.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Maymon et al (pilot), figure 2, used with permission</p>
+        <div class="notes">First fixations also show just the pattern our dual process theory predicts for 
+beliefs about identity.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/maymon_cut_fig.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Maymon et al (pilot), figure 2, used with permission</p>
+        <div class="notes">Maymon et al divided participants’ movements into four stages:
 swerving (stage-1), advancing (stage-2) towards the actual or non-actual bag, 
 reaching (stage-3) for the bag, and ultimately handing over (stage-4) the actual or
-non-actual bag.</div><div class="notes">The first stage of movement shows just the pattern that first fixation did,
-and indeed in FB-LOC, first fixation and swerve are correlated.</div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig4b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 4B, used with permission</p><div class="notes">Here you can see how participants moved in the false belief location condition.
-There was also a true belief condition.</div><div class="notes">As you can see, participants mostly started off in the right direction.
-This is the swerve.</div><div class="notes">But there is quite a bit of switching, and a number of</div><div class="notes">The swerve is correlated with the protagonists’ belief state: 
+non-actual bag.
+        </div>
+        <div class="notes">The first stage of movement shows just the pattern that first fixation did,
+and indeed in FB-LOC, first fixation and swerve are correlated.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/maymon_2017_fig4b.png" style="clip: auto; position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Maymon et al (pilot), figure 4B, used with permission</p>
+        <div class="notes">Here you can see how participants moved in the false belief location condition.
+There was also a true belief condition.
+        </div>
+        <div class="notes">As you can see, participants mostly started off in the right direction.
+This is the swerve.
+        </div>
+        <div class="notes">But there is quite a bit of switching, and a number of
+        </div>
+        <div class="notes">The swerve is correlated with the protagonists’ belief state: 
 which direction they swerve in differs between true and false beliefs.
-The direction of swerve is also correlated with proactive gaze</div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p>Automatic belief tracking doesn’t control how you end up acting, but it can set you off in the right direction.</p><p class="center em-above">Prediction:</p><p>Slowing 1- or 2-year-olds’ helping responses would reduce the probability that their responses indicate belief tracking.</p><p>The opposite is true for adults.</p></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><p class="right huge-glow">more predictions</p><div class="notes">One problem for the dual process theory currently is that we need to be
-able to generate more predictions.</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="notes">As I said before, we need four ingredients to characterise a mindreading process:
+The direction of swerve is also correlated with proactive gaze
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p>Automatic belief tracking doesn’t control how you end up acting, but it can set you off in the right direction.</p>
+          <p class="center em-above">Prediction:</p>
+          <p>Slowing 1- or 2-year-olds’ helping responses would reduce the probability that their responses indicate belief tracking.</p>
+          <p>The opposite is true for adults.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <p class="right huge-glow">more predictions</p>
+          <div class="notes">One problem for the dual process theory currently is that we need to be
+able to generate more predictions.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="notes">As I said before, we need four ingredients to characterise a mindreading process:
 a model of minds and actions, a mechanism, a task- and response-analysis and 
-some signature limits.</div><p>How to characterise a (or the) mindreading process?</p><p class="indent hem-around notes show model">1. model of minds and actions <span class="dp1">(minimal vs canonical)</span></p><p class="indent hem-around show mechanisms">2. mechanisms <br/><span class="dp2a">(automatic vs nonautomatic; </span><span class="dp2b"> <span class="motoric">motoric</span><span>  vs epistemic?</span></span><span class="dp2a">)</span></p><p class="indent hem-around notes show">3. task and response-type analysis</p><p class="indent hem-around notes show sig-lim">4. signature limits</p><div class="slide"><div data-what=".model, .sig-lim" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">So far we have mainly focussed on deriving signature limits from models.
+some signature limits.
+          </div>
+          <p>How to characterise a (or the) mindreading process?</p>
+          <p class="indent hem-around notes show model">1. model of minds and actions <span class="dp1">(minimal vs canonical)</span></p>
+          <p class="indent hem-around show mechanisms">2. mechanisms <br/><span class="dp2a">(automatic vs nonautomatic; </span><span class="dp2b"> <span class="motoric">motoric</span><span>  vs epistemic?</span></span><span class="dp2a">)</span></p>
+          <p class="indent hem-around notes show">3. task and response-type analysis</p>
+          <p class="indent hem-around notes show sig-lim">4. signature limits</p>
+          <div class="slide">
+            <div data-what=".model, .sig-lim" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+            <div class="notes">So far we have mainly focussed on deriving signature limits from models.
 But this is a fraught process: the more detailed we specify the model, the more
-arbitrary it is. [Compare Spelke’s principles of object perception.]</div><div class="notes">A dual process theory of mindreading is in essence one that says there are multiple
+arbitrary it is. [Compare Spelke’s principles of object perception.]
+            </div>
+            <div class="notes">A dual process theory of mindreading is in essence one that says there are multiple
 kinds of somewhat independent mindreading processes.  
 While this implies that the mindreading processes probably involve substantially different
-models of minds and actions, it doesn’t entail any very concrete committments.</div></div><div class="slide"><div data-what=".model" data-cls="bkg-grey-row " class="dv dv-removeclass"></div><div data-what=".mechanisms" data-cls="bkg-grey-row " class="dv dv-addclass"></div><div class="notes">We therefore need to combine speculation about models with speculation about mechanims.s</div></div><div class="slide"><div data-what=".motoric" data-cls="transition-04" class="dv dv-addclass"></div><div data-what=".motoric" data-cls="bkg-invert" class="dv dv-addclass"></div><div class="notes">Given my attachment to the Crude Picture of the Mind, I'm attracted to a 
+models of minds and actions, it doesn’t entail any very concrete committments.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".model" data-cls="bkg-grey-row " class="dv dv-removeclass"></div>
+            <div data-what=".mechanisms" data-cls="bkg-grey-row " class="dv dv-addclass"></div>
+            <div class="notes">We therefore need to combine speculation about models with speculation about mechanims.s
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".motoric" data-cls="transition-04" class="dv dv-addclass"></div>
+            <div data-what=".motoric" data-cls="bkg-invert" class="dv dv-addclass"></div>
+            <div class="notes">Given my attachment to the Crude Picture of the Mind, I'm attracted to a 
 simple but bold conjecture: \textbf{automatic mindreading is an extension of motor
-processes that underpin goal tracking}.</div></div></div></div></div></div></section><section style="" class="slide"><div style="" class="words"><div class="container_12"><div class="grid_12"><div style="position:relative;"><img src="/img/maymon_2017_fig4ef.png" style="clip: rect(0,360px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div><p class="source">Maymon et al (pilot), figure 4E-F, used with permission</p><div class="slide"><div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div><div class="notes">Hands tied (a) eliminates anticipatory looking indicative of belief tracking, and
-(b) destorys the swerve indicative of belief tracking.</div><div class="notes">NB: we compared hands-tied with hands-free FB location, and separately with hands-free TB
+processes that underpin goal tracking}.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="words">
+    <div class="container_12">
+      <div class="grid_12">
+        <div style="position:relative;"><img src="/img/maymon_2017_fig4ef.png" style="clip: rect(0,360px,999px,0); position: absolute; max-width:720px; max-height:550px;"/></div>
+        <p class="source">Maymon et al (pilot), figure 4E-F, used with permission</p>
+        <div class="slide">
+          <div data-what="img" data-css="{&quot;clip&quot;:&quot;auto&quot;}" class="dv dv-style"></div>
+          <div class="notes">Hands tied (a) eliminates anticipatory looking indicative of belief tracking, and
+(b) destorys the swerve indicative of belief tracking.
+          </div>
+          <div class="notes">NB: we compared hands-tied with hands-free FB location, and separately with hands-free TB
 location. We did not do hands-tied TB.
 (‘proactive first looks and swerving of subjects in the hands-tied FB-location condition
 resembled proactive first looks and swerving of hands-free subjects in the corresponding
-TB-location condition (P = 0.566 and P = 0.057, respectively). ’)</div><div class="notes">[Stress that the new conjecture,
+TB-location condition (P = 0.566 and P = 0.057, respectively). ’)
+          </div>
+          <div class="notes">[Stress that the new conjecture,
 automatic mindreading is an extension of motor processes that underpin goal tracking,
-is an optional development of the dual process theory and not something entailed by it.]</div></div></div></div></div></section><section style="" class="slide"><div style="" class="container_12"><div class="grid_12 "><div class="words"><div class="middle"><div class="q1"><p class="huge-glow">Q1</p><p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
-limits, to track others’ perceptions, knowledge, beliefs and other mental states?</p></div><div class="q2"><p class="huge-glow"><span>Q2</span></p><p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p></div><div class="q3"><p class="huge-glow">Q3</p><p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
-How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?</p></div><div data-what=".q1, .q2, .q3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div class="slide"><div data-what=".q3" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div><div class="notes">I think we can provide candidate answers to all three questions by appeal to a 
-dual-process theory of mindreading.</div></div><div class="slide"><div data-what=".q3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".q1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div></div><div class="slide"><div data-what=".q1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div><div data-what=".q2" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div></div></div></div></div></div></section></div></body></html>
+is an optional development of the dual process theory and not something entailed by it.]
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="" class="slide">
+  <div style="" class="container_12">
+    <div class="grid_12 ">
+      <div class="words">
+        <div class="middle">
+          <div class="q1">
+            <p class="huge-glow">Q1</p>
+            <p style="margin-top:-4em;">What do infants, chimps and scrub-jays reason about, or represent, that enables them, within
+limits, to track others’ perceptions, knowledge, beliefs and other mental states?
+            </p>
+          </div>
+          <div class="q2">
+            <p class="huge-glow"><span>Q2</span></p>
+            <p style="margin-top:-4em;"><span>Why do infants manifest abilities to </span><span class="track-beliefs">track beliefs</span><span> in some cases but not all?</span></p>
+          </div>
+          <div class="q3">
+            <p class="huge-glow">Q3</p>
+            <p style="margin-top:-4em;">Why is belief-tracking in adults sometimes but not always automatic?
+How could belief-tracking be automatic given evidence that it depends on working memory and consumes attention?
+            </p>
+          </div>
+          <div data-what=".q1, .q2, .q3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+          <div class="slide">
+            <div data-what=".q3" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+            <div class="notes">I think we can provide candidate answers to all three questions by appeal to a 
+dual-process theory of mindreading.
+            </div>
+          </div>
+          <div class="slide">
+            <div data-what=".q3" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div data-what=".q1" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+          <div class="slide">
+            <div data-what=".q1" data-css="{&quot;blur&quot;:&quot;2px&quot;}" data-options="{&quot;duration&quot;:500}" class="dv dv-velocity"></div>
+            <div data-what=".q2" data-css="{&quot;blur&quot;:0}" data-options="{&quot;duration&quot;:400}" class="dv dv-velocity"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </body>
+</html>

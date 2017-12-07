@@ -53,15 +53,21 @@ mixin simple_account()
   p Two or more agents perform an 
     span.intentional intentional
     span  joint action 
+    br
     span.necessary-and-sufficient exactly when
     span  there is an 
     span.act-type act-type
     span , 
     span.phi φ
-    span , such that each of several agents intends that they, these agents, 
+    span , such that 
+    br
+    span each agent intends that 
+    br
+    span.indent they, these agents, 
     span.phi φ
     span   
     span.together together
+    br
     span  and their intentions are  
     span.appropriately-related appropriately related 
     span  to their actions.
@@ -83,8 +89,6 @@ mixin slide_interconnected_parallel(p)
           div(style="margin-top:3em")
             p(style="margin-left:1em; padding-left:1em; border-left:3px solid white; margin-top:-3em; padding-top:3em;") You plan my actions as well as yours, and I do likewise.
     block
-
-
 
 
 
@@ -163,7 +167,7 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='61', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 61px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') open
+                    font(color='#ffffff') drop
               text(x='31', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
         g.action.throw
           use( xlink:href='#action-ellipse', x='82', y='242')
@@ -174,7 +178,7 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='75', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 75px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') pour
+                    font(color='#ffffff') throw
               text(x='38', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
         g.action.discard
           use( xlink:href='#action-ellipse', x='112', y='312')
@@ -185,7 +189,7 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='88', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 88px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') tilt
+                    font(color='#ffffff') discard
               text(x='44', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
       g.outcome.amuse(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
         ellipse(cx='562', cy='92', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
@@ -194,7 +198,7 @@ mixin diagram_action_goal(p)
             foreignobject(pointer-events='all', width='81', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
               div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 81px; white-space: normal; text-align: center;')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                  font(color='#ffffff') soak
+                  font(color='#ffffff') amuse
             text(x='41', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
       g.outcome.scare(class='#{p.show.indexOf("outcome")>-1 ? "" : "hide"}')
         ellipse(cx='562', cy='272', rx='40', ry='40', fill='#000000', stroke='#ffffff', stroke-width='3', pointer-events='none')
@@ -225,7 +229,7 @@ mixin diagram_action_goal(p)
             foreignobject(pointer-events='all', width='69', height='32', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
               div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; font-family: Lato; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 69px; white-space: normal; text-align: center;')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                  font(color='#ffffff') fill
+                  font(color='#ffffff') block
             text(x='35', y='28', fill='#000000', text-anchor='middle', font-size='24px', font-family='Lato') [Not supported by viewer]
       g.explain-collective-directedness(class='#{p.show.indexOf("explain-collective-directedness") >-1 ? "" : "hide"}')
         g.the-box
@@ -233,12 +237,11 @@ mixin diagram_action_goal(p)
           g(transform='translate(252,262)rotate(-15,94.5,30)')
             switch
               foreignobject(pointer-events='all', width='189', height='62', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
-                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 195px; white-space: normal; text-align: center;')
+                div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; width: 189px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;', class='invert')
-                    | intention
-                    span.mr.remove-me(class='#{p.show.indexOf("mr")>-1 ? "" : "hide"}').noinvert  or motor representation
+                    | shared intention
                     br
-                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or ???
+                    span.iasmr(class='#{p.show.indexOf("iasmr")>-1 ? "" : "hide"}') or i.a.s.m.r.
         g.coordinates(class='#{p.show.indexOf("coordinates") >-1 ? "" : "hide"}')
           path(d='M 352 262 Q 332 212 307 192 Q 282 172 191.91 190.02', fill='none', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
           path(d='M 185.29 191.34 L 193.23 185.16 L 191.91 190.02 L 195 193.99 Z', fill='#ffffff', stroke='#ffffff', stroke-width='3', stroke-miterlimit='10', pointer-events='none')
@@ -257,9 +260,9 @@ mixin diagram_action_goal(p)
               foreignobject(pointer-events='all', width='116', height='26', requiredFeatures='http://www.w3.org/TR/SVG11/feature#Extensibility')
                 div(xmlns='http://www.w3.org/1999/xhtml', style='display: inline-block; font-size: 24px; color: rgb(0, 0, 0); line-height: 1.26; vertical-align: top; overflow: hidden; max-height: 26px; max-width: 156px; width: 116px; white-space: normal; text-align: center;')
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
-                    font(color='#ffffff') specifies
+                    font(color='#ffffff') represents
               text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
-  
+
 
 //- To do: nearly duplicates diagram_action_goal!
 
@@ -433,34 +436,69 @@ mixin diagram_action_goal_individual(p)
                   div(xmlns='http://www.w3.org/1999/xhtml', style='display:inline-block;text-align:inherit;text-decoration:inherit;')
                     font(color='#ffffff') specifies
               text(x='58', y='25', fill='#000000', text-anchor='middle', font-size='24px') [Not supported by viewer]
-
-
-
-mixin radicalInterpretationProject(p)
-  if typeof(p) === 'undefined'
-    - p = {}
-  if !('step' in p)
-    - p.step = false
-  if !('handout' in p)
-    - p.handout = false
   
-  if p.handout
-    .img.handout(data-src='img/radical_interpretation_handout.png')
-  
-  p.huge-glow-60(style='line-height:.6em') radical interpretation
-  div(class="#{p.step ? 'slide' : ''}")
-    p
-      span.infer Infer
-      span  The Mind from The Evidence
-  div(class="#{p.step ? 'slide' : ''}")
-    p.em-above.indent The Mind: facts about actions, emotions, desires, beliefs, ...
-  div(class="#{p.step ? 'slide' : ''}")
-    p.em-above.indent
-      span.the-evidence The Evidence
-      span: :t
-        : facts about events and states of affairs that could be known without 
-        knowing what any particular individual believes, desires, intends, ...
+mixin four_questions_table()
+  table.data
+    thead
+      tr
+        td
+        td.bratman Bratman
+        td.svr Simple View Revised
+    tbody
+      tr
+        td Is coercion compatible with joint action?
+        td.center.bratman yes
+        td.center.svr yes
+      tr
+        td Does participating in joint action entail being aware that you are doing so?
+        td.center.bratman yes
+        td.center.svr [ish]
+      tr
+        td: p.cooperation Are all joint actions cooperative actions?
+        td.center.bratman no
+        td.center.svr yes
+      tr
+        td Are contralateral commitments necessary for joint action?
+        td.center.bratman no
+        td.center.svr no
   block
 
+mixin cooperation-df()
+  span: :t
+    Purposive actions are cooperative to the extent that, for each agent, her 
+    performing these actions rather than any other actions depends in part on how good
+    an overall pattern of trade-offs between demandingness and well-suitedness can be achieved
+    for all of the actions.
 
+
+mixin my-approach-to-joint-action()
+  .my-plan
+    p How to ground a theory of joint action?
+    p.em-above Step 1: identify features ...
+    p.indent.cg.collective-goals - collective goals
+    p.indent - coordination
+    p.indent.cooperation - cooperation
+    p.indent - contralateral commitments
+    p.indent - experience
+    p.em-above Step 2: ... which generate 
+      span(style="font-style:italic;") how 
+      span questions.
+
+
+mixin conjecture-iasmr()
+  ol
+    li Each represents a single outcome motorically
+      span.step-next , and 
+    li.em-above in each agent this representation triggers planning-like processes
+    li.em-above concerning all the agents’ actions
+      span.step-next , with the result that
+    li.em-above
+      span.coordination coordination of their actions is facilitated.
+
+mixin cooperation-df()
+  span: :t
+    Purposive actions are cooperative to the extent that, for each agent, her 
+    performing these actions rather than any other actions depends in part on how good
+    an overall pattern of trade-offs between demandingness and well-suitedness can be achieved
+    for all of the actions.
 
