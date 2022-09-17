@@ -1,6 +1,6 @@
 ---cson
 layout: 'deck_unit'
-title: "The Double Life of Motor Representation (recap)"
+title: "The Double Life of Motor Representation"
 tags: []
 description: """
   Motor representations live a kind of double life. Although paradigmatically involved in performing
@@ -22,7 +22,7 @@ include ../../../fragments/joint_action_mixins
   fluent. Rather, such performances require motor representations.
   These representations are paradigmatically involved in preparing, executing and monitoring actions.%
   \footnote{%
-  See \citet{wolpert:1995internal, miall:1996_forward, jeannerod:1988_neural, zhang:2007_planning}.
+  See \citet{wolpert:1995internal, miall:1996_forward, jeannerod:1998nbo, zhang:2007_planning}.
   Note that motor representations sometimes occur in an agent who has prepared an action and is required (as it turns out) not to perform it: although she has prevented herself from acting, motor representations specifying the action persist, perhaps because they are necessary for monitoring whether prevention has succeeded \citep{bonini:2014_ventral}.
   }
   But they also live a double life. Motor representations concerning a particular type of action are
@@ -32,14 +32,6 @@ include ../../../fragments/joint_action_mixins
   doing this.
 .notes: :t
   Converging evidence for this assertion comes from a variety of methods and measures ...
-  
-
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 1
-  +reset
-    +_slide_middle_inner
-      p Motor representations occur in action observation (in monkeys).
   
 
 +slide
@@ -71,15 +63,6 @@ section.slide
     discharge during grasping to eat than during grasping to place, both when the action is executed and
     when it is observed. Conventions as in Fig. 1. (B) Population-averaged responses during motor and
     visual tasks (12).’
-
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 1
-  +reset
-    +_slide_middle_inner
-      p Motor representations occur in action observation (in humans).
-    
-
 
 +slide_middle
   .handout.notes
@@ -117,27 +100,6 @@ section.slide
   p.source Fadiga et al 2002, figure 2
 
 
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 1
-  +reset
-    +_slide_middle_inner
-      p Motor representations occur in action observation.
-  
-  
-
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 2
-  +reset
-    +_slide_middle_inner
-      p Motor representations facilitate goal 
-        span.tracking tracking
-        span .
-  .slide
-    +invert('.tracking')
-
-
 +slide
   img(src='/img/bruderer_2015_fig5.png', width='720px', style='filter:invert(1);')
   p.source Bruderer et al, 2015 figures 1, 4
@@ -154,34 +116,25 @@ section.slide
     Experiment 2: but not when they have a tongue-controlling dummy in their mouths
   .notes: :t
     Experiment 3: but yes when they have a dummy which leaves the tongue free.
-//-
-//- +slide({bkg:'kilner_2003/Slide1.jpg'})
-//-   .notes: :t
-//-     Behaviour: interference effects (ovalization)
-//- +slide({bkg:'kilner_2003/Slide2.jpg'})
-//- +slide({bkg:'kilner_2003/Slide3.jpg'})
-//- +slide({bkg:'kilner_2003/Slide4.jpg'})
-//- +slide({bkg:'kilner_2003/Slide5.jpg'})
-//- +slide({bkg:'kilner_2003/Slide6.jpg'})
-//-
 
++slide({bkg:'kilner_2003/Slide1.jpg'})
+  .notes: :t
+    Behaviour: interference effects (ovalization)
++slide({bkg:'kilner_2003/Slide2.jpg'})
++slide({bkg:'kilner_2003/Slide3.jpg'})
++slide({bkg:'kilner_2003/Slide4.jpg'})
++slide({bkg:'kilner_2003/Slide5.jpg'})
++slide({bkg:'kilner_2003/Slide6.jpg'})
 
++slide_middle
+  .notes.show
+    p.center.huge-glow Old Puzzle 
+    p.center.below-huge-glow(style='margin-top:-3em;') What are those motor representations doing here?
+  .notes: :t
+    But there is also another puzzle ...
 
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 2
-  +reset
-    +_slide_middle_inner
-      p Motor representations facilitate goal 
-        span.tracking tracking
-        span .
-
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 3
-  +reset
-    +_slide_middle_inner
-      p Motor representations in observation facilitate anticipation of others’ actions.
++slide_middle
+  p.center Motor representations in observation facilitate anticipation of others’ actions.
     
 
 +slide({bkg:'costantini_2002.png'})
@@ -197,22 +150,9 @@ section.slide
 
 
 
-
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 3
-  +reset
-    +_slide_middle_inner
-      p Motor representations in observation facilitate anticipation of others’ actions.
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 4
-  +reset
-    +_slide_middle_inner
-      p: :t
-        Motor representations in observation facilitate explicit identification of others’ actions.
-      .slide
-        p.center Evidence : training effects
++slide_middle
+  p.center Motor representations in observation facilitate explicit identification of others’ actions.
+    
 
 +slide({bkg:'casile_giese_fig1.png'})
   p.source Casile & Giese 2006, figure 1
@@ -251,16 +191,6 @@ section.slide
     \label{expertise_affects_motor}
     For this reason, the increase in the probability of making accurate judgements about the goals of others' actions is plausibly a consequence of differences in motor representations in the observer.
 
-
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 4
-  +reset
-    +_slide_middle_inner
-      p: :t
-        Motor representations in observation facilitate explicit identification of others’ actions.
-      .slide
-        p.center Evidence : effects of neurological defects
 
 
 +slide
@@ -301,16 +231,8 @@ section.slide
 
 
 //- Another illustration of MR facilitating identification : speech
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 4
-  +reset
-    +_slide_middle_inner
-      p: :t
-        Motor representations in observation facilitate explicit identification of others’ (speech) actions.
     
 +slide({bkg:'dausilio_2009_fig1.png'})
-  +style('img.bkg',{height:'600px'})
   p.source D'Ausilio et al (2009, figure 1)
   .notes: :t
     ‘Double TMS pulses were applied just prior to stimuli presentation to selectively prime the cortical activity specifically in the lip (LipM1) or tongue (TongueM1) area’
@@ -336,11 +258,16 @@ section.slide
 
 
 
-section.slide
-  +_slide_middle_inner
-    p.huge-glow-150 4
-  +reset
-    +_slide_middle_inner
-      p: :t
-        Motor representations in observation facilitate explicit identification of others’ actions.
++slide_middle
+  .notes.show
+    p.huge-glow-70 Old Puzzle
+    p.below-huge-glow(style='margin-top:-2em;') What are those motor representations doing here?
+    .slide
+      p.right.em-above Motor representations concerning the goals of observed actions sometimes facilitate the identification of goals.
+    .slide
+      p.center.huge-glow-70 New Question
+      p.center(style='margin-top:-2em;')  How?
+  .notes Question: How is it that motor representations concerning the goals of observed actions sometimes facilitate identification of goals?
+
+
 

@@ -26,7 +26,7 @@ include ../../../fragments/unit_mixins
   entirely a consequence of relatively automatic processes
   \citep{kovacs_social_2010,Schneider:2011fk,Wel:2013uq} and
   that not all mindreading in human adults is
-  \citep{apperly:2008_back,apperly:2010_limits,Wel:2013uq}.
+  \citep{apperly:2008_back,apperly_why_2010,Wel:2013uq}.
 
 
 +slide_middle
@@ -85,6 +85,8 @@ include ../../../fragments/unit_mixins
 +slide({bkg:'southgate_2007_cap7.png'})
   p.source Southgate et al, 2007; Senju et al, 2009 video S1
 
+
++slide({bkg:'southgate_replication_problem.png'})
 
 
 +slide({bkg:'schneider_2014_fig1.png'})
@@ -336,85 +338,42 @@ section.slide
 
 
 
+//- 
+  +slide_middle
+    p.center Dual Process Theory of Mindreading
+    p.hem-around: :t
+      Automatic and nonautomatic mindreading processes are distinct : different conditions
+      influence whether they occur and which ascriptions they generate.
+    .handout: :t
+      \emph{Dual Process Theory of Mindreading}.  
+      Automatic and nonautomatic mindreading processes are independent in
+      this sense: different conditions influence whether they occur and
+      which ascriptions they generate. 
+    .handout: :t
+      \citet{qureshi:2010_executive} found that automatic and nonautomatic
+      mindreading processes are differently influenced by cognitive load, and
+      \citet{todd:2016_dissociating} provided evidence that adding time pressure
+      affects nonautomatic but not automatic mindreading processes.
+    .slide
+      p.em-above evidence?
 
-+slide_middle
-  p.center Dual Process Theory of Mindreading
-  p.hem-around: :t
-    Automatic and nonautomatic mindreading processes are distinct : different conditions
-    influence whether they occur and which ascriptions they generate.
-  .handout: :t
-    \emph{Dual Process Theory of Mindreading}.  
-    Automatic and nonautomatic mindreading processes are independent in
-    this sense: different conditions influence whether they occur and
-    which ascriptions they generate. 
-  .handout: :t
-    \citet{qureshi:2010_executive} found that automatic and nonautomatic
-    mindreading processes are differently influenced by cognitive load, and
-    \citet{todd:2016_dissociating} provided evidence that adding time pressure
-    affects nonautomatic but not automatic mindreading processes.
-  .slide
-    p.em-above evidence?
-
-+slide({bkg:'dual_process.jpg'})
-  p.source fantasy
-  .notes: :t
-    What would be the ideal evidence for the Dual Process Theory of Mindreading?
-    Suppose we had a version of Southgate et al, 2007’s task in which subjects were 
-    instructed to make an action prediction by pressing one of two buttons (depending
-    on where they thought the hand would appear).  Now consider what would happen
-    if we introduced time pressure, or if we introduced a secondary task.
-    Both factors should influence the pattern of errors in the instruction-driven button press, 
-    whereas neither factor should affect anticipatory looking.
-  .notes: :t
-    Also idea: no correlations between anticipatory looking and button press responses,
-    except perhaps under max time pressure (when button presses may become more accurate).
-
-+slide({bkg:'qureshi_2010_table1i.png'})
-  .notes: :t
-    Most of the evidence comes not from false belief but from a L1 VPT task
-+slide({bkg:'qureshi_2010_table1ii.png'})
-
-+slide_middle
-  p.center Dual Process Theory of Mindreading
-  p.hem-around: :t
-    Automatic and nonautomatic mindreading processes are distinct : different conditions
-    influence whether they occur and which ascriptions they generate.
-  p.em-above evidence?
-  .slide
-    p.indent --- automatic mindreading is unaffected by time pressure (L1-VPT; Todd et al, 2016)
-    p.indent --- automatic mindreading is unaffected (or enhanced?) by secondary task (L1-VPT; Qureshi et al, 2010)
+  +slide({bkg:'dual_process.jpg'})
+    p.source fantasy
     .notes: :t
-      Two limits on the available evidence.
-      First, the evidence comes from the Samson et al L1 VPT task
-      rather than a belief-tracking task.  
-      Second, Todd et al dissociate automatic and controlled responses, but the 
-      controlled response is not a perspective taking response.  (Similar objections
-      could be made to Qureshi.)  So in both cases, treating these 
-      findings as evidence for a dual processs theory of mindreading depends on 
-      the background assumption that nonautomatic mindreading is affected by
-      time pressure and places demands on executive function that are incompatible
-      with its being unaffected or enchanced by the occurrence of a secondary task.
-  .slide
-    p.indent --- Low et al’s location/identity manipulation (coming later ...)
+      What would be the ideal evidence for the Dual Process Theory of Mindreading?
+      Suppose we had a version of Southgate et al, 2007’s task in which subjects were 
+      instructed to make an action prediction by pressing one of two buttons (depending
+      on where they thought the hand would appear).  Now consider what would happen
+      if we introduced time pressure, or if we introduced a secondary task.
+      Both factors should influence the pattern of errors in the instruction-driven button press, 
+      whereas neither factor should affect anticipatory looking.
+    .notes: :t
+      Also idea: no correlations between anticipatory looking and button press responses,
+      except perhaps under max time pressure (when button presses may become more accurate).
 
-+slide
-  +img('lin_2010_fig3.png')
-  .handout.notes: :t
-    \citet{lin:2010_reflexively} show that successful visual perspective taking (in the 
-    director task) is faster among those with greater working memory capacity (Experiment 1) and 
-    slower when cognitive load is imposed (Experiment 2).
-  p.source Lin et al (2010, figure 3)
-  .notes: :t
-    ‘Fig. 3. Latency of decision window for the target as a function of
-    cognitive load and presence of a competitor (Experiment 2).’
-  .notes: :t
-    The task is a director study.  ‘competitor present’ means there are two possible objects
-    only one of which the director can see.
-  .notes: :t
-    The ‘decision window’ in ‘the time difference between first noticing the
-    target and finally reaching for it’
-  .notes: :t
-    Note that the decision window widens under cognitive load only when a
-    competitor object is present, i.e. only when the task requires perspective
-    taking!
-  
+  +slide({bkg:'qureshi_2010_table1i.png'})
+    .notes: :t
+      Most of the evidence comes not from false belief but from a L1 VPT task
+  +slide({bkg:'qureshi_2010_table1ii.png'})
+
+
